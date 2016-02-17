@@ -1,0 +1,144 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xml:space='preserve' color="black"
+	width="7.38in" height="1.30in" viewBox="0 0 531 94">
+<title>wlazl-kotek-na-plotek.abc (1) tune 1</title>
+<!-- Creator: abcm2ps-8.1.5 -->
+<!-- CreationDate: Sep  8, 2014 10:50 -->
+<!-- CommandLine: -g -O wlazl-kotek-na-plotek.svg wlazl-kotek-na-plotek.abc -->
+<g transform="scale(0.750)" stroke-width="0.70">
+<!-- title: Wlazł kotek na płotek -->
+</g>
+<g transform="scale(0.750)" stroke-width="0.70" font-family="Times" font-size="20.00">
+<text x="354.13" y="21.67" text-anchor="middle">Wlazł kotek na płotek</text>
+</g>
+<g transform="scale(0.750)" stroke-width="0.70" font-family="Times" font-size="14.00" font-style="italic">
+<text x="694.93" y="45.34" text-anchor="end">Autor Nieznany</text>
+<path stroke="currentColor" fill="none"
+	d="M167.33 98.01v-24.00"/>
+<path stroke="currentColor" fill="none"
+	d="M276.03 98.01v-24.00"/>
+<path stroke="currentColor" fill="none"
+	d="M368.93 98.01v-24.00"/>
+<path stroke="currentColor" fill="none"
+	d="M479.13 98.01v-24.00"/>
+<path stroke="currentColor" fill="none"
+	d="M589.33 98.01v-24.00"/>
+<path stroke="currentColor" fill="none" stroke-width="3"
+	d="M693.43 98.01v-24.00"/>
+<path stroke="currentColor" fill="none"
+	d="M688.93 98.01v-24.00"/>
+<path stroke="currentColor" fill="none"
+	d="M13.33 98.01h681.60m-681.60 -6h681.60m-681.60 -6h681.60m-681.60 -6h681.60m-681.60 -6h681.60"/>
+</g>
+<g transform="scale(0.750)" stroke-width="0.70" font-family="Times" font-size="13.00" font-weight="bold">
+<text x="57.33" y="119.81">Wlazł</text>
+<text x="101.13" y="119.81">ko</text>
+<text x="134.13" y="119.81">tek</text>
+<text x="175.33" y="119.81">na</text>
+<text x="206.93" y="119.81">pło</text>
+<text x="242.73" y="119.81">tek</text>
+<text x="284.23" y="119.81">i</text>
+<text x="299.13" y="119.81">mru</text>
+<text x="328.03" y="119.81">ga</text>
+<text x="376.93" y="119.81">Ład</text>
+<text x="413.73" y="119.81">na</text>
+<text x="448.63" y="119.81">to</text>
+<text x="487.13" y="119.81">pio</text>
+<text x="521.33" y="119.81">sen</text>
+<text x="557.73" y="119.81">ka</text>
+<text x="597.33" y="119.81">nie</text>
+<text x="620.83" y="119.81">dłu</text>
+<text x="647.33" y="119.81">ga.</text>
+<defs>
+<path id="utclef" fill="currentColor" d="m-50 -90
+	c-72 -41 -72 -158 52 -188
+	c150 -10 220 188 90 256
+	c-114 52 -275 0 -293 -136
+	c-15 -181 93 -229 220 -334
+	c88 -87 79 -133 62 -210
+	c-51 33 -94 105 -89 186
+	c17 267 36 374 49 574
+	c6 96 -19 134 -77 135
+	c-80 1 -126 -93 -61 -133
+	c85 -41 133 101 31 105
+	c23 17 92 37 90 -92
+	c-10 -223 -39 -342 -50 -617
+	c0 -90 0 -162 96 -232
+	c56 72 63 230 22 289
+	c-74 106 -257 168 -255 316
+	c9 153 148 185 252 133
+	c86 -65 29 -192 -80 -176
+	c-71 12 -105 67 -59 124"/>
+<use id="tclef" transform="scale(0.045)"
+	xlink:href="#utclef"/>
+</defs>
+<use x="25.33" y="98.01" xlink:href="#tclef"/>
+<g font-family="serif" font-size="16" font-weight="bold" font-style="normal"
+	transform="translate(43.83,97.51) scale(1.2,1)">
+	<text text-anchor="middle">4</text>
+	<text y="-12" text-anchor="middle">3</text>
+</g>
+<defs>
+<ellipse id="hd" rx="4.1" ry="2.9"
+	transform="rotate(-20)" fill="currentColor"/>
+</defs>
+<use x="74.03" y="92.01" xlink:href="#hd"/>
+<path d="M77.53 92.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="109.23" y="98.01" xlink:href="#hd"/>
+<path d="M112.73 98.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="143.53" y="98.01" xlink:href="#hd"/>
+<path d="M147.03 98.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="183.23" y="95.01" xlink:href="#hd"/>
+<path d="M186.73 95.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="217.53" y="101.01" xlink:href="#hd"/>
+<path d="M221.03 101.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="252.13" y="101.01" xlink:href="#hd"/>
+<path d="M255.63 101.01v-20.00" stroke="currentColor" fill="none"/>
+<path fill="currentColor"
+	d="M291.73 82.81l22.80 -4.00v3.20l-22.80 4.00"/>
+<defs>
+<path id="hl" stroke="currentColor" d="m-6 0h12"/>
+</defs>
+<use x="288.53" y="104.01" xlink:href="#hl"/>
+<use x="288.53" y="104.01" xlink:href="#hd"/>
+<path d="M292.03 104.01v-20.30" stroke="currentColor" fill="none"/>
+<use x="310.73" y="98.01" xlink:href="#hd"/>
+<path d="M314.23 98.01v-18.20" stroke="currentColor" fill="none"/>
+<defs>
+<path id="Hd" fill="currentColor" d="m3 -1.6
+	c-1 -1.8 -7 1.4 -6 3.2
+	c1 1.8 7 -1.4 6 -3.2
+	m0.5 -0.3
+	c2 3.8 -5 7.6 -7 3.8
+	c-2 -3.8 5 -7.6 7 -3.8"/>
+</defs>
+<use x="335.83" y="92.01" xlink:href="#Hd"/>
+<path d="M339.33 92.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="387.23" y="92.01" xlink:href="#hd"/>
+<path d="M390.73 92.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="421.63" y="98.01" xlink:href="#hd"/>
+<path d="M425.13 98.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="455.53" y="98.01" xlink:href="#hd"/>
+<path d="M459.03 98.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="496.83" y="95.01" xlink:href="#hd"/>
+<path d="M500.33 95.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="531.33" y="101.01" xlink:href="#hd"/>
+<path d="M534.83 101.01v-20.00" stroke="currentColor" fill="none"/>
+<use x="565.63" y="101.01" xlink:href="#hd"/>
+<path d="M569.13 101.01v-20.00" stroke="currentColor" fill="none"/>
+<path fill="currentColor"
+	d="M609.83 82.91l25.40 -4.10v3.20l-25.40 4.10"/>
+<use x="606.73" y="104.01" xlink:href="#hl"/>
+<use x="606.73" y="104.01" xlink:href="#hd"/>
+<path d="M610.23 104.01v-20.20" stroke="currentColor" fill="none"/>
+<use x="631.43" y="98.01" xlink:href="#hd"/>
+<path d="M634.93 98.01v-18.20" stroke="currentColor" fill="none"/>
+<use x="656.63" y="104.01" xlink:href="#hl"/>
+<use x="656.63" y="104.01" xlink:href="#Hd"/>
+<path d="M660.13 104.01v-20.00" stroke="currentColor" fill="none"/>
+</g>
+</svg>
