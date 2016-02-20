@@ -12,9 +12,28 @@ Use at your own risk!
 """
 
 import xml.etree.ElementTree as ET
-import os.path
 import argparse
 import dateutil.parser
+import html2text
+import os.path
+import textwrap
+
+def FormatComments(comments):
+  result = "# Komentarze\n\n"
+  # out_fd.write('# Komentarze\n\n')
+  for comment in comments:
+    comment_date = dateutil.parser.parse(comment.find('date').text)
+    comment_nick = comment.find('nick').text
+    comment_body = comment.find('body').text
+    item = '%s (%s): %s\n' % (comment_nick, comment_date,
+                              comment_body)
+    for idx, line in enumerate(textwrap.wrap(item, 78)):
+      prefix = '* ' if not idx else '  '
+      result += prefix
+      result += line
+      result += '\n'
+  return result
+
 
 def main():
   parser = argparse.ArgumentParser(__doc__)
@@ -42,7 +61,10 @@ def main():
       out_fd.write('draft = false\n')
       out_fd.write('title = "%s"\n' % subject)
       out_fd.write('+++\n')
-      out_fd.write(body)
+      out_fd.write(html2text.html2text(body))
+      comments = entry.findall('comment')
+      if comments:
+        out_fd.write(FormatComments(comments))
 
 if __name__ == '__main__':
   main()
