@@ -1,7 +1,7 @@
 +++
 date = "2015-03-10T18:56:11Z"
-draft = true
-title = "Mam ochotę wyjść i wychodzę"
+draft = false
+title = "Mam ochotę wyjść, i wychodzę"
 
 +++
 
@@ -9,10 +9,10 @@ title = "Mam ochotę wyjść i wychodzę"
 > I wychodzę.
 > --Inżynier Mamoń, Rejs
 
-Jestem inny niż byłem, dajmy na to, 10 lat temu.
+Jestem już inny niż byłem, dajmy na to, 10 lat temu.
 
-Zajrzałem na google+owe community pythonowe. Zobaczyłem kilka linków do
-bibliotek i artykułów, a zaraz potem coś w tym stylu:
+Zajrzałem na google+owe community pythonowe. Zobaczyłem najpierw kilka postów
+z linkami do bibliotek i artykułów, a niedługo potem coś w tym stylu:
 
 > Jak napisać grep w pythonie?
 
@@ -36,9 +36,10 @@ Mój drugi błąd:
 > poprzez pisanie grepa w Pythonie, to coś tu jest bardzo nie tak, i należy tę
 > osobę jak najszybciej powstrzymać.
 
-Na to… ktoś napisał 3 paragrafy żeby właśnie rozwiązywać studentom ćwiczenia
-i jak się komuś to nie podoba, ignorować te pytania.
+Na to… ktoś napisał 3 paragrafy o tym jak to właśnie jest dobrze rozwiązywać
+studentom ćwiczenia i jak się komuś to nie podoba, to żeby ignorował te pytania.
 
 Przyznałem człowiekowi rację, w duchu oczywiście, bo w internecie nikomu się
-jawnie racji nie przyznaje. I co zrobiłem dalej? Wypisałem się z tej
-społeczności.
+jawnie racji nie przyznaje.
+
+I co zrobiłem dalej? Wypisałem się z tej społeczności.
