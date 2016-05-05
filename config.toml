@@ -5,12 +5,13 @@
 # $(basename $f .png)-thumb.png; done
 languageCode = "pl"
 title = "Automaciej"
+theme = "purehugo"
 baseurl = "http://maciej.blizinski.pl"
 [params]
-  twitter = "automaciej"
-  github = "automatthias"
+  twitterName = "automaciej"
+  githubName = "automatthias"
   googleplus = "MaciejBliziński"
-  Description = "Dwa razy dwa jest pięć więc myj zęby"
+  description = "Dwa razy dwa jest pięć więc myj zęby"
 [Taxonomies]
   tag = "tags"
 [permalinks]
