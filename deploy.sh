@@ -12,7 +12,7 @@ helpmsg() {
 
 case "${1:-}" in
   deploy)
-    hugo --theme="${THEME}"
+    hugo --theme="${THEME}" --cleanDestinationDir
     rsync -p -r --delete public/ "${DEST}"
     ;;
   test)
