@@ -3,6 +3,18 @@
 
 """Convert a Jogger.pl XML export to hugo / Markdown.
 
+You need to uncompress the XML file before processing it with this tool.
+
+Installation
+------------
+
+E.g. use virtualenv. Then:
+
+pip install python-dateutil
+pip install html2text
+
+Then just execute this script.
+
 Missing features:
   - convert body to Markdown from HTML (there seem to libraries out there
     already)
