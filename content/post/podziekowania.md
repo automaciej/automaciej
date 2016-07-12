@@ -24,7 +24,8 @@ poczekał i odebrał paczkę.
 Za taką poradę należałoby właściwie podziękować. Tylko komu? Prawdziwemu Kubie?
 Ja uważam że tak.  Wyobrażenie Kuby bazuje na modelu w mojej głowie, który
 powstał na podstawie rozmów, i czasu spędzonego wspólnie z przyjacielem.
-Przyjaciel wyobrażony nie mógłby istnieć gdyby nie istniał ten prawdziwy.
+Przyjaciel wyobrażony nie mógłby istnieć gdyby nie istniał ten prawdziwy,
+i gdyby ten prawdziwy nie poświęcił mi czasu i uwagi.
 
 Zatem podziękowania się należą.
 
