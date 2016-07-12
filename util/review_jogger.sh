@@ -19,8 +19,9 @@ done < <(find "${SOURCE_DIR}" -name '*.md' -print)
 echo "${#FILES[@]} files to process…"
 
 for LINE in "${FILES[@]}"; do
+  clear
   echo "${LINE}"
-  head "${LINE}"
+  head -n 40 "${LINE}"
   read -p "${LINE}: Approve? [y/n]" ANS
   case "${ANS}" in
     y)
