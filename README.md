@@ -19,7 +19,7 @@ Maciej Bliziński's home page
 
 * Creating a new page:
 
-        hugo new page/<name>.md
+        hugo new post/<name>.md
 
 * Deploying
 
