@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<span class="entry-meta content-subhead"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
+			<h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
+			<section itemprop="entry-text">
+				{{ .Content }}
+			</section>
+		</article>
+	</main>
+{{ partial "disqus-main.html" }}
+{{ partial "footer.html" . }}

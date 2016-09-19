@@ -5,8 +5,8 @@
 # $(basename $f .png)-thumb.png; done
 languageCode = "pl"
 title = "Automaciej"
-theme = "purehugo"
 baseurl = "http://maciej.blizinski.pl"
+paginate = 10
 [params]
   twitterName = "automaciej"
   githubName = "automatthias"

@@ -1,0 +1,18 @@
+{{ $paginator := .Paginate .Data.Pages }}
+{{ partial "header.html" }}
+      <p class="text-muted">
+      &mdash; Słuchaj, myj zęby, bo dwa razy dwa równa się pięć.
+      &mdash; Yyyy… ale dwa razy dwa nie równa się pięć…
+      &mdash; No wiesz! Dlaczego nie chcesz myć zębów?!
+      </p>
+{{ range $paginator.Pages }}
+		<article itemscope itemtype="http://schema.org/Blog">
+			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a>
+        <span class="entry-meta content-subhead small"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
+      </h2>
+      {{ .Content }}
+    </article>
+{{ end }}
+
+{{ template "_internal/pagination.html" . }}
+{{ partial "footer.html" }}

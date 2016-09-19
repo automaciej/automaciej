@@ -11,11 +11,11 @@ helpmsg() {
 
 case "${1:-}" in
   deploy)
-    hugo --theme="${THEME}" --cleanDestinationDir
+    hugo --cleanDestinationDir
     rsync -p -r --delete public/ "${DEST}"
     ;;
   test)
-    hugo -w -D -F --theme="${THEME}" --baseUrl="${HOSTNAME}" server
+    hugo -w -D -F --baseUrl="${HOSTNAME}" server
     ;;
   *)
     helpmsg >&2

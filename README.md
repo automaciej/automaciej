@@ -12,7 +12,7 @@ Maciej Bliziński's home page
 
 * Testing the website:
 
-        hugo -w -D -F --theme=purehugo server
+        hugo -D -F server
 
   * -D for drafts
   * -F for future content
