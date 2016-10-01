@@ -3,7 +3,7 @@
 set -u
 set -e
 
-DEST=quinoa.blizinski.pl:maciej.blizinski.pl
+DEST=quinoa:maciej.blizinski.pl
 
 helpmsg() {
   echo "$0 [ deploy | test ]"
