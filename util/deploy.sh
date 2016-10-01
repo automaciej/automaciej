@@ -3,7 +3,6 @@
 set -u
 set -e
 
-THEME=purehugo
 DEST=quinoa.blizinski.pl:maciej.blizinski.pl
 
 helpmsg() {
