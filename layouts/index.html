@@ -1,5 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    {{ partial "head-section.html" }}
+    <link rel="alternate" type="application/rss+xml" title="Automaciej" href="http://maciej.blizinski.pl/index.xml" />
+    <title>{{ .Title }} &mdash; Automaciej</title>
+  </head>
+  <body>
+    {{ partial "navbar.html" }}
+
+    <div class="container">
+
 {{ $paginator := .Paginate .Data.Pages }}
-{{ partial "header.html" }}
+
       <p class="text-muted">
       &mdash; Słuchaj, myj zęby, bo dwa razy dwa równa się pięć.
       &mdash; Yyyy… ale dwa razy dwa nie równa się pięć…
