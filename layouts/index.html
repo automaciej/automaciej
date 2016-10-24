@@ -14,11 +14,6 @@
 
 {{ $paginator := .Paginate .Data.Pages }}
 
-      <p class="text-muted">
-      &mdash; Słuchaj, myj zęby, bo dwa razy dwa równa się pięć.
-      &mdash; Yyyy… ale dwa razy dwa nie równa się pięć…
-      &mdash; No wiesz! Dlaczego nie chcesz myć zębów?!
-      </p>
 {{ range $paginator.Pages }}
 		<article itemscope itemtype="http://schema.org/Blog">
 			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a>
@@ -32,6 +27,13 @@
 
         </div><!-- col-md-8 -->
         <div><!-- col-md-4 -->
+          <p class="text-muted text-justify">
+          &mdash; Słuchaj, myj zęby, bo dwa razy dwa równa się pięć.
+          <br />
+          &mdash; Yyyy… ale dwa razy dwa nie równa się pięć…
+          <br />
+          &mdash; No wiesz! Dlaczego nie chcesz myć zębów?!
+          </p>
           {{ partial "all-tags.html" . }}
         </div><!-- col-md-4 -->
       </div><!-- row -->
