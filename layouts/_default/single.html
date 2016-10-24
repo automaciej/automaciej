@@ -8,6 +8,24 @@
     {{ partial "navbar.html" }}
 
     <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          {{ if .Prev }}
+          <p class="text-left">
+          <a href="{{ .Prev.Permalink }}" class="btn btn-default">« {{ .Prev.Title }} «</a>
+          </p>
+          {{ end }}
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          {{ if .Next }}
+          <p class="text-right">
+          <a href="{{ .Next.Permalink }}" class="btn btn-default">» {{ .Next.Title }} »</a>
+          </p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="row">
 
 	<main role="main">
 		<article itemscope itemtype="http://schema.org/BlogPosting">
@@ -22,6 +40,7 @@
 {{ partial "disqus-main.html" }}
 {{ partial "footer.html" . }}
 
+      </div><!-- row -->
     </div><!-- container -->
   </body>
 </html>
