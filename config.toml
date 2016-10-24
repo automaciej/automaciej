@@ -12,7 +12,7 @@ paginate = 10
   githubName = "automatthias"
   googleplus = "MaciejBliziński"
   description = "Dwa razy dwa jest pięć więc myj zęby"
-[Taxonomies]
+[taxonomies]
   tag = "tags"
 [permalinks]
   post = "/:year/:month/:filename/"

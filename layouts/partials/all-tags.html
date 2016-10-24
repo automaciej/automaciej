@@ -1,0 +1,5 @@
+<ul id="all-tags" class="list-unstyled">
+  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  <li><a href="{{ "/tags/" | relURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+  {{ end }}
+</ul>
