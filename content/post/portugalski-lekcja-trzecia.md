@@ -3,7 +3,13 @@ date = "2016-10-23T14:27:12+01:00"
 title = "Portugalski, lekcja trzecia"
 
 +++
-Wersja do posłuchania: [portugalski-lekcja-trzecia.mp3](/media/portugalski-lekcja-trzecia.mp3)
+
+Wersja do posłuchania:
+
+<audio controls>
+  <source src="/media/portugalski-lekcja-trzecia.mp3" type="audio/mpeg">
+  [portugalski-lekcja-trzecia.mp3](/media/portugalski-lekcja-trzecia.mp3)
+</audio>
 
 ### …, o!
 
