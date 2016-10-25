@@ -21,6 +21,7 @@ Maciej Bliziński's home page
 
         hugo new post/<name>.md
 
-* Deploying
+* Testing and deploying
 
-        ./deploy.sh
+        ./util/deploy.sh test
+        ./util/deploy.sh deploy
