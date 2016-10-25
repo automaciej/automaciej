@@ -8,6 +8,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif] -->` | safeHTML }}
+    <meta property="og:url"                content="{{ .Permalink }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ .Title }}" />
+    {{ if .Description }}<meta property="og:description" content="{{ .Description }}" />{{ end }}
+    <!-- <meta property="og:image" content="…" /> -->
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
