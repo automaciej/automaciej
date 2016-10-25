@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-01-11T00:10:01"
-draft = false
 title = "Nap"
+tags = [ "muzyka", "raptularz" ]
+
 +++
 Okazuje się że mam pod nosem dom kultury, do którego warto zajrzeć od czasu do
 czasu. Dzisiaj na przykład był Marek Napiórkowski z zespołem i Henrykiem

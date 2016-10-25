@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-04T21:25:51"
 title = "W hostelu"
+tags = [ "irlandia" ]
+
 +++
 Linie lotnicze Aerlingus naprawdę istnieją. Autobus 16A faktycznie dowiózł
 mnie i L. w pobliże hostelu. Hostel też istnieje i jest całkiem sympatyczny.

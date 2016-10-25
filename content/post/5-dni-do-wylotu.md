@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-30T20:23:04"
-draft = false
 title = "5 dni do wylotu"
+tags = [ "irlandia" ]
+
 +++
 Zarezerwowałem miejsca w hostelu na początek. Duża ulga, bo przez święta
 zaniedbałem tę sprawę i okazało się że np. w hotelach typu Bed &amp; Breakfast

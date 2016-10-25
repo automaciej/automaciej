@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-04-22T17:04:04"
 title = "MPD, dwa laptopy i stara wieża"
+tags = [ "informatyka" ]
+
 +++
 Lubię słuchać muzyki, właściwie słucham jej na okrągło. W zimie [Andreasa
 Vollenweidera](http://en.wikipedia.org/wiki/Andreas_Vollenweider), w lecie

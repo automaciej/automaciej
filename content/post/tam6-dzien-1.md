@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-06-21T08:44:44"
-draft = false
 title = "TAM6, dzień 1"
+tags = [ "sceptycyzm" ]
+
 +++
 Jestem wykończony, więc wysyłam tylko szybką notatkę.
 

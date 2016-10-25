@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-02-09T20:34:32"
-draft = false
 title = "Jestem fanem"
+tags = [ "raptularz", "muzyka" ]
+
 +++
 Zajrzałem dzisiaj na [swój profil na
 last.fm](http://www.last.fm/user/automaciej/) żeby zobaczyć, czyim jestem fanem.

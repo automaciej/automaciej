@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-07-05T12:30:11"
-draft = false
 title = "Żyrandol"
+tags = [ "zrzędzenie", "raptularz" ]
 +++
 Wisiał na samym środku pokoju, gdzie się najwięcej chodzi. Zawadzałem już o
 niego tyle razy, aż dziw że uszkodziłem go dopiero teraz.

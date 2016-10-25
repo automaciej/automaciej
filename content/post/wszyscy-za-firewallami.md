@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-15T08:56:25"
-draft = false
 title = "Wszyscy za firewallami"
+tags = [ "informatyka", "opowieści" ]
+
 +++
 Wszyscy za firewallami - to jest coś co dzisiaj nazywa się "dostępem do
 Internetu". Jestem pewien że niektórzy ludzie (a raczej korporacje) cieszą się

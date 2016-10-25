@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-04-02T10:28:03"
-draft = false
 title = "Zauważyłam, że..."
+tags = [ "że jak?" ]
+
 +++
 Drugi pasek narysowany na bitstrips. Nie wiem, czy będzie jakakolwiek
 kontynuacja, bo nie jestem Scottem Adamsem i nie mam tyle pomysłów. Ba, nawet te

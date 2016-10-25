@@ -1,11 +1,12 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-09-06T18:57:23+01:00"
-draft = false
 title = "Projekty informatyczne"
-description = "Lista moich projektów informatycznych, dużych i małych.  Niekompletna, oczywiście"
+description = "Lista moich projektów informatycznych, dużych i małych.  Niekompletna, oczywiście."
 aliases = ["projekty.html"]
 slug = "projekty-informatyczne"
+tags = [ "informatyka" ]
+
 +++
 
 podcast-gen (2014)

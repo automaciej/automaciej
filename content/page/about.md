@@ -4,6 +4,7 @@ date = "2014-09-06T15:11:41+01:00"
 title = "Co to w ogóle jest za strona?!"
 description = "Wrzucam tu swoje teksty dłuższe niż 140 znaków"
 menu = ["main"]
+
 +++
 To jest prymitywna strona domowa automaciejowa.
 

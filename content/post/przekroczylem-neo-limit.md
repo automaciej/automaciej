@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-05-25T19:32:05"
-draft = false
 title = "Przekroczyłem neo-limit"
+tags = [ "raptularz" ]
+
 +++
 Najwyraźniej przekroczyłem miesięczny
 [limit](http://pl.wikipedia.org/wiki/Neostrada) łącza państwowego, bo transfer

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-10T13:13:21"
-draft = false
 title = "Howth"
+tags = [ "irlandia" ]
+
 +++
 Dzisiaj rano dotknąłem twarzy i poczułem pieczenie. To musi być wczorajsza
 wycieczka do Howth. Ale co tam pieczenie i czerwona gęba, warto było! Dawno

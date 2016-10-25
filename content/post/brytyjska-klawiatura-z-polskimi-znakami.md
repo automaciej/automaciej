@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-05-02T10:30:49"
-draft = false
 title = "Brytyjska klawiatura z polskimi znakami"
+tags = [ "informatyka" ]
+
 +++
 _Z cyklu „na pewno nikt jeszcze na to nie wpadł”._
 

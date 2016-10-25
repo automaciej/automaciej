@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-10-17T07:11:31"
-draft = false
 title = "Thomson Speedtouch 330"
+tags = [ "zrzędzenie", "informatyka" ]
+
 +++
 Po przeprowadzce w nowe miejsce musiałem sobie zorganizować dostęp do
 Macierzy, a jedyną możliwością jest Neostrada. Podobno idą obok linie Netii,

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-01-13T22:11:40"
-draft = false
 title = "Biurwa czy malarz?"
+tags = [ "zrzędzenie" ]
+
 +++
 Z jednej strony muszę pracować wtedy, kiedy inni pracują. Muszę wymieniać
 informacje, odbierać telefony i dzwonić, pisać dokumenty, czytać dokumenty,

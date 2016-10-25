@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-04-09T16:03:22"
-draft = false
 title = "Lepiej późno niż wcale"
+tags = [ "raptularz" ]
+
 +++
 Okazuje się że na joggera można pisać ze zwykłego klienta jabbera.
 

@@ -1,7 +1,7 @@
 +++
 date = "2015-03-10T18:56:11Z"
-draft = false
 title = "Mam ochotę wyjść, i wychodzę"
+tags = [ "zrzędzenie" ]
 
 +++
 

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2010-11-29T12:15:46"
-draft = false
 title = "Złośliwe dodatkowe efekty w muzyce"
+tags = [ "muzyka" ]
+
 +++
 Jest jeden utwór, którego często słucham, i w którym w pewnym momencie pojawia
 się dźwięk bliżej niesprecyzowanego alarmu. Być może budzik, albo laptop który
@@ -47,5 +48,5 @@ pół-schowanych dodatkowych efektów dźwiękowych. Albo na wierzchu, albo wcal
   radia. Travis - "Sing". Wycie rury zaczyna się w 0:43 i trwa ok. 11<br />
   sekund, poniżej próbuję podać link do teledysku na YT. Od tamtej pory za
   każdym razem, gdy słyszę ten utwór, śmieję się w głos. Pozdrawiam byłych
-  współmieszkańców z osiedla </p>  <p>"Rura
-  Travisa":http://www.youtube.com/watch?v=G1f2M5G9KG8</p>
+  współmieszkańców z osiedla </p>
+  <p>[Rura Travisa](http://www.youtube.com/watch?v=G1f2M5G9KG8)</p>

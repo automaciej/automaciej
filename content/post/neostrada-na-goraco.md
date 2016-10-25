@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-27T17:23:46"
 title = "Neostrada na gorąco"
+tags = [ "raptularz" ]
+
 +++
 Nareszcie jestem online. Chwilowo stacjonuję u rodziców, którzy nie mieli
 stałego łącza i musiałem jeździć do biura. Jako że można wziąć "na wypróbowanie"

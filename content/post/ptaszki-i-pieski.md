@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-01-15T19:33:38"
 title = "Ptaszki i pieski"
+tags = [ "raptularz" ]
+
 +++
 Zza okien dociera tylko ruch uliczny. Nie ma śpiewających ptaszków (nawet w
 lato) ani szczekających piesków...  

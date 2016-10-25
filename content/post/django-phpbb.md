@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-11-25T10:23:01"
 title = "django-phpbb"
+tags = [ "raptularz" ]
+
 +++
 Mój mały projekcik osiągnął już z grubsza używaną postać. Jest to [integracja
 Django z phpBB](http://code.google.com/p/django-phpbb/), czyli zbiór klas które

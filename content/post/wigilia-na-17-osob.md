@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-11-02T20:41:14"
-draft = false
 title = "Wigilia na 17 osób"
+tags = [ "życie" ]
+
 +++
 Do świąt zostało jeszcze sporo czasu, ale przed kim stoi wizja odbywania dwóch
 Wigilii jednego dnia, temu czas zastanowić się nad rozwiązaniem.

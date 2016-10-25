@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-03-09T13:22:00"
-draft = false
 title = "Piraci z krzemowej doliny"
+tags = [ "informatyka" ]
+
 +++
 Wczoraj w końcu obejrzałem [ten film 1999
 roku](http://en.wikipedia.org/wiki/Pirates_of_Silicon_Valley). Moja dziewczyna

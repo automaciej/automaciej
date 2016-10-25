@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-02-27T11:33:21"
-draft = false
 title = "X lub Y i Z"
+tags = [ "że jak?", "dywagacje" ]
+
 +++
 Kazimierz przeciągnął się i powiedział:
 

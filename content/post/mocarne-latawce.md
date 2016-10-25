@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-06-01T22:04:26"
-draft = false
 title = "Mocarne latawce"
+tags = [ "zabawki" ]
+
 +++
 [Bumerangi](http://automaciej.jogger.pl/2006/12/02/bumerang/) to bardzo fajna
 zabawa, ale mają jedną wadę: są wrażliwe na wiatr. Nic dziwnego, bo w końcu

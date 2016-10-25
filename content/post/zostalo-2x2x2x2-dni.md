@@ -2,6 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-09-14T13:42:57"
 title = "Zostało 3×2×2×2 dni"
+tags = [ "raptularz" ]
 
 +++
 Zostało 24 dni do złożenia. Mam jeszcze dużo do zrobienia. Na szczęście mam z

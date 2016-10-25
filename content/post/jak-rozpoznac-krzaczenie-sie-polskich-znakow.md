@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-03-08T17:04:49"
-draft = false
 title = "Jak rozpoznać krzaczenie się polskich znaków"
+tags = [ "informatyka" ]
 +++
 _UPDATE: [Napraw swój pokrzaczony tekst.](http://krzaki.blizinski.pl/)_
 

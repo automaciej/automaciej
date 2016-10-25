@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-21T11:04:48"
-draft = false
 title = "Jestem kosmitą"
+tags = [ "raptularz", "że jak?" ]
+
 +++
 Jakiś czas temu [byłem
 zajebisty](http://automaciej.jogger.pl/2005/12/07/jestem-zajebisty/). Dzisiaj

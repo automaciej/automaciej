@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-01-13T23:25:33"
 title = "Protopic nie jest refundowany"
+tags = [ "atopowe" ]
+
 +++
 Państwo dopłaca do leczenia
 [cyklosporyną](http://www.atopowe-zapalenie.pl/zapalenie/Cyklosporyna)

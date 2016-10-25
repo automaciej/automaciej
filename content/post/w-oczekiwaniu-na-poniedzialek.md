@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-06-13T19:30:23"
 title = "W oczekiwaniu na poniedziałek"
+tags = [ "raptularz" ]
+
 +++
 Egzaminy odbyte, wyniki nieznane. Teraz pozostało mi przygotować laptopa do
 pobytu w szpitalu. Właśnie kompiluję subversion.  

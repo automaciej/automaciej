@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-20T10:52:58"
-draft = false
 title = "Miksowanie w ALSA"
+tags = [ "informatyka" ]
+
 +++
 Dopiero wczoraj wpadłem na opis wtyczki
 [dmix](http://alsa.opensrc.org/index.php?page=DmixPlugin) do sterowników
@@ -17,6 +18,7 @@ przy próbie odtwarzania programy zachowują się dość dziwnie. Na przykład:
 piosenkę1 przy pomocy CTRL+C - piosenka2 staje się słyszalna. Uruchamiam
 piosenkę1 jeszcze raz - cała odtwarza się jak na "fast forward", w ciągu 5
 sekund.  
+
 Czasami rzeczywiście można usłyszeć 2 piosenki naraz, ale nie umiem tego
 zrobić na zawołanie; albo wychodzi albo nie.
 

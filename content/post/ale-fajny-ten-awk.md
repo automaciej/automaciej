@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-12-22T13:43:44"
 title = "Ale fajny ten awk!"
+tags = [ "informatyka", "raptularz" ]
+
 +++
 Dzisiejszy skrypt który miałem napisać zmusił mnie do zapoznania się z awk.
 Nie wiedziałem że to takie fajne narzędzie! To co w czystym shellu trzeba by

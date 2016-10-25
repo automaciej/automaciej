@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2013-05-19T20:31:36"
-draft = false
 title = "TOK FM  w wywiadzie z Ireną Borowik"
+tags = [ "sceptycyzm" ]
+
 +++
 Co za [tendencyjny stek
 bzdur](http://www.tokfm.pl/Tokfm/1,103085,13101833,_Trudno_o_konsekwentnego_ateiste__Bywaja_tacy__ktorzy.html).

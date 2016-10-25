@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-11-11T06:41:08"
-draft = false
 title = "Nigeria płaci za Linuksa i instaluje Windows"
+tags = [ "raptularz", "informatyka", "zrzędzenie" ]
+
 +++
 W [liście
 otwartym](http://blog.mandriva.com/2007/10/31/an-open-letter-to-steve-ballmer/)

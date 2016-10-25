@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-04-06T15:41:03"
-draft = false
 title = "Struktura Wszechświata, analiza"
+tags = [ "dywagacje", "sceptycyzm" ]
+
 +++
 Jeżeli udało mi się kogoś
 [przekonać](http://automaciej.jogger.pl/2008/04/01/struktura-wszechswiata-i-my/)

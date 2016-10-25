@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-05-20T10:44:50"
-draft = false
 title = "Pocałuj mnie w sklep internetowy"
+tags = [ "raptularz" ]
+
 +++
 Moda na anglojęzyczne nazwy firm jest nieśmiertelna. Myślałem że już nic mnie
 nie zdziwi, a tutaj... sklep multimedialny www.**arse**.pl! Dla

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2013-02-09T13:00:09"
-draft = false
 title = "Grypa"
+tags = [ "raptularz", "opowieści" ]
+
 +++
 Ból głowy. Poczucie ogólnego osłabienia. Ból mięśni pomimo braku większego
 wysiłku w ostatnich dniach.
@@ -48,7 +49,7 @@ można było w żaden prosty sposób odzyskać synchronizacji. Trzeba było na n
 pociąć ścieżkę wideo na podstawie ścieżki audio i wszystko powstawiać we
 właściwe miejsca. To, albo wszystko wyrzucić i zacząć od nowa.
 
-Jednym ze źródeł problemu jest być może jedna z funkcji interfejsu Blendera -
+Jednym ze źródeł problemu jest być może jedna z funkcji interfejsu Blendera --
 nieintuicyjna, lub zbyt łatwo o nią niechcący zawadzić. Jednak problem był też
 po mojej stronie: sygnały ostrzegawcze widziałem już od samego początku, i je
 wszystkie konsekwentnie zignorowałem, aż było za późno. Miałem przed sobą

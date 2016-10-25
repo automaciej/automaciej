@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2010-04-15T13:35:35"
 title = "Simon Singh wygrał sprawę w sądzie"
+tags = [ "sceptycyzm" ]
+
 +++
 Ci którzy interesowali się sprawą
 [wytoczoną](http://automaciej.jogger.pl/2009/10/05/tam-london/) Simonowi

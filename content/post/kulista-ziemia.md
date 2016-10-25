@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-08-16T15:51:25"
-draft = false
 title = "Kulista Ziemia"
+tags = [ "sceptycyzm" ]
+
 +++
 Wciąż są na Ziemi ludzie, którzy uważają, że jest ona płaska. [To nie
 żart!](http://pl.wikipedia.org/wiki/Towarzystwo_P%C5%82askiej_Ziemi)

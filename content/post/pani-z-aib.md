@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-26T23:08:15"
-draft = false
 title = "Pani z AIB"
+tags = [ "irlandia" ]
+
 +++
 Dzisiaj, zakładając konto w banku wypełniałem formularz. Pani podała mi dwa
 formularze: jeden po angielsku do wypełnienia i drugi, po polsku. Żachnąłem

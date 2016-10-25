@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-05-07T05:21:08"
 title = "Początek trzeciego dnia"
+tags = [ "raptularz" ]
+
 +++
 To trzeci dzień mojej głodówki. Dotychczas bez sensacji. Może wreszcie dowiem
 się, na ile moje uczulenie ma podłoże pokarmowe. Chciałbym wytrzymać do

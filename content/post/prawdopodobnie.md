@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-10-25T12:59:07"
-draft = false
 title = "Prawdopodobnie"
+tags = [ "sceptycyzm" ]
+
 +++
 W ten wtorek, 21 października 2008, Brytyjski Związek Humanistów rozpoczął
 [zbiórkę pieniędzy](http://www.justgiving.com/atheistbus) na kampanię

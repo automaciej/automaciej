@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2015-12-24T16:02:23"
-draft = false
 title = "Jak się uczę portugalskiego"
+tags = [ "języki" ]
+
 +++
 Niepostrzeżenie [minęło 6 lat](http://automaciej.jogger.pl/2011/05/06/taksista/
 "Historia z taskówkarką") od kiedy

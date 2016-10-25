@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-04-28T07:04:41"
-draft = false
 title = "Łaska"
+tags = [ "sceptycyzm" ]
+
 +++
 Lubię się przyglądać jak chrześcijańska teologia usiłuje rozwiązać problemy z
 koncepcjami którymi obraca.

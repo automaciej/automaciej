@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-06T10:13:27"
 title = "Zasypiam na wykładach"
+tags = [ "raptularz" ]
+
 +++
 Zasypiam na wykładach. Przychodzę, siadam, wszystko w porządku. Wykładowca
 zaczyna coś opowiadać. Po pewnym czasie czuję, że moje oczy zaczynają się

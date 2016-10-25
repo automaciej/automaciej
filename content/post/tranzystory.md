@@ -4,7 +4,7 @@ date = "2014-09-24T19:28:05+01:00"
 draft = true
 title = "Tranzystory"
 description = "Panicznie oglądali się po sobie"
-tags = ["opowieści"]
+tags = [ "opowieści" ]
 +++
 
 Kiedyś spowodowałem, że wszyscy w grupie panicznie patrzyli po sobie nawzajem,

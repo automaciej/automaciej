@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-09-12T11:42:09"
 title = "Lutowanie"
+tags = [ "opowieści" ]
+
 +++
 Od małego lubiłem się bawić kabelkami, a żeby zrobić coś z kabelków,
 potrzebowałem coś zlutować. Na przykład chciałem użyć dodatkowych dwóch małych

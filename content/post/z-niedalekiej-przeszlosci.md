@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-10-05T11:18:47"
-draft = false
 title = "Z niedalekiej przeszłości"
+tags = [ "opowieści", "irlandia" ]
+
 +++
 Uch. Nie chce ruszyć. Ciągnę jeszcze raz, trochę mocniej. Nic. Naciskam
 przycisk, który, jak się domyślam, zwalnia blokadę dżwigni, ale widocznie to nie

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2009-02-07T20:37:51"
-draft = false
 title = "Wielki szwindel z globalnym ociepleniem"
+tags = [ "dywagacje" ]
+
 +++
 Al Gore pokazywał kiedyś taki ładny
 [wykres](http://kintespace.com/bitmaps/blog_inconvenient_truth.jpg), na którym

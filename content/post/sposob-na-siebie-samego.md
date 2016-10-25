@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-23T15:59:06"
-draft = false
 title = "Sposób na siebie samego"
+tags = [ "raptularz" ]
+
 +++
 Nie chce mi się pisać magisterki. Chce mi się pisać bloga. Co więc robić?  Pisać
 bloga o magisterce. A najlepiej

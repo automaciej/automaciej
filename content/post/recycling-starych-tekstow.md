@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-09-19T10:46:29"
-draft = false
 title = "Recycling starych tekstów"
+tags = [ "raptularz" ]
+
 +++
 Wczoraj zanurzyłem ręce po łokcie w starych płytach i udało mi się odnaleźć
 archiwalne teksty z licealnej gazetki szkolnej, plus trochę swoich notatek z

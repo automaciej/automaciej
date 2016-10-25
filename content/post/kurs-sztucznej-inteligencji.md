@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2011-11-22T22:54:28"
-draft = false
 title = "Kurs Sztucznej Inteligencji"
+tags = [ "raptularz" ]
+
 +++
 Stanford organizuje internetowy kurs [Sztucznej
 Inteligencji](http://www.ai-class.com/). Właśnie był egzamin półsemestralny,

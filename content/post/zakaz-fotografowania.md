@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2015-04-13T18:04:29"
-draft = false
 title = "ZAKAZ FOTOGRAFOWANIA"
+tags = [ "dywagacje" ]
+
 +++
 Stanąłem przed tablicą z napisem:
 

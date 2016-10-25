@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-02-13T00:36:41"
 title = "Program dla kancelarii prawnych"
+tags = [ "raptularz", "informatyka" ]
+
 +++
 Rozważam opublikowanie na licencji GPL mojego programu dla kancelarii
 prawnych. Jestem ciekaw, czy jest zapotrzebowanie na taki program. Wysłałem

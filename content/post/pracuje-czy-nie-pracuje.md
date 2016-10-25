@@ -2,6 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-03-31T22:22:07"
 title = "Pracuję, czy nie pracuję?"
+tags = [ "raptularz" ]
 
 +++
 Niedawno przesiadłem się na KDE z tego tylko jednego powodu że dla GNOME nie

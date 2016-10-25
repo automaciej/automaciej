@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2013-06-19T01:12:49"
-draft = false
 title = "To na pewno woda, na pewno."
+tags = [ "raptularz" ]
+
 +++
 Śmieszny wątek miałem niedawno na forum atopowym. Do dziś nie wiem, czy mój
 rozmówca prezentował głupotę, czy trollował.

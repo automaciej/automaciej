@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-09-12T11:25:05"
-draft = false
 title = "Karl Popper i statystyka"
+tags = [ "sceptycyzm" ]
+
 +++
 Na informatyce miałem same ulubione przedmioty. Przynajmniej połowa z
 [nich](http://www.wit.edu.pl/13/1/kierunek_informatyka/katalog_przedmiotow/)

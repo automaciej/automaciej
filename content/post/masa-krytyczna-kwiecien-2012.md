@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-04-24T10:58:13"
 title = "Masa krytyczna kwiecień 2012"
+tags = [ "raptularz" ]
+
 +++
 Jeżeli tylko zorganizuję sobie rower to jadę.
 

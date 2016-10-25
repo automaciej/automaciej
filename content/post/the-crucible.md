@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-11-24T09:49:18"
-draft = false
 title = "The Crucible"
+tags = [ "irlandia", "opowieści" ]
+
 +++
 W zeszły piątek L. zabrała mnie na spektakl _The Crucible_ w wykonaniu
 licealistów ze szkoły Newpark.
