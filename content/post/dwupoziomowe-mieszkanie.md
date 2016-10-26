@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-07T09:53:18"
-draft = false
 title = "Dwupoziomowe mieszkanie"
+tags = [ "irlandia" ]
+
 +++
 Jako że przyjechałem w czwartek po południu, miałem tylko piątek na
 załatwianie spraw, a teraz jestem w sumie turystą który spędza weekend w

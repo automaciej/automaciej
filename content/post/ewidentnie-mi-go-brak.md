@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2010-05-28T09:48:11"
-draft = false
 title = "Ewidentnie mi go brak"
+tags = [ "języki", "sceptycyzm" ]
+
 +++
 Tak, są rzeczy których mi brak. Na przykład, polskiego słowa na _evidence_.
 

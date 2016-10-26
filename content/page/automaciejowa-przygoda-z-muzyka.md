@@ -5,7 +5,7 @@ draft = false
 title = "Automaciejowa przygoda z muzyką"
 description = "Kiedyś zajmowałem się muzyką, dziś zostało mi z tego kilka nagrań."
 aliases = ["muzyka.html"]
-tags = ["muzyka", "opowieść"]
+tags = ["muzyka", "opowieści"]
 menu = ["main"]
 +++
 W latach 1996 - 2001 zajmowałem się muzyką na poważnie. Gdyby ktoś mi wtedy

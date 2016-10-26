@@ -1,6 +1,7 @@
 +++
 date = "2016-09-28T00:15:00+01:00"
 title = "Bullet Journal"
+tags = [ "życie" ]
 
 +++
 

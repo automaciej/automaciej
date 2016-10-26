@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-05-05T18:54:16"
-draft = false
 title = "Media, uzdrowiciele i łyżkołamy, spieszcie się!"
+tags = [ "sceptycyzm" ]
+
 +++
 _[Stare newsy, ale jare](http://www.randi.org/joom/content/view/144/1/#i4),
 zostały jeszcze 22 miesiące._

@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-02T00:52:08"
-draft = false
 title = "Aerobie"
+tags = [ "zabawki" ]
 +++
 Dzisiaj wieczorem, jak to zwykle po pracy, poszliśmy z L. do parku porzucać
 aerobie.

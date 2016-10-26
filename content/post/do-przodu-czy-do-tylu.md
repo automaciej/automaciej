@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-03-01T15:03:31"
-draft = false
 title = "Do przodu czy do tyłu?"
+
 +++
 Sam nie wiem, czy się rozwijam czy uwsteczniam. Kiedyś pisałem długie,
 skomplikowane fragmenty kodu których dzisiaj już zupełnie nie rozumiem. Teraz

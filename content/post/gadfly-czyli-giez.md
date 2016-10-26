@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-01-27T17:24:12"
-draft = false
 title = "Gadfly, czyli giez"
+tags = [ "dywagacje" ]
+
 +++
 Niektórych angielskich słówek nie znajdzie się w słowniku. Dzisiaj na przykład
 nie znalazłem w słowniku, co znaczy _gadfly_. To znaczy, w sensie zoologicznym

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-10-13T22:48:50"
-draft = false
 title = "Oferowane zarobki w ogłoszeniach o pracę"
+tags = [ "życie" ]
+
 +++
 Jakiś czas temu w komentarzach ktoś
 [twierdził](http://automaciej.jogger.pl/2006/08/24/kawalek-kodu-na-rozmowie-o-prace/

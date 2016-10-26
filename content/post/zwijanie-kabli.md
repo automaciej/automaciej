@@ -1,7 +1,7 @@
 +++
 date = "2016-02-17T19:26:04Z"
-draft = false
 title = "Zwijanie kabli: Rozumienie kontra zamordyzm"
+tags = [ "sceptycyzm", "muzyka" ]
 
 +++
 

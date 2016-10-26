@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-07-13T11:53:11"
-draft = false
 title = "Nienawidzę języka naturalnego"
+tags = [ "dywagacje" ]
+
 +++
 Tak. Nienawidzę tego skomplikowanego, niedokładnego, niejednoznacznego,
 włochatego tworu, którego głównym zadaniem jest tworzenie nieporozumień pomiędzy

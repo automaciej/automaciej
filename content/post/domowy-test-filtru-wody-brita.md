@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-08-03T20:48:55"
-draft = false
 title = "Domowy test filtru wody Brita"
+tags = [ "sceptycyzm" ]
+
 +++
 Kiedyś dostaliśmy z Lucyną taki oto filtr wody w prezencie.
 

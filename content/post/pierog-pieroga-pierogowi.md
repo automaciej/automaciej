@@ -3,6 +3,8 @@
 date = "2008-12-24T11:48:34"
 draft = false
 title = "Pieróg, pieroga, pierogowi"
+tags = [ "życie" ]
+
 +++
 —Jakby co, możemy ugotować też te kupne.  
 —Okaże się które są lepsze. A co jeżeli kupne będą lepsze?  

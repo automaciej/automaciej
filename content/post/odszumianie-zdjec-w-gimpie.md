@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-21T01:23:04"
-draft = false
 title = "Odszumianie zdjęć w Gimpie"
+tags = [ "informatyka" ]
 +++
 Filtr „Selective Gaussian Blur” bardzo dobrze nadaje się do odszumiania
 fotografii cyfrowych. Przynajmniej dla moich amatorskich celów. Brakowało mi

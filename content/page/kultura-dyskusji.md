@@ -5,6 +5,7 @@ draft = false
 title = "Kultura dyskusji"
 description = "Komentarze wyłączone"
 menu = ["main"]
+tags = [ "dywagacje" ]
 +++
 *Recykling z [joggera z 2006 roku](http://automaciej.jogger.pl/2006/04/11/kultura-dyskusji/).*
 

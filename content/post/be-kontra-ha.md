@@ -3,6 +3,8 @@
 date = "2015-02-22T14:45:56Z"
 draft = false
 title = "B kontra H"
+tags = [ "muzyka" ]
+
 +++
 Muzyczna logika:
 

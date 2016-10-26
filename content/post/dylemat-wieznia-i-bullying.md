@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-05-12T16:06:43"
-draft = false
 title = "Dylemat więźnia i bullying"
+tags = [ "dywagacje" ]
 +++
 [Dylemat więźnia](http://pl.wikipedia.org/wiki/Dylemat_wi%C4%99%C5%BAnia) jest
 jednym z klasycznych problemów teorii gier. Jest interesującą abstrakcją całej

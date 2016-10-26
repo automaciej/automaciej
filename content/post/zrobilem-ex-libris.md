@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-11-21T22:55:05"
-draft = false
 title = "Zrobiłem Ex Libris"
+tags = [ "życie" ]
+
 +++
 Zrobiłem sobie ten Ex Libris na poczcie przy placu Konstytucji. Bardzo
 wygodnie, wysłałem projekt emailem i następnego dnia odebrałem gotowy stempel,

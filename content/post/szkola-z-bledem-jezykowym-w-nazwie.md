@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-26T15:34:17"
-draft = false
 title = "Szkoła z błędem językowym w nazwie"
+tags = [ "że jak?", "informatyka" ]
+
 +++
 Jeżeli rozmawiasz na IRC na kanale #gentoo.pl, nie mów nic o [tej
 szkole](http://www.szkolalinuxa.edu.pl/) ponieważ dopadnie cię [bot

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-09-15T12:54:20"
-draft = false
 title = "Film na dyskietce"
+tags = [ "że jak?" ]
+
 +++
 
 > List od użytkowniczki komputera:  

@@ -1,15 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-10-10T08:41:53"
-draft = false
 title = "Wrogowie rozsądku: medycyna alternatywna"
+tags = [ "sceptycyzm" ]
+
 +++
 Niedawno zrobiłem kawałek tłumaczenia programu Richarda Dawkinsa „Wrogowie
 rozsądku”, traktującego o medycynie alternatywnej, której krytykę, zafascynowany
-[FAQ
-płaskoziemniaków](http://automaciej.jogger.pl/2008/08/18/swiat-plaskiej-ziemi/),
-niedawno [napisałem na Atopedii](http://tnij.org/alternat) właśnie w formie
-pytań i krótkich odpowiedzi.
+[FAQ płaskoziemniaków](/2008/08/18/swiat-plaskiej-ziemi/), niedawno [napisałem
+na Atopedii](http://tnij.org/alternat) właśnie w formie pytań i krótkich
+odpowiedzi.
 
 Program z napisami osadzonymi w obrazie [jest do pobrania z bloga
 atopowego](http://blog.atopowe.pl/2008/10/08/richard-dawkins-wrogowie-rozsadku-enemies-of-reason/).

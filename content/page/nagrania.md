@@ -1,13 +1,13 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2014-09-06T18:17:21+01:00"
-draft = false
 title = "Nagrania"
 description = "Moje nagrania z lat 1996-2001"
 aliases = ["nagrania.pl.html"]
-tags = ["muzyka"]
+tags = [ "muzyka" ]
 slug = "nagrania"
 menu = ["main"]
+
 +++
 
 Funksters

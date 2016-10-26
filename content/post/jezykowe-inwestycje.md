@@ -1,13 +1,14 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-06-11T01:52:55"
-draft = false
 title = "Językowe inwestycje"
+tags = [ "języki" ]
+
 +++
 Niedawno pisałem o tym, dlaczego [warto uczyć się
-angielskiego](http://automaciej.jogger.pl/2007/11/24/ale-to-jest-po-angielsku/).
-Ale angielski to nie wszystko, jest przecież cała masa innych języków. Czy warto
-się ich uczyć? Jeżeli tak, to których?
+angielskiego](/2007/11/24/ale-to-jest-po-angielsku/).  Ale angielski to nie
+wszystko, jest przecież cała masa innych języków. Czy warto się ich uczyć?
+Jeżeli tak, to których?
 
 W moim liceum klasy były profilowane językowo. Mieliśmy tam dwie klasy
 angielskie, jedną francuską i jedną niemiecką. Ja byłem w niemieckiej, co w

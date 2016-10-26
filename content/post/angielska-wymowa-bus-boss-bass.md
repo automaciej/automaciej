@@ -3,6 +3,7 @@
 date = "2011-07-16T12:09:50"
 draft = false
 title = "Angielska wymowa: bus, boss, bass"
+tags = [ "języki" ]
 +++
 Moim ulubionym przykładem na typowe polskie problemy z wymową angielskiego,
 jest [bus vs boss](http://howjsay.com/index.php?word=boss%3Bbasset%3Bbus%3Bbas

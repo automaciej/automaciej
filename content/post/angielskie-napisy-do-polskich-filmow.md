@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2009-11-04T12:09:24"
-draft = false
 title = "Angielskie napisy do polskich filmów"
+tags = [ "języki" ]
 +++
 Podczas ostatniej wizyty w Polsce szukałem płyt DVD z polskimi filmami, które
 mógłbym mieć na półce w razie gdyby ktoś z kolegów zapytał się o polskie kino.

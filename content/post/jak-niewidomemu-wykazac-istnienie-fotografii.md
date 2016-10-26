@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2009-03-16T02:02:15"
 title = "Jak niewidomemu wykazać istnienie fotografii"
+tags = [ "sceptycyzm", "tłumaczenia" ]
+
 +++
 _Tłumaczenie z bloga Skeptico._
 

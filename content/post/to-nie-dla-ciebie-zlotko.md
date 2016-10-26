@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-12-01T10:25:00"
-draft = false
 title = "To nie dla ciebie, złotko"
+tags = [ "dywagacje" ]
+
 +++
 Co by tu zrobić, żeby spowolnić rozwój technologii i gospodarki? Ale nie jakoś
 małostkowo, tylko z rozmachem, uderzyć w całe kraje, albo globalnie!
@@ -15,8 +16,6 @@ Powiedzmy, arbitralnie podzielić całą populację ludzką na pół, i wmówić
 połówce, że technologiczne rzeczy nie są dla nich. Trzeba to zrobić już od
 wczesnego wieku, zacząć od zabawek. Zabawkowy laptop? Grupa A dostaje 50
 funkcji, większy i droższy laptop. Grupa B dostaje 25 funkcji, tańszy laptop.
-
-![](http://s3-ec.buzzfed.com/static/enhanced/webdr02/2012/11/28/17/enhanced-buzz-31424-1354141864-1.jpg)
 
 Lalki? Robimy dwa zestawy lalek, z zestawu B wyłączamy wszelkie lalki
 przedstawiające budowniczych czy naukowców.

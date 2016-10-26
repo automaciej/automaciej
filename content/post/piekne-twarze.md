@@ -2,6 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-01-07T10:05:13"
 title = "Piękne twarze"
+
 +++
 Mówi się że każda potwora znajdzie swojego amatora, de gustibus i tak dalej,
 ale jeżeli chodzi o twarze, da się znaleźć zestaw cech, który powoduje że

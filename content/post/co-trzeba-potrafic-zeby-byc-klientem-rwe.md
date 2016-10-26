@@ -3,6 +3,7 @@
 date = "2015-10-01T17:03:45"
 draft = false
 title = "Co trzeba potrafić, żeby być klientem RWE"
+tags = [ "życie" ]
 +++
 W lutym RWE przysłało informację że się zmienił sposób logowania. Przysłali
 nowe hasło i napisali żeby użyć takiego samego Numeru Klienta jak poprzednio.

@@ -2,6 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-08T19:37:02"
 title = "7 dni do obrony"
+
 +++
 Pora się przygotować. W planach są:
 

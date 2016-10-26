@@ -1,12 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2014-09-06T15:11:41+01:00"
-draft = false
 title = "Co to w ogóle jest za strona?!"
 description = "Wrzucam tu swoje teksty dłuższe niż 140 znaków"
 menu = ["main"]
 +++
-Wrzucam tu teksty dłuższe niż 140 znaków.
+To jest prymitywna strona domowa automaciejowa.
+
+Jak zauważam że się powarzam, to zamiast dalej się powtarzać, piszę tutaj.
+
+Oprócz w tego w internecie mam:
 
 Po polsku:
 

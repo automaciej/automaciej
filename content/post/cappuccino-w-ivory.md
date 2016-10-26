@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-02-17T10:59:20"
-draft = false
 title = "Cappuccino w Ivory"
+tags = [ "irlandia" ]
+
 +++
 [Dalkey](http://en.wikipedia.org/wiki/Dalkey) czyta się „dołki”. Jak dotychczas,
 jedno z moich (i L.) ulubionych miejsc na wycieczki. Punktem programu jest

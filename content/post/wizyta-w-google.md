@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-22T12:31:36"
 title = "Wizyta w Google"
+tags = [ "życie", "informatyka", "irlandia" ]
+
 +++
 Budzik był nastawiony na 8:30, ale obudziłem się wcześniej. Dzień zaczął się
 deszczowo i niezbyt zachęcająco. Zdecydowanie wolałbym jechać do Google pod

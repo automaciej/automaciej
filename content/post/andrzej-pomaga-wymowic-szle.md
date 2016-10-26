@@ -4,7 +4,7 @@ date = "2014-09-06T19:27:41+01:00"
 draft = false
 title = "O tym jak Andrzej pomaga wymówić szłę"
 description = "To co jest pomiędzy d i rz, jest ciekawe."
-tags = ["język", "opowieść"]
+tags = ["języki", "opowieści"]
 aliases = ["/andrzej-pomaga-wymowic-szle/"]
 +++
 Cały czas walczę z głoską [szwa](https://pl.wikipedia.org/wiki/Szwa) („szła”).

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2003-12-30T08:53:18"
-draft = false
 title = "Planowałem..."
+tags = [ "życie" ]
+
 +++
 ...wstać i być w firmie wcześnie. Nie wyszło. Dlaczego? No... rozsiadłem się
 w domu przed komputerem... przypomniałem sobie że ten nowy overnet jest do bani,

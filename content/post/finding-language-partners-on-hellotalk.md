@@ -1,9 +1,9 @@
 +++
 Categories = ["pt"]
 Description = "Finding language partners on HelloTalk"
-Tags = []
 date = "2016-07-12T14:23:45+01:00"
 title = "Finding language partners on HelloTalk"
+tags = [ "języki" ]
 
 [params]
   language = "pt"

@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-03-31T22:22:07"
-draft = false
 title = "Pracuję, czy nie pracuję?"
+
 +++
 Niedawno przesiadłem się na KDE z tego tylko jednego powodu że dla GNOME nie
 ma aplikacji która potrafiłaby zliczać czas spędzony na każdym z wirtualnych

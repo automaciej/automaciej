@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-01T10:52:45"
-draft = false
 title = "Powinno, trzeba w pracy"
+tags = [ "dywagacje" ]
+
 +++
 * To _powinno_ być tam.  
 * _Trzeba_ to zrobić.  

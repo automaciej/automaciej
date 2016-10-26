@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2013-04-11T17:53:54"
-draft = false
 title = "Wystąpienie z kościoła katolickiego, stan z kwietnia 2013"
+tags = [ "życie", "sceptycyzm" ]
+
 +++
 _Wersja dla zabieganych:_
 
@@ -11,7 +12,7 @@ kościół: Niczego sobie nie zapiszę.
 człowiek: Ale ja proszę! Żądam!  
 kościół: Możesz nam skoczyć, człowieku.  
 człowiek: GIODO, proszę kazać kościołowi mnie wypisać!  
-GIODO: Tia... jest zapis ["i 3"](http://automaciej.jogger.pl/2012/05/22/i-3/)
+GIODO: Tia... jest zapis ["i 3"](/2012/05/22/i-3/)
 a pan jesteś członek.  
 człowiek: Ale ja nie jestem żaden członek!  
 GIODO: Kościele, jest członek czy nie jest członek?  

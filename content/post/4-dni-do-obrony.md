@@ -1,9 +1,10 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-12T09:29:29"
-draft = false
 title = "4 dni do obrony"
+tags = [ "życie" ]
 +++
+
 Zrobiłem w Django
 [sitemap](https://www.google.com/webmasters/tools/docs/en/protocol.html) do
 mojego forum i RSS feed z najnowszymi postami. Nie byłoby w tym nic

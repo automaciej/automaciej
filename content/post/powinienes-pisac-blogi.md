@@ -5,7 +5,7 @@ draft = false
 title = "Steve Yegge: Bloguj"
 description = "Nawet jeżeli nikt nie będzie tego czytał."
 aliases = ["powinienes-pisac-blogi.html"]
-tags = ["tłumaczenie"]
+tags = ["tłumaczenia"]
 menu = ["main"]
 +++
 > Poniższy tekst jest tłumaczeniem wpisu Stevey Yegge, p.t. [„You should write

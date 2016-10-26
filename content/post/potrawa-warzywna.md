@@ -5,7 +5,7 @@ draft = false
 title = "Potrawa warzywna"
 description = "Improwizowana potrawa, którą ktoś mnie kiedyś nauczył"
 aliases = ["potrawa-warzywna.pl.html"]
-tags = ["opowieść"]
+tags = ["opowieści"]
 +++
 Przepisu nauczyła mnie [Margaux](http://www.margauxunddiebanditen.de/). Było to
 podczas krótkiego wyjazdu do Beskidu Żywieckiego. Nie spotkałem jej nigdy

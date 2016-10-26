@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-11-22T06:47:25"
-draft = false
 title = "Zrabianie, c.d."
+tags = [ "życie" ]
+
 +++
 David Allen jest autorem książki „Getting Things Done”. Po (nie całkiem)
 polsku, [zrabianie](http://automaciej.jogger.pl/2007/11/07/zrabianie/). Kiedy

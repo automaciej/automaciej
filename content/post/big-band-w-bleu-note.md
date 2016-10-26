@@ -3,6 +3,8 @@
 date = "2007-07-28T12:43:21"
 draft = false
 title = "Big band w Bleu Note"
+tags = [ "muzyka" ]
+
 +++
 _Bleu Note_ to nie literówka. Dubliński pub z Capel Street wybrał sobie nazwę
 bardzo podobną do legendarnej sieci amerykańskich klubów jazzowych _Blue

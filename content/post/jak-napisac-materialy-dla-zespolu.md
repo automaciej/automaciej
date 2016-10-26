@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2014-09-15T12:14:13"
-draft = false
-title = "Jak napisać materiały dla zespołu"
+title = "Opisałem, jak przygotować materiały dla zespołu"
+tags = [ "muzyka" ]
+
 +++
 L. i ja, czyli piano i bas, stanowimy sporą część sekcji rytmicznej, i
 zdarzało się że proszono nas żebyśmy komuś zaakompaniowali, albo dołączyli do

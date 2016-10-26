@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-12-30T15:19:03"
-draft = false
 title = "Postanowiliśmy zrobić to po cichu"
+tags = [ "sceptycyzm" ]
+
 +++
 Władze stolicy instalują czarodziejskie puszki które mają przeciwdziałać złym
 energiom.

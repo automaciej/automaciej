@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2003-12-23T18:12:19"
 title = "Liczba 146 znów mnie prześladuje"
+tags = [ "że jak?" ]
+
 +++
 Dlaczego błąd był akurat w 146 linii kodu?
 
@@ -11,4 +13,3 @@ jakie jest prawdopodobieństwo, że wybierając liczby na chybił trafił zdarzy
 się takie coś? Jak dla mnie, to będzie jakaś jedna milionowa.
 
 To musiał być ZNAK.
-

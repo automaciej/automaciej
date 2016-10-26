@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-02-26T09:47:26"
 title = "Definicja informacji"
+tags = [ "dywagacje" ]
+
 +++
 _Wpis ten chciałbym zadedykować mojej mamie, która kiedyś chciała porozmawać
 na ten właśnie temat z rozmówcami, którzy srodze ją zawiedli. To jest ważne
