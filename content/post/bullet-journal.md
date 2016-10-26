@@ -83,7 +83,7 @@ listą.
    takich jak np. kupowanie domu.
 *  Z czasem zredukowałem listę miesięczną do około 10 istotnych pozycji.
 
-### Co poszo źle
+### Co poszło źle
 
 *  Mam w zeszycie zapisany szereg istotnych rzeczy, które wciąż nie są zrobione,
    choć powinny.
