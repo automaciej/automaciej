@@ -2,7 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-24T16:23:22"
 title = "Po co mi Windows™?"
-tags = [ "infomatyka", "raptularz" ]
+tags = [ "informatyka", "raptularz" ]
 
 +++
 Po to, żeby sprawdzać dokładnie krok-po-kroku jak się co robi w tym systemie i
