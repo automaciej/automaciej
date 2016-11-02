@@ -27,7 +27,7 @@
 {{ template "_internal/pagination.html" . }}
 
         </div><!-- col-md-8 -->
-        <div><!-- col-md-4 -->
+        <div class="col-md-4"><!-- col-md-4 -->
           <p class="text-muted text-justify">
           &mdash; Słuchaj, myj zęby, bo dwa razy dwa równa się pięć.
           <br />
@@ -35,6 +35,9 @@
           <br />
           &mdash; No wiesz! Dlaczego nie chcesz myć zębów?!
           </p>
+          <strong>Polecane</strong>
+          {{ partial "menu" . }}
+          <strong>Kategorie</strong>
           {{ partial "all-tags.html" . }}
         </div><!-- col-md-4 -->
       </div><!-- row -->

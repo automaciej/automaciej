@@ -15,25 +15,47 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="/about/">O tej stronie</a></li>
-            <li><a href="/nagrania/">Nagrania</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false">Kategorie <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                {{ range $name, $taxonomy := .Site.Taxonomies.tags -}}
+                <li><a href="{{ "/tags/" | relURL }}{{ $name | urlize }}">{{ $name }}
+                  ({{ $taxonomy.Count }})
+                  </a>
+                </li>
+                {{ end }}
+              </ul>
+            </li><!-- dropdown -->
+
+            {{ if not .IsNode }}{{/* Node, (e.g. index.html) doesn't have Prev or Next) */}}
+            {{ if .Prev }}
+            <li>
+              <a href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+            </li>
+            {{ end }}
+
+            {{ if .Next }}
+            <li>
+              <a href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </li>
+            {{ end }}
+            {{ end }}
+
+
+          </ul><!-- nav navbar-nav -->
+          <ul class="nav navbar-nav navbar-right">
             <li><a href="https://twitter.com/automaciej">Twitter</a></li>
             <li><a href="https://plus.google.com/+MaciejBlizi%C5%84ski">Google+</a></li>
             <li><a href="https://automatthias.wordpress.com/">Blog angielski</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                  role="button" aria-haspopup="true" aria-expanded="false">Kategorie <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  {{ range $name, $taxonomy := .Site.Taxonomies.tags -}}
-                  <li><a href="{{ "/tags/" | relURL }}{{ $name | urlize }}">{{ $name }}
-                    ({{ $taxonomy.Count }})
-                    </a>
-                  </li>
-                  {{ end }}
-                </ul>
-              </li>
-          </ul>
+            <li><a href="https://www.facebook.com/automaciej">Facebook</a></li>
+          </ul><!-- navbar-right -->
         </div><!-- /.navbar-collapse -->
       </div><!-- /container-fluid -->
     </nav>

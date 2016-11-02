@@ -10,47 +10,49 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          {{ if .Prev }}
-          <p class="text-left">
-          <a href="{{ .Prev.Permalink }}" class="btn btn-default">« {{ .Prev.Title }} «</a>
-          </p>
-          {{ end }}
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          {{ if .Next }}
-          <p class="text-right">
-          <a href="{{ .Next.Permalink }}" class="btn btn-default">» {{ .Next.Title }} »</a>
-          </p>
-          {{ end }}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8 col-sm-12">
 
 	        <main role="main">
           <article itemscope itemtype="http://schema.org/BlogPosting">
-            <span class="entry-meta content-subhead"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
-            <h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
+            <h1 class="entry-title" itemprop="headline">{{ .Title }}
+              <span class="entry-meta content-subhead"><small>
+                  <time itemprop="datePublished"
+                    datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "January 02, 2006" }}</time></small></span>
+            </h1>
+
             <section itemprop="entry-text">
               {{ .Content }}
             </section>
           </article>
-        </main>
+
+         </main>
         </div><!-- col-md-12 -->
+        <div class="col-md-4 col-sm-12">
+          <strong>Kategorie</strong>
+          {{ partial "all-tags.html" . }}
+        </div><!-- col-md-4 -->
       </div><!-- row -->
       <div class="row">
         <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              {{ partial "share.html" . }}
-            </div><!-- panel-body -->
-          </div><!-- panel -->
+          <div class="well">
+            {{ if .Params.tags }}
+            <ul id="tags" class="list list-unstyled small">
+              {{ range .Params.tags }}
+                <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+            {{ partial "share.html" . }}
+          </div><!-- well -->
+        </div><!-- col-md-12 -->
+      </div><!-- row -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
           {{ partial "disqus-main.html" . }}
           {{ partial "footer.html" . }}
-        </div><!-- row -->
-      </div><!-- col-md-12 -->
+        </div><!-- col-md-8 -->
+      </div><!-- row -->
     </div><!-- container -->
   </body>
 </html>

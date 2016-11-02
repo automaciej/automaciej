@@ -5,7 +5,6 @@ draft = false
 title = "Notacja ABC"
 description = "Tekstowy format reprezentacji zapisu nutowego"
 tags = ["muzyka"]
-menu = ["main"]
 +++
 [Notacja ABC][] istnieje od przynajmniej od 15 lat.  istnieje od przynajmniej od
 15 lat.  Jest to zapis tekstowy, który komputer potrafi wyświetlić w postaci
