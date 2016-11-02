@@ -31,7 +31,6 @@ kiedy piosenkę już wcześnie graliśmy i ją w miarę dobrze znamy. Osoba któ
 piosenki nie zna, z tego zapisu nie zagra.
 
 Dlatego też napisałem [krótki tutorial jak pisać materiały dla
-zespołu](http://maciej.blizinski.pl/jak-napisac-materialy-dla-zespolu/).
-Główna zasada to zapisanie akordów w taktach, żeby było wiadomo kiedy te
-akordy zmieniać, i zapisanie formy, żeby było wiadomo ile razy gramy każdą z
-części.
+zespołu](/jak-napisac-materialy-dla-zespolu/).  Główna zasada to zapisanie
+akordów w taktach, żeby było wiadomo kiedy te akordy zmieniać, i zapisanie
+formy, żeby było wiadomo ile razy gramy każdą z części.
