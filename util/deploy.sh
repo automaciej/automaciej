@@ -11,6 +11,7 @@ helpmsg() {
 
 case "${1:-}" in
   deploy)
+    umask 022
     hugo --cleanDestinationDir
     rsync -p -r --delete public/ "${DEST}"
     ;;
