@@ -11,9 +11,10 @@
     <meta property="og:url"                content="{{ .Permalink }}" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{ .Title }}" />
-    {{ if .Description }}<meta property="og:description" content="{{ .Description }}" />{{ end }}
+    {{ if .Description -}}
+    <meta property="og:description"        content="{{ .Description }}" />
+    {{- end }}
     <!-- <meta property="og:image" content="…" /> -->
-
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     {{ if .Description }}<meta name="description" content="{{ .Description }}">{{ end }}
