@@ -1,10 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-07-02T11:08:03+01:00"
-draft = false
 title = "Steve Yegge: Bloguj"
 description = "Nawet jeżeli nikt nie będzie tego czytał."
-aliases = ["powinienes-pisac-blogi.html"]
+aliases = [ "/2007/07/powinienes-pisac-blogi.html", "/2007/07/powinienes-pisac-blogi/" ]
 tags = ["tłumaczenia"]
 menu = ["main"]
 +++
