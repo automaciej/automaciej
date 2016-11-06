@@ -8,13 +8,14 @@ menu = ["main"]
 +++
 To jest prymitywna strona domowa automaciejowa.
 
-Jak zauważam że się powarzam, to zamiast dalej się powtarzać, piszę tutaj.
+Jak zauważam że się powtarzam, to zamiast dalej się powtarzać, piszę tutaj, raz,
+a dobrze.
 
 Oprócz w tego w internecie mam:
 
 Po polsku:
 
-- [Twitter](https://twitter.com/automaciej) ‒ głupoty z gatunku
+- [@automaciej](https://twitter.com/automaciej) ‒ głupoty z gatunku
   „długo nad tym myślałeś?”
 - [Blog atopowy](http://blog.atopowe.pl) ‒ tylko okazjonalne wpisy
 - [Gitara Jazzowa](http://blizinski.pl) --- książka mojego ojca w formie strony
@@ -22,10 +23,9 @@ Po polsku:
 
 Po angielsku:
 
-- [Twitter](https://twitter.com/automatthias) ‒ linki
-- [Google+](https://plus.google.com/+MaciejBlizi%C5%84ski) ‒ linki
-- [Wordpress](http://automatthias.wordpress.com/) ‒ strona trochę
-  podobna do tej tutaj, tylko po angielsku
+- [@automatthias](https://twitter.com/automatthias) ‒ linki
+- [+MaciejBliziński](https://plus.google.com/+MaciejBlizi%C5%84ski) ‒ linki
+- [Wordpress](http://automatthias.wordpress.com/) ‒ blog po angielsku
 - [github](https://github.com/automatthias) ‒ różne kody źródłowe
 
 Po co mi tyle stron?! A bo ja wiem? …tak wyszło.
