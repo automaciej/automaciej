@@ -2,6 +2,7 @@
 <html lang="pl">
   <head>
     {{ partial "head-section.html" . }}
+    <meta property="og:description"        content="{{ .Site.Params.description }}" />
     <meta name="description" content="{{ .Site.Params.description }}">
     <link rel="alternate" type="application/rss+xml" title="Automaciej" href="http://maciej.blizinski.pl/index.xml" />
     <title>{{ .Title }}</title>
