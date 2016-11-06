@@ -10,7 +10,7 @@ _Tłumaczenie z bloga Skeptico._
 Takie zadano mi pytanie: jak udowodnić niewidomemu, że istnieje fotografia?
 
 Wiedziałem, do czego to zmierza. Rozmawialiśmy o [zdolnościach
-parapsychologicznych](http://automaciej.jogger.pl/2009/02/26/wrodzone-uzdolnienia/).
+parapsychologicznych](/2009/02/26/wrodzone-uzdolnienia/).
 On mocno wierzył w siły nadprzyrodzone, doświadczał ich, i regularnie odwiedzał
 medium. Jego argumentem było to, że ponieważ ja nie doświadczyłem sił
 nadprzyrodzonych, nigdy nie byłbym w stanie uwierzyć w to, co on „wiedział” że
@@ -70,7 +70,7 @@ doszli do wniosku że jest bardzo mało, jeżeli w ogóle, danych potwierdzając
 tę hipotezę?
 
 Co jeżeli magik zaoferował [milion
-dolarów](http://automaciej.jogger.pl/2007/08/18/to-byloby-warte-miliona-dolarow/)
+dolarów](/2007/08/18/to-byloby-warte-miliona-dolarow/)
 dowolnej widzącej osobie, która będzie w stanie przejść test pięciu palców, ale
 nikt tego nie dokonał?
 

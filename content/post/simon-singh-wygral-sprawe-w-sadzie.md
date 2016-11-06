@@ -6,7 +6,7 @@ tags = [ "sceptycyzm" ]
 
 +++
 Ci którzy interesowali się sprawą
-[wytoczoną](http://automaciej.jogger.pl/2009/10/05/tam-london/) Simonowi
+[wytoczoną](/2009/10/05/tam-london/) Simonowi
 Singhowi przez brytyjskie stowarzyszenie kręgarzy (BCA), powinni wiedzieć o co
 chodzi. Simon Singh użył słowa _bogus_ odnośnie „terapii” promowanych przez
 BCA.

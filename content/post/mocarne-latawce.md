@@ -5,7 +5,7 @@ title = "Mocarne latawce"
 tags = [ "zabawki" ]
 
 +++
-[Bumerangi](http://automaciej.jogger.pl/2006/12/02/bumerang/) to bardzo fajna
+[Bumerangi](/2006/12/02/bumerang/) to bardzo fajna
 zabawa, ale mają jedną wadę: są wrażliwe na wiatr. Nic dziwnego, bo w końcu
 lot bumerangu polega na unoszeniu się w powietrzu; jeżeli to powietrze się
 przesuwa, to przesuwa się cała trasa lotu bumerangu. Oczywiście, można starać

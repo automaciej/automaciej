@@ -18,7 +18,7 @@ Commitments](http://www.imdb.com/title/tt0101605/). Był o kilkanaście lat
 starszy, miał już krótkie włosy, ale rozpoznałem go po charakterystycznych
 zębach i sposobie poruszania się kiedy śpiewał. Styl muzyczny był również ten
 sam. W tym samym klubie widziałem na ladzie mleko Łaciate i [spotkałem barmana
-Polaka](http://automaciej.jogger.pl/2007/01/24/wszedzie-polacy/).
+Polaka](/2007/01/24/wszedzie-polacy/).
 
 Po wejściu do Bleu Note w ów poniedziałkowy wieczór, zobaczyłem najmniej
 spodziewany widok: bębny, bas, perkusja, piano, cztery puzony, cztery trąbki i

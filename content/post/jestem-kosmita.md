@@ -6,7 +6,7 @@ tags = [ "raptularz", "że jak?" ]
 
 +++
 Jakiś czas temu [byłem
-zajebisty](http://automaciej.jogger.pl/2005/12/07/jestem-zajebisty/). Dzisiaj
+zajebisty](/2005/12/07/jestem-zajebisty/). Dzisiaj
 przerabiałem spam kosmiczny.
 
 5365940 :: jestes?  

@@ -26,7 +26,7 @@ Dalej jest odniesienie do obrony Sokratesa. Według Platona, Sokrates zauważył
 > być bardzo wysoki. „Jeżeli zabijecie takiego jak ja, zrobicie sobie krzywdę
 > większą niż zrobicie mi”, ponieważ jego rola była rolą gza, „kąsać ludzi
 > i doprowadzać ich do wściekłości, a wszystko to w służbie [poszukiwania
-> prawdy](http://automaciej.jogger.pl/2008/01/08/steven-weinberg-o-prawdzie-i-falszu/).”
+> prawdy](/2008/01/08/steven-weinberg-o-prawdzie-i-falszu/).”
 
 Ja bym dodał jeszcze coś od siebie... nie tylko, że gzy uporczywie drażnią, ale
 również _lubią_ to robić.

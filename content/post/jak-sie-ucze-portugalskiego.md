@@ -5,9 +5,9 @@ title = "Jak się uczę portugalskiego"
 tags = [ "języki" ]
 
 +++
-Niepostrzeżenie [minęło 6 lat](http://automaciej.jogger.pl/2011/05/06/taksista/
+Niepostrzeżenie [minęło 6 lat](/2011/05/06/taksista/
 "Historia z taskówkarką") od kiedy
-[zacząłem](http://automaciej.jogger.pl/2009/08/03/portugalski- lekcja-1/
+[zacząłem](/2009/08/03/portugalski- lekcja-1/
 "Pierwszy wpis o portugalskim" ) się uczyć portugalskiego. Zawsze traktowałem
 i nadal traktuję tę naukę lekko. Jest to pokierowane prostą zasadą: kiedy coś
 jest proste, robi się to częściej. Im trudniejsze, tym rzadziej. Oto, jakie

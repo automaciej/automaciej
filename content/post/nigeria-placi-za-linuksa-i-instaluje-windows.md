@@ -22,7 +22,7 @@ nie o pięniądze tu chodzi, tylko o satysfakcję, a raczej jej brak. I poczucie
 tego, czy zrobiło się coś dobrego. Linux nie będzie używany w Nigerii. Tak samo
 jak mój kod nie będzie używany w UCD. Ale ani ja, ani François nie możemy [nic
 na to
-poradzić](http://automaciej.jogger.pl/2007/03/10/bullying-czyli-znecanie-sie/).
+poradzić](/2007/03/10/bullying-czyli-znecanie-sie/).
 
 UPDATE: Miałem nieaktualne dane, [przekupstwo nie dojdzie do
 skutku](http://linuxnews.pl/microsoft-pokonany-w-nigerii/). Bardzo to miłe.

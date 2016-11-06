@@ -16,7 +16,7 @@ wrażenie trzymania się nóżki.
 pierwszego razu, co?” - przyjaźnie zagaił kolega.
 
 Pytanie uznałem retoryczne i
-[lutowałem](http://automaciej.jogger.pl/2006/09/12/lutowanie/) dalej. Po
+[lutowałem](/2006/09/12/lutowanie/) dalej. Po
 zakończeniu, dzieło wyglądało tak:
 
 ![](http://media.blizinski.pl/images/blog/netra-serial-cable.jpg)

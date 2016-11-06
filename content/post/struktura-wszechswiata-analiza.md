@@ -6,7 +6,7 @@ tags = [ "dywagacje", "sceptycyzm" ]
 
 +++
 Jeżeli udało mi się kogoś
-[przekonać](http://automaciej.jogger.pl/2008/04/01/struktura-wszechswiata-i-my/)
+[przekonać](/2008/04/01/struktura-wszechswiata-i-my/)
 do [teorii inteligentnego
 spadania](http://pl.wikipedia.org/wiki/Teoria_inteligentnego_spadania), jest mi
 bardzo miło, ale to że coś jest miłe, wcale nie oznacza, że koniecznie musi być

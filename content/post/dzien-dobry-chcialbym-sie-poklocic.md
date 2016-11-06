@@ -13,7 +13,7 @@ ale nawet i bez tego widzę jasno że agnostycyzm to zawracanie głowy. Ale nie
 o tym chciałem.
 
 Prowadzenie dyskusji wcale nie jest łatwe. Wymaga znajomości [kultury
-dyskusji](http://automaciej.jogger.pl/2006/04/11/kultura-dyskusji/), silnej
+dyskusji](/2006/04/11/kultura-dyskusji/), silnej
 kultury osobistej i konsekwencji, umiejętności zdefiniowania twierdzeń
 i stanowisk. Bezcenna jest też umiejętność szybkiego wykrywania błędów
 w rozumowaniu i tzw. [czerwonych

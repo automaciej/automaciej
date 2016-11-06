@@ -22,7 +22,7 @@ strachu nie miłujemy. To co robimy ze strachu, to modlitwa: modlimy się o
 chrześcijańskiego miłować ze szczerego serca.
 
 Sprawa sprowadza się do [problemu
-powodowania](http://automaciej.jogger.pl/2012/04/22/gdybym-sie-nie-interesowal-nie-napisalbym-o-tym/).
+powodowania](/2012/04/22/gdybym-sie-nie-interesowal-nie-napisalbym-o-tym/).
 „Miłość ze strachu" to powodowanie w trybie warunku dostatecznego, więc
 wprowadzenie łaski jako dodatkowego warunku, również dostatecznego, zmienia
 sytuację na „strachu równie dobrze mogłoby nie być, bo łaska aby miłować
