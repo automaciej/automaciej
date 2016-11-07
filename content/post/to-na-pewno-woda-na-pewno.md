@@ -2,7 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2013-06-19T01:12:49"
 title = "To na pewno woda, na pewno."
-tags = [ "raptularz" ]
+tags = [ "raptularz", "atopowe", ]
 
 +++
 Śmieszny wątek miałem niedawno na forum atopowym. Do dziś nie wiem, czy mój
