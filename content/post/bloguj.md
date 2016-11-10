@@ -3,23 +3,29 @@
 date = "2007-07-02T11:08:03+01:00"
 title = "Steve Yegge: Bloguj"
 description = "Nawet jeżeli nikt nie będzie tego czytał."
-aliases = [ "/2007/07/powinienes-pisac-blogi.html", "/2007/07/powinienes-pisac-blogi/" ]
+aliases = [
+  "/2007/07/powinienes-pisac-blogi.html",
+  "/2007/07/powinienes-pisac-blogi/",
+  "/powinienes-pisac-blogi.html",
+]
 tags = ["tłumaczenia"]
 menu = ["main"]
 +++
-> Poniższy tekst jest tłumaczeniem wpisu Stevey Yegge, p.t. [„You should write
-> blogs”](http://steve.yegge.googlepages.com/you-should-write-blogs). Duża część
-> angielskiego tekstu jest pisana w drugiej osobie, co w języku polskim prowadzi
-> do trudności z poprawnością polityczną. Postanowiłem więc poświęcić poprawność
-> polityczną, na korzyść wierności przekazu.
+
+_Poniższy tekst jest tłumaczeniem wpisu Stevey Yegge, p.t. [„You should write
+blogs”](http://steve.yegge.googlepages.com/you-should-write-blogs)._
+
+_Duża część angielskiego tekstu jest pisana w drugiej osobie, co w języku
+polskim prowadzi do trudności, bo jak pisać „zajęty”, kiedy czytelnikiem może
+być kobieta?  Spróbowałem różnych rzeczy i na razie zdecydowałem się na pisanie
+w trybie męskim. Sugestie mile widziane!_
 
 Od 10 maja 2004 piszę blog w Amazon.com. W tym czasie zupełnie
 niechcący rozwinąłem swój własny styl blogowania i nauczyłem się jednej
 czy dwóch rzeczy o pisaniu blogów. Pomyślałem że przekażę kilka myśli
 w nadziei że będą dla kogoś użyteczne.
 
-Dlaczego Blogować?
-==================
+## Dlaczego Blogować?
 
 Jest to z pewnością najważniejsza rzecz, którą powiem w swoich blogach:
 Bloguj.
@@ -45,8 +51,7 @@ powiedzą tego porządnie.
 Chciałem więc tu jasno powiedzieć, że żaden z tych powodów nie powinien cię
 powstrzymywać od pisania blogów. Opiszę każdy z nich po kolei.
 
-Powód #1: Jestem zajęty.
-========================
+## Powód #1: Jestem zajęty.
 
 No tak. Wszyscy jesteśmy zbyt zajęci żeby robić rzeczy których nie
 chcemy robić. Jednak już teraz pisanie jest pewną częścią twojej pracy.
@@ -87,8 +92,7 @@ wybaczania.
 choć jednej rzeczy na bloga rocznie, a i to jest lepsze niż nic.  Nie ma też
 prawa które by mówiło że musisz kontynuować raz rozpoczęte blogowanie.
 
-Powód #2: Boję się publikować to co naprawdę myślę.
-===================================================
+## Powód #2: Boję się publikować to co naprawdę myślę.
 
 Wiem, ja też. Mój blog jest zdecydowanie okrojoną wersją.
 
@@ -170,8 +174,7 @@ Koniec końców, twoje opinie są tym, co nadaje smak twojemu pisaniu.
 Ludzie będą szanować cię za dobrze rozważone opinie, nawet jeżeli nie
 będą się z nimi zgadzać.
 
-Powód #3: Nikt nie będzie czytać mojego bloga.
-==============================================
+## Powód #3: Nikt nie będzie czytać mojego bloga.
 
 To akurat prawda. Paradoksalnie, właśnie dlatego blogi są efektywne.
 
@@ -287,8 +290,7 @@ I Todd Stumpf, o ile pamiętam, recenzował go. Todd jest kimś kto lubi
 trzymać się z daleka od reflektorów, ale jego techniczny wpływ jest
 mocno odczuwalny w całej firmie, jak twierdzą ci którzy z nim pracowali.)
 
-Powód #4: Blogowanie to narcyzm.
-================================
+## Powód #4: Blogowanie to narcyzm.
 
 Tia. To na pewno uzasadniona obawa, która mnie często dręczy. Miałem na
 ten temat długą rozmowę z Sunny G., przy piwach na wyprawie
@@ -358,8 +360,7 @@ Jeżeli tak jak ja, czujesz że blogerzy ryzykują wychodzenie na narcyzów,
 to nie oznacza że masz nie pisać! Po prostu rób to porządnie i nie bądź
 narcyzem.
 
-Moje własne blogowanie
-======================
+## Moje własne blogowanie
 
 Okazuje się, że piszę o wiele więcej niż publikuję.
 
@@ -431,8 +432,7 @@ moich niedokończonych esejów żeby zobaczyć czy mogę uruchomić niektóre
 z nich. Myślę że muszę trochę obniżyć poprzeczkę, i po prostu rzucić
 tam te cholerne teksty.
 
-Bardzo bym chciał przeczytać twój blog
-======================================
+## Bardzo bym chciał przeczytać twój blog
 
 Jeżeli o to chodzi, proszę cię o pisanie blogów, bo wiem że masz
 naprawdę interesujące rzeczy do powiedzenia, nawet jeżeli tobie się
@@ -454,7 +454,7 @@ _(Opublikowane 23 stycznia 2005)_
 
 Steve Yegge
 
-źródło:
-[http://steve.yegge.googlepages.com/you-should-write-blogs](http://steve.yegge.googlepages.com/you-should-write-blogs)
+_źródło:
+[http://steve.yegge.googlepages.com/you-should-write-blogs](http://steve.yegge.googlepages.com/you-should-write-blogs)_
 
 _tłumaczenie Maciej Bliziński_
