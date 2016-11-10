@@ -11,7 +11,7 @@ paginate = 10
   twitterName = "automaciej"
   githubName = "automatthias"
   googleplus = "MaciejBliziński"
-  description = "Dwa razy dwa jest pięć więc myj zęby"
+  description = "Dwa razy dwa jest pięć, więc myj zęby! Strona domowa automacieja."
 [taxonomies]
   tag = "tags"
 [permalinks]
