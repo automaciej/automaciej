@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    {{ $paginator := .Paginate .Data.Pages }}
     <meta charset="utf-8">
     {{ partial "head-section.html" . }}
     <meta property="og:description"        content="{{ .Site.Params.description }}" />
@@ -9,7 +10,14 @@
           type="application/rss+xml"
           title="Automaciej"
           href="{{ .Site.RSSLink }}" />
-    <title>{{ .Title }}</title>
+    <link rel="canonical" href="{{ .Site.BaseURL }}{{ $paginator.URL }}" />
+    {{ if $paginator.HasPrev }}<link rel="prev" href="{{ $paginator.Prev.URL }}" />{{ end }}
+    {{ if $paginator.HasNext }}<link rel="next" href="{{ $paginator.Next.URL }}" />{{ end }}
+    <title>
+      {{- .Title }}
+      {{- if ne $paginator.PageNumber 1 }} (strona {{ $paginator.PageNumber }})
+      {{- end -}}
+    </title>
   </head>
   <body>
     {{ partial "navbar.html" . }}
@@ -18,16 +26,18 @@
       <div class="row">
         <div class="col-md-8">
 
-{{ $paginator := .Paginate .Data.Pages }}
-
-{{ range $paginator.Pages }}
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a>
+    {{ range $paginator.Pages }}
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+      <h2><a href="{{ .RelPermalink }}"><span itemprop="name">
+            {{- .Title }}{{ if .Draft }} #Draft{{ end -}}
+          </span></a>
         <span class="entry-meta content-subhead small"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
       </h2>
+      <span itemprop="articleBody">
       {{ .Content }}
+      </span>
     </article>
-{{ end }}
+    {{ end }}
 
 {{ template "_internal/pagination.html" . }}
 
