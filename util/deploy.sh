@@ -13,7 +13,7 @@ case "${1:-}" in
   deploy)
     umask 022
     hugo --cleanDestinationDir
-    rsync -p -r --delete public/ "${DEST}"
+    rsync -a --delete public/ "${DEST}"
     ;;
   test)
     hugo -w -D -F --baseUrl="${HOSTNAME}" server
