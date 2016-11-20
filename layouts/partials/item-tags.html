@@ -1,7 +1,5 @@
 <span class="text-muted">
-{{ if .Params.tags }} [ {{ end }}
 {{ range .Params.tags }}
-  <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="text-muted">{{ . }}</a>
+  <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
 {{ end }}
-{{ if .Params.tags }} ] {{ end }}
 </span>
