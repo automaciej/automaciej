@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -u
 set -e
+set -u
 
 DEST=quinoa:maciej.blizinski.pl
 
@@ -12,7 +12,11 @@ helpmsg() {
 case "${1:-}" in
   deploy)
     umask 022
+    find static -type f -exec chmod 644 {} \;
+    find static -type d -exec chmod 755 {} \;
     hugo --cleanDestinationDir
+    find public -type f -exec chmod 644 {} \;
+    find public -type d -exec chmod 755 {} \;
     rsync -a --delete public/ "${DEST}"
     ;;
   test)
