@@ -4,7 +4,7 @@ date = "2014-09-06T17:56:17+01:00"
 draft = false
 title = "Automaciejowa przygoda z muzyką"
 description = "Kiedyś zajmowałem się muzyką, dziś zostało mi z tego kilka nagrań."
-aliases = ["muzyka.html"]
+aliases = ["/muzyka/"]
 tags = ["muzyka", "opowieści"]
 menu = ["main"]
 +++
