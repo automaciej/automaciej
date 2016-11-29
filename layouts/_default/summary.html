@@ -1,14 +1,17 @@
-<article class="post">
-<header>
-<h2><a href="{{ .Permalink }}">{{ .Title }}</a>
+<h2>
+  <a href="{{ .RelPermalink }}">
+      {{- .Title }}{{ if .Draft }} #Draft{{ end -}}
+  </a>
+  <span class="entry-meta content-subhead small"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
   <small>
     {{ partial "item-tags.html" . }}
   </small>
 </h2>
 <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} &ndash; {{ .FuzzyWordCount }} słów </div>
-</header>
 {{ .Summary }}
-<footer>
-<a href="{{ .Permalink }}"><nobr>Czytaj dalej →</nobr></a>
-</footer>
-</article>
+{{ if .Truncated }}
+<div class="text-right">
+  <a href="{{ .Permalink }}" title="{{ .Title }}"
+     class="btn btn-default btn-sm">czytaj&nbsp;dalej &raquo;</a>
+</div>
+{{ end }}

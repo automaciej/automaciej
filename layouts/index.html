@@ -27,19 +27,7 @@
         <div class="col-md-8">
 
     {{ range $paginator.Pages }}
-		<article itemscope itemtype="http://schema.org/BlogPosting">
-      <h2><a href="{{ .RelPermalink }}"><span itemprop="name">
-            {{- .Title }}{{ if .Draft }} #Draft{{ end -}}
-          </span></a>
-        <span class="entry-meta content-subhead small"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
-        <small>
-          {{ partial "item-tags.html" . }}
-        </small>
-      </h2>
-      <span itemprop="articleBody">
-      {{ .Content }}
-      </span>
-    </article>
+    {{ .Render "summary" }}
     {{ end }}
 
 {{ template "_internal/pagination.html" . }}
