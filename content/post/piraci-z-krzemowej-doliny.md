@@ -10,6 +10,8 @@ roku](http://en.wikipedia.org/wiki/Pirates_of_Silicon_Valley). Moja dziewczyna
 twierdzi że Steve Jobs to palant, pewnie chodzi o kwestię jego pierwszego
 dziecka. Bill Gates za to jest przedstawiony jako lekko psychiczny wypłosz.
 
+<!--more-->
+
 Ci faceci należą do (w moim przypadku nieistniejącego) pokolenia rodziców.
 Żyli w fajnych czasach, kiedy rynek komputerowy nie istniał (przynajmniej w
 takiej formie jak dzisiaj) i dopiero miał zostać utworzony. To tak jakby wtedy

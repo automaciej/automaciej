@@ -13,6 +13,8 @@ się kompensować wpływ wiatru kierunkiem rzutu, można wziąć większy i cię
 bumerang; jednak w Irlandii wieje tak często i tak mocno, że większość dni na
 bumerang się po prostu nie nadaje.
 
+<!--more-->
+
 A może zamiast na wiatr utyskiwać, da się znaleźć rozrywkę w której wiatr,
 miast przeszkadzać, pomaga?
 

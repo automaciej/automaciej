@@ -7,6 +7,8 @@ tags = [ "zrzędzenie" ]
 On pali w łazience... Ale co z tego, kiedy papierosa zapala POZA łazienką i
 zasmradza całe pomieszczenie!
 
+<!--more-->
+
 Atakują mnie fale smrodu... cały dzień
 
 smród smród smród

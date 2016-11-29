@@ -9,6 +9,8 @@ Zrobiłem sobie ten Ex Libris na poczcie przy placu Konstytucji. Bardzo
 wygodnie, wysłałem projekt emailem i następnego dnia odebrałem gotowy stempel,
 który kosztował 40zł. Polecam!
 
+<!--more-->
+
 Nawet zastanawiałem się nad innymi stemplami które mógłbym sobie zrobić, ale
 nic mi nie przychodzi do głowy. Ex Libris to jedyny stempel jakiego
 potrzebuję.

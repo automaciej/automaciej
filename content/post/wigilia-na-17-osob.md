@@ -12,6 +12,8 @@ Wielkanoc](/2006/04/17/sped-rodzinny/trackback/),
 tyle że w innym miejscu. Po ustaleniu składu i podliczeniu wszystkich osób
 wyszło na to że będzie ich siedemnaście.
 
+<!--more-->
+
 Dotychczas na każde Święta każdy kupował prezent każdemu. Było to zupełnie w
 porządku, kiedy przy wigilijnym stole zasiadało sześć do ośmiu osób. Przy
 siedemnastu jednak liczba prezentów (czyli krawędzi w skierowanym grafie

@@ -9,6 +9,8 @@ Jakiś czas temu [byłem
 zajebisty](/2005/12/07/jestem-zajebisty/). Dzisiaj
 przerabiałem spam kosmiczny.
 
+<!--more-->
+
 5365940 :: jestes?  
 Automaciej :: jestem, a tyś kto?  
 5365940 :: ooo to dobrze  

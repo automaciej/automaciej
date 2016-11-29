@@ -9,6 +9,8 @@ Joga, rzeczownik:
   
 > Sformalizowane przeciąganie się.
 
+<!--more-->
+
 # Komentarze
 
 * Ja-Joanna (2005-11-25 13:22:29): <p>Hahaha!</p>

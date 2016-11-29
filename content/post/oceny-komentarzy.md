@@ -9,6 +9,8 @@ Ja:
 „Pomysł jest zaczerpnięty z digg.com; tutaj jest obiekt, tu się go ocenia, a
 tutaj są komentarze. Komentarze też się ocenia.”
 
+<!--more-->
+
 Moja dziewczyna:  
 „A czy oceny komentarzy też się ocenia?”
 

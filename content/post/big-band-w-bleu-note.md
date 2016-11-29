@@ -10,6 +10,8 @@ _Bleu Note_ to nie literówka. Dubliński pub z Capel Street wybrał sobie nazw�
 bardzo podobną do legendarnej sieci amerykańskich klubów jazzowych _Blue
 Note_.
 
+<!--more-->
+
 Któregoś poniedziałkowego wieczoru chodziliśmy ze znajomą z Polski po mieście
 i szukaliśmy jakiegoś sympatycznego miejsca żeby napić się Guinnessa.
 Przypomniałem sobie ten jazzowy klub w którym widziałem na scenie tego samego,

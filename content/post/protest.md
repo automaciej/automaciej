@@ -10,6 +10,8 @@ Wczoraj byłem na proteście przed parlamentem irlandzkim. Skandowałem „tchó
 
 ![Protest pod parlamentem](http://media.blizinski.pl/images/blog/2012/savita-protest.jpg)
 
+<!--more-->
+
 ...po tym, kiedy parlament odrzucił tymczasową ustawę wykonawczą o aborcji.
 
 Problem z prawodawstwem jest taki, że co prawda istnieje zapis w konstytucji,

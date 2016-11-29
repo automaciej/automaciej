@@ -8,6 +8,8 @@ tags = [ "raptularz" ]
 Egzaminy odbyte, wyniki nieznane. Teraz pozostało mi przygotować laptopa do
 pobytu w szpitalu. Właśnie kompiluję subversion.  
   
+<!--more-->
+
 Zastanawiam się co mogę wziąć. Komórka z ładowarką? Słuchawki? Stevensa? Jeden
 tomy czy dwa? Cormena? To będą dwie albo trzy cegły... jak by mnie kto napadł,
 będę mial się czym bronić.  

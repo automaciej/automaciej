@@ -7,6 +7,8 @@ tags = [ "że jak?" ]
 +++
 Dlaczego błąd był akurat w 146 linii kodu?
 
+<!--more-->
+
 Jakie było prawdopodobieństwo, że przy wygenerowanym kluczu RSA (1189, 81),
 wylosowana liczba 146 po zaszyfrowaniu (146^81mod1189) wynosi 146? To znaczy,
 jakie jest prawdopodobieństwo, że wybierając liczby na chybił trafił zdarzyło

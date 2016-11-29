@@ -8,6 +8,8 @@ tags = [ "sceptycyzm" ]
 _[Stare newsy, ale jare](http://www.randi.org/joom/content/view/144/1/#i4),
 zostały jeszcze 22 miesiące._
 
+<!--more-->
+
 > Było to 6 marca 1998, kiedy wyzwanie na milion dolarów przez JREF zostało
 > powołane do życia. To było dziesięć lat temu. Zawsze była to prosta sprawa:
 > zrób to, co mówisz że potrafisz paranormalnego i weź nagrodę. Spodziewaliśmy

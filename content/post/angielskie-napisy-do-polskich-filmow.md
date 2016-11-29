@@ -7,6 +7,7 @@ tags = [ "języki" ]
 Podczas ostatniej wizyty w Polsce szukałem płyt DVD z polskimi filmami, które
 mógłbym mieć na półce w razie gdyby ktoś z kolegów zapytał się o polskie kino.
 Szukałem przede wszystkim w Empiku, który ma cały dział z polskim kinem.
+<!--more-->
 Szukałem filmu który:
 
   * Jest polskim filmem

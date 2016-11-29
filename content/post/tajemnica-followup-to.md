@@ -8,6 +8,8 @@ tags = [ "informatyka" ]
 W końcu dogadałem się z człowiekiem na tyle, że usunąłem swój post z
 pl.soc.prawo, a on swój z pl.comp.nowe-programy.
 
+<!--more-->
+
 Śmieszne było to, jak myślał że pisze na pl.soc.prawo, wysyłająć wiadomości na
 pl.comp.nowe-programy. Najpierw "ten post przypadkowo wylądował na tej
 grupie". "Poprzedni post miał iść na pl.soc.prawo"… Widocznie kolega nie

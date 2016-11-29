@@ -8,6 +8,8 @@ tags = [ "sceptycyzm" ]
 Wciąż są na Ziemi ludzie, którzy uważają, że jest ona płaska. [To nie
 żart!](http://pl.wikipedia.org/wiki/Towarzystwo_P%C5%82askiej_Ziemi)
 
+<!--more-->
+
 To, że Ziemia ma kulisty kształt jest, okazuje się, wciąż sprawą
 kontrowersyjną. Mamy bardzo wiele dowodów na to, że Ziemia jest w istocie
 płaska. Nawet lecąc samolotem nie widać za bardzo krzywizny. (Być może tylko

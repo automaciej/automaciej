@@ -10,3 +10,4 @@ w domu przed komputerem... przypomniałem sobie że ten nowy overnet jest do ban
 więc zacząłem szukać tego starszego. Odpisałem Michałowi, co robić dalej z tym
 krnąbrnym Auroxem. Poszukałem linku ed2k do tego filmu "Insider"... i tak mi
 miło upłynął czas. No cóż. Pewnie wieczorem zostanę dłużej.
+<!--more-->

@@ -19,6 +19,8 @@ Oi! Você deve estar aqui porque eu te mandei um link para esta página no
 HelloTalk. Estou recebendo muitas mensagens, e não estou conseguindo responder
 a todos. Desculpem-me!
 
+<!--more-->
+
 ### Why? Porquê?
 
 There is an imbalance in the HelloTalk community. Lots of Brazilians and others

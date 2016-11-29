@@ -7,7 +7,7 @@ tags = [ "życie", "informatyka" ]
 +++
 W Polsce cały czas jest całkiem spora ilość moich rzeczy i staram się powoli z
 nimi rozprawiać. Aktualnie wystawiam na Allegro książki, głównie
-informatyczne. Przy tej okazji nawiązał się w domu taki dialog:
+informatyczne. <!--more-->Przy tej okazji nawiązał się w domu taki dialog:
 
 \- Wystawiam wszystko za złotówkę, nie chodzi mi o to żeby dostawać kasę z
 powrotem. Jeżeli spędzam czas nad tymi aukcjami, to tylko po to, żeby książki

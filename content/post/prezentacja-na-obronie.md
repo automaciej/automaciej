@@ -9,6 +9,8 @@ Miałem dość długi okres pomiędzy złożeniem i obroną: dwa i pół miesią
 Dziekanat mówił że powinno być dwa tygodnie. Przez ten czas prawie
 zapomniałem, o czym napisałem pracę.
 
+<!--more-->
+
 Z początku zżymałem się że dają tylko 10 minut na prezentację ― a tak właśnie
 mi powiedział promotor. Jak powyrzucałem mniej ważne slajdy z prezentacji, to
 te które zostały przestały się w ogóle łączyć ze sobą i musiałem prezentację

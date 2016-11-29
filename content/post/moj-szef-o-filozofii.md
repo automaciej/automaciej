@@ -7,8 +7,11 @@ tags = [ "opowieści" ]
 +++
 Czasami ktoś coś powie, i to mi utkwi w głowie na amen. I nie mam pojęcia,
 dlaczego. Na przykład niedawno mój szef opowiadał o kursach filozofii które
-sobie wziął na studiach jako dodatek do kursów programowania. W pewnym
-momencie powiedział coś takiego:
+sobie wziął na studiach jako dodatek do kursów programowania.
+
+<!--more-->
+
+W pewnym momencie powiedział coś takiego:
 
 > Filozofia jest jak informatyka, tylko że łatwiejsza, bo nie ma kompilatora.
 

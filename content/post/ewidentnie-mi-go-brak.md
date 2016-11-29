@@ -13,6 +13,8 @@ słabsze (gorsze). Również, mimo tego że jest czymś namacalnym, ma subiektyw
 charakter. Ta sama rzecz może być dla jednej osoby _evidence_, a dla drugiej
 nie.
 
+<!--more-->
+
 Niezłym słowem mogłoby być „świadectwo”, gdyby nie to, że jest przede
 wszystkim używane w odniesieniu do świadectw szkolnych. Jeżeli już używa się
 słowa „świadectwo” w jakimś innym znaczeniu, to w chyba tylko kościele. Nie za

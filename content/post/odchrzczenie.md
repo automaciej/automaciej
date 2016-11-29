@@ -11,6 +11,8 @@ wcale im się to symboliczne znaczenie nie podoba. W Wielkiej Brytanii można
 zdobyć [samozwańczy certyfikat odchrzczenia
 się](http://www.secularism.org.uk/debaptism.html).
 
+<!--more-->
+
 > Ja, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, poddana/y chrześcijańskiemu
 > obrzędowi chrzestu w okresie niemowlęcym (przed osiągnięciem wieku
 > odpowiedniego do podejmowania decyzji), niniejszym odwołuję i cofam wszelkie

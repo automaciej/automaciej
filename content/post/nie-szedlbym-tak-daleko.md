@@ -10,6 +10,8 @@ humanistycznym. Rozmawialiśmy na temat teorii ewolucji i atakach pod jej
 adresem. Zgadzaliśmy się w większości punktów. W pewnym momencie powiedział
 coś, co zapadło mi w pamięć.
 
+<!--more-->
+
 „...ale żeby stwierdzić, że nie ma nic ponad to, co można zbadać i
 udowodnić... ja nie szedłbym aż tak daleko.”
 

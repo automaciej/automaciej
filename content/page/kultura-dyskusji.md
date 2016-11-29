@@ -8,6 +8,7 @@ tags = [ "dywagacje" ]
 +++
 Liceum, zażarte dyskusje, klasa podzielona na obozy, chwyty poniżej pasa.
 Prowadziło to donikąd. W końcu doszliśmy do wniosku że wszyscy na tym tracą.
+<!--more-->
 Więc:
 
 * **Ustalenie tezy** ‒ dowiedz się od drugiej strony, jakiej dokładnie tezy

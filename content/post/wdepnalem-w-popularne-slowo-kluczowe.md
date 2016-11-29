@@ -11,6 +11,8 @@ zobaczyłem w swojej skrzynce pocztowej:
 
 [![](http://media.blizinski.pl/images/blog/2009/twitter-storm-3.png-440px.jpg)](http://media.blizinski.pl/images/blog/2009/twitter-storm-3.png)
 
+<!--more-->
+
 Najwyraźniej wdepnąłem w jakieś popularne słowo kluczowe. Nie jestem tylko
 pewien, czy słowem tym był „atheism”, czy może „god”. Patrząc po imionach --
 Gabriel, Samuel -- obawiam się, że to raczej drugie.

@@ -22,6 +22,8 @@ Po portugalsku („ó” się wymawia jak polskie „o”):
 
 „Aqui está, ó!”
 
+<!--more-->
+
 ### …ął
 
 Kiedy mówimy że ktoś coś zrobił, czasownik kończy się na „ął”:

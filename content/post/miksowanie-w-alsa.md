@@ -9,7 +9,11 @@ Dopiero wczoraj wpadłem na opis wtyczki
 [dmix](http://alsa.opensrc.org/index.php?page=DmixPlugin) do sterowników
 dźwięku ALSA. Wtyczka potrafi miksować wyjście z wielu programów
 korzystających z wyjścia dźwiękowego i odgrywać je na pojedynczym urządzeniu
-dźwiękowym. W 1.0.9rc2 podobno dmix jest włączony na stałe dla wszystkich kart
+dźwiękowym.
+
+<!--more-->
+
+W 1.0.9rc2 podobno dmix jest włączony na stałe dla wszystkich kart
 które nie obsługują miksowania sprzętowego.  
 Brzmi pięknie, ale u mnie nie jest różowo. Wpisałem co trzeba do ~/.asoundrc i
 przy próbie odtwarzania programy zachowują się dość dziwnie. Na przykład:

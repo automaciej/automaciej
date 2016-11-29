@@ -7,6 +7,8 @@ tags = [ "raptularz" ]
 +++
 Jeżeli tylko zorganizuję sobie rower to jadę.
 
+<!--more-->
+
 # Komentarze
 
 * Automaciej (2012-04-27 09:45:01): <a

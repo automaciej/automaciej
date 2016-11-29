@@ -10,3 +10,4 @@ jakie rzeczy mam sobie kłaść na kanapce podczas kolacji. Wreszcie mogę kła�
 się i wstawać, kiedy mi się podoba.  
   
 No i wreszcie &mdash; znów mam dostęp przez stałe łącze.
+<!--more-->

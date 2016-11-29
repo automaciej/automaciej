@@ -12,6 +12,8 @@ Kazimierz przeciągnął się i powiedział:
 Acha! -- pomyśleli -- Jeżeli lody nie są zjedzone, to znaczy że zamiast czytać
 książkę, poszedł na miasto. Lodów nie było, więc musiał je zjeść czytając.
 
+<!--more-->
+
 Okazało się, że Kazimierz po opróżnieniu lodówki ubrał się i wyszedł, a na
 książkę nawet nie spojrzał. Mało tego, po powrocie twierdził, że mówił prawdę.
 

@@ -8,6 +8,8 @@ tags = [ "irlandia", "opowieści" ]
 W zeszły piątek L. zabrała mnie na spektakl _The Crucible_ w wykonaniu
 licealistów ze szkoły Newpark.
 
+<!--more-->
+
 Ze szkolnymi inicjatywami różnie bywa, więc początkowo byłem niezbyt
 przekonany, ale kiedy dowiedziałem się że udział w sztuce nie był obowiązkowy,
 że grali tam tylko ci którzy _chcieli_ grać, stwierdziłem że powinno być do

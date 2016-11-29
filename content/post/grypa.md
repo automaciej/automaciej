@@ -8,6 +8,8 @@ tags = [ "raptularz", "opowieści" ]
 Ból głowy. Poczucie ogólnego osłabienia. Ból mięśni pomimo braku większego
 wysiłku w ostatnich dniach.
 
+<!--more-->
+
 ![Wirus grypy](http://media.blizinski.pl/images/blog/2013/wirus-grypy.png)
 
 _„Nadchodzi sezon zachorowań na grypę. Kiedy jesteś chory, nie przychodź do

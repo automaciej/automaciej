@@ -9,9 +9,12 @@ Państwo dopłaca do leczenia
 [cyklosporyną](http://www.atopowe-zapalenie.pl/zapalenie/Cyklosporyna)
 i [kortykosterydami](http://www.atopowe-zapalenie.pl/zapalenie/Kortykosterydy).
 W czasie stosowania cyklosporyny istnieje duże ryzyko zniszczenia nerek,
-nowotworu skóry oraz innych powikłań.  Zaników skóry w zgięciach rąk, nóg i na
-szyi, spowodowanych sterydami nic nie cofnie - pomijając, ryzyko wystąpienia
-cukrzycy, osteoporozy, zaćmy i nadwagi.
+nowotworu skóry oraz innych powikłań.
+
+<!--more-->
+
+Zaników skóry w zgięciach rąk, nóg i na szyi, spowodowanych sterydami nic nie
+cofnie - pomijając, ryzyko wystąpienia cukrzycy, osteoporozy, zaćmy i nadwagi.
 [Protopic](http://www.atopowe-zapalenie.pl/zapalenie/Protopic) jest alternatywą,
 ale chyba tylko dla wybranych (z dużymi pieniędzmi, albo słabym azs). Gdybym
 chciał się leczyć Protopikiem, musiałbym wydawać miesięcznie 3 tys zł. A tak, to

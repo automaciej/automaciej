@@ -11,6 +11,8 @@ aliases = ["aikido.html", "git-bzr.pl.html",
 +++
 Te podstrony zostały usunięte:
 
+<!--more-->
+
 - Elementarz Aikido
 - Git i Bazaar
 - Harmonia Jazzowa

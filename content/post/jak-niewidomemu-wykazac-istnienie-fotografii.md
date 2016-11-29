@@ -9,6 +9,8 @@ _Tłumaczenie z bloga Skeptico._
 
 Takie zadano mi pytanie: jak udowodnić niewidomemu, że istnieje fotografia?
 
+<!--more-->
+
 Wiedziałem, do czego to zmierza. Rozmawialiśmy o [zdolnościach
 parapsychologicznych](/2009/02/26/wrodzone-uzdolnienia/).
 On mocno wierzył w siły nadprzyrodzone, doświadczał ich, i regularnie odwiedzał

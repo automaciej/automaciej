@@ -13,6 +13,8 @@ wymówić. Ostatnim razem [opisywałem jak można ją przybliżyć mieszając �
 i „a”](/2011/07/16/angielska-wymowa-bus-boss-bass/).
 Dziś znalazłem inną drogę do tego samego celu.
 
+<!--more-->
+
 Dajmy na to, że chcemy wytłumaczyć anglojęzycznej osobie jak wymówić imię Andrzej.
 
 > my: „Say Andjey”  

@@ -11,6 +11,8 @@ tags = [ "zrzędzenie" ]
 
 Jestem już inny niż byłem, dajmy na to, 10 lat temu.
 
+<!--more-->
+
 Zajrzałem na google+owe community pythonowe. Zobaczyłem najpierw kilka postów
 z linkami do bibliotek i artykułów, a niedługo potem coś w tym stylu:
 

@@ -10,6 +10,8 @@ deszczowo i niezbyt zachęcająco. Zdecydowanie wolałbym jechać do Google pod
 niebieskim niebem, z ewentualnymi cumulusami tu i ówdzie, ale skoro inaczej
 się nie da, trudno, pojadę i w deszczu. Taksówką.
 
+<!--more-->
+
 Ostatnio staram się rozmawiać z ludźmi, dowolnymi. Niektórzy myślą że jest to
 coś co „albo się ma albo nie”, że albo się umie nawiązywać kontakty, albo nie.
 Stwierdziłem że jest to umiejętność jak każda inna i postanowiłem ją

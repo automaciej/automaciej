@@ -10,6 +10,8 @@ Macierzy, a jedyną możliwością jest Neostrada. Podobno idą obok linie Netii
 ale dzwoniłem do nich i twierdzili że nie mają tu warunków technicznych
 (technologii miedzianej...?).
 
+<!--more-->
+
 Instalacja linii telefonicznej od &amp;TP odbyła się w tydzień po przyjęciu
 zgłoszenia. Jeszcze tego samego dnia przyniosłem do domu pudełko z modemem i
 musiałem tylko czekać na podłączenie w centrali.

@@ -10,3 +10,4 @@ Babcia, _rz._
 
 Osoba, która dowolny przedmiot z widocznym obracającym się elementem nazywa
 „kręciołkiem”.
+<!--more-->

@@ -11,3 +11,4 @@ pofatygowałem się po paczkę (bo do domu nie dostarczyli) z modemem. Mamy
 siódmego marca, co czyni 7 tygodni od zamówienia.
 
 W TPSA (w 2005) załatwiłem podobną sprawę w tydzień, czyli 7 razy szybciej.
+<!--more-->

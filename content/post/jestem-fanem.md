@@ -7,6 +7,9 @@ tags = [ "raptularz", "muzyka" ]
 +++
 Zajrzałem dzisiaj na [swój profil na
 last.fm](http://www.last.fm/user/automaciej/) żeby zobaczyć, czyim jestem fanem.
+
+<!--more-->
+
 No i okazuje się, że faktycznie jest kilku takich artystów gdzie wdrapałem się
 do pierwszej piątki: [Andreas
 Vollenweider](http://www.last.fm/music/Andreas+Vollenweider) (2 miejsce),

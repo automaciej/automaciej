@@ -10,6 +10,8 @@ angielskiego](/2007/11/24/ale-to-jest-po-angielsku/).  Ale angielski to nie
 wszystko, jest przecież cała masa innych języków. Czy warto się ich uczyć?
 Jeżeli tak, to których?
 
+<!--more-->
+
 W moim liceum klasy były profilowane językowo. Mieliśmy tam dwie klasy
 angielskie, jedną francuską i jedną niemiecką. Ja byłem w niemieckiej, co w
 praktyce oznaczało sześć godzin lekcji tego języka tygodniowo. Moja motywacja

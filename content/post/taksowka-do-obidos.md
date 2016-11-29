@@ -19,6 +19,8 @@ Europie. W Portugalii ruch drogowy jest prawostronny, więc autobusy odjeżdżaj
 w naszym kierunku powinny odjeżdżać właśnie z tego miejsca, w którym nie miałbym
 najmniejszej ochoty czekać.
 
+<!--more-->
+
 Był to ostatni dzień wyjazdu. Postanowiliśmy, że oprócz nauki surfingu w Peniche
 zrobimy coś więcej, na przykład odwiedzimy mury uroczego średniowiecznego
 miasteczka.

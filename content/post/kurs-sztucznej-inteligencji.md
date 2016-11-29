@@ -12,6 +12,8 @@ agent który próbuje się dźgnąć widelcem w oko, ale mu się to nie udaje ze
 względu na środowisko, [jest](http://www.youtube.com/watch?v=wBXnAxDpGxA)
 agentem racjonalnym. Kto by pomyślał.
 
+<!--more-->
+
 Tymczasem praca domowa numer 6 jest już za pasem, a w niej gry, teoria gier, i
 zaawansowane planowanie.
 

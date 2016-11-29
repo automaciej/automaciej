@@ -16,6 +16,8 @@ Posprzątałem biurko i pokój.
 
 Nie przeczytałem ani linijki o statystyce.
 
+<!--more-->
+
 To trwa trochę za długo. Złożyłem pracę piątego października. Miało być dwa
 tygodnie na recenzję i dwa tygodnie na termin obrony, razem cztery. A jest dwa
 i pół miesiąca.

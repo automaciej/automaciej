@@ -12,6 +12,8 @@ starymi czasami można zapomnieć, że teraz też są stare czasy! Pomyślcie ty
 komputer z gigabajtem ramu. Ba, że kiedyś w ogóle się podawało ilość RAMu w
 gigabajtach! I tak dalej.
 
+<!--more-->
+
 Tak, teraz też są stare czasy, na przykład w Internecie są, aż śmieszne kiedy
 się o tym pomyśli, tylko 4 miliardy adresów. Jest to tak żałośnie mało, że
 podłączając swój dom do internetu dostaje się zaledwie _jeden_ adres, a

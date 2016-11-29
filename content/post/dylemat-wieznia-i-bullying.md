@@ -12,6 +12,8 @@ zysk-zysk oraz strata-strata. Dylemat więźnia nie ma zastosowania do sytuacji
 typu targowanie się, gdzie zysk jednej strony oznacza stratę drugiej; opisuje
 on raczej sytuację w której gracze tworzą zespół i pracują razem.
 
+<!--more-->
+
 Jednym z głównym elementów dylematu więźnia są cztery poziomy wypłat,
 ustawione w taki sposób, że największy zysk osiąga się „wrabiając” drugą
 stronę.

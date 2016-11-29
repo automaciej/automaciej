@@ -8,6 +8,9 @@ tags = [ "raptularz" ]
 Niedawno przesiadłem się na KDE z tego tylko jednego powodu że dla GNOME nie
 ma aplikacji która potrafiłaby zliczać czas spędzony na każdym z wirtualnych
 pulpitów. To jest kolejny krok na drodze zmniejszania entropii w moim życiu.
+
+<!--more-->
+
 Karm spisuje się znakomicie. Jeden pulpit jest przeznaczony na pracę, drugi na
 magisterkę a pozostałe dwa na slashdot i inne formy marnowania czasu. Po
 wykryciu bezczynności Karm pyta, czy okres bezczynności ma być policzony czy

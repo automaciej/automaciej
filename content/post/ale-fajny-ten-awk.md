@@ -6,6 +6,7 @@ tags = [ "informatyka", "raptularz" ]
 
 +++
 Dzisiejszy skrypt który miałem napisać zmusił mnie do zapoznania się z awk.
+<!--more-->
 Nie wiedziałem że to takie fajne narzędzie! To co w czystym shellu trzeba by
 oprogramować w dość upierdliwy sposób, tutaj załatwia się jedną linijką.
 Baaardzo sympatyczna rzecz. :-)

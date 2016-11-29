@@ -5,12 +5,14 @@ tags = [ "życie" ]
 
 +++
 
-Od stycznia 2015 prowadzę [Bullet Journal][1] („bujo” / budżo), notes do spraw
+Od stycznia 2015 prowadzę [Bullet Journal][1], notes do spraw
 organizacyjnych.
 
 O ile w obecnie jestem z niego niezwykle zadowolony, to na początku wcale nie
 było ani szczególnie dobrze, ani łatwo. Nie z winy systemu, tylko mojej, bo
 musiałem się oduczyć złych nawyków, i zmienić podejście do paru spraw.
+
+<!--more-->
 
 Na początku zabrałem się na zapisywanie wszystkiego co mam do zrobienia, lub co
 chciałbym zrobić. Lista urosła mi do jakichś 200 pozycji. Realizowanie punktów z
@@ -23,7 +25,7 @@ rozwiązać.
 Instrukcję bujo można sobie zobaczyć na stronie w postaci 4-minutowego filmiku,
 więc tylko napiszę moje osobiste wrażenia.
 
-![Zdjęcie zeszytu z napisem "Bullet Journal"][bujo]
+![Zdjęcie zeszytu z napisem "Bullet Journal"][bujo-img]
 
 Na początku zapisywałem wszystko niby zgodnie z instrukcją, ale trochę jak
 popadło, i wszystko co przychodziło mi do głowy lądowało w logu dziennym.
@@ -118,4 +120,4 @@ idzie.
 
 [1]: http://bulletjournal.com "Bullet Journal"
 [2]: https://play.google.com/store/apps/details?id=com.AT.PomodoroTimer "Brain Focus"
-[bujo]: /images/2016/bujo-notebook.jpg "Bullet Journal"
+[bujo-img]: /images/2016/bujo-notebook.jpg "Bullet Journal"

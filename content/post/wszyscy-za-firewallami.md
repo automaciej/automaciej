@@ -11,6 +11,8 @@ z tego, że nie ma połączeń peer-to-peer, nie ma wymiany plików, nie ma
 bezpośrednich połączeń między komputerami. Używanie Internetu to czytanie
 stron internetowych i sprawdzanie poczty, koniec kropka.
 
+<!--more-->
+
 Uderzyło mnie to, kiedy przeprowadziłem się do nowego miejsca w czasie studiów
 za granicą. Podłączyłem laptopa do gniazdka ethernetowego w ścianie,
 sprawdziłem pocztę i poczytałem Slashdot.

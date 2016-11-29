@@ -10,6 +10,8 @@ długa i nie warto spać dłużej niż 3 godziny. I to bardzo dobrze, bo następ
 dnia cały dzień się ziewa. A intensywne ziewanie pomaga wyrównywać ciśnienie w
 uszach podczas startu i lądowania.
 
+<!--more-->
+
 # Komentarze
 
 * Ja-Joanna (2006-03-24 16:53:22): <p>Aaa... samolotem leciałeś! To dlatego tak

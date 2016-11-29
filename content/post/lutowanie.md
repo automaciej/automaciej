@@ -10,6 +10,8 @@ potrzebowałem coś zlutować. Na przykład chciałem użyć dodatkowych dwóch 
 głośników, tak aby grały _różnicę_ pomiędzy prawym i lewym kanałem w
 nagraniach stereo.
 
+<!--more-->
+
 Ale to lutowanie jakoś nigdy mi nie szło... cyna się nie trzymała metalu, po
 zlutowaniu zaraz się rozłaziło. Czyściłem końcówki kabli, rozgrzewałem
 lutownicę, próbowałem jeszcze raz, i jeszcze raz i jeszcze raz...

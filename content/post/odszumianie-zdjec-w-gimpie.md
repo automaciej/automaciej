@@ -8,6 +8,8 @@ Filtr „Selective Gaussian Blur” bardzo dobrze nadaje się do odszumiania
 fotografii cyfrowych. Przynajmniej dla moich amatorskich celów. Brakowało mi
 tylko prostej instrukcji, jak ustawić parametry? Dzisiaj to wypracowałem.
 
+<!--more-->
+
   1. Wczytujemy zdjęcie.
   2. Idziemy do: filtry → rozmycie → selektywne rozmycie Gaussa. Pokazuje się
      okienko dialogowe.

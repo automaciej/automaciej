@@ -11,6 +11,8 @@ opisem samego aparatu oraz sposobu jego używania pod Linuksem. Na jesieni ani
 w zimie nie będę raczej robił większej ilości zdjęć, ale lato 2006 chciałbym
 rozpocząć z bojową lustrzanką w ręku.  
 
+<!--more-->
+
 Żeby było śmieszniej, planuję również kupić jakiś instrument klawiszowy,
 najlepiej coś w stylu "pianina" elektronicznego. Nie musi mieć odjazdowych
 brzmień, bo i tak podłączę go do swojego pingwina i będę używał barw z

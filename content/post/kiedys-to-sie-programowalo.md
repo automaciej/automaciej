@@ -9,6 +9,8 @@ tags = [ "informatyka "]
 Pamiętam że nawet kiedy jedynym językiem jaki znałem był Sinclair Basic,
 numerowanie linii wydawało mi się dziwnym pomysłem.
 
+<!--more-->
+
     10 PRINT "Hello, World!"
     20 GOTO 10
 

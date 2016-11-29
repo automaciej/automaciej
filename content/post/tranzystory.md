@@ -5,8 +5,9 @@ draft = true
 title = "Tranzystory"
 description = "Panicznie oglądali się po sobie"
 tags = [ "opowieści" ]
-+++
 
++++
 Kiedyś spowodowałem, że wszyscy w grupie panicznie patrzyli po sobie nawzajem,
 nie wiedząc, która z odpowiedzi może wpędzić ich w jeszcze gorsze kłopoty.
 Był to jeden z ważniejszych momentów w mojej karierze studenta.
+<!--more-->

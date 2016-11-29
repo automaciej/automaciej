@@ -14,6 +14,8 @@ konfiguracji. Chcąc się rozprawić z tym przesądem, i wyjaśnić, że:
 
 **Można pisać polskie litery w anglojęzycznym systemie Windows!**
 
+<!--more-->
+
 _(Jeżeli ktoś potrafi krótko opisać jak to się robi, będę wdzięczny.
 Prawdopodobnie prawoklik na małą klawiaturkę w rogu, albo coś przez Panel
 Sterowania.)_

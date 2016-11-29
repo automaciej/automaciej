@@ -10,6 +10,8 @@ Vollenweidera](http://en.wikipedia.org/wiki/Andreas_Vollenweider), w lecie
 [Incognito](http://www.incognito.org.uk/) (które notabene dzisiaj gra w
 Warszawie, w [Fabryce Trzciny](http://www.fabrykatrzciny.pl/)).
 
+<!--more-->
+
 Właściciel mieszkania które wynajmuję, zostawił starą wieżę SONY z dwoma
 głośnikami. Strasznie jadą środkiem i dołem, ale lepsze to niż nic. Trochę
 pokręciłem kurkami w odtwarzaczu i stwierdziłem da się słuchać. A potem się

@@ -5,13 +5,14 @@ title = "Poprawki do polskiej klawiatury po 6 latach"
 tags = [ "informatyka" ]
 
 +++
+
 6 lat zajęło wprowadzenie poprawej do polskiej klawiatury [zgłoszonych przez
-Marka Madeja](https://bugs.freedesktop.org/show_bug.cgi?id=5981). Ostateczna
-łata, autorstwa Michała Górnego, została włączona do repozytorium kodu [we
-wrześniu 2012
-roku](http://cgit.freedesktop.org/xkeyboard-config/commit/?id=714b53463acdbe1d73b9dc793c313622f2a255dd),
-więc w końcu będziemy mieli domyślną klawiaturę ze znakiem euro i polskimi
-cudzysłowami drukarskimi.
+Marka Madeja][zgloszenie]. Ostateczna łata, autorstwa Michała Górnego, została
+włączona do repozytorium kodu [we wrześniu 2012 roku][poprawki]), więc w końcu
+będziemy mieli domyślną klawiaturę ze znakiem euro i polskimi cudzysłowami
+drukarskimi.
+
+<!--more-->
 
 # Komentarze
 
@@ -28,3 +29,6 @@ cudzysłowami drukarskimi.
   tyle:</p>    <p><a
   href="http://antoszka.pl/plantoni">http://antoszka.pl/plantoni</a></p>
 * DTJ (2013-01-04 23:12:23): <p>To ten sam Górny co kiedyś na joggerze?</p>
+
+[zgloszenie]: https://bugs.freedesktop.org/show_bug.cgi?id=5981
+[poprawki]: http://cgit.freedesktop.org/xkeyboard-config/commit/?id=714b53463acdbe1d73b9dc793c313622f2a255dd

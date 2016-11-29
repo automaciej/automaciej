@@ -13,6 +13,8 @@ będzie mi szło [rozumienie irlandzkiego akcentu](https://youtu.be/8-lXND8wij4)
 Wybraliśmy się z L. na sushi, aby celebrować. Jedliśmy sushi pierwszy raz w
 życiu. Pałeczkami. Pycha.
 
+<!--more-->
+
 Kontynuując wątek japoński, dzisiaj wieczorem zdaję na 6 kyu. Muszę wkleić
 sobie zdjęcie do legitymacji PFA. Szkoda że nie znalazłem tej starej
 legitymacji, czerwonej. Musiała zaginąć w którejś z przeprowadzek. Teraz mam

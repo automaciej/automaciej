@@ -5,19 +5,19 @@ draft = false
 title = "Co trzeba potrafić, żeby być klientem RWE"
 tags = [ "życie" ]
 +++
-W lutym RWE przysłało informację że się zmienił sposób logowania. Przysłali
-nowe hasło i napisali żeby użyć takiego samego Numeru Klienta jak poprzednio.
-(Numer klienta? Ale ja nie wiem jaki mam numer klienta! Czy to jest to samo co
-„numer handlowy partnera”? Bo ten akurat znam. Skoro już wymyślają dziwne
-nazwy numerów, mogliby chociaż używać ich konsekwentnie) W haśle tymczasowym
-jest podejrzany string “&amp;amp;”. Czyżby spaprali escaping podczas
+W lutym RWE przysłało informację że się zmienił sposób logowania. Przysłali nowe
+hasło i napisali żeby użyć takiego samego Numeru Klienta jak poprzednio.  (Numer
+klienta? Ale ja nie wiem jaki mam numer klienta! Czy to jest to samo co „numer
+handlowy partnera”? Bo ten akurat znam. Skoro już wymyślają dziwne nazwy
+numerów, mogliby chociaż używać ich konsekwentnie) W haśle tymczasowym jest
+podejrzany string “&amp;amp;”. <!--more--> Czyżby spaprali escaping podczas
 formatowania emaila? Spróbowałem zalogować się powyższym numerem i hasłem
-skopiowanym z emaila. Złe hasło. Spróbowałem z hasłem gdzie zamiast
-„&amp;amp;” podstawiłem „&amp;”. Tak też się nie udało. Kliknąłem więc na
-opcję odzyskiwania hasła. Napisali że wygenerowali nowe hasło, ale email z
-hasłem nigdy do mnie nie dotarł. Na stronie piszą żeby w razie kłopotów do
-nich dzwonić. Dzwonić?! Jak ja nie znoszę dzwonić! Nie ma żadnego adresu email
-pod który można by zgłosić problem, ani formularza zgłoszeniowego.
+skopiowanym z emaila. Złe hasło. Spróbowałem z hasłem gdzie zamiast „&amp;amp;”
+podstawiłem „&amp;”. Tak też się nie udało. Kliknąłem więc na opcję odzyskiwania
+hasła. Napisali że wygenerowali nowe hasło, ale email z hasłem nigdy do mnie nie
+dotarł. Na stronie piszą żeby w razie kłopotów do nich dzwonić. Dzwonić?! Jak ja
+nie znoszę dzwonić! Nie ma żadnego adresu email pod który można by zgłosić
+problem, ani formularza zgłoszeniowego.
 
 W końcu zadzwoniłem. Poprosiłem o zresetowanie hasła, i przysłali mi mailem
 hasło tymczasowe. Spróbowałem go użyć. Po zatwierdzeniu formularza logowania

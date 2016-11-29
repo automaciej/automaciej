@@ -9,9 +9,12 @@ tags = [ "irlandia" ]
 jedno z moich (i L.) ulubionych miejsc na wycieczki. Punktem programu jest
 zawsze kawa [Cappuccino](http://pl.wikipedia.org/wiki/Cappuccino) w restauracji
 Ivory w Dalkey. Czasami też owoce morza, na przykład kopiasty talerz małży, ale
-to osobna historia. Zawsze zaczyna się od kawy. Kiedy wchodzi się do
-restauracji, a uśmiechnięty kelner pyta: „Hi guys, would you like a Cappucino?”,
-nie sposób odmówić.
+to osobna historia. Zawsze zaczyna się od kawy.
+
+<!--more-->
+
+Kiedy wchodzi się do restauracji, a uśmiechnięty kelner pyta: „Hi guys, would
+you like a Cappucino?”, nie sposób odmówić.
 
 [![Powinni ją nazwać „Cappuccino d'Mandelbrot”](http://media.blizinski.pl/images/blog/cappuccino-w-ivory-440px.jpg)](http://media.blizinski.pl/images/blog/cappuccino-w-ivory.jpg)
 

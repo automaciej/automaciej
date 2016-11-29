@@ -9,6 +9,8 @@ Pochylony nad biurkiem, roztaczałem zapach spalenizny, próbując trafić
 lutownicą (ale nie pistoletową, tylko taką kolbą) w jedną z nóżek złącza
 RS-232.
 
+<!--more-->
+
 „Jestem już w połowie!” - powiedziałem, kiedy czwarty kabelek zaczął sprawiać
 wrażenie trzymania się nóżki.
 

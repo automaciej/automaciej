@@ -12,11 +12,11 @@ pytanie i warto się nad nim zastanowić, co niniejszym czynię._
 Z zawodu jestem informatykiem. Przez pięć lat regularnie chodziłem do takiego
 prostokątnego budynku w którym panowie w garniturach i okularach prowadzili
 długie przemówienia gęsto okraszone rysunkami prostokątów połączonych
-strzałkami. Potem byłem w pokoju, w którym siedział nie jeden, a cały komplet
-panów w garniturach i okularach, którym musiałem opowiedzieć to, co chcieli
-ode mnie usłyszeć, i na koniec dostałem płaski przedmiot wykonany z celulozy,
-na który jest naniesiony czarny tusz w tak sprytny sposób, że każda osoba,
-której go pokażę, myśli że jestem informatykiem.
+strzałkami. <!--more-->Potem byłem w pokoju, w którym siedział nie jeden, a cały
+komplet panów w garniturach i okularach, którym musiałem opowiedzieć to, co
+chcieli ode mnie usłyszeć, i na koniec dostałem płaski przedmiot wykonany z
+celulozy, na który jest naniesiony czarny tusz w tak sprytny sposób, że każda
+osoba, której go pokażę, myśli że jestem informatykiem.
 
 Więc na zasadzie dowodu społecznego mogę powiedzieć, że jestem.
 

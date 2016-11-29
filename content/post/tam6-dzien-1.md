@@ -7,6 +7,8 @@ tags = [ "sceptycyzm" ]
 +++
 Jestem wykończony, więc wysyłam tylko szybką notatkę.
 
+<!--more-->
+
   * Dziś o 09:00 było oficjalne otwarcie konferencji.
   * Zagadałem do kolejnego kwadryliona osób. Zapamiętywanie imion idzie mi chyba
     coraz lepiej. Ale może mi się tylko tak wydaje.

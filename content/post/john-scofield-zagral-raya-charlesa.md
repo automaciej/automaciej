@@ -8,3 +8,4 @@ tags = [ "raptularz" ]
 Nagle a niespodziewanie dostałem prezent na zeszłe urodziny w postaci biletów
 na koncert Johna Scofielda i Jeana Luca Ponty. John Scofield był rewelacyjny,
 radocha z grania i czad. Ponty brzmiał jak pliki MIDI z komputera, wyszedłem.
+<!--more-->

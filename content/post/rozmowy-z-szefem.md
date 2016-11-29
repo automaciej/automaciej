@@ -10,6 +10,8 @@ gnębią. Kilka dni temu moja dziewczyna słyszała mnie rozmawiającego przez
 telefon i powiedziała że wygląda na to że chyba rzeczywiście nie zależy mi na
 tej pracy.
 
+<!--more-->
+
 Powiedziałem między innymi że nie będę już projektował na zasadzie głuchego
 telefonu. Poza tym nic nowego, raczej powtórka z rozrywki. Nie wiem czy
 cokolwiek do niego dotarło, ale coraz mniej mnie to interesuje, ja tylko chcę

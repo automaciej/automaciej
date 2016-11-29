@@ -7,6 +7,8 @@ tags = [ "sceptycyzm" ]
 +++
 ![Richard Feynman](http://media.blizinski.pl/images/blog/2012/Richard_Feynman.jpg)
 
+<!--more-->
+
 „Myślę, że ciekawiej jest żyć nie wiedząc, niż mając odpowiedzi które mogą
 okazać się nieprawdziwe. Mam przybliżone odpowiedzi, dopuszczalne przekonania,
 i różne poziomy niepewności co do różnych rzeczy, ale nie jestem absolutnie

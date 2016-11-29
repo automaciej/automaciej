@@ -10,6 +10,8 @@ czasu. Dzisiaj na przykład był Marek Napiórkowski z zespołem i Henrykiem
 Miśkiewiczem jako gościem. Oprócz biletu (10zł) kupiłem płytę _Nap_ (40zł) i
 upolowałem podpis lidera.
 
+<!--more-->
+
 Nagłośnienie było niezłe. Gitara Napiórkowskiego brzmiała bardzo klarownie.
 Niestety nie mogę powiedzieć tego samego o basie, któremu brakowało środka
 (dla niezorientowanych: częstotliwości pomiędzy 300Hz i 6kHz). Brzmienie

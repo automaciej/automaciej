@@ -10,6 +10,8 @@ informacje, odbierać telefony i dzwonić, pisać dokumenty, czytać dokumenty,
 czasami chodzić po pokojach, załatwiać sprawy bieżące, zakładać konta,
 zmieniać coś w konfiguracji czegośtam...
 
+<!--more-->
+
 A jednocześnie moja prawdziwa praca wymaga wielu niezmąconych godzin w jednym
 kawałku, spokoju, ciszy i skupienia. Tak naprawdę dopiero po kilku godzinach
 całkowitego spokoju zaczynam posuwać naprzód to, co najważniejsze. Tak, jak

@@ -11,6 +11,8 @@ była matematyką pod różnymi nazwami, na przykład mieliśmy tam analizę
 matematyczna, metody numeryczne i logikę matematyczną. No i oczywiście
 statystykę.
 
+<!--more-->
+
 Ale statystyka była, jakoś to czułem przez skórę, inna od całej reszty. Z
 jednej strony jest działem matematyki, dziedziny abstrakcyjnej, ale
 jednocześnie zajmuje się sprawami doczesnymi. Nie jest po prostu matematyką

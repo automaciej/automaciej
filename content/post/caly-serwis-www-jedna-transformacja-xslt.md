@@ -9,3 +9,4 @@ Nauczyłem się tworzyć wiele dokumentów HTML w jednej transformacji XSLT. W t
 sposób mam jeden plik XML z danymi i w jednym kroku tworzę cały zestaw
 wzajemnie linkujących się stron. Ciekawe, czy przyda mi się do czegoś więcej,
 niż tylko do strony domowej.
+<!--more-->

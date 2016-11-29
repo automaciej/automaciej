@@ -13,6 +13,8 @@ rozwijał, a np. dlaczego kabel zwinięty na łokciu będzie się rozwijał źle
 jeżeli po zwinięciu będzie się zdawał wyglądać tak samo, jak kabel zwinięty
 dobrze.
 
+<!--more-->
+
 Niedawno miałem okazję być w studio jako muzyk podczas projektu z realizacji
 nagrań muzycznych. Było tam dwóch studentów. Podczas sprzątania po sesji
 nawiązała się rozmowa o zwijaniu kabli, w których studenci powiedzieli mniej

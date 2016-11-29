@@ -9,6 +9,8 @@ Jako że przyjechałem w czwartek po południu, miałem tylko piątek na
 załatwianie spraw, a teraz jestem w sumie turystą który spędza weekend w
 Dublinie. No, może nie do końca. Turyści nie oglądają mieszkań do wynajęcia.
 
+<!--more-->
+
 W hostelu są trzy komputery z dostępem do Internetu. Nie przyglądałem im się z
 bliska bo były zawsze zajęte, a ja korzystałem ze swojego laptopa. Wczoraj
 jednak usiadłem z ciekawości i ku swojemu zdumieniu zobaczyłem Linuksa! A

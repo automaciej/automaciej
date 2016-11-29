@@ -10,6 +10,8 @@ wypróbowanie nowej zabawki. Szukałem alternatywy dla Jedynie Słusznego
 Komunikatora™ i znalazłem jabbera. Jak trafiłem na joggera, już nie pamiętam,
 ale wysłanie pierwszego wpisu było raczej zabawą niż czymkolwiek innym.
 
+<!--more-->
+
 Od pewnego momentu zacząłem traktować joggera jako formę kontaktu ze
 znajomymi, żebym nie musiał każdemu z osobna powtarzać co u mnie słychać.
 Zamiast tego oni mogą w rzucić okiem na joggera, a rozmowę możemy poświęcić na

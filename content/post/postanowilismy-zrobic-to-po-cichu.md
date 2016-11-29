@@ -8,6 +8,8 @@ tags = [ "sceptycyzm" ]
 Władze stolicy instalują czarodziejskie puszki które mają przeciwdziałać złym
 energiom.
 
+<!--more-->
+
 > \- Zdajemy sobie sprawę, że to może wywoływać uśmiechy i część ludzi nie
 > będzie w to wierzyć - przyznaje Adam Sobieraj, rzecznik ZDM. - Dlatego nie
 > robiliśmy rozgłosu w tej sprawie - dodaje.

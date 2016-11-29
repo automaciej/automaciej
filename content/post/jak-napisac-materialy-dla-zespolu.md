@@ -9,6 +9,8 @@ L. i ja, czyli piano i bas, stanowimy sporą część sekcji rytmicznej, i
 zdarzało się że proszono nas żebyśmy komuś zaakompaniowali, albo dołączyli do
 grupy solistów.
 
+<!--more-->
+
 „Co będziemy grać?”  
 „A takie tam, proste rzeczy.”  
 „Macie materiały?”  

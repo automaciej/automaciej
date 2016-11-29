@@ -6,7 +6,11 @@ tags = [ "dywagacje" ]
 
 +++
 Niektórych angielskich słówek nie znajdzie się w słowniku. Dzisiaj na przykład
-nie znalazłem w słowniku, co znaczy _gadfly_. To znaczy, w sensie zoologicznym
+nie znalazłem w słowniku, co znaczy _gadfly_.
+
+<!--more-->
+
+To znaczy, w sensie zoologicznym
 tak, ale nie w społecznym. Strona na angielskiej Wikipedii bardzo ładnie
 opowiada, co to jest:
 

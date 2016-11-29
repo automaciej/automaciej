@@ -11,6 +11,8 @@ Muzyczna logika:
 * Widzisz **B♭** - czytasz **B**
 * Widzisz **B** - czytasz **H**
 
+<!--more-->
+
 Powodem jest różnica pomiędzy niemieckim i angielskim nazewnictwem dźwięków.
 
 ![Niemiecka: CDEFGAH; Angielska: CDEFGAB](/images/nazwy-dźwięków-angielskie-i-niemieckie.png)

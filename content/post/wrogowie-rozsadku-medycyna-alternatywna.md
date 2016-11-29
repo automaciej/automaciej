@@ -11,6 +11,8 @@ rozsądku”, traktującego o medycynie alternatywnej, której krytykę, zafascy
 na Atopedii](http://tnij.org/alternat) właśnie w formie pytań i krótkich
 odpowiedzi.
 
+<!--more-->
+
 Program z napisami osadzonymi w obrazie [jest do pobrania z bloga
 atopowego](http://blog.atopowe.pl/2008/10/08/richard-dawkins-wrogowie-rozsadku-enemies-of-reason/).
 

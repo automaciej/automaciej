@@ -15,6 +15,8 @@ menu = ["main"]
 _Poniższy tekst jest tłumaczeniem wpisu Stevey Yegge, p.t. [„You should write
 blogs”](http://steve.yegge.googlepages.com/you-should-write-blogs)._
 
+<!--more-->
+
 _Duża część angielskiego tekstu jest pisana w drugiej osobie, co w języku
 polskim prowadzi do trudności, bo jak pisać „zajęty”, kiedy czytelnikiem może
 być kobieta?  Spróbowałem różnych rzeczy i na razie zdecydowałem się na pisanie

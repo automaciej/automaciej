@@ -11,6 +11,8 @@ To jest prymitywna strona domowa automaciejowa.
 Jak zauważam że się powtarzam, to zamiast dalej się powtarzać, piszę tutaj, raz,
 a dobrze.
 
+<!--more-->
+
 Oprócz w tego w internecie mam:
 
 Po polsku:

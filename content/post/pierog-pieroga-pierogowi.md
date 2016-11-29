@@ -12,6 +12,8 @@ tags = [ "życie" ]
 —Czy uważasz, że firma która żyje z robienia ich, od dawna, w dużych
 ilościach, robi je gorzej niż my, nie mający żadnej praktyki?
 
+<!--more-->
+
 Takie oto dywagacje prowadziliśmy z L. podczas wczorajszego robienia pierogów.
 Zajęło nam to strasznie dużo czasu, głównie dlatego, że w pierwszym podejściu
 ciasto było za suche, a potem po dodaniu wody zrobiło się gruzełkowate i

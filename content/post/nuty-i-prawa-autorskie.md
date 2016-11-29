@@ -11,6 +11,8 @@ Utwór
 ZAiKS chroni utwory. Co to jest utwór? Możemy przeczytać [opis na stronie
 ZAiKSu](http://www.zaiks.org.pl/141,64,utwor_czyli_przedmiot_prawa_autorskiego).
 
+<!--more-->
+
 W przypadku nut mamy do czynienia z co najmniej dwoma utworami. Nuty, czyli
 opracowanie nutowe, same w sobie są utworem, utworem co prawda zależnym, ale
 niemniej tak samo chronionym jak oryginalny utwór. Można też mówić o aranżacji,

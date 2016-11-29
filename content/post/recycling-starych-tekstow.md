@@ -10,6 +10,8 @@ archiwalne teksty z licealnej gazetki szkolnej, plus trochę swoich notatek z
 humanistyki i innych przypadkowych tekstów. Z problemów technicznych mogę
 wymienić dwa.
 
+<!--more-->
+
   1. Wszystkie teksty były spakowane archaicznym programem Ultra Compressor II,
      czyli UC2. Nie znalazłem żadnego programu pod Linuksa który obsługiwałby
      ten format. Na szczęście udało mi się ściągnąć z sieci oryginalnego UC2

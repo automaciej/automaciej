@@ -10,6 +10,9 @@ przycisk, który, jak się domyślam, zwalnia blokadę dżwigni, ale widocznie t
 wystarczy. Może trzeba zrobić coś jeszcze? Pociągnąć do góry? W dół? Może
 jeszcze jakiś przycisk? Niby proste, przestawić dżwignię z P (park) na D (drive?
 [duh?](http://www.urbandictionary.com/define.php?term=duh "Duh in Urban Dictionary" )).
+
+<!--more-->
+
 Nie chcę kolejny raz zawracać głowy gościowi z wypożyczalni
 samochodów. No ale muszę jakoś ruszyć ten samochód!
 

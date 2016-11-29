@@ -10,6 +10,8 @@ Najwyraźniej przekroczyłem miesięczny
 z 256kbps zmalał do 32kbps. Wrażenie jest podobone jak przy korzystaniu z
 komórkowego połączenia GPRS przez IrDA. To znaczy, dramatyczne.
 
+<!--more-->
+
 Statystyki mojego
 [gkrellm](http://members.dslextreme.com/users/billw/gkrellm/gkrellm.html)
 podają że pobrałem w maju 10GB. Co ciekawe, w kwietniu mnie nie przyblokowali,

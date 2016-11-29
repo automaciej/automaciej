@@ -9,6 +9,8 @@ Posiadacz stopy standardowego rozmiaru jest w komfortowej sytuacji. W sklepie
 obuwniczym ogląda dostępne modele butów i jeżeli któryś model mu się spodoba,
 najprawdopodobniej da się znaleźć parę odpowiedniego rozmiaru.
 
+<!--more-->
+
 W moim przypadku taka taktyka jest bez sensu, bo znalezienie pary o numerze 47
 z wybranego modelu niemal zawsze kończy się fiaskiem. Po wejściu do sklepu
 usiłuję ustalić, czy w tym sklepie są jakiekolwiek buty o rozmiarze 47. Buty

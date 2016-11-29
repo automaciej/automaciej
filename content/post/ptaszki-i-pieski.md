@@ -10,6 +10,8 @@ lato) ani szczekających piesków...
   
 _,,iii--zzuu'' - powiedział serwer_  
   
+<!--more-->
+
 Nie ma rozmów. Nie ma dzwoniących rowerów...  
   
 _,,biuu-hę'' - mruknął jeszcze raz_  

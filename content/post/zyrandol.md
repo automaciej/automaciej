@@ -10,6 +10,8 @@ niego tyle razy, aż dziw że uszkodziłem go dopiero teraz.
 Udało mi się go poskładać do kupy, ale żeby mu się więcej krzywda nie stała,
 wyniosłem go z domu. I tak nie był używany.
 
+<!--more-->
+
 # Komentarze
 
 * skryba (2006-07-05 15:19:39): <p>Gdybyś mógł go obniżyc jeszcze bardziej i

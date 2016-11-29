@@ -7,6 +7,9 @@ tags = [ "raptularz", "informatyka" ]
 +++
 Niadawno założyłem na Google Groups listę mailingową studentów mojej uczelni.
 Grupa jest pisana w języku polskim i jest na niej bardzo niewielki ruch.
+
+<!--more-->
+
 Wczoraj ktoś wysłał na tę listę taki oto e-mail:
 
 > From: Diana I love you  

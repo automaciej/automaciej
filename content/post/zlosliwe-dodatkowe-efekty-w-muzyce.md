@@ -12,6 +12,8 @@ jest umieszczony gdzieś w spodniej warstwie muzyki, słychać go ledwo-ledwo,
 ale że jestem wyczulony na elektroniczne alarmy (być może kwestia obecnej
 pracy), za każdym razem się na niego łapię.
 
+<!--more-->
+
 Pracując w biurze, często siedzę w słuchawkach, żeby móc się lepiej
 skoncentrować na tym co robię. Mam przyzwoite słuchawki, które dają niezłą
 izolację akustyczną. Dźwięki z otoczenia wciąż słychać, ale dużo ciszej i w

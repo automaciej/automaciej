@@ -8,6 +8,9 @@ slug = "projekty-informatyczne"
 tags = [ "informatyka" ]
 
 +++
+Od najnowszych do najstarszych.
+
+<!--more-->
 
 podcast-gen (2014)
 ------------------

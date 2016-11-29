@@ -10,6 +10,8 @@ jeden dzień. Udało mi się uporządkować trochę rzeczy, ale strasznie oporni
 to idzie. Mam wyrzuty sumienia że zostawiam w Polsce tyle swoich rzeczy w
 nieuporządkowanym stanie.
 
+<!--more-->
+
 Uruchomiłem pocztę głosową na swoim warszawskim numerze wykupionym w IPFON.
 Sprawdziłem, działa. Nagrana wiadomość przychodzi e-mailem w postaci pliku WAV
 w załączniku. Czasami zajmuje mi trochę czasu wytłumaczenie rodzinie, że ten

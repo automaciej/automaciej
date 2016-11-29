@@ -13,6 +13,8 @@ i nadal traktuję tę naukę lekko. Jest to pokierowane prostą zasadą: kiedy c
 jest proste, robi się to częściej. Im trudniejsze, tym rzadziej. Oto, jakie
 rzeczy robiłem, i co z nich wynikło:
 
+<!--more-->
+
 ## Obiady portugalskie
 
 _Na czym polega:_ Spotykamy się w 3 czy 4 osoby, portugalski musi być językiem

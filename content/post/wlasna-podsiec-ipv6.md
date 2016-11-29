@@ -10,6 +10,8 @@ mam do dyspozycji 128 - 48 = 80 bitów, czyli 280 adresów. To z grubsza tyle,
 ile 280 trylionów współczesnych Internetów. W najbliższym tygodniu adresy mi
 się raczej nie skończą.
 
+<!--more-->
+
 Żeby z komputera zrobić router IPv6, wystarczy program `radvd`, do niego
 [prosta konfiguracja](http://www.gentoo.org/doc/en/ipv6.xml#doc_chap5) i
 router gotowy. Można wszystkim komputerom w LANie przypisywać adresy IPv6 i

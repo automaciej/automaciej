@@ -11,6 +11,8 @@ zapytanie na grupy dyskusyjne, jestem ciekaw czy spotka się z odzewem. Na
 razie czyszczę i przygotowuję źródła. Myślę że gdyby program zaczął żyć,
 byłaby to dla mnie duża satysfakcja.
 
+<!--more-->
+
 # Komentarze
 
 * mamma (2007-06-13 16:57:00): <p>i co było dalej? ten program to skarb, ludzie

@@ -9,6 +9,8 @@ To trzeci dzień mojej głodówki. Dotychczas bez sensacji. Może wreszcie dowie
 się, na ile moje uczulenie ma podłoże pokarmowe. Chciałbym wytrzymać do
 poniedziałku.
 
+<!--more-->
+
 # Komentarze
 
 * mx28 (2004-05-07 08:00:42): <p>:) DLACZEGO SIE GLODZISZ??? BOO.....</p>

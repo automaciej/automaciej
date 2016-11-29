@@ -10,6 +10,7 @@ przynajmniej z Javy jestem na czysto, skończyłem zadanie z Programowania
 Niskopoziomowego i wyrobiłem się z Techniką Cyfrową. Swoją drogą, cieawe czy
 umiejętność programowania układów logicznych kiedyś mi się przyda.  
   
+<!--more-->
+
 Teraz z powrotem do pracy. Muszę rozkminić matplotlib, bo widzę że bardzo
 przystojne wykresy z tego wychodzą.
-

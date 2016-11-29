@@ -9,6 +9,8 @@ Mówi się że każda potwora znajdzie swojego amatora, de gustibus i tak dalej,
 ale jeżeli chodzi o twarze, da się znaleźć zestaw cech, który powoduje że
 uważamy twarz za atrakcyjną, a osobę za sympatyczną, czy nawet godną zaufania.
 
+<!--more-->
+
 ### Twarze męskie
 
 [![Prototyp atrakcyjnej twarzy męskiej](http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/prototypen/m_sexy.jpg)](http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/prototypen/m_sexy_gr.jpg)

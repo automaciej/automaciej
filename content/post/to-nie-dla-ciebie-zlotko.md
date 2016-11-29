@@ -12,6 +12,8 @@ Na przykład, gdyby tak na całe lata zdusić, albo chociaż znacząco ograniczy
 dopływ ludzi potrafiących budować domy, mosty, samochody i roboty, programować
 komputery, robić eksperymenty i wymyślać nowe technologie?
 
+<!--more-->
+
 Powiedzmy, arbitralnie podzielić całą populację ludzką na pół, i wmówić jednej
 połówce, że technologiczne rzeczy nie są dla nich. Trzeba to zrobić już od
 wczesnego wieku, zacząć od zabawek. Zabawkowy laptop? Grupa A dostaje 50

@@ -7,3 +7,4 @@ tags = [ "że jak?" ]
 +++
 „Mash otchi yack guhvyahzdi”, powiedział rzeźnik. Nikt nie wiedział, jak to
 rozumieć.
+<!--more-->

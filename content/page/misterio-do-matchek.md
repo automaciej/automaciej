@@ -11,6 +11,8 @@ A versão formal escrita, por exemplo em documentos, é _"Maciej"_. A pronúncia
 é "Mátchei". Ninguém me chama assim. A versão informal escreve se _"Maciek"_,
 e a pronúncia é "Mátchek".
 
+<!--more-->
+
 Você gosta de tabulas? Muito bem, aqui está!
 
 <table class="table table-bordered table-responsive">

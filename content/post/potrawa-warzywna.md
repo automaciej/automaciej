@@ -11,6 +11,8 @@ Przepisu nauczyła mnie [Margaux](http://www.margauxunddiebanditen.de/). Było t
 podczas krótkiego wyjazdu do Beskidu Żywieckiego. Nie spotkałem jej nigdy
 wcześniej, ani nigdy później.
 
+<!--more-->
+
 Co do podanych warzyw, to nie robię potrawy ze wszystkich naraz. Zazwyczaj jest
 to kombinacja czterech lub pięciu warzyw z podanej listy.
 

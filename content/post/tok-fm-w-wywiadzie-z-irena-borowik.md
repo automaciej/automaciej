@@ -13,6 +13,8 @@ Pani profesor tendencyjna, a pani redaktor jeszcze gorsza.
 Mam wrażenie, że bycie w pełni konsekwentnym ateistą jest szalenie trudnym
 zadaniem intelektualnym. W tej konsekwencji można odkryć zupełną pustkę.
 
+<!--more-->
+
 Powyższe zdanie jest bez sensu, jak by go nie próbować zrozumieć.
 
 Po pierwsze, kwestia prawdziwie „pełnej konsekwencji” w jakiejkolwiek pozycji

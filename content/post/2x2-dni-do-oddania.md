@@ -9,3 +9,4 @@ tags = [ "irlandia" ]
 Mam uwagi od promotora. Czytam teorię którą mam uzupełnić. Zbieram brakujące
 wpisy. Samochód się psuje. [Znajoma](http://lenina.wordpress.com/) poprawia
 dziesiątki błędów językowych w mojej pracy. Jest ciekawie.
+<!--more-->

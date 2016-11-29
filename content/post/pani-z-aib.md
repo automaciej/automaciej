@@ -14,6 +14,8 @@ tłumaczeniu. Ale nie o tym chciałem mówić.
 Otóż zastanawiam się, czy w jakimś polskim banku mógłby się wywiązać, pomiędzy
 mną a panią z okienka, następujący dialog:
 
+<!--more-->
+
 ― W tym polu należy podać roczne zarobki, ale ja mam kontrakt tylko na 4
 miesiące.  
 ― Tutaj należy podać roczne.  

@@ -12,12 +12,13 @@ tags = ["atopowe",]
 
 Tym mottem rozpoczyna się książka Katarzyny Schier, „Bez tchu i bez słowa, więź
 psychiczna i regulacja emocji u osób chorych na astmę oskrzelową”. Na razie
-przeczytałem tylko 16 stron, i muszę powiedzieć że łatwo nie było. Powody są
-dwa. Po pierwsze, styl. Autorka pisze skomplikowane zdania, gęsto okraszone
-psychologicznym żargonem. To prawda że [czasami trzeba napisać dłuższe
-zdanie][1], ale warto też mieć litość nad czytelnikiem. 
+przeczytałem tylko 16 stron, i muszę powiedzieć że łatwo nie było.
 
 <!--more-->
+
+Powody są dwa. Po pierwsze, styl. Autorka pisze skomplikowane zdania, gęsto
+okraszone psychologicznym żargonem. To prawda że [czasami trzeba napisać dłuższe
+zdanie][1], ale warto też mieć litość nad czytelnikiem. 
 
 Na przykład:
 

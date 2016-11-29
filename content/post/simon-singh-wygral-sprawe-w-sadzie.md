@@ -11,6 +11,8 @@ Singhowi przez brytyjskie stowarzyszenie kręgarzy (BCA), powinni wiedzieć o co
 chodzi. Simon Singh użył słowa _bogus_ odnośnie „terapii” promowanych przez
 BCA.
 
+<!--more-->
+
 Dziś dotarły dobre wieści: Simon Singh wygrał sprawę. Jest to bardzo ważne
 wydarzenie. Gdyby Singh przegrał, oznaczałoby to, że podobne sprawy sądowe
 kończyłyby się podobnie, i autorzy tekstów baliby się napisać słowo krytyki

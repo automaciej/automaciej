@@ -10,6 +10,8 @@ skomplikowane fragmenty kodu których dzisiaj już zupełnie nie rozumiem. Teraz
 jak mam coś do zrobienia, najczęściej piszę skrypt shellowy. Jeżeli shell nie
 wystarcza, dokładam 20 linijek kodu w Pythonie.
 
+<!--more-->
+
 Z jednej strony dobrze że piszę małe, proste narzędzia a z drugiej zaczynam
 się martwić czy przypadkiem nie zgłupiałem gdzieś po drodze...?
 

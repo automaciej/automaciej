@@ -9,6 +9,8 @@ Moda na anglojęzyczne nazwy firm jest nieśmiertelna. Myślałem że już nic m
 nie zdziwi, a tutaj... sklep multimedialny www.**arse**.pl! Dla
 niezorientowanych, definicja słowa _arse_ ze słownika WordNet:
 
+<!--more-->
+
 > arse n 1: the fleshy part of the human body that you sit on; "he deserves
 > a good kick in the butt"; "are you going to sit on your fanny and do nothing?"
 > [syn: buttocks, nates, butt, backside, bum, buns, can, fundament,

@@ -10,6 +10,8 @@ Django z phpBB](http://code.google.com/p/django-phpbb/), czyli zbiór klas któr
 pozwalają odczytywać wątki i posty oraz backend do uwierzytelniania użytkowników
 (ang. authentication).
 
+<!--more-->
+
 W praktyce oznacza to, że można się z poziomu Django podłączyć do
 niezmodyfikowanej bazy danych phpBB3 i napisać aplikację w Django do której
 można się zalogować tym samym loginem i hasłem co do forum.

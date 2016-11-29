@@ -12,6 +12,8 @@ spadania](http://pl.wikipedia.org/wiki/Teoria_inteligentnego_spadania), jest mi
 bardzo miło, ale to że coś jest miłe, wcale nie oznacza, że koniecznie musi być
 dobre.
 
+<!--more-->
+
 Teraz pora na drugą część planu: wyjaśnienie!
 
 > Pierwotnie miałem pisać o czymś zupełnie innym. Ale pojawiło się coś, o czym

@@ -14,6 +14,8 @@ irytujący jest raczej sposób ich użycia. Na przykład, kiedy to że coś „p
 jest jedyną rzeczą jakiej się dowiadujemy, bez żadnego wyjaśnienia i bez
 możliwości wyrażenia swojego zdania.
 
+<!--more-->
+
 #### Słowo „powinno” nie służy do zlecania zadań
 
 Wyrażenia służące do zlecania zadań wyglądają inaczej. Popatrzcie na różnicę

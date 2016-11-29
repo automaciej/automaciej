@@ -7,6 +7,7 @@ tags = [ "że jak?" ]
 +++
 Zabawne, co dzieje się kiedy w słowie "strata" zamienimy wszystkie
 bezdźwięczne spółgłoski na dźwięczne.
+<!--more-->
 
 # Komentarze
 

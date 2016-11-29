@@ -13,6 +13,8 @@ powiedział że może powinienem się zająć programowaniem, śmiertelnie bym s
 obraził. I nawet raz się tak stało. Ale wtedy była tylko muzyka, muzyki, muzyce,
 muzykę, muzyką, o muzyce...
 
+<!--more-->
+
 Struktura
 ---------
 

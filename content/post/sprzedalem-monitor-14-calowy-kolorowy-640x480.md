@@ -8,6 +8,8 @@ tags = [ 'raptularz' ]
 ...za złotówkę. To chyba najniższa cena po której kiedykolwiek sprzedałem
 cokolwiek. A szczególnie sprzęt komputerowy.
 
+<!--more-->
+
 # Komentarze
 
 * janek (2005-11-17 18:36:29): <p>kupiłbym za 2zł :)</p>

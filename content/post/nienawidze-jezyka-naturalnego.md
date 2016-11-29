@@ -9,6 +9,8 @@ Tak. Nienawidzę tego skomplikowanego, niedokładnego, niejednoznacznego,
 włochatego tworu, którego głównym zadaniem jest tworzenie nieporozumień pomiędzy
 ludźmi. O maszynach już nie wspominając.
 
+<!--more-->
+
 Nienawidzę go, bo w języku naturalnym, chcąc coś powiedzieć, mamy wybór
 pomiędzy dwoma możliwościami:
 

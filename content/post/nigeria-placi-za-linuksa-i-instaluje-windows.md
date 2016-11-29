@@ -7,13 +7,16 @@ tags = [ "raptularz", "informatyka", "zrzędzenie" ]
 +++
 W [liście
 otwartym](http://blog.mandriva.com/2007/10/31/an-open-letter-to-steve-ballmer/)
-do Steve Ballmera, François Bancilhon opisuje ciekawą historię. Nigeria
-podpisała z Mandrivą kontrakt na 17 tysięcy komputerów z Linuksem. Podczas
-negocjacji dookoła kręcił się Microsoft i usiłował przejąć zamówienie. Ale
-oferta Mandrivy była lepsza i Mandriva wygrała ofertę. Po czym Mandriva dostała
-list, że Nigeria owszem, zapłaci za systemy Mandrivy.  Zapłaci, ale usunie je
-i zainstaluje na komputerach Windows. Tam to dopiero musi być korupcja! Chociaż
-i tak Warszawskie parkomaty były lepsze.
+do Steve Ballmera, François Bancilhon opisuje ciekawą historię.
+
+<!--more-->
+
+Nigeria podpisała z Mandrivą kontrakt na 17 tysięcy komputerów z Linuksem.
+Podczas negocjacji dookoła kręcił się Microsoft i usiłował przejąć zamówienie.
+Ale oferta Mandrivy była lepsza i Mandriva wygrała ofertę. Po czym Mandriva
+dostała list, że Nigeria owszem, zapłaci za systemy Mandrivy.  Zapłaci, ale
+usunie je i zainstaluje na komputerach Windows. Tam to dopiero musi być
+korupcja! Chociaż i tak Warszawskie parkomaty były lepsze.
 
 Tymczasem, identyfikując się z François Bancilhon, wyobrażam sobie, że czuje on
 mniej więcej to samo, co ja po zakończeniu kontraktu w UCD, patrząc jak mój kod

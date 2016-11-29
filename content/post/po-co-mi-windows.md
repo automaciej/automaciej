@@ -11,6 +11,8 @@ pisać szczegółowe instrukcje dla moich współpracowników.
 W takim razie moi współpracownicy powinni mieć Linuksa, żeby pisać szczegółowe
 instrukcje dla mnie.
 
+<!--more-->
+
 # Komentarze
 
 * Gość (2006-07-01 15:16:26): <p>Mi Windows jest potrzebny do skanowania, to

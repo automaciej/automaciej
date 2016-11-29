@@ -12,6 +12,8 @@ się zdjęciom, doszedłem do wniosku że B&amp;B to trochę za duży luksus jak
 moje skromne potrzeby. Postanowiliśmy więc z L. pojechać trochę bardziej
 młodzieżowo i zatrzymać się w hostelu.
 
+<!--more-->
+
 Sprawdziłem pasujący autobus lotniska: 16A.
 
 Pakujemy z L. cały nasz dobytek. Najbardziej problematyczne są te największe

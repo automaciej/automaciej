@@ -12,6 +12,8 @@ Niesamowicie mi się tu podoba. Jest to trochę dziwne, bo właściwie niewiele
 jeszcze widziałem. Przeszliśmy się z L. nad rzeką, obejrzeliśmy katedrę św.
 Patryka, kupiliśmy jogurt za równowartość ok. 12 zł i wróciliśmy do hostelu.
 
+<!--more-->
+
 Centrum miasta to stylowe domy i dość wąskie ulice którymi przeciskają się
 ogromniaste piętrowe autobusy, kierowane przez czarnoskórych kierowców.
 

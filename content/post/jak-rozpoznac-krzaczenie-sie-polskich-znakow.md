@@ -12,6 +12,8 @@ informacją, że coś jest nie tak. Tylko nieliczni potrafili, zobaczywszy na
 przykład „Pchn±æ w tê ³ód¼ je¿a i o¶m skrzyñ fig.”, powiedzieć „A, to jest
 iso-8859-2 interpretowane jako iso-8859-1.”
 
+<!--more-->
+
 Dzisiaj usiadłem i napisałem
 [skrypt](http://code.blizinski.pl/shell/encoding.sh.html), który przegląda
 najpopularniejsze kodowania i pokazuje, jak wygląda każda kombinacja

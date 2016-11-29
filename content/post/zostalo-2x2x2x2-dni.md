@@ -8,6 +8,8 @@ tags = [ "raptularz" ]
 Zostało 24 dni do złożenia. Mam jeszcze dużo do zrobienia. Na szczęście mam z
 promotorem uzgodniony kalendarz, napięty, ale możliwy do zrealizowania.
 
+<!--more-->
+
 Chciałbym żeby pod koniec mojej pracy znalazł się zgrabny przykład analizy.
 Usiłowałem nakłonić znajomych chirurgów do wymyślenia pytania, na które
 mógłbym odpowiedzieć, bazując na analizie danych z bazy. Niestety nie dostałem
