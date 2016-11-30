@@ -2,12 +2,12 @@
   <a href="{{ .RelPermalink }}">
       {{- .Title }}{{ if .Draft }} #Draft{{ end -}}
   </a>
-  <span class="entry-meta content-subhead small"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
-  <small>
-    {{ partial "item-tags.html" . }}
-  </small>
 </h2>
-<div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} &ndash; {{ .FuzzyWordCount }} słów </div>
+<div class="post-meta text-muted">
+  {{ .Date.Format "Mon, Jan 2, 2006" }} &ndash; {{ .FuzzyWordCount }} słów
+  &ndash;
+  {{ partial "item-tags.html" . }}
+</div>
 {{ .Summary }}
 {{ if .Truncated }}
 <div class="text-right">
