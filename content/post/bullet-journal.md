@@ -1,12 +1,14 @@
 +++
 date = "2016-09-28T00:15:00+01:00"
 title = "Bullet Journal"
-tags = [ "życie" ]
+tags = [ "życie", "rozwój", ]
+description = """
+Od stycznia 2015 prowadzę Bullet Journal, notes do spraw organizacyjnych."""
+image = "/images/2016/bujo-notebook.jpg"
 
 +++
 
-Od stycznia 2015 prowadzę [Bullet Journal][1], notes do spraw
-organizacyjnych.
+Od stycznia 2015 prowadzę [Bullet Journal][1], notes do spraw organizacyjnych.
 
 O ile w obecnie jestem z niego niezwykle zadowolony, to na początku wcale nie
 było ani szczególnie dobrze, ani łatwo. Nie z winy systemu, tylko mojej, bo
