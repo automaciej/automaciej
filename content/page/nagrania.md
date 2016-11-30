@@ -14,25 +14,27 @@ image = "/images/funksters/koncert-3.jpg"
 
 ## Funksters 1
 
--   [Etykieta][etykieta] &mdash; Hot Cargo (1998), śpiewa Kasia Goszcz  Pierwsza
-    własna piosenka. Tekst napisał Tomek Choiński, mój kolega z liceum.  Tekst
-    pochodzi z wiersza opublikowanego w gazetce szkolnej, nieco dopasowanego do
-    potrzeb piosenki. Nagranie wykonane w studio w Ośrodku Kultury Ochoty, na
-    jednym magnetofonie ADAT, z dwoma międzyzgraniami. W pierwszym etapie
-    perkusja została nagrana na 8 śladów, a następnie zmiksowana do 2. Na
-    uwolnionych 6 śladach została nagrana sekcja rytmiczna. Znowu zgranie, tym
-    razem sekcji rytmicznej do 2 kanałów. Na uwolnionych 4 kanałach zostały
-    nagrane wokale, jeden wiodący i chórki.  
+{{< audio "http://media.blizinski.pl/music/Dossier/01%20-%20Funksters%20-%20Etykieta.ogg" "Etykieta - Funksters" >}}
+
+Hot Cargo (1998), śpiewa Kasia Goszcz  Pierwsza własna piosenka. Tekst napisał
+Tomek Choiński, mój kolega z liceum.  Tekst pochodzi z wiersza opublikowanego w
+gazetce szkolnej, nieco dopasowanego do potrzeb piosenki. Nagranie wykonane w
+studio w Ośrodku Kultury Ochoty, na jednym magnetofonie ADAT, z dwoma
+międzyzgraniami. W pierwszym etapie perkusja została nagrana na 8 śladów, a
+następnie zmiksowana do 2. Na uwolnionych 6 śladach została nagrana sekcja
+rytmiczna. Znowu zgranie, tym razem sekcji rytmicznej do 2 kanałów. Na
+uwolnionych 4 kanałach zostały nagrane wokale, jeden wiodący i chórki.
 
 ## Dania (Funksters 1)
 
 Dwa nagrania z Danii. Sekcja rytmiczna nagrana na 100% (to znaczy wszyscy razem,
 nie ślad po śladzie), wokale nagrywane śladami.  W miarę udana solówka gitarowa.
 
--   [Widzisz Świat][widzisz-swiat] &mdash; Funsters 1 (1999), śpiewa Kasia
-    Goszcz
--   [Wiesz Wszystko][wiesz-wszystko] &mdash; Funksters 1 (1999), śpiewa Kasia
-    Goszcz
+{{< audio "http://media.blizinski.pl/music/Dossier/02%20-%20Funksters%20-%20Widzisz%20%c5%9awiat.ogg" "Widzisz Świat - Funksters" >}}
+
+Funksters 1 (1999), śpiewa Kasia Goszcz
+
+{{< audio "http://media.blizinski.pl/music/Dossier/03%20-%20Funksters%20-%20Wiesz%20Wszystko.ogg" "Wiesz wszystko - Funksters 1 (1999), śpiewa Kasia Goszcz" >}}
 
 ## Nagrania domowe
 
@@ -64,7 +66,7 @@ Frontsession.
   <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/pl/88x31.png" />
 </a>
 
-Utwory te są dostępne na 
+Utwory te są dostępne na
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/pl/">licencji Creative Commons Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 Polska</a>.
 
 [etykieta]: http://media.blizinski.pl/music/Dossier/01%20-%20Funksters%20-%20Etykieta.ogg
