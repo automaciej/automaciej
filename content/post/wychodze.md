@@ -7,7 +7,8 @@ tags = [ "zrzędzenie" ]
 
 > Patrzę, patrzę na to… No i aż mi się chce wyjść z… kina, proszę pana.
 > I wychodzę.
-> --Inżynier Mamoń, Rejs
+>
+>   _---Inżynier Mamoń, Rejs_
 
 Jestem już inny niż byłem, dajmy na to, 10 lat temu.
 
