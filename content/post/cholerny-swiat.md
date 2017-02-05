@@ -11,5 +11,6 @@ title = "Cholerny świat"
 
 Moje pierwsze tłumaczenie Porta Dos Fundos.
 <!--more-->
-Zrobiłem jeszcze trzy tłumaczenia, ale ktoś musi je przejrzeć żeby zostały
-opublikowane.
+
+Zrobiłem jeszcze trzy tłumaczenia, ale ktoś [musi je
+przejrzeć](/2017/02/jak-dodac-napisy-na-youtube/) żeby zostały opublikowane.
