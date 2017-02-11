@@ -7,7 +7,7 @@ tags = ["raptularz"]
 title = "Cholerny świat"
 
 +++
-<iframe width="640" height="360" src="https://www.youtube.com/embed/KP4wBBZRCio" frameborder="0" allowfullscreen></iframe>
+{{< youtube "KP4wBBZRCio" >}}
 
 Moje pierwsze tłumaczenie Porta Dos Fundos.
 <!--more-->

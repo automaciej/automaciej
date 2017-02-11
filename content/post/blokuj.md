@@ -17,5 +17,5 @@ Trzeba włączyć napisy, i w razie potrzeby ustawić język na polski.
 Uwaga z dziećmi i w pracy, bo w filmiku nie dość że strasznie klną, to jeszcze
 po portugalsku.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/sLPBSSXcLqk" frameborder="0" allowfullscreen></iframe>
+{{< youtube "sLPBSSXcLqk" >}}
 <!--more-->

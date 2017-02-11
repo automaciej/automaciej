@@ -7,8 +7,7 @@ tags = ["raptularz", "że jak?"]
 title = "Nie opierać się o Boga!"
 
 +++
-<iframe width="640" height="360" src="https://www.youtube.com/embed/t11JYaJcpxg"
-        frameborder="0" allowfullscreen></iframe>
+{{< youtube "t11JYaJcpxg" >}}
 <!--more-->
 Polskie tłumaczenie skeczu Porta dos Fundos.
 

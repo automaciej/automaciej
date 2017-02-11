@@ -35,6 +35,10 @@ sposób:
 
 {{< figure src="/images/2017/translation-03.jpg" >}}
 
+Tutaj nawet zrobiłem filmik:
+
+{{< youtube "AcoOViqGdvY" >}}
+
 _Jeżeli pokazane powyżej opcje się nie pokazują, to znaczy że właściciel kanału
 nie udostępnił tej możliwości, może nie wiedział, a może nie chciał._
 
