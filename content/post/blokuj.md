@@ -2,7 +2,7 @@
 date = "2017-01-21T13:40:12Z"
 description = "„Bloqueio”, jest z lata 2016, kiedy rząd Brazylii zablokował WhatsApp na kilka dni."
 image = "/images/2017/porta-dos-fundos-bloqueio.jpg"
-tags = ["raptularz"]
+tags = ["raptularz", "że jak?"]
 title = "Blokuj!"
 
 +++

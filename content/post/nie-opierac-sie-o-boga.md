@@ -28,3 +28,21 @@ Gott!”
 Fraza „nie opierać się o Boga” z kolei wzięła się stąd, że po portugalsku napis
 na przykład „não encostar a mão na porta” („nie opierać się dłonią o drzwi”)
 pojawia się w Brazylii w wagonach metra.
+
+**Dopisek 2017-02-11:**
+
+Już po opublikowaniu, tłumaczenie sprawdził i poprawił mój znajomy. Werdykt?
+„Drewniany język”.  Niektóre poprawki były potrzebne i niekontrowersyjne, ale
+inne były różnicami raczej koncepcyjnymi. Na przykład, zamienił wszystkie słowa
+„Bóg” na „bóg”. W świecie skeczu jednak istnieje jeden bóg, więc według mnie
+jest to Bóg. Inne poprawki brały się z tego, że kolega oczekiwał języka
+książkowego, a ja zapisywałem język mówiony.[^jezyk]
+
+Kolega zmienił też „nie opierać się o Boga”, chyba nie zauważył koncepcji. Nie
+wiem, może koncepcja nie była dobra, albo nie była dobrze przedstawiona.
+W każdym razie tytułowa kwestia zniknęła z tłumaczenia. Ot, uroki pracy
+zespołowej.
+
+[^jezyk]: Można by się spierać, który język jest „tym prawdziwym”.  Na lekcjach
+          polskiego nauczycielka sugerowała żeby w razie wątpliwości przeczytać
+          zdanie na głos.
