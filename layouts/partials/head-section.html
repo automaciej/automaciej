@@ -19,8 +19,8 @@
 {{ with .Description -}}
 <meta property="og:description"        content="{{ . }}" />
 {{- end }}
-{{ with .Params.image -}}
-<meta property="og:image"              content="{{ . }}" />
+{{ if .Params.image -}}
+<meta property="og:image"              content="{{ .Site.BaseURL }}{{ .Params.image }}" />
 {{- end }}
 <link rel="canonical" href="{{ .Permalink }}" />
 
