@@ -24,3 +24,9 @@ Maciej Bliziński's home page
 * Deploying
 
         ./deploy.sh
+
+## Images
+
+    convert -size 440x440 hellotalk-inbox.jpg \
+      -resize 440x440 -adaptive-sharpen 3x9 \
+      +profile '*' hellotalk-inbox-440.jpg
