@@ -13,3 +13,8 @@ szereg pytań, nie wiedząc czy odpowiadasz prawidłowo, a kelner zdaje się cze
 przyjemność z konfundowania cię kolejnymi pytaniami. W tym natłoku wątpliwości i
 niekończących się pytań tylko jedno jest pewne: wciąż burczy ci w brzuchu.
 <!--more-->
+Musiałem sprawdzić, co to jest Jabuticaba. W Polsce (Europie) w ogóle tego nie
+ma. Z opisu jest to coś w rodzaju winogrona, tylko że w formie drzewa, a owoc
+rośnie na pniu.
+
+UPDATE 2017-03-31: Dziś miałem okazję skosztować lodów z owocu Jabucitaba.
