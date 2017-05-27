@@ -2,9 +2,12 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2004-01-05T14:43:55"
 title = "Jak ja nienawidzę smrodu papierosowego!"
+tags = [ "zrzędzenie" ]
 +++
 On pali w łazience... Ale co z tego, kiedy papierosa zapala POZA łazienką i
 zasmradza całe pomieszczenie!
+
+<!--more-->
 
 Atakują mnie fale smrodu... cały dzień
 

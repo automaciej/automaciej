@@ -1,10 +1,13 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-12-04T14:25:57"
-draft = false
 title = "Myślę, że ciekawiej jest..."
+tags = [ "sceptycyzm" ]
+
 +++
 ![Richard Feynman](http://media.blizinski.pl/images/blog/2012/Richard_Feynman.jpg)
+
+<!--more-->
 
 „Myślę, że ciekawiej jest żyć nie wiedząc, niż mając odpowiedzi które mogą
 okazać się nieprawdziwe. Mam przybliżone odpowiedzi, dopuszczalne przekonania,

@@ -2,14 +2,19 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-27T17:23:46"
 title = "Neostrada na gorąco"
+tags = [ "raptularz" ]
+
 +++
 Nareszcie jestem online. Chwilowo stacjonuję u rodziców, którzy nie mieli
 stałego łącza i musiałem jeździć do biura. Jako że można wziąć "na wypróbowanie"
 Neostradę za 30zł/mies, to wzięliśmy. Dzisiaj rano odpaliłem toto, chociaż
-dostarczone na płycie sterowniki do Linuksa raczej się nie przydały. Zamiast
-tego użyłem sterownika [eagle-usb](http://www.eagle-usb.org/), który szybko
-załatwił sprawę.  Nie podobało mi się tylko jedno: że po wetknięciu wtyczki
-muszę zalogować się jako root i wydawać jakieś zaklęcia. Wolałbym, żeby
+dostarczone na płycie sterowniki do Linuksa raczej się nie przydały.
+
+<!--more-->
+
+Zamiast tego użyłem sterownika [eagle-usb](http://www.eagle-usb.org/), który
+szybko załatwił sprawę.  Nie podobało mi się tylko jedno: że po wetknięciu
+wtyczki muszę zalogować się jako root i wydawać jakieś zaklęcia. Wolałbym, żeby
 połączenie było nawiązywane "samoistnie", po włożeniu wtyczki. Przypomniałem
 sobie, że w marcowym numerze [Linux Magazine](http://www.linux-magazine.pl/) był
 opis hotpluga. Pomimo że rozwiązanie zastosowałem nie zanadto eleganckie,

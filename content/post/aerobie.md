@@ -1,13 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-02T00:52:08"
-draft = false
 title = "Aerobie"
+tags = [ "zabawki", "irlandia",]
 +++
 Dzisiaj wieczorem, jak to zwykle po pracy, poszliśmy z L. do parku porzucać
 aerobie.
 
 [![Aerobie, latający krążek](http://media.blizinski.pl/images/blog/aerobie-400px.jpg)](http://sklep.aerobie.com.pl/)
+
+<!--more-->
 
 Aerobie lata niesamowicie daleko. [Rekord świata w rzucie na
 odległość](http://www.aerobie.com/QuarterMileThrow.htm) przedmiotem bez własnego

@@ -10,6 +10,8 @@ Chcesz zaśpiewać lub zagrać z zespołem? Napisz kwit taki jak poniżej, używ
 elementów zapisu muzycznego, i zawierając esencję tego, czego potrzebuje zespół
 żeby zagrać akompaniament.
 
+<!--more-->
+
 Kwit musi być napisany grubą, czarną kreską. Na scenie często jest słabe
 oświetlenie, i kwity napisane ołówkiem robią się nieczytelne.  Zaopatrz się
 w gruby pisak żelowy. Ja używam uni-ball GEL IMPACT 1.0mm.

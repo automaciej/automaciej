@@ -2,10 +2,14 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-10-31T04:44:45"
 title = "Trzęsionko"
+tags = [ "życie" ]
+
 +++
 Dzisiaj uzupełniłem swoją kolekcję wrażeń z USA o [małe trzęsienie
 ziemi](http://earthquake.usgs.gov/eqcenter/recenteqsww/Quakes/nc40204628.php).
 [Epicentrum](http://tinyurl.com/yobhmu) było całkiem niedaleko.
+
+<!--more-->
 
 Autentycznie, cały budynek 40, który jest całkiem pokaźnych przecież
 rozmiarów, drżał i widać było jak bujają się lampy, a obydwa monitory lekko

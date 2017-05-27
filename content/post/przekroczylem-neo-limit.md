@@ -1,13 +1,16 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-05-25T19:32:05"
-draft = false
 title = "Przekroczyłem neo-limit"
+tags = [ "raptularz" ]
+
 +++
 Najwyraźniej przekroczyłem miesięczny
 [limit](http://pl.wikipedia.org/wiki/Neostrada) łącza państwowego, bo transfer
 z 256kbps zmalał do 32kbps. Wrażenie jest podobone jak przy korzystaniu z
 komórkowego połączenia GPRS przez IrDA. To znaczy, dramatyczne.
+
+<!--more-->
 
 Statystyki mojego
 [gkrellm](http://members.dslextreme.com/users/billw/gkrellm/gkrellm.html)

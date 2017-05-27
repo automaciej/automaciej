@@ -1,13 +1,16 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-04-13T14:43:19"
-draft = false
 title = "Własna podsieć IPv6"
+tags = [ "informatyka" ]
+
 +++
 Po tygodniu używania tunelu IPv6 dostałem własną podsieć `/48`, co oznacza że
 mam do dyspozycji 128 - 48 = 80 bitów, czyli 280 adresów. To z grubsza tyle,
 ile 280 trylionów współczesnych Internetów. W najbliższym tygodniu adresy mi
 się raczej nie skończą.
+
+<!--more-->
 
 Żeby z komputera zrobić router IPv6, wystarczy program `radvd`, do niego
 [prosta konfiguracja](http://www.gentoo.org/doc/en/ipv6.xml#doc_chap5) i

@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-06T10:13:27"
 title = "Zasypiam na wykładach"
+tags = [ "raptularz" ]
+
 +++
 Zasypiam na wykładach. Przychodzę, siadam, wszystko w porządku. Wykładowca
 zaczyna coś opowiadać. Po pewnym czasie czuję, że moje oczy zaczynają się
@@ -11,13 +13,14 @@ dwóch wykładowców. Dramatycznym wysiłkiem próbuję skierować obie gałki o
 ten sam punkt. Tymczasem oczy zamykają mi się coraz silniej i w końcu nie mam
 już siły się bronić.
 
+<!--more-->
+
 Nie jest to kwestia niewyspania. Tego samego dnia siadam przed komputerem i
 bez problemu pracuję przez kilka godzin.
 
-Myślałem że coś jest ze mną nie tak. Ale dzisiaj trafiłem na [ ten
-artykuł](http://www.carotids.com/lifestyle/health-problems-related-to-the-geek-lifestyle/).
-Według tego faceta, który był programistą i webdeveloperem, jest to po prostu
-sposób wytrenowania mózgu.
+Myślałem że coś jest ze mną nie tak. Ale dzisiaj trafiłem na [ten
+artykuł][geek-lifestyle].  Według tego faceta, który był programistą i
+webdeveloperem, jest to po prostu sposób wytrenowania mózgu.
 
 # Komentarze
 
@@ -36,3 +39,5 @@ sposób wytrenowania mózgu.
   sposób zasypiałam,,,  <br />Zawsze jednym uchem jednak słuchałam i
   wyskakiwałam do góry gdy wykładowca coś do mnie mówił... albo gdy uderzałam
   głową w ławkę. :)</p>
+
+[geek-lifestyle]: http://www.carotids.com/lifestyle/health-problems-related-to-the-geek-lifestyle/

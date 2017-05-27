@@ -1,11 +1,14 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-12-30T15:19:03"
-draft = false
 title = "Postanowiliśmy zrobić to po cichu"
+tags = [ "sceptycyzm" ]
+
 +++
 Władze stolicy instalują czarodziejskie puszki które mają przeciwdziałać złym
 energiom.
+
+<!--more-->
 
 > \- Zdajemy sobie sprawę, że to może wywoływać uśmiechy i część ludzi nie
 > będzie w to wierzyć - przyznaje Adam Sobieraj, rzecznik ZDM. - Dlatego nie

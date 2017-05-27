@@ -1,16 +1,19 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-06-01T22:04:26"
-draft = false
 title = "Mocarne latawce"
+tags = [ "zabawki" ]
+
 +++
-[Bumerangi](http://automaciej.jogger.pl/2006/12/02/bumerang/) to bardzo fajna
+[Bumerangi](/2006/12/02/bumerang/) to bardzo fajna
 zabawa, ale mają jedną wadę: są wrażliwe na wiatr. Nic dziwnego, bo w końcu
 lot bumerangu polega na unoszeniu się w powietrzu; jeżeli to powietrze się
 przesuwa, to przesuwa się cała trasa lotu bumerangu. Oczywiście, można starać
 się kompensować wpływ wiatru kierunkiem rzutu, można wziąć większy i cięższy
 bumerang; jednak w Irlandii wieje tak często i tak mocno, że większość dni na
 bumerang się po prostu nie nadaje.
+
+<!--more-->
 
 A może zamiast na wiatr utyskiwać, da się znaleźć rozrywkę w której wiatr,
 miast przeszkadzać, pomaga?

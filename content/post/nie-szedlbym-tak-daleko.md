@@ -2,11 +2,15 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-04-27T21:48:06"
 title = "Nie szedłbym tak daleko"
+tags = [ "sceptycyzm" ]
+
 +++
 Kiedyś rozmawiałem na temat racjonalizmu z pewnym człowiekiem o wykształceniu
 humanistycznym. Rozmawialiśmy na temat teorii ewolucji i atakach pod jej
 adresem. Zgadzaliśmy się w większości punktów. W pewnym momencie powiedział
 coś, co zapadło mi w pamięć.
+
+<!--more-->
 
 „...ale żeby stwierdzić, że nie ma nic ponad to, co można zbadać i
 udowodnić... ja nie szedłbym aż tak daleko.”

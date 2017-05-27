@@ -3,12 +3,16 @@
 date = "2008-12-24T11:48:34"
 draft = false
 title = "Pieróg, pieroga, pierogowi"
+tags = [ "życie" ]
+
 +++
 —Jakby co, możemy ugotować też te kupne.  
 —Okaże się które są lepsze. A co jeżeli kupne będą lepsze?  
 —Nie będą.  
 —Czy uważasz, że firma która żyje z robienia ich, od dawna, w dużych
 ilościach, robi je gorzej niż my, nie mający żadnej praktyki?
+
+<!--more-->
 
 Takie oto dywagacje prowadziliśmy z L. podczas wczorajszego robienia pierogów.
 Zajęło nam to strasznie dużo czasu, głównie dlatego, że w pierwszym podejściu

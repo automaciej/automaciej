@@ -1,0 +1,5 @@
+<span class="text-muted">
+{{ range .Params.tags }}
+  <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+{{ end }}
+</span>

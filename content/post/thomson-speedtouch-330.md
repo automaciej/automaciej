@@ -1,13 +1,16 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-10-17T07:11:31"
-draft = false
 title = "Thomson Speedtouch 330"
+tags = [ "zrzędzenie", "informatyka" ]
+
 +++
 Po przeprowadzce w nowe miejsce musiałem sobie zorganizować dostęp do
 Macierzy, a jedyną możliwością jest Neostrada. Podobno idą obok linie Netii,
 ale dzwoniłem do nich i twierdzili że nie mają tu warunków technicznych
 (technologii miedzianej...?).
+
+<!--more-->
 
 Instalacja linii telefonicznej od &amp;TP odbyła się w tydzień po przyjęciu
 zgłoszenia. Jeszcze tego samego dnia przyniosłem do domu pudełko z modemem i

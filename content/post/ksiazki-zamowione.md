@@ -1,11 +1,14 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-03-14T20:08:16"
-draft = false
 title = "Książki zamówione"
+tags = [ "informatyka", "raptularz" ]
+
 +++
 Porozmawiałem z szefem. Co prawda zaprzecza temu że to jest bullying, ale
 przynajmniej widzi że jest _jakiś_ problem. Chyba mogę nazwać to postępem.
+
+<!--more-->
 
 Tymczasem zamówiłem w Amazonie niezbędnik programisty w opresji. Kosztuje on,
 bagatelka, £176. To jest tys... ale miałem nie przeliczać. Zresztą, firma

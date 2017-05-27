@@ -1,13 +1,16 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-11-29T12:05:39"
-draft = false
 title = "Protest"
+tags = [ "irlandia" ]
+
 +++
 Wczoraj byłem na proteście przed parlamentem irlandzkim. Skandowałem „tchórze!”,
 „wstyd!” i parę innych...
 
 ![Protest pod parlamentem](http://media.blizinski.pl/images/blog/2012/savita-protest.jpg)
+
+<!--more-->
 
 ...po tym, kiedy parlament odrzucił tymczasową ustawę wykonawczą o aborcji.
 

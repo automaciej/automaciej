@@ -1,12 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-04-22T13:03:01"
-draft = false
 title = "Gdybym się nie interesował, nie napisałbym o tym"
+tags = [ "dywagacje", "sceptycyzm" ]
+
 +++
 Są dwie definicje powodowania: A powoduje B wtedy, kiedy (1) „wystąpienie A
 zawsze pociąga za sobą wystąpienie B" lub (2) „niewystąpienie A zawsze pociąga
-za sobą niewystąpienie B". Innymi słowy, albo wtedy kiedy A jest warunkiem
+za sobą niewystąpienie B".
+<!--more-->
+Innymi słowy, albo wtedy kiedy A jest warunkiem
 dostatecznym, albo kiedy jest warunkiem koniecznym. Potencjalnie jednocześnie
 obydwoma, ale w praktyce wystarza nam jeden z tych dwóch warunków aby
 powiedzieć "B ponieważ A". W różnych sytuacjach stosujemy różne definicje,

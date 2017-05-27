@@ -2,10 +2,14 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-11-25T12:10:07"
 title = "Joga"
+tags = [ "że jak?" ]
+
 +++
 Joga, rzeczownik:  
   
-    Sformalizowane przeciąganie się.
+> Sformalizowane przeciąganie się.
+
+<!--more-->
 
 # Komentarze
 

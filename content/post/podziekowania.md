@@ -1,10 +1,9 @@
 +++
 # vim:set nocindent:
-Categories = []
 Description = "Czy należy podziękować prawdziwemu przyjacielowi za prawdziwą poradę udzieloną przez jego wyobrażenie?"
-Tags = []
 date = "2016-07-02T22:45:05+01:00"
 title = "Podziękowania"
+tags = [ "dywagacje" ]
 
 +++
 Porządkowanie papierów sprawia mi sporo kłopotów. Właśnie miałem się wybrać do
@@ -12,7 +11,10 @@ papiernika żeby nakupić teczek, kiedy zorientowałem się że sklep mi właśn
 zamknęli, bo się trochę zapóźniłem. Kiedy przeszła już pierwsza fala irytacji,
 zastanowiłem się, co by na to powiedział mój przyjaciel Kuba?
 
+<!--more-->
+
 „Zamów te teczki przez internet” &mdash; powiedziałby, oczywiście.
+
 <!--
 _(Później dodałby bardzo szybko: „skonsultuj się z lekarzem lub farmaceutą”.)_
 -->

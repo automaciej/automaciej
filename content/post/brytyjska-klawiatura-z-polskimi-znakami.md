@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-05-02T10:30:49"
-draft = false
 title = "Brytyjska klawiatura z polskimi znakami"
+tags = [ "informatyka" ]
+
 +++
 _Z cyklu „na pewno nikt jeszcze na to nie wpadł”._
 
@@ -12,6 +13,8 @@ liter”, tak jakby ustawienia klawiatury były czymś nie niemożliwym do
 konfiguracji. Chcąc się rozprawić z tym przesądem, i wyjaśnić, że:
 
 **Można pisać polskie litery w anglojęzycznym systemie Windows!**
+
+<!--more-->
 
 _(Jeżeli ktoś potrafi krótko opisać jak to się robi, będę wdzięczny.
 Prawdopodobnie prawoklik na małą klawiaturkę w rogu, albo coś przez Panel

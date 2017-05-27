@@ -1,18 +1,19 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2015-04-13T18:04:29"
-draft = false
 title = "ZAKAZ FOTOGRAFOWANIA"
+tags = [ "dywagacje" ]
+
 +++
 Stanąłem przed tablicą z napisem:
 
 **ZAKAZ FOTOGRAFOWANIA**
 
-Oczywiście wiem, o co chodzi, ale… wcale nie z tablicy. Podejrzewam że odbyło
-się to tak, że ktoś mnie puknął w ramię, i powiedział „tu nie można robić
-zdjęć, zobacz, jest zakaz” -- i wskazał palcem na tablicę. Ewentualnie stałem
-z boku, widząc tę scenę. Podejrzewam tak dlatego, że sama tablica nie wyraża
-tego co skądinąd wiem, że powinna.
+Oczywiście wiem, o co chodzi, ale… wcale nie z tablicy. <!--more-->Podejrzewam
+że odbyło się to tak, że ktoś mnie puknął w ramię, i powiedział „tu nie można
+robić zdjęć, zobacz, jest zakaz” -- i wskazał palcem na tablicę. Ewentualnie
+stałem z boku, widząc tę scenę. Podejrzewam tak dlatego, że sama tablica nie
+wyraża tego co skądinąd wiem, że powinna.
 
 Powiedzmy że jestem nauczycielem i zadaję uczniom taką pracę domową:
 „zaprojektujcie znak informujący o tym, że zarząd danego obiektu nie życzy

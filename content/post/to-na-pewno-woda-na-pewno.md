@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2013-06-19T01:12:49"
-draft = false
 title = "To na pewno woda, na pewno."
+tags = [ "raptularz", "atopowe", ]
+
 +++
 Śmieszny wątek miałem niedawno na forum atopowym. Do dziś nie wiem, czy mój
 rozmówca prezentował głupotę, czy trollował.
@@ -11,6 +12,8 @@ występuję jako wahwah." ) poszła mniej więcej tak:
 
 > dominia002: _Mam podobny problem z uczuleniem na wodę od czasu przyjazdu do
 > Irlandii! (...)_
+
+<!--more-->
 
 Ma uczulenie na wodę... być może, ale wątpię. Na coś tam ma uczulenie, ale po
 prostu nie wie na co, i przypisuje to wodzie.

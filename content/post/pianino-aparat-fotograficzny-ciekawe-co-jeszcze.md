@@ -1,14 +1,17 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-18T23:10:38"
-draft = false
 title = "Pianino, aparat fotograficzny, ciekawe co jeszcze..."
+tags = [ "raptularz" ]
+
 +++
 Zaczyna mnie brać ochota na Nikona D70. Nie stać mnie na niego! A jednak śni
 mi się po nocach. Na dodatek wpadł mi w ręce marcowy numer Linux Magazine z
 opisem samego aparatu oraz sposobu jego używania pod Linuksem. Na jesieni ani
 w zimie nie będę raczej robił większej ilości zdjęć, ale lato 2006 chciałbym
 rozpocząć z bojową lustrzanką w ręku.  
+
+<!--more-->
 
 Żeby było śmieszniej, planuję również kupić jakiś instrument klawiszowy,
 najlepiej coś w stylu "pianina" elektronicznego. Nie musi mieć odjazdowych

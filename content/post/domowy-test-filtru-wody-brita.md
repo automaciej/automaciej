@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-08-03T20:48:55"
-draft = false
 title = "Domowy test filtru wody Brita"
+tags = [ "sceptycyzm" ]
+
 +++
 Kiedyś dostaliśmy z Lucyną taki oto filtr wody w prezencie.
 
@@ -11,6 +12,8 @@ wody-raper.](http://media.blizinski.pl/images/blog/2008/filtr-wody-brita.jpg)
 
 Co prawda darowanemu koniowi się w zęby nie zagląda, ale... może warto
 sprawdzić, czy to w ogóle koń?
+
+<!--more-->
 
 Procedura była podobna jak ostatnio.  Dwie próbki wody, obydwie przegotowane,
 i jedna przefiltrowana.  Rzut monetą, wylosowanie 10 kubeczków z wodą,

@@ -1,12 +1,13 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-01-20T00:22:43"
-draft = false
 title = "Dobry uczynek"
+tags = [ "życie", "informatyka" ]
+
 +++
 W Polsce cały czas jest całkiem spora ilość moich rzeczy i staram się powoli z
 nimi rozprawiać. Aktualnie wystawiam na Allegro książki, głównie
-informatyczne. Przy tej okazji nawiązał się w domu taki dialog:
+informatyczne. <!--more-->Przy tej okazji nawiązał się w domu taki dialog:
 
 \- Wystawiam wszystko za złotówkę, nie chodzi mi o to żeby dostawać kasę z
 powrotem. Jeżeli spędzam czas nad tymi aukcjami, to tylko po to, żeby książki

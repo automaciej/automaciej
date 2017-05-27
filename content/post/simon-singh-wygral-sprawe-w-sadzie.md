@@ -2,12 +2,16 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2010-04-15T13:35:35"
 title = "Simon Singh wygrał sprawę w sądzie"
+tags = [ "sceptycyzm" ]
+
 +++
 Ci którzy interesowali się sprawą
-[wytoczoną](http://automaciej.jogger.pl/2009/10/05/tam-london/) Simonowi
+[wytoczoną](/2009/10/05/tam-london/) Simonowi
 Singhowi przez brytyjskie stowarzyszenie kręgarzy (BCA), powinni wiedzieć o co
 chodzi. Simon Singh użył słowa _bogus_ odnośnie „terapii” promowanych przez
 BCA.
+
+<!--more-->
 
 Dziś dotarły dobre wieści: Simon Singh wygrał sprawę. Jest to bardzo ważne
 wydarzenie. Gdyby Singh przegrał, oznaczałoby to, że podobne sprawy sądowe

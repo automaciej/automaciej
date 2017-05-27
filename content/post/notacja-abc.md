@@ -5,12 +5,14 @@ draft = false
 title = "Notacja ABC"
 description = "Tekstowy format reprezentacji zapisu nutowego"
 tags = ["muzyka"]
-menu = ["main"]
 +++
 [Notacja ABC][] istnieje od przynajmniej od 15 lat.  istnieje od przynajmniej od
 15 lat.  Jest to zapis tekstowy, który komputer potrafi wyświetlić w postaci
-nut, albo zamienić na plik MIDI i odegrać. Przykładowo, „Wlazł kotek na płotek”
-wygląda tak:
+nut, albo zamienić na plik MIDI i odegrać.
+
+<!--more-->
+
+Przykładowo, „Wlazł kotek na płotek” wygląda tak:
 
     X:1
     T:Wlazł kotek na płotek

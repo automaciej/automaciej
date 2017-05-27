@@ -1,12 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2014-09-15T12:14:13"
-draft = false
-title = "Jak napisać materiały dla zespołu"
+title = "Opisałem, jak przygotować materiały dla zespołu"
+tags = [ "muzyka" ]
+
 +++
 L. i ja, czyli piano i bas, stanowimy sporą część sekcji rytmicznej, i
 zdarzało się że proszono nas żebyśmy komuś zaakompaniowali, albo dołączyli do
 grupy solistów.
+
+<!--more-->
 
 „Co będziemy grać?”  
 „A takie tam, proste rzeczy.”  
@@ -30,7 +33,6 @@ kiedy piosenkę już wcześnie graliśmy i ją w miarę dobrze znamy. Osoba któ
 piosenki nie zna, z tego zapisu nie zagra.
 
 Dlatego też napisałem [krótki tutorial jak pisać materiały dla
-zespołu](http://maciej.blizinski.pl/jak-napisac-materialy-dla-zespolu/).
-Główna zasada to zapisanie akordów w taktach, żeby było wiadomo kiedy te
-akordy zmieniać, i zapisanie formy, żeby było wiadomo ile razy gramy każdą z
-części.
+zespołu](/jak-napisac-materialy-dla-zespolu/).  Główna zasada to zapisanie
+akordów w taktach, żeby było wiadomo kiedy te akordy zmieniać, i zapisanie
+formy, żeby było wiadomo ile razy gramy każdą z części.

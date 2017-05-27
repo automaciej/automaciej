@@ -2,11 +2,15 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-04-22T17:04:04"
 title = "MPD, dwa laptopy i stara wieża"
+tags = [ "informatyka" ]
+
 +++
 Lubię słuchać muzyki, właściwie słucham jej na okrągło. W zimie [Andreasa
 Vollenweidera](http://en.wikipedia.org/wiki/Andreas_Vollenweider), w lecie
 [Incognito](http://www.incognito.org.uk/) (które notabene dzisiaj gra w
 Warszawie, w [Fabryce Trzciny](http://www.fabrykatrzciny.pl/)).
+
+<!--more-->
 
 Właściciel mieszkania które wynajmuję, zostawił starą wieżę SONY z dwoma
 głośnikami. Strasznie jadą środkiem i dołem, ale lepsze to niż nic. Trochę

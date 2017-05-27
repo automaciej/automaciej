@@ -1,13 +1,16 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-03-01T15:03:31"
-draft = false
 title = "Do przodu czy do tyłu?"
+tags = [ "raptularz" ]
+
 +++
 Sam nie wiem, czy się rozwijam czy uwsteczniam. Kiedyś pisałem długie,
 skomplikowane fragmenty kodu których dzisiaj już zupełnie nie rozumiem. Teraz
 jak mam coś do zrobienia, najczęściej piszę skrypt shellowy. Jeżeli shell nie
 wystarcza, dokładam 20 linijek kodu w Pythonie.
+
+<!--more-->
 
 Z jednej strony dobrze że piszę małe, proste narzędzia a z drugiej zaczynam
 się martwić czy przypadkiem nie zgłupiałem gdzieś po drodze...?

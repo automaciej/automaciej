@@ -1,12 +1,14 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-23T15:59:06"
-draft = false
 title = "Sposób na siebie samego"
+tags = [ "raptularz" ]
+
 +++
 Nie chce mi się pisać magisterki. Chce mi się pisać bloga. Co więc robić?  Pisać
-bloga o magisterce. A najlepiej
-[krytykować](http://automaciej.blogspot.com/2006/04/aristotle-score-criticism.html)!
+bloga o magisterce. A najlepiej [krytykować][krytyka]!
+
+<!--more-->
 
 # Komentarze
 
@@ -14,3 +16,5 @@ bloga o magisterce. A najlepiej
   bloga...socjolog będziesz pełną gębą ;-)</p>
 * MARYLION (2006-08-15 11:57:04): <p>a po co pisac mgr? nie pisz jej obronisz
   sie kiedys tam... zdazysz</p>
+
+[krytyka]: https://automatthias.wordpress.com/2006/05/14/aristotle-score-criticism/

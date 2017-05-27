@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2009-02-07T20:37:51"
-draft = false
 title = "Wielki szwindel z globalnym ociepleniem"
+tags = [ "dywagacje" ]
+
 +++
 Al Gore pokazywał kiedyś taki ładny
 [wykres](http://kintespace.com/bitmaps/blog_inconvenient_truth.jpg), na którym
@@ -10,11 +11,14 @@ dwie krzywe, czerwona i niebieska, wykazywały niesłychanie bliską korelację.
 Czerwona kreska reprezentowała stężenie dwutlenku węgla w atmosferze, a
 niebieska - średnią temperaturę. (W stopniach Fahrenheita oczywiście, bo
 Amerykanie nie zaadaptowali jeszcze nowoczesnej idei systemu metrycznego, ale
-zostawię ten temat na inną okazję.) Korelacja wyglądała tak przekonująco, że
-została wzięta za wynikanie. Na wykresie w skali 650 tysięcy lat nie widać, że
-jedna z krzywych jest opóźniona w stosunku do drugiej o jakieś 800 lat. Tyle,
-że na tym wykresie te 800 lat to dość krótki okres czasu i przesunięcia po
-prostu nie widać.
+zostawię ten temat na inną okazję.)
+
+<!--more-->
+
+Korelacja wyglądała tak przekonująco, że została wzięta za wynikanie. Na
+wykresie w skali 650 tysięcy lat nie widać, że jedna z krzywych jest opóźniona w
+stosunku do drugiej o jakieś 800 lat. Tyle, że na tym wykresie te 800 lat to
+dość krótki okres czasu i przesunięcia po prostu nie widać.
 
 To pytanie nasuwa się samo: która krzywa jest pierwsza, temperatura czy
 dwutlenek węgla? Odpowiedź: temperatura!1

@@ -1,14 +1,17 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2009-09-22T10:23:27"
-draft = false
 title = "Wdepnąłem w popularne słowo kluczowe"
+tags = [ "raptularz" ]
+
 +++
 ...na twitterze. Napisałem [coś
 takiego](https://twitter.com/automatthias/status/4167653640), i za chwilę
 zobaczyłem w swojej skrzynce pocztowej:
 
 [![](http://media.blizinski.pl/images/blog/2009/twitter-storm-3.png-440px.jpg)](http://media.blizinski.pl/images/blog/2009/twitter-storm-3.png)
+
+<!--more-->
 
 Najwyraźniej wdepnąłem w jakieś popularne słowo kluczowe. Nie jestem tylko
 pewien, czy słowem tym był „atheism”, czy może „god”. Patrząc po imionach --

@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2011-11-22T22:54:28"
-draft = false
 title = "Kurs Sztucznej Inteligencji"
+tags = [ "raptularz" ]
+
 +++
 Stanford organizuje internetowy kurs [Sztucznej
 Inteligencji](http://www.ai-class.com/). Właśnie był egzamin półsemestralny,
@@ -10,6 +11,8 @@ w którym dostałem 98%. Na jedno pytanie odpowiedziałem źle, bo okazało się
 agent który próbuje się dźgnąć widelcem w oko, ale mu się to nie udaje ze
 względu na środowisko, [jest](http://www.youtube.com/watch?v=wBXnAxDpGxA)
 agentem racjonalnym. Kto by pomyślał.
+
+<!--more-->
 
 Tymczasem praca domowa numer 6 jest już za pasem, a w niej gry, teoria gier, i
 zaawansowane planowanie.

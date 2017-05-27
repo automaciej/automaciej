@@ -2,6 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-03-21T19:27:40"
 title = "Mały wielki Internet"
+tags = [ "opowieści", "informatyka" ]
 +++
 Kiedyś to były czasy. Prało się na tarce do prania, bo nie było jeszcze
 pralek, i pocztę pisało się w pine, bo nie było jeszcze
@@ -10,6 +11,8 @@ niewygodnych rzeczy tylko dlatego, że się nie dało inaczej. Ale w nostalgii z
 starymi czasami można zapomnieć, że teraz też są stare czasy! Pomyślcie tylko,
 komputer z gigabajtem ramu. Ba, że kiedyś w ogóle się podawało ilość RAMu w
 gigabajtach! I tak dalej.
+
+<!--more-->
 
 Tak, teraz też są stare czasy, na przykład w Internecie są, aż śmieszne kiedy
 się o tym pomyśli, tylko 4 miliardy adresów. Jest to tak żałośnie mało, że
@@ -34,7 +37,7 @@ każdy por w skórze, właściwie mogę bezpiecznie wymieniać wszystkie częśc
 adresów nie zabraknie bo jest ich więcej niż atomów we Wszechświecie.
 A konkretnie, tyle:
 
-`python -c "print 2 ** 128"`
+    python -c "print 2 ** 128"
 
 Na czym dokładnie polega pionierska żyłka, trudno powiedzieć. Chyba na głębiej
 nieuzasadnionej chęci robienia czegokolwiek nowego i mało popularnego, co
@@ -76,7 +79,8 @@ Z Polski [radio nadają
 Poznaniacy](http://icecast.ipv6.man.poznan.pl.ipv4.sixxs.org/). Jedna ze
 stacji, Radio BLUE FM, ma ciekawe przesłanie. Oczywiście po IPv6.
 
-`maciej@clover ~ $ mplayer http://radio.**ipv6**.man.poznan.pl:8000/bluefm.ogg  
+    maciej@clover ~ $ mplayer http://radio.**ipv6**.man.poznan.pl:8000/bluefm.ogg  
+
 MPlayer dev-SVN-rUNKNOWN-4.1.2 (C) 2000-2008 MPlayer Team  
 CPU: Genuine Intel(R) CPU T2050 @ 1.60GHz (Family: 6, Model: 14, Stepping: 8)  
 CPUflags: MMX: 1 MMX2: 1 3DNow: 0 3DNow2: 0 SSE: 1 SSE2: 1  
@@ -90,16 +94,15 @@ Cache fill: 18.75% (245760 bytes)
 Ogg file format detected.  
 Clip info:  
 Name: Radio 103,4 Blue FM : Pop non-stop prosto z Poznania  
-**(Specjalne pozdrowienia dla sluchaczy zza malej wody :-)).**  
-`
+**(Specjalne pozdrowienia dla sluchaczy zza malej wody :-))**
 
-Bardzo sympatyczne. Dziękuję.
+Bardzo sympatyczne. Dziękuję!
 
 Ale radio nadają nie tylko Poznaniacy. Jest na przykład [Virgin
 Radio](http://www.ipv6.ecs.soton.ac.uk.ipv4.sixxs.org/virginradio/), jedna ze
 stacji nazywa się Groovy i nadaje to co lubię.
 
-`mplayer http://virgin.6pack.org/dvb/vruk-gr-mp2`
+    mplayer http://virgin.6pack.org/dvb/vruk-gr-mp2
 
 Oprócz multicastu jest jeszcze jedna rzecz, która mnie bardzo interesuje, a
 mianowicie przesyłanie danych bezpośrednio z jednego komputera do drugiego (w

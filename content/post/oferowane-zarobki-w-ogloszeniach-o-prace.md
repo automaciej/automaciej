@@ -1,13 +1,18 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-10-13T22:48:50"
-draft = false
 title = "Oferowane zarobki w ogłoszeniach o pracę"
+tags = [ "życie" ]
+
 +++
 Jakiś czas temu w komentarzach ktoś
-[twierdził](http://automaciej.jogger.pl/2006/08/24/kawalek-kodu-na-rozmowie-o-prace/
+[twierdził](/2006/08/24/kawalek-kodu-na-rozmowie-o-prace/
 "Było to rzyjontko" ) że na Zachodzie nie podaje się stawek w ogłoszeniach
-o pracę. Otóż owszem, podaje się! Można to sprawdzić w serwisach takich jak
+o pracę.
+
+<!--more-->
+
+Otóż owszem, podaje się! Można to sprawdzić w serwisach takich jak
 [Reed](http://reed.co.uk/), [Totaljobs](http://www.totaljobs.com/) lub irlandzki
 [Hookhead](http://www.hookhead.com/). Stawki są podane w postaci zakresów.
 W niektórych serwisach widać je od razu w wynikach wyszukiwania, w innych

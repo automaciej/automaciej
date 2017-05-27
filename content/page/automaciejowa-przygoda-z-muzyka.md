@@ -4,14 +4,16 @@ date = "2014-09-06T17:56:17+01:00"
 draft = false
 title = "Automaciejowa przygoda z muzyką"
 description = "Kiedyś zajmowałem się muzyką, dziś zostało mi z tego kilka nagrań."
-aliases = ["muzyka.html"]
-tags = ["muzyka", "opowieść"]
+aliases = ["/muzyka/"]
+tags = ["muzyka", "opowieści"]
 menu = ["main"]
 +++
 W latach 1996 - 2001 zajmowałem się muzyką na poważnie. Gdyby ktoś mi wtedy
 powiedział że może powinienem się zająć programowaniem, śmiertelnie bym się
 obraził. I nawet raz się tak stało. Ale wtedy była tylko muzyka, muzyki, muzyce,
 muzykę, muzyką, o muzyce...
+
+<!--more-->
 
 Struktura
 ---------

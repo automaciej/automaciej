@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-05-12T16:06:43"
-draft = false
 title = "Dylemat więźnia i bullying"
+tags = [ "dywagacje" ]
 +++
 [Dylemat więźnia](http://pl.wikipedia.org/wiki/Dylemat_wi%C4%99%C5%BAnia) jest
 jednym z klasycznych problemów teorii gier. Jest interesującą abstrakcją całej
@@ -11,6 +11,8 @@ niekooperatywnym zachowaniem. Jest to też gra, w której można osiągnąć wyn
 zysk-zysk oraz strata-strata. Dylemat więźnia nie ma zastosowania do sytuacji
 typu targowanie się, gdzie zysk jednej strony oznacza stratę drugiej; opisuje
 on raczej sytuację w której gracze tworzą zespół i pracują razem.
+
+<!--more-->
 
 Jednym z głównym elementów dylematu więźnia są cztery poziomy wypłat,
 ustawione w taki sposób, że największy zysk osiąga się „wrabiając” drugą

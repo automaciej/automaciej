@@ -1,11 +1,16 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-01-27T17:24:12"
-draft = false
 title = "Gadfly, czyli giez"
+tags = [ "dywagacje" ]
+
 +++
 Niektórych angielskich słówek nie znajdzie się w słowniku. Dzisiaj na przykład
-nie znalazłem w słowniku, co znaczy _gadfly_. To znaczy, w sensie zoologicznym
+nie znalazłem w słowniku, co znaczy _gadfly_.
+
+<!--more-->
+
+To znaczy, w sensie zoologicznym
 tak, ale nie w społecznym. Strona na angielskiej Wikipedii bardzo ładnie
 opowiada, co to jest:
 
@@ -25,7 +30,7 @@ Dalej jest odniesienie do obrony Sokratesa. Według Platona, Sokrates zauważył
 > być bardzo wysoki. „Jeżeli zabijecie takiego jak ja, zrobicie sobie krzywdę
 > większą niż zrobicie mi”, ponieważ jego rola była rolą gza, „kąsać ludzi
 > i doprowadzać ich do wściekłości, a wszystko to w służbie [poszukiwania
-> prawdy](http://automaciej.jogger.pl/2008/01/08/steven-weinberg-o-prawdzie-i-falszu/).”
+> prawdy](/2008/01/08/steven-weinberg-o-prawdzie-i-falszu/).”
 
 Ja bym dodał jeszcze coś od siebie... nie tylko, że gzy uporczywie drażnią, ale
 również _lubią_ to robić.

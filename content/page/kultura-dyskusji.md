@@ -1,15 +1,14 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2015-02-21T13:51:30Z"
-draft = false
 title = "Kultura dyskusji"
-description = "Komentarze wyłączone"
+description = "Zasady kultury dyskusji, które wyniosłem z liceum"
 menu = ["main"]
+tags = [ "dywagacje" ]
 +++
-*Recykling z [joggera z 2006 roku](http://automaciej.jogger.pl/2006/04/11/kultura-dyskusji/).*
-
 Liceum, zażarte dyskusje, klasa podzielona na obozy, chwyty poniżej pasa.
 Prowadziło to donikąd. W końcu doszliśmy do wniosku że wszyscy na tym tracą.
+<!--more-->
 Więc:
 
 * **Ustalenie tezy** ‒ dowiedz się od drugiej strony, jakiej dokładnie tezy
@@ -34,7 +33,8 @@ Więc:
 * **Trzymanie się tematu** ‒ trzymaj się tematu i wymagaj tego samego od drugiej
   strony. Jeżeli druga strona odchodzi od tematu, zapytaj czy chodzi jej
   o zmianę tezy.
-* **Używaj definiowalnych pojęć** ‒ mów rzeczy, które potrafisz zdefiniować.
+* **Używaj definiowalnych pojęć** ‒ mów rzeczy, które potrafisz zdefiniować,
+  czyli opisać innymi słowami.
   Jeżeli nie potrafisz czegoś zdefiniować, nie używaj tego w dyskusji.
 * **Nie kładź różnicy zdań na karb sposobu myślenia lub postrzegania świata.**
   Logika jest wspólna dla wszystkich ludzi. To, co ich różni to wiedza,

@@ -1,9 +1,13 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-09-15T12:54:20"
-draft = false
 title = "Film na dyskietce"
+tags = [ "że jak?" ]
+
 +++
+Trafiłem na ten, lekko seksistowski, żart:
+
+<!--more-->
 
 > List od użytkowniczki komputera:  
 Dzień dobry, chcę skopiować film na dyskietkę gdy dam kopiuj pojawia mi
@@ -11,7 +15,7 @@ komunikat, że na dysku A nie ma wystarczająco miejsca. Potem daje "skopiuj
 skrót" i wtedy mi się film mieści na dyskietce. Problem jednak powstaje gdy
 chcę go uruchomić na innym komputerze dlatego, że pojawia mi się komunikat
 "skrót nie został znaleziony", równocześnie na moim komputerze ten film
-normalnie ruchamiam. Co z tym mogę zrobić?  
+normalnie uruchamiam. Co z tym mogę zrobić?  
 Odpowiedź:  
 Droga użytkowniczko, do swojej torebki nie zmieści Pani swojego futra.
 Karteczka z tym, że futro ma Pani w szafie, do torebki sie jednak zmieści. Tak

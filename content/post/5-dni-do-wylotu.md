@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-30T20:23:04"
-draft = false
 title = "5 dni do wylotu"
+tags = [ "irlandia" ]
+
 +++
 Zarezerwowałem miejsca w hostelu na początek. Duża ulga, bo przez święta
 zaniedbałem tę sprawę i okazało się że np. w hotelach typu Bed &amp; Breakfast
@@ -10,6 +11,8 @@ już nie ma miejsc na te terminy. Kiedy jednak porównałem ceny i przyjrzałem
 się zdjęciom, doszedłem do wniosku że B&amp;B to trochę za duży luksus jak na
 moje skromne potrzeby. Postanowiliśmy więc z L. pojechać trochę bardziej
 młodzieżowo i zatrzymać się w hostelu.
+
+<!--more-->
 
 Sprawdziłem pasujący autobus lotniska: 16A.
 

@@ -1,12 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-05T13:15:07"
-draft = false
 title = "A numer jego czterdzieści i siedem"
+tags = [ "raptularz", "zrzędzenie" ]
+
 +++
 Posiadacz stopy standardowego rozmiaru jest w komfortowej sytuacji. W sklepie
 obuwniczym ogląda dostępne modele butów i jeżeli któryś model mu się spodoba,
 najprawdopodobniej da się znaleźć parę odpowiedniego rozmiaru.
+
+<!--more-->
 
 W moim przypadku taka taktyka jest bez sensu, bo znalezienie pary o numerze 47
 z wybranego modelu niemal zawsze kończy się fiaskiem. Po wejściu do sklepu

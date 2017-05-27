@@ -1,14 +1,17 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-15T08:56:25"
-draft = false
 title = "Wszyscy za firewallami"
+tags = [ "informatyka", "opowieści" ]
+
 +++
 Wszyscy za firewallami - to jest coś co dzisiaj nazywa się "dostępem do
 Internetu". Jestem pewien że niektórzy ludzie (a raczej korporacje) cieszą się
 z tego, że nie ma połączeń peer-to-peer, nie ma wymiany plików, nie ma
 bezpośrednich połączeń między komputerami. Używanie Internetu to czytanie
 stron internetowych i sprawdzanie poczty, koniec kropka.
+
+<!--more-->
 
 Uderzyło mnie to, kiedy przeprowadziłem się do nowego miejsca w czasie studiów
 za granicą. Podłączyłem laptopa do gniazdka ethernetowego w ścianie,

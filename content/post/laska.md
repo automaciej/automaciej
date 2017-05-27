@@ -1,11 +1,14 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-04-28T07:04:41"
-draft = false
 title = "Łaska"
+tags = [ "sceptycyzm" ]
+
 +++
 Lubię się przyglądać jak chrześcijańska teologia usiłuje rozwiązać problemy z
 koncepcjami którymi obraca.
+
+<!--more-->
 
 Na przykład, kwestia miłowania. Aby zostać zbawionym/ą, należy boga
 chrześcijańskiego miłować. Z drugiej strony, należy się go bać, bo jeżeli go
@@ -20,12 +23,12 @@ strachu nie miłujemy. To co robimy ze strachu, to modlitwa: modlimy się o
 (uwaga) łaskę boską, która sprawi że nagle zaczniemy naszego boga
 chrześcijańskiego miłować ze szczerego serca.
 
-Sprawa sprowadza się do [problemu
-powodowania](http://automaciej.jogger.pl/2012/04/22/gdybym-sie-nie-interesowal-nie-napisalbym-o-tym/).
-„Miłość ze strachu" to powodowanie w trybie warunku dostatecznego, więc
-wprowadzenie łaski jako dodatkowego warunku, również dostatecznego, zmienia
-sytuację na „strachu równie dobrze mogłoby nie być, bo łaska aby miłować
-wystarczy".
+Sprawa sprowadza się do [problemu powodowania][powodowanie].  „Miłość ze
+strachu" to powodowanie w trybie warunku dostatecznego, więc wprowadzenie łaski
+jako dodatkowego warunku, również dostatecznego, zmienia sytuację na „strachu
+równie dobrze mogłoby nie być, bo łaska aby miłować wystarczy".
+
+[powodowanie]: /2012/04/gdybym-sie-nie-interesowal-nie-napisalbym-o-tym/
 
 Tak jak w informatyce: nie ma problemu którego nie dałoby się rozwiązać
 poprzez wprowadzenie dodatkowej warstwy abstrakcji. „Strach → miłość" źle? Nie

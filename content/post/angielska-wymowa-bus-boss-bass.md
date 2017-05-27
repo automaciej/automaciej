@@ -1,20 +1,23 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2011-07-16T12:09:50"
-draft = false
 title = "Angielska wymowa: bus, boss, bass"
+tags = [ "języki" ]
+
 +++
 Moim ulubionym przykładem na typowe polskie problemy z wymową angielskiego,
 jest [bus vs boss](http://howjsay.com/index.php?word=boss%3Bbasset%3Bbus%3Bbas
 s&submit=Submit "dodałem baseta specjalnie, bo na hasło 'bass' howjsay podaje
 nie to słowo o które mi chodzi" ) (i vs bass w sensie
-[ryby](http://en.wikipedia.org/wiki/Bass_\(fish\) "Rozróżnienie pomiędzy
-instrumentem i rybą przydaje się w restauracji." ), nie instrumentu). Kiedy
-słyszę angielskie słowo „bus” pierwszy raz, mam nieodparte wrażenie, że słyszę
-polskie „bas”. Ale wiem skądinąd, że polskie „a” i angielskie „u” (IPA: ʌ) to
-nie jest ten sam dźwięk. Dlaczego więc słyszę ten sam? No nic, trudno. Słucham
-go jeszcze raz. I jeszcze raz. Porównuję z „boss” i „bass” (nie instrument
-tylko ryba). Znowu „bus”.
+[ryby](http://en.wikipedia.org/wiki/Bass_%28fish%29
+"Rozróżnienie pomiędzy instrumentem i rybą przydaje się w restauracji." ), nie
+instrumentu).
+<!--more-->
+Kiedy słyszę angielskie słowo „bus” pierwszy raz, mam nieodparte
+wrażenie, że słyszę polskie „bas”. Ale wiem skądinąd, że polskie „a” i
+angielskie „u” (IPA: ʌ) to nie jest ten sam dźwięk. Dlaczego więc słyszę ten
+sam? No nic, trudno. Słucham go jeszcze raz. I jeszcze raz. Porównuję z „boss” i
+„bass” (nie instrument tylko ryba). Znowu „bus”.
 
 Dopiero po jakimś czasie zaczynam słyszeć, że ʌ to nie æ, ani nie o. Niestety,
 efekt utrzymuje się przez zaledwie kilkanaście minut.

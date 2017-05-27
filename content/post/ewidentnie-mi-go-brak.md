@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2010-05-28T09:48:11"
-draft = false
 title = "Ewidentnie mi go brak"
+tags = [ "języki", "sceptycyzm" ]
+
 +++
 Tak, są rzeczy których mi brak. Na przykład, polskiego słowa na _evidence_.
 
@@ -11,6 +12,8 @@ inne słowo: _proof_. Evidence to coś, co może być mocniejsze (lepsze) albo
 słabsze (gorsze). Również, mimo tego że jest czymś namacalnym, ma subiektywny
 charakter. Ta sama rzecz może być dla jednej osoby _evidence_, a dla drugiej
 nie.
+
+<!--more-->
 
 Niezłym słowem mogłoby być „świadectwo”, gdyby nie to, że jest przede
 wszystkim używane w odniesieniu do świadectw szkolnych. Jeżeli już używa się

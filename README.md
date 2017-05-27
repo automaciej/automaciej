@@ -12,21 +12,16 @@ Maciej Bliziński's home page
 
 * Testing the website:
 
-        hugo -w -D -F --theme=purehugo server
+        hugo -D -F server
 
   * -D for drafts
   * -F for future content
 
 * Creating a new page:
 
-        hugo new page/<name>.md
+        hugo new post/<name>.md
 
-* Deploying
+* Testing and deploying
 
-        ./deploy.sh
-
-## Images
-
-    convert -size 440x440 hellotalk-inbox.jpg \
-      -resize 440x440 -adaptive-sharpen 3x9 \
-      +profile '*' hellotalk-inbox-440.jpg
+        ./util/deploy.sh test
+        ./util/deploy.sh deploy

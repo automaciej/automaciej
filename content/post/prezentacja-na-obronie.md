@@ -1,12 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-17T19:48:44"
-draft = false
 title = "Prezentacja na obronie"
+tags = [ "raptularz", "informatyka" ]
+
 +++
 Miałem dość długi okres pomiędzy złożeniem i obroną: dwa i pół miesiąca.
 Dziekanat mówił że powinno być dwa tygodnie. Przez ten czas prawie
 zapomniałem, o czym napisałem pracę.
+
+<!--more-->
 
 Z początku zżymałem się że dają tylko 10 minut na prezentację ― a tak właśnie
 mi powiedział promotor. Jak powyrzucałem mniej ważne slajdy z prezentacji, to

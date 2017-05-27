@@ -1,15 +1,18 @@
 +++
 date = "2015-03-10T18:56:11Z"
-draft = false
 title = "Mam ochotę wyjść, i wychodzę"
+tags = [ "zrzędzenie" ]
 
 +++
 
 > Patrzę, patrzę na to… No i aż mi się chce wyjść z… kina, proszę pana.
 > I wychodzę.
-> --Inżynier Mamoń, Rejs
+>
+>   _---Inżynier Mamoń, Rejs_
 
 Jestem już inny niż byłem, dajmy na to, 10 lat temu.
+
+<!--more-->
 
 Zajrzałem na google+owe community pythonowe. Zobaczyłem najpierw kilka postów
 z linkami do bibliotek i artykułów, a niedługo potem coś w tym stylu:

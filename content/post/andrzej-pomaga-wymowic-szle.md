@@ -4,14 +4,16 @@ date = "2014-09-06T19:27:41+01:00"
 draft = false
 title = "O tym jak Andrzej pomaga wymówić szłę"
 description = "To co jest pomiędzy d i rz, jest ciekawe."
-tags = ["język", "opowieść"]
+tags = ["języki", "opowieści"]
 aliases = ["/andrzej-pomaga-wymowic-szle/"]
 +++
 Cały czas walczę z głoską [szwa](https://pl.wikipedia.org/wiki/Szwa) („szła”).
 W języku polskim ona nie występuje, i dlatego trudno jest Polakom ją poprawnie
 wymówić. Ostatnim razem [opisywałem jak można ją przybliżyć mieszając „y”
-i „a”](http://automaciej.jogger.pl/2011/07/16/angielska-wymowa-bus-boss-bass/).
+i „a”](/2011/07/16/angielska-wymowa-bus-boss-bass/).
 Dziś znalazłem inną drogę do tego samego celu.
+
+<!--more-->
 
 Dajmy na to, że chcemy wytłumaczyć anglojęzycznej osobie jak wymówić imię Andrzej.
 
@@ -53,6 +55,6 @@ przyjacielska i zrelaksowana, literuję wyraz i pytam „jak to się właściwie
 wymawia?” Ludzie chętnie pomagają. Powięcam na to może 10-20 sekund.
 
 P.S. Korekta co do [poprzedniego
-wpisu](http://automaciej.jogger.pl/2011/07/16/angielska-wymowa-bus-boss-bass/):
+wpisu](/2011/07/16/angielska-wymowa-bus-boss-bass/):
 pisałem że w wyrazie „bus” używa się głoski ʌ, ale to chyba jednak nie jest
 wcale ʌ, tylko ə.

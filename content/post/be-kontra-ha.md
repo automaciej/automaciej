@@ -3,11 +3,15 @@
 date = "2015-02-22T14:45:56Z"
 draft = false
 title = "B kontra H"
+tags = [ "muzyka" ]
+
 +++
 Muzyczna logika:
 
 * Widzisz **B♭** - czytasz **B**
 * Widzisz **B** - czytasz **H**
+
+<!--more-->
 
 Powodem jest różnica pomiędzy niemieckim i angielskim nazewnictwem dźwięków.
 

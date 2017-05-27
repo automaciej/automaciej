@@ -1,10 +1,13 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-10T21:12:09"
-draft = false
 title = "5 dni do obrony"
+tags = [ "raptularz" ]
+
 +++
 Wreszcie przygotowałem prezentację. Mogę się poklepać po ramieniu.
+
+<!--more-->
 
 # Komentarze
 

@@ -1,8 +1,8 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2008-03-08T17:04:49"
-draft = false
 title = "Jak rozpoznać krzaczenie się polskich znaków"
+tags = [ "informatyka" ]
 +++
 _UPDATE: [Napraw swój pokrzaczony tekst.](http://krzaki.blizinski.pl/)_
 
@@ -11,6 +11,8 @@ komputera dłużej niż od wczoraj. Ale krzaczenie się było zazwyczaj tylko
 informacją, że coś jest nie tak. Tylko nieliczni potrafili, zobaczywszy na
 przykład „Pchn±æ w tê ³ód¼ je¿a i o¶m skrzyñ fig.”, powiedzieć „A, to jest
 iso-8859-2 interpretowane jako iso-8859-1.”
+
+<!--more-->
 
 Dzisiaj usiadłem i napisałem
 [skrypt](http://code.blizinski.pl/shell/encoding.sh.html), który przegląda

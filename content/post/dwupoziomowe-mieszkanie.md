@@ -1,12 +1,15 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-07T09:53:18"
-draft = false
 title = "Dwupoziomowe mieszkanie"
+tags = [ "irlandia" ]
+
 +++
 Jako że przyjechałem w czwartek po południu, miałem tylko piątek na
 załatwianie spraw, a teraz jestem w sumie turystą który spędza weekend w
 Dublinie. No, może nie do końca. Turyści nie oglądają mieszkań do wynajęcia.
+
+<!--more-->
 
 W hostelu są trzy komputery z dostępem do Internetu. Nie przyglądałem im się z
 bliska bo były zawsze zajęte, a ja korzystałem ze swojego laptopa. Wczoraj

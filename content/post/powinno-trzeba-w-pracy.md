@@ -1,8 +1,9 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-01T10:52:45"
-draft = false
 title = "Powinno, trzeba w pracy"
+tags = [ "dywagacje" ]
+
 +++
 * To _powinno_ być tam.  
 * _Trzeba_ to zrobić.  
@@ -12,6 +13,8 @@ Te słowa ostatnio coraz bardziej mnie drażnią. Słowa jako takie są niewinne
 irytujący jest raczej sposób ich użycia. Na przykład, kiedy to że coś „powinno”
 jest jedyną rzeczą jakiej się dowiadujemy, bez żadnego wyjaśnienia i bez
 możliwości wyrażenia swojego zdania.
+
+<!--more-->
 
 #### Słowo „powinno” nie służy do zlecania zadań
 

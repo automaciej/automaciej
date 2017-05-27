@@ -1,7 +1,7 @@
 +++
 date = "2016-02-17T19:26:04Z"
-draft = false
 title = "Zwijanie kabli: Rozumienie kontra zamordyzm"
+tags = [ "sceptycyzm", "muzyka" ]
 
 +++
 
@@ -12,6 +12,8 @@ nigdzie nie ma powiedziane, dlaczego tak zwinięty kabel będzie się dobrze
 rozwijał, a np. dlaczego kabel zwinięty na łokciu będzie się rozwijał źle, nawet
 jeżeli po zwinięciu będzie się zdawał wyglądać tak samo, jak kabel zwinięty
 dobrze.
+
+<!--more-->
 
 Niedawno miałem okazję być w studio jako muzyk podczas projektu z realizacji
 nagrań muzycznych. Było tam dwóch studentów. Podczas sprzątania po sesji

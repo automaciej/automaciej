@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-02T14:38:21"
 title = "Dzień dobry, chciałbym się pokłócić"
+tags = [ "tłumaczenia" ]
+
 +++
 Wczoraj przeczytałem [gorącą dyskusję pomiędzy ateistą
 i agnostykiem](http://hcz.jogger.pl/2007/05/31/agnostycyzm/). Dawkinsa nie
@@ -10,8 +12,10 @@ czytałem (dodałem go do
 ale nawet i bez tego widzę jasno że agnostycyzm to zawracanie głowy. Ale nie
 o tym chciałem.
 
+<!--more-->
+
 Prowadzenie dyskusji wcale nie jest łatwe. Wymaga znajomości [kultury
-dyskusji](http://automaciej.jogger.pl/2006/04/11/kultura-dyskusji/), silnej
+dyskusji](/2006/04/11/kultura-dyskusji/), silnej
 kultury osobistej i konsekwencji, umiejętności zdefiniowania twierdzeń
 i stanowisk. Bezcenna jest też umiejętność szybkiego wykrywania błędów
 w rozumowaniu i tzw. [czerwonych

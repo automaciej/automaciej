@@ -2,10 +2,14 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-11-29T22:41:25"
 title = "Oceny komentarzy"
+tags = [ "że jak?", "informatyka" ]
+
 +++
 Ja:  
 „Pomysł jest zaczerpnięty z digg.com; tutaj jest obiekt, tu się go ocenia, a
 tutaj są komentarze. Komentarze też się ocenia.”
+
+<!--more-->
 
 Moja dziewczyna:  
 „A czy oceny komentarzy też się ocenia?”

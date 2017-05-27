@@ -1,14 +1,17 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2009-03-18T11:09:20"
-draft = false
 title = "Odchrzczenie"
+tags = [ "sceptycyzm" ]
+
 +++
 Małe dzieci nie mają pojęcia, jakie symboliczne znaczenie dla dorosłych ma
 dziwny rytuał z moczeniem czoła wodą. A jako dorośli czasami stwierdzają, że
 wcale im się to symboliczne znaczenie nie podoba. W Wielkiej Brytanii można
 zdobyć [samozwańczy certyfikat odchrzczenia
 się](http://www.secularism.org.uk/debaptism.html).
+
+<!--more-->
 
 > Ja, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, poddana/y chrześcijańskiemu
 > obrzędowi chrzestu w okresie niemowlęcym (przed osiągnięciem wieku

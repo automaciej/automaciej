@@ -2,8 +2,14 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-08T19:37:02"
 title = "7 dni do obrony"
+tags = [ "raptularz" ]
+
 +++
-Pora się przygotować. W planach są:
+Pora się przygotować.
+
+<!--more-->
+
+W planach są:
 
   * Przygotować prezentację pracy. Mam już zaczętą, ale nijak nie mogę jej
     skończyć.

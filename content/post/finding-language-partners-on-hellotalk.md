@@ -1,9 +1,9 @@
 +++
 Categories = ["pt"]
 Description = "Finding language partners on HelloTalk"
-Tags = []
 date = "2016-07-12T14:23:45+01:00"
 title = "Finding language partners on HelloTalk"
+tags = [ "języki" ]
 
 [params]
   language = "pt"
@@ -19,7 +19,9 @@ Oi! Você deve estar aqui porque eu te mandei um link para esta página no
 HelloTalk. Estou recebendo muitas mensagens, e não estou conseguindo responder
 a todos. Desculpem-me!
 
-## Why? Porquê?
+<!--more-->
+
+### Why? Porquê?
 
 There is an imbalance in the HelloTalk community. Lots of Brazilians and others
 who learn English are trying to talk to a handful of available English speakers.
@@ -35,7 +37,7 @@ requests.
 Nem sequer sou um falante nativo de inglês, e contei 180 pessoas tentando falar
 comigo durante 4 semanas. Os nativos devem receber mais pedidos ainda.
 
-## Does nobody seem to reply to you? Ninguém te manda respostas?
+### Does nobody seem to reply to you? Ninguém te manda respostas?
 
 As an English-learning speaker of Portuguese, you have a lot of competition. If
 you message someone, your message will be one of dozens in somebody’s inbox.
@@ -46,7 +48,7 @@ dezenas novas mensagens na caixa de entrada do destinário.
 
 ![Inbox on HelloTalk](/images/2016/hellotalk-inbox-440.jpg)
 
-## What can you do? O que você pode fazer?
+### What can you do? O que você pode fazer?
 
 You can write a self-introduction (a.k.a. biografia). Profiles with
 self-introductions are more interesting, and are more likely to attract
@@ -96,7 +98,7 @@ aplicativo HelloTalk pode fazer isso. Selecione “Idioma Nativo”, escolhendo
 
 ![User search on HelloTalk](/images/2016/hellotalk-search-440.jpg)
 
-## A note to men ‒ Dicas para homens
+### A note to men ‒ Dicas para homens
 
 Don’t hit on women. Don’t make comments about their looks. Instead, find out what are their interests.
 

@@ -3,10 +3,14 @@
 date = "2007-07-28T12:43:21"
 draft = false
 title = "Big band w Bleu Note"
+tags = [ "muzyka" ]
+
 +++
 _Bleu Note_ to nie literówka. Dubliński pub z Capel Street wybrał sobie nazwę
 bardzo podobną do legendarnej sieci amerykańskich klubów jazzowych _Blue
 Note_.
+
+<!--more-->
 
 Któregoś poniedziałkowego wieczoru chodziliśmy ze znajomą z Polski po mieście
 i szukaliśmy jakiegoś sympatycznego miejsca żeby napić się Guinnessa.
@@ -16,7 +20,7 @@ Commitments](http://www.imdb.com/title/tt0101605/). Był o kilkanaście lat
 starszy, miał już krótkie włosy, ale rozpoznałem go po charakterystycznych
 zębach i sposobie poruszania się kiedy śpiewał. Styl muzyczny był również ten
 sam. W tym samym klubie widziałem na ladzie mleko Łaciate i [spotkałem barmana
-Polaka](http://automaciej.jogger.pl/2007/01/24/wszedzie-polacy/).
+Polaka](/2007/01/24/wszedzie-polacy/).
 
 Po wejściu do Bleu Note w ów poniedziałkowy wieczór, zobaczyłem najmniej
 spodziewany widok: bębny, bas, perkusja, piano, cztery puzony, cztery trąbki i

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    {{ $paginator := .Paginate .Data.Pages }}
+    <meta charset="utf-8">
+    {{ partial "head-section.html" . }}
+    <meta property="og:description"        content="{{ .Site.Params.description }}" />
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="Automaciej"
+          href="{{ .Site.RSSLink }}" />
+    <link rel="canonical" href="{{ .Site.BaseURL }}{{ $paginator.URL }}" />
+    {{ if $paginator.HasPrev }}<link rel="prev" href="{{ $paginator.Prev.URL }}" />{{ end }}
+    {{ if $paginator.HasNext }}<link rel="next" href="{{ $paginator.Next.URL }}" />{{ end }}
+    <title>
+      {{- .Title }}
+      {{- if ne $paginator.PageNumber 1 }} (strona {{ $paginator.PageNumber }})
+      {{- end -}}
+    </title>
+  </head>
+  <body>
+    {{ partial "navbar.html" . }}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+
+    {{ range $paginator.Pages }}
+    {{ .Render "summary" }}
+    {{ end }}
+
+{{ template "_internal/pagination.html" . }}
+
+        </div><!-- col-md-8 -->
+        <div class="col-md-4"><!-- col-md-4 -->
+          <p class="text-muted text-justify">
+          &mdash; Słuchaj, myj zęby, bo dwa razy dwa równa się pięć.
+          <br />
+          &mdash; Yyyy… ale dwa razy dwa nie równa się pięć…
+          <br />
+          &mdash; No wiesz! Dlaczego nie chcesz myć zębów?!
+          </p>
+          <strong>Polecane</strong>
+          {{ partial "menu" . }}
+          <strong>Kategorie</strong>
+          {{ partial "all-tags.html" . }}
+        </div><!-- col-md-4 -->
+      </div><!-- row -->
+      <div class="row">
+        <div class="col-md-12">
+          {{ partial "footer.html" }}
+        </div>
+      </div>
+    </div><!-- container -->
+  </body>
+</html>

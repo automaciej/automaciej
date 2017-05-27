@@ -2,14 +2,18 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-13T17:14:40"
 title = "2 dni do obrony"
+tags = [ "irlandia", "raptularz" ]
+
 +++
 Parę spraw.
 
 Jadę do Irlandii na początku stycznia, do pracy. Zaczynam ósmego. Ciekawe jak
-będzie mi szło rozumienie irlandzkiego akcentu.
+będzie mi szło [rozumienie irlandzkiego akcentu](https://youtu.be/8-lXND8wij4).
 
 Wybraliśmy się z L. na sushi, aby celebrować. Jedliśmy sushi pierwszy raz w
 życiu. Pałeczkami. Pycha.
+
+<!--more-->
 
 Kontynuując wątek japoński, dzisiaj wieczorem zdaję na 6 kyu. Muszę wkleić
 sobie zdjęcie do legitymacji PFA. Szkoda że nie znalazłem tej starej

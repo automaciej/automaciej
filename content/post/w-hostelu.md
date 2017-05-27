@@ -2,6 +2,8 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-04T21:25:51"
 title = "W hostelu"
+tags = [ "irlandia" ]
+
 +++
 Linie lotnicze Aerlingus naprawdę istnieją. Autobus 16A faktycznie dowiózł
 mnie i L. w pobliże hostelu. Hostel też istnieje i jest całkiem sympatyczny.
@@ -9,6 +11,8 @@ mnie i L. w pobliże hostelu. Hostel też istnieje i jest całkiem sympatyczny.
 Niesamowicie mi się tu podoba. Jest to trochę dziwne, bo właściwie niewiele
 jeszcze widziałem. Przeszliśmy się z L. nad rzeką, obejrzeliśmy katedrę św.
 Patryka, kupiliśmy jogurt za równowartość ok. 12 zł i wróciliśmy do hostelu.
+
+<!--more-->
 
 Centrum miasta to stylowe domy i dość wąskie ulice którymi przeciskają się
 ogromniaste piętrowe autobusy, kierowane przez czarnoskórych kierowców.

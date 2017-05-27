@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    {{ partial "head-section.html" . }}
+    <title>{{ .Title }} &mdash; Automaciej</title>
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+  </head>
+  <body>
+    {{ partial "share-lib.html" }}
+    {{ partial "navbar.html" . }}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-sm-12">
+	        <main role="main">
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+              <h1 class="entry-title"><span itemprop="name">{{ .Title }}</span>
+                <span class="entry-meta content-subhead small">
+                  </span>
+              </h1>
+              <small class="text-muted">
+                <time itemprop="datePublished"
+                  datetime="{{ .Date.Format "2006-01-02" }}"
+                  >{{ .Date.Format "January 02, 2006" }}</time>;
+                kategorie:
+                {{ partial "item-tags.html" . }}
+              </small>
+              <section itemprop="articleBody">
+                {{ .Content }}
+              </section>
+            </article>
+          </main>
+        </div><!-- col-md-9 -->
+        <div class="col-md-3 col-sm-12">
+          <strong>Kategorie</strong>
+          {{ partial "all-tags.html" . }}
+        </div><!-- col-md-3 -->
+      </div><!-- row -->
+      <div class="row">
+        <div class="col-md-9 col-sm-12">
+          <div class="well">
+            {{ if .Params.tags }}
+            <ul id="tags" class="list list-unstyled small">
+              {{ range .Params.tags }}
+                <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+            {{ partial "share.html" . }}
+          </div><!-- well -->
+        </div><!-- col-md-12 -->
+      </div><!-- row -->
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          {{ partial "disqus-main.html" . }}
+          {{ partial "footer.html" . }}
+        </div><!-- col-md-8 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </body>
+</html>
