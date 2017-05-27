@@ -6,10 +6,8 @@ description = "Wrzucam tu swoje teksty dłuższe niż 140 znaków"
 menu = ["main"]
 
 +++
-To jest prymitywna strona domowa automaciejowa.
-
-Jak zauważam że się powtarzam, to zamiast dalej się powtarzać, piszę tutaj, raz,
-a dobrze.
+Kiedy zauważam że się powtarzam w rozmowach, to zamiast dalej się powtarzać,
+piszę tutaj, raz, a dobrze.
 
 <!--more-->
 
@@ -17,9 +15,9 @@ Oprócz w tego w internecie mam:
 
 Po polsku:
 
-- [@automaciej](https://twitter.com/automaciej) ‒ głupoty z gatunku
+- [automaciej na Facebooku](http://www.facebook.com/automaciej)
+- [@automaciej na Twitterze](https://twitter.com/automaciej) ‒ głupoty z gatunku
   „długo nad tym myślałeś?”
-- [Blog atopowy](http://blog.atopowe.pl) ‒ tylko okazjonalne wpisy
 - [Gitara Jazzowa](http://blizinski.pl) --- książka mojego ojca w formie strony
   internetowej
 
@@ -29,5 +27,3 @@ Po angielsku:
 - [+MaciejBliziński](https://plus.google.com/+MaciejBlizi%C5%84ski) ‒ linki
 - [Wordpress](http://automatthias.wordpress.com/) ‒ blog po angielsku
 - [github](https://github.com/automatthias) ‒ różne kody źródłowe
-
-Po co mi tyle stron?! A bo ja wiem? …tak wyszło.
