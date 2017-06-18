@@ -167,6 +167,17 @@ kilka znajomości utrzymuję do dzisiaj.
 _Wady:_ Wysoki koszt. Wyjazd na 1 tydzień kosztuje rzędu €1000, a tydzień to
 za mało, taki wyjazd ma sens kiedy się jedzie na 2 tygodnie.
 
+## Fiszki do nauki słówek (dodano 2017-06-18)
+
+_Czy działa:_ TAK
+
+_Zalety:_ Można opanować dużą liczbę słów w relatywnie krótkim czasie.
+
+_Wady:_ W rozmowie przypominam sobie te słowa opóźnieniem wystarczającym żeby
+przerwać płynność wypowiedzi.
+
+[Więcej o nauce z fiszek &raquo;]({{< relref "post/fiszki-do-nauki-slowek.md" >}} "Automaciej: Fiszki do nauki słówek")
+
 # Komentarze
 
 * quest (2015-12-24 19:51:13): <p>Ciekawy wybór. Możesz wyjaśnić dlaczego akurat
