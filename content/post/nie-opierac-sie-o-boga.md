@@ -4,7 +4,7 @@ description = "- Zgubiłaś się? - Trochę."
 draft = false
 image = "/images/2017/porta-dos-fundos-deus.jpg"
 tags = ["raptularz", "że jak?"]
-title = "Nie opierać się o Boga!"
+title = "Porta dos Fundos: Nie opierać się o Boga!"
 
 +++
 {{< youtube "t11JYaJcpxg" >}}

@@ -3,7 +3,7 @@ date = "2017-02-15T19:42:48Z"
 description = "Internet jest cudowny."
 draft = false
 image = "/images/2017/porta-dos-fundos-internet.jpg"
-tags = ["raptularz"]
+tags = ["raptularz", "że jak?"]
 title = "Porta dos Fundos: INTERNET"
 
 +++

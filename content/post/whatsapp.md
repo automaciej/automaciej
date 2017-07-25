@@ -4,7 +4,7 @@ description = "Nie musimy tkwić przyklejeni do telefonu przez cały czas. Są i
 draft = false
 image = "/images/2017/porta-dos-fundos-whatsapp.jpg"
 tags = ["raptularz", "że jak?"]
-title = "WhatsApp"
+title = "Porta dos Fundos: WhatsApp"
 
 +++
 Zrobiłem kolejne polskie tłumaczenie Porta dos Fundos, WhatsApp po raz drugi.
