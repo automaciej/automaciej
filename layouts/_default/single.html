@@ -11,7 +11,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-9 col-sm-12">
+        <div class="col-md-6 col-sm-12">
 	        <main role="main">
             <article itemscope itemtype="http://schema.org/BlogPosting">
               <h1 class="entry-title"><span itemprop="name">{{ .Title }}</span>
@@ -31,23 +31,6 @@
             </article>
           </main>
         </div><!-- col-md-9 -->
-        <div class="col-md-3 col-sm-12">
-          <strong>Kategorie</strong>
-          {{ partial "all-tags.html" . }}
-        </div><!-- col-md-3 -->
-      </div><!-- row -->
-      <div class="row">
-        <div class="col-md-9 col-sm-12">
-          <div class="well">
-            {{ if .Params.tags }}
-            <ul id="tags" class="list list-unstyled small">
-              {{ range .Params.tags }}
-                <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
-              {{ end }}
-            </ul>
-            {{ end }}
-          </div><!-- well -->
-        </div><!-- col-md-12 -->
       </div><!-- row -->
       <div class="row">
         <div class="col-md-8 col-sm-12">
