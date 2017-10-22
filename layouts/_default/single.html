@@ -7,7 +7,6 @@
     {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
   </head>
   <body>
-    {{ partial "share-lib.html" }}
     {{ partial "navbar.html" . }}
 
     <div class="container">
@@ -47,7 +46,6 @@
               {{ end }}
             </ul>
             {{ end }}
-            {{ partial "share.html" . }}
           </div><!-- well -->
         </div><!-- col-md-12 -->
       </div><!-- row -->
