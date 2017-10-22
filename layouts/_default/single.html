@@ -18,13 +18,6 @@
                 <span class="entry-meta content-subhead small">
                   </span>
               </h1>
-              <small class="text-muted">
-                <time itemprop="datePublished"
-                  datetime="{{ .Date.Format "2006-01-02" }}"
-                  >{{ .Date.Format "January 02, 2006" }}</time>;
-                kategorie:
-                {{ partial "item-tags.html" . }}
-              </small>
               <section itemprop="articleBody">
                 {{ .Content }}
               </section>
@@ -33,8 +26,19 @@
         </div><!-- col-md-9 -->
       </div><!-- row -->
       <div class="row">
-        <div class="col-md-8 col-sm-12">
+        <div class="col-md-6 col-sm-12">
           {{ partial "footer.html" . }}
+          <footer class="footer">
+            <small class="text-muted">
+              Opublikowane:
+              <time itemprop="datePublished"
+                datetime="{{ .Date.Format "2006-01-02" }}"
+                >{{ .Date.Format "January 02, 2006" }}</time>
+              <br />
+              kategorie:
+              {{ partial "item-tags.html" . }}
+            </small>
+          </footer>
         </div><!-- col-md-8 -->
       </div><!-- row -->
     </div><!-- container -->

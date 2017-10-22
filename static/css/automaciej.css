@@ -2,3 +2,9 @@ div.container iframe {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
