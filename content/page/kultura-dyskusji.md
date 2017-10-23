@@ -3,6 +3,7 @@
 date = "2015-02-21T13:51:30Z"
 title = "Kultura dyskusji"
 description = "Zasady kultury dyskusji, które wyniosłem z liceum"
+aliases = ["/2006/04/11/kultura-dyskusji/"]
 menu = ["main"]
 tags = [ "dywagacje" ]
 +++
