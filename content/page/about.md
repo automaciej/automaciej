@@ -1,17 +1,28 @@
 +++
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2014-09-06T15:11:41+01:00"
-title = "Co to w ogóle jest za strona?!"
+title = "O stronie"
 description = "Wrzucam tu swoje teksty dłuższe niż 140 znaków"
 menu = ["main"]
 
 +++
-Kiedy zauważam że się powtarzam w rozmowach, to zamiast dalej się powtarzać,
-piszę tutaj, raz, a dobrze.
+Kiedy w rozmowach zaczynam się powtarzać, opisuję myśl na blogu. Raz, a dobrze.
 
 <!--more-->
 
-Oprócz w tego w internecie mam:
+----
+
+Blog mój zacząłem na nieistniejącym już serwisie Jogger.pl. Po zamknięciu
+Joggera przeniosłem treść do własnej domeny.
+
+W obecnej inkarnacji nie ma już komentarzy. Eksperymentowałem z Disqusem, ale
+społeczność Joggerowa rozpierzchła się, a nie mam planów żeby budować własną.
+
+Celem kontaktu proponuję któryś z poniższych serwisów.
+
+----
+
+Inne strony Automacieja:
 
 Po polsku:
 

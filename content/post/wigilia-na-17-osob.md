@@ -3,12 +3,10 @@
 date = "2006-11-02T20:41:14"
 title = "Wigilia na 17 osób"
 tags = [ "życie" ]
-
 +++
 Do świąt zostało jeszcze sporo czasu, ale przed kim stoi wizja odbywania dwóch
-Wigilii jednego dnia, temu czas zastanowić się nad rozwiązaniem.
-Postanowiliśmy z dziewczyną zrobić [podobnie jak na
-Wielkanoc](/2006/04/17/sped-rodzinny/trackback/),
+Wigilii jednego dnia, temu czas zastanowić się nad rozwiązaniem.  Postanowiliśmy
+z dziewczyną zrobić [podobnie jak na Wielkanoc](/2006/04/17/sped-rodzinny/),
 tyle że w innym miejscu. Po ustaleniu składu i podliczeniu wszystkich osób
 wyszło na to że będzie ich siedemnaście.
 
@@ -25,7 +23,7 @@ generowałaby grafy o zadanych właściwościach. Posiedziałem i napisałem pro
 w Pythonie, który generuje opis grafu, wizualizowany potem przy pomocy
 [Graphviz](http://www.graphviz.org/):
 
-[![darmowy hosting obrazków](http://images4.fotosik.pl/193/eb74738494069e4am.png)](http://www.fotosik.pl/pokaz_obrazek/eb74738494069e4a.html)
+{{< figure src="/images/2006/prezenty-diagram.png" title="Przykładowy diagram" >}}
 
 Na generowanie grafu można nakładać różnorakie warunki, na przykład maksymalną
 liczbę prezentów jaką jest w stanie kupić dana osoba, lub to że prezenty

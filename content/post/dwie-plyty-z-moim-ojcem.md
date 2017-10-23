@@ -9,8 +9,6 @@ title = "Dwie płyty z moim ojcem"
 +++
 Zostały niedawno wznowione dwie płyty z moim ojcem na gitarze.
 
-<!--more-->
-
 [„Air Condition” zespołu Air Condition][aircondition], album z roku 1983, wznowiony w 2017.
 
 [„Question Mark” kwintetu Janusza Muniaka][questionmark], album z roku 1978,
