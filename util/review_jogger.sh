@@ -18,6 +18,17 @@ done < <(find "${SOURCE_DIR}" -name '*.md' -print)
 
 echo "${#FILES[@]} files to process…"
 
+function migrate_file_to_hugo {
+  local APPROVED_DIR=$1
+  shift
+  local F=$1
+  shift
+  local bn=$(basename "${F}")
+  vim "${F}"
+  mv "${F}" "${APPROVED_DIR}"
+  git add "${APPROVED_DIR}/${bn}"
+}
+
 for LINE in "${FILES[@]}"; do
   clear
   echo "${LINE}"
@@ -25,10 +36,7 @@ for LINE in "${FILES[@]}"; do
   read -p "${LINE}: Approve? [y/n]" ANS
   case "${ANS}" in
     y)
-      bn=$(basename "${LINE}")
-      vim "${LINE}"
-      mv "${LINE}" "${APPROVED_DIR}"
-      git add "${APPROVED_DIR}/${bn}"
+      migrate_file_to_hugo "${APPROVED_DIR}" "${LINE}"
       ;;
     n)
       mv "${LINE}" "${REJECTED_DIR}"
