@@ -3,6 +3,7 @@
 date = "2006-04-17T14:16:48"
 draft = false
 title = "Spęd rodzinny"
+aliases = ["2006/04/17/sped-rodzinny/"]
 tags = ["raptularz"]
 +++
 Było jasne że tak czy siak święta będziemy musieli poświęcić rodzinie.
