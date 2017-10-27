@@ -16,7 +16,7 @@ to osobna historia. Zawsze zaczyna się od kawy.
 Kiedy wchodzi się do restauracji, a uśmiechnięty kelner pyta: „Hi guys, would
 you like a Cappucino?”, nie sposób odmówić.
 
-[![Powinni ją nazwać „Cappuccino d'Mandelbrot”](http://media.blizinski.pl/images/blog/cappuccino-w-ivory-440px.jpg)](http://media.blizinski.pl/images/blog/cappuccino-w-ivory.jpg)
+[![Powinni ją nazwać „Cappuccino d'Mandelbrot”](/images/2008/cappuccino-w-ivory.jpg)](/images/2008/cappuccino-w-ivory.jpg)
 
 To jedna z bardzo niewielu okazji, kiedy pijam kawę.
 
