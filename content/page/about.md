@@ -12,8 +12,11 @@ Kiedy w rozmowach zaczynam się powtarzać, opisuję myśl na blogu. Raz, a dobr
 
 ----
 
-Blog mój zacząłem na nieistniejącym już serwisie Jogger.pl. Po zamknięciu
-Joggera przeniosłem treść do własnej domeny.
+Blog zacząłem pisać w 2003 r. na nieistniejącym już serwisie Jogger.pl. Obecnie
+z Joggera została [planeta Jogger][planeta] i [społeczność na
+Plusie][joggerplus].
+
+Po zamknięciu Joggera przeniosłem treść do własnej domeny.
 
 W obecnej inkarnacji nie ma już komentarzy. Eksperymentowałem z Disqusem, ale
 społeczność Joggerowa rozpierzchła się, a nie mam planów żeby budować własną.
@@ -38,3 +41,6 @@ Po angielsku:
 - [+MaciejBliziński](https://plus.google.com/+MaciejBlizi%C5%84ski) ‒ linki
 - [Wordpress](http://automatthias.wordpress.com/) ‒ blog po angielsku
 - [github](https://github.com/automatthias) ‒ różne kody źródłowe
+
+[planeta]: https://zakr.es/planetjogger/
+[joggerplus]: https://plus.google.com/communities/116979793263743755364
