@@ -234,9 +234,3 @@ jak z umieraniem. Któryś oddech musi być ostatni.  Okres zabaw z muzyką
 się skończył. Poszedłem na informatykę.
 
 Umarł Wahwah, niech żyje Automaciej!
-
-Co mi zostało z tamtych lat
----------------------------
-
-Ano [trochę nagrań](/nagrania/). Praktycznie każdy z nagranych utworów był nagrywany w przez
-inny skład, w innych okolicznościach i na innym sprzęcie.

@@ -6,7 +6,7 @@ tags = ["muzyka"]
 title = "Funksters"
 
 +++
-Fragmenty ze starej strony Funksters, która niegdyś znajdowała się w domenie funksters.nuta.pl. Dostępne są też [nagrania](/nagrania/).
+Fragmenty ze starej strony Funksters, która niegdyś znajdowała się w domenie funksters.nuta.pl.
 
 {{< figure src="/images/funksters/koncert-3.jpg" >}}
 
