@@ -6,7 +6,6 @@
 #   add-photo /path/to/IMG0001.JPG bike-trip-01
 
 set -u
-set -x
 set -e
 
 readonly INPUT_FILE=$1
@@ -36,4 +35,4 @@ git add "${_TO}"
 conv_img "${INPUT_FILE}" "${SIZE_SMALL}" "${IMG_DIR}/${YEAR}/${TITLE}-small.jpg"
 conv_img "${INPUT_FILE}" "${SIZE_BIG}" "${IMG_DIR}/${YEAR}/${TITLE}.jpg"
 echo "image = \"/images/${YEAR}/${TITLE}.jpg\""
-echo "{{< figure src=\"/images/${YEAR}/${TITLE}-small.jpg\" >}}"
+echo "{{< figure src=\"/images/${YEAR}/${TITLE}-small.jpg\" link=\"/images/${YEAR}/${TITLE}.jpg\" >}}"
