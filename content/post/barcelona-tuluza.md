@@ -7,22 +7,26 @@ tags = ["rower", "opowieści"]
 image = "/images/2017/sloneczniki-we-francji.jpg"
 
 +++
-Był rok 2013, końcówka lata. Plan był taki, żeby na wyjazd integracyjny mojego
-zespołu z pracy pojechać na rowerze, a że z Dublina do okolic Tuluzy jest
+
+Był rok 2013[^rok], końcówka lata. Plan był taki, żeby na wyjazd integracyjny
+mojego zespołu z pracy pojechać na rowerze, a że z Dublina do okolic Tuluzy jest
 daleko, polecieliśmy we dwóch z kolegą i z rowerami do Barcelony. Mieliśmy
 generalny pomysł na trasę: najpierw jechać na Adrall, a potem tam zadecydować,
 czy jedziemy zachodnią stroną czy na północny wschód, przez Andorę.  Trasa
 zachodnia wyglądała ciekawiej, ale też i miała więcej podjazdów.
 
-Oryginalny pomysł nie był mój, zaczęło się od tego że kolega z pracy, Niall,
-odwrócił się od biurka i zapytał:
+[^rok]: Wpis napisałem w miarę krótko po wycieczce w 2013, ale opublikowałem go
+        dopiero w 2017.
+
+Oryginalny pomysł nie był mój, zaczęło się od tego że kolega z pracy,
+Niall[^niall], odwrócił się od biurka i zapytał:
 
 “Ej, Maciek, a może tak byśmy pojechali tam na rowerach?”
 
 <!--more-->
 
-Niall jest imieniem irlandzkim gaelickim, i wymawia się je mniej więcej „Najal”
-z akcentem na pierwszą sylabę.
+[^niall]: Niall jest imieniem irlandzkim gaelickim, i wymawia się je mniej
+          więcej „Najal” z akcentem na pierwszą sylabę.
 
 {{< figure src="/images/2017/rzeczy-na-wycieczke-small.jpg"
 link="/images/2017/rzeczy-na-wycieczke.jpg" >}}
@@ -75,6 +79,9 @@ a klucz przychodził do pracy dopiero na ósmą rano. Wypiliśmy więc po kawie,
 zjedliśmy po ciastku i około 9 wyruszyliśmy w dalszą drogę, próbując uwolnić się
 od skwarnej i smrodliwej sieci głównych dróg.
 
+{{< figure src="/images/2017/rower-zaladowany-jezioro-small.jpg"
+link="/images/2017/rower-zaladowany-jezioro.jpg" >}}
+
 Po drugim dniu byliśmy w ciężkim stresie, że nie damy rady zrobić tych dwóch
 dużych podjazdów które były w planie. Potem okazało się że nasze oszacowania
 można było o kant zadka rozbić, a mianowicie: (1) i tak trzeba było zrobić
@@ -84,6 +91,34 @@ Odpowiednie tempo zależało od osoby: Niall miał swoje tempo, szybsze, ja mia�
 swoje, wolniejsze. Kiedy oddalał się o większy kawałek do przodu, robił sobie
 przerwę. Potem ja dojeżdżałem, braliśmy łyk wody i po kilku oddechach ruszaliśmy
 dalej. Sprawdzało się znakomicie.
+
+Przy którymś zjeździe usłyszałem trzask z tyłu, i po krótkiej inspekcji okazało
+się że jest problem z mocowaniem bagażnika. Śruba, którą bagażnik był
+przykręcony do ramy, została ścięta w momencie wstrząsu. Wjechałem zdaje się
+w jakieś pęknięcie w asfalcie. Szczęście w nieszczęściu było takie, że to co
+normalnie powinno być przykręcone do ramy, oparło się o oś tylnego koła,
+w związku z czym bagażnik utrzymał się na rowerze. Gdyby bagażnik zaczął
+odpadać, prawdopodobnie poszłyby kolejne śruby, po chwili miałbym dużo większy
+problem niż początkowo.
+
+Niall obejrzał ściętą śrubę, po czym poszedł do swojego roweru, i wyciągnął
+opaski zaciskowe. „Wszystko się nimi da naprawić”, zaanonsował. Po kilku
+minutach mocowanie bagażnika wyglądało tak:
+
+{{< figure src="/images/2017/cable-ties-small.jpg"
+link="/images/2017/cable-ties.jpg" >}}
+
+Byłem przekonany że nie wytrzyma to nawet pięciu minut. Ale spróbowałem
+przejechać metr. Bagażnik jakoś się utrzymał. 10 metrów. Dalej był tam gdzie
+trzeba. 100 metrów. Wciąż na swoim miejscu. Okazało się, że mogę normalnie
+jechać, bagażnik wciąż opiera się o oś, a opaski zabezpieczają pręt przed
+przesuwaniem. W ten sposób dojechałem do samego końca trasy, i naprawiłem
+bagażnik dopiero w Dublinie po powrocie.[^sruba]
+
+[^sruba]: Po roku czy dwóch problem się powtórzył, więc prawdopodobnie jest to
+          jakaś wada konstrukcyjna tego roweru. Miejsce jest tam tylko na
+          cienką śrubkę, a przeciążenia które wywierają na nią moment
+          ścinający -- duże.
 
 Główny problem po drugim dniu, główny powód dla którego byliśmy tacy
 zestresowani, był taki że ja próbowałem forsować zbyt szybkie dla mnie tempo
@@ -102,6 +137,20 @@ problem.
 
 {{< figure src="/images/2017/andora-podjazd-small.jpg"
 link="/images/2017/andora-podjazd.jpg" >}}
+
+Moją prędkością na siedmioprocentowym podjeździe było 5km/h. Szybciej niż 5km/h
+po prostu nie dawałem rady jechać. Oczywiście mogłem sobie to tłumaczyć, że jest
+pod górę, że jestem stary, że rower załadowany. Ale prościej jest podejść do
+tego tak: to nie jest wyścig. Moim celem było dojechać, i żeby utrzymywać ciało
+w rozsądnej równowadze, muszę go słuchać, i wiedzieć, jaka ilość oraz rodzaj
+dyskomfortu są „normalne”, i jaki poziom wysiłku jest realny do utrzymania na
+dłuższą metę.
+
+Po tych wszystkich rozważaniach dojechałem do najwyższego punktu w Andorze, po
+którym zaczął się zjazd w dół, na francuską stronę.
+
+{{< figure src="/images/2017/andora-na-gorze-small.jpg"
+link="/images/2017/andora-na-gorze.jpg" >}}
 
 Po Andorze grzaliśmy do przodu ile fabryka dała (ale nie szybciej!). Zjazd był
 niesamowity, kiedy po wspięciu się na 2500m npm zjeżdżaliśmy drogą nachyloną tak
@@ -127,6 +176,9 @@ ale są tak projektowane, żeby utrzymać z grubsza stałe nachylenie, gdzieś
 pomiędzy 6% i 7%.  Wiejska droga natomiast idzie tak jak idzie i jeżeli pagórek
 miał nachylenie 12%, to droga też. Na rowerze robi to dużą różnicę.
 
+{{< figure src="/images/2017/pochmurna-francja-small.jpg"
+link="/images/2017/pochmurna-francja.jpg" >}}
+
 Dopiero tutaj zrobiły mi się zakwasy: pagórki były krótkie, więc na niektóre
 można było wjechać na zasadzie sprintu. Szkopuł w tym, że jeżeli taki sprint
 trafia się co kilka minut regularnie przez kilka godzin, to nawet ktoś kto się
@@ -142,8 +194,3 @@ murem średniowiecznej wiosce.
 
 {{< figure src="/images/2017/mur-i-widok-z-wioski-small.jpg"
 link="/images/2017/mur-i-widok-z-wioski.jpg" >}}
-
-----
-
-_Wpis napisałem w miarę krótko po wycieczce w 2013, ale opublikowałem go dopiero
-w 2017._
