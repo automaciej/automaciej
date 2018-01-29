@@ -242,3 +242,12 @@ przerwać płynność wypowiedzi.
   za rekomendację Max Payne 3, chyba się skuszę :)</p>
 * automaciej (2015-12-31 16:29:09): <p>o, Max Payne 3 (PS3) jest w promocji za
   €7! (do dwudziestego któregoś stycznia)</p>
+
+Dopisek z 2018-01-28: Po dłuższej przerwie skończyłem Max Payne 3. Musiałem
+rozrysować sobie diagram historii, bo od pewnego momentu nie do końca rozumiałem
+kto, co, z kim, ani dlaczego. W samej grze zabawa była przednia, rzeczywiście
+nie podzielałem zagubienia bohatera, ale mogłem sobie trochę wyobrazić jak to
+jest. Gdzieś w połowie gry było kilka sytuacji w których Brazylijskie postaci
+mówiły pomiędzy sobą rzeczy lekko obraźliwe w stosunku do Maxa. A tak poza tym
+to są krzyki typu „jesteś z daleka od domu, nie masz szans!” albo „o ranyyyy
+ręki nie czuję!”
