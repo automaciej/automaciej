@@ -2,7 +2,6 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8">
-    {{ $paginator := .Paginate .Data.Pages }}
     {{ partial "head-section.html" . }}
     <meta property="og:description"        content="{{ .Title }}" />
     <meta name="description" content="{{ .Site.Params.description }}">
@@ -10,14 +9,9 @@
           type="application/rss+xml"
           title="{{ .Title }} ‒ {{ .Site.Title }}"
           href="{{ .RSSLink }}" />
-    <link rel="canonical" href="{{ .Permalink }}{{ $paginator.URL }}" />
-    {{ if $paginator.HasPrev }}<link rel="prev" href="{{ $paginator.Prev.URL }}" />{{ end }}
-    {{ if $paginator.HasNext }}<link rel="next" href="{{ $paginator.Next.URL }}" />{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}" />
     <title>
-      {{ .Title -}}
-      {{- if ne $paginator.PageNumber 1 }} (strona {{ $paginator.PageNumber }})
-      {{ end }}
-      &mdash; {{ .Site.Title }}
+      {{ .Title }} &mdash; {{ .Site.Title }}
     </title>
   </head>
   <body>
@@ -26,16 +20,19 @@
       <div class="row">
         <div class="col-md-8 col-xs-12">
           <div>
-            <h1 id="title">{{ .Title }}</h1>
-              {{ range $paginator.Pages }}
-                {{ .Render "summary"}}
-              {{ end }}
+            <h1 id="title">{{ .Title }} &mdash; {{ .Site.Title }}</h1>
+            {{ range .Data.Pages }}
+            <ul class="archiwum">
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="text-muted small">
+                  ({{ dateFormat "2006-02-01" .Date }})
+                </span>
+              </li>
+            </ul>
+            {{ end }}
           </div>
-          {{ template "_internal/pagination.html" . }}
         </div><!-- col-md-8 col-xs-12 -->
-        <div class="col-md-4 col-xs-12">
-          {{ partial "all-tags.html" . }}
-        </div><!-- col-md-4 -->
       </div><!-- row -->
     </div><!-- container -->
     {{ partial "footer.html" }}

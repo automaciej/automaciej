@@ -12,3 +12,13 @@ div.container iframe {
 .automaciej-text-muted {
   color: #CCC;
 }
+
+ul.archiwum {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.archiwum li {
+  padding: 0;
+  margin: 0;
+}
