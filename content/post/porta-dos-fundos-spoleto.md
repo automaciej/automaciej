@@ -6,11 +6,12 @@ image = "/images/2017/porta-dos-fundos-spoleto.jpg"
 date = "2017-07-30T08:32:26+01:00"
 
 +++
-{{< youtube "Un4r52t-cuk" >}}
-
 Jak przejść od „dzień dobry” do rzucania… no, nie mięsem, ale jedzeniem.
 
 <!--more-->
+
+{{< youtube "Un4r52t-cuk" >}}
+
 Jest to pierwszy filmik Porta dos Fundos jaki miałem okazję zobaczyć. Ktoś
 wysłał mi link do niego w kontekście jakiejś rozmowy na temat wybierania
 składników obiadu.

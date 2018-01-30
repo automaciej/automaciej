@@ -7,9 +7,11 @@ tags = ["raptularz", "że jak?"]
 title = "Porta dos Fundos: Nie opierać się o Boga!"
 
 +++
-{{< youtube "t11JYaJcpxg" >}}
-<!--more-->
 Polskie tłumaczenie skeczu Porta dos Fundos.
+
+<!--more-->
+
+{{< youtube "t11JYaJcpxg" >}}
 
 Aktor który gra Boga, Rafael Infante, powtarza niektóre motywy w różnych
 skeczach. Na przykład to, żeby nie dotykać Boga. W innym skeczu gra Diabła, i

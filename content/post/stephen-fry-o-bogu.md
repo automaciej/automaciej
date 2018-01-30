@@ -14,6 +14,8 @@ doceniam odpowiedź Stephena Fry.
 
 RTE nie włączyło opcji tłumaczeń z tłumu, więc wrzucam je tutaj.
 
+<!--more-->
+
 ----
 
 **Gay Byrne:** Załóżmy to, w co wierzył Oskar, pomimo pana protestów. Załóżmy że
@@ -45,5 +47,3 @@ jest po prostu nieakceptowalne. Wiesz, w ateizmie nie chodzi wyłącznie o brak
 wiary, ale przy założeniu że jakiś bóg istnieje, co to za bóg? On jest potworem
 i nie zasługuje ani na jotę szacunku.  Bez niego życie staje się prostsze,
 czystsze, i według mnie, jest w nim więcej sensu.
-
-<!--more-->

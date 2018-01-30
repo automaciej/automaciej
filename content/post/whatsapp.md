@@ -9,9 +9,9 @@ title = "Porta dos Fundos: WhatsApp"
 +++
 Zrobiłem kolejne polskie tłumaczenie Porta dos Fundos, WhatsApp po raz drugi.
 
-{{< youtube "gGYD7f6ImAw" >}}
-
 <!--more-->
+
+{{< youtube "gGYD7f6ImAw" >}}
 
 Spodobała mi się ta formuła:
 

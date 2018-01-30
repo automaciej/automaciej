@@ -8,9 +8,10 @@ description = "Mało co potrafi człowieka tak przerazić jak piekielne potępie
 +++
 Mało co potrafi człowieka tak przerazić jak piekielne potępienie.
 
+<!--more-->
+
 {{< youtube "gL1lJZVgCao" >}}
 
-<!--more-->
 Tłumaczenie z portugalskiego na polski.
 
 Zauważyłem kilka motywów wspólnych ze skeczem [„Nie opierać się o Boga!”]({{

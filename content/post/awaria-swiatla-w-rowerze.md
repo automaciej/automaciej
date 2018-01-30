@@ -14,28 +14,28 @@ zapomniał i trzeba było wracać._
 Mam ja sobie dynamo w piaście i światło w rowerze. Nie piszę „lampkę”, bo [moje
 światło][edelux-2], przypomina bardziej światło w samochodzie.
 
+<!--more-->
+
 {{< figure src="/images/2017/edelux-ii-zblizenie-small.jpg"
   link="/images/2017/edelux-ii-zblizenie.jpg" >}}
 
-Oczywiście ma mniejszą moc, 3W zamiast 12W, ale światła daje wystarczająco dużo
-żeby w pełni oświetlić drogę przede mną, kiedy jest ciemno.
+Światło rowerowe (3W) ma oczywiście mniejszą moc niż samochodowe (12W) ale i tak
+potrafi pełni oświetlić ciemną drogę.
 
-Któregoś wieczora zauważyłem że światło się nie świeci. Wcześniej tego dnia
-parkowałem w ruchliwej części centrum, więc pomyślałem że ktoś próbował ukraść
-rower, albo światło, i coś przy okazji zepsuł. Rower próbują mi kraść
-przynajmniej dwa razy do roku, więc jestem trochę przyzwyczajony.
+Któregoś wieczora zauważyłem że światło się nie świeci. Po południu parkowałem
+w ruchliwej części centrum, więc możę ktoś próbował ukraść rower, albo światło,
+i coś przy okazji zepsuł. Rower próbują mi kraść przynajmniej dwa razy do roku,
+więc jestem trochę przyzwyczajony.
 
 Obejrzałem instalację szukając jakiegoś uszkodzenia, na przykład urwanego kabla.
-Niczego nie zauważyłem. A światło nie świeciło. Więc zepsuło się albo dynamo,
+Niczego nie zauważyłem. Ale światło nie świeciło. Więc zepsuło się albo dynamo,
 albo światło. Zauważyłem też że dynamo daje więcej oporu niż normalnie, tak jak
 gdyby rower „zużywał” wygenerowany prąd w jakiś sposób. Ale w jaki? Co się
 dzieje z tą energią, czy zamieniana na ciepło? Mam rower z centralnym
 ogrzewaniem?
 
-<!--more-->
-
-Po odłączeniu przewodu opór mechaniczny malał. To by oznaczało że dynamo w jakiś
-sposób działa, tylko… nie w taki jak potrzeba.
+Po odłączeniu przewodu opór mechaniczny zmalał. To by oznaczało że dynamo
+w jakiś sposób działa, tylko… nie w taki jak potrzeba.
 
 Przy okazji parapetówki poprosiłem znajomego żeby przywiózł swój rower, żeby
 sprawdzić jego światło z moim dynamem i vice versa. Okazało się że wtyczki są

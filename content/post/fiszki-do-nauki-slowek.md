@@ -141,7 +141,6 @@ w stanie wepchnąć sobie do głowy w krótkim czasie.
 {{< figure src="/images/2017/ankidroid-portugalski.png" >}}
 
 W ciągu ostatniego miesiąca, poświęcając na fiszki około 15 minut dziennie,
-nauczyłem się ~50 nowych słów dobrze, i ~170 nowych słów trochę mniej dobrze,
-ale wciąż rozsądnie.
+nauczyłem się ~220 nowych słów.
 
 [ankidroid]: https://play.google.com/store/apps/details?id=com.ichi2.anki

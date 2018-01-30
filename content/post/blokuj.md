@@ -3,7 +3,7 @@ date = "2017-01-21T13:40:12Z"
 description = "„Bloqueio”, jest z lata 2016, kiedy rząd Brazylii zablokował WhatsApp na kilka dni."
 image = "/images/2017/porta-dos-fundos-bloqueio.jpg"
 tags = ["raptularz", "że jak?"]
-title = "Blokuj!"
+title = "Porta dos Fundos: Blokuj!"
 
 +++
 
@@ -17,5 +17,6 @@ Trzeba włączyć napisy, i w razie potrzeby ustawić język na polski.
 Uwaga z dziećmi i w pracy, bo w filmiku nie dość że strasznie klną, to jeszcze
 po portugalsku.
 
-{{< youtube "sLPBSSXcLqk" >}}
 <!--more-->
+
+{{< youtube "sLPBSSXcLqk" >}}
