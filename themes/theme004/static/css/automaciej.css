@@ -29,3 +29,23 @@ figure > img, figure > a > img {
   margin: 0.5em;
   border: 1px solid #EEE;
 }
+
+/* Pracowałem nad którąś tam tabelką. */
+table tr th {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-bottom: 2px solid #AAA;
+}
+
+table td {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+table, th, td {
+  border: 1px solid #EEE;
+}
+
+table {
+  border-collapse: collapse;
+}
