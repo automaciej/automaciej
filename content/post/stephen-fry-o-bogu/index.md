@@ -1,12 +1,12 @@
----
-date: "2017-12-29T14:11:02Z"
-description: ""
-draft: false
-tags:
-- ateizm
-- sceptycyzm
-title: Stephen Fry o Bogu
----
++++
+title = "Stephen Fry o Bogu"
+tags = ["ateizm"]
+image = "/images/2017/stephen-fry.jpg"
+description = ""
+draft = false
+date = "2017-12-29T14:11:02Z"
+
++++
 
 Stary już dość klip z jednego z irlandzkich programów telewizyjnych: [Stephen
 Fry on God](https://youtu.be/-suvkwNYSQo).  Z perspektywy czasu coraz bardziej
