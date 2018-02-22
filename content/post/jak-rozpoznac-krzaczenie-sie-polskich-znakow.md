@@ -110,7 +110,6 @@ się, kiedy mamy polskie znaki pokrzaczone nie jedno-, ale dwukrotnie!
   polskie literki. Postanowiłem nadgonić plotkę i naprawdę go napisałem.<br
   />Tym razem jest to dostępny on-line skrypt, do którego można wkleić
   pokrzaczony polski tekst,[...]</p>
-* ,./,/.ij8890980i (2011-03-29 11:48:28): <p>jebane huje</p>
 * Kurt (2011-12-11 15:41:32): <p>Ciekawe c o to za kretyn wpisał się powyżej.
   Najwyraźniej miał pokrzaczone kodowanie we łbie.</p>
 * Pozycjonowanie stron (2013-03-12 15:11:35): <p>Można wykryć kodowanie za
