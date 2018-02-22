@@ -41,7 +41,7 @@ Niniejszym przewiduję, że kurs złotówki wzrośnie. Kiedyś. Tylko że i tak
 wróżbitą nie będę, bo za mało się wykazywałem jako dziecko (z dokładnością do
 przewidzenia rozpadu Związku Radzieckiego, ale to detal).
 
-# Komentarze
+## Komentarze
 
 * tatar (2009-02-26 12:03:12): <p>Wysłuchałem właśnie w radio rozmowy z jednym z
   autorów listu &#8211; bodaj panem Prof. dr hab. Łukaszem Turskim. <br />

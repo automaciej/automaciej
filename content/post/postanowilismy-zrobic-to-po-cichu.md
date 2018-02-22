@@ -19,7 +19,7 @@ Czyli „jak wywaliliśmy [w błoto
 to postanowiliśmy zrobić to po cichu, żeby się opinia publiczna nie
 zdenerwowała”.
 
-# Komentarze
+## Komentarze
 
 * Anhalter (2008-12-30 15:26:55): <p>Najlepsze są komentarze tej dewotki Hanny
   Gronkiewicz-Waltz.</p>

@@ -109,7 +109,7 @@ się okazuje, że Europa żyje w przyszłości. Kiedy ja się kładę spać, w E
 ludzie już wstają -- tam już jest jutro! To interesujące, ciekawe czy w
 Europie już mają Linuksa 2.6.23?
 
-# Komentarze
+## Komentarze
 
 * Walker (2007-10-05 13:43:33): <p>Baardzo ciekawy wpis i przyjemnie się go
   czyta.</p>

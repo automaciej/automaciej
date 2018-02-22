@@ -34,7 +34,7 @@ organizował stanowisko od nowa, na miejscu.
 Zaraz po napisaniu tej notatki wyłączam komputer i składam całe stanowisko.
 Następne wpisy będą z pokładu laptopa.
 
-# Komentarze
+## Komentarze
 
 * hcz (2006-12-31 00:58:48): <p>Młodzieżowo&#8230;? Ja tam zawsze zatrzymuję się
   w hostelach i bardzo sobie chwalę, choć do młodzieży już się niestety od

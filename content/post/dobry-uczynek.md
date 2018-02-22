@@ -16,7 +16,7 @@ trafiły do kogoś, kto będzie z nich korzystał.
 \- Tak. W zasadzie. No, nie do końca, bo też sprzedaję książkę o Microsoft
 .NET...
 
-# Komentarze
+## Komentarze
 
 * Kasia Rogowska (2008-01-20 00:23:21): <p>A jakie to książki? :)</p>
 * antoszka (2008-01-20 00:27:00): <p>Z książki o MS .net najlepszy uczynek

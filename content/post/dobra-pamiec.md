@@ -18,7 +18,7 @@ było rano, więc nie bardzo pamiętałem...
     [12:02:10] L.: właśnie zjadam Twoje müsli 
 
 
-# Komentarze
+## Komentarze
 
 * Mike (2007-06-18 13:39:07): <p>Ja tak zapominam o kawie, zaleje i zostawiam w
   kuchni. Dobrze, że ktoś wymyślił mikrofalówkę &#8211; zawsze mogę podgrzać,

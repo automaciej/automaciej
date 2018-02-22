@@ -256,7 +256,7 @@ Mężczyzna: Mam tego dość.
 
 Pan Vibrating: Nie ma pan.
 
-# Komentarze
+## Komentarze
 
 * dunDer (2007-06-02 15:13:14): <p>&#8222;Być może dlatego tak trudno jest
   Polakom prowadzić dyskusje. Nikt tego nie uczy w szkołach i sami nawet nie

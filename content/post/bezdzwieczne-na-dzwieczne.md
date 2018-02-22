@@ -9,6 +9,6 @@ Zabawne, co dzieje się kiedy w słowie "strata" zamienimy wszystkie
 bezdźwięczne spółgłoski na dźwięczne.
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * Draakhan (2005-12-29 22:13:52): <p>Ciekawe :)</p>

@@ -31,7 +31,7 @@ szczególnie jeżeli chodzi o szum powodujący przebarwienia; zgaduję że jest 
 osiągane poprzez odszumianie kanałów HSV zamiast RGB. W Gimpie nie udało mi
 się tego osiągnąć.
 
-# Komentarze
+## Komentarze
 
 * ignis (2007-08-17 15:03:30): <p>no niestety ja tez sie bawie w odszumianie w
   gimpie, bo gimp wariuje jesli dostaje informacje z nowszych aparatow :(</p>

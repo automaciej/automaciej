@@ -89,7 +89,7 @@ elementem.
 
 _\* Prawdopodobnie._
 
-# Komentarze
+## Komentarze
 
 * Paweł Ciupak (z WinNT5.0) (2008-10-25 13:49:44): <p>Dobra, to kiedy będą
   krucjaty przeciw wierzącym?</p>

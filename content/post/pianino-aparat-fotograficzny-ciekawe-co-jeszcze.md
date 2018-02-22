@@ -20,7 +20,7 @@ komputera. Wystarczy że instrument będzie miał solidną, ważoną klawiaturę
 Tak więc, jeżeli plany się powiodą, zimowe wieczory spędzę brzdąkając i
 układając nowe wzory funky, a lato powitam jako strzelec-rejestrator chwil.
 
-# Komentarze
+## Komentarze
 
 * froger3 (2005-08-19 00:25:33): <p>kurde, kolejny chory na D70:) <br />za
   szybko się ta choroba rozprzestrzenia, oj za szybko...</p>

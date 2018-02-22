@@ -48,7 +48,7 @@ wystawiana](http://www.powszechny.art.pl/?mod=spektakle&action=spektakl&id=13)
 w Teatrze Powszechnym. Gra aktorska powinna być doskonała, chociaż widzę
 pewien minus — na scenie nie będzie ładnych licealistek.
 
-# Komentarze
+## Komentarze
 
 * Wanted (2008-11-24 13:54:17): <p>Pics or it didn&#8217;t happen!</p>
 * Automaciej (2008-11-25 10:17:39): <p>Przed spektaklem prosili żeby nie robić

@@ -73,7 +73,7 @@ Zostawiłem więc ten montaż do czasu aż mi przejdzie grypa.
 I gdybym miał tak pracować, jak montowałem to wideo... jestem bardzo
 zadowolony że nawet nie próbowałem.
 
-# Komentarze
+## Komentarze
 
 * hcz (2013-02-09 21:38:55): <p>Ja trzy lata temu zacząłem kąpać się w
   przeręblach. Nie pamiętam już co to grypa...</p>

@@ -74,7 +74,7 @@ A co z rybą bass? To proste, trzeba zmieszać „a” z „e”. Bæs.
 gryfu końcu..." ).  
 [\*\*] Jak w polskim wyrazie [autobus](http://www.youtube.com/watch?v=dme-Ns3G4o4#t=2m14s "Może być czerwony." ).
 
-# Komentarze
+## Komentarze
 
 * Remigiusz 'lRem' Modrzejewski (2011-07-16 12:37:30): <p>Prze-rą-ba-ne... Też
   mam te problemy :/</p>

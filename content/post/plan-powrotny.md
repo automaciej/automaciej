@@ -12,7 +12,7 @@ uszach podczas startu i lądowania.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * Ja-Joanna (2006-03-24 16:53:22): <p>Aaa... samolotem leciałeś! To dlatego tak
   szybko znowu online! No tak, a ja się dziwiłam. :)</p>

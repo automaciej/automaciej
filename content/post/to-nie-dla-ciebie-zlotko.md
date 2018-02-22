@@ -39,7 +39,7 @@ Nawet im to nie przyjdzie do głowy.
 
 (via [Laura Czajkowski](https://plus.google.com/u/0/102921374554385564572/posts/dwCbS1ZjE1x))
 
-# Komentarze
+## Komentarze
 
 * Zal (2012-12-01 11:18:32): <p>+1.</p>  <p>Przy czym to sami rodzice powinni
   dbać o to, aby nie traktować gorzej córek.</p>

@@ -136,7 +136,7 @@ Czy znalazłem te serwery? Nie potwierdzę, ani nie zaprzeczę...
 _UPDATE: Atomów w (obserwowalnym) Wszechświecie jest jednak więcej, bo 1.7 ×
 1077, a adresów IPv6 jest 2128 =~ 1038._
 
-# Komentarze
+## Komentarze
 
 * kkk (2008-03-21 21:09:24): <p>Ciekawy wpis.</p>
 * Marek (2008-03-22 16:33:42): <p>Och, jak ja lubię czytać Twoje, Maćku, teksty.

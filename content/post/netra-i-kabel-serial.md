@@ -60,7 +60,7 @@ gniazdka i mam dostęp do portu serial.
 Koleżanka doradza zlutowanie jeszcze ze dwóch takich kabli. Tak na wszelki
 wypadek.
 
-# Komentarze
+## Komentarze
 
 * GiM (2008-05-18 11:52:25): <p>Niech żyje nasz przodownik pracy! ;)</p>
 * lordmac (2008-05-19 10:56:41): <p>A jeszcze fajnieszy jest patent z Net

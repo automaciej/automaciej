@@ -97,7 +97,7 @@ przynajmniej wiadomo o co chodzi.
 A jeżeli nie o to nam chodzi, tym bardziej dobrze jest użyć jednoznacznego
 sformułowania.
 
-# Komentarze
+## Komentarze
 
 * mamaT (2007-06-01 14:42:27): <p>dawno już odkryłam, że w słowie
   &#8222;powinno&#8221; kryje się &#8222;wina&#8221;. W zwiazku z tym niewinne

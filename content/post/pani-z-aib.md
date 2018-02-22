@@ -22,7 +22,7 @@ miesiące.
 ― To znaczy, mam... ekstrapolować?  
 ― Dokładnie.
 
-# Komentarze
+## Komentarze
 
 * Piotr Szymczak (2007-01-27 00:30:38): <p>No na użycie słowa ekstrapolacja bym
   raczej nie liczył, ale może jakaś bystra użyłaby &#8222;prognozowany&#8221;

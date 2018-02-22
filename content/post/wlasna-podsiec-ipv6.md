@@ -26,7 +26,7 @@ I oto, co się teraz wyprawia:
 
 I można prowadzić rozkminki we dwójkę, nucąc sobie pod nosem:
 
-# Komentarze
+## Komentarze
 
 * grigorij (2008-04-13 15:26:58): <p>Chyba też sobie &#8222;założe&#8221; taki
   Internet w domu.. Myślę że tyle adresów w sam raz mi wystarczy;)</p>

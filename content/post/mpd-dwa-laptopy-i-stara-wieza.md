@@ -27,7 +27,7 @@ z dowolnego komputera.
 
 Cudaaawnie.
 
-# Komentarze
+## Komentarze
 
 * Elwis (2007-04-22 17:48:17): <p>window$ tak nie potrafi ;)</p>
 * BeteNoire (2007-04-22 18:12:54): <p>Przecież to można w ssh/screen robić i nie

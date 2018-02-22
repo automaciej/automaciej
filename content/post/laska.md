@@ -34,7 +34,7 @@ Tak jak w informatyce: nie ma problemu którego nie dałoby się rozwiązać
 poprzez wprowadzenie dodatkowej warstwy abstrakcji. „Strach → miłość" źle? Nie
 ma sprawy, załatamy: „Strach → modlitwa → łaska → miłość". Voila!
 
-# Komentarze
+## Komentarze
 
 * sprae (2012-04-28 07:56:16): <p>Mi się wydaje to proste. Miłość dlatego bo
   dostajesz lepsze życie i obietnice zbawienia (dla chrześcijan za darmo).

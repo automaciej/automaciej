@@ -154,7 +154,7 @@ dobrze, albo mniej dobrze, rozumiałem, co to zdanie znaczyło. Dlatego na
 wypowiedź typu „ALE to jest po angielsku!” odpowiadam: „ALE i tak musisz znać
 angielski, przyjacielu!”
 
-# Komentarze
+## Komentarze
 
 * Krzysztof Klimonda (2007-11-25 00:22:18): <p>Co tu wiele napisać, amen. A
   strona google jest świetna &#8211; dzięki, że podałeś linka.</p>

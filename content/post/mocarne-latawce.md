@@ -74,7 +74,7 @@ Tymczasem dzisiejszy pierwszy start był bardzo udany, choć bez
 [szaleństw](http://www.youtube.com/watch?v=pcOxBi8UTUs). Na razie uczę się
 sterowania latawcem.
 
-# Komentarze
+## Komentarze
 
 * Crash (2008-06-01 22:13:24): <p>Fajna sprawa :) Ja mam dwulinkowy
   &#8222;wyczynowy&#8221; latawiec, ale jak na razie umiem zrobić nim jedynie

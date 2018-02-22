@@ -60,7 +60,7 @@ powiedzieć że wystąpiła rozbieżność środków/oczekiwań, kiedy jedna oso
 weszła do domu drugiej i wyniosła telewizor. Ale czy to znaczy, że nie ma
 czegoś takiego jak kradzież?
 
-# Komentarze
+## Komentarze
 
 * Grzegorz (2009-01-18 16:37:32): <p>Widać, niektórzy przyswoili sobie
   najpopularniejsze chwyty erystyczne (<a

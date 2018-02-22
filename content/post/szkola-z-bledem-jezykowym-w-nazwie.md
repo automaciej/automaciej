@@ -14,7 +14,7 @@ ortograficzny](http://chopin.edu.pl/~univac/dict)!
 Szkoła skądinąd bardzo fajna, dobrze wyposażone sale do ćwiczeń, sensowna
 dyrekcja. Wiem, bo w niej w zeszłym roku byłem uczyłem programowania w shellu.
 
-# Komentarze
+## Komentarze
 
 * iss (2006-04-26 15:39:55): <p>Gdy usłyszałem o niej pierwszy raz, to się
   zastanawiałem co za ćwok tak to nazwał. Przecież to tak, jak nazwać niechcianą

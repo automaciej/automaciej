@@ -11,7 +11,7 @@ poniedziałku.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * mx28 (2004-05-07 08:00:42): <p>:) DLACZEGO SIE GLODZISZ??? BOO.....</p>
 * wahwah (2004-05-07 08:33:07): <p>Bo muszę dowiedzieć się, na ile moje

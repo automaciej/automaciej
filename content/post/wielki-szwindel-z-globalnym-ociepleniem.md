@@ -92,7 +92,7 @@ megalomanią. Czekam, co będzie dalej.
 2 Dla ciekawych, na Wikipedii jest całkiem długi artykuł o [tym
 programie](http://en.wikipedia.org/wiki/The_Great_Global_Warming_Swindle).
 
-# Komentarze
+## Komentarze
 
 * Piotr Konieczny (2009-02-07 21:22:53): <p>&#8222;Baterie słoneczne dają tyle
   energii, że co prawda można włączyć żarówkę albo lodówkę, ale nie naraz&#8221;

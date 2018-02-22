@@ -31,7 +31,7 @@ UPDATE: Miałem nieaktualne dane, [przekupstwo nie dojdzie do
 skutku](http://linuxnews.pl/microsoft-pokonany-w-nigerii/). Bardzo to miłe.
 Ciekawe, czy mój kod z UCD też jest jednak używany...?
 
-# Komentarze
+## Komentarze
 
 * Bonjoure (2007-11-11 08:15:11): <p>Szkoda. Już tak blisko było 17 tysięcy
   zadowolonych użytkowników&#8230;</p>

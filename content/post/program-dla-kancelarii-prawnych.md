@@ -13,7 +13,7 @@ byłaby to dla mnie duża satysfakcja.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * mamma (2007-06-13 16:57:00): <p>i co było dalej? ten program to skarb, ludzie
   nie są w stanie pojąć, że ktoś daje to za darmo!</p>

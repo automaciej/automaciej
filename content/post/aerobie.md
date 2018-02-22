@@ -40,7 +40,7 @@ dalekiego rzutu.
 
 1 Palo Alto, Kalifornia. Krzemowa Dolina!
 
-# Komentarze
+## Komentarze
 
 * hcz (2007-06-02 00:56:19): <p>Mam nadzieję, że kiedy przyjedziesz
   (przyjedziecie) do Polski będzie okazja porzucać bumerangami i tym co tam

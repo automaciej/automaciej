@@ -158,7 +158,7 @@ Początek pisało mi się bardzo trudno, przede wszystkim dlatego, że nie jeste
 przyzwyczajony do pisania takich bzdur. Potem, kiedy doszedłem do grafów i
 człowieczka z atomów, nie mogłem powstrzymać się od chichotania...
 
-# Komentarze
+## Komentarze
 
 * Zal (2008-04-06 16:49:23): <p>Alleluja! ;]</p>  <p>Ciekawe doświadczenie i to
   z moim ulubionym bóstwem w roli głównej.</p>

@@ -20,7 +20,7 @@ W planach są:
   * Przemyśleć uwagi mojego recenzenta i przygotować siano, żeby mieć się czym
     wykręcić.
 
-# Komentarze
+## Komentarze
 
 * Joanna (2006-12-08 20:47:54): <p>Taa&#8230; ja za tydzień mam wykład o
   prezentacjach w LaTeX-u no i moja prezentacja&#8230; też leży. Też mam

@@ -28,7 +28,7 @@ nikogo nie dziwiło. Teraz paczki już nie ma. Większość osób używa systemu
 Redmond i krzywi się na wszelką dziwność. Staram się zachować tą świeżość i
 chęć do eksperymentowania. Tylko czuję się z tym trochę... samotny.
 
-# Komentarze
+## Komentarze
 
 * Przypadkowy (2006-03-22 00:49:25): <p>no cos takiego ... jak bym swoje
   lusterko widzial ... tyle, ze studia z poczatkami spectrum mi sie kojarza ...

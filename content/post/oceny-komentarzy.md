@@ -14,7 +14,7 @@ tutaj są komentarze. Komentarze też się ocenia.”
 Moja dziewczyna:  
 „A czy oceny komentarzy też się ocenia?”
 
-# Komentarze
+## Komentarze
 
 * Crash (2006-11-29 22:42:34): <p>A oceny ocen komentarzy?</p>
 * balbardagram (2006-11-29 22:49:38): <p>A oceny ocen ocen komentarzy?</p>

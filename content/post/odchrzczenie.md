@@ -40,7 +40,7 @@ i [głosząc](http://www.zw.com.pl/artykul/23,344517.html) przed populacjami
 nękanym przez AIDS, że używanie
 [prezerwatyw](http://pl.wikipedia.org/wiki/Prezerwatywa) jest be.
 
-# Komentarze
+## Komentarze
 
 * pecet (2009-03-18 13:13:20): <p>Wciąż nie rozumiem ludzi którym się chce bawić
   z takie pierdoły jak apostazja, no ale to chyba jak w przypadku gejów, na

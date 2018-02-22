@@ -87,7 +87,7 @@ A mówią że to sceptycy mają zamknięte umysły.
 
 [_(źródło)_](http://skeptico.blogs.com/skeptico/2005/03/how\_do\_you\_prov.html)
 
-# Komentarze
+## Komentarze
 
 * jamajka (2009-03-19 11:31:56): <p>To że kolega nie umiał znaleźć
   kontrargumentu na to naiwne dowodzenie istnienie fotografii nie znaczy że taki

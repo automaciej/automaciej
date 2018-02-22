@@ -18,7 +18,7 @@ udowodnić... ja nie szedłbym aż tak daleko.”
 Daleko? Nie spodziewałem się, że można na to patrzeć z tej strony. Tak jakby
 punktem wyjścia była wiara w duchy.
 
-# Komentarze
+## Komentarze
 
 * Hubert (2007-04-28 11:50:44): <p>Czytam tę notkę, czytam jeszcze raz i
   kolejny&#8230; i nie rozumiem co autor chciał przekazać. Rozumiem, że jest

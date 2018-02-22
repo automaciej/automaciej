@@ -68,7 +68,7 @@ atakowani przez programy z załączników email i złośliwych stron internetowy
 To smutne, że w dzisiejszych czasach Internet oznacza jedynie strony WWW i
 email...
 
-# Komentarze
+## Komentarze
 
 * cenebris (2005-08-15 09:35:02): <p>Mam trochę podobny problem w akademiku -
   admin nie chce mi przekierować portu na moje ip. Sądzisz, że tą techniką

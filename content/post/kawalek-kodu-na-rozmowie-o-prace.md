@@ -60,7 +60,7 @@ siebie myśl, że powinni byli to zrobić?
 
 A Wy, jak uważacie?
 
-# Komentarze
+## Komentarze
 
 * pc (2006-08-24 17:45:32): <p>nie liczy się czas klepania w klawisze, a jakość
   tworzonego oprogramowania. hindusi są szybcy i tani, zatrudniłbyś ich?</p>

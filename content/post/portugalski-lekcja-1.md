@@ -23,7 +23,7 @@ mulier kier?”, a oznaczającą: czego chce kobieta?
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * pecet (2009-08-03 18:56:12): <p>zajebsity kurs, jestem językowym beztalenciem
   i wszystko zrozumiałem, czekam na następne części ;)</p>

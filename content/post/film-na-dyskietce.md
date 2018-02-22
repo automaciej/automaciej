@@ -41,7 +41,7 @@ A może można by napisać tak:
 > u koleżanki, równocześnie w moim mieszkaniu to futro normalnie zakładam. Co
 > z tym mogę zrobić?
 
-# Komentarze
+## Komentarze
 
 * pesymizm (2006-09-15 16:00:58): <p>;D kobiety....  <br /> <br />Czy można być
   rzeczywiście takim ciemnym? :)</p>

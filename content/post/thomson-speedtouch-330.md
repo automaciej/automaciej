@@ -46,7 +46,7 @@ instrukcje sprawdzania różnych rzeczy, np. wersji jądra czy wersji modemu.
 
 Pisać, czy nie pisać? Oto jest pytanie...
 
-# Komentarze
+## Komentarze
 
 * Zakrn (2005-10-17 07:59:53): <p>Od jądra 2.6.12.4 sterowniki są do
   wkompilowania w jądrze. A co do artu - przyda się, jeżeli nie będzie powtórką

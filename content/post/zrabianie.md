@@ -31,7 +31,7 @@ do końca. Mamy zwyczaj kończenia tego, doprowadzania do końca, odfajkowywania
 A co z robotą, robieniem? Robiliśmy coś. Zrobiliśmy coś. Robimy coś. A czas
 teraźniejszy, tryb dokonany...? Zrabiamy coś?
 
-# Komentarze
+## Komentarze
 
 * automaciej (2007-11-22 06:47:31): <p>Zrabianie, c.d.<br /><br />Nie chodzi o
   przeładowanie informacjami. Chodzi o przeładowanie tym, co ja nazywam

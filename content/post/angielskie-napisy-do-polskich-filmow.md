@@ -38,7 +38,7 @@ Właściwie -- tylko jeden film spełniał te kryteria:
 Kosztował 20zł, miał angielskie napisy, i do tego bardzo dobre tłumaczenie, aż
 przyjemnie oglądać.
 
-# Komentarze
+## Komentarze
 
 * Dodek (2009-11-04 17:23:59): <p>I dlatego torrenty są znacznie lepsze.</p>
 * incognitus (2009-11-07 13:23:35): <p>Chodzi mi po głowie pytanie - czy oprócz

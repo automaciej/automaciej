@@ -47,7 +47,7 @@ Być może, filtr wody jest korzystny z jakichś innych względów, ale jeżeli 
 mi kiedyś powie, że herbata z przefiltrowanej wody lepiej smakuje, uśmiechnę
 się i zapytam: „Masz może plastikowe kubeczki?”
 
-# Komentarze
+## Komentarze
 
 * Walker (2008-08-03 20:51:12): <p>Czy celem tego filtrowania jest poprawa smaku
   czy pozbycie się jakichś niezdrowych składników?</p>

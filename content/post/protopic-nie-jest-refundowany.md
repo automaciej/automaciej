@@ -23,7 +23,7 @@ zamiast stosować nowoczesną terapię
 miejscowej, niszczę swoją skórę sterydami lub wykańczam swoją wątrobę i nerkę
 przy pomocy cyklosporyny.
 
-# Komentarze
+## Komentarze
 
 * edycia (2007-05-16 20:44:31): <p>protopic powinien byc refundowany wiele osob
   ma problemy ze skora a tu taka jazda z lekim jedynie dla ludz z kasa.</p>

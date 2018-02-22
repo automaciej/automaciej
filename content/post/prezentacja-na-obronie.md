@@ -65,7 +65,7 @@ jak na prezentację pół roku pracy. Komisja nawet się trochę zainteresowała
 zadała kilka pytań: nie po to żeby sprawdzić moją wiedzę ale po to, żeby się
 dowiedzieć czegoś więcej.
 
-# Komentarze
+## Komentarze
 
 * GuessWhy (2006-12-17 21:26:17): <p>Podczas mojej prezentacji recenzent zjadł
   mandarynkę i cukierka, a szef katedry dwa cukierki. Słucham mnie tylko

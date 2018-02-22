@@ -15,7 +15,7 @@ smród smród smród
 
 Ratunku!
 
-# Komentarze
+## Komentarze
 
 * skryba (2004-01-05 15:09:31): <p>Polecam iść do supermarketu i kupić
   odświerzacz powietrza w spray&#039;u - najwieksze opakowanie jakie sie

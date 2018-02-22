@@ -12,7 +12,7 @@ wyniosłem go z domu. I tak nie był używany.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * skryba (2006-07-05 15:19:39): <p>Gdybyś mógł go obniżyc jeszcze bardziej i
   wisiałby, dajmy na to...metr nad ziemią miałbyś idealne miejsce do układania

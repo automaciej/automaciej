@@ -20,7 +20,7 @@ sobie, że w marcowym numerze [Linux Magazine](http://www.linux-magazine.pl/) by
 opis hotpluga. Pomimo że rozwiązanie zastosowałem nie zanadto eleganckie,
 osiągnąłem cel: wkładam wtyczkę i po ok. 30 sekundach mam połączenie.
 
-# Komentarze
+## Komentarze
 
 * automaciej (2005-09-19 12:51:47): <p>Musiałem jeszcze dorobić obsługę wielu
   instancji, bo okazuje się że po wetknięciu wtyczki hotplug uruchamiał naraz 3

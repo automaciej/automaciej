@@ -21,7 +21,7 @@ prawa wykonawczego, określającego co należy robić w jakiej sytuacji.
 Tymczasem kolejne kobiety wyjeżdżają z Irlandii żeby przerwać ciążę w Wielkiej
 Brytanii.
 
-# Komentarze
+## Komentarze
 
 * n3m0 (2012-11-29 17:27:32): <p>Z jednej strony kewl, z drugiej strony prawo
   uchwalane "na kolanie" albo pod stołem jest do dupy.<br /> By tylko o

@@ -17,7 +17,7 @@ niezorientowanych, definicja słowa _arse_ ze słownika WordNet:
 > hindquarters, hind end, keister, posterior, prat, rear, rear end, rump, stern,
 > seat, tail, tail end, tooshie, tush, bottom, behind, derriere, fanny, ass]
 
-# Komentarze
+## Komentarze
 
 * iss (2006-05-20 12:21:38): <p>A może to nie jest zaczerpnięte z
   angielskiego?</p>

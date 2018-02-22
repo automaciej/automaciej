@@ -49,7 +49,7 @@ Właśnie dzisiaj jest taki dzień.
 
 Przewiduję, że cień Ziemi widoczny na Księżycu będzie okrągły.
 
-# Komentarze
+## Komentarze
 
 * Feanor (2008-08-16 16:28:44): <p>Bardzo lubię takie poddawanie w wątpliwość
   rzeczy, które uznaje się za prawdy oczywiste. Jednak akurat bardzo trudno

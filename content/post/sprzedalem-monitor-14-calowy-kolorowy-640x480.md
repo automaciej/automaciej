@@ -10,7 +10,7 @@ cokolwiek. A szczególnie sprzęt komputerowy.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * janek (2005-11-17 18:36:29): <p>kupiłbym za 2zł :)</p>
 * przemek (2005-11-17 18:51:43): <p>Na aukcji? Cholernie mnie bawią takie

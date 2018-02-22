@@ -20,7 +20,7 @@ sobie zdjęcie do legitymacji PFA. Szkoda że nie znalazłem tej starej
 legitymacji, czerwonej. Musiała zaginąć w którejś z przeprowadzek. Teraz mam
 nową, niebieską.
 
-# Komentarze
+## Komentarze
 
 * Joanna (2006-12-13 17:15:36): <p>Przyjedź do mnie, zaprowadzę Cię na naprawdę
   pyyyycha sushi. Do prawdziwego Japończyka. :D</p>

@@ -17,7 +17,7 @@ numerowanie linii wydawało mi się dziwnym pomysłem.
 Potem się przywyczaiłem do numerowania i kiedy zobaczyłem kawałek kodu w C,
 byłem przerażony: jak się programuje w języku w którym linie nie są numerowane?!
 
-# Komentarze
+## Komentarze
 
 * mhulboj (2006-01-19 13:40:56): <p>Tak, numerowane linie, to byla niezla
   zmylka... <br /></p>

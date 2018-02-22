@@ -14,7 +14,7 @@ drukarskimi.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * zdz (2013-01-03 19:07:46): <p>Ale nie będzie anglosaskich “”? Szkoda, niemniej
   ogólnie należą się podziękowania peresowi.</p>

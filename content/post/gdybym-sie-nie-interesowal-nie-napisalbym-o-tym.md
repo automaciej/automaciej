@@ -30,7 +30,7 @@ Nie mamy jednego spójnego rozumienia tego pojęcia. W zależności od kontekstu
 skaczemy pomiędzy jednym i drugim. Szkoda, nie? Ileż dyskusji utyka, dlatego
 że dwie osoby inaczej rozumieją „dlatego, że".
 
-# Komentarze
+## Komentarze
 
 * Automaciej (2012-04-28 07:04:58): <p>Łaska<br /><br />Lubię się przyglądać jak
   chrześcijańska teologia usiłuje rozwiązać problemy z koncepcjami którymi

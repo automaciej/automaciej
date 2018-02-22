@@ -24,7 +24,7 @@ się za telefon, i rozglądam się, żeby zlokalizować źródło dźwięku.
 Muszę sobie zapamiętać żeby robiąc nagrania, nigdy nie umieszczać w muzyce
 pół-schowanych dodatkowych efektów dźwiękowych. Albo na wierzchu, albo wcale.
 
-# Komentarze
+## Komentarze
 
 * tdudkowski (2010-11-29 12:39:44): <p>XKCD: <a href="http://xkcd.com/780/"
   rel="nofollow">Sample</a></p>

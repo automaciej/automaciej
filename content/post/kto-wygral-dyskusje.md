@@ -73,7 +73,7 @@ dyskutuje tylko trochę nieuczciwie, to można go ostrzec, dać szansę, a dopie
 kiedy widać wyraźnie, że nic z tego nie będzie, wycofać się... ale to jest
 porada podobna do „bądź sprytny” albo „ciężko pracuj”, czyli żadna.
 
-# Komentarze
+## Komentarze
 
 * D4rky (2009-01-05 16:24:46): <p>to wszystko walka na epenisy, nie warto nawet
   zaczynać</p>

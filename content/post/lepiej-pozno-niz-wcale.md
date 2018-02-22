@@ -19,7 +19,7 @@ odczułem to na sobie? Nie za bardzo. Poczułem to natomiast kiedy przejechałem
 rowerze przez Serra da Estrela od Vila Franca da Serra do Guardy, przejeżdżając
 przez trzy doliny i wspinając się na 1000m npm.
 
-# Komentarze
+## Komentarze
 
 * 3B| (2012-04-09 17:10:44): <blockquote>   <p>Okazuje się że na joggera można
   pisać ze zwykłego klienta jabbera.</p> </blockquote>  <p>Spóźniony prima

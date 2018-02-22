@@ -34,7 +34,7 @@ Czas pokaże czy pomysł się przyjmie. Jest niewątpliwie rozsądny. Sprawy
 puszczone na żywioł sprawdzają się przy pięciu osobach, ale przy siedemnastu
 już trzeba się organizować.
 
-# Komentarze
+## Komentarze
 
 * thot22003 (2006-11-02 21:05:08): <p>u mnie bylo zawsze 10 osob. jesli chodzi o
   rodzine. wtedy malzenstwa wspolnie skladaja sie na prezenty. :) nie musi to

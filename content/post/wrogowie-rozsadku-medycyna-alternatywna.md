@@ -21,7 +21,7 @@ Froster i Dexter._
 
 UPDATE (2008-10-19): Wersja na YouTube:
 
-# Komentarze
+## Komentarze
 
 * Łukasz Horodecki (2008-10-10 09:01:41): <p>A nie machnąłbyś jakiegoś fajnego
   tłumaczenia całości? Mam kilka osób do przeprogramowania, ale język dla nich

@@ -27,7 +27,7 @@ o tym wcześniej nie powiedział?
 
 _Ach, no tak... nie było ojca._
 
-# Komentarze
+## Komentarze
 
 * Zbigniew Czernik (2006-09-12 11:51:13): <p>Z tą cyną to miałem tak samo -
   lutowałem jakimś badziewiem, a ojciec był na tyle ciemny, że tępił moje zapędy

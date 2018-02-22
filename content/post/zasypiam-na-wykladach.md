@@ -22,7 +22,7 @@ Myślałem że coś jest ze mną nie tak. Ale dzisiaj trafiłem na [ten
 artykuł][geek-lifestyle].  Według tego faceta, który był programistą i
 webdeveloperem, jest to po prostu sposób wytrenowania mózgu.
 
-# Komentarze
+## Komentarze
 
 * lemiel (2006-04-06 11:29:49): <p>Też tak mam, siedząc przed kompem i nawet
   czytając coś tylko, nie myślę o spaniu - a na zajęciach, nawet tych na których

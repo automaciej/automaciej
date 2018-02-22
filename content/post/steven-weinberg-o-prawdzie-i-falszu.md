@@ -50,7 +50,7 @@ ważna.](http://media.blizinski.pl/images/blog/steven-weinberg-truth.png)
 To uderzające stwierdzenie. _Prawda dla większości ludzi wcale nie jest taka
 ważna._
 
-# Komentarze
+## Komentarze
 
 * automaciej (2008-01-09 11:42:05): <p>Debata: Richard Dawkins vs David Quinn<br
   /><br />Jest to tłumaczenie transkrypcji debaty [mp3] pomiędzy Richardem

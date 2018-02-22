@@ -11,7 +11,7 @@ wrzeszczał, z przerwami, całe popołudnie i wieczór (dochodzi 24:00).
 
 Jak tu lubić dzieci?!
 
-# Komentarze
+## Komentarze
 
 * snufkin (2007-01-22 01:27:58): <p>Kupić sobie stopery (zatyczki do uszu)</p>
 * Łukasz Horodecki (2007-01-22 01:35:18): <p>Się nie wściekaj, tylko współczuj

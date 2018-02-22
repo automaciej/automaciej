@@ -41,7 +41,7 @@ nawet by nie zauważył, bo gdzie by mu tam przyszło do głowy wciskać prawy A
 _UPDATE: Yachoo, który w przeciwieństwie do mnie potrafi używać Google,
 znalazł: [polska brytyjska klawiatura](http://b.kozicki.pl/ukpl/)._
 
-# Komentarze
+## Komentarze
 
 * yachoo (2008-05-02 10:40:56): <p>Jest taki ktoś.<br /> Po wpisaniu w googlach
   &#8222;brytyjska polska klawiatura&#8221; na pierwszym miejscu wyskakuje mi

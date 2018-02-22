@@ -178,7 +178,7 @@ przerwać płynność wypowiedzi.
 
 [Więcej o nauce z fiszek &raquo;]({{< relref "post/fiszki-do-nauki-slowek.md" >}} "Automaciej: Fiszki do nauki słówek")
 
-# Komentarze
+## Komentarze
 
 * quest (2015-12-24 19:51:13): <p>Ciekawy wybór. Możesz wyjaśnić dlaczego akurat
   portugalski? Uczysz się wyłącznie portugalskiego kontynentalnego czy też

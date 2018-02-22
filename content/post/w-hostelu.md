@@ -33,7 +33,7 @@ najedzenie się było elementem poczucia bezpieczeństwa? Chodząc najedzony po
 Dublinie, poczułem się taki jakiś zadowolony, dawno nie czułem czegoś takiego.
 Ten wyjazd przebiega zdecydowanie przyjemniej niż poprzedni, do Danii.
 
-# Komentarze
+## Komentarze
 
 * RioT (2007-01-04 21:33:14): <p>Pierwsza złota zasada &#8211; nie przeliczać
   pieniędzy :D</p>

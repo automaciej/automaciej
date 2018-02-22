@@ -44,7 +44,7 @@ Ktoś się ze mną nie zgadza? Wiem, wiem, wiem co teraz zrobicie. Wykażecie mi
 istnieje inna interpretacja. Ewentualnie, że napisałem tak zawile, że nie
 rozumiecie.
 
-# Komentarze
+## Komentarze
 
 * Neverlost (2007-07-13 11:59:05): <p>Trafiłeś w samo sedno.</p>
 * Dorian (2007-07-13 12:17:19): <p>&#8222;Dlatego właśnie przeprowadzenie

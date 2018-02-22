@@ -62,7 +62,7 @@ Dobry model powinien być tak prosty jak to możliwe, przy jednoczesnym, dobrym
 odzwierciedleniu istoty problemu i głównych cech, takie jak obecność
 środowiska i przekłamania.
 
-# Komentarze
+## Komentarze
 
 * mamaT (2007-05-14 14:37:28): <p>ja bym to nazwała dylematem małżonka :-)</p>
 * Luscynd (2007-05-15 19:48:19): <p>Chyba stosunkowo łatwo można by zamodelować

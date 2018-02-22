@@ -26,7 +26,7 @@ sekund.
 Czasami rzeczywiście można usłyszeć 2 piosenki naraz, ale nie umiem tego
 zrobić na zawołanie; albo wychodzi albo nie.
 
-# Komentarze
+## Komentarze
 
 * Dexter (MG) (2005-08-20 12:43:31): <p>dmix działa, dopóki masz dwa głośniki,
   wszystko odtwarza w alsę a nie jakieś ossy i nie masz jakichś fanaberii w

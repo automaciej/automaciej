@@ -29,7 +29,7 @@ Kaliforni](http://www.joelonsoftware.com/items/2007/10/30b.html).
 UPDATE: Mapka:  
 ![Epicentrum trzęsienia ziemi](http://earthquake.usgs.gov/eqcenter/shakemap/nc/shake/40204628/download/intensity.jpg)
 
-# Komentarze
+## Komentarze
 
 * Piotr Konieczny (2007-10-31 09:16:26): <p>DH tez o tym pisze :-)
   http://www.dreamhoststatus.com/2007/10/30/56-earthquake-in-san-francisco/</p>

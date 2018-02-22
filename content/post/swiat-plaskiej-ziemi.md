@@ -100,7 +100,7 @@ otaczającymi ją naciąganymi teoryjkami nie jest tak dobra jak prosta,
 elegancka i pozbawiona spiskowych teorii okrągła Ziemia z grawitacją i
 wszystkim co znamy i lubimy. Ale tutaj znów - przeczucie to nie dowód.
 
-# Komentarze
+## Komentarze
 
 * Dominik Porada (2008-08-18 01:56:19): <p>No rzeczywiście bardzo ciekawe <span
   class="caps">FAQ</span>.</p>  <p>Mnie tylko ciekawi jak tłumaczą fakt

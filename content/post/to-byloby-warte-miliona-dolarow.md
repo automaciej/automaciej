@@ -30,7 +30,7 @@ warte miliona dolarów, udowodnić takie zjawisko!
 Wypowiedź Randiego wskazuje na to, że on naprawdę poszukuje autentycznego
 zjawiska paranormalnego.
 
-# Komentarze
+## Komentarze
 
 * byte (2007-08-18 18:32:59): <p>A tak. Nagroda Randiego jest policzkiem w twarz
   dla każdego wielbiciela stanów astralnych, wędrujących dusz, lewitacji i temu

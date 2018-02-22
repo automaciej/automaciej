@@ -20,7 +20,7 @@ Richard Feynman
 
 (via [The Skeptics Guide To The Universe](http://www.theskepticsguide.org/archive/podcastinfo.aspx?mid=1&pid=385))
 
-# Komentarze
+## Komentarze
 
 * n3m0 (2012-12-04 14:52:21): <p>Oglądam właśnie jego wykłady "The Character of
   Physical Law". Miodzio :)</p>

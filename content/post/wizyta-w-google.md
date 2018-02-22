@@ -98,7 +98,7 @@ Odpowiedź powinienem mieć pod koniec przyszłego tygodnia.
 
 ![](http://media.blizinski.pl/images/blog/google-alectralights-2.jpg)
 
-# Komentarze
+## Komentarze
 
 * coldpeer (2007-06-22 13:29:15): <p>A jakie to gadżety? Podkładki pod mysz,
   przypinki z logiem? :)</p>

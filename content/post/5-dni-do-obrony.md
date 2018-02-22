@@ -9,6 +9,6 @@ Wreszcie przygotowałem prezentację. Mogę się poklepać po ramieniu.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * Joanna (2006-12-11 17:29:58): <p>Brawo, brawo, oby tak dalej!</p>

@@ -11,7 +11,7 @@ Joga, rzeczownik:
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * Ja-Joanna (2005-11-25 13:22:29): <p>Hahaha!</p>
 * mama T (2006-07-09 15:02:17): <p>jaikm cudem trafiła tu MOJA definicja????</p>

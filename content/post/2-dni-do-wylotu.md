@@ -20,6 +20,6 @@ granicą.
 
 Co i rusz pożegnania z rodziną i ze znajomymi.
 
-# Komentarze
+## Komentarze
 
 * mama T (2007-01-03 16:20:22): <p>mają rzeczy swój rozum, poradzą sobie ;-)</p>

@@ -30,7 +30,7 @@ I dlatego właśnie uważam, że język naturalny do niczego się nie nadaje.  A
 jeżeli do czegoś się nadaje, to na pewno nie do określania związków pomiędzy
 rzeczami czy specyfikowania.
 
-# Komentarze
+## Komentarze
 
 * konieckropka (2008-02-27 11:41:05): <p>Brawo! Dokładnie tak jak piszesz. Język
   naturalny jest do niczego, jesli chce się być precyzyjnym&#8230; m.in dlatego,

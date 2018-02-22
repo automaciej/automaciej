@@ -37,7 +37,7 @@ wyznacznikiem atrakcyjności.
 Ciekawy też jest fragment o wirtualnej urodzie. To, co widzimy w mediach, jest
 coraz bardziej odległe od tego, jak ludzie wyglądają w rzeczywistości.
 
-# Komentarze
+## Komentarze
 
 * D4rky (2008-01-07 13:09:52): <p>kobieta po prawej mi sie nie podoba. ta po
   lewej tak bardzo ewentualnie.<br /> zawsze mowilem, ze mam spaczony gust

@@ -96,7 +96,7 @@ postawić w języku angielskim.
 A niemiecki, francuski, rosyjski czy włoski... Dopóki nie wiemy, do czego dany
 język będzie potrzebny, prawdopodobnie nie będzie potrzebny do niczego.
 
-# Komentarze
+## Komentarze
 
 * Voronwe (2008-06-11 09:09:52): <p>I&#8217;m gonna disagree ;)</p>  <p>Inne
   jeżyki niż angielski przydają się. Niektóre ze względów pragmatycznych (byłem

@@ -24,7 +24,7 @@ _To nie w jej stylu._
 5365940 :: chyba masz wszystkie objawy;P  
 Automaciej :: jesteś robotem.
 
-# Komentarze
+## Komentarze
 
 * tonid (2006-04-21 11:07:23): <p>Mam sposób na zredukowanie takich spimów. Otóż
   mam dwa konta GG (przypisane do dwóch kont Jabberowych). Na jednym mam

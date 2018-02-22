@@ -51,7 +51,7 @@ chiropraktyków, proces o zniesławienie. Simon Singh prowadzi
 rzecz odseparowania przepisów dotyczących zniesławienia od debat naukowych, w
 których krytyka jest nie tylko dopuszczalna, ale wręcz potrzebna.
 
-# Komentarze
+## Komentarze
 
 * Piotr Konieczny (2009-10-05 12:12:00): <p>Na marginesie, Simon jest też
   autorem genialnej książki wprowadzającej w tajniki kryptografii -- Księgi

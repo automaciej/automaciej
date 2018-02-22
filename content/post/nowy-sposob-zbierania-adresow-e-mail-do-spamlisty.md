@@ -37,7 +37,7 @@ ktoś odpowie. A świeże i soczyste adresy wszystkich osób które odpowiedzą,
 trafiają do skrzynki bota w nienaruszonej formie. Nie pozostaje nic innego,
 tylko dopisać je do spamlisty.
 
-# Komentarze
+## Komentarze
 
 * GiM (2006-08-27 15:51:41): <p>hmm dlatego ja jak zakładałem grupę, to
   umożliwiłem tylko jednej osobie (oprócz mnie) zatwierdzanie osób do grupy</p>

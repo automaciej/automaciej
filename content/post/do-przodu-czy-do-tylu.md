@@ -15,7 +15,7 @@ wystarcza, dokładam 20 linijek kodu w Pythonie.
 Z jednej strony dobrze że piszę małe, proste narzędzia a z drugiej zaczynam
 się martwić czy przypadkiem nie zgłupiałem gdzieś po drodze...?
 
-# Komentarze
+## Komentarze
 
 * arag0rn (2006-03-01 15:55:45): <p>Ja powiedziałbym że zmądrzałeś ;p</p>
 * makova\_panienka (2006-03-03 13:38:21): <p>wahu <br />wiesz dobrze, że w takich

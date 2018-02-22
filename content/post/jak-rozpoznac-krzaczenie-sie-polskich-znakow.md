@@ -46,7 +46,7 @@ bezkształtną papkę.
 Ten skrypt pokazuje tylko jeden etap krzaczenia. Prawdziwa przygoda zaczyna
 się, kiedy mamy polskie znaki pokrzaczone nie jedno-, ale dwukrotnie!
 
-# Komentarze
+## Komentarze
 
 * Crash (2008-03-08 17:07:55): <p>iso-8859-1iso-8859-1Pchn w t ód jea i om skrzy
   fig.ERR</p>  <p>Innymi słowy: albo moja przeglądarka nie interpretuje

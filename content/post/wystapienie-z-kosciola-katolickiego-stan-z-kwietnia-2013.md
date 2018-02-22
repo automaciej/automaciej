@@ -33,7 +33,7 @@ nie można było po prostu zapytać się człowieka?
 GIODO: Ale ale!  
 sąd: Żadne ale. Oto wyrok. Migasz się pan.  
 
-# Komentarze
+## Komentarze
 
 * Zal (2013-04-11 19:57:58): <p>Świetnie ujęte :D Zrealizowane w oparciu o
   własne doświadczenia, czy kogoś innego? Dasz namiar na dłuższy opis? Przyda

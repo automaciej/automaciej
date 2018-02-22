@@ -18,7 +18,7 @@ _,,biuu-hę'' - mruknął jeszcze raz_
   
 Tak. Tutaj atmosferę tworzą serwery. Zastępują mi ptaszki i pieski...
 
-# Komentarze
+## Komentarze
 
 * kasiaczek (2004-01-15 23:13:27): <p>Ale istnieje wynalazek pt.&quot;Muzyka
   relaksacyjna&quot; , ptaszki,pieski..i inne takie, tzw. natura :-) To tak w

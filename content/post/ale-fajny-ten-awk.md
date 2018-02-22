@@ -11,7 +11,7 @@ Nie wiedziałem że to takie fajne narzędzie! To co w czystym shellu trzeba by
 oprogramować w dość upierdliwy sposób, tutaj załatwia się jedną linijką.
 Baaardzo sympatyczna rzecz. :-)
 
-# Komentarze
+## Komentarze
 
 * Ada (2006-05-28 23:26:14): <p>hej potrzebuje matlab czy mogl by mi ktos pomoc
   ??:) dzie go mozna sciagnac ??:)</p>

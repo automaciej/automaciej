@@ -63,7 +63,7 @@ Mam trzy refleksje.
   3. Nie wiem czy na miejscu „zawodowców” bym wzdychał z ulgą, skoro Randi mówi,
      że pieniądze zostaną użyte **bardziej produktywnie**.
 
-# Komentarze
+## Komentarze
 
 * Wanted (2008-05-05 20:40:57): <p>Trinity: So, what do you need?<br /> James
   Randi: Guns, lot of guns!</p>

@@ -23,7 +23,7 @@ biurwą, a dopiero w nocy mam warunki do tego, żeby coś stworzyć.
 
 Ale to chyba jest niemożliwe...
 
-# Komentarze
+## Komentarze
 
 * MichalS (2004-01-14 15:36:58): <p>Ejtamzaraz niemożliwe :-&gt;   Poproś szefa
   o łóżko w biurze ;-&gt;</p>

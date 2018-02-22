@@ -15,7 +15,7 @@ nie miałem okazji wchłonąć takiej ilości błękitu.
 
 [![Triangles](http://farm2.static.flickr.com/1366/538441386_553a79d2c4_m.jpg)](http://www.flickr.com/photos/automaciej/538441386/ "Photo Sharing" )
 
-# Komentarze
+## Komentarze
 
 * 9gods (2007-06-10 18:18:38): <p>Też tam byłem ostatnio i też się spaliłem,
   chociaż nie byłem tam aż tak znowu długo. Macie zdecydowanie fajniejszą pogodę

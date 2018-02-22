@@ -44,7 +44,7 @@ przyjął i przetworzył formularz: zalogowałem się!
 Czyli, aby być klientem RWE trzeba spełnić pewne wymagania. Należy do nich
 znajomość HTML, Javascriptu oraz konsoli deweloperskiej w przeglądarce.
 
-# Komentarze
+## Komentarze
 
 * Cichy (2015-10-01 19:36:00): <p>Nareszcie jakaś firma, która stawia na
   inteligentnych klientów:-).</p>

@@ -34,7 +34,7 @@ otwarta na biurku przez cały dzień i nie wyobrażam sobie pracy bez niej.
 A to dzięki rodzicom L., którzy zadali sobie dużo trudu żeby ze sterty rzeczy
 które u nich zostawiliśmy, wyłuskać to czego potrzebujemy i wysłać nam paczkę.
 
-# Komentarze
+## Komentarze
 
 * Ja-Joanna (2007-03-15 10:27:34): <p>Też mam tą książeczkę i też mi się już nie
   raz przydała jak jeszcze się uczyłam C++. Seria „Klasyka informatyki”,

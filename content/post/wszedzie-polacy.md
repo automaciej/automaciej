@@ -17,7 +17,7 @@ UPDATE: Następni sąsiedzi, czyli ci za tymi z dzieckiem, to też Polacy. I nad
 dole też jedna polska rodzina. Na 10 mieszkań w tym domu wiem o 4 zajmowanych
 przez Polaków (włączając mnie).
 
-# Komentarze
+## Komentarze
 
 * Cici (2007-01-24 09:24:30): <p>Niedługo pieśni irlandzkie będą naszym hymnem
   narodowym :P</p>

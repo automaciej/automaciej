@@ -17,7 +17,7 @@ Najwyraźniej wdepnąłem w jakieś popularne słowo kluczowe. Nie jestem tylko
 pewien, czy słowem tym był „atheism”, czy może „god”. Patrząc po imionach --
 Gabriel, Samuel -- obawiam się, że to raczej drugie.
 
-# Komentarze
+## Komentarze
 
 * Piotr Konieczny (2009-09-22 10:25:30): <p>Hehe, ile tego było? Wyglada
   bardziej na coś programistycznego, niż faktyczną ludzką reakcję... :)</p>

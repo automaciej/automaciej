@@ -21,7 +21,7 @@ dopiero przy oglądaniu szczegółów ogłoszenia.
 Oczywiście zdarzają się ogłoszenia w których nie jest podana stawka, ale można
 je spokojnie omijać.
 
-# Komentarze
+## Komentarze
 
 * DarkStar (2006-10-14 10:46:39): <p>Mogę tylko powiedzieć, że się zgadza. W UK
   czy Irlandii to jest normalna praktyka, od razu wiadomo czego żądać. :) A u

@@ -94,7 +94,7 @@ wszystko razem i nadaje temu sens.
 
 Struktura Wszechświata na zawsze pozostanie tajemnicą.
 
-# Komentarze
+## Komentarze
 
 * hcz (2008-04-01 10:06:38): <p>Uff&#8230; sprawdziłem datę.</p>
 * mcv (2008-04-01 10:09:45): <p><span class="caps">OMG</span>, najpierw

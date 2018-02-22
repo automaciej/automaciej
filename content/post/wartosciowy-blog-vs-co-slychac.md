@@ -49,7 +49,7 @@ mam wybrać jedno z dwóch, wybieram teksty wartościowe. A ponieważ nie chcę
 wrócić do powtarzania każdemu co u mnie słychać, rozważam przejście z
 osobistym bełkotem w bardziej odosobnione miejsce.
 
-# Komentarze
+## Komentarze
 
 * kaśka (2007-07-01 15:27:42): <p>Hm. Ja właściwie dlatego w ogóle przestałam
   pisać, bo stwierdziłam, że wszystko, co wiem ja, inni wiedzieli już dawno.

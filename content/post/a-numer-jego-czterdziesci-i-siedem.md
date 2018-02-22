@@ -24,7 +24,7 @@ Warsaw](http://www.warsawvoice.pl/view/7385/) w Piasecznie ma specjalną półk�
 zatytułowaną: 46-50. Wbrew obawom, na tej półce jest całkiem spory wybór
 i jeszcze się nie zdarzyło żebym nie znalazł tam tego, czego potrzebowałem.
 
-# Komentarze
+## Komentarze
 
 * rasheed (2006-04-05 13:56:15): <p>Znam ten ból..</p>
 * Ja-Joanna (2006-04-05 15:03:05): <p>Jakbym czytała o sobie. Tylko ja mam 42. W

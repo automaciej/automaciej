@@ -27,7 +27,7 @@ wątpliwości czy życzyliby sobie umieszczenia ich tu. Wizja otworzenia kolejne
 strony internetowej jakoś mi się nie uśmiecha, nie chcę tworzyć kolejnego
 bytu. Pozostawiam sprawę do przemyślenia.
 
-# Komentarze
+## Komentarze
 
 * mama T (2006-09-19 13:20:53): <p>rozumiem, że pracę juz dokończyłes? :-)))))
   - fanka i wielbicielka gazetki JEST. Wiedz, ze mam jej papierowe wersje w

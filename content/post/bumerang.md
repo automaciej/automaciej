@@ -36,7 +36,7 @@ BTW, Widzieliście bumerangowego [Wilhelma Tella solo?][tell]
 
 No, idę porzucać póki jeszcze jest jasno.
 
-# Komentarze
+## Komentarze
 
 * Joanna Ludmiła (2006-12-02 14:06:35): <p>Dobrej zabawy!</p>
 * GiM (2006-12-02 14:12:12): <p>Wilhelm Tell superowy :D</p>

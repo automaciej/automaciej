@@ -42,7 +42,7 @@ purystów, nowe znaczenie weszłoby do słownika i problem z głowy.
 
 Tymczasem zawsze można wrócić do starego, dobrego „a kto ci o tym powiedział?”
 
-# Komentarze
+## Komentarze
 
 * KosciaK (2010-05-28 10:23:47): <p>Nie! Nie można popełnić takiego nadużycia.
   Niech ewidencja pozostanie ewidencją. <br /> To brzmi jeszcze gorzej niż

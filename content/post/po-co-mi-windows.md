@@ -13,7 +13,7 @@ instrukcje dla mnie.
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * Gość (2006-07-01 15:16:26): <p>Mi Windows jest potrzebny do skanowania, to
   niestety wielka bolączka Linuxów - obsługa skanerów</p>

@@ -20,7 +20,7 @@ you like a Cappucino?”, nie sposób odmówić.
 
 To jedna z bardzo niewielu okazji, kiedy pijam kawę.
 
-# Komentarze
+## Komentarze
 
 * Livio (2008-02-17 11:51:21): <p>Ooo, takiego cappuccino to bym się napił :)
   .</p>

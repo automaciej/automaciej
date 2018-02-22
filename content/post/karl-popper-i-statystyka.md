@@ -85,7 +85,7 @@ odważna i falsyfikowalna teoria naukowa.
 Dlaczego na studiach nie było filozofii nauki? Byłbym lepiej rozumiał
 statystykę i miałbym o jeden ulubiony przedmiot więcej.
 
-# Komentarze
+## Komentarze
 
 * hcz (2008-09-12 14:36:00): <p>Czy pacierz i macierz różnią się istotnie między
   sobą, a jeśli tak, to czym?</p>

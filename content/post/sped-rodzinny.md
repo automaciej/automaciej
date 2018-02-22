@@ -42,7 +42,7 @@ Luźne spostrzeżenia i uwagi:
     szczęście już siedzę z powrotem na moim superwygodnym krześle przy moim
     superwygodnym stole.
 
-# Komentarze
+## Komentarze
 
 * mama T (2006-07-06 12:25:19): <p>ja sie pale do zrobienia czegos
   artystycznego! A tak w ogóle to miło być docenionym ....</p>

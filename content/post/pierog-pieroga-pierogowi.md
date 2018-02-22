@@ -37,7 +37,7 @@ Przerażające jest, ile czasu zajmuje robienie pierogów. O wiele więcej niż
 jedzenie! Fajnie było porobić pierogi raz do roku, w świątecznej atmosferze.
 Ale robienie pierogów np. po prostu na obiad wydaje mi się szaleństwem.
 
-# Komentarze
+## Komentarze
 
 * GiM (2008-12-24 13:48:19): <p>jak się posypuje stół/stolnicę mąką to dobrze
   jest to robić przez taki sito (u mnie w domu jest takie jedno z drewnianym

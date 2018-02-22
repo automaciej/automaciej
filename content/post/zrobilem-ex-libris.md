@@ -15,7 +15,7 @@ Nawet zastanawiałem się nad innymi stemplami które mógłbym sobie zrobić, a
 nic mi nie przychodzi do głowy. Ex Libris to jedyny stempel jakiego
 potrzebuję.
 
-# Komentarze
+## Komentarze
 
 * Krystek (2004-11-22 00:00:01): <p>A ta wytwórnia stempli pocztowych ma jakąś
   swoją stronę WWW?</p>

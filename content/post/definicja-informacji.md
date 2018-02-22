@@ -76,7 +76,7 @@ propozycję, wystarczy podać przykład informacji, która _jest informacją_, a
 nie pozwala niczego przewidywać. Albo coś, co pozwala przewidywać, a
 informacją nie jest.
 
-# Komentarze
+## Komentarze
 
 * ba10 (2008-02-26 11:38:09): <p>Ostatnio trafiłem na taką definicję informacji
   i sie z nią zgadzam: &#8222; Informacja to dane, które mają znaczenie z punktu

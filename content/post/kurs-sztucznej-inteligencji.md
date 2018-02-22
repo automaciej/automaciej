@@ -22,7 +22,7 @@ Kurs jest prowadzony przez Petera Norviga
 tłumaczenie) i Sebastiana Thruna (samochody, które [chodzą naprawdę
 same](http://www.nytimes.com/2010/10/10/science/10google.html)).
 
-# Komentarze
+## Komentarze
 
 * Remigiusz 'lRem' Modrzejewski (2011-11-23 00:02:01): <p>Z tym dźganiem się
   widelcem w oko to żeś po prostu za daleko się posunął. Założyłeś sobie nie

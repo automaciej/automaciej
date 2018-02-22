@@ -10,7 +10,7 @@ bloga o magisterce. A najlepiej [krytykować][krytyka]!
 
 <!--more-->
 
-# Komentarze
+## Komentarze
 
 * Skryba (2006-04-24 09:53:38): <p>A może tak magisterkę o pisaniu
   bloga...socjolog będziesz pełną gębą ;-)</p>

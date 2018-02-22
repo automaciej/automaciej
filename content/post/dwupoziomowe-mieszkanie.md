@@ -43,7 +43,7 @@ Spróbuję jeszcze dzisiaj poszukać mieszkania, może coś jeszcze obejrzeć je
 się uda. W końcu widziałem tylko jedno mieszkanie. A chciałbym podjąć decyzję
 w poniedziałek. We wtorek może być już za późno.
 
-# Komentarze
+## Komentarze
 
 * spin (2007-01-07 11:42:01): <p>jesli mozna zapytać, ile wołaja za takie
   mieszkanko co oglądałeś ?</p>

@@ -32,7 +32,7 @@ Nie wiem czy to jest najlepsze nastawienie na przygotowania do obrony... może
 jakoś by się tak zaangażować? Umówić się ze sobą że bardzo mi zależy na tej
 obronie?
 
-# Komentarze
+## Komentarze
 
 * Kamelia (2006-12-12 11:39:45): <p>Może spróbuj się zmobilizować. W końcu
   zazwyczaj człowiek obronę ma raz w życiu : o) Tak dla samego siebie, po prostu
