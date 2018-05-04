@@ -9,9 +9,9 @@ title: Wystąpienie z kościoła katolickiego, stan z kwietnia 2013
 
 _Wersja dla zabieganych:_
 
-człowiek: Kościele, zapisz sobie że z ciebie wystąpiłem.  
+człowiek: Kościele, zapisz sobie, że z ciebie wystąpiłem.  
 kościół: Niczego sobie nie zapiszę.  
-<!--more-->człowiek: Ale ja proszę! Żądam!  
+człowiek: Ale ja proszę! Żądam!  
 kościół: Możesz nam skoczyć, człowieku.  
 człowiek: GIODO, proszę kazać kościołowi mnie wypisać!  
 GIODO: Tia... jest zapis ["i 3"](/2012/05/22/i-3/)
