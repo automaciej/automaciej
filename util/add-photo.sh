@@ -8,6 +8,11 @@
 set -u
 set -e
 
+if [[ "$#" -lt 2 ]]; then
+  echo >&1 "Usage: add-photo /path/to/IMG0001.JPG bike-trip-01"
+  exit 1
+fi
+
 readonly INPUT_FILE=$1
 shift
 
