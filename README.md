@@ -1,16 +1,30 @@
 Maciej Bliziński's home page
 ============================
 
-* Requires [golang](http://golang.org/) 1.3+, installed using
-[godeb](http://blog.labix.org/2013/06/15/in-flight-deb-packages-of-go).
-* Installing hugo, assuming `~/bin` is in `$PATH`:
+Running hugo
+------------
 
-        export GOPATH=~/go
-        export GOLANG=~/go
+* Requires [golang](http://golang.org/); if you're installing hugo from github,
+  it is likely going to be the latest version of Go.
+* Installing hugo (if not from the distribution's packages):
+
+        mkdir -p ~/src/go
+        export GOPATH=~/src/go
+        export GOLANG=~/src/go
         go get -u -v github.com/spf13/hugo
-        cp ~/go/bin/hugo ~/bin
+        alias hugo ~/src/go/bin/hugo
 
-* Testing the website:
+Styles
+------
+
+Download Bootstrap, and copy it into the static directory:
+
+    unzip ~/Downloads/bootstrap-3.3.7-dist.zip 
+    cd bootstrap-3.3.7-dist/
+    cp -r css fonts js ~/src/automaciej-hugo/static/
+
+Updating and testing the website
+-------------------
 
         hugo -D -F server
 
