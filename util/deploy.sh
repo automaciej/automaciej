@@ -5,6 +5,8 @@ set -u
 
 DEST=atemoia:www/blizin.ski
 
+hugo=/usr/bin/hugo
+
 helpmsg() {
   echo "$0 [ deploy | test ]"
 }
@@ -15,7 +17,7 @@ case "${1:-}" in
     find static -type f -exec chmod 644 {} \;
     find static -type d -exec chmod 755 {} \;
     echo "Cleaning the destination directory…"
-    hugo --cleanDestinationDir
+    ${hugo} --cleanDestinationDir
     find public -type f -exec chmod 644 {} \;
     find public -type d -exec chmod 755 {} \;
     echo "Running rsync…"
@@ -23,7 +25,7 @@ case "${1:-}" in
     echo "Done."
     ;;
   test)
-    hugo -w -D -F --baseUrl="${HOSTNAME}" server
+    ${hugo} -w -D -F --baseUrl="${HOSTNAME}" server
     ;;
   *)
     helpmsg >&2
