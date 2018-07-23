@@ -5,7 +5,8 @@ set -u
 
 DEST=atemoia:www/blizin.ski
 
-hugo=/usr/bin/hugo
+export PATH=$PATH:/home/maciej/src/go/bin
+hugo=hugo
 
 helpmsg() {
   echo "$0 [ deploy | test ]"
