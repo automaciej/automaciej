@@ -1,17 +1,23 @@
-<h2>
-  <a href="{{ .RelPermalink }}">
+<div class="card my-lg-3 my-sm-1">
+  <div class="card-body">
+    <h2 class="card-title">
       {{- .Title }}{{ if .Draft }} #Draft{{ end -}}
-  </a>
-</h2>
-<div class="post-meta text-muted">
-  {{ .Date.Format "Mon, Jan 2, 2006" }} &ndash; {{ .FuzzyWordCount }} słów
-  &ndash;
-  {{ partial "item-tags.html" . }}
-</div>
-{{ .Summary }}
-{{ if .Truncated }}
-<div class="text-right">
-  <a href="{{ .Permalink }}" title="{{ .Title }}"
-     class="btn btn-default btn-sm">czytaj&nbsp;dalej &raquo;</a>
-</div>
-{{ end }}
+    </h2>
+    <div class="post-meta card-subtitle">
+      <!-- <div class="post-meta text-muted card-subtitle"> -->
+      <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Date.Format "2006-02-01" }}</a>
+      &ndash;
+      {{ .FuzzyWordCount }} słów
+      &ndash;
+      {{ partial "item-tags.html" . }}
+    </div>
+    <div class="card-text">
+      {{ .Summary }}
+    </div>
+    {{ if .Truncated }}
+      <a href="{{ .Permalink }}"
+         title="{{ .Title }}"
+         class="card-link">czytaj&nbsp;dalej &raquo;</a>
+    {{ end }}
+  </div><!-- card-body -->
+</div><!-- card-->

@@ -1,8 +1,4 @@
-div.container iframe {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
+/* layouts/_default/single.html */
 .footer {
   padding-top: 1.5rem;
   color: #777;
@@ -13,6 +9,7 @@ div.container iframe {
   color: #CCC;
 }
 
+/* layouts/_default/list.html */
 ul.archiwum {
   list-style: none;
   padding: 0;
@@ -32,4 +29,3 @@ figure > img, figure > a > img {
   margin: 0.5em;
   border: 1px solid #EEE;
 }
-
