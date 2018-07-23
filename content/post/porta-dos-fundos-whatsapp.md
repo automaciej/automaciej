@@ -5,6 +5,7 @@ draft = false
 image = "/images/2017/porta-dos-fundos-whatsapp.jpg"
 tags = ["raptularz", "że jak?"]
 title = "Porta dos Fundos: WhatsApp"
+aliases = [ "/2017/01/whatsapp/", ]
 
 +++
 Zrobiłem kolejne polskie tłumaczenie Porta dos Fundos, WhatsApp po raz drugi.
@@ -15,7 +16,7 @@ Zrobiłem kolejne polskie tłumaczenie Porta dos Fundos, WhatsApp po raz drugi.
 
 Spodobała mi się ta formuła:
 
-*   Każdy skecz trwa 4 minut, więc jestem w stanie cały przeanalizować,
+*   Każdy skecz trwa do 4 minut, więc jestem w stanie cały przeanalizować,
     sprawdzić w słowniku, dopytać to czego nie rozumiem, i tak dalej. Gdybym na
     przykład próbował zrobić to samo z filmem fabularnym, potrzebowałbym roku na
     jeden.
@@ -35,4 +36,4 @@ Spodobała mi się ta formuła:
 *   Jest w miarę łatwe i dobrze się bawię. :)
 
 Przy okazji: dodałem aktualizację do
-„[Nie opierać się o Boga!]({{< relref "nie-opierac-sie-o-boga.md" >}})”.
+„[Nie opierać się o Boga!]({{< relref "porta-dos-fundos-nie-opierac-sie-o-boga.md" >}})”.

@@ -4,6 +4,7 @@ description = "„Bloqueio”, jest z lata 2016, kiedy rząd Brazylii zablokowa�
 image = "/images/2017/porta-dos-fundos-bloqueio.jpg"
 tags = ["raptularz", "że jak?"]
 title = "Porta dos Fundos: Blokuj!"
+aliases = [ "/2017/01/blokuj/", ]
 
 +++
 
