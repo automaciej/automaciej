@@ -24,9 +24,12 @@
             {{ range .Data.Pages }}
             <ul class="archiwum">
               <li>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}">
+                  {{ dateFormat "2006-02-01" .Date }}
+                  &nbsp;
+                  {{ .Title }}
+                </a>
                 <span class="text-muted small">
-                  ({{ dateFormat "2006-02-01" .Date }})
                 </span>
               </li>
             </ul>
