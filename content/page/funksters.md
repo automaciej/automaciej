@@ -1,16 +1,13 @@
 +++
 date = "2001-11-21T21:34:34Z"
 description = "Historia zespołu, oraz zapiski z 1999-2001 r."
-image = "/images/funksters/koncert-3.jpg"
+image = ""
 tags = ["muzyka"]
 title = "Funksters"
 
 +++
 Fragmenty ze starej strony Funksters, która niegdyś znajdowała się w domenie funksters.nuta.pl.
 
-{{< figure src="/images/funksters/koncert-3.jpg" >}}
-
-<!--more-->
 ## Historia zespołu
 
 1997, wrzesień  
