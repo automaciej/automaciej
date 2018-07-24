@@ -21,11 +21,11 @@ i nabrać do niego, niczym malarze holenderscy, trochę dystansu.
 
 Kiedyś, dawno temu, była sobie strona na Atopedii, na której była lista
 polecanych lekarzy. Niestety z czasem lista była coraz dłuższa i coraz bardziej
-niewygodna w użyciu. W związku z tym, pewnego dnia zakasałem rekawy i
-[napisałem][1] program który pozwala wyszukiwać lekarzy w o wiele łatwiejszy
-sposób. Zamiast przeglądania jednej długiej, słabo uporządkowanej listy, można
-wybrać województwo, a informatyczne elfy zajmą się pokazaniem tylko tych lekarzy
-co trzeba. Można też przeglądać lekarzy po specjalnościach.
+niewygodna w użyciu. W związku z tym, pewnego dnia zakasałem rekawy i napisałem
+program który pozwala wyszukiwać lekarzy w o wiele łatwiejszy sposób. Zamiast
+przeglądania jednej długiej, słabo uporządkowanej listy, można wybrać
+województwo, a informatyczne elfy zajmą się pokazaniem tylko tych lekarzy co
+trzeba. Można też przeglądać lekarzy po specjalnościach.
 
 Historia Wielkiej Awantury zaczęła się, kiedy jedna osoba umieściła na liście
 polecanych lekarzy kogoś, kto co prawda miał dyplom lekarza, ale pracował w
@@ -116,5 +116,4 @@ listy kontaktów do lekarzy jest dobre i potrzebne. Ale z drugiej strony, jeżel
 mam poświęcać swój wolny czas tylko po to, żeby potem „zbierać joby”, wolę pójść
 pojeździć na rowerze.
 
- [1]: http://www.atopowe-zapalenie.pl/forum/viewtopic.php?p=49269#p49269
  [2]: https://www.atopowe.pl/atopedia/Krytyka_medycyny_alternatywnej

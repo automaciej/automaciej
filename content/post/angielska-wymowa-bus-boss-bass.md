@@ -32,11 +32,11 @@ użyć do 'bus'?”
 
 koleżanka Kanadyjka: Podaj przykład.
 
-automaciej: Na początek spróbuję tak jak to wymawia większość Polaków: BAS\*
+automaciej: Na początek spróbuję tak jak to wymawia większość Polaków: BAS[^1]
 
 koleżanka Kanadyjka: Nie, to nie to. Chyba bym nie zrozumiała.
 
-automaciej: Dobrze, a co powiesz na to: BUS\*\*
+automaciej: Dobrze, a co powiesz na to: BUS[^2]
 
 koleżanka Kanadyjka: A wiesz że to jest już lepsze? To już prędzej bym
 zrozumiała.
@@ -69,20 +69,8 @@ dziwne odczucia.
 
 A co z rybą bass? To proste, trzeba zmieszać „a” z „e”. Bæs.
 
-[\*] Wymówione „chamsko” po polsku, jak np. w wyrazie
-[kontrabas](http://www.youtube.com/watch?v=K2SaUDSC4F8#t=0m17s "Kontrybasu
-gryfu końcu..." ).  
-[\*\*] Jak w polskim wyrazie [autobus](http://www.youtube.com/watch?v=dme-Ns3G4o4#t=2m14s "Może być czerwony." ).
+[^1]: Wymówione „chamsko” po polsku, jak np. w wyrazie [kontrabas][kontrubas].
+[^2]: Jak w polskim wyrazie [autobus][autobus].
 
-## Komentarze
-
-* Remigiusz 'lRem' Modrzejewski (2011-07-16 12:37:30): <p>Prze-rą-ba-ne... Też
-  mam te problemy :/</p>
-* espeket (2011-08-09 14:03:15): <p>z chęcią pomogę rozwiązać problemy z wymową
-  angielską... specjalizuję się w tym, prowadzę zajęcia na uczelniach wyższych -
-  doktorat z anglistyki, specjalność: fonetyka+fonologia :)</p>
-* Automaciej (2014-09-07 09:37:13): <p>O tym jak Andrzej pomaga wytłumaczyć
-  szłę<br /><br />Cały czas walczę z głoską szwa („szła”). W języku polskim ona
-  nie występuje, i dlatego trudno jest Polakom ją poprawnie wymówić. Ostatnim
-  razem opisywałem jak można ją przybliżyć mieszając „y” i „a”. Dziś znalazłem
-  inn
+[kontrubas]: http://www.youtube.com/watch?v=K2SaUDSC4F8#t=0m17s "Kontrybasu gryfu końcu..."
+[autobus]: http://www.youtube.com/watch?v=dme-Ns3G4o4#t=2m14s "Może być czerwony."

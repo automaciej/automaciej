@@ -55,6 +55,5 @@ przyjacielska i zrelaksowana, literuję wyraz i pytam „jak to się właściwie
 wymawia?” Ludzie chętnie pomagają. Powięcam na to może 10-20 sekund.
 
 P.S. Korekta co do [poprzedniego
-wpisu](/2011/07/16/angielska-wymowa-bus-boss-bass/):
-pisałem że w wyrazie „bus” używa się głoski ʌ, ale to chyba jednak nie jest
-wcale ʌ, tylko ə.
+wpisu](/2011/07/16/angielska-wymowa-bus-boss-bass/): pisałem że w wyrazie „bus”
+używa się głoski ʌ, ale to chyba jednak nie jest wcale ʌ, tylko ə.

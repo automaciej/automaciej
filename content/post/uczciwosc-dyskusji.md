@@ -28,18 +28,15 @@ Dyskusje-rywalizacje są IMO prostsze niż dyskusje-kooperacje. Choćby dlatego,
 solidniejszy powód. No i szczególnie w internecie prościej rywalizować, niż
 zaangażować się empatycznie i nawiązać jakąś więź z rozmówcą.
 
-_(Podobny motyw widać w [innym komentarzu
-Hoppkego](/2007/07/13/nienawidze-jezyka-naturalnego/).)_
-
 Hoppke oczywiście może tak postawić sprawę, że nie ma czegoś takiego jak
 nieuczciwa dyskusja. Pojęcie uczciwości zawiera w sobie założenie, że mamy do
-czynienia z regułami, albo że sytuacja przypomina [dylemat
-więźnia](http://automaciej.jogger.pl/2007/05/12/dylemat-wieznia-i-bullying/),
-to znaczy że jest możliwe, żeby jedna strona zyskała dużo, kosztem dużych
-strat u drugiej. Skoro Hoppke odrzuca pojęcie uczciwości, podejrzewam że w
-dyskusji odrzuca stosowalność reguł w ogóle. Jego przykłady (komplikowanie,
-męczenie przeciwnika, zmiana tematu i atak ad hominem) są ewidentnie wbrew
-regułom dyskusji, więc chyba o to mu chodziło.
+czynienia z regułami, albo że sytuacja przypomina [dylemat więźnia]({{< relref
+"dylemat-wieznia-i-bullying.md" >}}), to znaczy że jest możliwe, żeby jedna
+strona zyskała dużo, kosztem dużych strat u drugiej. Skoro Hoppke odrzuca
+pojęcie uczciwości, podejrzewam że w dyskusji odrzuca stosowalność reguł
+w ogóle. Jego przykłady (komplikowanie, męczenie przeciwnika, zmiana tematu
+i atak ad hominem) są ewidentnie wbrew regułom dyskusji, więc chyba o to mu
+chodziło.
 
 Być może Hoppke nie mówi o tym, jaka dyskusja _być powinna_, tylko jakie
 dyskusje obserwujemy „w przyrodzie”. Punkty zdobywa się u publiczności, i
@@ -59,36 +56,3 @@ wszystko jest w porządku, a w innych nie. Jeżeli _analizujemy_, możemy
 powiedzieć że wystąpiła rozbieżność środków/oczekiwań, kiedy jedna osoba
 weszła do domu drugiej i wyniosła telewizor. Ale czy to znaczy, że nie ma
 czegoś takiego jak kradzież?
-
-## Komentarze
-
-* Grzegorz (2009-01-18 16:37:32): <p>Widać, niektórzy przyswoili sobie
-  najpopularniejsze chwyty erystyczne (<a
-  href="http://pl.wikipedia.org/wiki/Erystyka" rel="nofollow" >według
-  Schopenhauera</a>).</p>
-* Radek (2009-01-18 17:49:26): <p>&#8222;Erystykę, czyli sztukę prowadzenia
-  sporów&#8221; Shopenhauera radziłbym obu zainteresowanym panom przeczytać ;) I
-  niech mi któryś powie, że np. sposób ostatni z tej książeczki jest
-  uczciwy&#8230;</p>
-* Automaciej (2009-01-18 19:31:24): <p>Tę z ilustracjami Szymona Kobylińskiego?
-  Znamy, znamy. Ja ją traktuję bardziej jako przewodnik po błędach logiczno-
-  językowych, albo ewentualnie jak <em>nie</em> należy prowadzić sporów.</p>
-* Radek (2009-01-18 19:33:21): <p>ilustracji to nie pamiętam. A czemu to wg
-  Ciebie przewodnik &#8222;jak nie prowadzić sporów&#8221;? To są drogi do
-  wygranej w dyskusji&#8230;</p>
-* Automaciej (2009-01-18 23:49:31): <p>Tak, ale nie chodzi o to żebym to ja
-  wygrał dyskusję, tylko żeby dyskusję wygrał ten kto ma rację, niezależnie od
-  tego czy to jestem ja czy nie. W „Erystyce” Schopenhauera chodzi tylko o
-  stworzenie wrażenia wygrania dyskusji, bez względu na rację czy logikę. To
-  jest bardzo dobra książka, ale w przewrotny sposób; pokazuje te techniki po
-  to, żebyśmy wiedzieli z czym możemy mieć do czynienia i jak je rozpoznać
-  zawczasu.</p>  <p>Tadeusz Kotarbiński w przedmowie napisał to bardzo ładnie:
-  «Przedmiotem niniejszej rozprawki Schopenhauera są takie chwyty, których
-  używają ci, co za wszelką cenę &#8211; awięc i za cenę prawdy i słuszności
-  &#8211; chcą koniecznie „postawić na swoim”, zrobić tak, żeby było uznane, że
-  oni maja rację. Dobrze jest uprzytomnić sobie różne możliwe fortele, aby
-  wiedzieć na co można być narażonym w sporach z nierzetelnymi.»</p>  <p>Właśnie
-  dlatego używam tej książki jako przewodnika po tym, jak nie prowadzić
-  dyskusji. Prawda i słuszność to za wysoka cena.</p>
-* Radek (2009-01-19 06:45:08): <p>W takim razie zwracam honor. Bardzo zacne
-  podejście :)</p>

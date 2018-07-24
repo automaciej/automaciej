@@ -49,21 +49,3 @@ ważna.](http://media.blizinski.pl/images/blog/steven-weinberg-truth.png)
 
 To uderzające stwierdzenie. _Prawda dla większości ludzi wcale nie jest taka
 ważna._
-
-## Komentarze
-
-* automaciej (2008-01-09 11:42:05): <p>Debata: Richard Dawkins vs David Quinn<br
-  /><br />Jest to tłumaczenie transkrypcji debaty [mp3] pomiędzy Richardem
-  Dawkinsem i Davidem Quinnem, która odbyła się 9 października 2006, wkrótce po
-  wydaniu książki Bóg Urojony, w programie Ryana Tubridy w radio RTE w Dublinie.
-  W tłumaczeniu op[...]</p>
-* automaciej (2008-01-27 21:22:12): <p>Gadfly, czyli giez<br /><br />Niektórych
-  angielskich słówek nie znajdzie się w słowniku. Dzisiaj na przykład nie
-  znalazłem w słowniku, co znaczy gadfly. To znaczy, w sensie zoologicznym tak,
-  ale nie w socjalnym. Strona na angielskiej Wikipedii bardzo ładnie opowiada,
-  co[...]</p>
-* automaciej (2009-01-04 01:39:38): <p>Naprawdę<br /><br />Z jednej strony,
-  prawda nie jest dla ludzi wcale taka ważna — jeżeli jest im tak dobrze, ludzie
-  uporczywie trwają w fałszywych przekonaniach.<br />Natomiast samo przekonanie
-  o prawdziwości czegoś, czyli poczucie prawdy wydaje się być
-  generalnie[...]</p>

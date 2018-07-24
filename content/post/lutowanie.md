@@ -26,24 +26,3 @@ bogiem lutowania, robię błyskawicznie i wszystko się trzyma. Dlaczego nikt mi
 o tym wcześniej nie powiedział?
 
 _Ach, no tak... nie było ojca._
-
-## Komentarze
-
-* Zbigniew Czernik (2006-09-12 11:51:13): <p>Z tą cyną to miałem tak samo -
-  lutowałem jakimś badziewiem, a ojciec był na tyle ciemny, że tępił moje zapędy
-  elektroniczne :(</p>
-* mama T (2006-09-13 18:13:53): <p>Nie wiadomo, co gorsze...ale czy ktoś tu jest
-  winien?</p>
-* Automaciej (2006-09-13 21:07:16): <p>Trudno powiedzieć. Najlepiej przyjąć, że
-  nie.</p>
-* makova (2006-09-15 10:48:18): <p>zła lutownica - pewnie pistoletowa ;)</p>
-* Robert (2006-12-05 19:51:51): <p>Racja.. cyna dobra trzyma lepiej :D</p>  <p>a
-  używałeś kwasu ? oczyszcza i nieźle lutuje sie wtedy</p>
-* Automaciej (2007-10-23 07:29:29): <p>Nie, kwasu nie próbowałem. Chyba byłem
-  wtedy za mały żeby ktoś mi dawał kwas do ręki.</p>
-* lukasz (2008-01-03 18:57:50): <p>no dla ych co boja sie dawac kwasu polecam
-  sok z cytryny&#8230;... podobnie dziala ;]</p>
-* automaciej (2008-05-16 09:24:17): <p>Netra i kabel serial<br /><br />Pochylony
-  nad biurkiem, roztaczałem zapach spalenizny, próbując trafić lutownicą (ale
-  nie pistoletową, tylko taką kolbą) w jedną z nóżek złącza RS-232.<br />„Jestem
-  już w połowie!” - powiedziałem, kiedy czwarty kabelek zaczął sprawi[...]</p>

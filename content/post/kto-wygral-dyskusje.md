@@ -72,29 +72,3 @@ Można też powiedzieć że to wszystko są skale szarości, że jeżeli ktoś
 dyskutuje tylko trochę nieuczciwie, to można go ostrzec, dać szansę, a dopiero
 kiedy widać wyraźnie, że nic z tego nie będzie, wycofać się... ale to jest
 porada podobna do „bądź sprytny” albo „ciężko pracuj”, czyli żadna.
-
-## Komentarze
-
-* D4rky (2009-01-05 16:24:46): <p>to wszystko walka na epenisy, nie warto nawet
-  zaczynać</p>
-* Hoppke (2009-01-05 16:59:41): <p>I <span class="caps">IMO</span> nie ma
-  &#8222;nieuczciwej&#8221; dyskusji. Najwyżej dochodzi do takiej rozbieżności
-  użytych środków/oczekiwań, że dyskusja się kończy. I nawet wtedy wiadomo, kto
-  wygrał.</p>  <p>Ocena wygranej zależy oczywiście od subiektywnych kryteriów,
-  ale większość ludzi ma je dość zbieżne. Punkty zdobywa się np. za:
-  sprowokowanie przeciwnika do zaprzeczenia samemu sobie (nokaut), wykazanie się
-  większą wiedzą, albo np. skomplikowanie dyskusji tak, że nikt już nie wie o co
-  biega (wymęczenie przeciwnika) i dyskretną zmianę tematu na bardziej
-  korzystny, no i oczywiście zdyskredytowanie rozmówcy jako człowieka (nie
-  wszędzie uznawane jako zwycięstwo, bo na ogół nie ma związku z tematem sporu,
-  ale na ogół zadziała). Jest wiele możliwości. Czasem wprowadza się dodatkowe
-  obostrzenia (np. zakaz nawiązywania do faszyzmu).</p>  <p>Dyskusje-rywalizacje
-  są <span class="caps">IMO</span> prostsze niż dyskusje-kooperacje. Choćby
-  dlatego, że rywalizuje się o epenisa, a do współpracy to już trzeba mieć jakiś
-  solidniejszy powód. No i szczególnie w internecie prościej rywalizować, niż
-  zaangażować się empatycznie i nawiązać jakąś więź z rozmówcą.</p>
-* automaciej (2009-01-18 14:25:30): <p>Uczciwość dyskusji<br /><br />Pod moim
-  niedawnym wpisem o wygrywaniu dyskusji, Hoppke napisał komentarz, w którym...
-  zresztą, po prostu go przytoczę w całości:<br /><br />I IMO nie ma
-  „nieuczciwej” dyskusji. Najwyżej dochodzi do takiej rozbieżności użytych
-  środków/oczekiwa[...]</p>

@@ -61,24 +61,3 @@ tylko częściowo?
 Dobry model powinien być tak prosty jak to możliwe, przy jednoczesnym, dobrym
 odzwierciedleniu istoty problemu i głównych cech, takie jak obecność
 środowiska i przekłamania.
-
-## Komentarze
-
-* mamaT (2007-05-14 14:37:28): <p>ja bym to nazwała dylematem małżonka :-)</p>
-* Luscynd (2007-05-15 19:48:19): <p>Chyba stosunkowo łatwo można by zamodelować
-  świat widziany oczami bully&#8217;ego, bo jest on wyjątkowo czarno biały i
-  hierarchiczny. Ludzie dzielą się na wyraźne kategorie:</p>  <p>1. Ludzie
-  których bully potrzebuje &#8211; poplecznicy. Dzielą się na 2 podkategorie:
-  <ul> <li>popierają bully&#8217;ego bo mają wspólny interes, a środki są dla
-  nich nieistotne</li> <li>naiwni, (za) dobrzy ludzie, którzy wierzą że bully
-  poprawi się gdy będzie dobrze traktowany. Można ich poznać po tym że lubią
-  używać eufemizmów ;-)</li> </ul></p>  <p>2. Ludzie których bully szanuje
-  (stosunkowo niewielka grupa): <ul> <li>są to ludzie którzy mu imponują i
-  jednocześnie nie wchodzą w drogę (najczęściej są wyżej w hierarchii)</li>
-  </ul></p>  <p>3. Ludzie których bully nie szanuje (najliczniejsza grupa) Można
-  podzielić ich zgrubsza na 3 podkategorie: <ul> <li>ofiary które się
-  podporządkowują (ukryta wrogość ze strony bully&#8217;ego)</li> <li>inni bully
-  o sprzecznych interesach (otwarta wrogość)</li> <li>potencjalne lub byłe
-  ofiary które nie chcą się podporządkować (otwarta wrogość; są najbardziej
-  niebezpieczni ponieważ mogliby zdemaskować bully&#8217;ego, a więc należy ich
-  natychmiast wyeliminować)</li> </ul></p>
