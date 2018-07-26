@@ -7,6 +7,7 @@ languageCode = "pl"
 title = "Automaciej"
 baseurl = "http://blizin.ski"
 paginate = 10
+theme = "theme004"
 [params]
   twitterName = "automaciej"
   githubName = "automatthias"

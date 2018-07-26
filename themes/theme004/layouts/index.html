@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    {{ partial "head-section.html" . }}
+    <meta property="og:description"        content="{{ .Site.Params.description }}" />
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="Automaciej"
+          href="{{ .Site.RSSLink }}" />
+    <link rel="canonical" href="{{ .Site.BaseURL }}" />
+    <title>
+      {{- .Title -}}
+    </title>
+  </head>
+  <body>
+    {{ partial "navbar.html" . }}
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-sm-12">
+          {{ range first 10 .Data.Pages }}
+          {{ .Render "summary" }}
+          {{ end }}
+          <div class="card m-0">
+            <a href="/post" title="Lista wszystkich wpisów na blogu"
+               class="btn btn-light md-3 card-link">Wszystkie&nbsp;wpisy &raquo;</a>
+          </div><!-- card m-0 -->
+        </div><!-- col-lg-8 col-sm-12 -->
+        <div class="col-lg-4 col-sm-12"><!-- col-4 -->
+          <p class="text-muted text-justify">
+          &mdash; Słuchaj, myj zęby, bo dwa razy dwa równa się pięć.
+          <br />
+          &mdash; Yyyy… ale dwa razy dwa nie równa się pięć…
+          <br />
+          &mdash; No wiesz! Dlaczego nie chcesz myć zębów?!
+          </p>
+          <strong>Polecane</strong>
+          {{ partial "menu" . }}
+          <strong>Kategorie</strong>
+          {{ partial "all-tags.html" . }}
+        </div><!-- col-4 -->
+      </div><!-- row -->
+      <div class="row">
+        <div class="col-md-12">
+          <hr/>
+          &copy; 2003-2018 Maciej Bliziński
+        </div>
+      </div><!-- row -->
+      <div class="row">
+        <div class="col-md-12">
+          {{ partial "footer.html" }}
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
+  </body>
+</html>
