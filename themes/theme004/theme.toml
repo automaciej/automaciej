@@ -1,7 +1,7 @@
 name = "Theme004"
 license = "MIT"
 # Not a real license.
-licenselink = "https://github.com/automatthias/automaciej-hugo/blob/master/README.md"
+licenselink = "https://github.com/automatthias/automaciej-hugo/blob/master/themes/theme004/LICENSE"
 description = "A 2017 theme for my personal blog."
 homepage = "http://blizin.ski/"
 tags = []
