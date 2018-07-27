@@ -22,7 +22,7 @@ zrobić z tego animację? Proszę bardzo:
 {{< figure src="/images/2017/rork-falling-animation.gif" >}}
 
 Nie wiem co akurat Poeta, znaczy się, Andreas miał na myśli, ale w animacja
-ujawnia niektóre aspekty ryskunku, których na papierze zobaczyć się nie dało.
+ujawnia niektóre aspekty rysunku, których na papierze zobaczyć się nie dało.
 
 Z ciekawostek, doczytałem że Andreas jest Niemcem, ale komiks był narysowany
 w Belgii, a z podróży do Brukseli wiem, że Belgia jest europejskim zagłębiem

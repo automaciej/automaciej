@@ -2,13 +2,21 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2014-09-14T23:51:15+01:00"
 draft = false
-title = "Notacja ABC"
+title = "Zapis ABC"
 description = "Tekstowy format reprezentacji zapisu nutowego"
 tags = ["muzyka"]
+aliases = [ "/2014/09/notacja-abc/", ]
 +++
-[Notacja ABC][] istnieje od przynajmniej od 15 lat.  istnieje od przynajmniej od
+
+[Zapis ABC][] istnieje od przynajmniej od 15 lat.  istnieje od przynajmniej od
 15 lat.  Jest to zapis tekstowy, który komputer potrafi wyświetlić w postaci
 nut, albo zamienić na plik MIDI i odegrać.
+
+Autor zapisu ABC, Chris Walshaw, zainspirował się prostymi zapisami które robił
+w czasach kiedy podróżował po Europie, chcąc uczyć się różnych melodii, ale nie
+znając zapisu nutowego[^historiaabc].
+
+[^historiaabc]: Historia zapisu ABC: http://abcnotation.com/history
 
 <!--more-->
 
@@ -25,14 +33,14 @@ Przykładowo, „Wlazł kotek na płotek” wygląda tak:
 
 Na tej podstawie możemy wyświetlić wersję graficzną:
 
-<object data="/wlazl-kotek-na-plotek.svg" type="image/svg+xml"></object>
+![„Wlazł kotek na płotek” w zapisie nutowym](/2014/09/zapis-abc/wlazl-kotek-na-plotek.png)
 
 Do zamiany pliku `.abc` na grafikę używamy narzędzia
 [abcm2ps][], albo robimy to online na stronie
 [drawthedots.com](http://www.drawthedots.com). Jest wiele innych, ale te dwa
 dawały najlepsze rezultaty.
 
-Notacja ABC jest dobrze udokumentowanym standardem.  Obecna wersja to 2.1 z roku
+Zapis ABC jest dobrze udokumentowanym standardem.  Obecna wersja to 2.1 z roku
 2011.  Istniejące narzędzia niekoniecznie implementują najnowszą wersję
 standardu i niekoniecznie implementują go w całości.
 
@@ -86,5 +94,5 @@ Trochę naokoło, ale działa.
 * [abcm2ps][] -- z ABC do grafiki
 * [drawthedots.com](http://www.drawthedots.com) -- pisanie ABC w przeglądarce
 
-[Notacja ABC]: http://abcnotation.com/
+[Zapis ABC]: http://abcnotation.com/ "ABC Notation"
 [abcm2ps]: http://moinejf.free.fr/ "ABC → obrazek"

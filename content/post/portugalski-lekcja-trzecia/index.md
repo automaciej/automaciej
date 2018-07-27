@@ -8,8 +8,8 @@ description = "Widzisz, jakie to podobne, o!"
 Wersja do posłuchania:
 
 <audio controls>
-  <source src="/media/portugalski-lekcja-trzecia.mp3" type="audio/mpeg">
-  [portugalski-lekcja-trzecia.mp3](/media/portugalski-lekcja-trzecia.mp3)
+  <source src="/2016/10/portugalski-lekcja-trzecia/portugalski-lekcja-trzecia.mp3" type="audio/mpeg">
+  [portugalski-lekcja-trzecia.mp3](/2016/10/portugalski-lekcja-trzecia/portugalski-lekcja-trzecia.mp3)
 </audio>
 
 ### …, o!
@@ -18,9 +18,9 @@ Kiedy coś komuś pokazujemy, możemy to podkreślić dodając na końcu „o”
 
 „Tutaj jest, o!”
 
-Po portugalsku („ó” się wymawia jak polskie „o”):
+Po portugalsku („ô” się wymawia jak polskie „o”):
 
-„Aqui está, ó!”
+„Aqui está, ô!”
 
 <!--more-->
 

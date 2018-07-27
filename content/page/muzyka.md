@@ -18,12 +18,12 @@ muzykę, muzyką, o muzyce...
 Struktura
 ---------
 
-Struktura wywodziła się ze [szkoły muzycznej](http://www.asmr.pl/), do której
-wtedy chodziłem. Jednym z przedmiotów były tzw. „sekcje”, czyli gra w zespole.
-Trafiłem na zajęciach na kilka fajnych osób.  Rok szkolny się skończył
-i zdaliśmy egzaminy, w tym egzamin z „sekcji”.  Poszedł nam dobrze i chcieliśmy
-grać dalej, a skoro zajęć już nie było, zaczęliśmy, ku utrapieniu moich
-sąsiadów, grać u mnie w domu. Graliśmy tak przez prawie całe lato.
+Struktura wywodziła się Autorskiej Szkoły Muzyki Rozrywkowej i Jazzu. Jednym
+z przedmiotów były tzw. „sekcje”, czyli granie w zespole.  Trafiłem na zajęciach
+na kilka fajnych osób.  Rok szkolny się skończył i zdaliśmy egzaminy, w tym
+egzamin z „sekcji”.  Poszedł nam dobrze i chcieliśmy grać dalej, a skoro zajęć
+już nie było, zaczęliśmy, ku utrapieniu moich sąsiadów, grać u mnie w domu.
+Graliśmy tak przez prawie całe lato.
 
 We wrześniu zebraliśmy się w małym studio nagraniowym w Ośrodku Kultury
 Ochoty, wyposażonym w jeden ADAT, cyfrowy ośmioślad. Nie nagrywaliśmy
@@ -49,41 +49,37 @@ Struktura zagrała najwięcej koncertów w publie Lolek na Polach
 Mokotowskich, za stawkę wywołującą uśmiech u starszych kolegów. Ale nie
 chodziło tu o pieniądze; Struktura była napędzana chęcią grania.
 
-Struktura została jakimś cudem namierzona i niespodziewanie doceniona
-przez Danusię Jampolską z Ośrodka Kultury Ochoty. Efektem był wyjazd do
-Danii w ramach [wymiany kulturalnej
-z Danią](http://www.oko.com.pl/kat_9/pub_wspolpracaWiecej_9_70/Wspolpraca_z_Dania.html).
-Dwa razy do roku polskie zespoły jechały nagrywać i występować w Danii,
-oraz dwa razy do roku [duńskie zespoły](http://www.frontsession.dk/)
-przyjeżdżały do Polski występować i raczyć się dużymi ilościami
-niesłychanie taniego piwa. Sam się zastanawiałem, jak to jest że kiedy
-Duńczycy przyjeżdżają do Polski, mieszkają w hotelu i tylko grają
-koncerty, a kiedy Polacy jadą do Danii, mieszkają tymczasowo u Duńczyków
-„na kwaterach” i mają możliwość darmowego nagrania w studio. Mam
-wrażenie że Duńczykom chodziło o piwo i polską publiczność, obydwie
-rzeczy jak najbardziej dopisywały.
+Struktura została jakimś cudem namierzona i niespodziewanie doceniona przez
+Danusię Jampolską z Ośrodka Kultury Ochoty. Efektem był wyjazd do Danii w ramach
+wymiany kulturalnej z Danią organizowanych przez Ośrodek Kultury Ochoty.  Dwa
+razy do roku polskie zespoły jechały nagrywać i występować w Danii, oraz dwa
+razy do roku [duńskie zespoły](http://www.frontsession.dk/) przyjeżdżały do
+Polski występować, i raczyć się piwem po dobrych cenach. Sam się zastanawiałem,
+jak to jest, że kiedy Duńczycy przyjeżdżają do Polski, to mieszkają w hotelu
+i tylko grają koncerty, a kiedy Polacy jadą do Danii, mieszkają tymczasowo
+u Duńczyków „na kwaterach” i mają możliwość darmowego nagrania w studio. Mam
+wrażenie że Duńczykom chodziło o piwo i polską publiczność, a obydwie rzeczy jak
+najbardziej dopisywały.
 
-Kiedy przyszedł dzień naszego wyjazdu, stawiliśmy się czwartej rano
-przed Ośrodkiem, zespół zapakował się do minivana i już po dwudziestu
-godzinach wysiadł w Århus. To było przeżycie.  Nagle znalazłem się
-w kraju gdzie nie tylko jest bardziej kolorowo i spokojnie, ale gdzie
-_da się żyć!_ Ale to osobna historia.
+Kiedy przyszedł dzień naszego wyjazdu, stawiliśmy się czwartej rano przed
+Ośrodkiem, zespół zapakował się do minivana i już po dwudziestu godzinach
+wysiadł w Århus. To było przeżycie.  Nagle znalazłem się w kraju gdzie nie tylko
+jest bardziej kolorowo i spokojnie, ale gdzie _da się żyć!_ Ten wyjazd był
+częścią mojej inspiracji żeby się przeprowadzić do Irlandii. Ale to osobna
+historia.
 
 W duńskim studio nagraliśmy utwór Jeffa Lorbera, który zdaje się któryś
-z nauczycieli ze szkoły muzycznej wykopał w postaci kwitu, który
-pieczołowicie rozszyfrowaliśmy i nauczyliśmy się grać. W porównaniu do
-standardów które wtedy graliśmy,
-[Delevans](http://media.blizinski.pl/music/struktura-delevans.mp3) był
-bardzo _funky_ oraz _groovy_.
+z nauczycieli ze szkoły muzycznej wykopał w postaci kwitu, który pieczołowicie
+rozszyfrowaliśmy i nauczyliśmy się grać. W porównaniu do standardów które wtedy
+graliśmy, Delevans był bardzo _funky_ oraz _groovy_.
 
 Hot Cargo
 ---------
 
 Następny zespół, zawiązany w 1997 roku, był pierwszym składem grającym R&B.
 Muzykę którą grało Hot Cargo, przywiozłem z Danii. Była to przede wszystkim
-płyta The Brand New Heavies _Brother Sister_.  Była to muzyka ciekawa,
-a jednocześnie na tyle prosta że wyglądała na możliwą do zagrania.
-I faktycznie taką była.
+płyta The Brand New Heavies _Brother Sister,_ ciekawa, i na tyle prosta, że
+możliwa do zagrania.
 
 Funksters
 ---------
@@ -134,18 +130,17 @@ przez kilkanaście minut, a czasami dłużej. W pewnym momencie Funksters stało
 w rodzaju funkowego alter ego jazzowych dżemów
 w [Akwarium](http://pl.wikipedia.org/wiki/Akwarium_Jazz_Club).
 
-Założony biznesplan niestety nie wypalił. Właściciel klubu, wielbiciel
-muzyki Country &amp; Western, postanowił odmówić wejścia w symbiozę
-z zespołem, a chęć grania dla samego grania zdążyła się już wypalić.
-W końcu, umówmy się, co wtorek taszczyć wzmacniacze i bębny, grać od
-19:00 do 23:00, potem wszystko pakować, wieźć po nocy do domu
-i własnoręcznie taszczyć na trzecie piętro w starym budownictwie,
-potrafi się w końcu znudzić. Skoro nie właściciel klubu do tej pory nie
-był przekonany do tego że warto zespół zatrzymać, to już go się
-przekonać nie da. Nie sądzę żeby problem był w nieopłacalności
-przedsięwzięcia, widziałem że na każdej imprezie browar schodził w barze
-w dużych ilościach. Widocznie po prostu nie podobała się gościowi
-muzyka. W ten sposób rozstaliśmy się z klubem i z dżemowymi sesjami.
+Założony biznesplan niestety nie wypalił. Właściciel klubu, wielbiciel muzyki
+Country &amp; Western, postanowił odmówić wejścia w symbiozę z zespołem, a chęć
+grania dla samego grania zdążyła się już wypalić.  W końcu, umówmy się, co
+wtorek taszczyć wzmacniacze i bębny, grać od 19:00 do 23:00, potem wszystko
+pakować, wieźć po nocy do domu i własnoręcznie taszczyć na trzecie piętro
+w starym budownictwie, potrafi się w końcu znudzić. Skoro nie właściciel klubu
+do tej pory nie był przekonany do tego że warto zespół zatrzymać, to już go się
+przekonać nie da. Nie sądzę żeby problem był w nieopłacalności przedsięwzięcia,
+widziałem, jak browar schodził w barze w dużych ilościach. Widocznie po prostu
+nie podobała się właścicielowi muzyka. W ten sposób rozstaliśmy się z klubem
+i z dżemowymi sesjami.
 
 Funksters Reloaded
 ------------------
@@ -153,16 +148,13 @@ Funksters Reloaded
 Wtedy okazało się jednak że Funksters to coś więcej niż tylko dżemy.
 Skład ten pojechał do Danii, nagrał dwa utwory demo i stał się zespołem.
 
-Funksters był zespołem grającym głównie utwory innych
-wykonawców. Pracowaliśmy nad własnym materiałem i stworzyliśmy kilka
-naszych własnym piosenek. Dwie z nich
-([Ocean](http://media.blizinski.pl/music/Dossier/10%20-%20Funksters%20-%20Ocean.ogg)
-i [Burzę](http://media.blizinski.pl/music/Dossier/11%20-%20Funksters%20-%20Burza.ogg))
-udało nam się nagrać w dobrym studio, na warsztatach muzycznych w Danii.
-Te dwa utwory nagraliśmy w 11 godzin studyjnych, co jest nie lada
-wyczynem, biorąc pod uwagę że w ten czas wchodziło nagranie instrumentów
-(kwartetu: bębny, bas, klawisze, gitara), wokalu prowadzącego, chórków
-i instrumentów perkusyjnych.
+Funksters był zespołem grającym głównie utwory innych wykonawców. Pracowaliśmy
+nad własnym materiałem i stworzyliśmy kilka naszych własnym piosenek. Dwie
+z nich (Ocean i Burzę) udało nam się nagrać w dobrym studio, na warsztatach
+muzycznych w Danii.  Te dwa utwory nagraliśmy w 11 godzin studyjnych, co jest
+nie lada wyczynem, biorąc pod uwagę że w ten czas wchodziło nagranie
+instrumentów (kwartetu: bębny, bas, klawisze, gitara), wokalu prowadzącego,
+chórków i instrumentów perkusyjnych.
 
 Skład Funksters ulegał stopniowemu przeobrażaniu i po jakimś czasie, pod
 tą samą nazwą powstał właściwie nowy zespół. Nowy skład pojechał do

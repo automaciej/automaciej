@@ -10,9 +10,9 @@ image = "/images/2016/bujo-notebook.jpg"
 
 Od stycznia 2015 prowadzę [Bullet Journal][1], notes do spraw organizacyjnych.
 
-O ile w obecnie jestem z niego niezwykle zadowolony, to na początku wcale nie
-było ani szczególnie dobrze, ani łatwo. Nie z winy systemu, tylko mojej, bo
-musiałem się oduczyć złych nawyków, i zmienić podejście do paru spraw.
+O ile w obecnie jestem z niego zadowolony, to na początku nie było ani dobrze,
+ani łatwo. Nie z winy systemu, tylko mojej, bo musiałem się oduczyć złych
+nawyków, i zmienić podejście do paru spraw.
 
 <!--more-->
 
@@ -24,8 +24,8 @@ te wszystkie rzeczy naraz. Nie było to przyjemne. System jednak pomógł, dlate
 że po pierwsze pomógł problemom wyjść na światło dzienne, a po drugie pomógł je
 rozwiązać.
 
-Instrukcję bujo można sobie zobaczyć na stronie w postaci 4-minutowego filmiku,
-więc tylko napiszę moje osobiste wrażenia.
+Instrukcję tworzenia bujo można sobie zobaczyć na stronie w postaci 4-minutowego
+filmiku, więc tylko napiszę moje osobiste wrażenia.
 
 ![Zdjęcie zeszytu z napisem "Bullet Journal"][bujo-img]
 
@@ -47,8 +47,8 @@ listą.
 
 ### Co robiłem dobrze
 
-*  Jak zacząłem prowadzić bujo, tak prowadziłem nie przestając, dzięki czemu z
-   czasem udało mi się poprawić sposób w jaki to robię.
+*  Prowadziłem bujo konsekwentnie, dzięki czemu z czasem udało mi się poprawić
+   sposób w jaki to robię.
 *  Z czasem udało mi się zapisać wszystko co mam / miałbym ochotę zrobić, i
    teraz jestem spokojny że wszystko tam mam i niczego nie zapomnę.
 *  Z czasem nauczyłem się rozbijać większe rzeczy na małe zadania.

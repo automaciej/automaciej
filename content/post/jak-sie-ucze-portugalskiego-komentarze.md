@@ -7,9 +7,7 @@ permalink = "/2015/12/jak-sie-ucze-portugalskiego/komentarze/"
 
 +++
 
-[_Wpis: Jak się uczę portugalskiego_]({{< relref "post/jak-sie-ucze-portugalskiego.md" >}})
-
-## Komentarze
+Komentarze do wpisu [_Jak się uczę portugalskiego_]({{< relref "post/jak-sie-ucze-portugalskiego.md" >}}).
 
 * quest (2015-12-24 19:51:13): <p>Ciekawy wybór. Możesz wyjaśnić dlaczego akurat
   portugalski? Uczysz się wyłącznie portugalskiego kontynentalnego czy też
@@ -30,8 +28,7 @@ permalink = "/2015/12/jak-sie-ucze-portugalskiego/komentarze/"
   niektóre zadania moga być zbyt podstawowe. Warto jednak spróbować.</p>
   <p>Druga rzecz to "slow news", czyli codzienne wiadomości czytane wolniej i
   nieco prostszym językiem, z opcją podejrzenia tekstu na stronie. Sam korzystam
-  z RFI - przykład tu: http://www.rfi.fr/emission/20151223-journal-francais-
-  facile-23122015-20h00-20h10-tu<br /> PS. Dawno mnie tu nie było. Jak wstawić
+  z RFI - przykład tu: http://www.rfi.fr/emission/20151223-journal-francais-facile-23122015-20h00-20h10-tu<br /> PS. Dawno mnie tu nie było. Jak wstawić
   linki w komentarzu?</p>
 * daromar (2015-12-25 12:39:23): <p>Próbowałeś słuchać wiadomości w
   portugalskim, np na <a href="http://www.rtp.pt/noticias/"
@@ -74,7 +71,7 @@ permalink = "/2015/12/jak-sie-ucze-portugalskiego/komentarze/"
 * automaciej (2015-12-31 16:29:09): <p>o, Max Payne 3 (PS3) jest w promocji za
   €7! (do dwudziestego któregoś stycznia)</p>
 
-Dopisek z 2018-01-28: Po dłuższej przerwie skończyłem Max Payne 3. Musiałem
+**Dopisek z 2018-01-28:** Po dłuższej przerwie skończyłem Max Payne 3. Musiałem
 rozrysować sobie diagram historii, bo od pewnego momentu nie do końca rozumiałem
 kto, co, z kim, ani dlaczego. W samej grze zabawa była przednia, rzeczywiście
 nie podzielałem zagubienia bohatera, ale mogłem sobie trochę wyobrazić jak to

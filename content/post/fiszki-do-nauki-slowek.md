@@ -54,7 +54,7 @@ mnie nauczy szablonów.
 
 Wróciłem więc do swoich notatek.
 
-{{< figure src="/images/2017/slowka-keep-portugalski.png" >}}
+{{< figure src="/images/2017/slowka-keep-portugalski.png" height="800" width="440">}}
 
 Przeglądanie list ze słówkami oczywiście było lepsze niż nic, ale moje listy nie
 były dobrze zorganizowane, i nie uczyło się z nich dobrze. Na pewno można sobie
@@ -138,7 +138,7 @@ konekst, i nie będę już musiał chodzić naokoło.
 Jaka jest największa zaleta fiszek w takim razie? Liczba słów, którą jestem
 w stanie wepchnąć sobie do głowy w krótkim czasie.
 
-{{< figure src="/images/2017/ankidroid-portugalski.png" >}}
+{{< figure src="/images/2017/ankidroid-portugalski.png" height="800" width="440" >}}
 
 W ciągu ostatniego miesiąca, poświęcając na fiszki około 15 minut dziennie,
 nauczyłem się ~220 nowych słów.
