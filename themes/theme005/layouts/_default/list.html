@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+
+      <h1>{{ .Title }}</h1>
+
+      <ul class="posts-list">
+        {{ range .Data.Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+
+    </div><!-- /columns -->
+  </div><!-- /row -->
+</div><!-- /container -->
+{{ end }}

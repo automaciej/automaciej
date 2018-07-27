@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="post-title">
+  <div class="container">
+
+    <div class="row">
+      <div class="twelve columns">
+
+        <h1>{{ .Title }}</h1>
+
+      </div><!-- /columns -->
+    </div><!-- /row -->
+  </div><!--- /container -->
+</div><!-- post-title -->
+
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      {{ .Content }}
+    </div><!-- /columns -->
+  </div><!-- /row -->
+</div><!-- /container -->
+
+
+{{ end }}

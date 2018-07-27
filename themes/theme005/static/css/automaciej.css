@@ -1,0 +1,49 @@
+/* Global font size setting */
+html {
+  font-size: 0.8em;
+}
+
+ul.posts-list {
+  list-style: none;
+}
+ul.posts-list > li {
+  margin: 0;
+}
+
+ul.posts-list a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.posts-list a:hover {
+  text-decoration: underline;
+}
+
+.text-muted {
+  color: #AAA;
+}
+
+.site-title, .post-title {
+  background-image: url('/images/ireland-landscape.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  margin-bottom: 2%;
+  color: white;
+}
+
+div.footer {
+  background-color: #F4F4F4;
+}
+div.footer > div.container {
+  padding-top: 1.5em;
+}
+
+figure {
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+}
