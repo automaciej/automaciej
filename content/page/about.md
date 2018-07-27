@@ -29,7 +29,6 @@ Inne strony Automacieja:
 
 Po polsku:
 
-- [automaciej na Facebooku](http://www.facebook.com/automaciej)
 - [@automaciej na Twitterze](https://twitter.com/automaciej) ‒ głupoty z gatunku
   „długo nad tym myślałeś?”
 - [Gitara Jazzowa](http://blizinski.pl) --- książka mojego ojca w formie strony
