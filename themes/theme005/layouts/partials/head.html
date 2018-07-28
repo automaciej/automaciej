@@ -19,4 +19,15 @@
 
   <link rel="icon" type="image/png" href="/images/favicon.png">
 
+  <!-- Facebook (OpenGraph?) meta tags -->
+  <meta property="og:url"                content="{{ .Permalink }}" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="{{ .Title }}" />
+  {{ with .Description -}}
+  <meta property="og:description"        content="{{ . }}" />
+  {{- end }}
+  {{ if .Params.image -}}
+  <meta property="og:image"              content="{{ .Site.BaseURL }}{{ .Params.image }}" />
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}" />
 </head>
