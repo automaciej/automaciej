@@ -107,3 +107,8 @@ która skręcała lekko w prawo. Po zrobieniu wszystkich tych detali odczułem
 podwójną radochę: raz że rower dobrze działa, i dwa że naprawiłem go sam.
 
 [edelux-2]: https://www.nabendynamo.de/produkte/edeluxii_en.html
+
+Dopisek 2018-07-28: Po kilku miesiącach używania dynama PV-8 (czarnego)
+zauważyłem że coś jest nie tak z łożyskiem. Podczas jazdy czułem jak gdyby coś
+się mieliło w łożysku. W związku z tym prawdopodobnie będę musiał wysłać to
+dynamo (razem z całym kołem) jeszcze raz, albo no naprawy, albo do wymiany.
