@@ -6,7 +6,9 @@
     &ndash;
     {{ .Site.Title }}
   </title>
-  <meta name="description" content="">
+  {{ with .Description -}}
+  <meta name="description" content="{{ . }}">
+  {{- end }}
   <meta name="author" content="Maciej Bliziński">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
