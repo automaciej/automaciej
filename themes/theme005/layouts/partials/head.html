@@ -30,6 +30,9 @@
   {{- end }}
   {{ if .Params.image -}}
   <meta property="og:image"              content="{{ .Site.BaseURL }}{{ .Params.image }}" />
+  {{ else }}
+  <!-- If the article's image is missing, use the default one. -->
+  <meta property="og:image"              content="{{ .Site.BaseURL }}/images/automaciej-logo.jpg" />
   {{- end }}
   <link rel="canonical" href="{{ .Permalink }}" />
 </head>
