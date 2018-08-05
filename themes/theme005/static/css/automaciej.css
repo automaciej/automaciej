@@ -47,3 +47,8 @@ figure {
   margin-bottom: 1em;
   margin-left: 0;
 }
+
+td.highlighted {
+  font-weight: bold;
+  background: #EFE;
+}
