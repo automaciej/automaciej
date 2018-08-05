@@ -32,11 +32,11 @@
   "headline": "{{ .Title }}",
   {{ if .Params.image }}
   "image": [
-    "http://blizin.ski{{ .Params.image }}"
+    "{{ .Site.BaseURL }}{{ .Params.image }}"
   ],
   {{ else }}
   "image": [
-    "http://blizin.ski/images/automaciej-logo.jpg"
+    "{{ .Site.BaseURL }}/images/automaciej-logo.jpg"
   ],
   {{ end }}
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
