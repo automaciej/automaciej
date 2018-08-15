@@ -1,12 +1,11 @@
-+++
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-date = "{{ .Date }}"
-draft = true
-description = """
-"""
-image = ""
-tags = [ "raptularz", ]
+---
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+description: ""
+date: "{{ .Date }}"
+draft: true
+tags:
+ - "raptularz"
 
-+++
+---
 
 <!--more-->
