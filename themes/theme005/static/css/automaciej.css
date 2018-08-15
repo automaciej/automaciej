@@ -27,9 +27,27 @@ ul.posts-list a:hover {
   background-image: url('/images/ireland-landscape.jpg');
   background-size: cover;
   background-position: center;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  background-color: #33548a;  /* Matches the image */
+  padding-top: 4%;
+  padding-bottom: 4%;
   margin-bottom: 2%;
+  color: white;
+}
+
+.post-title h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px #33548a;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.post-title p {
+  text-shadow: 1px 1px #33548a;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.post-title a {
   color: white;
 }
 
