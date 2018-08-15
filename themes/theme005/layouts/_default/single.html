@@ -1,9 +1,11 @@
 {{ define "main" }}
+<!-- If available, use first bundle's image -->
+{{ $original_image := .Page.Resources.GetMatch "**.jpg" }}
 <div class="post-title">
   <div class="container">
 
     <div class="row">
-      <div class="twelve columns">
+      <div class="{{ if $original_image }}twelve{{ else }}twelve{{ end }} columns">
 
         <h1>{{ .Title }}</h1>
         <p>
@@ -18,6 +20,17 @@
 <div class="container">
   <div class="row">
     <div class="twelve columns">
+      <!-- If available, use page's image -->
+      {{ with $original_image }}
+      {{ $image := .Fit "440x440" }}
+      <figure class="head-image">
+        <a href="{{ $original_image.RelPermalink }}">
+          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"/>
+        </a>
+
+      </figure>
+      {{ end }}
+
       {{ .Content }}
     </div><!-- /columns -->
   </div><!-- /row -->
@@ -36,6 +49,10 @@
   {{ if .Params.image }}
   "image": [
     "{{ .Site.BaseURL }}{{ .Params.image }}"
+  ],
+  {{ else if $original_image }}
+  "image": [
+    "{{ .Site.BaseURL }}{{ $original_image.RelPermalink }}"
   ],
   {{ else }}
   "image": [
