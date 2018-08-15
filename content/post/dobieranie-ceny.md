@@ -2,7 +2,7 @@
 title = "Dobieranie ceny"
 date = 2018-04-25T11:48:24-03:00
 draft = false
-description = """Czym charakteryzuje się „dobrze” dobrana cena?"""
+description = """Czym charakteryzuje się „dobrze” dobrana cena na wolnym rynku?"""
 tags = [ "raptularz", ]
 image = "/images/2018/moneta-euro.jpg"
 
