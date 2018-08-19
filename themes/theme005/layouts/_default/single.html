@@ -24,10 +24,11 @@
       {{ with $original_image }}
       {{ $image := .Fit "440x440" }}
       <figure class="head-image">
-        <a href="{{ $original_image.RelPermalink }}">
-          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"/>
-        </a>
-
+        <img
+          src="{{ $image.RelPermalink }}"
+          width="{{ $image.Width }}"
+          height="{{ $image.Height }}"
+          />
       </figure>
       {{ end }}
 
