@@ -68,6 +68,9 @@ figure {
 
 figure.head-image img {
   border: 1px solid #488;
+  /* Responsive image width; maintain aspect. */
+  max-width: 100%;
+  height: auto;
 }
 
 td.highlighted {
