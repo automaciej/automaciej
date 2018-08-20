@@ -22,7 +22,7 @@
     <div class="twelve columns">
       <!-- If available, use page's image -->
       {{ with $original_image }}
-      {{ $image := .Fit "440x440" }}
+      {{ $image := .Fit "880x880" }}
       <figure class="head-image">
         <img
           src="{{ $image.RelPermalink }}"
