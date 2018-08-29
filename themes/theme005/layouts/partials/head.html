@@ -28,8 +28,11 @@
   {{ with .Description -}}
   <meta property="og:description"        content="{{ . }}" />
   {{- end }}
+  {{ $original_image := .Page.Resources.GetMatch "**.jpg" }}
   {{ if .Params.image -}}
   <meta property="og:image"              content="{{ .Site.BaseURL }}{{ .Params.image }}" />
+  {{ else if $original_image }}
+  <meta property="og:image"              content="{{ $original_image.Permalink }}" />
   {{ else }}
   <!-- If the article's image is missing, use the default one. -->
   <meta property="og:image"              content="{{ .Site.BaseURL }}/images/automaciej-logo.jpg" />
