@@ -31,9 +31,9 @@ Updating and testing the website
   * -D for drafts
   * -F for future content
 
-* Creating a new page:
+* Creating a new page or post:
 
-        hugo new post/<name>.md
+        hugo new post/<name>/index.md
 
 * Testing and deploying
 
