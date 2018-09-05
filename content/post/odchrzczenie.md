@@ -2,7 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2009-03-18T11:09:20"
 title = "Odchrzczenie"
-tags = [ "sceptycyzm" ]
+tags = [ "sceptycyzm", "ateizm", ]
 
 +++
 Małe dzieci nie mają pojęcia, jakie symboliczne znaczenie dla dorosłych ma

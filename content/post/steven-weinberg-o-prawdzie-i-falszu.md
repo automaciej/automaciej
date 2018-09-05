@@ -3,7 +3,7 @@
 date = "2008-01-08T10:45:42"
 title = "Steven Weinberg o prawdzie i fałszu"
 aliases = ["/2008/01/08/steven-weinberg-o-prawdzie-i-falszu/"]
-tags = ["sceptycyzm"]
+tags = [ "sceptycyzm", "ateizm", ]
 +++
 Rozmowy na temat istnienia Boga lub bogów często przebiegają według pewnych
 schematów. Może być dużo wariacji takich dyskusji, ale koniec końców zawsze

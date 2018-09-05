@@ -51,22 +51,23 @@ osobistym bełkotem w bardziej odosobnione miejsce.
 
 ## Komentarze
 
-* kaśka (2007-07-01 15:27:42): <p>Hm. Ja właściwie dlatego w ogóle przestałam
+* kaśka (2007-07-01 15:27:42): Hm. Ja właściwie dlatego w ogóle przestałam
   pisać, bo stwierdziłam, że wszystko, co wiem ja, inni wiedzieli już dawno.
   Jeśli jednak jakimś cudem jeszcze nie wiedzą, to się znajdzie ktoś, kto w
   krótkim czasie opisze to i tak znacznie lepiej, ciekawiej i błyskotliwiej, niż
-  ja.<br /> Chyba wolę czytać.</p>
-* D4rky (2007-07-01 15:28:11): <p>Muszę ci szczerze podziękować. Twój wpis
+  ja.<br /> Chyba wolę czytać.
+* D4rky (2007-07-01 15:28:11): Muszę ci szczerze podziękować. Twój wpis
   przywrócił mi wiarę w blogowanie, ponieważ już od jakiegoś czasu głęboko
   zastanawiałem się nad tym, czy w ogóle ma sens pisanie czegokolwiek, skoro
   większość z tego ludzie już wiedzą, lub mogą znaleźć na Google. Chodzi mi
-  ścisłej o cytat z bloga Steve&#8217;a:</p>  <p>&#8222;Zdziwisz się bardzo jak
-  dowiesz się jak wiele rzeczy, które zakładasz jako „wiedzę ogólną”, jest tak
-  naprawdę zupełnie nowych dla innych, bystrych skądinąd, ludzi. Na tym świecie
-  jest po prostu za dużo wiedzy i wszyscy się cały czas uczymy.&#8221; </p>
-  <p>Wiem, że to brzmi tak, jakbym się nabijał, ale faktycznie poczułem się
-  lepiej po przeczytaniu tego. Dzięki!</p>
-* Joanna (Typoagrafka) (2007-07-01 17:11:21): <p>Ja od dłuższego czasu zbliżam
+  ścisłej o cytat z bloga Steve&#8217;a:<br/>
+  &#8222;Zdziwisz się bardzo jak dowiesz się jak wiele rzeczy, które zakładasz
+  jako „wiedzę ogólną”, jest tak naprawdę zupełnie nowych dla innych, bystrych
+  skądinąd, ludzi. Na tym świecie jest po prostu za dużo wiedzy i wszyscy się cały
+  czas uczymy.&#8221;<br/>
+  Wiem, że to brzmi tak, jakbym się nabijał, ale faktycznie poczułem się
+  lepiej po przeczytaniu tego. Dzięki!
+* Joanna (Typoagrafka) (2007-07-01 17:11:21): Ja od dłuższego czasu zbliżam
   się do momentu rozdzielenia bloga prywatnego od „wiedzowego”. I myślę, że
   wkrótce to nastąpi. Będzie blog prywatny, może i ze zdjęciami, dla tych,
   których znam i którzy mnie znają i chcą wiedzieć o tym, czy dostałam dziś 5
@@ -74,9 +75,9 @@ osobistym bełkotem w bardziej odosobnione miejsce.
   i będzie blog publiczny, gdzie będą sprawy, które mogą interesować ludzi nie
   znających mnie osobiście. Nie mówię, że wszystkich, bo blog zapewne będzie się
   zajmował pewną węższą tematyką, kryterium to raczej: nie musisz mnie znać,
-  żeby interesowało Cię to, co piszę.</p>
-* rzyjontko (2007-07-01 17:35:18): <p>Kiedyś przygotowywałem muzykę na polską
+  żeby interesowało Cię to, co piszę.
+* rzyjontko (2007-07-01 17:35:18): Kiedyś przygotowywałem muzykę na polską
   imprezę i znajomi mnie pytali, czego mogą się spodziewać &#8211; co mam, a
   czego mi brakuje?  Każdemu odpowiadałem tak samo: w mojej kolekcji każdy
   znajdzie coś, czego nie lubi.  Tak samo jest z moim blogiem &#8211; każdy
-  znajdzie na nim coś, co go nie interesuje.</p>
+  znajdzie na nim coś, co go nie interesuje.

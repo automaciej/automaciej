@@ -366,5 +366,4 @@ informacją nie jest.
   złagodzony :-)</p>
 * mamaT (2012-08-25 10:06:20): <p>po przemyśleniu: jestem magistrem sztuki. Ale
   co to jest sztuka? Jestem magistrem nie-wiadomo-czego?</p>
-* do_mamaT (2012-09-04 14:52:27): <p>http://witamy-w-
-  polsce.pl/1838/Magister+sztuki</p>
+* do_mamaT (2012-09-04 14:52:27): <p>http://witamy-w-polsce.pl/1838/Magister+sztuki</p>

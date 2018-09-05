@@ -2,7 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2013-04-11T17:53:54"
 title = "Wystąpienie z kościoła katolickiego, stan z kwietnia 2013"
-tags = [ "życie", "sceptycyzm" ]
+tags = [ "życie", "sceptycyzm", "ateizm", ]
 
 +++
 _Wersja dla zabieganych:_

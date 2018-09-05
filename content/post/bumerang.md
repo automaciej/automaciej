@@ -4,7 +4,7 @@ date = "2006-12-02T14:02:20"
 draft = false
 title = "Bumerang"
 aliases = ["/2006/12/02/bumerang/"]
-tags = ["irlandia", "zabawki"]
+tags = [ "raptularz", ]
 +++
 Nigdy nie mogłem zrozumieć, jak bumerang może wracać. Że co, rzucamy go, on
 leci a potem się okręca na pięcie i wraca?

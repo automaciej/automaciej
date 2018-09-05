@@ -2,7 +2,7 @@
 # vim:set nosmartindent nocindent ft=markdown:
 date = "2012-12-04T14:25:57"
 title = "Myślę, że ciekawiej jest..."
-tags = [ "sceptycyzm" ]
+tags = [ "sceptycyzm", "ateizm", ]
 
 +++
 „Myślę, że ciekawiej jest żyć nie wiedząc, niż mając odpowiedzi które mogą
@@ -15,12 +15,3 @@ wszechświecie nie mającym celu; a o ile mi wiadomo, tak właśnie jest.” --
 Richard Feynman
 
 (via [The Skeptics Guide To The Universe](http://www.theskepticsguide.org/archive/podcastinfo.aspx?mid=1&pid=385))
-
-## Komentarze
-
-* n3m0 (2012-12-04 14:52:21): <p>Oglądam właśnie jego wykłady "The Character of
-  Physical Law". Miodzio :)</p>
-* n3m0 (2012-12-04 14:53:29): <p>BTW: "Bóg to zrobił" <em>NIE</em> jest
-  odpowiedzią. Nie tłumaczy absolutnie nic. Równie dobrze można powiedzieć
-  "fdsafdshfjasfkas to zrobił" - zdanie to ma dokładnie taką samą moc
-  wyjaśniającą.</p>
