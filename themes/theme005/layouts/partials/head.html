@@ -1,10 +1,15 @@
 <head>
 
   <meta charset="utf-8">
+  <!-- Let's avoid titles like "Foo - Foo" -->
   <title>
+    {{ if ne .Title .Site.Title }}
     {{ .Title }}
     &ndash;
     {{ .Site.Title }}
+    {{ else }}
+    {{ .Title }}
+    {{ end }}
   </title>
   {{ with .Description -}}
   <meta name="description" content="{{ . }}">
