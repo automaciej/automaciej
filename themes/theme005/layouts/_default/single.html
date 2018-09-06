@@ -53,7 +53,12 @@
   ],
   {{ else if $original_image }}
   "image": [
-    "{{ .Site.BaseURL }}{{ $original_image.RelPermalink }}"
+    {{- range $index, $img := .Page.Resources.ByType "image" -}}
+    {{- if $index -}}
+      ,
+    {{- end }}
+    "{{- $img.Permalink }}"
+    {{- end }}
   ],
   {{ else }}
   "image": [
