@@ -7,7 +7,9 @@ permalink = "/2015/12/jak-sie-ucze-portugalskiego/komentarze/"
 
 +++
 
-Komentarze do wpisu [_Jak się uczę portugalskiego_]({{< relref "post/jak-sie-ucze-portugalskiego.md" >}}).
+Komentarze do wpisu [_Jak się uczę portugalskiego_][jaksieucze].
+
+[jaksieucze]: {{< relref "post/jak-sie-ucze-portugalskiego.md" >}}
 
 * quest (2015-12-24 19:51:13): <p>Ciekawy wybór. Możesz wyjaśnić dlaczego akurat
   portugalski? Uczysz się wyłącznie portugalskiego kontynentalnego czy też

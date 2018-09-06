@@ -177,7 +177,7 @@ _Zalety:_ Można opanować dużą liczbę słów w relatywnie krótkim czasie.
 _Wady:_ W rozmowie przypominam sobie te słowa opóźnieniem wystarczającym żeby
 przerwać płynność wypowiedzi.
 
-[Więcej o nauce z fiszek &raquo;]({{< relref "post/fiszki-do-nauki-slowek.md" >}} "Automaciej: Fiszki do nauki słówek")
+[Więcej o nauce z fiszek &raquo;]({{< relref "/post/fiszki-do-nauki-slowek/index.md" >}} "Automaciej: Fiszki do nauki słówek")
 
 ## Czat online (dodane 2018-05-03)
 

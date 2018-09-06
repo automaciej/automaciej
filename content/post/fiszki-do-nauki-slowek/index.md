@@ -2,7 +2,6 @@
 date = "2017-06-18T11:54:05-07:00"
 description = "Po pierwsze, jak rozmawiać kiedy się słabo zna język? Po drugie, jak w rozmowie uczyć się słówek?"
 draft = false
-image = "/images/2017/ankidroid-portugalski.png"
 tags = ["języki"]
 title = "Fiszki do nauki słówek"
 
@@ -54,7 +53,7 @@ mnie nauczy szablonów.
 
 Wróciłem więc do swoich notatek.
 
-{{< figure src="/images/2017/slowka-keep-portugalski.png" height="800" width="440">}}
+{{< figure src="slowka-keep-portugalski.png" height="800" width="440">}}
 
 Przeglądanie list ze słówkami oczywiście było lepsze niż nic, ale moje listy nie
 były dobrze zorganizowane, i nie uczyło się z nich dobrze. Na pewno można sobie
@@ -138,9 +137,23 @@ konekst, i nie będę już musiał chodzić naokoło.
 Jaka jest największa zaleta fiszek w takim razie? Liczba słów, którą jestem
 w stanie wepchnąć sobie do głowy w krótkim czasie.
 
-{{< figure src="/images/2017/ankidroid-portugalski.png" height="800" width="440" >}}
+{{< figure src="statystyki-ankidroid.png" height="440" width="800" caption="Statystyki AnkiDroid od sierpnia 2017 do sierpnia 2018" >}}
 
 W ciągu ostatniego miesiąca, poświęcając na fiszki około 15 minut dziennie,
 nauczyłem się ~220 nowych słów.
+
+## Aktualizacja z sierpnia 2018
+
+W maju zorientowałem się, że mam około 4000 fiszek, czyli 2000 słów / wyrażeń do
+nauczenia, z czego zobaczyłem mniej niż połowę. Wprowadzałem do obiegu 6 nowych
+fiszek dziennie. Najwyraźniej nie wystarczało to. W związku z tym podniosłem
+tempo wprowadzania nowych fiszek do 16 dziennie. To znacząco podniosło liczbę
+fiszek do codziennego przeglądania, co widać na wykresie powyżej. Obecnie
+spędzam na fiszkach około pół godziny dziennie (czyli około 3% mojego czasu
+czuwania, zakładając 16h czuwania na dzień). Potem sprawdziłem ile średnio
+dziennie dodaję fiszek: 14. Nie wygląda na to żeby miał zwolnić tempo dodawania
+nowych słów, a mam obecnie backlog około 2300 fiszek. W związku z tym podwoiłem
+tempo do 32 nowych fiszek dziennie. W ten sposób powinienem przerobić oczekujące
+fiszki w jakieś 4 miesiące.
 
 [ankidroid]: https://play.google.com/store/apps/details?id=com.ichi2.anki
