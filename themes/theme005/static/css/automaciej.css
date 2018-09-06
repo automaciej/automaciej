@@ -66,7 +66,7 @@ figure {
   margin-left: 0;
 }
 
-figure.head-image img {
+figure.head-image img, .columns figure img {
   border: 1px solid #488;
   /* Responsive image width; maintain aspect. */
   max-width: 100%;
