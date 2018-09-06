@@ -1,11 +1,13 @@
-+++
-date = "2017-07-25T07:40:06+01:00"
-title = "Porta dos Fundos: PIEKŁO"
-tags = ["raptularz", "że jak?"]
-image = "/images/2017/porta-dos-fundos-inferno.jpg"
-description = "Mało co potrafi człowieka tak przerazić jak piekielne potępienie."
+---
+date: "2017-07-25T07:40:06+01:00"
+description: Mało co potrafi człowieka tak przerazić jak piekielne potępienie.
+image: /images/2017/porta-dos-fundos-inferno.jpg
+tags:
+- raptularz
+- że jak?
+title: 'Porta dos Fundos: PIEKŁO'
+---
 
-+++
 Mało co potrafi człowieka tak przerazić jak piekielne potępienie.
 
 <!--more-->

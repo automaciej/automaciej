@@ -1,11 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2014-09-06T15:11:41+01:00"
-title = "O stronie"
-description = "Strona domowa automacieja, zapiski od roku 2003."
-menu = ["main"]
-
-+++
+---
+date: "2014-09-06T15:11:41+01:00"
+description: Strona domowa automacieja, zapiski od roku 2003.
+menu:
+- main
+title: O stronie
+---
 
 Bloguję od 2003 roku. Zacząłem pisać na serwisie Jogger.pl.  Jogger został
 zamknięty w 2016 i ostała się z niego [planeta][planeta] (dzięki, rozie!)

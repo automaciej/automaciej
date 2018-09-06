@@ -1,11 +1,12 @@
-+++
-# vim:set nocindent:
-Description = "Czy należy podziękować prawdziwemu przyjacielowi za prawdziwą poradę udzieloną przez jego wyobrażenie?"
-date = "2016-07-02T22:45:05+01:00"
-title = "Podziękowania"
-tags = [ "dywagacje" ]
+---
+Description: Czy należy podziękować prawdziwemu przyjacielowi za prawdziwą poradę
+  udzieloną przez jego wyobrażenie?
+date: "2016-07-02T22:45:05+01:00"
+tags:
+- dywagacje
+title: Podziękowania
+---
 
-+++
 Porządkowanie papierów sprawia mi sporo kłopotów. Właśnie miałem się wybrać do
 papiernika żeby nakupić teczek, kiedy zorientowałem się że sklep mi właśnie
 zamknęli, bo się trochę zapóźniłem. Kiedy przeszła już pierwsza fala irytacji,

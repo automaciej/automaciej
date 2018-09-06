@@ -1,12 +1,12 @@
-+++
-date = "2016-09-28T00:15:00+01:00"
-title = "Bullet Journal"
-tags = [ "życie", "rozwój", ]
-description = """
-Od stycznia 2015 prowadzę Bullet Journal, notes do spraw organizacyjnych."""
-image = "/images/2016/bujo-notebook.jpg"
-
-+++
+---
+date: "2016-09-28T00:15:00+01:00"
+description: Od stycznia 2015 prowadzę Bullet Journal, notes do spraw organizacyjnych.
+image: /images/2016/bujo-notebook.jpg
+tags:
+- życie
+- rozwój
+title: Bullet Journal
+---
 
 Od stycznia 2015 prowadzę [Bullet Journal][1], notes do spraw organizacyjnych.
 

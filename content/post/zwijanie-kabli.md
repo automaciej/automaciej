@@ -1,9 +1,10 @@
-+++
-date = "2016-02-17T19:26:04Z"
-title = "Zwijanie kabli: Rozumienie kontra zamordyzm"
-tags = [ "sceptycyzm", "muzyka" ]
-
-+++
+---
+date: "2016-02-17T19:26:04Z"
+tags:
+- sceptycyzm
+- muzyka
+title: 'Zwijanie kabli: Rozumienie kontra zamordyzm'
+---
 
 Jest na YouTube wiele klipów pokazujących, jak zwijać kable audio („how to
 wrap…”). W sekcji „dlaczego tak a nie inaczej” jest mówione zazwyczaj coś

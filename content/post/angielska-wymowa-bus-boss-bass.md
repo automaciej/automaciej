@@ -1,10 +1,12 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2011-07-16T12:09:50"
-title = "Angielska wymowa: bus, boss, bass"
-aliases = ["2011/07/16/angielska-wymowa-bus-boss-bass/"]
-tags = [ "języki" ]
-+++
+---
+aliases:
+- 2011/07/16/angielska-wymowa-bus-boss-bass/
+date: 2011-07-16T12:09:50
+tags:
+- języki
+title: 'Angielska wymowa: bus, boss, bass'
+---
+
 Moim ulubionym przykładem na typowe polskie problemy z wymową angielskiego,
 jest [bus vs boss](http://howjsay.com/index.php?word=boss%3Bbasset%3Bbus%3Bbas
 s&submit=Submit "dodałem baseta specjalnie, bo na hasło 'bass' howjsay podaje

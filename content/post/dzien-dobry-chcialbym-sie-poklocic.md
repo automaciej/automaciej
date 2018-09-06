@@ -1,10 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2007-06-02T14:38:21"
-title = "Dzień dobry, chciałbym się pokłócić"
-tags = [ "tłumaczenia" ]
+---
+date: 2007-06-02T14:38:21
+tags:
+- tłumaczenia
+title: Dzień dobry, chciałbym się pokłócić
+---
 
-+++
 Wczoraj przeczytałem [gorącą dyskusję pomiędzy ateistą
 i agnostykiem](http://hcz.jogger.pl/2007/05/31/agnostycyzm/). Dawkinsa nie
 czytałem (dodałem go do

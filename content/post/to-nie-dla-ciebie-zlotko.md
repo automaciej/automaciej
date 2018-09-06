@@ -1,10 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2012-12-01T10:25:00"
-title = "To nie dla ciebie, złotko"
-tags = [ "dywagacje" ]
+---
+date: 2012-12-01T10:25:00
+tags:
+- dywagacje
+title: To nie dla ciebie, złotko
+---
 
-+++
 Co by tu zrobić, żeby spowolnić rozwój technologii i gospodarki? Ale nie jakoś
 małostkowo, tylko z rozmachem, uderzyć w całe kraje, albo globalnie!
 

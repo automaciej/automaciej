@@ -1,10 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2008-07-24T19:27:50"
-title = "Mój szef o filozofii"
-tags = [ "opowieści" ]
+---
+date: 2008-07-24T19:27:50
+tags:
+- opowieści
+title: Mój szef o filozofii
+---
 
-+++
 Czasami ktoś coś powie, i to mi utkwi w głowie na amen. I nie mam pojęcia,
 dlaczego. Na przykład niedawno mój szef opowiadał o kursach filozofii które
 sobie wziął na studiach jako dodatek do kursów programowania.

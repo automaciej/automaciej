@@ -1,10 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2008-06-11T01:52:55"
-title = "Językowe inwestycje"
-tags = [ "języki" ]
+---
+date: 2008-06-11T01:52:55
+tags:
+- języki
+title: Językowe inwestycje
+---
 
-+++
 Niedawno pisałem o tym, dlaczego [warto uczyć się
 angielskiego](/2007/11/24/ale-to-jest-po-angielsku/).  Ale angielski to nie
 wszystko, jest przecież cała masa innych języków. Czy warto się ich uczyć?

@@ -1,10 +1,11 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2012-12-04T14:25:57"
-title = "Myślę, że ciekawiej jest..."
-tags = [ "sceptycyzm", "ateizm", ]
+---
+date: 2012-12-04T14:25:57
+tags:
+- sceptycyzm
+- ateizm
+title: Myślę, że ciekawiej jest...
+---
 
-+++
 „Myślę, że ciekawiej jest żyć nie wiedząc, niż mając odpowiedzi które mogą
 okazać się nieprawdziwe. Mam przybliżone odpowiedzi, dopuszczalne przekonania,
 i różne poziomy niepewności co do różnych rzeczy, ale nie jestem absolutnie

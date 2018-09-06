@@ -1,10 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2014-09-15T12:14:13"
-title = "Opisałem, jak przygotować materiały dla zespołu"
-tags = [ "muzyka" ]
+---
+date: 2014-09-15T12:14:13
+tags:
+- muzyka
+title: Opisałem, jak przygotować materiały dla zespołu
+---
 
-+++
 L. i ja, czyli piano i bas, stanowimy sporą część sekcji rytmicznej, i
 zdarzało się że proszono nas żebyśmy komuś zaakompaniowali, albo dołączyli do
 grupy solistów.

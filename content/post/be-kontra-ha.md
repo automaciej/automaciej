@@ -1,11 +1,11 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2015-02-22T14:45:56Z"
-draft = false
-title = "B kontra H"
-tags = [ "muzyka" ]
+---
+date: "2015-02-22T14:45:56Z"
+draft: false
+tags:
+- muzyka
+title: B kontra H
+---
 
-+++
 Muzyczna logika:
 
 * Widzisz **B♭** - czytasz **B**

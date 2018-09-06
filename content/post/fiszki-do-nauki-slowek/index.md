@@ -1,11 +1,12 @@
-+++
-date = "2017-06-18T11:54:05-07:00"
-description = "Po pierwsze, jak rozmawiać kiedy się słabo zna język? Po drugie, jak w rozmowie uczyć się słówek?"
-draft = false
-tags = ["języki"]
-title = "Fiszki do nauki słówek"
-
-+++
+---
+date: "2017-06-18T11:54:05-07:00"
+description: Po pierwsze, jak rozmawiać kiedy się słabo zna język? Po drugie, jak
+  w rozmowie uczyć się słówek?
+draft: false
+tags:
+- języki
+title: Fiszki do nauki słówek
+---
 
 Portugalskiego nauczyłem się w znakomitej większości poprzez rozmowy. Musiały
 się różnić od zwykłych codziennych rozmów: po pierwsze, jak rozmawiać kiedy się

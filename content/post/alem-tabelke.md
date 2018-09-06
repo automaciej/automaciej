@@ -1,11 +1,11 @@
-+++
-title = "~ąłem tabelkę"
-date = "2010-11-27T00:00:00-00:00"
-draft = false
-description = """~olnąć tabelkę to naprawdę fajna sprawa."""
-tags = [ "że jak?", ]
-
-+++
+---
+date: "2010-11-27T00:00:00-00:00"
+description: ~olnąć tabelkę to naprawdę fajna sprawa.
+draft: false
+tags:
+- że jak?
+title: ~ąłem tabelkę
+---
 
 przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 

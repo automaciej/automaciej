@@ -1,15 +1,14 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2011-05-06T18:38:42Z"
-title = "Taksówka do Óbidos"
-tags = ["opowieści",]
-aliases = [ "/2011/05/06/taksista/", ]
-image = "/images/2011/obidos-640.jpg"
-description = """
-O tym jak Automaciej wywołał konsternację w taksówce i w efekcie postanowił \
-nauczyć się portugalskiego."""
-
-+++
+---
+aliases:
+- /2011/05/06/taksista/
+date: "2011-05-06T18:38:42Z"
+description: O tym jak Automaciej wywołał konsternację w taksówce i w efekcie postanowił
+  nauczyć się portugalskiego.
+image: /images/2011/obidos-640.jpg
+tags:
+- opowieści
+title: Taksówka do Óbidos
+---
 
 Przystanek autobusowy, składający się wyłącznie ze słupka, był położony po
 wewnętrznej stronie zakrętu. Oczyma duszy już widziałem samochód wjeżdżający

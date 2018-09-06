@@ -1,14 +1,14 @@
-+++
-author = "automaciej"
-date = "2009-06-02"
-lastmod = "2016-11-20"
-title = "O słowa „polecani” wykreśleniu"
-tags = ["atopowe", "opowieści",]
-image = "/images/2009/cat-fight.jpg"
-description = """
-Awantura w internecie, po której już nie jestem taki sam jak kiedyś."""
-
-+++
+---
+author: automaciej
+date: "2009-06-02"
+description: Awantura w internecie, po której już nie jestem taki sam jak kiedyś.
+image: /images/2009/cat-fight.jpg
+lastmod: "2016-11-20"
+tags:
+- atopowe
+- opowieści
+title: O słowa „polecani” wykreśleniu
+---
 
 {{< figure attrlink="https://flic.kr/p/8CdMVx" attr="fot. Tom Taker" src="/images/2009/cat-fight.jpg" >}}
 

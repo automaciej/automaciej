@@ -1,9 +1,10 @@
-+++
-date = "2016-10-23T14:27:12+01:00"
-title = "Portugalski, lekcja trzecia"
-tags = [ "języki" ]
-description = "Widzisz, jakie to podobne, o!"
-+++
+---
+date: "2016-10-23T14:27:12+01:00"
+description: Widzisz, jakie to podobne, o!
+tags:
+- języki
+title: Portugalski, lekcja trzecia
+---
 
 Wersja do posłuchania:
 

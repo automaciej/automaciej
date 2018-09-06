@@ -1,10 +1,11 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2009-03-16T02:02:15"
-title = "Jak niewidomemu wykazać istnienie fotografii"
-tags = [ "sceptycyzm", "tłumaczenia" ]
+---
+date: 2009-03-16T02:02:15
+tags:
+- sceptycyzm
+- tłumaczenia
+title: Jak niewidomemu wykazać istnienie fotografii
+---
 
-+++
 _Tłumaczenie z bloga Skeptico._
 
 Takie zadano mi pytanie: jak udowodnić niewidomemu, że istnieje fotografia?

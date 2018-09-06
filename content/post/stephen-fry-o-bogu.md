@@ -1,12 +1,12 @@
-+++
-title = "Stephen Fry o Bogu"
-tags = ["ateizm"]
-image = ""
-description = ""
-draft = false
-date = "2017-12-29T14:11:02Z"
-
-+++
+---
+date: "2017-12-29T14:11:02Z"
+description: ""
+draft: false
+image: ""
+tags:
+- ateizm
+title: Stephen Fry o Bogu
+---
 
 Stary już dość klip z jednego z irlandzkich programów telewizyjnych: [Stephen
 Fry on God](https://youtu.be/-suvkwNYSQo).  Z perspektywy czasu coraz bardziej

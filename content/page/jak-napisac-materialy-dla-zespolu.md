@@ -1,11 +1,13 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2014-09-15T10:09:40+01:00"
-draft = false
-title = "Jak napisać materiały dla zespołu"
-tags = ["muzyka"]
-menu = ["main"]
-+++
+---
+date: "2014-09-15T10:09:40+01:00"
+draft: false
+menu:
+- main
+tags:
+- muzyka
+title: Jak napisać materiały dla zespołu
+---
+
 Chcesz zaśpiewać lub zagrać z zespołem? Napisz kwit taki jak poniżej, używając
 elementów zapisu muzycznego, i zawierając esencję tego, czego potrzebuje zespół
 żeby zagrać akompaniament.

@@ -1,10 +1,13 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2008-01-08T10:45:42"
-title = "Steven Weinberg o prawdzie i fałszu"
-aliases = ["/2008/01/08/steven-weinberg-o-prawdzie-i-falszu/"]
-tags = [ "sceptycyzm", "ateizm", ]
-+++
+---
+aliases:
+- /2008/01/08/steven-weinberg-o-prawdzie-i-falszu/
+date: 2008-01-08T10:45:42
+tags:
+- sceptycyzm
+- ateizm
+title: Steven Weinberg o prawdzie i fałszu
+---
+
 Rozmowy na temat istnienia Boga lub bogów często przebiegają według pewnych
 schematów. Może być dużo wariacji takich dyskusji, ale koniec końców zawsze
 sprowadzają się one do kilku podstawowych stwierdzeń. Jeden z tych

@@ -1,10 +1,11 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2015-10-01T17:03:45"
-draft = false
-title = "Co trzeba potrafić, żeby być klientem RWE"
-tags = [ "życie" ]
-+++
+---
+date: 2015-10-01T17:03:45
+draft: false
+tags:
+- życie
+title: Co trzeba potrafić, żeby być klientem RWE
+---
+
 W lutym RWE przysłało informację że się zmienił sposób logowania. Przysłali nowe
 hasło i napisali żeby użyć takiego samego Numeru Klienta jak poprzednio.  (Numer
 klienta? Ale ja nie wiem jaki mam numer klienta! Czy to jest to samo co „numer

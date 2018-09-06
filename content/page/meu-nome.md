@@ -1,10 +1,10 @@
-+++
-description = "O meu nome tem duas versões: formal e informal."
-tags = [ "języki" ]
-date = "2016-07-12T18:35:36+01:00"
-title = "Meu nome"
-
-+++
+---
+date: "2016-07-12T18:35:36+01:00"
+description: 'O meu nome tem duas versões: formal e informal.'
+tags:
+- języki
+title: Meu nome
+---
 
 A versão formal escrita, por exemplo em documentos, é _"Maciej"_. A pronúncia
 é "Mátchei". Ninguém me chama assim. A versão informal escreve-se _"Maciek"_,

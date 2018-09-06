@@ -1,12 +1,15 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2015-02-21T13:51:30Z"
-title = "Kultura dyskusji"
-description = "Zasady kultury dyskusji, które wyniosłem z liceum"
-aliases = ["/2006/04/11/kultura-dyskusji/"]
-menu = ["main"]
-tags = [ "dywagacje" ]
-+++
+---
+aliases:
+- /2006/04/11/kultura-dyskusji/
+date: "2015-02-21T13:51:30Z"
+description: Zasady kultury dyskusji, które wyniosłem z liceum
+menu:
+- main
+tags:
+- dywagacje
+title: Kultura dyskusji
+---
+
 Liceum, zażarte dyskusje, klasa podzielona na obozy, chwyty poniżej pasa.
 Prowadziło to donikąd. W końcu doszliśmy do wniosku że wszyscy na tym tracą.
 <!--more-->

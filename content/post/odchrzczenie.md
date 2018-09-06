@@ -1,10 +1,11 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2009-03-18T11:09:20"
-title = "Odchrzczenie"
-tags = [ "sceptycyzm", "ateizm", ]
+---
+date: 2009-03-18T11:09:20
+tags:
+- sceptycyzm
+- ateizm
+title: Odchrzczenie
+---
 
-+++
 Małe dzieci nie mają pojęcia, jakie symboliczne znaczenie dla dorosłych ma
 dziwny rytuał z moczeniem czoła wodą. A jako dorośli czasami stwierdzają, że
 wcale im się to symboliczne znaczenie nie podoba. W Wielkiej Brytanii można

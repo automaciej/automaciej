@@ -1,12 +1,14 @@
-+++
-title = "Awaria światła w rowerze"
-tags = ["raptularz", "rower"]
-image = "/images/2017/edelux-ii-zblizenie.jpg"
-description = "Przestało mi świecić światło w rowerze. Problem musiał być albo z dynamem albo ze światłem."
-draft = false
-date = "2017-11-15T00:12:00Z"
-
-+++
+---
+date: "2017-11-15T00:12:00Z"
+description: Przestało mi świecić światło w rowerze. Problem musiał być albo z dynamem
+  albo ze światłem.
+draft: false
+image: /images/2017/edelux-ii-zblizenie.jpg
+tags:
+- raptularz
+- rower
+title: Awaria światła w rowerze
+---
 
 _Kto nie ma w głowie, ten ma w nogach. -- mój dziadek, kiedy ktoś czegoś
 zapomniał i trzeba było wracać._

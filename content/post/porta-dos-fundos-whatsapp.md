@@ -1,13 +1,17 @@
-+++
-date = "2017-02-11T16:02:27Z"
-description = "Nie musimy tkwić przyklejeni do telefonu przez cały czas. Są inne metody wysyłania golasów, czy ignorowania rodziny."
-draft = false
-image = "/images/2017/porta-dos-fundos-whatsapp.jpg"
-tags = ["raptularz", "że jak?"]
-title = "Porta dos Fundos: WhatsApp"
-aliases = [ "/2017/01/whatsapp/", ]
+---
+aliases:
+- /2017/01/whatsapp/
+date: "2017-02-11T16:02:27Z"
+description: Nie musimy tkwić przyklejeni do telefonu przez cały czas. Są inne metody
+  wysyłania golasów, czy ignorowania rodziny.
+draft: false
+image: /images/2017/porta-dos-fundos-whatsapp.jpg
+tags:
+- raptularz
+- że jak?
+title: 'Porta dos Fundos: WhatsApp'
+---
 
-+++
 Zrobiłem kolejne polskie tłumaczenie Porta dos Fundos, WhatsApp po raz drugi.
 
 <!--more-->

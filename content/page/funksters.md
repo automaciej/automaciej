@@ -1,11 +1,12 @@
-+++
-date = "2001-11-21T21:34:34Z"
-description = "Historia zespołu, oraz zapiski z 1999-2001 r."
-image = ""
-tags = ["muzyka"]
-title = "Funksters"
+---
+date: "2001-11-21T21:34:34Z"
+description: Historia zespołu, oraz zapiski z 1999-2001 r.
+image: ""
+tags:
+- muzyka
+title: Funksters
+---
 
-+++
 Fragmenty ze starej strony Funksters, która niegdyś znajdowała się w domenie funksters.nuta.pl.
 
 ## Historia zespołu

@@ -1,11 +1,10 @@
 ---
-title: "Kurs żaglówki Dingue"
-description: "Pierwszy raz na żaglu, w dwuosobowej łódce szkoleniowej"
 date: "2018-08-20T15:11:23-03:00"
+description: Pierwszy raz na żaglu, w dwuosobowej łódce szkoleniowej
 draft: false
 tags:
- - "raptularz"
-
+- raptularz
+title: Kurs żaglówki Dingue
 ---
 
 Mam wrażenie że nadrabiam zaległości z liceum, czyli robię rzeczy które robili

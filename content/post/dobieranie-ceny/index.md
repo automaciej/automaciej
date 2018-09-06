@@ -1,12 +1,12 @@
-+++
-title = "Dobieranie ceny"
-date = 2018-04-25T11:48:24-03:00
-draft = false
-description = """Czym charakteryzuje się „dobrze” dobrana cena na wolnym rynku?"""
-tags = [ "raptularz", ]
-image = "/images/2018/moneta-euro.jpg"
-
-+++
+---
+date: "2018-04-25T11:48:24-03:00"
+description: Czym charakteryzuje się „dobrze” dobrana cena na wolnym rynku?
+draft: false
+image: /images/2018/moneta-euro.jpg
+tags:
+- raptularz
+title: Dobieranie ceny
+---
 
 Na wolnym rynku dobra materialne nie mają „właściwej”, „poprawnej” ceny. Ceny są
 dyktowane jedynie decyzją (potencjalnego) kupca. Za drogo, nie zapłaci. Nie za

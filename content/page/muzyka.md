@@ -1,13 +1,17 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2014-09-06T17:56:17+01:00"
-draft = false
-title = "Przygoda z muzyką"
-description = "Kiedyś zajmowałem się muzyką, dziś zostało mi z tego kilka nagrań."
-aliases = ["/automaciejowa-przygoda-z-muzyka/"]
-tags = ["muzyka", "opowieści"]
-menu = ["main"]
-+++
+---
+aliases:
+- /automaciejowa-przygoda-z-muzyka/
+date: "2014-09-06T17:56:17+01:00"
+description: Kiedyś zajmowałem się muzyką, dziś zostało mi z tego kilka nagrań.
+draft: false
+menu:
+- main
+tags:
+- muzyka
+- opowieści
+title: Przygoda z muzyką
+---
+
 W latach 1996 - 2001 zajmowałem się muzyką na poważnie. Gdyby ktoś mi wtedy
 powiedział że może powinienem się zająć programowaniem, śmiertelnie bym się
 obraził. I nawet raz się tak stało. Ale wtedy była tylko muzyka, muzyki, muzyce,

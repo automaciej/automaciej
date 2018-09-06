@@ -1,10 +1,9 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2013-01-03T18:18:28"
-title = "Poprawki do polskiej klawiatury po 6 latach"
-tags = [ "informatyka" ]
-
-+++
+---
+date: 2013-01-03T18:18:28
+tags:
+- informatyka
+title: Poprawki do polskiej klawiatury po 6 latach
+---
 
 6 lat zajęło wprowadzenie poprawej do polskiej klawiatury [zgłoszonych przez
 Marka Madeja][zgloszenie]. Ostateczna łata, autorstwa Michała Górnego, została

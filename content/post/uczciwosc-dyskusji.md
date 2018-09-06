@@ -1,10 +1,11 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2009-01-18T14:25:14"
-draft = false
-title = "Uczciwość dyskusji"
-tags = ["dywagacje"]
-+++
+---
+date: 2009-01-18T14:25:14
+draft: false
+tags:
+- dywagacje
+title: Uczciwość dyskusji
+---
+
 Pod moim [niedawnym wpisem](/2009/01/kto-wygral-dyskusje/)
 o wygrywaniu dyskusji, Hoppke napisał komentarz, w którym...  zresztą, po prostu
 go przytoczę w całości:

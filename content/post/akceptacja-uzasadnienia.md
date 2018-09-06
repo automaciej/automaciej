@@ -1,13 +1,13 @@
-+++
-date = "2016-11-30T20:04:03Z"
-description = """
-Kiedy nie interesuje nas czyjeś uzasadnienie, ludzie naciskają \
-żebyśmy ich wysłuchali, pomimo że i tak zgadzamy się spełnić prośbę."""
-image = ""
-tags = ["dywagacje"]
-title = "Akceptacja uzasadnienia"
+---
+date: "2016-11-30T20:04:03Z"
+description: Kiedy nie interesuje nas czyjeś uzasadnienie, ludzie naciskają żebyśmy
+  ich wysłuchali, pomimo że i tak zgadzamy się spełnić prośbę.
+image: ""
+tags:
+- dywagacje
+title: Akceptacja uzasadnienia
+---
 
-+++
 Czasami w miejscu publicznym, np. w autobusie, ktoś prosi mnie żebym się
 przesiadł, czy przesunął, podniósł z ziemi, czy zrobił coś małego dla
 przypadkowej osoby. W Irlandii rzadziej niż w Polsce, ale też się to zdarza.

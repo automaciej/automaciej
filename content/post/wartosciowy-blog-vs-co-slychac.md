@@ -1,10 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2007-07-01T14:55:55"
-title = "Wartościowy blog vs „co słychać”"
-tags = [ "dywagacje" ]
+---
+date: 2007-07-01T14:55:55
+tags:
+- dywagacje
+title: Wartościowy blog vs „co słychać”
+---
 
-+++
 Mój oryginalny powód założenia joggera jest właściwie niesprecyzowany. Było to
 wypróbowanie nowej zabawki. Szukałem alternatywy dla Jedynie Słusznego
 Komunikatora™ i znalazłem jabbera. Jak trafiłem na joggera, już nie pamiętam,

@@ -1,10 +1,9 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2015-12-24T16:02:23"
-title = "Jak się uczę portugalskiego"
-tags = [ "języki" ]
-
-+++
+---
+date: 2015-12-24T16:02:23
+tags:
+- języki
+title: Jak się uczę portugalskiego
+---
 
 Niepostrzeżenie [minęło 6 lat]({{< relref "taksowka-do-obidos.md" >}} "Historia z taskówkarką")
 od kiedy [zacząłem]({{< relref "portugalski-lekcja-1" >}} "Pierwszy wpis o portugalskim") się uczyć portugalskiego. Zawsze traktowałem i nadal traktuję

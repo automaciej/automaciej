@@ -1,10 +1,10 @@
-+++
-author = "automaciej"
-date = "2008-05-17"
-title = "Pierwsze starcie z książką Katarzyny Schier"
-tags = ["atopowe",]
-
-+++
+---
+author: automaciej
+date: "2008-05-17"
+tags:
+- atopowe
+title: Pierwsze starcie z książką Katarzyny Schier
+---
 
 > _Kiedy cierpi dusza, choruje ciało._
 >

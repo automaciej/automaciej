@@ -1,12 +1,14 @@
-+++
-date = "2017-05-21T00:39:43+01:00"
-description = "Zostały niedawno wznowione dwie płyty z moim ojcem na gitarze."
-draft = false
-image = ""
-tags = ["raptularz", "muzyka"]
-title = "Dwie płyty z moim ojcem"
+---
+date: "2017-05-21T00:39:43+01:00"
+description: Zostały niedawno wznowione dwie płyty z moim ojcem na gitarze.
+draft: false
+image: ""
+tags:
+- raptularz
+- muzyka
+title: Dwie płyty z moim ojcem
+---
 
-+++
 Zostały niedawno wznowione dwie płyty z moim ojcem na gitarze.
 
 [„Air Condition” zespołu Air Condition][aircondition], album z roku 1983, wznowiony w 2017.

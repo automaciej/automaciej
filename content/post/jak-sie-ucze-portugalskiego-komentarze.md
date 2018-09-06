@@ -1,11 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2015-12-24T16:02:24"
-title = "Jak się uczę portugalskiego - Komentarze"
-tags = [ "języki" ]
-permalink = "/2015/12/jak-sie-ucze-portugalskiego/komentarze/"
-
-+++
+---
+date: 2015-12-24T16:02:24
+permalink: /2015/12/jak-sie-ucze-portugalskiego/komentarze/
+tags:
+- języki
+title: Jak się uczę portugalskiego - Komentarze
+---
 
 Komentarze do wpisu [_Jak się uczę portugalskiego_][jaksieucze].
 

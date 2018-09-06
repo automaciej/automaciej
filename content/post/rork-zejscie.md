@@ -1,12 +1,14 @@
-+++
-tags = ["raptularz"]
-image = "/images/2017/rork-promo.jpg"
-date = "2017-08-06T23:54:23+01:00"
-title = "Rork ‒ Zejście"
-draft = false
-description = "Rork Zejście zawiera stronę która wygląda jak klatki animacji. Pomysł nasunął się sam."
+---
+date: "2017-08-06T23:54:23+01:00"
+description: Rork Zejście zawiera stronę która wygląda jak klatki animacji. Pomysł
+  nasunął się sam.
+draft: false
+image: /images/2017/rork-promo.jpg
+tags:
+- raptularz
+title: Rork ‒ Zejście
+---
 
-+++
 Rork zafascynował mnie kiedy byłem jeszcze w podstawówce. Pamiętam że pokazałem
 pierwszy zeszyt pani która dawała mi korepetycje z polskiego, i nie mogłem
 zrozumieć, jak to możliwe, że komiks jej się nie podoba: taka ładna kreska,

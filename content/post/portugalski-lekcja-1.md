@@ -1,11 +1,14 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2009-08-03T18:17:48"
-draft = false
-title = "Portugalski, lekcja 1"
-aliases = ["2009/08/03/portugalski-lekcja-1/"]
-tags = ["że jak?", "języki"]
-+++
+---
+aliases:
+- 2009/08/03/portugalski-lekcja-1/
+date: 2009-08-03T18:17:48
+draft: false
+tags:
+- że jak?
+- języki
+title: Portugalski, lekcja 1
+---
+
 Zacznijmy od czegoś prostego. Najlepiej, prostego dla Polaków. Zacznijmy od
 niezbyt długiego słowa: _i_, tak jak na przykład w zwrocie „dziel **i**
 rządź”. Otóż _i_ po portugalsku mówi się: **i**. Proste, prawda?

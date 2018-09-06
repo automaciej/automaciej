@@ -1,12 +1,14 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2004-01-01T00:00:00+02:00"
-draft = false
-title = "Potrawa warzywna"
-description = "Improwizowana potrawa, którą ktoś mnie kiedyś nauczył"
-aliases = ["potrawa-warzywna.pl.html"]
-tags = ["opowieści"]
-+++
+---
+aliases:
+- potrawa-warzywna.pl.html
+date: "2004-01-01T00:00:00+02:00"
+description: Improwizowana potrawa, którą ktoś mnie kiedyś nauczył
+draft: false
+tags:
+- opowieści
+title: Potrawa warzywna
+---
+
 Przepisu nauczyła mnie [Margaux](http://www.margauxunddiebanditen.de/). Było to
 podczas krótkiego wyjazdu do Beskidu Żywieckiego. Nie spotkałem jej nigdy
 wcześniej, ani nigdy później.

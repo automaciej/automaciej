@@ -1,11 +1,13 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2007-11-24T22:21:29"
-draft = false
-title = "...ale to jest po angielsku!"
-aliases = ["/2007/11/24/ale-to-jest-po-angielsku/"]
-tags = ["rozwój"]
-+++
+---
+aliases:
+- /2007/11/24/ale-to-jest-po-angielsku/
+date: 2007-11-24T22:21:29
+draft: false
+tags:
+- rozwój
+title: '...ale to jest po angielsku!'
+---
+
 _Kot zaczaił się przed mysią dziurą i czekał. Ale mysz była sprytna i ani
 wychyliła nosa. Kot cierpliwie czekał i czekał, ale jednocześnie głodniał i
 głodniał. Nie wyglądało na to, żeby miał cokolwiek w ten sposób wskórać. Nagle

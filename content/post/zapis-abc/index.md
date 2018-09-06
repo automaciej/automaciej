@@ -1,12 +1,13 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2014-09-14T23:51:15+01:00"
-draft = false
-title = "Zapis ABC"
-description = "Tekstowy format reprezentacji zapisu nutowego"
-tags = ["muzyka"]
-aliases = [ "/2014/09/notacja-abc/", ]
-+++
+---
+aliases:
+- /2014/09/notacja-abc/
+date: "2014-09-14T23:51:15+01:00"
+description: Tekstowy format reprezentacji zapisu nutowego
+draft: false
+tags:
+- muzyka
+title: Zapis ABC
+---
 
 [Zapis ABC][] istnieje od przynajmniej od 15 lat.  istnieje od przynajmniej od
 15 lat.  Jest to zapis tekstowy, który komputer potrafi wyświetlić w postaci

@@ -1,11 +1,12 @@
-+++
-title = "Porta dos Fundos: SPOLETO"
-description = "Efektywność firmy. Przerażenie klienta."
-tags = ["że jak?"]
-image = "/images/2017/porta-dos-fundos-spoleto.jpg"
-date = "2017-07-30T08:32:26+01:00"
+---
+date: "2017-07-30T08:32:26+01:00"
+description: Efektywność firmy. Przerażenie klienta.
+image: /images/2017/porta-dos-fundos-spoleto.jpg
+tags:
+- że jak?
+title: 'Porta dos Fundos: SPOLETO'
+---
 
-+++
 Jak przejść od „dzień dobry” do rzucania… no, nie mięsem, ale jedzeniem.
 
 <!--more-->

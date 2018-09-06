@@ -1,12 +1,15 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2014-09-06T19:27:41+01:00"
-draft = false
-title = "O tym jak Andrzej pomaga wymówić szłę"
-description = "To co jest pomiędzy d i rz, jest ciekawe."
-tags = ["języki", "opowieści"]
-aliases = ["/andrzej-pomaga-wymowic-szle/"]
-+++
+---
+aliases:
+- /andrzej-pomaga-wymowic-szle/
+date: "2014-09-06T19:27:41+01:00"
+description: To co jest pomiędzy d i rz, jest ciekawe.
+draft: false
+tags:
+- języki
+- opowieści
+title: O tym jak Andrzej pomaga wymówić szłę
+---
+
 Cały czas walczę z głoską [szwa](https://pl.wikipedia.org/wiki/Szwa) („szła”).
 W języku polskim ona nie występuje, i dlatego trudno jest Polakom ją poprawnie
 wymówić. Ostatnim razem [opisywałem jak można ją przybliżyć mieszając „y”

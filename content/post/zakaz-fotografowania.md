@@ -1,10 +1,10 @@
-+++
-# vim:set nosmartindent nocindent ft=markdown:
-date = "2015-04-13T18:04:29"
-title = "ZAKAZ FOTOGRAFOWANIA"
-tags = [ "dywagacje" ]
+---
+date: 2015-04-13T18:04:29
+tags:
+- dywagacje
+title: ZAKAZ FOTOGRAFOWANIA
+---
 
-+++
 Stanąłem przed tablicą z napisem:
 
 **ZAKAZ FOTOGRAFOWANIA**
