@@ -81,7 +81,14 @@
       "url": "{{ .Site.BaseURL }}/images/automaciej-logo.jpg"
     }
   },
-  "description": "{{ with .Description }}{{ . }}{{ else }}Wpis na blogu Automacieja{{ end }}"
+  "description": "{{ with .Description }}{{ . | plainify | safeJS }}{{ else }}Wpis na blogu Automacieja{{ end }}",
+  "articleBody": "{{ .Plain | safeJS }}",
+  "wordCount": "{{ .WordCount }}",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "Polish",
+    "alternateName": "pl"
+  }
 }
 </script>
 
