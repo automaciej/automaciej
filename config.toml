@@ -6,9 +6,12 @@
 languageCode = "pl"
 title = "Automaciej"
 baseurl = "http://blizin.ski"
-paginate = 10
 theme = "theme005"
 googleAnalytics = "UA-374996-16"
+rssLimit = 20
+[author]
+  email = "maciej.blizinski@gmail.com"
+  name = "Maciej Bliziński"
 [params]
   twitterName = "automaciej"
   githubName = "automatthias"
