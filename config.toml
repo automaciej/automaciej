@@ -3,6 +3,7 @@
 # Thumbnails:
 # for f in *.png; do convert -size 440x880 "$f" -resize 440x880 +profile '*' \
 # $(basename $f .png)-thumb.png; done
+defaultContentLanguage = "pl"
 languageCode = "pl"
 title = "Automaciej"
 baseurl = "http://blizin.ski"
