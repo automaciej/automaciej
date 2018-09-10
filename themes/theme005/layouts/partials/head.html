@@ -3,12 +3,12 @@
   <meta charset="utf-8">
   <!-- Let's avoid titles like "Foo - Foo" -->
   <title>
-    {{ if ne .Title .Site.Title }}
-    {{ .Title }}
+    {{ if ne .Title .Site.Title -}}
+    {{- .Title }}
     &ndash;
-    {{ .Site.Title }}
+    {{ .Site.Title -}}
     {{ else }}
-    {{ .Title }}
+    {{- .Title -}}
     {{ end }}
   </title>
 
