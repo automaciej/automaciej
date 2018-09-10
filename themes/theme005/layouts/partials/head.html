@@ -11,9 +11,11 @@
     {{ .Title }}
     {{ end }}
   </title>
-  {{ with .Description -}}
-  <meta name="description" content="{{ . }}">
-  {{- end }}
+
+  {{ if or .Description .IsHome }}
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+  {{ end }}
+
   <meta name="author" content="Maciej Bliziński">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
