@@ -20,6 +20,22 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>
+      {{ $original_image := .Resources.GetMatch "**.jpg" }}
+      {{ if .Params.image }}
+      <image>
+        <title>{{ .Title }}</title>
+        <url>
+          {{- .Site.BaseURL }}{{ .Params.image -}}
+        </url>
+      </image>
+      {{ else if $original_image }}
+      <image>
+        <title>{{ $original_image.Title }}</title>
+        <url>
+          {{- $original_image.Permalink -}}
+        </url>
+      </image>
+      {{ end }}
     </item>
     {{ end }}
   </channel>
