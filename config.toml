@@ -17,7 +17,7 @@ rssLimit = 20
   twitterName = "automaciej"
   githubName = "automatthias"
   googleplus = "MaciejBliziński"
-  description = "Dwa razy dwa jest pięć, więc myj zęby! Strona domowa automacieja."
+  description = "Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty."
 [taxonomies]
   tag = "tags"
 [permalinks]
