@@ -3,7 +3,6 @@ date: "2018-09-05T11:41:19-03:00"
 description: Gdzie jest „za” linią? Po przeciwnej stronie od „przed” linią?
 draft: false
 tags:
-- sceptyzycm
 - że jak?
 title: Za żółtą linią
 ---
