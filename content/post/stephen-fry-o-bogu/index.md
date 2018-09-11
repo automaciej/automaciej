@@ -2,9 +2,9 @@
 date: "2017-12-29T14:11:02Z"
 description: ""
 draft: false
-image: ""
 tags:
 - ateizm
+- sceptycyzm
 title: Stephen Fry o Bogu
 ---
 
