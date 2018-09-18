@@ -19,6 +19,14 @@ ul.posts-list a:hover {
   text-decoration: underline;
 }
 
+/* This is necessary with list-style: inside which is defined in skeleton.css.
+ * Otherwise the paragraph is displayed below the list item number. The
+ * alternative could be to delete the list-style: inside; from skeleton.css.
+ */
+ol p, ul p {
+  display: inline;
+}
+
 .text-muted {
   color: #AAA;
 }
