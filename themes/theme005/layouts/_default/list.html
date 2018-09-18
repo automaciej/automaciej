@@ -1,13 +1,30 @@
 {{ define "main" }}
+<div class="post-title">
+  <div class="container">
+
+    <div class="row">
+      <div class="twelve columns">
+
+        <h1>{{ .Title }}</h1>
+        <p>
+          {{ .Description }}
+        </p>
+
+      </div><!-- /columns -->
+    </div><!-- /row -->
+  </div><!--- /container -->
+</div>
+
 <div class="container">
   <div class="row">
     <div class="twelve columns">
 
-      <h1>{{ .Title }}</h1>
+      {{ .Content }}
 
       <ul class="posts-list">
         {{ range .Data.Pages }}
         <li>
+          <tt>{{ .Date.Format "2006-01-02" }}</tt>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
