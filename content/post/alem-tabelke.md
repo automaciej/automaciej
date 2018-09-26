@@ -1,6 +1,6 @@
 ---
 date: "2010-11-27T00:00:00-00:00"
-description: ~olnąć tabelkę to naprawdę fajna sprawa.
+description: Ja ~ę, tabelka to fajna rzecz!
 draft: false
 tags:
 - że jak?

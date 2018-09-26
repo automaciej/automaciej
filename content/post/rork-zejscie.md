@@ -6,7 +6,7 @@ draft: false
 image: /images/2017/rork-promo.jpg
 tags:
 - raptularz
-title: Rork ‒ Zejście
+title: Rork — Zejście
 ---
 
 Rork zafascynował mnie kiedy byłem jeszcze w podstawówce. Pamiętam że pokazałem

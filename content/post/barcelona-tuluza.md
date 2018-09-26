@@ -6,7 +6,7 @@ image: /images/2017/sloneczniki-we-francji.jpg
 tags:
 - rower
 - opowieści
-title: Barcelona‒Tuluza
+title: Barcelona—Tuluza
 ---
 
 Był rok 2013[^rok], końcówka lata. Plan był taki, żeby na wyjazd integracyjny
