@@ -16,7 +16,10 @@ Na blogu nie ma komentarzy. Społeczność Joggerowa rozpierzchła się, a nie m
 planów żeby budować własną. Kiedyś komentarze były (czy wydawały się?) czymś
 fajnym, użytecznym, ciekawym, rozwijającym nawet. Teraz (2015+) już nie są żadną
 z tych rzeczy. Są rynsztokiem, który wpędza nas w depresję. Więc, lepiej nam
-jest bez tych komentarzy. Nawiązywanie kontaktów międzyludzkich? Od tego mamy 
+jest bez tych komentarzy. Nawiązywanie kontaktów międzyludzkich? Od tego mamy
+serwisy oparte na komentarzach, np. Reddit, oraz serwisy randkowe. Jeżeli ktoś
+chce, może wrzucić link do mojego posta na Reddit i tam go omówić, nie mam nic
+przeciwko temu.
 
 ----
 
