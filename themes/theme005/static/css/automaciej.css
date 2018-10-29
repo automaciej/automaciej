@@ -85,3 +85,9 @@ td.highlighted {
   font-weight: bold;
   background: #EFE;
 }
+
+/* A style to mark debugging information. */
+.debug-info {
+  color: red;
+  font-weight: bold;
+}

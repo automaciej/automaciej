@@ -23,7 +23,9 @@
         <li>
           <a href="{{ .RelPermalink }}" title="{{ .Description }}">
             <tt>{{ .Date.Format "2006-01-02" }}</tt>
-            {{ .Title }}&nbsp;»
+            {{ if .Draft }}<span class="debug-info">[draft]&nbsp;</span>{{ end -}}
+            {{ .Title -}}
+            &nbsp;»
           </a>
         </li>
       {{ end }}
