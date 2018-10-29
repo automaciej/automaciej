@@ -12,7 +12,7 @@ Running hugo
         export GOPATH=~/src/go
         export GOLANG=~/src/go
         go get -u -v github.com/spf13/hugo
-        alias hugo ~/src/go/bin/hugo
+        alias hugo='~/src/go/bin/hugo'
 
 Styles
 ------
