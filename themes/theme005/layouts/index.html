@@ -21,7 +21,7 @@
       <ul class="posts-list">
       {{ range .Pages }}
         <li>
-          <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+          <a href="{{ .RelPermalink }}" title="{{ .Description }}">
             <tt>{{ .Date.Format "2006-01-02" }}</tt>
             {{ .Title }}&nbsp;»
           </a>
