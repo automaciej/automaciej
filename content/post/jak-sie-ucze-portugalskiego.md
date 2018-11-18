@@ -5,8 +5,8 @@ tags:
 title: Jak się uczę portugalskiego
 ---
 
-Niepostrzeżenie [minęło 6 lat]({{< relref "taksowka-do-obidos.md" >}} "Historia z taskówkarką")
-od kiedy [zacząłem]({{< relref "portugalski-lekcja-1" >}} "Pierwszy wpis o portugalskim") się uczyć portugalskiego. Zawsze traktowałem i nadal traktuję
+Niepostrzeżenie [minęło 6 lat]({{< relref "/post/taksowka-do-obidos.md" >}} "Historia z taskówkarką")
+od kiedy [zacząłem]({{< relref "/post/portugalski-lekcja-1.md" >}} "Pierwszy wpis o portugalskim") się uczyć portugalskiego. Zawsze traktowałem i nadal traktuję
 tę naukę lekko. Jest to pokierowane prostą zasadą: kiedy coś jest proste, robi
 się to częściej. Im trudniejsze, tym rzadziej. Oto, jakie rzeczy robiłem, i co
 z nich wynikło:
@@ -206,4 +206,4 @@ Istniejące serwisy:
 
 [reddit-discord]: https://www.reddit.com/r/Portuguese/comments/5hh6v9/discord_server_for_portuguese/
 
-[_Komentarze_]({{< relref "post/jak-sie-ucze-portugalskiego-komentarze.md" >}})
+[_Komentarze_]({{< relref "/post/jak-sie-ucze-portugalskiego-komentarze.md" >}})
