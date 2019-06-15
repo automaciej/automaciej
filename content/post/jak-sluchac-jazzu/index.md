@@ -118,7 +118,6 @@ wylądował na Księżycu). Mamy tam zbiór klasycznych utworów jazzowych, na
 przykład Summertime. Formy utworów są klasyczne: temat, improwizacje, temat.
 Czasami zamiast improwizacji jest sam temat, w wersji instrumentalnej. Płyta
 jest doskonała do śledzenia form utworów.
->>>>>>> Nowy wpis: Jak słuchać jazzu.
 
 [**Kind of Blue**](https://youtu.be/0fC1qSxpmKo) Milesa Davisa to jeden
 z najbardziej znanych albumów jazzowych, pierwszy album stylu _cool jazz._
