@@ -21,7 +21,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="alternate" type="application/rss+xml"
-        title="{{ .Site.Title }}" href="{{ .Site.RSSLink }}" />
+        title="{{ .Site.Title }}"
+        href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
+  />
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
 
