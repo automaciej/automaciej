@@ -7,19 +7,18 @@ title: O stronie
 ---
 
 Bloguję od 2003 roku. Zacząłem pisać na serwisie Jogger.pl.  Jogger został
-zamknięty w 2016 i ostała się z niego [planeta][planeta] (dzięki, rozie!)
-i [społeczność na Plusie][joggerplus].  Przeniosłem więc bloga do własnej domeny
-i wykorzystałem okazję żeby przetrzebić jego treść; z około 1000 wpisów
-pozostawiłem 60.
+zamknięty w 2016 i ostała się z niego [planeta][planeta] (dzięki, rozie!).
+Przeniosłem więc bloga do własnej domeny i wykorzystałem okazję żeby przetrzebić
+jego treść; z około 1000 wpisów pozostawiłem ok. 60.
 
 Na blogu nie ma komentarzy. Społeczność Joggerowa rozpierzchła się, a nie mam
 planów żeby budować własną. Kiedyś komentarze były (czy wydawały się?) czymś
 fajnym, użytecznym, ciekawym, rozwijającym nawet. Teraz (2015+) już nie są żadną
-z tych rzeczy. Są rynsztokiem, który wpędza nas w depresję. Więc, lepiej nam
-jest bez tych komentarzy. Nawiązywanie kontaktów międzyludzkich? Od tego mamy
-serwisy oparte na komentarzach, np. Reddit, oraz serwisy randkowe. Jeżeli ktoś
-chce, może wrzucić link do mojego posta na Reddit i tam go omówić, nie mam nic
-przeciwko temu.
+z tych rzeczy. Obecnie komentarze są rynsztokiem, który wpędza nas w depresję.
+
+Nawiązywanie kontaktów międzyludzkich? Od tego mamy serwisy oparte na
+komentarzach, np. Reddit, serwisy społecznościowe, randkowe, itd. Jeżeli ktoś
+chce, może zalinkować skądś do mojego wpisu i tam go omówić, bardzo proszę!
 
 ----
 
@@ -30,12 +29,10 @@ akurat interesują w danym momencie.
 
 Inne strony Automaciejowe:
 
-- [@automaciej na Twitterze][pltw] ‒ głupoty z gatunku „długo nad tym myślałeś?”
+- [@automaciej na Twitterze][pltw] ‒ nic poważnego
 - [@automatthias][entw] ‒ po angielsku
-- [+MaciejBliziński][plus] ‒ Plus,
-  ostatnio mało się udzielam
 - [Wordpress][wp] ‒ blog po angielsku
-- [github](https://github.com/automatthias) ‒ moje repozytoria kodu
+- [github](https://github.com/automatthias) ‒ repozytoria kodu
 - [soundcloud][soundcloud] ‒ nagrania
 - [Medium](https://medium.com/@automatthias) ‒ Jeden artykuł
 - [Pocket][pocket] ‒ Przeczytane interesujące artykuły
@@ -46,7 +43,6 @@ Inne strony Automaciejowe:
 [plus]: https://plus.google.com/+MaciejBlizi%C5%84ski
 [wp]: https://automatthias.wordpress.com/
 [planeta]: https://zakr.es/planetjogger/
-[joggerplus]: https://plus.google.com/communities/116979793263743755364
 [soundcloud]: https://soundcloud.com/maciej-blizinski/tracks
 [pocket]: https://getpocket.com/@automaciej
 [goodreads]: https://www.goodreads.com/user/show/6584047-maciej-blizi-ski
