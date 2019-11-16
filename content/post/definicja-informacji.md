@@ -128,7 +128,7 @@ informacją nie jest.
   książki T. Milewskiego &#8222;Językoznawstwo&#8221; (<span
   class="caps">PWN</span> ją wydaje co jakiś czas). Tam jest trochę na temat
   podziału i charakteru znaków.</p>
-* ba10 (2008-02-26 16:38:04): <p><code>automaciej: Tutaj nadawca są kamienie, to
+* ba10 (2008-02-26 16:38:04): <p>automaciej: Tutaj nadawca są kamienie, to
   one wysyłaja informacje w postaci dżwięku (obsuwających się kamieni), a ty
   jesteś odbiorcą tej informacji i może się zmienić twoje zachowanie ( "o nie
   pójde tędy bo będzie lawina kamieni"). Nigdzie w tej definicji nie jest
@@ -137,7 +137,7 @@ informacją nie jest.
   Co do "Ala ma kota" oczywiście, że chodzi mi o konkretną informacje w której
   opisuje stan rzeczywisty, że Ala posiada kota, a nie o jakiś bełkot , który
   nazywasz szumem. A czy pisząc "szum" masz na myśli "szum informacyjny" ?
-  </code>rp: Tak, uogólnienie, ale jest to łatwa, prosta i przyjemna
+  rp: Tak, uogólnienie, ale jest to łatwa, prosta i przyjemna
   &#8222;definicja&#8221;, a badania o których piszesz zawierają się w
   &#8222;metodach, technikach przetwarzania informacji&#8221; ;)</p>
 * jacek (2008-02-26 18:09:08): <p>Zupełnie mi się, Maćko, Twoja definicja nie
@@ -366,4 +366,3 @@ informacją nie jest.
   złagodzony :-)</p>
 * mamaT (2012-08-25 10:06:20): <p>po przemyśleniu: jestem magistrem sztuki. Ale
   co to jest sztuka? Jestem magistrem nie-wiadomo-czego?</p>
-* do_mamaT (2012-09-04 14:52:27): <p>http://witamy-w-polsce.pl/1838/Magister+sztuki</p>

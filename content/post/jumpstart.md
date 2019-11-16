@@ -7,9 +7,8 @@ title = "JumpStart"
 
 _Nie, to nie jest odkurzacz. Odkurzacz ma rurę. Tak, dźwięk wydaje podobny._
 
-Moja [Netra T1](http://automaciej.jogger.pl/2008/05/14/nowa-zabawka-netra-t1/)
-jest maszyną nieco autystyczną. Porozumiewa się ze światem przez port
-szeregowy, USB, SCSI i dwie sieciówki. Nie ma karty graficznej, ani
+Moja Netra T1 jest maszyną nieco autystyczną. Porozumiewa się ze światem przez
+port szeregowy, USB, SCSI i dwie sieciówki. Nie ma karty graficznej, ani
 klawiatury. O karcie dźwiękowej nie wspomnę. Nie ma również CD-ROMu, co nieco
 utrudnia instalację systemu.
 

@@ -100,8 +100,7 @@ gwarantuję, że po pierwszym dniu będzie się drapać w brodę, marszczyć brw
 nerwowo bębnić palcami po stole, a po drugim wyrywać sobie włosy z głowy.
 Jeżeli wszystko pójdzie dobrze, po jakimś czasie ilość wyrywanych włosów
 będzie malała, dokumentacja będzie się poprawiać. Jeżeli nie wszystko pójdzie
-dobrze, wyrywania włosów będzie [coraz
-więcej](http://automaciej.jogger.pl/2007/05/07/metoda-przezycia/).
+dobrze, wyrywania włosów będzie coraz więcej.
 
 Jeżeli kod ma być strawny dla nie jednej, ale grupy osób, nie ma innej rady,
 jak rozmowa pomiędzy członkami tej grupy i osiągnięcie konsensusu. Oznacza to
