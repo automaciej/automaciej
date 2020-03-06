@@ -16,10 +16,9 @@ Ale obecnie jestem na etapie żagla.
 
 ## Dzień 1 i 2
 
-W ostatni weekend odbyliśmy z moją dziewczyną Aną dwa z czterech dni kursu.
-Część była teoretyczna, wszyscy dostali książeczki z teorią, słownictwem, oraz
-instrukcjami co się jak robi.  Zrobiłem zestaw fiszek w AnkiDroid, żeby
-zapamiętać, co jak się nazywa.
+W ostatni weekend odbyłem dwa z czterech dni kursu. Część była teoretyczna,
+wszyscy dostali książeczki z teorią, słownictwem, oraz instrukcjami co się jak
+robi.  Zrobiłem zestaw fiszek w AnkiDroid, żeby zapamiętać, co jak się nazywa.
 
 Nauczyliśmy się też trzech węzłów, których prostota jest równie zaskakująca jak
 ich skuteczność. Pierwszy to ósemka, która nie pozwala żeby lina wysunęła się na
