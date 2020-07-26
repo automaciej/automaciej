@@ -22,6 +22,8 @@ def GetData(directory):
         for f in files:
             if f.startswith('.'):
                 continue
+            if not f.endswith('.md'):
+                continue
             p = os.path.join(root, f)
             try:
                 with open(p, 'r') as fd:
