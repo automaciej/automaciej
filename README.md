@@ -14,17 +14,8 @@ Running hugo
         go get -u -v github.com/spf13/hugo
         alias hugo='~/src/go/bin/hugo'
 
-Styles
-------
-
-Download Bootstrap, and copy it into the static directory:
-
-    unzip ~/Downloads/bootstrap-3.3.7-dist.zip 
-    cd bootstrap-3.3.7-dist/
-    cp -r css fonts js ~/src/automaciej-hugo/static/
-
 Updating and testing the website
--------------------
+--------------------------------
 
         hugo -D -F server
 
