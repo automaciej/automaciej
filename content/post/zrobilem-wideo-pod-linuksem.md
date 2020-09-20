@@ -15,10 +15,10 @@ artystka](http://www.youtube.com/user/wobblyfin).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9xuCkNZqmS0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Celem ćwiczenia był tzw. proof-of-concept, czyli test, czy uda się to w ogóle
-zrobić, czy też nie: jedna lustrzanka, 3 telefony, ani centa wydanego na
-oprogramowanie, i wszystko zrobione 100% legalnie i koszernie. No i udało się,
-przy pomocy Linuksa i wolnego oprogramowania.
+Celem ćwiczenia było sprawdzenie uda się to w ogóle zrobić, czy też nie: jedna
+lustrzanka, 3 telefony, ani centa wydanego na oprogramowanie, i wszystko
+zrobione 100% legalnie i koszernie. No i udało się, przy pomocy Linuksa i
+wolnego oprogramowania.
 
 Największy problem był ze znalezieniem edytora wideo. Próbowałem programów
 takich jak cinelerra i pitivi. Cinelerra się co chwilę wywalała, a pitivi nie
