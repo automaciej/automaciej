@@ -82,7 +82,7 @@
     }
   },
   "description": "{{ with .Description }}{{ . | plainify | safeJS }}{{ else }}Wpis na blogu Automacieja{{ end }}",
-  "articleBody": "{{ .Plain | safeJS }}",
+  "articleBody": "{{ .Content | plainify | safeJS }}",
   "wordCount": "{{ .WordCount }}",
   "inLanguage": {
     "@type": "Language",
