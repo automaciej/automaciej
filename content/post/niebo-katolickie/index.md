@@ -1,7 +1,7 @@
 ---
 title: "Porta dos Fundos: Niebo katolickie"
 description: "Łatwo jest zagwarantować sobie miejsce w niebie."
-date: "2020-09-24T21:43:04+01:00"
+date: "2017-09-24T21:43:04+01:00"
 draft: false
 tags:
  - "raptularz"
