@@ -16,5 +16,7 @@ Mało co potrafi człowieka tak przerazić jak piekielne potępienie.
 
 Tłumaczenie z portugalskiego na polski.
 
-Zauważyłem kilka motywów wspólnych ze skeczem [„Nie opierać się o Boga!”]({{
-    relref "post/nie-opierac-sie-o-boga.md" }}).
+Zauważyłem kilka motywów wspólnych ze skeczem [„Nie opierać się o
+Boga!”][opier].
+
+[opier]: {{< relref "post/porta-dos-fundos-nie-opierac-sie-o-boga.md" >}}
