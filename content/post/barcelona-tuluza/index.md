@@ -2,7 +2,6 @@
 date: "2017-11-15T23:25:40Z"
 description: Moja pierwsza kilkudniowa wycieczka rowerowa.
 draft: false
-image: /images/2017/sloneczniki-we-francji.jpg
 tags:
 - rower
 - opowieści
