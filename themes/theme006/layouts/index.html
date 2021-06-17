@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="row">
+  <div class="two-thirds column">
+    <ul class="year-list">
+    {{ range (.Site.RegularPages.GroupByDate "2006") }}
+    <li>
+      <div class="post-year">
+        {{ .Key }} <!-- year -->
+      </div>
+      <ul class="posts-list">
+        {{ range .Pages }}
+        <li>
+          <!-- .Resources refers to resources of this Page -->
+          {{ $original_image := .Resources.GetMatch "**.jpg" }}
+          {{ with $original_image }}
+          {{ $image := .Fill "48x48" }}
+          <img class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+          {{ else }}
+          <!-- attempting to get a global resource, from assetsDir -->
+          {{ $original_image := resources.Get "default_thumbnail.jpg" }}
+          {{ with $original_image }}
+          {{ $image := .Fill "48x48" }}
+          <img class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+          {{ else }}
+          no image
+          {{ end }}
+          {{ end }}
+
+          {{ if .Draft -}}
+          <span class="debug-info">[draft]</span>
+          {{- end }}
+          <a href="{{ .RelPermalink }}" title="{{ .Description }}">
+            {{ .Title }} &raquo;
+          </a>
+          <small class="text-muted">
+            {{ .Date.Day }} {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
+            {{ with .Description }}
+            | {{ . | safeHTML | truncate 80 }}
+            {{ end }}
+          </small>
+        </li>
+        {{ end }}
+      </ul><!-- posts-list -->
+    </li>
+    {{ end }}
+    </ul><!-- post-years -->
+  </div><!-- two-thirds column -->
+  <div class="one-third column">
+    <ul class="social-media">
+      {{ if .Site.Params.TwitterName }}
+      <li>Twitter: <a href="https://twitter.com/{{ .Site.Params.TwitterName }}" target="_new">@{{ .Site.Params.TwitterName }}</a></li>
+      {{ end }}
+      {{ if .Site.Params.GithubName }}
+      <li>Github: <a href="https://github.com/{{ .Site.Params.GithubName }}" target="_new">@{{ .Site.Params.GithubName }}</a></li>
+      {{ end }}
+      {{ if .Site.Params.TiktokName }}
+      <li>TikTok: <a href="https://www.tiktok.com/@{{ .Site.Params.TiktokName }}" target="_new">@{{ .Site.Params.TiktokName }}</a></li>
+      {{ end }}
+    </ul>
+  </div><!-- one-third column -->
+</div><!-- row -->
+{{ end }}

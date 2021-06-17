@@ -1,0 +1,53 @@
+<head>
+
+  <meta charset="utf-8">
+  <!-- Let's avoid titles like "Foo - Foo" -->
+  <title>
+    {{ if ne .Title .Site.Title -}}
+    {{- .Title }}
+    &ndash;
+    {{ .Site.Title -}}
+    {{ else }}
+    {{- .Title -}}
+    {{ end }}
+  </title>
+
+  {{ if or .Description .IsHome }}
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+  {{ end }}
+
+  <meta name="author" content="Maciej Bliziński">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="alternate" type="application/rss+xml"
+        title="{{ .Site.Title }}"
+        href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
+  />
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/automaciej.css">
+
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Facebook (OpenGraph?) meta tags -->
+  <meta property="og:url"                content="{{ .Permalink }}" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="{{ .Title }}" />
+  {{ with .Description -}}
+  <meta property="og:description"        content="{{ . }}" />
+  {{- end }}
+  {{ $original_image := .Page.Resources.GetMatch "**.jpg" }}
+  {{ if .Params.image -}}
+  <meta property="og:image"              content="{{ .Site.BaseURL }}{{ .Params.image }}" />
+  {{ else if $original_image }}
+  <meta property="og:image"              content="{{ $original_image.Permalink }}" />
+  {{ else }}
+  <!-- If the article's image is missing, use the default one. -->
+  <meta property="og:image"              content="{{ .Site.BaseURL }}/images/automaciej-logo.jpg" />
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+</head>

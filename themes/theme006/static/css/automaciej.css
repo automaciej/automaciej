@@ -1,0 +1,148 @@
+/* Global font size setting */
+html {
+  /* font-size: 1em; */
+}
+
+ul.year-list {
+  list-style-type: none;
+}
+
+ul.year-list > li > div.post-year {
+  padding-left: 0.4em;
+  font-size: 2em;
+  background-color: #DDD;
+  border-radius: 3px;
+}
+
+ul.year-list ul.posts-list {
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0;
+}
+
+ul.posts-list > li {
+  font-size: 1.3em;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  border: 1px solid #DDD;
+  border-radius: 6px;
+}
+
+ul.posts-list > li:hover {
+  border-color: #AAA;
+}
+
+ul.posts-list a {
+  text-decoration: none;
+  color: black;
+  margin-left: 0.4em;
+}
+
+ul.posts-list a:hover {
+  text-decoration: underline;
+}
+
+ul.posts-list small {
+  font-size: 0.7em;
+}
+
+h2.sidebar {
+  font-size: 1.2em;
+}
+
+ul.social-media {
+  list-style-type: none;
+}
+
+img.post-item {
+  display: inline;
+  vertical-align: middle;
+}
+
+/* This is necessary with list-style: inside which is defined in skeleton.css.
+ * Otherwise the paragraph is displayed below the list item number. The
+ * alternative could be to delete the list-style: inside; from skeleton.css.
+ */
+ol p, ul p {
+  display: inline;
+}
+
+.text-muted {
+  color: #AAA;
+}
+
+div.site-title, .post-title {
+  /* background-image: url('/images/ireland-landscape.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-color: #33548a;  /* Matches the image */
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-bottom: 2%;
+  color: white;
+  border-radius: 7px;
+}
+
+.post-title h1, div.site-title h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px #33548a;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.post-title p, .site-title p {
+  text-shadow: 1px 1px #33548a;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.post-title a, .site-title a {
+  color: white;
+  text-decoration: none;
+}
+.post-title a:hover, .site-title a:hover {
+  text-decoration: underline;
+}
+
+div.footer {
+  background-color: #F4F4F4;
+}
+
+div.footer > footer {
+  padding-top: 1.0em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+figure {
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+
+figure.head-image img, .columns figure img {
+  border: 1px solid #488;
+  /* Responsive image width; maintain aspect. */
+  max-width: 100%;
+  height: auto;
+}
+
+td.highlighted {
+  font-weight: bold;
+  background: #EFE;
+}
+
+/* A style to mark debugging information. */
+.debug-info {
+  color: red;
+  font-weight: bold;
+}
