@@ -28,7 +28,8 @@ Jestem ciekaw, do której grupy należy Magola. Jak na razie, nie aplikował.
 Jedynie się
 [odgraża](http://www.google.com/url?sa=D&q=http%3A//www.mind-energy.net/archives/289-The-true-story-about-Mr.-James-Randi-and-me%2C-Miroslaw-MAGOLA%2C-the-Magnetic-Man.html).
 
-# Komentarze
+----
+**Komentarze**
 
 * ejdzej (2008-05-25 11:49:22): <p>Z grupy pierwszej największą plagą dla
   Fundacji byli radiesteci. Dla nich zrobiono nawet specjalną stronę z lekturą

@@ -60,7 +60,8 @@ A na razie cieszę się że ożywiłem nową maszynę.
 
 W następny weekend spróbuję pobawić się zone'ami.
 
-# Komentarze
+----
+**Komentarze**
 
 * Bonjoure (2008-05-20 07:40:26): <p>No faktycznie! Gnome się przyda&#8230;
   ;)</p>

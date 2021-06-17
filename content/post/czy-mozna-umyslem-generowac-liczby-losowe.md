@@ -62,7 +62,8 @@ albo cyfry.
 
 Macie jakieś inne pomysły?
 
-# Komentarze
+----
+**Komentarze**
 
 * 9gods (2007-08-20 10:29:32): <p>Przeprowadzano eksperymenty (na
   uniwersytetach), w których komputer non stop generował losowe cyfry a

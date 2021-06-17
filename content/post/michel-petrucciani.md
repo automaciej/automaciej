@@ -19,7 +19,8 @@ palców jest... piękny.
 [Muzyka Petruccianiego jest agresywnie
 romantyczna.](http://www.jazzpages.com/txtext/petrucciani_voce.htm)
 
-# Komentarze
+----
+**Komentarze**
 
 * mama T (2006-07-16 14:12:25): <p>Dla mnie rewelacją jest jego technika lewej
   ręki. Zawsze uczyłam uczniów ( i sama byłam uczona) pewnej techniki 5 palca,

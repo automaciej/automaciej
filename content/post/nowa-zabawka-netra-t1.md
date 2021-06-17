@@ -30,7 +30,8 @@ komputerowy hardware. Jeżeli chodzi im o to, że zanim cokolwiek się da na tym
 sprzęcie i sofcie zrobić, człowiek żałuje że się urodził, to zdecydowanie się
 zgadzam.
 
-# Komentarze
+----
+**Komentarze**
 
 * deviant (2008-05-14 10:34:03): <p>Mozesz spokojnie uzyc kabelka od routerow
   Cisco. Mam takowy (moge podac numer kabla jak bedziesz potrzebowal), sprawuje

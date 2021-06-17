@@ -30,7 +30,8 @@ Czy wniosek jest dobry? Dlaczego?
 
 _@hcz: Wiem że wiesz! Pozwól innym pogłówkować. ;-)_
 
-# Komentarze
+----
+**Komentarze**
 
 * brtk (2008-04-28 12:15:47): <p>Bo większa część palaczy rzuca palenie gdy się
   dowie, że są już chorzy? :)</p>

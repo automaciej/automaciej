@@ -97,7 +97,8 @@ składu i smaku, no i oczywiście, żeby była dobrej jakości.
 Szczególny nacisk położyłbym na zróżnicowanie smaków. Dzięki niemu będziemy
 w stanie dobrze oceniać własne tłumaczenia, melodie i obrazy.
 
-# Komentarze
+----
+**Komentarze**
 
 * Joanna (Typoagrafka) (2007-07-05 11:26:36): <p>Masz rację, to faktycznie jakoś
   tak działa, że jak za długo pracujesz na jakąś rzeczą, następuje „zmęczenie

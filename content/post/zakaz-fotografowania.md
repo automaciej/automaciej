@@ -68,7 +68,8 @@ mój tweet?
 
 Więc... jak działa ta tablica? Gdzie jest ten zakaz?
 
-## Komentarze
+----
+**Komentarze**
 
 * d33tah (2015-04-13 21:44:27): <p>Gdyby tak się rozdrabniać, zamiast każdego
   zakazu mielibyśmy książki. W zasadzie, tego typu post możnaby napisać o każdym

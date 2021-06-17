@@ -79,7 +79,8 @@ sądu, zdaje się, o zniesławienie. Przyznanie nagrody za zasługi w służbie
 iluzjonistyki wygląda na zawoalowane „czy przestał pan już bić swoją żonę”, to
 znaczy tutaj, „jesteś sztukmistrzem”.
 
-# Komentarze
+----
+**Komentarze**
 
 * Moarc/J-23 (2008-12-20 21:13:46): <p>Właśnie zastanawiałem się, skąd się biorą
   brednie na temat zjawisk paranormalnych, kiedy w do mojego gabinetu wefrunął

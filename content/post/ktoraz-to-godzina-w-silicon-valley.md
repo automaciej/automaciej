@@ -66,7 +66,8 @@ ciekawe, mechanizm ten potrafi poradzić sobie z napisami w UTF-8.
     
     
 
-# Komentarze
+----
+**Komentarze**
 
 * Ja-Joanna (2007-05-17 01:04:31): <p>U mnie &#8222;roku pańskiego&#8221; nie
   działa. Podaje czas w <span class="caps">UTC</span>. Tzn. pisze: <span

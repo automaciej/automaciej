@@ -32,7 +32,8 @@ biblioteki do parsowania opcji takiej jak getopt albo Boost::program_options,
 ma jakiś własny robaczywy kawałek kodu którego jedynym zadaniem jest chyba
 utrudnianie życia użytkownikom.
 
-# Komentarze
+----
+**Komentarze**
 
 * D4rky (2007-08-15 17:13:58): <p>do czego uzywasz tego typu rzeczy?</p>
 * Automaciej (2007-08-15 17:33:02): <p>Do analizy danych genetycznych, przy czym

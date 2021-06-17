@@ -34,7 +34,8 @@ Od tamtej pory _cdesign proponentsists_ jest nazywane brakującym ogniwem
 łączącym kreacjonizm i „teorię” [inteligentnego
 projektu](http://pl.wikipedia.org/wiki/Teoria_inteligentnego_projektu).
 
-# Komentarze
+----
+**Komentarze**
 
 * Elwis (2008-05-21 10:20:06): <p>kreacjonizm propaguje jedną religię?
   Chrześcijaństwo, judaizm, islam. Już są trzy, a na pewno znalazłoby się

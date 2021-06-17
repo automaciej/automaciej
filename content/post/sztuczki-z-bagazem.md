@@ -51,7 +51,8 @@ i tego samego dnia mam iść do pracy. Nie wiem, co z tego będzie.  Pewnie będ
 pracować jak zombie o jakichś dzikich godzinach, dopóki się z powrotem nie
 przestawię na irlandzki czas (IST).
 
-# Komentarze
+----
+**Komentarze**
 
 * sisi (2008-06-24 07:53:45): <p>A to dziwne, szczerze mówiąc. Leciałam już do
   Stanów, Meksyku, Chin i na Filipiny &#8211; zawsze z jedną lub dwiema

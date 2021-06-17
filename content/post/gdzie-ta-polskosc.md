@@ -129,7 +129,8 @@ literatura, ani polskie zwyczaje, religia czy kuchnia. Jedyne co mam z całą
 pewnością polskie, to ten dziwny, twardy język z prześmiesznym akcentem na
 przedostatnią sylabę. I co z tego?
 
-# Komentarze
+----
+**Komentarze**
 
 * Cachotterie (2007-08-16 22:27:54): <p>Dziękuję.<br /> Od półtora miesiąca
   mieszkam w Londynie, od momentu decyzji o przeprowadzce wszyscy mnie pytali

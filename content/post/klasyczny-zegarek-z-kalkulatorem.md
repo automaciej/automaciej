@@ -47,7 +47,8 @@ dbc-600/2421/) na [liście 15 klasycznych zegarków z
 kalkulatorem](http://www.oobject.com/category/top-15-classic-calculator-
 watches/).
 
-# Komentarze
+----
+**Komentarze**
 
 * AleAle (2008-07-11 23:10:57): <p>Ja nigdy nie miałem cyfrowego zegarka, ale za
   to już piąty czy szósty rok noszę świetnego Victorinoxa i muszę przyznać, że

@@ -56,7 +56,8 @@ może zająć to trochę czasu, ale w końcu się udaje.
 Gdyby starsi ludzie więcej korzystali z internetu, wszystkim ― i młodym, i
 starym, byłoby łatwiej.
 
-# Komentarze
+----
+**Komentarze**
 
 * ola (2006-10-28 17:25:28): <p>a jaki przedział wiekowy masz na myśli pisząc
   starsi ludzie?:)</p>

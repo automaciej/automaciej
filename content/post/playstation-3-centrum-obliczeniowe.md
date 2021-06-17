@@ -30,7 +30,8 @@ tego mógł potrzebować. Pomiałem ją sobie lat ileś (10?), po czym w tym mie
 ją sprzedałem, za €28. Plus dwa kontrolery, plus wszystkie gry, dostałem
 z powrotem €65. Aż śmiesznie. Ale przynajmniej pozbyłem się zawalidrogi.
 
-# Komentarze
+----
+**Komentarze**
 
 * Cthulhu (2007-03-29 13:32:48): <p>PS3 ma z tego co pamiętam 256mb pamięci dla
   grafiki i drugie tyle dla reszty.<br /> No i znów wychodzi to, że ta konsola

@@ -36,7 +36,8 @@ jest potrzebny do tego aby mi wydali kartę wstępu. A karta wstępu jest
 potrzebna do tego, żeby wrócić po wyjściu na lunch. Którego zresztą dzisiaj
 nie jadłem, bo byłem podekscytowany nowymi zabawkami i po prostu zapomniałem.
 
-# Komentarze
+----
+**Komentarze**
 
 * splash (2007-01-09 07:07:47): <p>Zarobki satysfakcjonujące ? Bo właśnie
   dokonuję analizy zarobków informatyków, i zastanawiam się czy jest to zawód,

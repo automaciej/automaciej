@@ -50,7 +50,8 @@ Czego by o multimediach pod Linuksem nie mówić (trochę się w trakcie naklą�
 nie zaprzeczam), wiem że mam już stopę w drzwiach i kolejne podejścia będą
 tylko lepsze.
 
-# Komentarze
+----
+**Komentarze**
 
 * torero (2012-09-03 07:56:22): <p>Niedobrze z tą cinelerrą, niedobrze...
   właśnie mam trochę materiału z występów dziecka i miałem zacząć się jej uczyć,

@@ -26,7 +26,8 @@ przez kilka godzin.
 Większość osób, aby móc nadać kręgosłupowi taki kształt, musi się odchylić do
 tyłu, i o tym właśnie mówi artykuł.
 
-# Komentarze
+----
+**Komentarze**
 
 * s (2007-01-20 14:22:07): <p>jakiś dziwny ten obrazek: ,,click here to download
   plugin&#8217;&#8216;.</p>

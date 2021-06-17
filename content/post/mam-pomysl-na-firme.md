@@ -9,7 +9,8 @@ Zatrudnię pracowników. Ich zadaniem będzie wynająć biuro, przynieść krzes
 biurka i komputery. Następnym zadaniem będzie coś wymyślić i zarobić
 pieniądze. A ja pobiorę odpowiednią prowizję.
 
-# Komentarze
+----
+**Komentarze**
 
 * zeus (2007-07-31 09:33:18): <p>ciekawe rozwiązanie:)</p>
 * wariat (2007-08-31 20:14:32): <p>kazdy by chcial zarobic ale sie nie narobic!

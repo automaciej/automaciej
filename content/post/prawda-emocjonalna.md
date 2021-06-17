@@ -80,7 +80,8 @@ prowadzenie dyskusji.
 W ten sposób można bezkarnie pieprzyć farmazony, a będąc przyciśniętym do muru
 powiedzieć, że to taki specjalny _rodzaj_ prawdy, w którym farmazony są OK.
 
-# Komentarze
+----
+**Komentarze**
 
 * error777 (2008-02-25 13:07:05): <p>Jest 2 rodzaj prawdy wg ks. Tischnera
   &#8211; gówno prawda&#8230;:-) A na poważnie to jest takie ujęcie prawdy w

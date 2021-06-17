@@ -43,7 +43,8 @@ HTML5.
 Jedyne co musiałem zrobić, to przeczytać tę piosenkę wyrywkowo, jedne
 fragmenty interpretując tak żeby mi pasowało, a inne po prostu ignorując.
 
-# Komentarze
+----
+**Komentarze**
 
 * polska wschodnia (2010-11-24 22:25:33): <p>A może to jest hymn wartości
   odrobinę konserwatywnych wśród młodej inteligencji polskojęzycznej? Może taka

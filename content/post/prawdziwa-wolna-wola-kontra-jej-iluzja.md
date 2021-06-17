@@ -28,7 +28,8 @@ _prawdziwa_ wolna wola. Czym się różni iluzja wolnej woli od prawdziwej? Co
 należałoby zmienić, co należałoby dodać, żeby nasz samoświadomy program miał
 wolną wolę _naprawdę?_
 
-# Komentarze
+----
+**Komentarze**
 
 * Zal (2009-06-17 11:16:27): <p>Dodać pierwiastek losowości? Tak, aby jego
   zachowanie nie mogło być deterministyczne? Ew. wiedzę z której mógłby

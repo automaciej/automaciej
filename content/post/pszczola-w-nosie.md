@@ -11,7 +11,8 @@ bzyczała.
   
 Nie macie pojęcia, jaka to była ulga -- po przebudzeniu.
 
-# Komentarze
+----
+**Komentarze**
 
 * wilku (2004-06-11 20:00:06): <p>Zatkać lewą dziurkę i dmuchnąć? :)</p>
 * kasiaczek (2004-06-14 06:54:12): <p>To nie sen...to horror jakiś...</p>

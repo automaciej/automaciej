@@ -54,7 +54,8 @@ logo reddita, i dowiedziałem się od nich, że reddit jest największą obecnie
 [internetową społecznością ateistów](http://www.reddit.com/r/atheism/ "Po
 angielsku!" ).
 
-# Komentarze
+----
+**Komentarze**
 
 * Sigvatr (2011-06-04 12:15:35): <blockquote>   <p>Śmiesznym momentem był
   fragment dyskusji panelowej, w którym brodaty mężczyzna wstał, zadeklarował że

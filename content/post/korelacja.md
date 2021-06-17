@@ -15,7 +15,8 @@ zajęcia ze statystyki. Teraz już tak nie uważam.
 — Wygląda na to że zajęcia pomogły.  
 — Czy ja wiem...?
 
-# Komentarze
+----
+**Komentarze**
 
 * Zal (2010-05-16 12:16:36): <p>Świetne :D A jeszcze bardziej bawi to, że
   zdecydowana część ludzi podchodzi do korelacji właśnie w ten, przedstawiony

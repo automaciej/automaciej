@@ -77,7 +77,8 @@ Musi być z tym niezły ubaw!
 Tak przygotowany, na studiach nie najadłbym się wstydu przed asystentem, i
 jestem pewien, że nie tylko ja.
 
-# Komentarze
+----
+**Komentarze**
 
 * n3m0 (2012-03-12 00:23:23): <p>Dzięki. Wartościowa informacja czego w
   pierwszych krokach nauczyć potomstwo...</p>  <p>BTW. zabawne jak autorytet (tu

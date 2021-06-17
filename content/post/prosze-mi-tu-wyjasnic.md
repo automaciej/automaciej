@@ -9,7 +9,8 @@ tags = [ "że jak?", ]
 Proszę mi tu natychmiast wyjaśnić pojawienie się różowego latającego słonia w
 moim pokoju.
 
-# Komentarze
+----
+**Komentarze**
 
 * byte (2007-11-22 16:09:54): <p>Jeżeli pojawienie się słonia jest związane ze
   zniknięciem alkoholu w większych ilościach, to związek przyczynowo-skutkowy

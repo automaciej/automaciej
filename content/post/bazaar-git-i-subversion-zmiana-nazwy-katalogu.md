@@ -96,7 +96,8 @@ _Uaktualnienie: (2007-06-08), b_
 Usunąłem wszystkie trzyliterowe skróty z artykułu żeby uniknąć dyskusji o nich
 i trzymać się tematu.
 
-# Komentarze
+----
+**Komentarze**
 
 * Uzytkownik (2007-06-07 11:46:51): <p>Najdardziej lubię bazaar &#8211; co
   z tego, jak jest on praktycznie nieużywany i niewspierany przez

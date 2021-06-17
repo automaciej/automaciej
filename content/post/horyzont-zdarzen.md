@@ -34,7 +34,8 @@ Nooglera](http://steve-yegge.blogspot.com/2007/02/nooglers-view-of-google.html):
 > akurat nie kwalifikuje, ale jeżeli jest to inny projekt w Google albo projekt
 > open-source to proszę bardzo!
 
-# Komentarze
+----
+**Komentarze**
 
 * hcz (2007-05-30 21:35:57): <p>co to są &#8222;spiardle&#8221;?</p>
 * burbie (2007-05-30 23:03:24): <p>Spiardle to przysłówek, jeszcze ujdzie,

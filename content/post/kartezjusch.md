@@ -36,7 +36,8 @@ na jedenastu stronach druku. Żebym tylko nie zaczął pisać tak, jak on!
 Kartezjusz tworzy potwornie rozbudowane zdania; są tak poplątane, że prawie
 niemożliwe jest udowodnienie mu, że pisze bzdury.
 
-# Komentarze
+----
+**Komentarze**
 
 * gwidon (2006-11-26 00:41:33): <p>waść chyba nigdy kanta ni hegla czy husserla
   nie zaznał;]</p>

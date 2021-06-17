@@ -23,7 +23,8 @@ pracy, strzałka bryka po ekranie jak pijany zając. Jedna z operacji na któryc
 najbardziej się odbija ta zamiana to CTRL+C, CTRL+V, kombinacje klawiszy
 pomyślane do naciskania obecnie zajętą, lewą ręką.
 
-# Komentarze
+----
+**Komentarze**
 
 * Riddle (2006-05-05 01:31:48): <p>To może być bardzo niebezpieczne - znajomy
   miał operację i potem 6 miesięcy bez komputera. Znam to bardziej pod nazwą

@@ -32,7 +32,8 @@ którą kupuję, a oszuści na tym zarabiają. Do konkurencji też nie pójdę, 
 daleko, a wszystkie okoliczne sklepy spożywcze umarły z głodu. W ten sposób oni
 mnie oszukują, a ja i tak do nich wrócę.
 
-# Komentarze
+----
+**Komentarze**
 
 * mama T (2006-07-02 14:05:40): <p>właśnie na gym rzecz polega, ze te sklepiki
   nie umarły same - zostały rozmyslnie zagłodzone. Zawsze jak gdzies sie dzieje

@@ -14,7 +14,8 @@ tak:
 Ku mojemu zaskoczeniu, wiele osób się z tym nie zgadza! W tym programiści
 i naukowcy z doktoratami.
 
-# Komentarze
+----
+**Komentarze**
 
 * sharnik (2007-07-12 13:26:04): <p>Masz na myśli istnienie dowodu tu i teraz,
   czy istnienie w sensie &#8222;jest mozliwym do udowodnienia, ale aktualnie

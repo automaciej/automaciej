@@ -39,7 +39,8 @@ Brazylijski serial...
   
 [Kury, Jesienna Deprecha z płyty Polovirus]
 
-# Komentarze
+----
+**Komentarze**
 
 * staszyna (2004-01-08 22:14:03): <p>o, pierwszy raz spotykam kogoś, kto zna
   kury (oprócz znajomych z klasy w liceum).  Szatan jest najlepszy. I wszystkie

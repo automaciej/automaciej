@@ -27,7 +27,8 @@ Ale na tym nie koniec.
 
 U mnie w domu nikt nie czepia się tego, kiedy jem i kiedy śpię.
 
-# Komentarze
+----
+**Komentarze**
 
 * Splash (2006-07-22 13:18:48): <p>Mnie czeka to samo, jutro wyjeżdżam do Babki
   ;/</p>

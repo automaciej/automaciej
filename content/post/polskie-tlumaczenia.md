@@ -25,7 +25,8 @@ tłumaczone słowo-po-słowie bez zachowania sensu jako całości. Najczęściej
 one koślawo ale dają się zrozumieć. Ale czasami sens zdania staje się jasny
 dopiero po przetłumaczeniu go z powrotem na angielski.
 
-# Komentarze
+----
+**Komentarze**
 
 * lemiel (2006-04-12 16:31:33): <p>Ale mimo wszystko książka jest rewelacyjna.
   <br />http://lemiel.jogger.pl/2005/11/#e169463</p>

@@ -12,7 +12,8 @@ title = "Zasady ruchu drogowego w Warszawie"
 _(przetłumaczone z fortune, zbiór
 [definitions](http://www.neotextus.org/humour/fortune-cookies?p=definitions))_
 
-# Komentarze
+----
+**Komentarze**
 
 * Hubert (2006-05-01 00:55:25): <p>Ja zauważyłem ostatnio nową tendencję:
   nieużywanie kierunkowskazów, w przypadku kiedy wykonywany manewr jest

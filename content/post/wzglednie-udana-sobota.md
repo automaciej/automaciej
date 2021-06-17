@@ -40,7 +40,8 @@ Wolę, przynajmniej na początek, założenia i ogólne objaśnienie. A są one 
 Wszystko wychodzi od tego, że prawa fizyki są takie same dla każdego punktu
 odniesienia. Proste założenie, nietrywialne implikacje.
 
-# Komentarze
+----
+**Komentarze**
 
 * dexter (2008-06-16 11:51:33): <p>No to życzę też stosunkowo udanej soboty.</p>
   <p>PS. Czasem warto też wczytać się w równania. Nie można zrozumieć fizyki bez

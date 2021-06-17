@@ -18,7 +18,8 @@ W pewnym momencie powiedział coś takiego:
 Coś w tym jest, nie? Tylko dlaczego to za mną teraz chodzi? I dlaczego akurat
 wtedy, kiedy piszę kod?
 
-## Komentarze
+----
+**Komentarze**
 
 * wzs (2008-07-24 21:44:51): <p>Szczerze mówiąc, po semestrze męki z filozofią
   na pierwszym roku, do dziś nie rozumiem co miał na myśli dziekan, mówiąc o

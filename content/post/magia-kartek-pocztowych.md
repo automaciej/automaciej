@@ -30,7 +30,8 @@ rogami?
 Dlaczego lubimy coś takiego? No cóż, widocznie [tak żeśmy
 wyewoluowali!](http://www.tinyrevolution.com/mt/archives/001900.html)
 
-# Komentarze
+----
+**Komentarze**
 
 * hcz (2007-11-30 21:39:11): <p>A pocztówki z Jamesem Bondem też tam były?</p>
 * Petranka (2007-11-30 22:10:19): <p>Mistrz Yoda wylądował na lodówce. Jest

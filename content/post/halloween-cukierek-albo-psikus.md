@@ -16,7 +16,8 @@ Ciekawe, jaki zrobią mi psikus.
 _Jako że ten wpis przyciągał lawinę idiotycznych komentarzy, komentować mogą
 tylko użytkownicy joggera._
 
-# Komentarze
+----
+**Komentarze**
 
 * Riddle (2005-10-31 20:39:52): <p>Doceń to, że dzieci wolą się bawić w takie
   fantowe zabawy niż chodzić z pałami i okradać babcie.</p>

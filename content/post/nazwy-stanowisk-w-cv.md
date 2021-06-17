@@ -28,7 +28,8 @@ korporacji a nie do firmy która zajmuje się projektami dla 2‒3 programistów
 Opisy takie jak „Head of IT” też nie są szczęśliwe bo niewiele mówią. Jak
 określacie takie stanowisko w CV?
 
-# Komentarze
+----
+**Komentarze**
 
 * SirMike (2006-10-18 19:45:27): <p>Ja bym napisał manager projektu i główny
   programista.</p>

@@ -165,7 +165,8 @@ title = "Przewodnik po chrześcijańskich powiedzeniach"
 [_Źródło_](http://unreasonablefaith.com/2008/05/29/a-guide-to-christian-
 cliches-and-phrases/)
 
-# Komentarze
+----
+**Komentarze**
 
 * torero (2008-11-20 10:59:06): <p>&#62; Odpowiedź akceptowalna: „Ślubuję
   czystość! Daj mi pierścień!”</p>  <p>Niech zgadnę... tekst przełożony z

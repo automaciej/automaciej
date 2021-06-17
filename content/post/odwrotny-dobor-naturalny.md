@@ -58,7 +58,8 @@ Całość nastraja raczej pesymistycznie. Jeżeli to co obserwuję wokół siebi
 dzieje się również na większą skalę, ludzkość będzie stawać się coraz głupsza
 i bardziej nieuczciwa.
 
-# Komentarze
+----
+**Komentarze**
 
 * Gość (2007-08-14 20:50:22): <p>Kilka dopisków:<br /> Ostro rozmnażający się
   Chińczycy uczciwie, wręcz niewolniczo produkują dobra świata zachodniego.</p>

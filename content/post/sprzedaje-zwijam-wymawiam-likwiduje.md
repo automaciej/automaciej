@@ -8,7 +8,8 @@ Sprzedaję swoje graty, zwijam kable, wymawiam umowy i likwiduję mieszkanie.
 Trochę dziwnie się z tym czuję. Na przykład ― jak to, to już nie będę słuchał
 muzyki ze swojej miniwieży AIWA? Ano nie będę. W każdym razie nie z tej.
 
-# Komentarze
+----
+**Komentarze**
 
 * Crash (2006-12-22 14:50:02): <p>Może jakąś &#8216;sayonara sale&#8217;
   urządzisz?</p>

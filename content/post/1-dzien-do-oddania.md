@@ -29,7 +29,8 @@ rodzajników](http://esl.about.com/library/quiz/bl_articles1.htm), w którym
 zdobyłem 25 punktów na 30 możliwych. Może jednak trafiam częściej niż
 trójstronna moneta.
 
-# Komentarze
+----
+**Komentarze**
 
 * Ja-Joanna (2006-09-30 20:06:05): <p>Co do koloru urli chyba potrafię Ci pomóc,
   jeśli to jeszcze aktualne.</p>

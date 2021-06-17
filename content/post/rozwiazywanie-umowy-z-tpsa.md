@@ -61,7 +61,8 @@ _NIE!_ Nic nie jest w porządku!
 Umowa nie jest rozwiązana, rachunki nadal przychodzą, pani na błękitnej linii
 albo nie wiedziała co mówi albo kłamała w żywe oczy.
 
-# Komentarze
+----
+**Komentarze**
 
 * i0 (2007-05-23 11:00:03): <p>Możliwe, że jedno i drugie równocześnie.</p>
   <p>Gdy po powrocie z Tele2 do <span class="caps">TPSA</span> ( ;-) ) chciałem

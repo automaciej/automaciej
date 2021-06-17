@@ -50,7 +50,8 @@ interesujące:
 Bliżej zainteresowanych tematem zapraszam na kanał [#opencsw na
 Freenode](http://www.opencsw.org/support/irc-channel/ "Kanał anglojęzyczny" ).
 
-# Komentarze
+----
+**Komentarze**
 
 * Argon (2012-12-08 15:41:55): <p>Podziękował bardzo, za Usable Solaris.
   Przyszedł czas odkurzyć starą maszynę i trochę z nią porządków zrobić. A

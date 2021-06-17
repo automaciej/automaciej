@@ -43,7 +43,8 @@ Krok 4: poprawiamy kontrast
 Voila! Mój przykład jest trochę przesadzony, bo zawiera nierozprostowane
 zagięcia; w przypadku typowych notatek efekt będzie jeszcze lepszy.
 
-# Komentarze
+----
+**Komentarze**
 
 * Barthalion (2007-07-16 07:04:32): <p>Świetny pomysł! W życiu bym na coś
   takiego nie wpadł.</p>

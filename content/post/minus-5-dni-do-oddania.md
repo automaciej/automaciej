@@ -27,7 +27,8 @@ Piaseczna.
 Jutro idę zrobić zdjęcia do dyplomu i wysyłam je razem z obiegówką, listem
 poleconym do dziekanatu.
 
-# Komentarze
+----
+**Komentarze**
 
 * Ja-Joanna (2006-10-06 16:56:21): <p>GRATULACJE!!!!! (jestem pierwsza,
   hurrraaaa!)</p>

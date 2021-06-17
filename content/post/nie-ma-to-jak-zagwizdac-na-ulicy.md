@@ -31,7 +31,8 @@ ona, tak jak ty wtedy w taksówce, wcale tego nie chce.
 
 [Źródło](http://dish.andrewsullivan.com/2012/03/28/the-terror-of-catcalling-ctd-1/)
 
-# Komentarze
+----
+**Komentarze**
 
 * torero (2013-04-21 11:02:41): <p>Ale dlaczego mówić o tym tylko w kontekście
   "niechcianego podrywu"? Potencjalne zagrożenie przemocą dotyka wiekszość

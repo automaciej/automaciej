@@ -86,7 +86,8 @@ tym zastanawiać. Chciałbym wiedzieć, jak to działa.
 1 Mogę się mylić, te definicje to wysyski z wewnętrznej strony opuszki mojego
 lewego kciuka.
 
-# Komentarze
+----
+**Komentarze**
 
 * gugosia (2010-06-01 22:01:55): <p>Nie bardzo rozumiem sens upubliczniania
   takich rozważań. Przecież lingwistyka i logika już dawno rozkminiły te

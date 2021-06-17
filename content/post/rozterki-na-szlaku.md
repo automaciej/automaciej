@@ -19,7 +19,8 @@ rowerowym, w którą stronę należy pojechać: w prawo czy w lewo?
 
 _Żeby było trudniej zgadnąć, nie ma większej wersji zdjęcia._
 
-# Komentarze
+----
+**Komentarze**
 
 * teodor (2006-08-10 23:55:23): <p>hm pojechałbym w prawo</p>
 * Crash (2006-08-11 12:36:39): <p>a ja prosto ;]</p>

@@ -14,6 +14,7 @@ tak mnie Pani nie zrozumie. Do widzenia.''
 
 I odłożę słuchawkę.
 
-# Komentarze
+----
+**Komentarze**
 
 * mama T (2006-07-15 12:42:05): <p>móżdżek jej się zawiesił?</p>

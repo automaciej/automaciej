@@ -69,7 +69,8 @@ jakieś trzy semestry. Pierwszy -- jakieś trzy dni.
 
 Ale sam sześcian, niczego sobie.
 
-# Komentarze
+----
+**Komentarze**
 
 * K (2009-11-09 16:55:47): <p>BRZYDKI :(</p>
 * Anonim (2009-12-05 14:47:50): <p>kresek jakoś dużo. ale tekst prof o koniu

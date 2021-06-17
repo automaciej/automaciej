@@ -79,7 +79,8 @@ sprawdza się w praktyce.
       więcej połowę roku, a przeczytałem już 14 książek. I to większość
       z papieru! (a nie w formie audiobooka)
 
-# Komentarze
+----
+**Komentarze**
 
 * reod (2007-06-10 21:17:57): <p>Też czytałem, ale nie wywarła dla mnie
   większego znaczenia. </p>  <p>PS: <a

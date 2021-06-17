@@ -44,7 +44,8 @@ A jednak, druga instalacja zakończyła się sukcesem!
 Myślę że właśnie przykład, czyli czyny, a nie słowa, mają największy wpływ na
 ludzi i potrafią zmieniać w naszą rzeczywistość.
 
-## Komentarze
+----
+**Komentarze**
 
 * blackhole (2004-01-01 20:14:39): <p>Chyba byłbyś dobrym nauczycielem :)</p>
 * zbychuk (2004-01-01 20:17:04): <p>Tak trzymać :-D</p>

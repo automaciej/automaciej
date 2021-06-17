@@ -33,7 +33,8 @@ przyjęcia urodzinowego w filmie Notting Hill.
 A może to dla aktora jest nawet fajne, że ktoś z nim rozmawia po prostu jak z
 człowiekiem, zamiast rozdziawiać gębę i prosić o autograf.
 
-# Komentarze
+----
+**Komentarze**
 
 * Kasia Rogowska (2007-12-18 11:35:21): <p>Jeśli aktor nie jest zapatrzony w
   siebie i swoją sławę, to myślę, że to dla niego miła odmiana, gdy ktoś z nim

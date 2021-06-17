@@ -17,7 +17,8 @@ następnego.
 Z drugiej strony, czy mam podstawy do tego żeby powiedzieć gościowi że
 ściemnia i mu nie wierzę?
 
-# Komentarze
+----
+**Komentarze**
 
 * mamaT (2007-04-13 20:56:09): <p>A co byś pomyślał o dziewczynie, która na
   próbę nawiazaniu znajomości od razu melduje, że ma tu kolejkę kawalerów? I co

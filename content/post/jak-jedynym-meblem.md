@@ -15,7 +15,8 @@ Jak przeglądarka jest na ekranie, otwieram Facebooka.
 
 Jak otworzę Facebooka, to jest po sprawie.
 
-## Komentarze
+----
+**Komentarze**
 
 * lemiel (2015-10-26 09:19:31): <p>Tak od miesiąca zakładam konto na FB. Tak od
   strzału mi się nie chce. Ale może trzeba?</p>

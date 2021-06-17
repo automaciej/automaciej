@@ -22,7 +22,8 @@ tylko i wyłącznie osobiście. Trochę mi nie po drodze latać z Dublina po
 kawałek celuloidowego nośnika. Druga pani powiedziała że można dać komuś
 notarialne pełnomocnictwo do odbioru dyplomu w moim imieniu.
 
-# Komentarze
+----
+**Komentarze**
 
 * hcz (2006-12-29 10:35:55): <p>Zastanawiałem się nad tym ostatnio: czy
   &#8222;tylko&#8221; i &#8222;wyłącznie&#8221; nie są synonimami?</p>

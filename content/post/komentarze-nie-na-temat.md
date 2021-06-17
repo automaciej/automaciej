@@ -55,7 +55,8 @@ Nie chciałbym z nich rezygnować.
 Co więc robić? Cierpieć niezrozumienie? Odrzucić skojarzenia i przyjąć nudę? W
 ogóle zablokować komentarze?
 
-# Komentarze
+----
+**Komentarze**
 
 * Joanna (Typoagrafka) (2007-11-17 22:36:54): <p>Rozumiem Twoje rozterki, sama
   je miewam nie raz. Dawniej się tak nie przejmowałam, a ostatnio tak mnie

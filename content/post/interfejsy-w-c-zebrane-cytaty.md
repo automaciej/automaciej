@@ -23,7 +23,8 @@ Jeżeli D. dotrzymuje słowa i przeczyta [to zestawienie
 cytatów](http://automatthias.wordpress.com/2007/03/23/interfaces-in-c-plus-plus/),
 nie będzie miał wyjścia ― będzie musiał rozstać się z programowaniem.
 
-# Komentarze
+----
+**Komentarze**
 
 * Hubert (2007-03-25 01:14:39): <p>Cóż, jestem absolutnie pewien że D. wymyśli
   na poczekaniu jakiś powód dla którego nie porzuci programowania.</p>
