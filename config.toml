@@ -11,6 +11,7 @@ theme = "theme006"
 rssLimit = 20
 [params]
   authorName = "Maciej Bliziński"
+  authorEmail = "maciej.blizinski@gmail.com"
   twitterName = "automaciej"
   githubName = "automaciej"
   facebookUrlPath = "maciej.blizinski"
