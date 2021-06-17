@@ -12,16 +12,16 @@
     {{ with .OutputFormats.Get "RSS" }}
 	{{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{ end }}
-    {{ range .Data.Pages }}
+    {{ range first 10 .Site.RegularPages.ByPublishDate.Reverse }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+      {{ with .Site.Params.authorEmail }}<author>{{.}}{{ with $.Site.Params.AuthorName }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>
       {{ $original_image := .Resources.GetMatch "**.jpg" }}
-      {{ if .Params.image }}
+      {{ if isset .Params "image" }}
       <image>
         <title>{{ .Title }}</title>
         <url>
@@ -30,7 +30,7 @@
       </image>
       {{ else if $original_image }}
       <image>
-        <title>{{ $original_image.Title }}</title>
+        <title>{{ .Title }}</title>
         <url>
           {{- $original_image.Permalink -}}
         </url>
