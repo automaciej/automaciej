@@ -7,16 +7,14 @@ defaultContentLanguage = "pl"
 languageCode = "pl"
 title = "Automaciej"
 baseurl = "http://blizin.ski"
-theme = "theme005"
-googleAnalytics = "UA-374996-16"
+theme = "theme006"
 rssLimit = 20
-[author]
-  email = "maciej.blizinski@gmail.com"
-  name = "Maciej Bliziński"
 [params]
+  authorName = "Maciej Bliziński"
   twitterName = "automaciej"
-  githubName = "automatthias"
-  googleplus = "MaciejBliziński"
+  githubName = "automaciej"
+  facebookUrlPath = "maciej.blizinski"
+  tiktokName = "automaciej"
   description = "Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty."
 [taxonomies]
   tag = "tags"
