@@ -4,9 +4,13 @@ Maciej Bliziński's home page
 Running hugo
 ------------
 
+Installing hugo from Debian works well enough.
+
+For building locally:
+
 * Requires [golang](http://golang.org/); if you're installing hugo from github,
   it is likely going to be the latest version of Go.
-* Installing hugo (if not from the distribution's packages):
+* Installing hugo
 
         mkdir -p ~/src/go
         export GOPATH=~/src/go
@@ -14,17 +18,13 @@ Running hugo
         go get -u -v github.com/spf13/hugo
         alias hugo='~/src/go/bin/hugo'
 
-Styles
-------
+Dependencies
+------------
 
-Download Bootstrap, and copy it into the static directory:
+Skeleton for CSS styles: http://getskeleton.com/
 
-    unzip ~/Downloads/bootstrap-3.3.7-dist.zip 
-    cd bootstrap-3.3.7-dist/
-    cp -r css fonts js ~/src/automaciej-hugo/static/
-
-Updating and testing the website
--------------------
+Updating and testing
+--------------------
 
         hugo -D -F server
 
