@@ -2,7 +2,6 @@
 author: automaciej
 date: "2009-06-02"
 description: Awantura w internecie, po której już nie jestem taki sam jak kiedyś.
-image: /images/2009/cat-fight.jpg
 lastmod: "2016-11-20"
 tags:
 - atopowe
@@ -10,7 +9,7 @@ tags:
 title: O słowa „polecani” wykreśleniu
 ---
 
-{{< figure attrlink="https://flic.kr/p/8CdMVx" attr="fot. Tom Taker" src="/images/2009/cat-fight.jpg" >}}
+{{< figure attrlink="https://flic.kr/p/8CdMVx" attr="fot. Tom Taker" src="cat-fight.jpg" >}}
 
 Chciałbym opowiedzieć o Wielkiej Awanturze o Dział Lekarzy. Po części dlatego,
 żeby przyszłe pokolenia internautów mogły uczyć się na błędach obecnego
