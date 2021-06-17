@@ -1,5 +1,6 @@
 ---
 date: "2014-09-06T15:11:41+01:00"
+lastmod: "2021-06-17T16:57:41+01:00"
 description: Strona domowa automacieja, zapiski od roku 2003.
 menu:
 - main
@@ -13,8 +14,8 @@ jego treść; z około 1000 wpisów pozostawiłem ok. 60.
 
 Na blogu nie ma komentarzy. Społeczność Joggerowa rozpierzchła się, a nie mam
 planów żeby budować własną. Kiedyś komentarze były (czy wydawały się?) czymś
-fajnym, użytecznym, ciekawym, rozwijającym nawet. Teraz (2015+) już nie są żadną
-z tych rzeczy. Obecnie komentarze są rynsztokiem, który wpędza nas w depresję.
+fajnym, użytecznym, ciekawym, rozwijającym nawet. Po 2015 już nie są żadną
+z tych rzeczy.  Komentarze stały się wpędzającym w depresję rynsztokiem.
 
 Nawiązywanie kontaktów międzyludzkich? Od tego mamy serwisy oparte na
 komentarzach, np. Reddit, serwisy społecznościowe, randkowe, itd. Jeżeli ktoś
@@ -22,17 +23,18 @@ chce, może zalinkować skądś do mojego wpisu i tam go omówić, bardzo prosz�
 
 ----
 
-Nie jestem ekspertem w żadnej dziedzinie, więc piszę o rzeczach które mnie
-akurat interesują w danym momencie.
+Nie jestem ekspertem w żadnej dziedzinie. Piszę o rzeczach które mnie akurat
+interesują w danym momencie.
 
 ----
 
 Inne strony Automaciejowe:
 
+- [TikTok][tiktok] ‒ brak muzyki poważnej
 - [@automaciej na Twitterze][pltw] ‒ nic poważnego
 - [@automatthias][entw] ‒ po angielsku
 - [Wordpress][wp] ‒ blog po angielsku
-- [github](https://github.com/automatthias) ‒ repozytoria kodu
+- [github](https://github.com/automaciej) ‒ repozytoria kodu
 - [soundcloud][soundcloud] ‒ nagrania
 - [Medium](https://medium.com/@automatthias) ‒ Jeden artykuł
 - [Pocket][pocket] ‒ Przeczytane interesujące artykuły
@@ -46,3 +48,4 @@ Inne strony Automaciejowe:
 [soundcloud]: https://soundcloud.com/maciej-blizinski/tracks
 [pocket]: https://getpocket.com/@automaciej
 [goodreads]: https://www.goodreads.com/user/show/6584047-maciej-blizi-ski
+[tiktok]: https://www.tiktok.com/@automaciej

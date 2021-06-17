@@ -4,6 +4,7 @@ tags:
 - sceptycyzm
 - muzyka
 title: 'Zwijanie kabli: Rozumienie kontra zamordyzm'
+description: "Kabel zwinięty na łokciu będzie się rozwijał źle, nawet jeżeli po zwinięciu będzie się zdawał wyglądać tak samo, jak kabel zwinięty dobrze."
 ---
 
 Jest na YouTube wiele klipów pokazujących, jak zwijać kable audio („how to
