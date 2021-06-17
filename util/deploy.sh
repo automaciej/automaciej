@@ -26,7 +26,7 @@ case "${1:-}" in
     echo "Done."
     ;;
   test)
-    ${hugo} -w -D -F --baseUrl="${HOSTNAME}" server
+    ${hugo} -w -D -F server
     ;;
   *)
     helpmsg >&2
