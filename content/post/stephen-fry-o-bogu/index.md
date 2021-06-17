@@ -2,7 +2,7 @@
 title = "Stephen Fry o Bogu"
 tags = ["ateizm"]
 image = "/images/2017/stephen-fry.jpg"
-description = ""
+description = "Zapytałbym, “o co chodzi z teodyceą?”"
 draft = false
 date = "2017-12-29T14:11:02Z"
 

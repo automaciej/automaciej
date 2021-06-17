@@ -3,6 +3,7 @@
 date = "2004-01-08T20:31:30"
 draft = false
 title = "Mam znowu doła"
+description = "Tekst piosenki, zespół Kury"
 +++
 
 1\. Mam znowu doła  
