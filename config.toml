@@ -12,6 +12,7 @@ rssLimit = 20
 [params]
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"
+  siteLogo = "/images/automaciej-logo.jpg"
   twitterName = "automaciej"
   githubName = "automaciej"
   facebookUrlPath = "maciej.blizinski"

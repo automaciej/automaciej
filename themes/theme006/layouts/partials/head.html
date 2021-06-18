@@ -47,7 +47,7 @@
   <meta property="og:image"              content="{{ $original_image.Permalink }}" />
   {{ else }}
   <!-- If the article's image is missing, use the default one. -->
-  <meta property="og:image"              content="{{ .Site.BaseURL }}/images/automaciej-logo.jpg" />
+  <meta property="og:image"              content="{{ .Site.BaseURL }}{{ .Site.Params.SiteLogo }}" />
   {{- end }}
   <link rel="canonical" href="{{ .Permalink }}" />
 </head>

@@ -56,14 +56,14 @@
   ],
   {{ else }}
   "image": [
-    "{{ .Site.BaseURL }}/images/automaciej-logo.jpg"
+    "{{ .Site.BaseURL }}{{ .Site.Params.SiteLogo }}"
   ],
   {{ end }}
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   "author": {
     "@type": "Person",
-    "name": "Maciej Bliziński"
+    "name": "{{ .Site.Params.AuthorName }}"
   },
   "publisher": {
     /* The publisher should be a Person here, but the Google validator doesn't
@@ -72,7 +72,7 @@
     "name": "Automaciej",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ .Site.BaseURL }}/images/automaciej-logo.jpg"
+      "url": "{{ .Site.BaseURL }}{{ .Site.Params.SiteLogo }}"
     }
   },
   "description": "{{ with .Description }}{{ . | plainify | safeJS }}{{ else }}Wpis na blogu Automacieja{{ end }}",
