@@ -5,8 +5,8 @@ draft = false
 title = "Doświadczenie"
 +++
 
-Doświadczenie, rzeczownik:  
+Doświadczenie, _rzeczownik:_
 
-    To, co zdobywamy wtedy kiedy nie zdobywamy tego, czego chcieliśmy.
+> To, co zdobywamy wtedy kiedy nie zdobywamy tego, czego chcieliśmy.
 
 _Tak, to jest tłumaczenie fortunki. Niektóre fortunki są tego warte._
