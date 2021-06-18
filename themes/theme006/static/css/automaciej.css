@@ -1,7 +1,15 @@
 /* Global font size setting */
+/* vim:set ts=2 sw=2 sts=2 expandtab: */
 html {
   /* font-size: 1em; */
 }
+
+div.post-body h1 { font-size: 1.5em; font-weight: bold; }
+div.post-body h2 { font-size: 1.4em; font-weight: bold; }
+div.post-body h3 { font-size: 1.3em; font-weight: bold; }
+div.post-body h4 { font-size: 1.2em; font-weight: bold; }
+div.post-body h5 { font-size: 1.1em; font-weight: bold; }
+div.post-body h6 { font-size: 1.0em; font-weight: bold; }
 
 ul.year-list {
   list-style-type: none;
@@ -75,7 +83,7 @@ ol p, ul p {
   color: #AAA;
 }
 
-div.site-title, .post-title {
+div.site-title {
   /* background-image: url('/images/ireland-landscape.jpg'); */
   background-size: cover;
   background-position: center;
@@ -89,24 +97,24 @@ div.site-title, .post-title {
   border-radius: 7px;
 }
 
-.post-title h1, div.site-title h1 {
+div.site-title h1 {
   font-weight: bold;
   text-shadow: 2px 2px #33548a;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.post-title p, .site-title p {
+.site-title p {
   text-shadow: 1px 1px #33548a;
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.post-title a, .site-title a {
+.site-title a {
   color: white;
   text-decoration: none;
 }
-.post-title a:hover, .site-title a:hover {
+.site-title a:hover {
   text-decoration: underline;
 }
 

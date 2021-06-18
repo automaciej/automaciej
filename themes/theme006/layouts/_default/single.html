@@ -5,8 +5,8 @@
   <div class="three columns">
     &nbsp;
   </div><!-- three columns -->
-  <div class="six columns">
-    <h2>{{ .Title }}</h2>
+  <div class="six columns post-body">
+    <h1 class="post-title">{{ .Title }}</h1>
     <small class="post-publish-date text-muted">
       opublikowane {{ .Date.Format "2006-01-02" }}
       {{ if not (eq .Lastmod .Date) -}}
