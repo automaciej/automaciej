@@ -6,7 +6,7 @@
 defaultContentLanguage = "pl"
 languageCode = "pl"
 title = "Automaciej"
-baseurl = "http://blizin.ski"
+baseurl = "https://blizin.ski"
 theme = "theme006"
 rssLimit = 20
 [params]
