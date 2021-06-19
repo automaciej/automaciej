@@ -21,23 +21,17 @@ tam, że w danym miejscu i danym czasie wydarza się tylko jedna rzecz (tzn. tyl
 jedna wersja wydarzeń). Na to babcia powiedziała, że przecież różni ludzie mogą
 mieć różne odczucia i interpretacje, i wszystkie będą prawdziwe.
 
-[przypadek]: http://automaciej.jogger.pl/2008/01/28/dziwny-przypadek-psa-nocna-pora/
+[przypadek]: {{< relref "post/dziwny-przypadek-psa-nocna-pora/index.md" >}}
 
 Kiedy ktoś zaczyna używać pojęć „prawda” oraz „odczucie” czy „interpretacja” w
 jednym zdaniu, wtedy zaczynam się niepokoić, czy w ogóle będzie można
 przeprowadzić racjonalną dyskusję·
-
-![Alarm?](http://images.jupiterimages.com/common/detail/01/11/23191101.jpg)
 
 Ale przełknąłem ślinę i zacząłem tłumaczyć, że Christopher w książce mówił o
 faktach, czyli o rzeczach które wydarzyły się w rzeczywistości; że na
 przykład, jak się na śniadanie jadło płatki, to _płatki_, a nie co innego. Na
 to babcia mówi że owszem, ale tylko w takim najbardziej _prymitywnym ujęciu
 prawdy_.
-
-![Alarm! Alarm!][alarm]
-
-[alarm]: http://images.jupiterimages.com/common/detail/34/45/23424534.jpg
 
 To jakie są inne _rodzaje_ prawdy? Jeżeli ktoś coś zobaczy i coś sobie
 pomyśli, czy coś odczuje, to jasne, że on to naprawdę myśli, czy naprawdę
@@ -46,14 +40,15 @@ jedna sprawa; _fakty_ to druga. Mieszanie jednego z drugim jest jak mieszanie
 tlenu z wodorem.
 
 Jakby tego było mało, dzisiaj kolejna rzecz na ten sam temat: [debata Richarda
-Dawkinsa z Madeline
-Bunting](http://www.richarddawkins.net/article,2260,Debate-between-Richard-Dawkins-and-Madeline-Bunting,Richard-Dawkins-Guardian).
-W tej rozmowie, kiedy Dawkins mówi o faktach, Bunting wyskakuje nagle z „prawdą
-emocjonalną”.
+Dawkinsa z Madeline Bunting][bunting].  W tej rozmowie, kiedy Dawkins mówi o
+faktach, Bunting wyskakuje nagle z „prawdą emocjonalną”.
+
+[bunting]: https://www.theguardian.com/commentisfree/audio/2008/feb/14/richard.dawkins
 
 Tak bezsensownego zestawienia słów nie widziałem od czasów [„energii używanych
-przez
-uzdrowicieli”](http://automaciej.jogger.pl/2007/07/12/dowod-na-to-rowniez-istnieje/).
+przez uzdrowicieli”][dowod].
+
+[dowod]: {{< relref "post/dowod-na-to-rowniez-istnieje.md" >}}
 
 Dlaczego jest ta zbitka słów nie ma sensu? Pojęcie _prawdy_ ma sens tylko wtedy,
 kiedy rozważamy je w komplecie z pojęciem _fałszu_, czyli _nieprawdy_.  Mówiąc,

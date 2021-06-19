@@ -14,3 +14,5 @@ To proste!
 1. Stań **przed** linią
 1. Przestąp przez nią
 1. Gotowe! Jesteś **za** żółtą linią
+
+{{< figure src="keep-behind-this-line.jpg" alt="Peron, brzeg peronu i tory kolejowe. Zółta linia biegnąca wzdłuż torów po peronie. Żółty napis mówiący po angielsku 'Trzymaj się za linią', tylko że napis jest umieszczony przed linią." >}}

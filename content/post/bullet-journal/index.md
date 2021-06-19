@@ -122,4 +122,4 @@ idzie.
 
 [1]: http://bulletjournal.com "Bullet Journal"
 [2]: https://play.google.com/store/apps/details?id=com.AT.PomodoroTimer "Brain Focus"
-[bujo-img]: /images/2016/bujo-notebook.jpg "Bullet Journal"
+[bujo-img]: bujo-notebook.jpg "Bullet Journal"
