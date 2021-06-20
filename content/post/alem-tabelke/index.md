@@ -32,12 +32,12 @@ przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 | od      | ~ |  alać |     | wyczyniać  | |
 | od      | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
 | od      | ~ |  olić |     | zrobić, wykonać, wykończyć, udekorować  | |
-| od      | ~ |  olić | się | dać  | spokój, zostawić, odświętnie / imprezowo się ubrać |
+| od      | ~ |  olić | się | dać spokój, zostawić, odświętnie / imprezowo się ubrać |
 | po      | ~ |  alać |     | szybko jechać, aczkolwiek nie tak szybko jak z przedrostkiem za~ |
 | po      | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
 | po      | ~ |  olić |     | popsuć, lub doprowadzić do niestabilnego stanu mentalnego |
 | po      | ~ |  olić | się | popsuć się, utracić ład i porządek |
-| pod     | ~ |  alać |     | <span class="text-muted">(nie używa się)</span> |
+| pod     | ~ |  alać |     | _na kogoś_ – donosić |
 | pod     | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
 | pod     | ~ |  olić |     | ukraść, pozostając niezauważonym |
 | pod     | ~ |  olić | się | <span class="text-muted">(nie używa się)</span> |
