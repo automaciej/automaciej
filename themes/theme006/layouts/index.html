@@ -48,13 +48,14 @@
   <div class="one-third column">
     <ul class="social-media">
       {{ if .Site.Params.TwitterName }}
-      <li>Twitter: <a href="https://twitter.com/{{ .Site.Params.TwitterName }}" target="_new">@{{ .Site.Params.TwitterName }}</a></li>
+      <li>Twitter: <a href="https://twitter.com/{{ .Site.Params.TwitterName }}"
+          target="_blank">@{{ .Site.Params.TwitterName }}</a></li>
       {{ end }}
       {{ if .Site.Params.GithubName }}
-      <li>Github: <a href="https://github.com/{{ .Site.Params.GithubName }}" target="_new">@{{ .Site.Params.GithubName }}</a></li>
+      <li>Github: <a href="https://github.com/{{ .Site.Params.GithubName }}" target="_blank">@{{ .Site.Params.GithubName }}</a></li>
       {{ end }}
       {{ if .Site.Params.TiktokName }}
-      <li>TikTok: <a href="https://www.tiktok.com/@{{ .Site.Params.TiktokName }}" target="_new">@{{ .Site.Params.TiktokName }}</a></li>
+      <li>TikTok: <a href="https://www.tiktok.com/@{{ .Site.Params.TiktokName }}" target="_blank">@{{ .Site.Params.TiktokName }}</a></li>
       {{ end }}
     </ul>
   </div><!-- one-third column -->
