@@ -45,9 +45,12 @@ ul.posts-list > li:hover {
 }
 
 ul.posts-list a {
+  display: block;
   text-decoration: none;
   color: black;
   margin-left: 0.4em;
+  height: 100%;
+  width: 100%;
 }
 
 ul.posts-list a:hover {

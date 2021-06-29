@@ -10,34 +10,34 @@
       <ul class="posts-list">
         {{ range .Pages }}
         <li>
-          <!-- .Resources refers to resources of this Page -->
-          {{ $original_image := .Resources.GetMatch "**.jpg" }}
-          {{ with $original_image }}
-          {{ $image := .Fill "48x48" }}
-          <img class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
-          {{ else }}
-          <!-- attempting to get a global resource, from assetsDir -->
-          {{ $original_image := resources.Get "default_thumbnail.jpg" }}
-          {{ with $original_image }}
-          {{ $image := .Fill "48x48" }}
-          <img class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
-          {{ else }}
-          no image
-          {{ end }}
-          {{ end }}
-
-          {{ if .Draft -}}
-          <span class="debug-info">[draft]</span>
-          {{- end }}
           <a href="{{ .RelPermalink }}" title="{{ .Description }}">
-            {{ .Title }} &raquo;
-          </a>
-          <small class="text-muted">
-            {{ .Date.Day }} {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
-            {{ with .Description }}
-            | {{ . | safeHTML | truncate 80 }}
+            <!-- .Resources refers to resources of this Page -->
+            {{ $original_image := .Resources.GetMatch "**.jpg" }}
+            {{ with $original_image }}
+            {{ $image := .Fill "48x48" }}
+            <img alt="Miniatura ilustracji do wpisu. {{ $.Description }}" class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+            {{ else }}
+            <!-- attempting to get a global resource, from assetsDir -->
+            {{ $original_image := resources.Get "default_thumbnail.jpg" }}
+            {{ with $original_image }}
+            {{ $image := .Fill "48x48" }}
+            <img alt="Miniatura ilustracji do wpisu. {{ $.Description }}" class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+            {{ else }}
+            no image
             {{ end }}
-          </small>
+            {{ end }}
+
+            {{ if .Draft -}}
+            <span class="debug-info">[draft]</span>
+            {{- end }}
+              {{ .Title }} &raquo;
+            <small class="text-muted">
+              {{ .Date.Day }} {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
+              {{ with .Description }}
+              | {{ . | safeHTML | truncate 80 }}
+              {{ end }}
+            </small>
+          </a>
         </li>
         {{ end }}
       </ul><!-- posts-list -->
