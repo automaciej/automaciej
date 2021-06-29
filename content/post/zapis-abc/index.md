@@ -36,25 +36,26 @@ Na tej podstawie możemy wyświetlić wersję graficzną:
 
 ![„Wlazł kotek na płotek” w zapisie nutowym](/2014/09/zapis-abc/wlazl-kotek-na-plotek.png)
 
-Do zamiany pliku `.abc` na grafikę używamy narzędzia
-[abcm2ps][], albo robimy to online na stronie
-[drawthedots.com](http://www.drawthedots.com). Jest wiele innych, ale te dwa
-dawały najlepsze rezultaty.
+Do zamiany pliku `.abc` na grafikę używamy narzędzia [abcm2ps][], albo robimy to
+online na stronie [drawthedots.com](http://www.drawthedots.com). Jest wiele
+innych, ale te dwa dawały najlepsze rezultaty.
 
-Zapis ABC jest dobrze udokumentowanym standardem.  Obecna wersja to 2.1 z roku
-2011.  Istniejące narzędzia niekoniecznie implementują najnowszą wersję
-standardu i niekoniecznie implementują go w całości.
+Zapis ABC jest dobrze udokumentowanym standardem.  Obecna wersja to 2.1 z
+roku&nbsp;2011.  Istniejące narzędzia niekoniecznie implementują najnowszą
+wersję standardu i niekoniecznie implementują go w całości.
 
 Niektóre narzędzia komercyjne takie jak aplikacja androidowa Fakebook potrafią
 czytać ten format, ale bywa różnie z implementacją. Lepiej jest zamienić nasz
-plik .abc na MusicXML i importować do komercyjnych narzędzi z MusicXML.
+plik `.abc` na MusicXML i importować do komercyjnych narzędzi z MusicXML.
 
 Wikipedia obsługuje ABC: żeby dodać nuty do artykułu wystarczy otoczyć tekst ABC
 odpowiednim tagiem:
 
-    <score lang="ABC">
-    ...
-    </score>
+```
+<score lang="ABC">
+...
+</score>
+```
 
 ABC jest najlepiej przystosowana do zapisu melodii z akordami i słowami.  Nuty
 bardziej skomplikowane też można zapisać, ale szybko się to komplikuje.
