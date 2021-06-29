@@ -9,6 +9,9 @@ title = "Automaciej"
 baseurl = "https://blizin.ski"
 theme = "theme006"
 rssLimit = 20
+[author]
+  name = "Maciej Bliziński"
+  email = "maciej.blizinski@gmail.com"
 [params]
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"

@@ -3,13 +3,11 @@
   <meta charset="utf-8">
   <!-- Let's avoid titles like "Foo - Foo" -->
   <title>
-    {{ if ne .Title .Site.Title -}}
-    {{- .Title }}
-    &ndash;
-    {{ .Site.Title -}}
+    {{- if ne .Title .Site.Title -}}
+    {{- .Title }} &ndash; {{ .Site.Title -}}
     {{ else }}
     {{- .Title -}}
-    {{ end }}
+    {{- end -}}
   </title>
 
   {{ if or .Description .IsHome }}
@@ -20,10 +18,10 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="alternate" type="application/rss+xml"
-        title="{{ .Site.Title }}"
-        href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
-  />
+  <!-- alternate output formats -->
+  {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
