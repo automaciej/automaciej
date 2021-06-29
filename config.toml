@@ -26,3 +26,5 @@ rssLimit = 20
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
   fractions = false
+[imaging.exif]
+  includeFields = ".*"

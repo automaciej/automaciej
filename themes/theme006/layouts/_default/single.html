@@ -22,6 +22,11 @@
         src="{{ $image.RelPermalink }}"
         width="{{ $image.Width }}"
         height="{{ $image.Height }}"
+        alt="{{ with $image.Exif -}}
+          {{ .Tags.UserComment }}
+        {{- else -}}
+          Ilustracja do wpisu.
+        {{- end }}"
         />
     </figure>
     {{ end }}
