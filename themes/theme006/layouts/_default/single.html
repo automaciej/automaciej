@@ -2,10 +2,7 @@
 <!-- If available, use first bundle's image -->
 {{ $original_image := .Page.Resources.GetMatch "**.jpg" }}
 <div class="row">
-  <div class="three columns">
-    &nbsp;
-  </div><!-- three columns -->
-  <div class="six columns post-body">
+  <div class="nine columns post-body">
     <h1 class="post-title">{{ .Title }}</h1>
     <small class="post-publish-date text-muted">
       opublikowane {{ .Date.Format "2006-01-02" }}
@@ -33,7 +30,35 @@
 
     {{ .Content }}
 
-  </div><!-- six columns -->
+  </div><!-- nine columns post-body -->
+  <div class="three columns sidebar">
+    <h2>Pozostałe wpisy</h2>
+    <ul class="links">
+      {{ with .Prev }}
+      <li>
+        <a href="{{ .Permalink }}" title="{{ .Description }}">
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
+      <li>
+        <strong>{{ .Title }}</strong>
+      </li>
+      {{ with .Next }}
+      <li>
+        <a href="{{ .Permalink }}" title="{{ .Description }}">
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    <h2>Tagi</h2>
+    <ul>
+      {{ range (.GetTerms "tags") }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </div><!-- three columns -->
 </div><!-- row -->
 
 <!-- https://developers.google.com/search/docs/guides/ -->

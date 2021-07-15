@@ -29,15 +29,14 @@ ul.year-list ul.posts-list {
 }
 
 ul.posts-list > li {
-  font-size: 1.3em;
-  white-space: nowrap;
-  overflow: hidden;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
+  padding-left: 0;
+  padding-right: 0;
   border: 1px solid #DDD;
   border-radius: 6px;
+  background-color: #F8F8F8;
+  overflow: hidden;
 }
 
 ul.posts-list > li:hover {
@@ -46,32 +45,72 @@ ul.posts-list > li:hover {
 
 ul.posts-list a {
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  /* overflow: auto; */
+  /* overflow-wrap: break-word; */
   text-decoration: none;
   color: black;
-  margin-left: 0.4em;
-  height: 100%;
-  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  height: 48px;
 }
 
 ul.posts-list a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
-ul.posts-list small {
-  font-size: 0.7em;
+ul.posts-list img.post-item {
+  display: inline-block;
+  /* vertical-align: middle; */
+  width: 48px;
+  height: 48px;
 }
 
-h2.sidebar {
+ul.posts-list div.item-text-info {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+ul.posts-list .item-date {
+  display: block;
+  font-size: 0.8em;
+}
+
+ul.posts-list .post-title {
+  display: block;
+  font-size: 1.1em;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  top: -0.3em;
+}
+
+ul.posts-list .item-description {
+  display: block;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.8em;
+}
+
+div.sidebar h2 {
   font-size: 1.2em;
+}
+
+div.sidebar ul {
+  list-style: none;
 }
 
 ul.social-media {
   list-style-type: none;
 }
 
-img.post-item {
-  display: inline;
-  vertical-align: middle;
+div.post-body ul {
+  list-style-position: outside;
+  margin-left: 2em;
 }
 
 /* This is necessary with list-style: inside which is defined in skeleton.css.
@@ -157,5 +196,3 @@ td.highlighted {
   color: red;
   font-weight: bold;
 }
-
-
