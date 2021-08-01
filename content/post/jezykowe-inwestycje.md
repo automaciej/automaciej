@@ -1,8 +1,8 @@
 ---
+title: "Językowe inwestycje"
 date: 2008-06-11T01:52:55
 tags:
 - języki
-title: Językowe inwestycje
 ---
 
 Niedawno pisałem o tym, dlaczego [warto uczyć się

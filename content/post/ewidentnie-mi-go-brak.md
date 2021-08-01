@@ -2,7 +2,8 @@
 title: "Ewidentnie mi go brak"
 description: ""
 date: "2010-05-28T06:22:52+01:00"
-draft: true
+draft: false
+description: "Rzeczy których mi brak. Na przykład, polskie słowo na 'evidence'."
 tags:
  - "raptularz"
 
