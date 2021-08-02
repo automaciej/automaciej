@@ -28,18 +28,18 @@
             {{ end }}
 
             <div class="item-text-info">
-              <div class="item-date text-muted">
+              <span class="item-date text-muted">
                   {{ .Date.Day }}
                   {{ index $.Site.Data.months (printf "%d" .Date.Month) }}
                   {{ .Date.Year }}
-              </div><!-- item-description -->
-              <div class="post-title">
-                {{ if .Draft -}}
+              </span><!-- item-description -->
+              <span class="post-title">
+                {{- if .Draft  }}
                 <span class="debug-info">[draft]</span>
-                {{- end }}
-                {{ .Title }} &raquo;
-              </div>
-              <div class="item-description text-muted">
+                {{ end -}}
+                {{- .Title }} &raquo;
+              </span>
+              <span class="item-description text-muted">
                 <!--  <small class="text-muted"> -->
                   {{ with .Description }}
                   {{ . | safeHTML | truncate 80 }}
@@ -47,7 +47,7 @@
                   {{ .Summary | plainify | truncate 80 }}
                   {{ end }}
                 <!-- </small> -->
-              </div><!-- item-description -->
+              </span><!-- item-description -->
             </div><!-- item-text-info -->
           </a>
         </li>
