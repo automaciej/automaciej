@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main class="index-page">
+  {{ range (.Site.RegularPages.GroupByDate "2006") }}
+  <div class="container year">
+    <h2>{{ .Key }}</h2>
+  </div>
+  {{ range .Pages }}
+  <div class="container blog-entry">
+
+    <div class="thumbnail">
+      <!-- .Resources refers to resources of this Page -->
+      {{ $original_image := .Resources.GetMatch "**.jpg" }}
+      {{ with $original_image }}
+      {{ $image := .Fill "64x64" }}
+      <img alt="Miniatura ilustracji do wpisu. {{ $.Description }}" class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+      {{ else }}
+      <!-- attempting to get a global resource, from assetsDir -->
+      {{ $original_image := resources.Get "default_thumbnail.jpg" }}
+      {{ with $original_image }}
+      {{ $image := .Fill "64x64" }}
+      <img alt="Miniatura ilustracji do wpisu. {{ $.Description }}" class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+      {{ else }}
+      no image
+      {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="description">
+      <h3>
+        <a href="{{ .RelPermalink }}"
+           class="entry-title"
+           title="{{ .Description }}"
+          >{{ .Title }}</a>
+      </h3>
+      <span class="summary">
+        <!--
+          htmlUnescape is necessary to avoid escaped &ndash; appearing on the
+          page. -->
+        {{ .Summary | plainify | htmlUnescape | truncate 70 }}
+      </span>
+    </div>
+  </div>
+  {{ end }}<!-- .Pages -->
+  {{ end }}<!-- Years -->
+</main>
+{{ end }}

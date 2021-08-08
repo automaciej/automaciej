@@ -7,7 +7,7 @@ defaultContentLanguage = "pl"
 languageCode = "pl"
 title = "automaciej"
 baseurl = "https://blizin.ski"
-theme = "theme006"
+theme = "theme007"
 rssLimit = 20
 [author]
   name = "Maciej Bliziński"

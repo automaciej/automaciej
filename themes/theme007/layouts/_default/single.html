@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ $original_image := .Page.Resources.GetMatch "**.jpg" }}
+<main class="container blog-entry">
+
+  <hgroup>
+    <h1>{{ .Title }}</h1>
+    <p>
+      <small>
+        opublikowane
+        <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }}</a>
+        {{- if not (eq .Lastmod .Date) -}}
+        , ostatnia aktualizacja {{ .Lastmod.Format "2006-01-02" }}
+        {{ end }}
+      </small>
+    </p>
+  </hgroup>
+
+  <!-- If available, use page's image -->
+  {{ with $original_image }}
+  {{ $image := .Fill "880x200" }}
+  <figure class="head-image">
+    <img
+      src="{{ $image.RelPermalink }}"
+      width="{{ $image.Width }}"
+      height="{{ $image.Height }}"
+      alt="{{ with $image.Exif -}}
+        {{ .Tags.UserComment }}
+      {{- else -}}
+        Ilustracja do wpisu.
+      {{- end }}"
+      />
+  </figure>
+  {{ end }}
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+</main>
+{{ end }}
