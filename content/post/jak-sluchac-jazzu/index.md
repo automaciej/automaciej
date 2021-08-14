@@ -100,6 +100,8 @@ Tutaj moje propozycje jazzowych albumów na przestrzeni ostatnich siedmiu dekad.
 Listę tę podaję tylko jako kilka przykładów, każda z dekad oferuje ogromną
 różnorodność jazzową. Tutaj mogę zaoferować kilka przykładów do spróbowania.
 
+{{< wide start >}}
+
 |         | Łatwe                | Średnie          | Cięższe      |
 | ------- | -------------------- | ---------------- | ------------ |
 | '50-'59 | {{< yt-search "The Atomic Mr. Basie" >}} | {{< yt-search "Ella and Louis" >}} | {{< yt-search "Miles Davis: Kind of Blue" >}} |
@@ -109,6 +111,8 @@ różnorodność jazzową. Tutaj mogę zaoferować kilka przykładów do spróbo
 | '90-'99 | {{< yt-search "John Scofield: A Go Go" >}} | {{< yt-search "Wynton Marsalis: Blue Interlude" >}} | {{< yt-search "Yellowjackets: Greenhouse" >}} |
 | '00-'09 | {{< yt-search "The Rippingtons: Life in the Tropics" >}} | {{< yt-search "Kenny Garrett: Happy People" >}} | {{< yt-search "Michael Brecker: Pilgrimage" >}} |
 | '10-'19 | {{< yt-search "Eliane Elias: Light My Fire" >}} | {{< yt-search "Herbie Hancock: The Imagine Project" >}} | {{< yt-search "Béla Fleck and the Flecktones: Rocket Science" >}} |
+
+{{< wide end >}}
 
 Trzy albumy które dobrze znam i które chciałbym wyróżnić:
 

@@ -1,0 +1,9 @@
+{{ if eq (.Get 0) "start" }}
+<div class="wide">
+{{ else if eq ( .Get 0 ) "end" }}
+</div>
+{{ else }}
+<div style="background-color: yellow; padding: 1em;">
+  ERROR! Bad argument "{{ .Get 0 }}" for the `wide` shortcode. Valid options are "start" and "end".
+</div>
+{{ end }}

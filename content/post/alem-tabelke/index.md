@@ -11,6 +11,8 @@ przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 
 <!--more-->
 
+{{< wide start >}}
+
 | przedr. | rdzeń | dok. |zwr. | znaczenie |
 | ------- | ----- | ---- | --- | --------- |
 |         | ~     | alać |     | <span class="text-muted">(nie używa się)</span> |
@@ -73,3 +75,5 @@ przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 | za      | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
 | za      | ~ |  olić |     | mocno uderzyć, ukraść |
 | za      | ~ |  olić | się | uderzyć się w jakąś część ciała |
+
+{{< wide end >}}
