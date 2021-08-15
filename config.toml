@@ -16,10 +16,11 @@ rssLimit = 20
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"
   siteLogo = "/images/automaciej-logo.jpg"
-  twitterName = "automaciej"
+  twitterHandle = "automaciej"
   githubName = "automaciej"
   facebookUrlPath = "maciej.blizinski"
   tiktokName = "automaciej"
+  instagramHandle = "automaciej"
   description = "Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty."
 [taxonomies]
   tag = "tags"
