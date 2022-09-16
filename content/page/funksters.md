@@ -73,7 +73,7 @@ Wybiórczo i punktowo, żeby się nie zaplątać ma się rozumieć.
 
 3.   Koncerty. Frontmenką być niełatwo jak przekonałam się na trasie.
 
-     {{< figure src="/images/funksters/ola_maciek.GIF" >}}
+     {{< figure src="../../../images/funksters/ola_maciek.GIF" >}}
 
      Niezbadane są wyroki boskie (chociaż w przypadku pękajacych codziennie
      strun Maćka powiedziałabym, że czasem bardzo przewidywalne). Hmmm... W
@@ -99,7 +99,7 @@ Wybiórczo i punktowo, żeby się nie zaplątać ma się rozumieć.
 6.   Zoli. To rozdział osobny. Wiecznie uśmiechnięta buzia, nienaganna, długo i
      pieczołowicie pielęgnowana aparycja.
 
-     {{< figure src="/images/funksters/tiny_zoltan.GIF" >}}
+     {{< figure src="../../../images/funksters/tiny_zoltan.GIF" >}}
 
      Ach! Nawet kiedyś sparafrazowałam dla niego pewną piosenkę Kayah!
 

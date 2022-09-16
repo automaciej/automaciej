@@ -18,8 +18,8 @@ Mam ja sobie dynamo w piaście i światło w rowerze. Nie piszę „lampkę”, 
 
 <!--more-->
 
-{{< figure src="/images/2017/edelux-ii-zblizenie-small.jpg"
-  link="/images/2017/edelux-ii-zblizenie.jpg" >}}
+{{< figure src="../../../images/2017/edelux-ii-zblizenie-small.jpg"
+  link="../../../images/2017/edelux-ii-zblizenie.jpg" >}}
 
 Światło rowerowe (3W) ma oczywiście mniejszą moc niż samochodowe (12W) ale i tak
 potrafi pełni oświetlić ciemną drogę.
@@ -67,13 +67,13 @@ zniecierpliwiłem się i zamówiłem drugie koło z dynamem, tym razem lokalnie.
 mają tu dynam Shutter Precision (SP), więc musiałem zamówić dynamo Shimano.
 Oczywiście, Shimano ma inną wtyczkę niż SP. No nic. Przyszło po tygodniu.
 
-{{< figure src="/images/2017/dynamo-shimano-small.jpg"
-link="/images/2017/dynamo-shimano.jpg" >}}
+{{< figure src="../../../images/2017/dynamo-shimano-small.jpg"
+link="../../../images/2017/dynamo-shimano.jpg" >}}
 
 Zamontowałem, światło zadziałało.
 
-{{< figure src="/images/2017/swiatlo-shimano-front-small.jpg"
-link="/images/2017/swiatlo-shimano-front.jpg" >}}
+{{< figure src="../../../images/2017/swiatlo-shimano-front-small.jpg"
+link="../../../images/2017/swiatlo-shimano-front.jpg" >}}
 
 Tydzień później wróciło dynamo z UK. Mam więc N+1 dynam. Zdjąłem dynamo Shimano,
 założyłem dynamo SP. Musiałem to sprawdzić. Działa.
@@ -89,8 +89,8 @@ Poszukałem więc informacji jak zabezpieczyć wtyczkę przed wodą, znalazłem
 specjalną taśmę która się skleja sama ze sobą (self-amalgamating tape), więc mam
 nadzieję że czas do następnej awarii będzie teraz dłuższy.
 
-{{< figure src="/images/2017/wtyczka-do-dynama-small.jpg"
-link="/images/2017/wtyczka-do-dynama.jpg" >}}
+{{< figure src="../../../images/2017/wtyczka-do-dynama-small.jpg"
+link="../../../images/2017/wtyczka-do-dynama.jpg" >}}
 
 Mam kilka refleksji nad tą historią. Po pierwsze, nie użyłem mózgu, „nie miałem
 w głowie” i w ten sposób dołożyłem sobie roboty. Coś, co mogło mi zająć pięć

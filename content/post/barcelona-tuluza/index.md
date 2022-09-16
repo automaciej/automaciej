@@ -28,8 +28,8 @@ Niall[^niall], odwrócił się od biurka i zapytał:
 [^niall]: Niall jest imieniem irlandzkim gaelickim, i wymawia się je mniej
           więcej „Najal” z akcentem na pierwszą sylabę.
 
-{{< figure src="/images/2017/rzeczy-na-wycieczke-small.jpg"
-link="/images/2017/rzeczy-na-wycieczke.jpg" >}}
+{{< figure src="../../../images/2017/rzeczy-na-wycieczke-small.jpg"
+link="../../../images/2017/rzeczy-na-wycieczke.jpg" >}}
 
 Transport rowerów był prostszy niż się spodziewałem. Kupując bilety Aer Lingusa
 online nie można wykupić transportu roweru, a jedynie rzeczy takich jak narty
@@ -53,15 +53,15 @@ zostać uszkodzony i Aer Lingus wyraźnie pisze, że transport taki jest na ryzy
 właściciela. Mój rower przeleciał w obie strony bez szwanku, a rower Nialla
 doznał jedynie małego uszkodzenia miękkiej owijki na kierownicy.
 
-{{< figure src="/images/2017/rowery-przed-spakowaniem-small.jpg"
-link="/images/2017/rowery-przed-spakowaniem.jpg" >}}
+{{< figure src="../../../images/2017/rowery-przed-spakowaniem-small.jpg"
+link="../../../images/2017/rowery-przed-spakowaniem.jpg" >}}
 
 W dzień wyjazdu wstaliśmy o 02:00, ale i tak z tego pierwszego dnia została nam
 na jazdę rowerem tylko połowa. Samolot wylądował około 11:00 czasu lokalnego
 i byliśmy gotowi do drogi mniej więcej w południe.
 
-{{< figure src="/images/2017/rowery-gotowe-do-drogi-small.jpg"
-link="/images/2017/rowery-gotowe-do-drogi.jpg" >}}
+{{< figure src="../../../images/2017/rowery-gotowe-do-drogi-small.jpg"
+link="../../../images/2017/rowery-gotowe-do-drogi.jpg" >}}
 
 Natychmiast popedałowaliśmy, na azymut, przez jakieś polne drogi, na bieżąco
 improwizując trasę. Nie mieliśmy pomysłu na nocleg, więc dotarliśmy do
@@ -70,8 +70,8 @@ obskurny hostel i zwaliliśmy się tam na jak dwa worki kartofli. Byliśmy obaj
 kompletnie wykończeni. Około 22:30 coś nas jednak obudziło: był to głód. Tego
 wieczoru wciągnałem w siebie szerszą niż mój tułów Pizzę Chwały.
 
-{{< figure src="/images/2017/pizza-chwaly-small.jpg"
-    link="/images/2017/pizza-chwaly.jpg" >}}
+{{< figure src="../../../images/2017/pizza-chwaly-small.jpg"
+    link="../../../images/2017/pizza-chwaly.jpg" >}}
 
 Sama noc była taka sobie: gorąco i hałas. Następnego ranka chcieliśmy wyjechać
 jak najwcześniej, ale rowery mieliśmy zamknięte na klucz w hostelowej pakamerze,
@@ -79,8 +79,8 @@ a klucz przychodził do pracy dopiero na ósmą rano. Wypiliśmy więc po kawie,
 zjedliśmy po ciastku i około 9 wyruszyliśmy w dalszą drogę, próbując uwolnić się
 od skwarnej i smrodliwej sieci głównych dróg.
 
-{{< figure src="/images/2017/rower-zaladowany-jezioro-small.jpg"
-link="/images/2017/rower-zaladowany-jezioro.jpg" >}}
+{{< figure src="../../../images/2017/rower-zaladowany-jezioro-small.jpg"
+link="../../../images/2017/rower-zaladowany-jezioro.jpg" >}}
 
 Po drugim dniu byliśmy w ciężkim stresie, że nie damy rady zrobić tych dwóch
 dużych podjazdów które były w planie. Potem okazało się że nasze oszacowania
@@ -105,8 +105,8 @@ Niall obejrzał ściętą śrubę, po czym poszedł do swojego roweru, i wyciąg
 opaski zaciskowe. „Wszystko się nimi da naprawić”, zaanonsował. Po kilku
 minutach mocowanie bagażnika wyglądało tak:
 
-{{< figure src="/images/2017/cable-ties-small.jpg"
-link="/images/2017/cable-ties.jpg" >}}
+{{< figure src="../../../images/2017/cable-ties-small.jpg"
+link="../../../images/2017/cable-ties.jpg" >}}
 
 Byłem przekonany że nie wytrzyma to nawet pięciu minut. Ale spróbowałem
 przejechać metr. Bagażnik jakoś się utrzymał. 10 metrów. Dalej był tam gdzie
@@ -135,8 +135,8 @@ czas: kombinowaliśmy inne trasy, pociągi, srągi. Niepotrzebnie.  Trzeciego dn
 zrozumiałem co się dzieje, dopasowałem styl jazdy, co natychmiast rozwiązało
 problem.
 
-{{< figure src="/images/2017/andora-podjazd-small.jpg"
-link="/images/2017/andora-podjazd.jpg" >}}
+{{< figure src="../../../images/2017/andora-podjazd-small.jpg"
+link="../../../images/2017/andora-podjazd.jpg" >}}
 
 Moją prędkością na siedmioprocentowym podjeździe było 5km/h. Szybciej niż 5km/h
 po prostu nie dawałem rady jechać. Oczywiście mogłem sobie to tłumaczyć, że jest
@@ -149,8 +149,8 @@ dłuższą metę.
 Po tych wszystkich rozważaniach dojechałem do najwyższego punktu w Andorze, po
 którym zaczął się zjazd w dół, na francuską stronę.
 
-{{< figure src="/images/2017/andora-na-gorze-small.jpg"
-link="/images/2017/andora-na-gorze.jpg" >}}
+{{< figure src="../../../images/2017/andora-na-gorze-small.jpg"
+link="../../../images/2017/andora-na-gorze.jpg" >}}
 
 Po Andorze grzaliśmy do przodu ile fabryka dała (ale nie szybciej!). Zjazd był
 niesamowity, kiedy po wspięciu się na 2500m npm zjeżdżaliśmy drogą nachyloną tak
@@ -176,8 +176,8 @@ ale są tak projektowane, żeby utrzymać z grubsza stałe nachylenie, gdzieś
 pomiędzy 6% i 7%.  Wiejska droga natomiast idzie tak jak idzie i jeżeli pagórek
 miał nachylenie 12%, to droga też. Na rowerze robi to dużą różnicę.
 
-{{< figure src="/images/2017/pochmurna-francja-small.jpg"
-link="/images/2017/pochmurna-francja.jpg" >}}
+{{< figure src="../../../images/2017/pochmurna-francja-small.jpg"
+link="../../../images/2017/pochmurna-francja.jpg" >}}
 
 Dopiero tutaj zrobiły mi się zakwasy: pagórki były krótkie, więc na niektóre
 można było wjechać na zasadzie sprintu. Szkopuł w tym, że jeżeli taki sprint
@@ -185,12 +185,12 @@ trafia się co kilka minut regularnie przez kilka godzin, to nawet ktoś kto si�
 przed chwilą chwalił jaki to z niego nie jest sprintsman, dostaje w zadku
 zakwasów jak ta lala.
 
-{{< figure src="/images/2017/sloneczniki-we-francji-small.jpg"
-link="/images/2017/sloneczniki-we-francji.jpg" >}}
+{{< figure src="../../../images/2017/sloneczniki-we-francji-small.jpg"
+link="../../../images/2017/sloneczniki-we-francji.jpg" >}}
 
 Suma sumarum te nasze ~500km przejechaliśmy w pięć z sześciu dostępnych dni.
 Miało to swoją dobrą stronę: spędziliśmy jeden więcej dzień w uroczej, otoczonej
 murem średniowiecznej wiosce.
 
-{{< figure src="/images/2017/mur-i-widok-z-wioski-small.jpg"
-link="/images/2017/mur-i-widok-z-wioski.jpg" >}}
+{{< figure src="../../../images/2017/mur-i-widok-z-wioski-small.jpg"
+link="../../../images/2017/mur-i-widok-z-wioski.jpg" >}}

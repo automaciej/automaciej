@@ -21,7 +21,7 @@ i przeczytałem resztę, w tym zeszyt Zejście. Tam, na stronie numer 36, jest c
 co wygląda dość sugestywnie jako klatki animacji. A gdyby tak rzeczywiście
 zrobić z tego animację? Proszę bardzo:
 
-{{< figure src="/images/2017/rork-falling-animation.gif" >}}
+{{< figure src="../../../images/2017/rork-falling-animation.gif" >}}
 
 Nie wiem co akurat Poeta, znaczy się, Andreas miał na myśli, ale w animacja
 ujawnia niektóre aspekty rysunku, których na papierze zobaczyć się nie dało.
