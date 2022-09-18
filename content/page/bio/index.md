@@ -7,14 +7,14 @@ tags:
 
 ---
 
-Maciej Bliziński (pron. MATCH-ek) is Polish-born electric bass player based in
-Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and
-acid jazz.  Maciej also plays nylon string and electric guitars, and develops
-own music software.
+[Maciej](https://en.wikipedia.org/wiki/Maciej) Bliziński (pron. MATCH-ek) is
+an electric bass player based in Dublin, Ireland. He specializes in
+jazz, bossa nova, samba, jazz fusion, and acid jazz.  Maciej also plays nylon
+string and electric guitars, and develops own music software.
 
 <!--more-->
 
-Maciej grew up in a musical family in Warsaw. Maciej's earliest musical
+Maciej grew up in a musical family in Warsaw, Poland. Maciej's earliest musical
 influences are George Duke, John Scofield, Pat Metheny, Antônio Carlos Jobim,
 and João Gilberto. Some of Maciej's bass influences are James Jamerson, Ron
 Carter, Stuart Zender, and Nathan East.
@@ -22,11 +22,13 @@ Carter, Stuart Zender, and Nathan East.
 Maciej picked up his father's electric guitar at 19. In the early 2000s, Maciej
 led Funksters, an acid jazz band. After the move to Dublin, Maciej taught
 himself to play electric bass. Since 2013, Maciej co-organizes and plays at the
-weekly Dublin Jazz Jam Session. Since 2022, Maciej fills the bass seat at
-ensemble classes in Dublin College University.
+weekly [Dublin Jazz Jam Session](https://facebook.com/dublinjazzjam). Since
+2022, Maciej fills the bass seat at ensemble classes in Dublin College
+University.
 
-As of autumn 2022, Maciej works on own arrangements of bossa nova classics.
-Maciej also organizes weekly music making sessions at home.
+As of autumn 2022, Maciej participates in several music projects, plays
+regularly at the jazz jam session, works on own arrangements of bossa nova
+classics, and organizes weekly music making sessions.
 
 ## Music
 
