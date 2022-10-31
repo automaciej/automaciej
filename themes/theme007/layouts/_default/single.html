@@ -1,5 +1,8 @@
 {{ define "main" }}
-{{ $original_image := .Page.Resources.GetMatch "**.jpg" }}
+{{- $original_image := .Page.Resources.GetMatch "cover.jpg" -}}
+{{- if not ($original_image) -}}
+{{- $original_image = .Page.Resources.GetMatch "**.jpg" -}}
+{{- end -}}
 <main class="container blog-entry">
 
   <hgroup>
@@ -17,7 +20,7 @@
 
   <!-- If available, use page's image -->
   {{ with $original_image }}
-  {{ $image := .Fill "880x200" }}
+  {{ $image := .Fill "970x250" }}
   <figure class="head-image">
     <img
       src="{{ $image.RelPermalink }}"
