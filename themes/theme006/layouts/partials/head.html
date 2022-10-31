@@ -1,6 +1,9 @@
 <head>
 
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/pico.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/automaciej.css">
   <!-- Let's avoid titles like "Foo - Foo" -->
   <title>
     {{- if ne .Title .Site.Title -}}
@@ -15,9 +18,6 @@
   {{ end }}
 
   <meta name="author" content="Maciej Bliziński">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- alternate output formats -->
   {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -25,7 +25,6 @@
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
-  <link rel="stylesheet" href="/css/automaciej.css">
 
   <link rel="icon" type="image/png" href="/images/favicon.png">
 

@@ -15,12 +15,15 @@
       <img alt="Miniatura ilustracji do wpisu. {{ $.Description }}" class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
       {{ else }}
       <!-- attempting to get a global resource, from assetsDir -->
-      {{ $original_image := resources.Get "default_thumbnail.jpg" }}
+      {{- $original_image := .Page.Resources.GetMatch "cover.jpg" -}}
+      {{- if not ($original_image) -}}
+      {{- $original_image = .Page.Resources.GetMatch "**.jpg" -}}
+      {{- end -}}
       {{ with $original_image }}
       {{ $image := .Fill "64x64" }}
       <img alt="Miniatura ilustracji do wpisu. {{ $.Description }}" class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
       {{ else }}
-      no image
+      ✍️
       {{ end }}
       {{ end }}
     </div>
