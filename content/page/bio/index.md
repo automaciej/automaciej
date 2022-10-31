@@ -1,7 +1,8 @@
 ---
-title: "Maciej Bliziński Bio"
+title: "Maciej Bliziński bio"
 description: "Maciej Bliziński is an electric bass player based in Dublin, Ireland. He specializes in bossa nova, jazz, fusion, and acid jazz."
 date: "2022-09-05T15:02:43+01:00"
+image: Maciej_playing_bass_2a.jpg
 tags:
  - "about"
 
@@ -80,6 +81,8 @@ Gustavo Morais Quintet, music of Antônio Carlos Jobim, at The Dublin Jazz Co-Op
 * http://soundcloud.com/maciej-blizinski
 
 ## Photos
+
+{{< figure src="Maciej_playing_bass_2.jpg" title="at a recording session" >}}
 
 {{< figure src="Maciej_playing_bass.jpg" title="at a corporate event" >}}
 
