@@ -44,7 +44,10 @@ case "${1:-}" in
     echo "Done."
     ;;
   test)
-    ${hugo} -w -D -F server
+    ${hugo} -w -D -F \
+	    --printUnusedTemplates \
+	    --templateMetrics \
+	    server
     ;;
   *)
     helpmsg >&2
