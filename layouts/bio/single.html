@@ -6,11 +6,22 @@
 		<link rel="stylesheet" href="/css/bio.css">
 	</head>
 	<body>
-		<main class="container blog-entry">
+		<main class="container bio">
 			<h1>{{ .Title }}</h1>
+			{{ with .Description }}
+			<div class="site-description">{{ . }}</div>
+			{{ end }}
 			<div class="content">
 			{{ .Content }}
 			</div>
+			<hr/>
+			<p class="published-date">
+				first published on
+				<a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }}</a>
+				{{- if not (eq .Lastmod .Date) -}}
+				, last update {{ .Lastmod.Format "2006-01-02" }}
+				{{ end }}
+			</p>
 		</main>
 	</body>
 </html>
