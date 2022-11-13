@@ -111,5 +111,8 @@ _[Source](https://www.irishtimes.com/culture/music/dancing-on-the-ceiling-and-sw
 
 **Weekly Dublin Jazz Jam Session** – multiple dates, in the International Bar and The Bohemian in Dublin. Event dates at https://www.facebook.com/dublinjazzjam/
 
+## Past performances
+
 **Bydgoszcz Jazz Festival** – 28 October 2022, Bydgoszcz, Poland, with Kasia Eliasz Quintet: http://bydgoszczjazzfestival.com.pl/2022artysci.htm
 
+**Magy's Farm** – 15 October 2022, Magy's Farm, Northern Ireland, with [Gediminas Kakauskas](https://www.offpitchrecords.com/) and [Riccardo Marenghi](https://www.instagram.com/riccardo_marenghi/).
