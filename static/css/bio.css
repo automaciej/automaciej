@@ -1,0 +1,50 @@
+/* Customizations to the Pico theme. */
+
+/*
+ * Color palette
+ */
+
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #33548a;
+}
+
+/* Center the header */
+header > nav > div {
+	margin-left: auto;
+	margin-right: auto;
+	/* text-align: center; */
+}
+
+nav .site-title {
+  font-size: 2em;
+  font-weight: bold;
+  /* color: white; */
+}
+
+nav .site-description {
+  font-size: 80%;
+}
+
+main .bio {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.iframe-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+}
+
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
