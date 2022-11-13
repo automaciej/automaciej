@@ -47,7 +47,8 @@ case "${1:-}" in
     ${hugo} -w -D -F \
 	    --printUnusedTemplates \
 	    --templateMetrics \
-	    server
+	    server \
+	    --disableFastRender
     ;;
   *)
     helpmsg >&2
