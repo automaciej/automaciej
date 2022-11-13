@@ -81,8 +81,9 @@ Gustavo Morais Quintet, music of Antônio Carlos Jobim, at The Dublin Jazz Co-Op
 
 ## Contact and social media
 
+* http://linktr.ee/blizinski_music
 * http://facebook.com/maciej.blizinski
-* http://instagram.com/automaciej
+* http://instagram.com/blizinski_music
 * http://tiktok.com/@automaciej
 * http://soundcloud.com/maciej-blizinski
 
