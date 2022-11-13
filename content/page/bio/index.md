@@ -35,25 +35,29 @@ classics, and organizes weekly music making sessions.
 
 ## Music
 
-> #### Triste (Antonio Carlos Jobim)
->
-> {{< youtube t4omYtBjZwA >}}
->
-> &nbsp;
->
-> #### Estate (Bruno Martino)
->
-> {{< youtube BvqKqjoZG8c >}}
->
-> &nbsp;
+#### Cover: Triste (Antonio Carlos Jobim)
 
-### Soundcloud
+{{< youtube t4omYtBjZwA >}}
 
-{{< soundcloud-user 50421036 >}}
+&nbsp;
 
-### Soundcloud (as band Mistible)
+#### Cover: Estate (Bruno Martino)
 
-{{< soundcloud-user 77683997 >}}
+{{< youtube BvqKqjoZG8c >}}
+
+&nbsp;
+
+### Original: Ocean
+
+{{< soundcloud-track 211181460 >}}
+
+### Original: Burza
+
+{{< soundcloud-track 211181370 >}}
+
+### Cover: Arrangement: Butterfly (Herbie Hancock)
+
+{{< soundcloud-track 148905172 >}}
 
 ## Notable performances
 
