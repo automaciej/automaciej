@@ -10,10 +10,10 @@ tags:
 
 ---
 
-[Maciej](https://en.wikipedia.org/wiki/Maciej) Bliziński (pron. MATCH-ek) is
-an electric bass player based in Dublin, Ireland. He specializes in
-jazz, bossa nova, samba, jazz fusion, and acid jazz.  Maciej also plays nylon
-string and electric guitars, and develops own music software.
+**Maciej** _(pron. MATCH-ek)_ **Bliziński** is an electric bass player based in
+Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and
+acid jazz.  Maciej also plays nylon string and electric guitars, and develops
+own music software.
 
 <!--more-->
 
@@ -65,9 +65,9 @@ classics, and organizes weekly music making sessions.
 
 {{< figure src="Maciej_with_Supertonic_Orchestra.jpg" title="with the Supertonic Orchestra" >}}
 
-### Gustavo Morais Quintet
+### Gustavo de Morais Quintet
 
-Gustavo Morais Quintet, music of Antônio Carlos Jobim, at The Dublin Jazz Co-Op, 2022
+Gustavo de Morais Quintet, music of Antônio Carlos Jobim, at The Dublin Jazz Co-Op, 2022
 
 > #### Chega de Saudade
 >
@@ -82,10 +82,10 @@ Gustavo Morais Quintet, music of Antônio Carlos Jobim, at The Dublin Jazz Co-Op
 ## Contact and social media
 
 * http://linktr.ee/blizinski_music
-* http://facebook.com/maciej.blizinski
-* http://instagram.com/blizinski_music
 * http://tiktok.com/@automaciej
+* http://instagram.com/blizinski_music
 * http://soundcloud.com/maciej-blizinski
+* http://facebook.com/maciej.blizinski
 
 ## Photos
 
