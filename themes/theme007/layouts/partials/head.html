@@ -22,7 +22,7 @@
   {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.png">
 
   <!-- Facebook (OpenGraph?) meta tags -->
   <meta property="og:url"                content="{{ .Permalink }}" />
