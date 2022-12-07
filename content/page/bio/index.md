@@ -61,9 +61,14 @@ classics, and organizes weekly music making sessions.
 
 ## Notable performances
 
-### Supertonic Orchestra, Dublin, August 2019
+### At Magy's Farm, October 2022
 
-{{< figure src="Maciej_with_Supertonic_Orchestra.jpg" title="with the Supertonic Orchestra" >}}
+…with [Gediminas Karkauskas][ged] and [Riccardo Marenghi][ric].
+
+{{< youtube G9RmOgMIdXM >}}
+
+[ged]: https://www.offpitchrecords.com/
+[ric]: https://www.instagram.com/riccardo_marenghi/
 
 ### Gustavo de Morais Quintet
 
@@ -78,6 +83,10 @@ Gustavo de Morais Quintet, music of Antônio Carlos Jobim, at The Dublin Jazz Co
 > #### One Note Samba
 >
 > {{< youtube YNXXgXw6jr0 >}}
+
+### Supertonic Orchestra, Dublin, August 2019
+
+{{< figure src="Maciej_with_Supertonic_Orchestra.jpg" title="with the Supertonic Orchestra" >}}
 
 ## Contact and social media
 
