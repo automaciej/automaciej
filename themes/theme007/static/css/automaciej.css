@@ -85,6 +85,9 @@ main.index-page {
 
 .index-page .year {
   border-top: 1px solid #DDD;
+}
+
+.index-page .year [data-theme="light"] {
   background-color: #F8F8F8;
 }
 
