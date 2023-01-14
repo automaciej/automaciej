@@ -1,35 +1,43 @@
 <html lang="en" data-theme="dark">
-	<head>
+  <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/pico.min.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bio.css">
-<title>{{ .Title }}</title>
-<meta name="description" content="{{.Description}}" />
-<meta name="author" content="Maciej Bliziński" />
-<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/images/favicon.png" />
-<!-- Facebook (OpenGraph?) meta tags -->
-<meta property="og:url"                content="{{ .Permalink }}" />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content="{{ .Title }}" />
-<meta property="og:description"        content="{{ .Description }}" />
-<link rel="canonical" href="{{ .Permalink }}" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/pico.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bio.css">
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{.Description}}" />
+    <meta name="author" content="Maciej Bliziński" />
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/images/favicon.png" />
+    <!-- Facebook (OpenGraph?) meta tags -->
+    <meta property="og:url"                content="{{ .Permalink }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ .Title }}" />
+    <meta property="og:description"        content="{{ .Description }}" />
+    <link rel="canonical" href="{{ .Permalink }}" />
 
-	</head>
-	<body>
-		<main class="container bio">
-			<div class="content">
-			{{ .Content }}
-			</div>
-			<hr/>
-			<p class="published-date">
-				first published on
-				<a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }}</a>
-				{{- if not (eq .Lastmod .Date) -}}
-				, last update {{ .Lastmod.Format "2006-01-02" }}
-				{{ end }}
-			</p>
-		</main>
-	</body>
+  </head>
+  <body>
+    <main class="container bio">
+      <div class="content">
+        <!-- portrait photo -->
+        <img src="maciej_on_bass_800px.jpg"
+	     class="portrait"
+        srcset="maciej_on_bass_1024px.jpg 1024w, maciej_on_bass_360px.jpg 360w, maciej_on_bass_640px.jpg 640w, maciej_on_bass_800px.jpg 800w, maciej_on_bass_hi.jpg 2160w"
+        sizes="(max-width: 400px) 360px, (max-width: 600px) 480px, (max-width: 1024px) 800px, 2160w"
+	alt="Maciej Bliziński holding a Fender Precision bass looking to the left with attention."
+        />
+
+      {{ .Content }}
+      </div>
+      <hr/>
+      <p class="published-date">
+        first published on
+        <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }}</a>
+        {{- if not (eq .Lastmod .Date) -}}
+        , last update {{ .Lastmod.Format "2006-01-02" }}
+        {{ end }}
+      </p>
+    </main>
+  </body>
 </html>
