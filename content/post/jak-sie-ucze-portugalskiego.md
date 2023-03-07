@@ -206,4 +206,75 @@ Istniejące serwisy:
 
 [reddit-discord]: https://www.reddit.com/r/Portuguese/comments/5hh6v9/discord_server_for_portuguese/
 
-[_Komentarze_]({{< relref "/post/jak-sie-ucze-portugalskiego-komentarze.md" >}})
+## Krótkie filmiki komediowe
+
+_dodane 2023-03-06_
+
+Na przykład Porta dos Fundos.
+
+_Na czym polega:_ Wielokrotne oglądanie krótkiego (2-3 minuty) filmiku na
+YouTube, próba rozpracowania wszystkiego co mówią, co do słowa. To jest
+zupełnie inna rzecz niż np. oglądanie filmu w którym jest masa dialogów i
+czasami rozumie się piąte przez dziesiąte. W filmie to może przejść, bo tam
+jest istotne żeby po prostu się osłuchiwać z językiem. W przypadku krótkich
+filmików jest inaczej: tutaj bierzemy krótki (lecz bogaty) fragment pod lupę i
+próbujemy dociec znaczenia każdego słowa (i czasami nawet gestu.)
+
+_Czy działa:_ TAK
+
+_Zalety:_ Elastyczne, nie zajmuje dużo czasu, rozrywka też niezła. Uczę się
+języka mówionego, z idiomami i wyrażeniami kolokwialnymi.
+
+_Wady:_ W miarę często potrzebowałem pomocy, np. potrzebowałem wysłać komuś
+link do filmiku żeby ktoś mi pomógł zrozumieć co jest mówione. Nie jest to
+problemem jeżeli filmik ma napisy, ale nawet jak są napisy to i tak trzeba
+pomocy żeby dekodować idiomy i odniesienia do kultury czy polityki.
+
+## Podkasty
+
+_dodane 2023-03-06_
+
+_Na czym polega:_ Słuchanie podkastów, ale nie podkastów do nauki języka, tylko
+podkastów po prostu o tym co nas interesuje tak generalnie. W moim przypadku
+był to Nerdcast.  Trochę więcej kontekstu: Przez pierwsze kilka lat nauki
+portugalskiego rozmawiałem zawsze w kontrolowanym otoczeniu. Była to stołówka,
+na której był jakiś poziom hałasu, ale generalnie niewielki. Rozmawiałem z 1
+osobą, ewentualnie z 2, max 3. Rozmowy były w dość powolnym tempie. Potem
+zdarzyło się że wylądowałem w restauracji przy stole z zdaje się 5-ma osobami
+które zaczęły prowadzić bardzo ożywioną dyskusję. Rozłożyło mnie to na łopatki.
+Przez pierwsze kilka minut byłem w stanie z grubsza śledzić co się dzieje, ale
+działo się tyle rzeczy naraz że w pewnym momencie nastąpiło "przeciążenie
+systemu" i niemal całkowicie się wyłączyłem. I na dodatek zrobiłem się
+zestresowany. Więc postanowiłem że muszę się jakoś nauczyć radzić sobie w
+rozmowie grupowej. Dlatego wybrałem dość hałaśliwy podkast w którym bierze
+udział kilka osób naraz.
+
+_Czy działa:_ TAK – ale dopiero na bardziej zaawansowanym etapie. Na początek nie polecam.
+
+_Zalety:_ Pomaga przyzwyczaić się do hałaśliwej rozmowy w grupie.
+
+_Wady:_ Potrafi być nieprzyjemnie, kiedy pomimo największych wysiłków nie
+jesteśmy w stanie śledzić tego co się dzieje. Dlatego polecam spróbowanie, i
+jeżeli nie pójdzie, odstawienie na bok i spróbowanie na przykład za pół roku,
+albo za rok.
+
+## Programy publicystyczno-komediowe – z przewodnikiem
+
+_dodane 2023-03-06_
+
+W moim przypadku było do Greg News. Czyli coś w stylu Last Week Tonight (John
+Oliver), tutaj prowadzącym był Gregório Duvivier.
+
+_Na czym polega:_ Oglądanie programu we dwie osoby, wciskanie pauzy kiedy coś
+jest niejasne. Rozmowa o tym, do czego odnoszą się żarty.
+
+_Czy działa:_ TAK
+
+_Zalety:_ Zabawne, rozrywkowe, ucząc bawi, bawiąc uczy.
+
+_Wady:_ Nie da się za bardzo w pojedynkę, bo programy te są przesycone
+odniesieniami i jest tego generalnie za dużo żeby się przez wszystko przekopać.
+Trzeba też dobrze poszukać żeby znaleźć program który nas będzie interesował,
+takich może nie być wiele.
+
+[_Zobacz też: komentarze do tego wpisu_]({{< relref "/post/jak-sie-ucze-portugalskiego-komentarze.md" >}})
