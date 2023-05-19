@@ -2,7 +2,7 @@
 title: "Maciej Bliziński – bass player"
 description: "Maciej Bliziński is an electric bass player based in Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and acid jazz."
 date: "2022-09-05T15:02:43+01:00"
-lastmod: "2023-01-13T19:16:45+02:00"
+lastmod: "2023-05-19T09:16:45+02:00"
 image: Maciej_playing_bass_2a.jpg
 type: "bio"
 tags:
@@ -23,15 +23,16 @@ and João Gilberto. Some of Maciej's bass influences are James Jamerson, Ron
 Carter, Stuart Zender, and Nathan East.
 
 Maciej picked up his father's electric guitar at 19. In the early 2000s, Maciej
-led Funksters, an acid jazz band. After the move to Dublin, Maciej taught
-himself to play electric bass. Since 2013, Maciej co-organizes and plays at the
-weekly [Dublin Jazz Jam Session](https://facebook.com/dublinjazzjam). Since
-2022, Maciej fills the bass seat at ensemble classes in Dublin College
-University.
+studied sound engineering and led a jazz and an acid jazz group. After the move
+to Dublin, Ireland, Maciej taught himself electric bass. Since 2013, Maciej
+co-organizes and plays at the weekly [Dublin Jazz Jam Session][jam].  Since
+2022, Maciej fills the bass seat at ensemble classes at the Jazz and
+Contemporary Music Performance course in Dublin College University (uncredited).
 
-As of autumn 2022, Maciej participates in several music projects, plays
-regularly at the jazz jam session, works on own arrangements of bossa nova
-classics, and organizes weekly music making sessions.
+As of summer 2023, Maciej collaborates with pianist [Gediminas Karkauskas][ged]
+and drummer [Riccardo Marenghi][ric] in a jazz trio.
+
+[jam]: https://facebook.com/dublinjazzjam
 
 ## Music
 
@@ -61,6 +62,12 @@ classics, and organizes weekly music making sessions.
 
 ## Notable performances
 
+### Instrospection in Silk, May 2023
+
+…with [Gediminas Karkauskas][ged] and [Riccardo Marenghi][ric].
+
+{{< figure src="introspection-in-silk-2023.jpg" title="Introspection in Silk, National Concert Hall, May 2023" >}}
+
 ### At Magy's Farm, October 2022
 
 …with [Gediminas Karkauskas][ged] and [Riccardo Marenghi][ric].
@@ -72,8 +79,7 @@ classics, and organizes weekly music making sessions.
 
 ### Gustavo de Morais Quintet
 
-Gustavo de Morais Quintet, music of Antônio Carlos Jobim, at The Dublin Jazz
-Co-Op, 2022
+[gus]: https://www.instagram.com/gus_demorais/
 
 > #### Chega de Saudade
 >
@@ -84,10 +90,6 @@ Co-Op, 2022
 > #### One Note Samba
 >
 > {{< youtube YNXXgXw6jr0 >}}
-
-### Supertonic Orchestra, Dublin, August 2019
-
-{{< figure src="Maciej_with_Supertonic_Orchestra.jpg" title="with the Supertonic Orchestra" >}}
 
 ## Contact and social media
 
@@ -153,10 +155,24 @@ _[Source](https://www.jazzireland.ie/jazz-events/gig/414-the-jazz-strangers.html
 
 ## Upcoming performances
 
-**Weekly Dublin Jazz Jam Session** – multiple dates, in the International Bar and The Bohemian in Dublin. Event dates at https://www.facebook.com/dublinjazzjam/
+* **Weekly Dublin Jazz Jam Session** – multiple dates, in the International Bar
+  and The Bohemian Pub in Dublin. Event dates available at
+  [facebook.com/dublinjazzjam][jam].
 
 ## Past performances
 
-**Bydgoszcz Jazz Festival** – 28 October 2022, Bydgoszcz, Poland, with Kasia Eliasz Quintet: http://bydgoszczjazzfestival.com.pl/2022artysci.htm
+* **Introspection in Silk** – 15 May 2023, National Concert Hall, Dublin,
+  Ireland. In trio with pianist Gediminas Karkauskas and drummer Riccardo
+  Marenghi.
+* **Bydgoszcz Jazz Festival** – 28 October 2022, Bydgoszcz, Poland, with Kasia
+  Eliasz Quintet [(archive)][byd].
+* **[Gustavo de Morais][gus] Quintet**, music of Antônio Carlos Jobim, at The
+  Dublin Jazz Co-Op, 2022.
+* **Magy's Farm** – 15 October 2022, Magy's Farm, Northern Ireland, with
+  [Gediminas Kakauskas][ged] and [Riccardo Marenghi][ric].
+* **Supertonic Orchestra**, Dublin, August 2019
+  [(photo)](Maciej_with_Supertonic_Orchestra.jpg), Maciej filled in for Marco
+  Santaroni, the regular bass player of Supertonic Orchestra, Marco Santaroni.
+* **Jazz Strangers**, 2017, with pianist Josh Johnston.
 
-**Magy's Farm** – 15 October 2022, Magy's Farm, Northern Ireland, with [Gediminas Kakauskas](https://www.offpitchrecords.com/) and [Riccardo Marenghi](https://www.instagram.com/riccardo_marenghi/).
+[byd]: https://web.archive.org/web/20220816093018/http://bydgoszczjazzfestival.com.pl/2022artysci.htm
