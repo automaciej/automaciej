@@ -45,7 +45,6 @@ case "${1:-}" in
     ;;
   test)
     ${hugo} -w -D -F \
-	    --printUnusedTemplates \
 	    --templateMetrics \
 	    server \
 	    --disableFastRender
