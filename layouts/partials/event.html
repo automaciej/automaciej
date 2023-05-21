@@ -1,0 +1,32 @@
+<div class="event">
+
+<p>
+
+<strong>🎸 {{ .name }}</strong>
+{{ if .with }}
+with {{ delimit .with ", " " and " -}}
+{{ end -}}
+, on
+{{ if .start_time }}
+{{ time.Format "Monday, Jan 2, 2006, 3:04PM" .start_time -}}
+{{- end -}}
+{{- if .venue }}
+in
+{{ if .venue_url -}}
+<a href="{{ .venue_url }}">
+{{- end }}
+{{ .venue -}}
+{{ if .venue_url -}}
+</a>
+{{- end -}}
+{{- if .venue_address -}}
+, {{ .venue_address }} (<a href="https://www.google.com/maps/search/{{ .venue }},%20{{ .venue_address }}">map</a>)
+{{- end -}}
+{{- end -}}
+.
+
+{{ .description }}
+
+</p>
+
+</div><!-- event -->

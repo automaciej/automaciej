@@ -1,0 +1,18 @@
+name = "Gustavo de Morais Quintet: music of Antônio Carlos Jobim"
+url = ""
+with = [
+	"Gustavo de Morais",
+	"Kasia Eliasz",
+	"Greg Felton",
+	"Miles Ronayne",
+]
+description = """\
+Beatifully arranged bossa nova classics as well as Jobim's lesser known, later
+compositions.
+"""
+
+venue = "The Workman's Club"
+venue_url = "https://theworkmansclub.com/"
+start_time = 2022-03-20T19:30:00
+tickets = ""
+significant = true

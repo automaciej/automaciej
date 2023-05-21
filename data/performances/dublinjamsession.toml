@@ -1,0 +1,14 @@
+name = "Dublin Jazz Jam Session"
+url = "https://www.facebook.com/dublinjazzjam"
+with = [
+	"the Dublin Jazz community"
+]
+description = "A relaxed, community-driven event."
+
+venue = "Mrs Robinson's"
+venue_address = "39 Church Rd, Killincarrig, Greystones, Co. Wicklow"
+venue_url = "https://goo.gl/maps/7LxGZq4SRpMbY6Nk8?coh=178571&entry=tt"
+date = 2023-05-28
+start_time = 2023-05-28T16:00:00
+tickets = ""
+significant = false

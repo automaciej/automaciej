@@ -1,0 +1,17 @@
+name = "Kasia Eliasz Quintet"
+url = ""
+with = [
+	"Kasia Eliasz",
+	"Gustavo de Morais",
+	"William Kanela",
+	"Miles Ronayne",
+]
+description = """\
+A quintet playing a selection on lively Samba classics.
+"""
+
+venue = "Centrum Artystyczne Eljazz"
+venue_url = "https://eljazz.com.pl"
+start_time = 2022-10-28T20:00:00
+tickets = ""
+significant = true

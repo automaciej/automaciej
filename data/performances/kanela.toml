@@ -1,0 +1,16 @@
+name = "Mayara's birthday Samba"
+url = ""
+with = [
+	"Mayara Mitsuka",
+	"William Alexandre",
+]
+description = """\
+A trio playing a set of less known samba classics from the greatest Samba
+composers.
+"""
+
+venue = "Wool Shed"
+venue_url = "https://www.woolshedbaa.com/"
+start_time = 2023-05-23T21:00:00
+tickets = ""
+significant = true

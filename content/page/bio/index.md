@@ -2,7 +2,7 @@
 title: "Maciej Bliziński – bass player"
 description: "Maciej Bliziński is an electric bass player based in Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and acid jazz."
 date: "2022-09-05T15:02:43+01:00"
-lastmod: "2023-05-19T09:16:45+02:00"
+lastmod: "2023-05-21T09:16:45+02:00"
 image: Maciej_playing_bass_2a.jpg
 type: "bio"
 tags:
@@ -10,10 +10,10 @@ tags:
 
 ---
 
-**Maciej** _(pron. MATCH-ek)_ **Bliziński** is an electric bass player based in
-Dublin, Ireland. Maciej specializes in jazz, and a number styles of Brazilian
-music: bossa nova, samba, and chorinho.  Maciej also plays nylon string and
-electric guitars, produces music recordings, and develops own music software.
+**Maciej** _(pron. MATCH-ek)_ **Bliziński** is a bass player based in Dublin,
+Ireland. Maciej specializes in jazz, and a number of styles of Brazilian music:
+bossa nova, samba, and chorinho.  Maciej also plays nylon string and electric
+guitars, produces music recordings, and develops own music software.
 
 <!--more-->
 
@@ -125,9 +125,9 @@ The Irish Times, Fri Aug 11 2017
 
 _[Source](https://www.irishtimes.com/culture/music/dancing-on-the-ceiling-and-swinging-on-the-sofa-this-week-s-jazz-gigs-1.3179541)_
 
-**Jazz Strangers, 2017**
+**Jazz Strangers, 2016**
 
-> A new ensemble sets sail this February 2017 and you are invited to the maiden voyage.
+> A new ensemble sets sail this February 2016 and you are invited to the maiden voyage.
 >
 > * Danny Groenland - vocals, flute, guitar, percussion
 > * Marco Francescangelli - Saxophone
@@ -152,27 +152,5 @@ _[Source](https://www.irishtimes.com/culture/music/dancing-on-the-ceiling-and-sw
 > 11 Feb. 2017
 
 _[Source](https://www.jazzireland.ie/jazz-events/gig/414-the-jazz-strangers.html)_
-
-## Upcoming performances
-
-* **Weekly Dublin Jazz Jam Session** – multiple dates, in the International Bar
-  and The Bohemian Pub in Dublin. Event dates available at
-  [facebook.com/dublinjazzjam][jam].
-
-## Past performances
-
-* **Introspection in Silk** – 15 May 2023, National Concert Hall, Dublin,
-  Ireland. In trio with pianist Gediminas Karkauskas and drummer Riccardo
-  Marenghi.
-* **Bydgoszcz Jazz Festival** – 28 October 2022, Bydgoszcz, Poland, with Kasia
-  Eliasz Quintet [(archive)][byd].
-* **[Gustavo de Morais][gus] Quintet**, music of Antônio Carlos Jobim, at The
-  Dublin Jazz Co-Op, 2022.
-* **Magy's Farm** – 15 October 2022, Magy's Farm, Northern Ireland, with
-  [Gediminas Kakauskas][ged] and [Riccardo Marenghi][ric].
-* **Supertonic Orchestra**, Dublin, August 2019
-  [(photo)](Maciej_with_Supertonic_Orchestra.jpg), Maciej filled in for Marco
-  Santaroni, the regular bass player of Supertonic Orchestra, Marco Santaroni.
-* **Jazz Strangers**, 2017, with pianist Josh Johnston.
 
 [byd]: https://web.archive.org/web/20220816093018/http://bydgoszczjazzfestival.com.pl/2022artysci.htm

@@ -1,0 +1,15 @@
+name = "Introspection in Silk"
+url = ""
+with = [
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = """\
+A jazz trio, playing a subtle selection of jazz standards and original compositions.
+"""
+
+venue = "National Concert Hall"
+venue_url = "https://nch.ie"
+start_time = 2023-05-15T19:30:00
+tickets = ""
+significant = true

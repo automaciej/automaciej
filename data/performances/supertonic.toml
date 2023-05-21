@@ -1,0 +1,15 @@
+name = "Supertonic Orchestra"
+url = "https://www.facebook.com/SUPERTONICORCHESTRA/posts/2435494656508612"
+with = [
+	"Przemysław Łozowski",
+	"Chris Hokamp",
+]
+description = """\
+Polish folk fusion.
+"""
+
+venue = ""
+venue_url = ""
+start_time = 2019-09-23T19:30:00
+tickets = ""
+significant = true

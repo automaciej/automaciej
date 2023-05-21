@@ -1,0 +1,15 @@
+name = "Gediminas Karkauskas"
+url = ""
+with = [
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = """\
+A guest performance, playing a selection of jazz standards.
+"""
+
+venue = "Magy's Farm"
+venue_url = ""
+start_time = 2022-10-15T20:00:00
+tickets = ""
+significant = true
