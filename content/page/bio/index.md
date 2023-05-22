@@ -34,6 +34,8 @@ and drummer [Riccardo Marenghi][ric] in a jazz trio.
 
 [jam]: https://facebook.com/dublinjazzjam
 
+See [upcoming performances](#upcoming-performances), [contact](#contact).
+
 ## Music
 
 #### Cover: Triste (Antonio Carlos Jobim)
@@ -91,13 +93,16 @@ and drummer [Riccardo Marenghi][ric] in a jazz trio.
 >
 > {{< youtube YNXXgXw6jr0 >}}
 
-## Contact and social media
+## Contact
 
-* http://linktr.ee/blizinski_music
-* http://tiktok.com/@automaciej
-* http://instagram.com/blizinski_music
-* http://soundcloud.com/maciej-blizinski
 * http://facebook.com/maciej.blizinski
+* http://linktr.ee/blizinski_music
+
+## Social media
+
+* http://instagram.com/blizinski_music
+* http://tiktok.com/@automaciej
+* http://soundcloud.com/maciej-blizinski
 
 ## Photos
 

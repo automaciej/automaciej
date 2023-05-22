@@ -18,6 +18,7 @@
 
   </head>
   <body>
+
     <main class="container bio">
       <div class="content">
         <!-- portrait photo -->
@@ -30,7 +31,7 @@
 
       {{ .Content }}
 
-      <h2>Upcoming performances</h2>
+      <h2 id="upcoming-performances">Upcoming performances</h2>
       {{ $evs := sort $.Site.Data.performances "start_time" "asc" }}
       {{ range $evs }}
       {{ if (gt .start_time now) -}}
@@ -38,7 +39,7 @@
       {{ end -}}
       {{ end }}
 
-      <h2>Past performances</h2>
+      <h2 id="past-performances">Past performances</h2>
       {{ $evs := sort $.Site.Data.performances "start_time" "desc" }}
       {{ range $evs }}
       {{ if (and (lt .start_time now) .significant ) -}}
@@ -55,5 +56,6 @@
         {{ end }}
       </p>
     </main>
+
   </body>
 </html>
