@@ -106,11 +106,11 @@ See [upcoming performances](#upcoming-performances), [contact](#contact).
 
 ## Photos
 
-{{< figure src="Maciej_playing_bass_2.jpg" title="at a recording session" >}}
+{{< figure src="Maciej_playing_bass_2.jpg" title="at a recording session" link="Maciej_playing_bass_2.jpg" width="50%" >}}
 
-{{< figure src="Maciej_playing_bass.jpg" title="at a corporate event" >}}
+{{< figure src="Maciej_playing_bass.jpg" title="at a corporate event" link="Maciej_playing_bass.jpg" width="50%">}}
 
-{{< figure src="Maciej_at_jam_session.jpg" title="at the Dublin Jazz Jam Session" >}}
+{{< figure src="Maciej_at_jam_session.jpg" title="at the Dublin Jazz Jam Session" link="Maciej_at_jam_session.jpg" width="50%">}}
 
 ## Press coverage
 
