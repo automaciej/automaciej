@@ -9,7 +9,10 @@
 
     <div class="thumbnail">
       <!-- .Resources refers to resources of this Page -->
-      {{ $original_image := .Resources.GetMatch "**.jpg" }}
+      {{- $original_image := .Page.Resources.GetMatch "cover.jpg" -}}
+      {{- if not ($original_image) -}}
+      {{- $original_image = .Page.Resources.GetMatch "**.jpg" -}}
+      {{- end -}}
       {{ with $original_image }}
       {{ $image := .Fill "64x64" }}
       <img alt="Miniatura ilustracji do wpisu. {{ $.Description }}" class="post-item" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
