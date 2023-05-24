@@ -33,64 +33,45 @@ and drummer [Riccardo Marenghi][ric] in a jazz trio.
 
 [jam]: https://facebook.com/dublinjazzjam
 
-See [upcoming performances](#upcoming-performances), [contact](#contact).
-
 ## Music
 
-#### Cover: Triste (Antonio Carlos Jobim)
+**Cover: Triste (Antonio Carlos Jobim)**
 
 {{< youtube t4omYtBjZwA >}}
 
 &nbsp;
 
-#### Cover: Estate (Bruno Martino)
+**Cover: Estate (Bruno Martino)**
 
 {{< youtube BvqKqjoZG8c >}}
 
 &nbsp;
 
-### Original: Ocean
+**Original: Ocean**
 
 {{< soundcloud-track 211181460 >}}
 
-### Original: Burza
+&nbsp;
+
+**Original: Burza**
 
 {{< soundcloud-track 211181370 >}}
 
-### Cover: Butterfly (Herbie Hancock)
+&nbsp;
+
+**Cover: Butterfly (Herbie Hancock)**
 
 {{< soundcloud-track 148905172 >}}
 
-## Notable performances
+&nbsp;
 
-### Instrospection in Silk, May 2023
-
-…with [Gediminas Karkauskas][ged] and [Riccardo Marenghi][ric].
-
-{{< figure src="introspection-in-silk-2023.jpg" title="Introspection in Silk, National Concert Hall, May 2023" >}}
-
-### At Magy's Farm, October 2022
+**Jazz Piano Trio in 5/4**
 
 …with [Gediminas Karkauskas][ged] and [Riccardo Marenghi][ric].
 
-{{< youtube G9RmOgMIdXM >}}
+{{< youtube eL9UXUTQHD0 >}}
 
-[ged]: https://www.offpitchrecords.com/
-[ric]: https://www.instagram.com/riccardo_marenghi/
-
-### Gustavo de Morais Quintet
-
-[gus]: https://www.instagram.com/gus_demorais/
-
-> #### Chega de Saudade
->
-> {{< youtube amMr_v_Vywg >}}
->
-> &nbsp;
->
-> #### One Note Samba
->
-> {{< youtube YNXXgXw6jr0 >}}
+&nbsp;
 
 ## Contact
 
@@ -158,3 +139,36 @@ _[Source](https://www.irishtimes.com/culture/music/dancing-on-the-ceiling-and-sw
 _[Source](https://www.jazzireland.ie/jazz-events/gig/414-the-jazz-strangers.html)_
 
 [byd]: https://web.archive.org/web/20220816093018/http://bydgoszczjazzfestival.com.pl/2022artysci.htm
+
+## Performances
+
+**Instrospection in Silk, May 2023**
+
+…with [Gediminas Karkauskas][ged] and [Riccardo Marenghi][ric].
+
+{{< figure src="introspection-in-silk-2023.jpg"
+alt="A concert hall with white walls and corinthian order columns, viewed from the audience. Backs of people's heads in the first plane. In the distance, a pianist behind a grand piano, a drummer behind a jazz drum kit, and a double bass player, all in formal clothes."
+width="50%" >}}
+
+**At Magy's Farm, October 2022**
+
+…with [Gediminas Karkauskas][ged] and [Riccardo Marenghi][ric].
+
+{{< youtube G9RmOgMIdXM >}}
+
+[ged]: https://www.offpitchrecords.com/
+[ric]: https://www.instagram.com/riccardo_marenghi/
+
+**Gustavo de Morais Quintet**
+
+[gus]: https://www.instagram.com/gus_demorais/
+
+> **Chega de Saudade**
+>
+> {{< youtube amMr_v_Vywg >}}
+>
+> &nbsp;
+>
+> **One Note Samba**
+>
+> {{< youtube YNXXgXw6jr0 >}}

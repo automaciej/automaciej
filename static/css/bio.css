@@ -61,3 +61,44 @@ main.bio .published-date {
   margin-right: auto;
   max-height: 800px;
 }
+
+#TableOfContents ul {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#TableOfContents li {
+	float: left;
+	border-right: 1px solid black;
+}
+
+#TableOfContents li:last-child {
+	/*
+	border-right: none;
+	*/
+}
+
+#TableOfContents li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	padding: 8px;
+	text-decoration: none;
+	font-size: 80%;
+}
+
+#TableOfContents li a:hover {
+	background-color: #111;
+}
+
+/* This prevents the menu from scrolling too far down. */
+h1, h2, h3, h4 {
+	scroll-margin-top: 2em;
+}
