@@ -78,7 +78,7 @@ and drummer [Riccardo Marenghi][ric] in a jazz trio.
 * http://facebook.com/maciej.blizinski
 * http://linktr.ee/blizinski_music
 
-## Social media
+## Social
 
 * http://instagram.com/blizinski_music
 * http://tiktok.com/@automaciej
@@ -92,7 +92,7 @@ and drummer [Riccardo Marenghi][ric] in a jazz trio.
 
 {{< figure src="Maciej_at_jam_session.jpg" title="at the Dublin Jazz Jam Session" link="Maciej_at_jam_session.jpg" width="50%">}}
 
-## Press coverage
+## Press
 
 The Irish Times, Fri Aug 11 2017
 
