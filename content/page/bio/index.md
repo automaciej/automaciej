@@ -1,6 +1,6 @@
 ---
 title: "Maciej Bliziński – bass player"
-description: "Maciej Bliziński is an electric bass player based in Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and acid jazz."
+description: "Maciej Bliziński is a bass player based in Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and acid jazz."
 date: "2022-09-05T15:02:43+01:00"
 lastmod: "2023-05-21T09:16:45+02:00"
 image: maciej_on_bass_360px.jpg
@@ -19,8 +19,7 @@ guitars, produces music recordings, and develops own music software.
 
 Maciej grew up in a musical family in Warsaw, Poland. Maciej's earliest musical
 influences are George Duke, John Scofield, Pat Metheny, Antônio Carlos Jobim,
-and João Gilberto. Some of Maciej's bass influences are James Jamerson, Ron
-Carter, Stuart Zender, and Nathan East.
+and João Gilberto.
 
 Maciej picked up his father's electric guitar at 19. In the early 2000s, Maciej
 studied sound engineering and led a jazz and an acid jazz group. After the move
