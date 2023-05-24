@@ -129,9 +129,9 @@ The Irish Times, Fri Aug 11 2017
 
 _[Source](https://www.irishtimes.com/culture/music/dancing-on-the-ceiling-and-swinging-on-the-sofa-this-week-s-jazz-gigs-1.3179541)_
 
-**Jazz Strangers, 2016**
+**Jazz Strangers, 2017**
 
-> A new ensemble sets sail this February 2016 and you are invited to the maiden voyage.
+> A new ensemble sets sail this February 2017 and you are invited to the maiden voyage.
 >
 > * Danny Groenland - vocals, flute, guitar, percussion
 > * Marco Francescangelli - Saxophone
