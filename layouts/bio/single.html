@@ -31,20 +31,22 @@
 
       {{ .Content }}
 
+      {{ $evs := where $.Site.Data.performances "start_time" "gt" now }}
+      {{ if $evs }}
       <h2 id="upcoming-performances">Upcoming performances</h2>
-      {{ $evs := sort $.Site.Data.performances "start_time" "asc" }}
-      {{ range $evs }}
-      {{ if (gt .start_time now) -}}
-      {{ partial "event" . }}
-      {{ end -}}
+      {{ range sort $.Site.Data.performances "start_time" "asc" }}
+      {{- partial "event" . -}}
+      {{ end }}
+      {{ else }}
+      <p id="upcoming-performances">
+        No upcoming events as of {{ time.Format "Jan 2, 2006" now }}.
+      </p>
       {{ end }}
 
+      {{ $evs := where $.Site.Data.performances "start_time" "lt" now }}
       <h2 id="past-performances">Past performances</h2>
-      {{ $evs := sort $.Site.Data.performances "start_time" "desc" }}
-      {{ range $evs }}
-      {{ if (and (lt .start_time now) .significant ) -}}
-      {{ partial "event" . }}
-      {{ end -}}
+      {{ range sort $.Site.Data.performances "start_time" "desc" }}
+      {{- partial "event" . -}}
       {{ end }}
       </div>
       <hr/>
