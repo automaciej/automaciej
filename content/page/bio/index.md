@@ -2,7 +2,7 @@
 title: "Maciej Bliziński – bass player"
 description: "Maciej Bliziński is a bass player based in Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and acid jazz."
 date: "2022-09-05T15:02:43+01:00"
-lastmod: "2023-05-21T09:16:45+02:00"
+lastmod: "2023-05-25T10:30:45+02:00"
 image: maciej_on_bass_360px.jpg
 type: "bio"
 tags:
