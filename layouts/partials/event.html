@@ -3,6 +3,9 @@
 <p>
 
 <strong>🎸 {{ .name }}</strong>
+{{ with .instrument -}}
+&ndash; played {{ . }}
+{{- end }}
 {{ if .with }}
 with {{ delimit .with ", " " and " -}}
 {{ end -}}

@@ -1,5 +1,6 @@
 name = "Jazz Strangers"
 url = ""
+instrument = "5 string bass"
 with = [
 	"Josh Joshnston",
 	"Danny Groenland",

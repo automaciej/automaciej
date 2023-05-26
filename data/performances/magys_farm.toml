@@ -1,5 +1,6 @@
 name = "Jazz Piano Trio"
 url = ""
+instrument = "Fender Precision bass"
 with = [
 	"Gediminas Karkauskas",
 	"Riccardo Marenghi",

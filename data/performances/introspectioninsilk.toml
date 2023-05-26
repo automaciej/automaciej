@@ -1,5 +1,6 @@
 name = "Introspection in Silk"
 url = ""
+instrument = "double bass"
 with = [
 	"Gediminas Karkauskas",
 	"Riccardo Marenghi",
