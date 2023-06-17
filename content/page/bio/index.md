@@ -76,11 +76,11 @@ and drummer [Riccardo Marenghi][ric] in a jazz trio.
 ## Contact
 
 * http://facebook.com/maciej.blizinski
-* http://linktr.ee/blizinski_music
+* http://linktr.ee/mblizinski
 
 ## Social
 
-* http://instagram.com/blizinski_music
+* http://instagram.com/mblizinski
 * http://tiktok.com/@automaciej
 * http://soundcloud.com/maciej-blizinski
 
