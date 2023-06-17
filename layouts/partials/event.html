@@ -9,8 +9,9 @@
 {{ if .with }}
 with {{ delimit .with ", " " and " -}}
 {{ end -}}
-, on
+,
 {{ if .start_time }}
+on
 {{ time.Format "Monday, Jan 2, 2006, 3:04PM" .start_time -}}
 {{- end -}}
 {{- if .venue }}
