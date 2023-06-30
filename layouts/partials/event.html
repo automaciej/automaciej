@@ -3,8 +3,10 @@
 <p>
 
 <strong>🎵 {{ .name }}</strong>
-{{ with .instrument -}}
-&ndash; played {{ . }}
+{{ if .instrument -}}
+&ndash;
+{{ if gt .start_time now }} will play {{ else }} played {{ end }}
+{{ .instrument }}
 {{- end }}
 {{ if .with }}
 with {{ delimit .with ", " " and " -}}

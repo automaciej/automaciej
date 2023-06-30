@@ -34,10 +34,19 @@
 
       {{ .Content }}
 
-      {{ $evs := where $.Site.Data.performances "start_time" "gt" now }}
-      {{ if $evs }}
+	{{ $future_evs := slice -}}
+	{{- $past_evs := slice -}}
+	{{- range $.Site.Data.performances -}}
+	{{- if gt .start_time now }}
+	{{- $future_evs = append . $future_evs -}}
+	{{- else if .significant -}}
+	{{- $past_evs = append . $past_evs -}}
+	{{- end -}}
+	{{- end -}}
+
+      {{ if $future_evs }}
       <h2 id="upcoming-performances">Upcoming performances</h2>
-      {{ range sort $.Site.Data.performances "start_time" "asc" }}
+      {{ range sort $future_evs "start_time" "asc" }}
       {{- partial "event" . -}}
       {{ end }}
       {{ else }}
@@ -46,9 +55,8 @@
       </p>
       {{ end }}
 
-      {{ $evs := where $.Site.Data.performances "start_time" "lt" now }}
       <h2 id="past-performances">Past performances</h2>
-      {{ range sort $.Site.Data.performances "start_time" "desc" }}
+      {{ range sort $past_evs "start_time" "desc" }}
       {{- partial "event" . -}}
       {{ end }}
       </div>
