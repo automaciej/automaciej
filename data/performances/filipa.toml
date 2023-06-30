@@ -1,0 +1,18 @@
+name = "Lulu's Jazz Club presents Swing'in Nova Quartet"
+url = ""
+instrument = "double bass"
+with = [
+	"Filipa Quintino",
+	"Bruno Bernardo",
+	"Dylan Lynch",
+]
+description = """\
+A selection of old swing tunes, bossa nova classics and heartfelt originals, tastefully
+performed in an intimate setting.
+"""
+
+venue = "International Bar"
+venue_url = "https://www.facebook.com/internationaljazz/"
+start_time = 2023-07-06T20:30:00
+tickets = "https://www.eventbrite.ie/e/lulus-jazz-club-presents-swingin-nova-quartet-tickets-668890097287"
+significant = false
