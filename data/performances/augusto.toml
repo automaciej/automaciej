@@ -1,0 +1,20 @@
+name = "AB Instrumental Brazilian Jazz"
+url = ""
+instrument = "6 string electric bass"
+with = [
+	"Augusto Bezerra",
+	"Yuzuha O'Halloran",
+	"Irvinas Karkauskas",
+	"Neiton Assis",
+]
+description = """\
+Augusto Bezerra is a Brazilian guitar player, a graduate of Sta Marcelina
+College in São Paulo.  The AB Instrumental project is purely Augusto Bezerra's
+original music, a blend of jazz and Brazilian styles.
+"""
+
+venue = "International Bar"
+venue_url = "https://www.facebook.com/internationaljazz/"
+start_time = 2023-07-16T16:00:00
+tickets = "https://www.eventbrite.com/e/ab-instrumental-brazilian-jazz-tickets-671550314067"
+significant = false
