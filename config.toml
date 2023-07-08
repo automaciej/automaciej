@@ -22,6 +22,7 @@ enableGitInfo = true
   facebookUrlPath = "maciej.blizinski"
   tiktokName = "automaciej"
   instagramHandle = "automaciej"
+  mastodonLink = "https://mastodon.ie/@automaciej"
   description = "Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty."
 [taxonomies]
   tag = "tags"
