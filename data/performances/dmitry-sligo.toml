@@ -1,0 +1,15 @@
+name = "Dmitry Kosinsky Trio"
+url = ""
+instrument = "50s style precision bass"
+with = [
+	"Dmitry Kosinsky",
+	"Mark Kosinsky",
+]
+description = """\
+A trio with an excellent guitar player Dmitry Kosinsky and his son, drummer,
+Mark Kosinky.
+"""
+
+venue = "Sligo Jazz Festival"
+start_time = 2023-07-29T18:30:00
+significant = false
