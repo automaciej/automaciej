@@ -1,0 +1,15 @@
+name = "Marzena Finucane"
+url = ""
+instrument = "double bass"
+with = [
+	"Marzena Finucane",
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = ""
+
+venue = "Farmleigh House"
+venue_url = ""
+start_time = 2023-09-24T19:00:00
+tickets = ""
+significant = true

@@ -1,0 +1,17 @@
+name = "Marzena Finucane at Music in Monkstown"
+url = ""
+instrument = "double bass"
+with = [
+	"Marzena Finucane",
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = """\
+Jazz Club in Café du Journal as part of Music in Monkstown festival.
+"""
+
+venue = "Cafe du Journal"
+venue_url = "https://www.facebook.com/CafeduJournal/"
+start_time = 2023-09-08T22:00:00
+tickets = "https://www.eventbrite.ie/o/music-in-monkstown-10941078161"
+significant = true
