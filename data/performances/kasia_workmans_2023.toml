@@ -1,0 +1,32 @@
+name = "Jazz, Samba & Chorro with Kasia Eliasz 8 piece band"
+url = "https://www.facebook.com/events/1596582004204449/"
+instrument = "6 string electric bass"
+with = [
+	"Kasia Eliasz",
+	"Mayara Mitsuka",
+	"Gustavo de Morais",
+	"William Kanela",
+	"Tom Maxwell",
+	"Rafał Szydłowski",
+]
+description = """\
+Irish Women in Jazz proudly present "Samba Jazz Choro" by Kasia & 8-Piece Band –
+an exquisite fusion of rhythms and melodies that will transport you to the
+vibrant streets of Brazil and beyond.
+
+Imagine the enchanting blend of a velvety voice, the intricate dance of violin
+strings, the rhythmic pulse of cavaquinho, and the soul-stirring notes of piano
+and guitar. Feel the heartbeat of the bass resonating through your bones, while
+the two percussions infuse every beat with an irresistible energy. 🎻🎤🎹🪕🎸
+
+This meticulously crafted musical experience is not just a performance; it's a
+passage to another world. Let the harmonious convergence of these diverse
+instruments take you on a sonic adventure that transcends boundaries and
+cultures.
+"""
+
+venue = "The Vintage Room, Workman's Club"
+venue_url = "https://theworkmansclub.com/"
+start_time = 2023-08-27T19:30:00
+tickets = "https://www.eventbrite.com.au/e/jazz-samba-chorro-8-piece-band-tickets-705282277277"
+significant = true
