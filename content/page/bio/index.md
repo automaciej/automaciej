@@ -36,6 +36,8 @@ and drummer [Riccardo Marenghi][ric] in a jazz trio.
 [ged]: https://www.offpitchrecords.com/
 [ric]: https://www.instagram.com/riccardo_marenghi/
 
+_Jump to [past and future performances](#performances)._
+
 ## Music
 
 **Cover: Triste by Antonio Carlos Jobim (2022)**
