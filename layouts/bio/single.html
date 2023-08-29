@@ -45,7 +45,7 @@
 	{{- end -}}
 
       {{ if $future_evs }}
-      <h2 id="upcoming-performances">Upcoming performances</h2>
+      <h3 id="upcoming-performances">Upcoming performances</h3>
       {{ range sort $future_evs "start_time" "asc" }}
       {{- partial "event" . -}}
       {{ end }}
@@ -55,7 +55,7 @@
       </p>
       {{ end }}
 
-      <h2 id="past-performances">Past performances</h2>
+      <h3 id="past-performances">Past performances</h3>
       {{ range sort $past_evs "start_time" "desc" }}
       {{- partial "event" . -}}
       {{ end }}
