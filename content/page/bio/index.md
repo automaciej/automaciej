@@ -30,7 +30,7 @@ Contemporary Music Performance course in Dublin College University (uncredited).
 
 [jam]: https://facebook.com/dublinjazzjam
 
-As of summer 2023, Maciej collaborates with pianist [Gediminas Karkauskas][ged]
+As of autumn 2023, Maciej collaborates with pianist [Gediminas Karkauskas][ged]
 and drummer [Riccardo Marenghi][ric] in a jazz trio.
 
 [ged]: https://www.offpitchrecords.com/
