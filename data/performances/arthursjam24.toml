@@ -1,0 +1,16 @@
+name = "Arthur's Jazz Jam"
+url = ""
+instrument = "double bass"
+with = [
+	"Hayley Kavanagh",
+	"Eric Doyle",
+]
+description = """\
+A jazz jam session under the auspices of DCU.
+"""
+
+venue = "Arthur's"
+venue_url = ""
+start_time = 2024-01-17T20:00:00
+tickets = ""
+significant = true

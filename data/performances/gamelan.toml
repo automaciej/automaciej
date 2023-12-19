@@ -1,0 +1,17 @@
+name = "Soundtrack Vibes: NCH Gamelan Orchestra and Special guests The Hum"
+url = "//www.nch.ie/all-events-listing/soundtrack-vibes-nch-gamelan-orchestra-and-special-guests-the-hum/"
+instrument = "Fender Precision bass"
+with = [
+	"The NCH Gamelan Ensemble",
+	"The Hum",
+]
+description = """\
+New arrangements of classic TV soundtracks from the NCH Gamelan Orchestra and
+special guests.
+"""
+
+venue = "National Concert Hall"
+venue_url = "https://www.nch.ie/"
+start_time = 2024-01-12T19:00:00
+tickets = "https://www.nch.ie/all-events-listing/soundtrack-vibes-nch-gamelan-orchestra-and-special-guests-the-hum/"
+significant = true
