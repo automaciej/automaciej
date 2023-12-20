@@ -29,7 +29,6 @@ enableGitInfo = true
 [permalinks]
   post = "/:year/:month/:filename/"
   page = "/:filename/"
-  bio = "/:slug/"
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
   fractions = false

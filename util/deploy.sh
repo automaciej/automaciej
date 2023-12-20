@@ -28,6 +28,7 @@ function build {
     ${hugo} --cleanDestinationDir "$@"
     find public -type f -exec chmod 644 {} \;
     find public -type d -exec chmod 755 {} \;
+    ${hugo} --config=config-bio.toml "$@"
 }
 
 case "${1:-}" in
