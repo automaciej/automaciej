@@ -17,7 +17,7 @@ hugo=hugo
 readonly hugo
 
 helpmsg() {
-  echo "$0 [ deploy | draft | test ]"
+  echo "$0 [ deploy | draft | test-blog | test-bio ]"
 }
 
 function build {
@@ -44,9 +44,16 @@ case "${1:-}" in
     rsync -a --delete public/ "${PREVIEW_DEST?}"
     echo "Done."
     ;;
-  test)
+  test-blog)
     ${hugo} -w -D -F \
 	    --templateMetrics \
+	    server \
+	    --disableFastRender
+    ;;
+  test-bio)
+    ${hugo} -w -D -F \
+	    --templateMetrics \
+	    --config=config-bio.toml \
 	    server \
 	    --disableFastRender
     ;;

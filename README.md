@@ -37,5 +37,6 @@ Updating and testing
 
 * Testing and deploying
 
-        ./util/deploy.sh test
+        ./util/deploy.sh test-blog
+        ./util/deploy.sh test-bio
         ./util/deploy.sh deploy
