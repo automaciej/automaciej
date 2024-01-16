@@ -1,0 +1,25 @@
+{{ $future_evs := slice -}}
+{{- $past_evs := slice -}}
+{{- range $.Site.Data.performances -}}
+{{- if gt .start_time now }}
+{{- $future_evs = append . $future_evs -}}
+{{- else if .significant -}}
+{{- $past_evs = append . $past_evs -}}
+{{- end -}}
+{{- end -}}
+
+{{ if $future_evs }}
+<h3 id="upcoming-performances">Upcoming performances</h3>
+{{ range sort $future_evs "start_time" "asc" }}
+{{- partial "event" . -}}
+{{ end }}
+{{ else }}
+<p id="upcoming-performances">
+  No upcoming events as of {{ time.Format "Jan 2, 2006" now }}.
+</p>
+{{ end }}
+
+<h3 id="past-performances">Past performances</h3>
+{{ range sort $past_evs "start_time" "desc" }}
+{{- partial "event" . -}}
+{{ end }}

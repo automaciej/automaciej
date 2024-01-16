@@ -68,6 +68,9 @@ copyright = "&copy;2023 Maciej Bliziński"
       [[params.links.list3.link]]
         text = "Photos"
         url = "/bio/photos"
+      [[params.links.list3.link]]
+        text = "Performances"
+        url = "/bio/performances"
 
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
