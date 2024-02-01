@@ -1,0 +1,17 @@
+name = "Irish Women in Jazz: For Palestine"
+url = "https://www.eventbrite.ie/e/irish-women-in-jazz-for-palestine-tickets-807611566937"
+instrument = "double bass"
+with = [
+	"Hayley Kavanagh",
+	"Eric Doyle",
+]
+description = """\
+An intimate evening of music from 6 unique artists playing jazz and improvised
+music in Dublin.
+"""
+
+venue = "Workman's Club"
+venue_url = "https://theworkmansclub.com/"
+start_time = 2024-02-03T19:00:00
+tickets = "https://www.eventbrite.ie/e/irish-women-in-jazz-for-palestine-tickets-807611566937"
+significant = true
