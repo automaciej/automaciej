@@ -2,6 +2,28 @@
 
 <p>
 
+<small>
+	{{ if .start_time }}
+
+	{{ if and (gt .start_time now) .url }}
+		<a href="{{ .url }}">
+	{{ end }}
+		{{ time.Format "Monday, Jan 2, 2006, 3:04PM" .start_time -}}
+	{{ if and (gt .start_time now) .url }}
+		</a>
+	{{ end }}
+	{{ if and (gt .start_time now) .tickets }}
+	<a href="{{ .tickets }}">
+		[ 🎫 tickets ]
+	</a>
+	{{ end }}
+
+	{{ else }}
+	Date not known
+	{{ end }}
+</small>
+<br/>
+
 <strong>🎵 {{ .name }}</strong>
 {{ if .instrument -}}
 &ndash;
@@ -11,11 +33,6 @@
 {{ if .with }}
 with {{ delimit .with ", " " and " -}}
 {{ end -}}
-,
-{{ if .start_time }}
-on
-{{ time.Format "Monday, Jan 2, 2006, 3:04PM" .start_time -}}
-{{- end -}}
 {{- if .venue }}
 in
 {{ if .venue_url -}}
