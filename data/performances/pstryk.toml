@@ -1,0 +1,24 @@
+name = "Pstryk! A creative workshop – as part of Mother Tongues Festival"
+url = "https://www.civictheatre.ie/whats-on/pstryk-a-creative-workshop-as-part-of-mother-tongues-festival/"
+instrument = "double bass"
+with = [
+	"Kasia Eliasz",
+]
+description = """\
+In “Pstryk!”, we will explore Polish onomatopeias (pstryki, skrzypy, grzmoty i
+pluski!) inspired by Kasia’s multisensory theatre “Little Dream”, and infused
+with the magic of Polish fairytales. Designed for children aged 3-6, “Pstryk!”
+seeks to create an immersive and imaginative space where young participants can
+delve into the realms of dreams and nightmares. Through a holistic approach, the
+workshop includes Creative Movement, Creative Voice, Storytelling drawing
+inspiration from Polish folklore, and Sound Healing to introduce children to the
+magical world of sounds. “Pstryk!” encourages creativity, self-expression,
+teamwork and a sense of wonder. Led by Kasia Eliasz and joined by Maciej
+Blizinski on Double Bass.
+"""
+
+venue = "Civic Theatre, Studio Theatre"
+venue_url = "https://www.civictheatre.ie/"
+start_time = 2024-02-17T10:30:00
+tickets = "https://civictheatre.ticketsolve.com/ticketbooth/shows/873643169"
+significant = true
