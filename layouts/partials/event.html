@@ -24,7 +24,8 @@
 </small>
 <br/>
 
-<strong>🎵 {{ .name }}</strong>
+{{ if gt .start_time now }} ❇️ {{ else }} ✔️ {{ end }}
+<strong>{{ .name }}</strong>
 {{ if .instrument -}}
 &ndash;
 {{ if gt .start_time now }} will play {{ else }} played {{ end }}
