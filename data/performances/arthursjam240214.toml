@@ -1,0 +1,15 @@
+name = "Arthur's Jazz Jam"
+url = ""
+instrument = "double bass"
+with = [
+	"Finn Smyth",
+]
+description = """\
+A jazz jam session under the auspices of DCU.
+"""
+
+venue = "Arthur's Blues and Jazz Club"
+venue_url = "https://www.eventbrite.ie/o/arthurs-blues-and-jazz-club-7474750537"
+start_time = 2024-02-14T21:00:00
+tickets = ""
+significant = true
