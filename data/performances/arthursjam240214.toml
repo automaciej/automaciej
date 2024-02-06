@@ -2,7 +2,9 @@ name = "Arthur's Jazz Jam"
 url = ""
 instrument = "double bass"
 with = [
+	"Sidney Edge",
 	"Finn Smyth",
+	"Darragh Groome",
 ]
 description = """\
 A jazz jam session under the auspices of DCU.
