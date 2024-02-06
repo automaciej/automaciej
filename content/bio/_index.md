@@ -14,8 +14,8 @@ guitars, produces music recordings, and develops own music software.
 
 <!--more-->
 
-From 2022, Maciej collaborates with pianist [Gediminas Karkauskas][ged] and
-drummer [Riccardo Marenghi][ric] in a jazz trio.
+Maciej collaborates with pianist [Gediminas Karkauskas][ged] and drummer
+[Riccardo Marenghi][ric] in a jazz trio since year 2022.
 
 [ged]: https://www.offpitchrecords.com/
 [ric]: https://www.instagram.com/riccardo_marenghi/
