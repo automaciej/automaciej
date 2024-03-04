@@ -1,0 +1,17 @@
+name = "Arthur's Jazz Jam"
+url = ""
+instrument = "double bass"
+with = [
+	# "Hayley Kavanagh",
+	# "Eric Doyle",
+	# "Giovanny Stanescu",
+]
+description = """\
+Jazz jam session under the auspices of DCU jazz department.
+"""
+
+venue = "Arthur's Blues & Jazz Club"
+venue_url = ""
+start_time = 2024-04-14T20:00:00
+tickets = ""
+significant = true

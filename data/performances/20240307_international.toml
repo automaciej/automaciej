@@ -1,0 +1,18 @@
+name = "Lulu's Jazz Club: A Night of Bop"
+url = ""
+instrument = "double bass"
+with = [
+	"Hayley Kavanagh",
+	"Eric Doyle",
+	"Darragh Groome",
+]
+description = """\
+A quartet of Dublin-based jazz musicians will present a selection
+of tunes dedicated to the hard and post-bop eras.
+"""
+
+venue = "International Bar"
+venue_url = ""
+start_time = 2024-03-07T20:00:00
+tickets = "https://www.eventbrite.ie/e/lulus-jazz-club-a-night-of-bop-tickets-852504131807"
+significant = true
