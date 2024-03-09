@@ -1,0 +1,20 @@
+name = "The Green / Henderson Project"
+url = "https://www.instagram.com/p/C4QtNycM2Lw/"
+instrument = "double bass"
+with = [
+	"Hayley Kavanagh",
+	"Eric Doyle",
+	"Giovanny Stanescu",
+	"Darragh Groome",
+]
+description = """\
+The Green / Henderson Project is a quintet playing music from classic bluenote
+albums featuring both Grant Green and Joe Henderson such as Solid, Idle Moments,
+and the Kicker (not that one) 🔥.
+"""
+
+venue = "Workman's Club"
+venue_url = ""
+start_time = 2024-03-31T20:00:00
+tickets = "https://www.eventbrite.com/e/the-green-henderson-project-tickets-856374748927"
+significant = true
