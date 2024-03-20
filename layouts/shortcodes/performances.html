@@ -84,7 +84,7 @@ function eventElement(ev, isFuture) {
 		}
 		evP.appendChild(document.createTextNode(ev['instrument']));
 	}
-	if (ev['with']) {
+	if (ev['with'].length) {
 		evP.appendChild(document.createTextNode(" with "));
 		evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
 	}
