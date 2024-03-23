@@ -2,6 +2,7 @@ name = "Arthur's Jazz Jam"
 url = ""
 instrument = "double bass"
 with = [
+	"EJ Cooke",
 	"Luca Eremita McArdle",
 	"Michael McCarthy",
 ]
