@@ -3,13 +3,15 @@ url = ""
 instrument = "double bass"
 with = [
 	"Hayley Kavanagh",
-	# "Eric Doyle",
-	# "Giovanny Stanescu",
+	"Eric Doyle",
+	"Giovanny Stanescu",
+	"Darragh Groome",
 ]
 description = """\
+Open jam session, stricly jazz repertoire.
 """
 
-venue = ""
+venue = "Juno"
 venue_url = ""
 start_time = 2024-04-03T20:00:00
 tickets = ""
