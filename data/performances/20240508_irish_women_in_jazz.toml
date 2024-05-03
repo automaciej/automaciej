@@ -1,0 +1,16 @@
+name = "Irish Women in Jazz"
+url = "https://www.eventbrite.ie/e/irish-women-in-jazz-tickets-878445683687"
+instrument = "double bass"
+with = [
+	"Hayley Kavanagh",
+	"Eric Doyle",
+]
+description = """\
+3 acts play on the opening night of Culture Date with Dublin 8.
+"""
+
+venue = "Arthur's Blues and Jazz Club"
+venue_url = ""
+start_time = 2024-05-08T20:00:00
+tickets = "https://www.eventbrite.ie/e/irish-women-in-jazz-tickets-878445683687"
+significant = true
