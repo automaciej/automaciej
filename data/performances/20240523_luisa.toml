@@ -1,0 +1,18 @@
+name = "Lulu's Jazz Club presents Ella & Joe"
+url = ""
+instrument = "double bass"
+with = [
+	"Luisa Annibali",
+	"Johnny Batista",
+	"Hugh Denman",
+]
+description = """\
+A night of soulful music honoring the legendary partnership of Ella Fitzgerald
+and Joe Pass.
+"""
+
+venue = "International Bar"
+venue_url = "https://www.facebook.com/internationaljazz/"
+start_time = 2024-05-23T20:30:00
+tickets = ""
+significant = true
