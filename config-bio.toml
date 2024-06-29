@@ -12,7 +12,7 @@ contentDir = "content/bio"
 publishDir = "public/bio"
 staticDir = "static/bio"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
-copyright = "&copy;2023 Maciej Bliziński"
+copyright = "&copy;2024 Maciej Bliziński"
 [author]
   name = "Maciej Bliziński"
   email = "maciej.blizinski@gmail.com"
