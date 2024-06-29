@@ -10,6 +10,14 @@ lastmod: "2023-12-20T10:30:45+02:00"
 
 &nbsp;
 
+**Bolero de Satã – Guinga (2024)**
+
+With Gaudiê Otero on guitar and Sara Yamit on vocals.
+
+{{< youtube 4WHzSyDdsLk >}}
+
+&nbsp;
+
 **André de sapato novo – Regional Massapê (2023)**
 
 {{< instagram-reel Cy0YKUdqZB6 "Andre de sapato novo – Regional Massapê" >}}
