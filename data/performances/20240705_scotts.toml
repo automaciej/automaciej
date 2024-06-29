@@ -1,0 +1,25 @@
+name = "Gediminas Karkauskas Trio"
+url = ""
+instrument = "double bass"
+with = [
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = """\
+Gediminas Karkauskas, originally from Lithuania, is a jazz pianist and composer
+now based in Dublin.
+
+Known for his dynamic and soulful performances sensitive and introspective
+style, Gediminas released his acclaimed CD “Lost Suite” in 2022. For this
+inaugural outing at Scott’s Jazz Club, he’ll be joined by Riccardo Marenghi
+critically acclaimed drummer, who has perfected his craft over two decades to
+the rhythmic origins of jazz and Maciej Blizinski double bass and electric
+guitar player very active in the Dublin and Irish scene. As they will lead
+audiences on a deeply connective musical journey through jazz favourites.
+"""
+
+venue = "Scott's Jazz Club"
+venue_url = "https://www.scottsjazzclub.com/"
+start_time = 2024-06-15T20:30:00
+tickets = "https://www.citizenticket.com/events/scott-s-jazz-club/gediminas-karkauskas-trio/"
+significant = true
