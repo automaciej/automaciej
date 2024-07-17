@@ -1,0 +1,20 @@
+name = "Lucas Andrade, O Brasil de dentro"
+url = "https://www.instagram.com/lucasandrade.cl/"
+instrument = "double bass"
+with = [
+	"Lucas Andrade",
+	"Leopoldo Osio",
+	"Mayara Mitsuka",
+	"Júlio Batista",
+	"William Ribeiro",
+]
+description = """\
+Lucas Andrade Sextet performs a wide repertoire of original compositions,
+Choro songs and Brazilian jazz music.
+"""
+
+venue = "Arthur's Blues and Jazz Club"
+venue_url = ""
+start_time = 2024-08-01T20:30:00
+tickets = "https://www.eventbrite.ie/e/lucas-andrade-o-brasil-de-dentro-tickets-948027926047"
+significant = true
