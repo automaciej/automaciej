@@ -1,6 +1,9 @@
+# vim: set ts=2 sts=2 sw=2 expandtab:
 # Idea of separation based on this forum entry:
 # https://discourse.gohugo.io/t/two-themes-as-separate-hugo-directories-deployed-to-the-same-website/27899/4
-# vim: set ts=2 sts=2 sw=2 expandtab:
+# Thumbnails:
+# for f in *.png; do convert -size 440x880 "$f" -resize 440x880 +profile '*' \
+# $(basename $f .png)-thumb.png; done
 defaultContentLanguage = "en"
 languageCode = "en"
 title = "Maciej Bliziński"
