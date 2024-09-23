@@ -1,6 +1,7 @@
 {{ define "main" }}
 <main class="container">
-  <h1>tag: {{ .Title }}</h1>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
   <ul style="list-style: none; padding-left: 0;">
     {{ range .Pages }}
     <li style="list-style: none;">
