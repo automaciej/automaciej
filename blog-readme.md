@@ -21,7 +21,7 @@ For building locally:
 Dependencies
 ------------
 
-Skeleton for CSS styles: http://getskeleton.com/
+Pico for CSS styles: https://picocss.com/docs
 
 Updating and testing
 --------------------
