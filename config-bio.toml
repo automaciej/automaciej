@@ -11,11 +11,13 @@ enableGitInfo = true
 contentDir = "content/bio"
 publishDir = "public/bio"
 staticDir = "static/bio"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
+disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
 copyright = "&copy;2024 Maciej Bliziński"
 [author]
-  name = "Maciej Bliziński"
-  email = "maciej.blizinski@gmail.com"
+  [author.maciej]
+    name = "Maciej Bliziński"
+    email = "maciej.blizinski@gmail.com"
+
 [params]
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"
