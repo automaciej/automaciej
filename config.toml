@@ -11,8 +11,10 @@ theme = "theme007"
 rssLimit = 20
 enableGitInfo = true
 [author]
-  name = "Maciej Bliziński"
-  email = "maciej.blizinski@gmail.com"
+  [author.maciej]
+    name = "Maciej Bliziński"
+    email = "maciej.blizinski@gmail.com"
+
 [params]
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"
