@@ -21,7 +21,7 @@ tam, że w danym miejscu i danym czasie wydarza się tylko jedna rzecz (tzn. tyl
 jedna wersja wydarzeń). Na to babcia powiedziała, że przecież różni ludzie mogą
 mieć różne odczucia i interpretacje, i wszystkie będą prawdziwe.
 
-[przypadek]: {{< relref "post/dziwny-przypadek-psa-nocna-pora/index.md" >}}
+[przypadek]: {{< relref "jogger/dziwny-przypadek-psa-nocna-pora/index.md" >}}
 
 Kiedy ktoś zaczyna używać pojęć „prawda” oraz „odczucie” czy „interpretacja” w
 jednym zdaniu, wtedy zaczynam się niepokoić, czy w ogóle będzie można
@@ -48,7 +48,7 @@ faktach, Bunting wyskakuje nagle z „prawdą emocjonalną”.
 Tak bezsensownego zestawienia słów nie widziałem od czasów [„energii używanych
 przez uzdrowicieli”][dowod].
 
-[dowod]: {{< relref "post/dowod-na-to-rowniez-istnieje.md" >}}
+[dowod]: {{< relref "jogger/dowod-na-to-rowniez-istnieje.md" >}}
 
 Dlaczego jest ta zbitka słów nie ma sensu? Pojęcie _prawdy_ ma sens tylko wtedy,
 kiedy rozważamy je w komplecie z pojęciem _fałszu_, czyli _nieprawdy_.  Mówiąc,
