@@ -37,6 +37,7 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
   mastodonLink = "https://mastodon.ie/@automaciej"
   description = "Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty."
   shareImage = "bio/images/maciej_on_bass_hi.jpg"
+  favicon = "images/favicon.png"
   licensed = 1
 
   [params.visual]
