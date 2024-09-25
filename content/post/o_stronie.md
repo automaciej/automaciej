@@ -36,13 +36,12 @@ Inne strony Automaciejowe:
 - [Wordpress][wp] ‒ blog po angielsku
 - [github](https://github.com/automaciej) ‒ repozytoria kodu
 - [soundcloud][soundcloud] ‒ nagrania
-- [Medium](https://medium.com/@automatthias) ‒ Jeden artykuł
+- [Medium](https://medium.com/@automaciej) ‒ Jeden artykuł
 - [Pocket][pocket] ‒ Przeczytane interesujące artykuły
 - [Goodreads][goodreads] ‒ Książki przeczytane oraz aktualnie czytane
 
-[pltw]: https://twitter.com/automaciej
-[entw]: https://twitter.com/automatthias
-[plus]: https://plus.google.com/+MaciejBlizi%C5%84ski
+[pltw]: https://twitter.com/automaciejpl
+[entw]: https://twitter.com/automaciej
 [wp]: https://automatthias.wordpress.com/
 [planeta]: https://zakr.es/planetjogger/
 [soundcloud]: https://soundcloud.com/maciej-blizinski/tracks
