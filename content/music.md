@@ -1,7 +1,7 @@
 ---
 title: "Music production"
 date: "2022-09-05T15:02:43+01:00"
-lastmod: "2023-12-20T10:30:45+02:00"
+lastmod: "2024-09-24T10:30:45+02:00"
 ---
 
 **Chris Comhaill and John Mahon (2024)**

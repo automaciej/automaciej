@@ -70,6 +70,6 @@
       </image>
       {{ end }}
     </item>
-    {{ end }}
+    {{- end }}
   </channel>
 </rss>
