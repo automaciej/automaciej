@@ -1,6 +1,6 @@
 ---
 title: "Maciej Bliziński"
-tagline: "Play. Record. Mix."
+tagline: "Support. Record. Mix."
 description: "Maciej Bliziński is a bass player based in Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and acid jazz."
 date: "2024-09-24T20:30:00+09:00"
 lastmod: "2024-09-24T20:30:00+09:00"
