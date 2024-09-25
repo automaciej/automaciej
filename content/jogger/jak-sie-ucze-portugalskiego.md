@@ -5,8 +5,8 @@ tags:
 title: Jak się uczę portugalskiego
 ---
 
-Niepostrzeżenie [minęło 6 lat]({{< relref "/post/taksowka-do-obidos.md" >}} "Historia z taskówkarką")
-od kiedy [zacząłem]({{< relref "/post/portugalski-lekcja-1.md" >}} "Pierwszy wpis o portugalskim") się uczyć portugalskiego. Zawsze traktowałem i nadal traktuję
+Niepostrzeżenie [minęło 6 lat]({{< relref "/jogger/taksowka-do-obidos.md" >}} "Historia z taskówkarką")
+od kiedy [zacząłem]({{< relref "/jogger/portugalski-lekcja-1.md" >}} "Pierwszy wpis o portugalskim") się uczyć portugalskiego. Zawsze traktowałem i nadal traktuję
 tę naukę lekko. Jest to pokierowane prostą zasadą: kiedy coś jest proste, robi
 się to częściej. Im trudniejsze, tym rzadziej. Oto, jakie rzeczy robiłem, i co
 z nich wynikło:
@@ -176,7 +176,7 @@ _Zalety:_ Można opanować dużą liczbę słów w relatywnie krótkim czasie.
 _Wady:_ W rozmowie przypominam sobie te słowa opóźnieniem wystarczającym żeby
 przerwać płynność wypowiedzi.
 
-[Więcej o nauce z fiszek &raquo;]({{< relref "/post/fiszki-do-nauki-slowek/index.md" >}} "Automaciej: Fiszki do nauki słówek")
+[Więcej o nauce z fiszek &raquo;]({{< relref "/jogger/fiszki-do-nauki-slowek/index.md" >}} "Automaciej: Fiszki do nauki słówek")
 
 ## Czat online (dodane 2018-05-03)
 
@@ -277,4 +277,4 @@ odniesieniami i jest tego generalnie za dużo żeby się przez wszystko przekopa
 Trzeba też dobrze poszukać żeby znaleźć program który nas będzie interesował,
 takich może nie być wiele.
 
-[_Zobacz też: komentarze do tego wpisu_]({{< relref "/post/jak-sie-ucze-portugalskiego-komentarze.md" >}})
+[_Zobacz też: komentarze do tego wpisu_]({{< relref "/jogger/jak-sie-ucze-portugalskiego-komentarze.md" >}})

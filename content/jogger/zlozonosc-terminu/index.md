@@ -78,7 +78,7 @@ komentarzach, również po angielsku („hay-foot, straw-foot”). Był nawet fi
 amerykański o tym tytule, z 1919 roku._
 
 Podobny problem możemy napotkać próbując zrozumieć napis [„stój za żółtą
-linią”]({{< relref "/post/za-zolta-linia/index.md" >}}) który znajduje
+linią”]({{< relref "/jogger/za-zolta-linia/index.md" >}}) który znajduje
 się na peronach linii DART w Dublinie.
 
 Nowe pojęcia wyjaśniamy poprzez łącznie wcześniej poznanych pojęć. Pojęcia
