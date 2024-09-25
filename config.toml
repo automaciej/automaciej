@@ -4,17 +4,26 @@
 # Thumbnails:
 # for f in *.png; do convert -size 440x880 "$f" -resize 440x880 +profile '*' \
 # $(basename $f .png)-thumb.png; done
-defaultContentLanguage = "pl"
-languageCode = "pl"
-title = "automaciej"
+
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Maciej Bliziński"
 baseurl = "https://blizin.ski"
-theme = "theme007"
+theme = "hugo-split-theme"
 rssLimit = 20
 enableGitInfo = true
+copyright = "&copy;2003-2024 Maciej Bliziński"
 [author]
   [author.maciej]
     name = "Maciej Bliziński"
     email = "maciej.blizinski@gmail.com"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  jogger = "/jogger/:year/:filename/"
+  page = "/:filename/"
 
 [params]
   authorName = "Maciej Bliziński"
@@ -27,11 +36,57 @@ enableGitInfo = true
   instagramHandle = "mblizinski"
   mastodonLink = "https://mastodon.ie/@automaciej"
   description = "Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty."
-[taxonomies]
-  tag = "tags"
-[permalinks]
-  post = "/:year/:month/:filename/"
-  page = "/:filename/"
+  shareImage = "bio/images/maciej_on_bass_hi.jpg"
+  licensed = 1
+
+  [params.visual]
+    [params.visual.image]
+      enable = true
+      file = "bio/images/background.jpg"
+
+  [[params.links]]
+    [params.links.list1]
+      heading = "About"
+      [[params.links.list1.link]]
+        text = "Music"
+        url = "/music"
+      [[params.links.list1.link]]
+        text = "Bass"
+        url = "/bass"
+      [[params.links.list1.link]]
+        text = "Performances"
+        url = "/performances"
+
+    [params.links.list2]
+      heading = "Social"
+      [[params.links.list2.link]]
+        text = "Instagram"
+        url = "http://instagram.com/mblizinski"
+      [[params.links.list2.link]]
+        text = "Facebook"
+        url = "http://facebook.com/maciej.blizinski"
+      [[params.links.list2.link]]
+        text = "TikTok"
+        url = "http://tiktok.com/@automaciej"
+      [[params.links.list2.link]]
+        text = "SoundCloud"
+        url = "http://soundcloud.com/maciej-blizinski"
+
+    [params.links.list3]
+      heading = "Resources"
+      [[params.links.list3.link]]
+        text = "linktr.ee"
+        url = "http://linktr.ee/mblizinski"
+      [[params.links.list3.link]]
+        text = "Bio"
+        url = "/bio"
+      [[params.links.list3.link]]
+        text = "Press"
+        url = "/press"
+      [[params.links.list3.link]]
+        text = "Photos"
+        url = "/photos"
+
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
   fractions = false

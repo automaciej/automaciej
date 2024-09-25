@@ -17,7 +17,7 @@ hugo=hugo
 readonly hugo
 
 helpmsg() {
-  echo "$0 [ deploy | draft | test-blog | test-bio ]"
+  echo "$0 [ deploy | draft | test ]"
 }
 
 function build {
@@ -26,9 +26,6 @@ function build {
     find static -type d -exec chmod 755 {} \;
     echo "Cleaning the destination directory…"
     ${hugo} --cleanDestinationDir "$@"
-    find public -type f -exec chmod 644 {} \;
-    find public -type d -exec chmod 755 {} \;
-    ${hugo} --config=config-bio.toml "$@"
 }
 
 case "${1:-}" in
@@ -44,18 +41,10 @@ case "${1:-}" in
     rsync -a --delete public/ "${PREVIEW_DEST?}"
     echo "Done."
     ;;
-  test-blog)
+  test)
     ${hugo} -w -D -F \
 	    --templateMetrics \
-	    server \
-	    --disableFastRender
-    ;;
-  test-bio)
-    ${hugo} -w -D -F \
-	    --templateMetrics \
-	    --config=config-bio.toml \
-	    server \
-	    --disableFastRender
+	    server
     ;;
   *)
     helpmsg >&2
