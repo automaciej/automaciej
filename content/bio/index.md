@@ -4,6 +4,7 @@ date: "2022-09-05T15:02:43+01:00"
 lastmod: "2023-12-20T10:30:45+02:00"
 tagline: "Maciej..."
 ---
+
 ...grew up in a musical family in Warsaw, Poland. Maciej's earliest musical
 influences are George Duke, John Scofield, Pat Metheny, Antônio Carlos Jobim,
 and João Gilberto.
