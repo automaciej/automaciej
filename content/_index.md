@@ -10,10 +10,6 @@ image: maciej_on_bass_360px.jpg
 **Maciej Bliziński** is a [music producer](/music) and a [bass player](bass)
 based in Dublin, Ireland.
 
-<!--
-**[Music Production ›](/music)**
--->
-
 <!--more-->
 
 <!--
