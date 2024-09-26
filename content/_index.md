@@ -7,15 +7,16 @@ lastmod: "2024-09-24T20:30:00+09:00"
 image: maciej_on_bass_360px.jpg
 ---
 
-**Maciej Bliziński** is a [music producer](/music) and a [bass player](bass)
-based in Dublin, Ireland.
+**Maciej Bliziński** is a Dublin-based [music producer](/music) and [bass
+player](bass). In recording, mixing, or playing bass, Maciej aims to create
+authentic, organic sound.
 
 <!--more-->
 
 <!--
 Maciej regularly collaborates with pianist [Gediminas Karkauskas][ged] and
 drummer [Riccardo Marenghi][ric] in a jazz trio since 2022.
--->
 
 [ged]: https://www.offpitchrecords.com/
 [ric]: https://www.instagram.com/riccardo_marenghi/
+-->
