@@ -7,9 +7,13 @@ lastmod: "2024-09-24T20:30:00+09:00"
 image: maciej_on_bass_360px.jpg
 ---
 
-**Maciej Bliziński** is a Dublin-based [music producer](/music) and [bass
-player](bass). In recording, mixing, or playing bass, Maciej aims to create
-authentic, organic sound.
+**Maciej Bliziński** is a Dublin-based [music producer][mus] and [bass
+player][bass]. In recording, mixing, or playing bass, Maciej aims to create
+[authentic, organic sound][appr].
+
+[mus]: {{< relref "production-showcase.md" >}}
+[bass]: {{< relref "bass.md" >}}
+[appr]: {{< relref "approach.md" >}}
 
 <!--more-->
 
