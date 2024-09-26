@@ -29,7 +29,7 @@ function build {
     ${hugo} --cleanDestinationDir "$@"
 }
 
-RSYNC=( rsync -a --delete --progress --update )
+RSYNC=( rsync -a --delete --update )
 
 case "${1:-}" in
   deploy)
