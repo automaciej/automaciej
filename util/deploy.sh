@@ -3,11 +3,12 @@
 set -e
 set -u
 
-DEST=atemoia:www/blizin.ski
+DEST=atemoia.blizinski.pl:www/blizin.ski
+readonly PRIV_CFG=private_cfg.sh
 
-if [[ -r "private.cfg.sh" ]]; then
+if [[ -r "${PRIV_CFG}" ]]; then
 	# To set PREVIEW_DEST and PREVIEW_URL
-	source private.cfg.sh
+	source "${PRIV_CFG}"
 fi
 
 PATH=$PATH:/home/maciej/src/go/bin
@@ -28,17 +29,19 @@ function build {
     ${hugo} --cleanDestinationDir "$@"
 }
 
+RSYNC=( rsync -a --delete --progress --update )
+
 case "${1:-}" in
   deploy)
     build
     echo "Running rsync…"
-    rsync -a --delete public/ "${DEST}"
+    "${RSYNC[@]}" public/ "${DEST}"
     echo "Done."
     ;;
   preview)
     build -D --baseURL "${PREVIEW_URL?}"
     echo "Running rsync…"
-    rsync -a --delete public/ "${PREVIEW_DEST?}"
+    "${RSYNC[@]}" public/ "${PREVIEW_DEST?}"
     echo "Done."
     ;;
   test)
