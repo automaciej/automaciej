@@ -35,7 +35,7 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
   tiktokName = "automaciej"
   instagramHandle = "mblizinski"
   mastodonLink = "https://mastodon.ie/@automaciej"
-  description = "Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty."
+  description = "Music production. Acoustic bass. Natural sound. Bringing ideas to life."
   shareImage = "bio/images/maciej_on_bass_hi.jpg"
   favicon = "images/favicon.png"
   licensed = 1
@@ -50,13 +50,13 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
       heading = "About"
       [[params.links.list1.link]]
         text = "Music"
-        url = "/music"
+        url = "music/"
       [[params.links.list1.link]]
         text = "Bass"
-        url = "/bass"
+        url = "bass/"
       [[params.links.list1.link]]
         text = "Performances"
-        url = "/performances"
+        url = "performances"
 
     [params.links.list2]
       heading = "Social"
@@ -80,13 +80,13 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
         url = "http://linktr.ee/mblizinski"
       [[params.links.list3.link]]
         text = "Bio"
-        url = "/bio"
+        url = "bio/"
       [[params.links.list3.link]]
         text = "Press"
-        url = "/press"
+        url = "press/"
       [[params.links.list3.link]]
         text = "Photos"
-        url = "/photos"
+        url = "photos/"
 
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
