@@ -33,7 +33,7 @@ Updating and testing
 
 * Creating a new page or post:
 
-        hugo new post/<name>/index.md
+        hugo new content post/<name>/index.md
 
 * Testing and deploying
 
