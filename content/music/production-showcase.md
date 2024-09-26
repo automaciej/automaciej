@@ -2,6 +2,7 @@
 title: "Music production showcase"
 description: "Selection of Maciej's past music production projects"
 date: "2024-09-25T17:57:00-07:00"
+lastmod: "2024-09-25T20:30:45+02:00"
 
 ---
 
