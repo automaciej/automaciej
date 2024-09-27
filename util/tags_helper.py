@@ -11,14 +11,7 @@ import toml
 import pprint
 import yaml
 
-def GetTomlFromFile(content: str) -> Mapping[str, Any]:
-    parts = re.split('^\+\+\+\n', content, flags=re.M)
-    if len(parts) >= 3:
-        return toml.loads(parts[1])
-    parts = re.split('^---\n', content, flags=re.M)
-    if len(parts) >= 3:
-        return yaml.safe_load(parts[1])
-    raise ValueError("content doesn't seem supported")
+import hugolib
 
 def GetData(directory: str) -> Mapping[str, Any]:
     articles: Dict[str, Any] = {}
@@ -34,7 +27,7 @@ def GetData(directory: str) -> Mapping[str, Any]:
                 with open(p, 'r') as fd:
                     content = fd.read()
                 try:
-                    front_matter = GetTomlFromFile(content)
+                    front_matter = hugolib.GetTomlFromContent(content)
                 except ValueError as e:
                     logging.info("%s reading failed: %s", p, e)
                 articles[p] = {
@@ -60,7 +53,6 @@ def Analyze(articles) -> Mapping[str, Any]:
 
 
 def main():
-    # print(GetTomlFromFile('content/page/about.md'))
     parser = argparse.ArgumentParser(
        description='Display stats of a hugo content directory')
     parser.add_argument('directory', help='Directory with *.md files')
