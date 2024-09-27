@@ -2,6 +2,8 @@
 title: "Photos"
 date: "2022-09-05T15:02:43+01:00"
 lastmod: "2023-12-20T10:30:45+02:00"
+aliases: [ "/bio/photos" ]
+
 ---
 
 {{< figure src="/bio/images/Maciej_playing_bass_2.jpg" title="at a recording session" link="/bio/images/Maciej_playing_bass_2.jpg" width="50%" >}}

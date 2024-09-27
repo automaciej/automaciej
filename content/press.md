@@ -2,6 +2,8 @@
 title: "Press"
 date: "2022-09-05T15:02:43+01:00"
 lastmod: "2023-12-20T10:30:45+02:00"
+aliases: [ "/bio/press" ]
+
 ---
 
 
