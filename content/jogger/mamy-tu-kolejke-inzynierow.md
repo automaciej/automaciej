@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-04-13T18:41:11"
 draft = false
 title = "Mamy tu kolejkę inżynierów"
-tags = [ "raptularz", ]
+tags = [ "raptularz",]
+aliases = [ "/2007/04/mamy-tu-kolejke-inzynierow/",]
+
 +++
 Pracownik agencji pośrednictwa pracy:
 

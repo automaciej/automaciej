@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2009-02-03T10:10:23"
 draft = false
 title = "The Amaz!ng Meeting w Londynie"
+aliases = [ "/2009/02/the-amaz-ng-meeting-w-londynie/",]
+
 +++
 
 JREF, czyli James Randi Educational Foundation

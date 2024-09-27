@@ -1,13 +1,15 @@
 ---
 aliases:
 - /2006/04/11/kultura-dyskusji/
-date: "2015-02-21T13:51:30Z"
+- /ultura-dyskusji/
+date: '2015-02-21T13:51:30Z'
 description: Zasady kultury dyskusji, które wyniosłem z liceum
 menu:
 - main
 tags:
 - dywagacje
 title: Kultura dyskusji
+
 ---
 
 Liceum, zażarte dyskusje, klasa podzielona na obozy, chwyty poniżej pasa.

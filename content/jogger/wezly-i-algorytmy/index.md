@@ -1,10 +1,12 @@
 ---
-title: "Węzły i algorytmy"
-description: "Węzły żeglarskie mają coś wspólnego z algorytmami w informatyce."
-date: "2018-09-07T08:18:50-03:00"
+aliases:
+- /2018/09/wezly-i-algorytmy/
+date: '2018-09-07T08:18:50-03:00'
+description: Węzły żeglarskie mają coś wspólnego z algorytmami w informatyce.
 draft: false
 tags:
- - "informatyka"
+- informatyka
+title: Węzły i algorytmy
 
 ---
 Algorytm w informatyce posiada swoją podstawową strukturę, z której wprost

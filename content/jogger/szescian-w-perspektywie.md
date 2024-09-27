@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-12-02T11:08:01"
 draft = false
 title = "Sześcian w perspektywie"
+aliases = [ "/2007/12/szescian-w-perspektywie/",]
+
 +++
 Nie wiem, czy pamiętam jeszcze cokolwiek z tego, czego uczyli mnie na
 [architekturze](http://www.arch.pw.edu.pl/). Nawet jeżeli, to prawdopodobnie

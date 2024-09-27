@@ -1,11 +1,13 @@
 ---
 aliases:
 - /2008/01/08/steven-weinberg-o-prawdzie-i-falszu/
-date: 2008-01-08T10:45:42
+- /2008/01/steven-weinberg-o-prawdzie-i-falszu/
+date: 2008-01-08 10:45:42
 tags:
 - sceptycyzm
 - ateizm
 title: Steven Weinberg o prawdzie i fałszu
+
 ---
 
 Rozmowy na temat istnienia Boga lub bogów często przebiegają według pewnych

@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2012-09-02T23:47:32"
 draft = false
 title = "Zrobiłem wideo pod Linuksem"
-tags = [ "informatyka", "muzyka", ]
+tags = [ "informatyka", "muzyka",]
+aliases = [ "/2012/09/zrobilem-wideo-pod-linuksem/",]
+
 +++
 
 Właściwie wszystko od początku do końca. Na występnie nagrałem obraz na

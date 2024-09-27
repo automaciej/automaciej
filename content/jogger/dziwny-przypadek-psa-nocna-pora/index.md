@@ -1,11 +1,13 @@
 ---
-title: "Dziwny przypadek psa nocną porą"
-description: ""
-date: "2008-01-28T11:01:09+01:00"
+aliases:
+- /2008/01/dziwny-przypadek-psa-nocna-pora/
+date: '2008-01-28T11:01:09+01:00'
+description: ''
 draft: false
 tags:
- - "filozofia"
- - "racjonalizm"
+- filozofia
+- racjonalizm
+title: Dziwny przypadek psa nocną porą
 
 ---
 

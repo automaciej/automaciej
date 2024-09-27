@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-05-30T20:31:13"
 draft = false
 title = "Horyzont zdarzeń"
+aliases = [ "/2007/05/horyzont-zdarzen/",]
+
 +++
 
 Steve Yegge, [Google z punktu widzenia

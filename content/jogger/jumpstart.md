@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-05-19T20:12:55"
 draft = false
 title = "JumpStart"
+aliases = [ "/2008/05/jumpstart/",]
+
 +++
 
 _Nie, to nie jest odkurzacz. Odkurzacz ma rurę. Tak, dźwięk wydaje podobny._

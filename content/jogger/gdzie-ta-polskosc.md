@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-08-16T22:12:25"
 draft = false
 title = "Gdzie ta polskość?"
+aliases = [ "/2007/08/gdzie-ta-polskosc/",]
+
 +++
 Kiedy przyjechałem do Dublina, jedną z pierwszych moich myśli było pytanie:
 „Czy ja w ogóle wyjechałem z Polski?” W barze Polacy, na ulicy Polacy, w

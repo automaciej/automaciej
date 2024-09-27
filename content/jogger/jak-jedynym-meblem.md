@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2015-10-26T09:18:18"
 draft = false
 title = "Jak jedynym meblem"
+aliases = [ "/2015/10/jak-jedynym-meblem/",]
+
 +++
 
 Jak jedynym meblem w pokoju jest biurko, siadam przy nim.

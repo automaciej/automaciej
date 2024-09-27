@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2011-06-04T09:44:39"
 draft = false
 title = "Światowa Konferencja Ateistów 2011, dzień 1"
+aliases = [ "/2011/06/swiatowa-konferencja-ateistow-2011-dzien-1/",]
+
 +++
 Mój żywot człowieka pracującego jest ostatnio przeplatany przerywnikami,
 takimi jak na przykład [World Atheist Convention

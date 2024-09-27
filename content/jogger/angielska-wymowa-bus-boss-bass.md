@@ -1,11 +1,13 @@
 ---
 aliases:
 - 2011/07/16/angielska-wymowa-bus-boss-bass/
-date: 2011-07-16T12:09:50
+- /2011/07/angielska-wymowa-bus-boss-bass/
+date: 2011-07-16 12:09:50
+description: Żadna polska samogłoska tutaj nie pasuje.
 tags:
 - języki
 title: 'Angielska wymowa: bus, boss, bass'
-description: 'Żadna polska samogłoska tutaj nie pasuje.'
+
 ---
 
 Moim ulubionym przykładem na typowe polskie problemy z wymową angielskiego, jest

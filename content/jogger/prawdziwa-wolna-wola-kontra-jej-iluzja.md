@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2009-06-17T11:02:05"
 draft = false
 title = "Prawdziwa wolna wola kontra jej iluzja"
+aliases = [ "/2009/06/prawdziwa-wolna-wola-kontra-jej-iluzja/",]
+
 +++
 
 Zróbmy następujący eksperyment myślowy.

@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-05-17T00:33:10"
 draft = false
 title = "Któraż to godzina w Silicon Valley?"
+aliases = [ "/2007/05/ktoraz-to-godzina-w-silicon-valley/",]
+
 +++
 
 Jak sprawdzić godzinę, wie każde dziecko. Wystarczy wpisać w terminalu...

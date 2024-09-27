@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-02-25T10:26:45"
 draft = false
 title = "Prawda emocjonalna?!"
+aliases = [ "/2008/02/prawda-emocjonalna/",]
+
 +++
 
 _Ten wpis **nie** jest o emocjach, emocje są w porządku. Ten post jest

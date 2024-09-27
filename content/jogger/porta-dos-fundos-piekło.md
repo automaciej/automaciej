@@ -1,11 +1,14 @@
 ---
-date: "2017-07-25T07:40:06+01:00"
+aliases:
+- /2017/07/porta-dos-fundos-piek%C5%82o/
+date: '2017-07-25T07:40:06+01:00'
 description: Mało co potrafi człowieka tak przerazić jak piekielne potępienie.
 image: /images/2017/porta-dos-fundos-inferno.jpg
 tags:
 - raptularz
 - że jak?
 title: 'Porta dos Fundos: PIEKŁO'
+
 ---
 
 Mało co potrafi człowieka tak przerazić jak piekielne potępienie.

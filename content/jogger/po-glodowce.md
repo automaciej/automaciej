@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-05-14T20:55:08"
 draft = false
 title = "Po głodówce"
+aliases = [ "/2004/05/po-glodowce/",]
+
 +++
 Podobno jestem trochę chudszy na twarzy, ale czuję się normalnie. Tylko
 jeszcze nie jem tyle co normalnie, bo żołądek nieprzyzwyczajony. No i staram

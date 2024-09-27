@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2005-10-31T18:58:55"
 draft = false
 title = "Halloween. Cukierek albo psikus."
+aliases = [ "/2005/10/halloween-cukierek-albo-psikus/",]
+
 +++
 
 Dzwonek. Dziwne, bo nikogo nie zapraszałem. Podnoszę słuchawkę domofonu,

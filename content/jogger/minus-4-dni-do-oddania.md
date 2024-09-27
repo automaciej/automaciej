@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-10-05T03:13:18"
 draft = false
 title = "minus 4 dni do oddania"
+aliases = [ "/2006/10/minus-4-dni-do-oddania/",]
+
 +++
 Przeczytałem całość z papieru. Zrobiłem jeszcze trochę poprawek, wprowadziłem
 wszystko do komputera i wrzuciłem zmiany do repozytorium.

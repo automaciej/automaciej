@@ -1,11 +1,13 @@
 ---
 aliases:
 - /2009/01/05/kto-wygral-dyskusje/
-date: 2009-01-05T16:04:45
+- /2009/01/kto-wygral-dyskusje/
+date: 2009-01-05 16:04:45
 draft: false
 tags:
 - sceptycyzm
 title: Kto wygrał dyskusję?
+
 ---
 
 _automaciej:_ ...albo właściwie odwrotnie: przeciwstawiał mądrość

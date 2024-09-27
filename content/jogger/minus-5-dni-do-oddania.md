@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-10-06T00:37:30"
 draft = false
 title = "minus 5 dni do oddania"
+aliases = [ "/2006/10/minus-5-dni-do-oddania/",]
+
 +++
 
 **Złożyłem pracę!**

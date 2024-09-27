@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2005-01-18T17:34:29"
 draft = false
 title = "Problemy z egzaminami"
+aliases = [ "/2005/01/problemy-z-egzaminami/",]
+
 +++
 Kłopot polega na tym, że wyjeżdżam 2 lutego, czyli omija mnie cała sesja
 zimowa. Oczywiście nikt mnie nie zwolni z egzaminów, w związku z czym będę

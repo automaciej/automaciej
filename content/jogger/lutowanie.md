@@ -1,8 +1,11 @@
 ---
-date: 2006-09-12T11:42:09
+aliases:
+- /2006/09/lutowanie/
+date: 2006-09-12 11:42:09
 tags:
 - opowieści
 title: Lutowanie
+
 ---
 
 Od małego lubiłem się bawić kabelkami, a żeby zrobić coś z kabelków,

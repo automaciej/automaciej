@@ -1,9 +1,12 @@
 ---
-date: 2009-01-18T14:25:14
+aliases:
+- /2009/01/uczciwosc-dyskusji/
+date: 2009-01-18 14:25:14
 draft: false
 tags:
 - dywagacje
 title: Uczciwość dyskusji
+
 ---
 
 Pod moim [niedawnym wpisem](/2009/01/kto-wygral-dyskusje/)

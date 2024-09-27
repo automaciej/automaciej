@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-22T14:11:35"
 draft = false
 title = "Sprzedaję, zwijam, wymawiam, likwiduję"
+aliases = [ "/2006/12/sprzedaje-zwijam-wymawiam-likwiduje/",]
+
 +++
 Sprzedaję swoje graty, zwijam kable, wymawiam umowy i likwiduję mieszkanie.
 Trochę dziwnie się z tym czuję. Na przykład ― jak to, to już nie będę słuchał

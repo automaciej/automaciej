@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-09-29T20:56:04"
 draft = false
 title = "1 dzień do oddania"
+aliases = [ "/2006/09/1-dzien-do-oddania/",]
+
 +++
 
 Kosmetyka nie zajmuje wcale tak mało czasu jak by się zdawało. Jeszcze nie

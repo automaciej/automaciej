@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-26T11:07:29"
 draft = false
 title = "Zasady ruchu drogowego w Warszawie"
+aliases = [ "/2006/04/zasady-ruchu-drogowego-w-warszawie/",]
+
 +++
 
   1. Wszystko co zrobisz naciskając klakson, jest zgodne z przepisami.

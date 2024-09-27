@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-02-12T20:44:08"
 draft = false
 title = "Idzie powoli, jak żółw ociężale"
+aliases = [ "/2004/02/idzie-powoli-jak-zolw-ociezale/",]
+
 +++
 Jakoś strasznie powoli idzie mi ten projekt[^1]. Chyba dlatego że to wszystko to dla
 mnie terra incognita, a dodatek nie wiem jeszcze dokładnie, „co to ma robić”.

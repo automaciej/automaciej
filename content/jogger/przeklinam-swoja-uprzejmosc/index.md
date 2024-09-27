@@ -1,10 +1,11 @@
 ---
-title: "Przeklinam swoją uprzejmość"
-description: "Nie wyszedłem żeby nie wyjść na gbura, ale kiepsko na tym
-wyszedłem."
-date: "2021-08-06T00:03:53+01:00"
+aliases:
+- /2021/08/przeklinam-swoja-uprzejmosc/
+date: '2021-08-06T00:03:53+01:00'
+description: Nie wyszedłem żeby nie wyjść na gbura, ale kiepsko na tym wyszedłem.
 tags:
- - "opowieści"
+- opowieści
+title: Przeklinam swoją uprzejmość
 
 ---
 

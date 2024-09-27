@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-07-11T22:45:06"
 draft = false
 title = "Klasyczny zegarek z kalkulatorem"
+aliases = [ "/2008/07/klasyczny-zegarek-z-kalkulatorem/",]
+
 +++
 ![Kalkulator i bank danych. To był
 czad.](http://cache.wists.com/thumbnails/d/44/d4406841508c5a50c6094a8c910a5302-med)

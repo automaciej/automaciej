@@ -1,5 +1,7 @@
 ---
-date: "2017-02-19T22:01:10Z"
+aliases:
+- /2017/02/porta-dos-fundos-opcoes/
+date: '2017-02-19T22:01:10Z'
 description: W tym natłoku wątpliwości i niekończących się pytań tylko jedno jest
   pewne.
 draft: false
@@ -8,6 +10,7 @@ tags:
 - raptularz
 - że jak?
 title: 'Porta dos Fundos: OPCJE'
+
 ---
 
 Składanie zamówienia w restauracji jest prawie jak przesłuchanie. Odpowiadasz na

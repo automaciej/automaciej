@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-01-22T10:42:16"
 draft = false
 title = "Ona mnie nie słuchała!"
+aliases = [ "/2004/01/ona-mnie-nie-sluchala/",]
+
 +++
 
 Zostałem poproszony o pomoc. Tłumaczę kobiecie, żeby otworzyła link

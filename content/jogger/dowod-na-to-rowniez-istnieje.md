@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-07-12T13:06:57"
 draft = false
 title = "...dowód na to również istnieje"
+aliases = [ "/2007/07/dowod-na-to-rowniez-istnieje/",]
+
 +++
 
 Ostatnio w kilku rozmowach podnosiłem kwestię istnienia rzeczy i istnienia

@@ -1,11 +1,13 @@
 ---
 aliases:
 - /2007/11/24/ale-to-jest-po-angielsku/
-date: 2007-11-24T22:21:29
+- /2007/11/ale-to-jest-po-angielsku/
+date: 2007-11-24 22:21:29
 draft: false
 tags:
 - rozwój
 title: '...ale to jest po angielsku!'
+
 ---
 
 _Kot zaczaił się przed mysią dziurą i czekał. Ale mysz była sprytna i ani

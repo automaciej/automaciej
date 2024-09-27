@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-08-15T16:54:31"
 draft = false
 title = "Oprogramowanie naukowe kontra minus ha"
+aliases = [ "/2007/08/oprogramowanie-naukowe-kontra-minus-ha/",]
+
 +++
 
 Pracuję z oprogramowaniem naukowym jakieś pół roku i [nie

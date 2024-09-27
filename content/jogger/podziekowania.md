@@ -1,10 +1,13 @@
 ---
 Description: Czy należy podziękować prawdziwemu przyjacielowi za prawdziwą poradę
   udzieloną przez jego wyobrażenie?
-date: "2016-07-02T22:45:05+01:00"
+aliases:
+- /2016/07/podziekowania/
+date: '2016-07-02T22:45:05+01:00'
 tags:
 - dywagacje
 title: Podziękowania
+
 ---
 
 Porządkowanie papierów sprawia mi sporo kłopotów. Właśnie miałem się wybrać do

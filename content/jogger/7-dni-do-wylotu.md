@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-28T19:36:54"
 draft = false
 title = "7 dni do wylotu"
+aliases = [ "/2006/12/7-dni-do-wylotu/",]
+
 +++
 Wreszcie porozmawiałem z babcią, powiedziałem jej że wyjeżdżam. Duża ulga, bo
 trochę obawiałem się tej rozmowy, tzn. reakcji babci na tę wiadomość. Było

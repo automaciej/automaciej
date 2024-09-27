@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-06-11T19:46:02"
 draft = false
 title = "Lepiej? Ale lepiej, prawda?"
+aliases = [ "/2004/06/lepiej-ale-lepiej-prawda/",]
+
 +++
 
 Rozumiem pozytywne afirmacje, ale nie takie:  

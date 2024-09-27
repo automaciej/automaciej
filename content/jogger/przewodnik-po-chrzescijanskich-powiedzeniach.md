@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-11-20T10:26:45"
 draft = false
 title = "Przewodnik po chrześcijańskich powiedzeniach"
+aliases = [ "/2008/11/przewodnik-po-chrzescijanskich-powiedzeniach/",]
+
 +++
 
 ### „Poczekaj z seksem do małżeństwa.”

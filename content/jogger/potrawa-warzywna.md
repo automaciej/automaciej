@@ -1,12 +1,14 @@
 ---
 aliases:
 - potrawa-warzywna.pl.html
-date: "2004-01-01T00:00:00+02:00"
+- /2004/01/potrawa-warzywna/
+date: '2004-01-01T00:00:00+02:00'
 description: Improwizowana potrawa, którą ktoś mnie kiedyś nauczył
 draft: false
 tags:
 - opowieści
 title: Potrawa warzywna
+
 ---
 
 Przepisu nauczyła mnie [Margaux](http://www.margauxunddiebanditen.de/). Było to

@@ -1,11 +1,15 @@
 ---
-date: "2014-09-15T10:09:40+01:00"
+aliases:
+- /2014/09/jak-napisac-materialy-dla-zespolu/
+- /jak-napisac-materialy-dla-zespolu/
+date: '2014-09-15T10:09:40+01:00'
 draft: false
 menu:
 - main
 tags:
 - muzyka
 title: Jak napisać materiały dla zespołu
+
 ---
 
 Chcesz zaśpiewać lub zagrać z zespołem? Napisz kwit taki jak poniżej, używając

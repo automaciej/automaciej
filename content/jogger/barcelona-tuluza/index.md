@@ -1,11 +1,14 @@
 ---
-date: "2017-11-15T23:25:40Z"
+aliases:
+- /2017/11/barcelona-tuluza/
+date: '2017-11-15T23:25:40Z'
 description: Moja pierwsza kilkudniowa wycieczka rowerowa.
 draft: false
 tags:
 - rower
 - opowieści
 title: Barcelona—Tuluza
+
 ---
 
 Był rok 2013[^rok], końcówka lata. Plan był taki, żeby na wyjazd integracyjny

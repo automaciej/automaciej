@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-11-07T09:11:30"
 draft = false
 title = "The Onion przewiduje przyszłość"
+aliases = [ "/2008/11/the-onion-przewiduje-przyszlosc/",]
+
 +++
 Staroć. Artykuł w The Onion z 17 stycznia 2001, mówi:
 

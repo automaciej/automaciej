@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-04-28T19:43:35"
 draft = false
 title = "Biało. Wysoko. W kwietniu."
+aliases = [ "/2008/04/bialo-wysoko-w-kwietniu/",]
+
 +++
 Biało. Prawie tak biało jak na stronie startowej Google.
 

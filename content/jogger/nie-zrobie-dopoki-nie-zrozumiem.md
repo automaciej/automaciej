@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-08-30T15:15:49"
 draft = false
 title = "Nie zrobię dopóki nie zrozumiem"
+aliases = [ "/2006/08/nie-zrobie-dopoki-nie-zrozumiem/",]
+
 +++
 Jeżeli usiłuję pracować, ale co pięć minut opadają mi ręce, to znaczy że albo
 problem jest niewłaściwie postawiony albo próbuję go rozwiązać w niewłaściwy

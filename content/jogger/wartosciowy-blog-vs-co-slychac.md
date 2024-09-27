@@ -1,8 +1,11 @@
 ---
-date: 2007-07-01T14:55:55
+aliases:
+- /2007/07/wartosciowy-blog-vs-co-slychac/
+date: 2007-07-01 14:55:55
 tags:
 - dywagacje
 title: Wartościowy blog vs „co słychać”
+
 ---
 
 Mój oryginalny powód założenia joggera jest właściwie niesprecyzowany. Było to

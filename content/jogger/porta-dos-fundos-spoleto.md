@@ -1,10 +1,13 @@
 ---
-date: "2017-07-30T08:32:26+01:00"
+aliases:
+- /2017/07/porta-dos-fundos-spoleto/
+date: '2017-07-30T08:32:26+01:00'
 description: Efektywność firmy. Przerażenie klienta.
 image: /images/2017/porta-dos-fundos-spoleto.jpg
 tags:
 - że jak?
 title: 'Porta dos Fundos: SPOLETO'
+
 ---
 
 Jak przejść od „dzień dobry” do rzucania… no, nie mięsem, ale jedzeniem.

@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-06-24T07:14:50"
 draft = false
 title = "Sztuczki z bagażem"
+aliases = [ "/2008/06/sztuczki-z-bagazem/",]
+
 +++
 _Niniejszym odnawiam ostatnio nieco zaniedbaną kategorię „zrzędzenie”._
 

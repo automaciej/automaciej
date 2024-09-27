@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-02-19T17:31:12"
 draft = false
 title = "Michel Petrucciani"
-tags = [ "muzyka", ]
+tags = [ "muzyka",]
+aliases = [ "/2004/02/michel-petrucciani/",]
+
 +++
 Ostatnio słucham na okrągło Michela Petrucciani. Jestem pod wrażeniem wielu
 elementów jego gry. A przede wszystkim pod wrażeniem jego konsekwencji

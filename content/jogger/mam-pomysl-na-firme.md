@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2005-01-22T00:51:38"
 draft = false
 title = "Mam pomysł na firmę!"
+aliases = [ "/2005/01/mam-pomysl-na-firme/",]
+
 +++
 
 Zatrudnię pracowników. Ich zadaniem będzie wynająć biuro, przynieść krzesła,

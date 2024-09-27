@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-01-12T18:09:03"
 draft = false
 title = "Ufff... rozmowa się odbyła"
+aliases = [ "/2004/01/ufff-rozmowa-sie-odbyla/",]
+
 +++
 Nie była łatwa. Trudno jest rozmawiać z kimś twarzą w twarz, mówić że się
 odchodzi... i odpowiedzieć na pytanie „dlaczego”'.

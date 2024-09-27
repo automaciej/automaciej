@@ -1,12 +1,14 @@
 ---
 aliases:
 - 2009/08/03/portugalski-lekcja-1/
-date: 2009-08-03T18:17:48
+- /2009/08/portugalski-lekcja-1/
+date: 2009-08-03 18:17:48
 draft: false
 tags:
 - że jak?
 - języki
 title: Portugalski, lekcja 1
+
 ---
 
 Zacznijmy od czegoś prostego. Najlepiej, prostego dla Polaków. Zacznijmy od

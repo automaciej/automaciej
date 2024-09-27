@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-03-29T11:40:54"
 draft = false
 title = "Playstation 3: centrum obliczeniowe"
+aliases = [ "/2007/03/playstation-3-centrum-obliczeniowe/",]
+
 +++
 Ostatnio zaczynam mieć chrapkę na PS3. Ta konsola do gier jest napędzana
 potężnym procesorem [Cell](http://en.wikipedia.org/wiki/Cell_microprocessor).

@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-05-19T23:18:55"
 draft = false
 title = "Tydzień Walki z Czasownikiem na Końcu Zdania"
+aliases = [ "/2004/05/tydzien-walki-z-czasownikiem-na-koncu-zdania/",]
+
 +++
 Wszyscy ostatnio czasowniki na końcu zdania stawiają. Ja tego nie rozumiem.
 Przecież szyk wyrazów w zdaniu ważny jest i przy jego pomocy też różne treści

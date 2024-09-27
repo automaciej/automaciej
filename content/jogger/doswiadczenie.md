@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-01-19T20:08:33"
 draft = false
 title = "Doświadczenie"
+aliases = [ "/2006/01/doswiadczenie/",]
+
 +++
 
 Doświadczenie, _rzeczownik:_

@@ -1,8 +1,11 @@
 ---
-date: 2007-06-02T14:38:21
+aliases:
+- /2007/06/dzien-dobry-chcialbym-sie-poklocic/
+date: 2007-06-02 14:38:21
 tags:
 - tłumaczenia
 title: Dzień dobry, chciałbym się pokłócić
+
 ---
 
 Wczoraj przeczytałem [gorącą dyskusję pomiędzy ateistą

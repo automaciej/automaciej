@@ -1,10 +1,12 @@
 ---
-title: "Na granicy tolerancji"
-description: "Jesteśmy skazani na życie w którym wszystko nas wkurza."
-date: "2018-09-11T14:40:00-03:00"
+aliases:
+- /2018/09/na-granicy-tolerancji/
+date: '2018-09-11T14:40:00-03:00'
+description: Jesteśmy skazani na życie w którym wszystko nas wkurza.
 draft: false
 tags:
- - "dywagacje"
+- dywagacje
+title: Na granicy tolerancji
 
 ---
 

@@ -1,5 +1,7 @@
 ---
-date: "2017-02-08T21:11:34Z"
+aliases:
+- /2017/02/porta-dos-fundos-nie-opierac-sie-o-boga/
+date: '2017-02-08T21:11:34Z'
 description: '- Zgubiłaś się? - Trochę.'
 draft: false
 image: /images/2017/porta-dos-fundos-deus.jpg
@@ -7,6 +9,7 @@ tags:
 - raptularz
 - że jak?
 title: 'Porta dos Fundos: Nie opierać się o Boga!'
+
 ---
 
 Polskie tłumaczenie skeczu Porta dos Fundos.

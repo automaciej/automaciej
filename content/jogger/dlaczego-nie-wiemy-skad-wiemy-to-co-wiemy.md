@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2012-03-12T00:06:48"
 draft = false
 title = "Dlaczego nie wiemy, skąd wiemy to co wiemy"
+aliases = [ "/2012/03/dlaczego-nie-wiemy-skad-wiemy-to-co-wiemy/",]
+
 +++
 
 Kiedyś w ramach studiów przeprowadzałem eksperyment, którego celem było

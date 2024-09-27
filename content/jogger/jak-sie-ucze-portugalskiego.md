@@ -1,8 +1,11 @@
 ---
-date: 2015-12-24T16:02:23
+aliases:
+- /2015/12/jak-sie-ucze-portugalskiego/
+date: 2015-12-24 16:02:23
 tags:
 - języki
 title: Jak się uczę portugalskiego
+
 ---
 
 Niepostrzeżenie [minęło 6 lat]({{< relref "/jogger/taksowka-do-obidos.md" >}} "Historia z taskówkarką")

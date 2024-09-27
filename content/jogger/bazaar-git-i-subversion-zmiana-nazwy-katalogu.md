@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-07T02:26:20"
 draft = false
 title = "Bazaar, Git i Subversion: zmiana nazwy katalogu"
+aliases = [ "/2007/06/bazaar-git-i-subversion-zmiana-nazwy-katalogu/",]
+
 +++
 
 Chyba każdy kto uczył się zarządzać kodem, zaczynał od CVS a potem przenosił się

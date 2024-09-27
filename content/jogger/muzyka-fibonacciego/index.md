@@ -1,11 +1,14 @@
 ---
-title: "Muzyka Fibonacciego"
-description: "Świat naturalnie daje się opisać matematyką, ale zrobić świat z matematyki jest już trudniej."
-date: "2018-09-26T10:17:05-03:00"
+aliases:
+- /2018/09/muzyka-fibonacciego/
+date: '2018-09-26T10:17:05-03:00'
+description: Świat naturalnie daje się opisać matematyką, ale zrobić świat z matematyki
+  jest już trudniej.
 draft: false
 tags:
- - "muzyka"
- - "dywagacje"
+- muzyka
+- dywagacje
+title: Muzyka Fibonacciego
 
 ---
 

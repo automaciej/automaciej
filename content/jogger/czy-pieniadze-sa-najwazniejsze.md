@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2003-12-20T20:00:50"
 draft = false
 title = "Czy pieniądze są najważniejsze?"
+aliases = [ "/2003/12/czy-pieniadze-sa-najwazniejsze/",]
+
 +++
 
 Czy pieniądze są najważniejsze? Są. I nie są. Czasami są...  

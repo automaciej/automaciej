@@ -1,11 +1,14 @@
 ---
-date: "2018-09-06T10:51:47-03:00"
+aliases:
+- /2018/09/jak-sluchac-jazzu/
+date: '2018-09-06T10:51:47-03:00'
 description: Zapamiętać i nucić melodię. Ignorować solówkę. Słuchać jednego instrumentu
   naraz.
 draft: false
 tags:
 - muzyka
 title: Jak słuchać jazzu?
+
 ---
 
 ## Czego słuchać?

@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-07-02T14:02:30"
 draft = false
 title = "Osełka Warlubska"
+aliases = [ "/2006/07/oselka-warlubska/",]
+
 +++
 
 Przyjrzyj się uważnie poniższemu zdjęciu. Jest to bez wątpienia Osełka

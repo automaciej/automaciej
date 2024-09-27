@@ -1,9 +1,12 @@
 ---
-date: 2009-03-18T11:09:20
+aliases:
+- /2009/03/odchrzczenie/
+date: 2009-03-18 11:09:20
 tags:
 - sceptycyzm
 - ateizm
 title: Odchrzczenie
+
 ---
 
 Małe dzieci nie mają pojęcia, jakie symboliczne znaczenie dla dorosłych ma

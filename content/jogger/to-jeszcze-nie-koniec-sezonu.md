@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2005-08-17T23:06:16"
 draft = false
 title = "To jeszcze nie koniec sezonu"
+aliases = [ "/2005/08/to-jeszcze-nie-koniec-sezonu/",]
+
 +++
 
 Miałem być tu tylko jedną noc. Problem był taki, że
