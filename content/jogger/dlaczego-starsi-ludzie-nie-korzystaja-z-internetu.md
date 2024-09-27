@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-10-28T16:52:43"
 draft = false
 title = "Dlaczego starsi ludzie nie korzystają z internetu?"
+aliases = [ "/2006/10/dlaczego-starsi-ludzie-nie-korzystaja-z-internetu/",]
+
 +++
 
 Nie wiem, na czym to tak naprawdę polega, że większość starszych ludzi

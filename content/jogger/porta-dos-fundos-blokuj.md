@@ -1,7 +1,8 @@
 ---
 aliases:
 - /2017/01/blokuj/
-date: "2017-01-21T13:40:12Z"
+- /2017/01/porta-dos-fundos-blokuj/
+date: '2017-01-21T13:40:12Z'
 description: „Bloqueio”, jest z lata 2016, kiedy rząd Brazylii zablokował WhatsApp
   na kilka dni.
 image: /images/2017/porta-dos-fundos-bloqueio.jpg
@@ -9,6 +10,7 @@ tags:
 - raptularz
 - że jak?
 title: 'Porta dos Fundos: Blokuj!'
+
 ---
 
 Zrobiłem polskie napisy do filmiku na YouTube.  „Bloqueio”, jest z lata 2016,

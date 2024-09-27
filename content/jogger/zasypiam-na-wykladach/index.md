@@ -1,10 +1,12 @@
 ---
-title: "Zasypiam na wykładach"
-description: "Nie jest to kwestia niewyspania."
-date: "2006-04-06T10:13:52+01:00"
+aliases:
+- /2006/04/zasypiam-na-wykladach/
+date: '2006-04-06T10:13:52+01:00'
+description: Nie jest to kwestia niewyspania.
 draft: false
 tags:
- - "raptularz"
+- raptularz
+title: Zasypiam na wykładach
 
 ---
 

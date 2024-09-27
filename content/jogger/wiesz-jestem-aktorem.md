@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-12-18T09:38:12"
 draft = false
 title = "Wiesz, jestem aktorem"
+aliases = [ "/2007/12/wiesz-jestem-aktorem/",]
+
 +++
 Rozmowa odbywała się po angielsku, i szła mniej więcej tak:
 

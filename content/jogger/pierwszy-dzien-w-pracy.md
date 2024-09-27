@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-09T00:34:15"
 draft = false
 title = "Pierwszy dzień w pracy"
-tags = [ "irlandia", ]
+tags = [ "irlandia",]
+aliases = [ "/2007/01/pierwszy-dzien-w-pracy/",]
+
 +++
 Przejechałem swój przystanek, ale następny był na tyle blisko że wróciłem na
 miejsce w pięć minut. Wiedziałem że jak się gdzieś jedzie pierwszy raz, można

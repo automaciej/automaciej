@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-11-30T09:45:18"
 draft = false
 title = "Magia kartek pocztowych"
+aliases = [ "/2007/11/magia-kartek-pocztowych/",]
+
 +++
 
 Tak wiele rzeczy dzieje się przypadkiem, że aż dziw. Na przykład któregoś dnia

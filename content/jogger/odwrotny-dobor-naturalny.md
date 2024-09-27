@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-08-14T11:38:26"
 draft = false
 title = "Odwrotny dobór naturalny"
+aliases = [ "/2007/08/odwrotny-dobor-naturalny/",]
+
 +++
 
 Jednym z elementów ewolucji jest dobór naturalny, który z grubsza polega na

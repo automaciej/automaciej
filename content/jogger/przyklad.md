@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-01-01T16:45:11"
 draft = false
 title = "Przykład"
+aliases = [ "/2004/01/przyklad/",]
+
 +++
 Example is not the main thing in influencing others.  
 It is the only thing.  

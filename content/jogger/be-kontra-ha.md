@@ -1,9 +1,12 @@
 ---
-date: "2015-02-22T14:45:56Z"
+aliases:
+- /2015/02/be-kontra-ha/
+date: '2015-02-22T14:45:56Z'
 draft: false
 tags:
 - muzyka
 title: B kontra H
+
 ---
 
 Muzyczna logika:

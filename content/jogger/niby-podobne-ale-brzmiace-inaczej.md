@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-07-05T11:16:55"
 draft = false
 title = "Niby podobne, ale brzmiące inaczej"
+aliases = [ "/2007/07/niby-podobne-ale-brzmiace-inaczej/",]
+
 +++
 Bawię się ostatnio tłumaczeniem na polski; wcale nie jest łatwe. Można szybko
 uzyskać jakiś tekst z grubsza zrozumiały dla Polaków, ale najczęściej nie ma

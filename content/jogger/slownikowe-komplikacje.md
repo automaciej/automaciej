@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2010-06-01T11:41:01"
 draft = false
 title = "Słownikowe komplikacje"
-tags = [ "języki", ]
+tags = [ "języki",]
+aliases = [ "/2010/06/slownikowe-komplikacje/",]
+
 +++
 Powiedzmy że zaczynamy się uczyć nowego języka obcego, na przykład
 angielskiego. Najpierw dowiadujemy się że na przykład polskie słowo „krowa” to

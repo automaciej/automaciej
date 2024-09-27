@@ -1,12 +1,15 @@
 ---
-date: "2017-05-21T00:39:43+01:00"
+aliases:
+- /2017/05/dwie-plyty-z-moim-ojcem/
+date: '2017-05-21T00:39:43+01:00'
 description: Zostały niedawno wznowione dwie płyty z moim ojcem na gitarze.
 draft: false
-image: ""
+image: ''
 tags:
 - raptularz
 - muzyka
 title: Dwie płyty z moim ojcem
+
 ---
 
 Zostały niedawno wznowione dwie płyty z moim ojcem na gitarze.

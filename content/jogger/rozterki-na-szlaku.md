@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-08-10T23:38:23"
 draft = false
 title = "Rozterki na szlaku"
+aliases = [ "/2006/08/rozterki-na-szlaku/",]
+
 +++
 W zeszłą niedzielę postanowiłem trochę dotlenić mózgowe zwoje swoje i wybrałem
 się na rowerową wycieczkę. Celu podróży nie osiągnąłęm, ale cel wycieczki

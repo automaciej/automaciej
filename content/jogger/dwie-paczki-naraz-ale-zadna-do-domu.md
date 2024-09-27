@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-03-06T16:48:33"
 draft = false
 title = "Dwie paczki naraz, ale żadna do domu"
+aliases = [ "/2007/03/dwie-paczki-naraz-ale-zadna-do-domu/",]
+
 +++
 Niedługo miną dwa miesiące od momentu kiedy po raz pierwszy zamówiłem w eircom
 podłączenie do internetu (broadband). Historia wygląda tak:

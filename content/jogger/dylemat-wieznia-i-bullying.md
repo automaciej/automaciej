@@ -1,8 +1,11 @@
 ---
-date: 2007-05-12T16:06:43
+aliases:
+- /2007/05/dylemat-wieznia-i-bullying/
+date: 2007-05-12 16:06:43
 tags:
 - dywagacje
 title: Dylemat więźnia i bullying
+
 ---
 
 [Dylemat więźnia](http://pl.wikipedia.org/wiki/Dylemat_wi%C4%99%C5%BAnia) jest

@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-04-12T14:38:28"
 draft = false
 title = "Polskie tłumaczenia"
+aliases = [ "/2006/04/polskie-tlumaczenia/",]
+
 +++
 
 Ostatnio zacząłem czytać [teksty Joela

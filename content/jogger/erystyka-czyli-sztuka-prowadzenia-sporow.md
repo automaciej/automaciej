@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-06-10T19:54:44"
 draft = false
 title = "Erystyka, czyli sztuka prowadzenia sporów"
+aliases = [ "/2007/06/erystyka-czyli-sztuka-prowadzenia-sporow/",]
+
 +++
 
 Przeczytałem książkę. Jest to dla mnie rzecz niespotykana, bo już od dawna

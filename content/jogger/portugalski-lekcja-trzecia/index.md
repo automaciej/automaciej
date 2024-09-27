@@ -1,9 +1,12 @@
 ---
-date: "2016-10-23T14:27:12+01:00"
+aliases:
+- /2016/10/portugalski-lekcja-trzecia/
+date: '2016-10-23T14:27:12+01:00'
 description: Widzisz, jakie to podobne, o!
 tags:
 - języki
 title: Portugalski, lekcja trzecia
+
 ---
 
 Wersja do posłuchania:

@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2010-11-16T00:43:31"
 draft = false
 title = "Plastik"
+aliases = [ "/2010/11/plastik/",]
+
 +++
 Wiem, że piosenka Poluzjantów „Plastik” jest w zamiarze ironiczna, ale ja z
 premedytacją odbieram ją wprost.

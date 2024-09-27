@@ -1,11 +1,12 @@
 ---
-title: "Ewidentnie mi go brak"
-description: ""
-date: "2010-05-28T06:22:52+01:00"
+aliases:
+- /2010/05/ewidentnie-mi-go-brak/
+date: '2010-05-28T06:22:52+01:00'
+description: Rzeczy których mi brak. Na przykład, polskie słowo na 'evidence'.
 draft: false
-description: "Rzeczy których mi brak. Na przykład, polskie słowo na 'evidence'."
 tags:
- - "raptularz"
+- raptularz
+title: Ewidentnie mi go brak
 
 ---
 

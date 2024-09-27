@@ -1,11 +1,13 @@
 ---
-title: "Porta dos Fundos: Niebo katolickie"
-description: "Łatwo jest zagwarantować sobie miejsce w niebie."
-date: "2017-09-24T21:43:04+01:00"
+aliases:
+- /2017/09/niebo-katolickie/
+date: '2017-09-24T21:43:04+01:00'
+description: Łatwo jest zagwarantować sobie miejsce w niebie.
 draft: false
 tags:
- - "raptularz"
- - "że jak?"
+- raptularz
+- że jak?
+title: 'Porta dos Fundos: Niebo katolickie'
 
 ---
 

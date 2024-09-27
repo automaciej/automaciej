@@ -1,9 +1,12 @@
 ---
+aliases:
+- /2008/05/pierwsze-starcie-z-ksiazka-katarzyny-schier/
 author: automaciej
-date: "2008-05-17"
+date: '2008-05-17'
 tags:
 - atopowe
 title: Pierwsze starcie z książką Katarzyny Schier
+
 ---
 
 > _Kiedy cierpi dusza, choruje ciało._

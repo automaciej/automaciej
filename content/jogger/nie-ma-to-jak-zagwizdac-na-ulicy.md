@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2013-04-21T00:14:28"
 draft = false
 title = "Nie ma to jak zagwizdać na ulicy"
+aliases = [ "/2013/04/nie-ma-to-jak-zagwizdac-na-ulicy/",]
+
 +++
 
 (…) Właśnie rozmawiałam dokładnie o tym kilka tygodni temu w liceum z grupą

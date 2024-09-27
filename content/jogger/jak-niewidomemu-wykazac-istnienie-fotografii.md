@@ -1,9 +1,12 @@
 ---
-date: 2009-03-16T02:02:15
+aliases:
+- /2009/03/jak-niewidomemu-wykazac-istnienie-fotografii/
+date: 2009-03-16 02:02:15
 tags:
 - sceptycyzm
 - tłumaczenia
 title: Jak niewidomemu wykazać istnienie fotografii
+
 ---
 
 _Tłumaczenie z bloga Skeptico._

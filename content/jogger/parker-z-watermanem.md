@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2005-12-14T21:19:57"
 draft = false
 title = "Parker z Watermanem"
+aliases = [ "/2005/12/parker-z-watermanem/",]
+
 +++
 
 Wygląda na to że osobą której kupuję najwięcej prezentów na Gwiazdkę, jestem ja

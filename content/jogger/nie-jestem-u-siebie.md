@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-07-22T13:16:43"
 draft = false
 title = "Nie jestem u siebie"
-tags = [ "zrzędzenie", ]
+tags = [ "zrzędzenie",]
+aliases = [ "/2006/07/nie-jestem-u-siebie/",]
+
 +++
 
 Wakacje. Babcia mówi:

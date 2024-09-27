@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-20T13:22:17"
 draft = false
 title = "Proste plecy"
+aliases = [ "/2007/01/proste-plecy/",]
+
 +++
 [Joanna](http://ja-joanna.jogger.pl/) podesłała mi niedawno link do [artykułu
 o siedzeniu przy biurku](http://news.bbc.co.uk/2/hi/health/6187080.stm). Piszą

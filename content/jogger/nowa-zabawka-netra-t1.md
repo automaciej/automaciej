@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-05-14T09:36:23"
 draft = false
 title = "Nowa zabawka: Netra T1"
+aliases = [ "/2008/05/nowa-zabawka-netra-t1/",]
+
 +++
 Postanowiłem spróbować bliżej zapoznać się ze sprzętem Suna. Nigdy nie byłem
 fanem Suna i Solarisa, i raczej już nie zostanę, ale mogę zrobić przynajmniej

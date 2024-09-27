@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-10-18T01:14:11"
 draft = false
 title = "Nazwy stanowisk w CV"
+aliases = [ "/2006/10/nazwy-stanowisk-w-cv/",]
+
 +++
 Jednym z większych problemów podczas pisania CV było (i jest) dla mnie
 określanie stanowisk. Moje doświadczenia dotyczą głównie małego biznesu, gdzie

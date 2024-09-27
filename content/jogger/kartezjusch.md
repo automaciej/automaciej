@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-11-24T17:34:51"
 draft = false
 title = "Kartezjusch"
+aliases = [ "/2006/11/kartezjusch/",]
+
 +++
 _(Tekst z ok. 1991 roku)_
 

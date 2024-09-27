@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2010-07-27T11:06:02"
 draft = false
 title = "Nuclear launch detected!"
+aliases = [ "/2010/07/nuclear-launch-detected/",]
+
 +++
 Niesamowite, [Starcraft 2](http://www.starcraft2.com/) w końcu wyszedł!
 Właśnie oglądałem zawartość pudełka _collector's edition_. Bardzo fajnie

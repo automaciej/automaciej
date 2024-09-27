@@ -1,11 +1,13 @@
 ---
 aliases:
 - /2006/12/02/bumerang/
-date: 2006-12-02T14:02:20
+- /2006/12/bumerang/
+date: 2006-12-02 14:02:20
 draft: false
 tags:
 - raptularz
 title: Bumerang
+
 ---
 
 Nigdy nie mogłem zrozumieć, jak bumerang może wracać. Że co, rzucamy go, on

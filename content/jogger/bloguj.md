@@ -3,13 +3,15 @@ aliases:
 - /2007/07/powinienes-pisac-blogi.html
 - /2007/07/powinienes-pisac-blogi/
 - /powinienes-pisac-blogi.html
-date: "2007-07-02T11:08:03+01:00"
+- /2007/07/bloguj/
+date: '2007-07-02T11:08:03+01:00'
 description: Nawet jeżeli nikt nie będzie tego czytał.
 menu:
 - main
 tags:
 - tłumaczenia
 title: 'Steve Yegge: Bloguj'
+
 ---
 
 _Poniższy tekst jest tłumaczeniem wpisu Stevey Yegge, p.t. [„You should write

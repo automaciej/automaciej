@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-08-28T03:41:22"
 draft = false
 title = "Przytul mnie"
+aliases = [ "/2007/08/przytul-mnie/",]
+
 +++
 
 W ostatni weekend w Dun Laoghaire odbywał się

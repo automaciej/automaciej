@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-10-19T13:34:32"
 draft = false
 title = "Powiem ci, co myślę o tym kodzie"
+aliases = [ "/2008/10/powiem-ci-co-mysle-o-tym-kodzie/",]
+
 +++
 _Opinie przedstawione w tym poście są moimi własnymi opiniami i nie
 reprezentują opinii mojego pracodawcy, etcetera, etcetera. Khy, khy._

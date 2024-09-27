@@ -1,11 +1,14 @@
 ---
-date: "2016-11-30T20:04:03Z"
+aliases:
+- /2016/11/akceptacja-uzasadnienia/
+date: '2016-11-30T20:04:03Z'
 description: Kiedy nie interesuje nas czyjeś uzasadnienie, ludzie naciskają żebyśmy
   ich wysłuchali, pomimo że i tak zgadzamy się spełnić prośbę.
-image: ""
+image: ''
 tags:
 - dywagacje
 title: Akceptacja uzasadnienia
+
 ---
 
 Czasami w miejscu publicznym, np. w autobusie, ktoś prosi mnie żebym się

@@ -1,10 +1,12 @@
 ---
-title: "Ile zajmuje ci dojazd?"
-description: "Czas dojazdu liczę wedle tego, co zmierzyłem."
-date: "2018-10-29T16:03:28Z"
+aliases:
+- /2018/10/ile-zajmuje-ci-dojazd/
+date: '2018-10-29T16:03:28Z'
+description: Czas dojazdu liczę wedle tego, co zmierzyłem.
 draft: false
 tags:
- - "życie"
+- życie
+title: Ile zajmuje ci dojazd?
 
 ---
 

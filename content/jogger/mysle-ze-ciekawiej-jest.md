@@ -1,9 +1,12 @@
 ---
-date: 2012-12-04T14:25:57
+aliases:
+- /2012/12/mysle-ze-ciekawiej-jest/
+date: 2012-12-04 14:25:57
 tags:
 - sceptycyzm
 - ateizm
 title: Myślę, że ciekawiej jest...
+
 ---
 
 „Myślę, że ciekawiej jest żyć nie wiedząc, niż mając odpowiedzi które mogą

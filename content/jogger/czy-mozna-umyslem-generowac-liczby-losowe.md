@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-08-19T14:10:00"
 draft = false
 title = "Czy można umysłem generować liczby losowe?"
+aliases = [ "/2007/08/czy-mozna-umyslem-generowac-liczby-losowe/",]
+
 +++
 Wiele sztuczek takich, jak te które demonstruje Derren Brown, opiera się na
 tym, że prosi się jakąś osobę o wybranie jakiejś liczby, przy czym

@@ -1,7 +1,8 @@
 ---
 aliases:
 - /automaciejowa-przygoda-z-muzyka/
-date: "2014-09-06T17:56:17+01:00"
+- /muzyka/
+date: '2014-09-06T17:56:17+01:00'
 description: Kiedyś zajmowałem się muzyką, dziś zostało mi z tego kilka nagrań.
 draft: false
 menu:
@@ -10,6 +11,7 @@ tags:
 - muzyka
 - opowieści
 title: Przygoda z muzyką
+
 ---
 
 W latach 1996 - 2001 zajmowałem się muzyką na poważnie. Gdyby ktoś mi wtedy

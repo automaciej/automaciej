@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-05-23T10:50:30"
 draft = false
 title = "Rozwiązywanie umowy z TPSA"
+aliases = [ "/2007/05/rozwiazywanie-umowy-z-tpsa/",]
+
 +++
 
 Koniec grudnia. Za dwa dni Wiligia. Prezenty. Szaleństwo. Przeprowadzka. Za

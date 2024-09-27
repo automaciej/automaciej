@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-12-10T08:40:14"
 draft = false
 title = "6 dni do obrony"
-tag = [ "raptularz", ]
+tag = [ "raptularz",]
+aliases = [ "/2006/12/6-dni-do-obrony/",]
+
 +++
 Postępy w przygotowaniach do obrony: Zero. Null. Nada. Niente.
 

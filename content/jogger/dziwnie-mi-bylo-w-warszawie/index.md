@@ -1,10 +1,13 @@
 ---
-date: "2017-01-04T20:32:11Z"
+aliases:
+- /2017/01/dziwnie-mi-bylo-w-warszawie/
+date: '2017-01-04T20:32:11Z'
 description: Czułem się tak, jak gdyby ulice Warszawy znów naigrawały się ze mnie.
 image: /images/2017/warszawa-2017.jpg
 tags:
 - raptularz
 title: Dziwnie mi było w Warszawie
+
 ---
 
 Pojechałem do Warszawy na kilka dni. Inaczej niż wcześniej. Tym razem nie do

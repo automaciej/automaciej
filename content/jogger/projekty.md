@@ -1,13 +1,15 @@
 ---
 aliases:
 - projekty.html
-date: "2007-09-06T18:57:23+01:00"
+- /rojekty/
+date: '2007-09-06T18:57:23+01:00'
 description: Lista moich projektów informatycznych, dużych i małych.  Niekompletna,
   oczywiście.
 slug: projekty-informatyczne
 tags:
 - informatyka
 title: Projekty informatyczne
+
 ---
 
 Od najnowszych do najstarszych.

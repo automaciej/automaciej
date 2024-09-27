@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2010-05-15T20:54:26"
 draft = false
 title = "Korelacja"
+aliases = [ "/2010/05/korelacja/",]
+
 +++
 [![Korelacja nie oznacza powodowania, ale sugestywnie unosi brwi i gestykuluje
 ukradkiem, i bezgłośnie szepcze: „tam popatrz,

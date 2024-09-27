@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2005-12-21T16:57:27"
 draft = false
 title = "Hola!"
+aliases = [ "/2005/12/hola/",]
+
 +++
 
 Buenos dias. A właściwie - Buenas tardes, bo już jest wieczór. A przynajmniej

@@ -1,8 +1,11 @@
 ---
-date: 2012-12-01T10:25:00
+aliases:
+- /2012/12/to-nie-dla-ciebie-zlotko/
+date: 2012-12-01 10:25:00
 tags:
 - dywagacje
 title: To nie dla ciebie, złotko
+
 ---
 
 Co by tu zrobić, żeby spowolnić rozwój technologii i gospodarki? Ale nie jakoś

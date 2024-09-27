@@ -1,5 +1,7 @@
 ---
-date: "2017-11-15T00:12:00Z"
+aliases:
+- /2017/11/awaria-swiatla-w-rowerze/
+date: '2017-11-15T00:12:00Z'
 description: Przestało mi świecić światło w rowerze. Problem musiał być albo z dynamem
   albo ze światłem.
 draft: false
@@ -8,6 +10,7 @@ tags:
 - raptularz
 - rower
 title: Awaria światła w rowerze
+
 ---
 
 _Kto nie ma w głowie, ten ma w nogach. -- mój dziadek, kiedy ktoś czegoś

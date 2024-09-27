@@ -1,12 +1,14 @@
 ---
 aliases:
 - /2014/09/notacja-abc/
-date: "2014-09-14T23:51:15+01:00"
+- /2014/09/zapis-abc/
+date: '2014-09-14T23:51:15+01:00'
 description: Tekstowy format reprezentacji zapisu nutowego
 draft: false
 tags:
 - muzyka
 title: Zapis ABC
+
 ---
 
 [Zapis ABC][] istnieje od przynajmniej od 15 lat.  istnieje od przynajmniej od

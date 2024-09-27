@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-06-16T06:10:26"
 draft = false
 title = "Względnie udana sobota"
+aliases = [ "/2008/06/wzglednie-udana-sobota/",]
+
 +++
 
 Spędziłem sobotę i kawałek niedzieli na usiłowaniach zrozumienia [szczególnej

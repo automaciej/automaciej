@@ -1,10 +1,13 @@
 ---
-title: "Złożoność terminu"
-description: "Czym różni się koncept skomplikowany od prostego? Zobaczmy to na przykładzie stron statku."
-date: "2018-09-08T10:41:11-03:00"
+aliases:
+- /2018/09/zlozonosc-terminu/
+date: '2018-09-08T10:41:11-03:00'
+description: Czym różni się koncept skomplikowany od prostego? Zobaczmy to na przykładzie
+  stron statku.
 draft: false
 tags:
- - "sceptycyzm"
+- sceptycyzm
+title: Złożoność terminu
 
 ---
 

@@ -1,10 +1,13 @@
 ---
-date: 2013-04-11T17:53:54
+aliases:
+- /2013/04/wystapienie-z-kosciola-katolickiego-stan-z-kwietnia-2013/
+date: 2013-04-11 17:53:54
 tags:
 - życie
 - sceptycyzm
 - ateizm
 title: Wystąpienie z kościoła katolickiego, stan z kwietnia 2013
+
 ---
 
 _Wersja dla zabieganych:_

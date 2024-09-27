@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-11-22T15:29:37"
 draft = false
 title = "Proszę mi tu wyjaśnić..."
-tags = [ "że jak?", ]
+tags = [ "że jak?",]
+aliases = [ "/2007/11/prosze-mi-tu-wyjasnic/",]
+
 +++
 
 Proszę mi tu natychmiast wyjaśnić pojawienie się różowego latającego słonia w

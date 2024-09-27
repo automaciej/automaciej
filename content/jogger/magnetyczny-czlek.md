@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-05-24T21:30:04"
 draft = false
 title = "Magnetyczny Człek"
+aliases = [ "/2008/05/magnetyczny-czlek/",]
+
 +++
 Polak potrafi. Na przykład Mirosław Magola jest Polakiem i potrafi przyklejać
 do siebie metalowe obiekty. Mówi, że je przyciąga. Umysłem.

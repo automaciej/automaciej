@@ -1,10 +1,13 @@
 ---
-date: "2010-11-27T00:00:00-00:00"
+aliases:
+- /2010/11/alem-tabelke/
+date: '2010-11-27T00:00:00-00:00'
 description: Ja ~ę, tabelka to fajna rzecz!
 draft: false
 tags:
 - że jak?
 title: ~ąłem tabelkę
+
 ---
 
 przedrostek × rdzeń × dokonaność × zwrotność → znaczenie

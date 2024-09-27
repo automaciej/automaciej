@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-05-21T09:23:28"
 draft = false
 title = "Zwolennicy kinteligentnego projektjonizmu"
+aliases = [ "/2008/05/zwolennicy-kinteligentnego-projektjonizmu/",]
+
 +++
 
 W USA nauczanie [kreacjonizmu](http://pl.wikipedia.org/wiki/Kreacjonizm)

@@ -1,8 +1,11 @@
 ---
-date: "2015-03-10T18:56:11Z"
+aliases:
+- /2015/03/wychodze/
+date: '2015-03-10T18:56:11Z'
 tags:
 - zrzędzenie
 title: Mam ochotę wyjść, i wychodzę
+
 ---
 
 > Patrzę, patrzę na to… No i aż mi się chce wyjść z… kina, proszę pana.

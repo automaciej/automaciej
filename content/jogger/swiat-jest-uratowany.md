@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2011-11-22T12:57:50"
 draft = false
 title = "Świat jest uratowany"
-tags = [ "muzyka", ]
+tags = [ "muzyka",]
+aliases = [ "/2011/11/swiat-jest-uratowany/",]
+
 +++
 A poniżej akordy które spisałem. Pod linkiem jest duża wersja, powinna się
 nawet dać wydrukować.

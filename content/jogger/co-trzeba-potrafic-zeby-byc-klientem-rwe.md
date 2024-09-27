@@ -1,9 +1,12 @@
 ---
-date: 2015-10-01T17:03:45
+aliases:
+- /2015/10/co-trzeba-potrafic-zeby-byc-klientem-rwe/
+date: 2015-10-01 17:03:45
 draft: false
 tags:
 - życie
 title: Co trzeba potrafić, żeby być klientem RWE
+
 ---
 
 W lutym RWE przysłało informację że się zmienił sposób logowania. Przysłali nowe

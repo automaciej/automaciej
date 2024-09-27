@@ -2,13 +2,15 @@
 aliases:
 - /andrzej-pomaga-wymowic-szle/
 - /2011/07/16/angielska-wymowa-bus-boss-bass/
-date: "2014-09-06T19:27:41+01:00"
+- /2014/09/andrzej-pomaga-wymowic-szle/
+date: '2014-09-06T19:27:41+01:00'
 description: To co jest pomiędzy d i rz, jest ciekawe.
 draft: false
 tags:
 - języki
 - opowieści
 title: O tym jak Andrzej pomaga wymówić szłę
+
 ---
 
 Cały czas walczę z głoską [szwa](https://pl.wikipedia.org/wiki/Szwa) („szła”).

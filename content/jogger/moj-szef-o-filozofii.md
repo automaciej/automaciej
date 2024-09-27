@@ -1,8 +1,11 @@
 ---
-date: 2008-07-24T19:27:50
+aliases:
+- /2008/07/moj-szef-o-filozofii/
+date: 2008-07-24 19:27:50
 tags:
 - opowieści
 title: Mój szef o filozofii
+
 ---
 
 Czasami ktoś coś powie, i to mi utkwi w głowie na amen. I nie mam pojęcia,

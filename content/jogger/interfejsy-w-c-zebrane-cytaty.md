@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-03-23T20:47:32"
 draft = false
 title = "Interfejsy w C++, zebrane cytaty"
+aliases = [ "/2007/03/interfejsy-w-c-zebrane-cytaty/",]
+
 +++
 
 Dzisiaj rano przed pracą odbyłem solidny spacer do Sandyford, 40 minut w jedną

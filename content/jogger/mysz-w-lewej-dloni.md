@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2006-05-05T01:03:47"
 draft = false
 title = "Mysz w lewej dłoni"
+aliases = [ "/2006/05/mysz-w-lewej-dloni/",]
+
 +++
 
 Jestem praworęczny. Dzisiaj postanowiłem używać myszy przy pomocy lewej ręki.

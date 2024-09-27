@@ -1,8 +1,11 @@
 ---
-date: 2015-04-13T18:04:29
+aliases:
+- /2015/04/zakaz-fotografowania/
+date: 2015-04-13 18:04:29
 tags:
 - dywagacje
 title: ZAKAZ FOTOGRAFOWANIA
+
 ---
 
 Stanąłem przed tablicą z napisem:

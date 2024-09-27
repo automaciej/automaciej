@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2008-12-19T11:42:20"
 draft = false
 title = "Zniesławienie w formie nagrody"
+aliases = [ "/2008/12/znieslawienie-w-formie-nagrody/",]
+
 +++
 
 Wyobraźmy sobie, że jesteśmy w teatrze — to przykład podawany przez Jamesa Randi

@@ -1,9 +1,12 @@
 ---
-date: 2008-02-27T11:33:21
+aliases:
+- /2008/02/x-lub-y-i-z/
+date: 2008-02-27 11:33:21
 tags:
 - że jak?
 - dywagacje
 title: X lub Y i Z
+
 ---
 
 Kazimierz przeciągnął się i powiedział:

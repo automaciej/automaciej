@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-07-16T03:18:43"
 draft = false
 title = "Fotografie notatek"
+aliases = [ "/2007/07/fotografie-notatek/",]
+
 +++
 
 O istotności tematu wrzucania notatek do komputera nie muszę przekonywać

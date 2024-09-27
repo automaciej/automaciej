@@ -1,10 +1,12 @@
 ---
-title: "Spotkaj Dyskutanta"
-description: ""
-date: "2008-12-26T06:14:08+01:00"
+aliases:
+- /2008/12/spotkaj-dyskutanta/
+date: '2008-12-26T06:14:08+01:00'
+description: ''
 draft: false
 tags:
- - "raptularz"
+- raptularz
+title: Spotkaj Dyskutanta
 
 ---
 Swoją drogą, wiecie jaka jest definicja definicji?

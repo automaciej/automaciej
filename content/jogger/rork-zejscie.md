@@ -1,5 +1,7 @@
 ---
-date: "2017-08-06T23:54:23+01:00"
+aliases:
+- /2017/08/rork-zejscie/
+date: '2017-08-06T23:54:23+01:00'
 description: Rork Zejście zawiera stronę która wygląda jak klatki animacji. Pomysł
   nasunął się sam.
 draft: false
@@ -7,6 +9,7 @@ image: /images/2017/rork-promo.jpg
 tags:
 - raptularz
 title: Rork — Zejście
+
 ---
 
 Rork zafascynował mnie kiedy byłem jeszcze w podstawówce. Pamiętam że pokazałem

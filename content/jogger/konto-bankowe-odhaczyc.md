@@ -1,9 +1,10 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-01-26T19:36:59"
 draft = false
 title = "Konto bankowe, odhaczyć"
-tags = [ "irlandia", ]
+tags = [ "irlandia",]
+aliases = [ "/2007/01/konto-bankowe-odhaczyc/",]
+
 +++
 Zastanawiałem się, który bank wybrać. Największym irlandzkim bankiem jest
 [AIB](http://www.aib.ie/). Następny w kolejności jest [Bank of

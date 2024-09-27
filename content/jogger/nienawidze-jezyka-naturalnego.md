@@ -1,10 +1,12 @@
 ---
 aliases:
 - /2007/07/13/nienawidze-jezyka-naturalnego/
-date: 2007-07-13T11:53:11
+- /2007/07/nienawidze-jezyka-naturalnego/
+date: 2007-07-13 11:53:11
 tags:
 - dywagacje
 title: Nienawidzę języka naturalnego
+
 ---
 
 Tak. Nienawidzę tego skomplikowanego, niedokładnego, niejednoznacznego,

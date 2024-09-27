@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2007-11-17T22:27:29"
 draft = false
 title = "Komentarze &lt;blink&gt;nie&lt;/blink&gt; na temat"
+aliases = [ "/2007/11/komentarze-nie-na-temat/",]
+
 +++
 
 Dzisiaj pisałem e-mail, o którym wiedziałem, że trafi do osoby studiującej

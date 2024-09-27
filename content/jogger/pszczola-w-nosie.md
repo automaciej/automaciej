@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2004-06-11T19:51:27"
 draft = false
 title = "Pszczoła w nosie"
+aliases = [ "/2004/06/pszczola-w-nosie/",]
+
 +++
 Śniło mi się, że do nosa (do prawej dziurki) wleciała mi pszczoła i strasznie
 bzyczała. Chciałem jej jakoś pomóc wyjść, ale nie mogłem palcem (żeby jej nie

@@ -1,8 +1,9 @@
 +++
-# vim:set nosmartindent nocindent ft=markdown:
 date = "2012-12-02T21:00:16"
 draft = false
 title = "Solaris 10: Budowanie pakietów"
+aliases = [ "/2012/12/solaris-10-budowanie-pakietow/",]
+
 +++
 _UWAGA: Temat bardzo, bardzo niszowy. Jeżeli nie interesuje cię budowanie
 pakietów pod Solarisem, nie czytaj dalej._
