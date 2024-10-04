@@ -28,18 +28,22 @@ As a bass player I specialize in jazz, and a number of styles of Brazilian
 music: bossa nova, samba, and chorinho. I usually play in the Dublin area [with
 various artists][perf], jazz and otherwise.
 
-I am a member of [Pstryk!][pstrykinsta], an interactive [performance for
-children][pstryk].
+<!--
+* [Music production &#187;][mus]
+* [Bass &#187;][bass]
+-->
 
-<!-- Pstryk!
+I am a member of [Pstryk!][pstryk], the interactive performance for children.
+
+<!--
 {{< instagram "C65gcEWtjDG" >}}
 -->
 
-[appr]: {{< relref "approach.md" >}} "My approach to music production"
-[bio]: {{< relref "bio.md" >}}
+
+[appr]: {{< relref "approach.md" >}}
+[bass]: {{< relref "bass.md" >}}
 [ged]: https://www.offpitchrecords.com/
 [mus]: {{< relref "music/_index.md" >}}
-[perf]: {{< relref "performances.md" >}} "Maciej's upcoming and past performances."
-[pstryk]: https://kasiaeliasz.com/pstryk-2/ "Pstryk! Interactive performance for children" 
-[pstrykinsta]: https://www.instagram.com/pstrykofficial "Pstryk! Interactive performance for children."
+[perf]: {{< relref "performances.md" >}}
+[pstryk]: https://www.instagram.com/pstrykofficial
 [ric]: https://www.instagram.com/riccardo_marenghi/
