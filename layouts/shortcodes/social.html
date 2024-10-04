@@ -1,0 +1,81 @@
+{{ with .Site.Params.social }}
+<div class="social">
+  <ul class="social">
+    <!--
+    {{ with .linktree }}
+    <li>
+      <a href="https://linktr.ee/{{ . | safeURL }}"
+        title="Linktree: {{ . | safeHTMLAttr }}">
+        <i class="lni lni-link"></i></a>
+        linktree
+    </li>
+    {{ end }}
+    -->
+
+    {{ with .instagramHandle }}
+    <li>
+      <a href="https://instagram.com/{{ . | safeURL }}"
+         rel="me"
+         title="Instagram: {{ . | safeHTMLAttr }}">
+        <i class="lni lni-instagram"></i>
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .soundcloud }}
+    <li>
+      <a href="https://soundcloud.com/{{ . | safeURL }}"
+         rel="me"
+         title="Soundcloud: {{ . | safeHTMLAttr }}">
+        <i class="lni lni-soundcloud"></i></a></li>
+    {{ end }}
+
+    {{ with .tiktokName }}
+    <li>
+      <a href="https://tiktok.com/@{{ . | safeURL }}"
+         rel="me"
+         title="TikTok: @{{ . | safeHTMLAttr }}">
+        <i class="lni lni-tiktok"></i></a></li>
+    {{ end }}
+
+    {{ with .githubName }}
+    <li>
+      <a href="https://github.com/{{ . | safeURL }}"
+         rel="me"
+        title="GitHub: {{ . | safeHTMLAttr }}">
+        <i class="lni lni-github"></i>
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .linkedIn }}
+    <li>
+      <a href="https://linkedin.com/in/{{ . | safeURL }}"
+         rel="me"
+         title="LinkedIn: {{ . | safeHTMLAttr }}">
+        <i class="lni lni-linkedin"></i>
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .mastodonLink }}
+    <li>
+      <a href="{{ . | safeURL }}"
+         rel="me"
+         title="Mastodon: {{ . | safeHTMLAttr }}">
+        M
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .facebookUrlPath }}
+    <li>
+      <a href="https://facebook.com/{{ . | safeURL }}"
+        title="Facebook: {{ . | safeHTMLAttr }}">
+        <i class="lni lni-facebook"></i>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div><!-- social -->
+{{ end }}

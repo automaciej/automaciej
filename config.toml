@@ -4,6 +4,10 @@
 # Thumbnails:
 # for f in *.png; do convert -size 440x880 "$f" -resize 440x880 +profile '*' \
 # $(basename $f .png)-thumb.png; done
+#
+# New magick convert syntax:
+# magick <name>-big.jpg -interlace jpeg -quality 35 <name>.jpg
+# magick static/images/background-big.jpg -interlace jpeg -quality 35 static/images/background.jpg
 
 defaultContentLanguage = "en"
 languageCode = "en"

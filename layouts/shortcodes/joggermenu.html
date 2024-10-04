@@ -1,0 +1,9 @@
+{{ range $index, $element := site.Menus.jogger -}}
+  {{ if ne $index 0 -}}
+  ,
+  {{- end }}
+  <a href="{{ .URL }}">
+    {{- .Name -}}
+  </a>
+{{- end -}}
+.
