@@ -1,0 +1,36 @@
+{{/*
+vim:ts=2 sts=2 sw=2 expandtab:
+*/}}
+{{ define "main" }}
+
+<div class="split-bio">
+
+{{ .Content }}
+
+<h2>Najnowsze wpisy</h2>
+
+<ul class="split-list year-list">
+{{ range .Pages.GroupByDate "2006" "desc" }}
+<li>
+  <h3 class="title">{{ .Key }}</h3>
+  <ul class="split-list page-list">
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <div class="page-list-date">
+        {{- .Date | time.Format ":date_medium" -}}
+        </div>
+        <div class="page-list-title">
+        {{- .LinkTitle -}}
+        </div>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</li>
+{{ end }}
+</ul>
+
+</div>
+
+{{ end }}
