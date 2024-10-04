@@ -4,8 +4,8 @@ aliases:
 - /ultura-dyskusji/
 date: '2015-02-21T13:51:30Z'
 description: Zasady kultury dyskusji, które wyniosłem z liceum
-menu:
-- main
+menus:
+- jogger
 tags:
 - dywagacje
 title: Kultura dyskusji

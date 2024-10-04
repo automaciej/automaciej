@@ -6,8 +6,8 @@ aliases:
 - /2007/07/bloguj/
 date: '2007-07-02T11:08:03+01:00'
 description: Nawet jeżeli nikt nie będzie tego czytał.
-menu:
-- main
+menus:
+- jogger
 tags:
 - tłumaczenia
 title: 'Steve Yegge: Bloguj'

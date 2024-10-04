@@ -42,4 +42,4 @@ Spodobała mi się ta formuła:
 *   Jest w miarę łatwe i dobrze się bawię. :)
 
 Przy okazji: dodałem aktualizację do
-„[Nie opierać się o Boga!]({{< relref "porta-dos-fundos-nie-opierac-sie-o-boga.md" >}})”.
+„[Nie opierać się o Boga!]({{< relref "jogger/porta-dos-fundos/nie-opierać-się-o-boga.md" >}})”.

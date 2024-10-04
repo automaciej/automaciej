@@ -4,6 +4,8 @@ aliases:
 date: '2010-11-27T00:00:00-00:00'
 description: Ja ~ę, tabelka to fajna rzecz!
 draft: false
+menus:
+- jogger
 tags:
 - że jak?
 title: ~ąłem tabelkę

@@ -4,8 +4,8 @@ aliases:
 - /jak-napisac-materialy-dla-zespolu/
 date: '2014-09-15T10:09:40+01:00'
 draft: false
-menu:
-- main
+menus:
+- jogger
 tags:
 - muzyka
 title: Jak napisać materiały dla zespołu

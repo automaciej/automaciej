@@ -22,4 +22,4 @@ Tłumaczenie z portugalskiego na polski.
 Zauważyłem kilka motywów wspólnych ze skeczem [„Nie opierać się o
 Boga!”][opier].
 
-[opier]: {{< relref "jogger/porta-dos-fundos-nie-opierac-sie-o-boga.md" >}}
+[opier]: {{< relref "jogger/porta-dos-fundos/nie-opierać-się-o-boga.md" >}}
