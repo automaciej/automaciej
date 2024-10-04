@@ -52,7 +52,7 @@ wniosków.
 
 Podsumowując, oto lista moich lekcji:
 
-* „Kultura Zachodu ma sporo do zaoferowania.”
+* „[Kultura Zachodu ma sporo do zaoferowania.][kultura]”
 * „Każdy dziwięk musi mieć swój początek i koniec.”
 * „Cuuuuups”.
 * „Jak się to zdanie ma do poprzedniego?”
@@ -60,3 +60,4 @@ Podsumowując, oto lista moich lekcji:
 * „Jaki jest temat tej rozmowy?”
 
 [szwa]: {{< relref "andrzej-pomaga-wymowic-szle.md" >}} "Wymówić szłę"
+[kultura]: {{< relref "kultura-zachodu.md" >}}

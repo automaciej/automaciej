@@ -5,8 +5,8 @@ aliases:
 date: '2014-09-06T17:56:17+01:00'
 description: Kiedyś zajmowałem się muzyką, dziś zostało mi z tego kilka nagrań.
 draft: false
-menu:
-- main
+menus:
+- jogger
 tags:
 - muzyka
 - opowieści
@@ -39,7 +39,7 @@ jeszcze raz. I jeszcze raz. I jeszcze. Proces ten mógł być zakończony
 albo zadowoleniem z utworu albo padnięciem ze zmęczenia. To drugie było
 częstsze.
 
-![Kaseta DAT z nagraniem zespołu Struktura](/images/struktura.jpg)
+{{< figure src="../../../images/struktura.jpg" title="Kaseta DAT z nagraniem zespołu Struktura" >}}
 
 Nazwę wymyśliłem sam, będąc na świeżo ze studiami na
 Wydziale Architektury Politechniki Warszawskiej. Zaczynałem interesować
@@ -59,11 +59,11 @@ Struktura została jakimś cudem namierzona i niespodziewanie doceniona przez
 Danusię Jampolską z Ośrodka Kultury Ochoty. Efektem był wyjazd do Danii w ramach
 wymiany kulturalnej z Danią organizowanych przez Ośrodek Kultury Ochoty.  Dwa
 razy do roku polskie zespoły jechały nagrywać i występować w Danii, oraz dwa
-razy do roku [duńskie zespoły](http://www.frontsession.dk/) przyjeżdżały do
+razy do roku [duńskie zespoły](https://www.frontsession.dk/) przyjeżdżały do
 Polski występować, i raczyć się piwem po dobrych cenach. Sam się zastanawiałem,
-jak to jest, że kiedy Duńczycy przyjeżdżają do Polski, to mieszkają w hotelu
-i tylko grają koncerty, a kiedy Polacy jadą do Danii, mieszkają tymczasowo
-u Duńczyków „na kwaterach” i mają możliwość darmowego nagrania w studio. Mam
+jak to jest, że kiedy Duńczycy przyjeżdżają do Polski, to mieszkają w hotelu i
+tylko grają koncerty, a kiedy Polacy jadą do Danii, mieszkają tymczasowo u
+Duńczyków „na kwaterach” i mają możliwość darmowego nagrania w studio. Mam
 wrażenie że Duńczykom chodziło o piwo i polską publiczność, a obydwie rzeczy jak
 najbardziej dopisywały.
 
@@ -169,8 +169,9 @@ Danii i nagrał kolejne dwa utwory.
 Trasa koncertowa
 ----------------
 
-![Zdjęcie z klubu, widać kilka osób z zespołu na scenie, i dwie osoby tańczące
-przed sceną](/images/funksters.jpg)
+{{< figure title="Funksters w klubie"
+    alt="Zdjęcie z klubu, widać kilka osób z zespołu na scenie, i dwie osoby tańczące przed sceną"
+    src="../../../images/funksters.jpg" >}}
 
 Drugi skład Funksters był składem, z którym zaznałem jedynej w swoim
 życiu _trasy koncertowej._ Na trasę składało się 12 koncertów, płatnych
@@ -181,7 +182,7 @@ Koncerty były co wieczór, więc każdy dzień zaczynał się od pakowania,
 podróży do nowego miejsca, wypakowywania, próby dźwięku, koncertu,
 pakowania po pijaku i szukania kwater po ciemku.
 
-![Wahwah z gitarą](/images/wahwah-with-guitar.jpg)
+{{< figure title="Wahwah z gitarą" src="../../../images/wahwah-with-guitar.jpg" >}}
 
 Po jakimś tygodniu koledzy zaczęli narzekać że czują się zmęczeni.
 Pomyślałem, że gdybym pił tyle co oni, też czułbym się zmęczony. A ja
