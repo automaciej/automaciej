@@ -16,157 +16,181 @@ var performancesList = {{ $.Site.Data.performances | jsonify (dict "indent" "  "
 
 // TODO: Move this to a separate file.
 
+// This class represents a template.
+class PrettyEvents {
+  #eventList;
+  #parentObj;
+  #title;
+  #headerID;
+  constructor(eventList, parentObj, title, headerID) {
+    this.#eventList = eventList;
+    this.#parentObj = parentObj;
+    this.#title = title;
+    this.#headerID = headerID;
+  }
+  populate() {
+    var hdr = document.createElement('h2');
+    hdr.setAttribute('id', this.#headerID);
+    hdr.appendChild(document.createTextNode(this.#title));
+    this.#parentObj.appendChild(hdr);
+    this.#eventList.forEach((ev) => this.#parentObj.appendChild(eventElement(ev, true)));
+  }
+}
+
 function joinList(lst, first_delim, second_delim) {
-	if (lst.length == 0) {
-		return "";
-	} else if (lst.length == 1) {
-		return lst[0];
-	}
-	var result = "";
-	for (i = 0; i < lst.length; i++) {
-		if (i == (lst.length - 1)) {
-			// Last element
-			result = result + second_delim + lst[i];
-		} else {
-			result = result + lst[i];
-			if (i != (lst.length - 2) || lst.length > 2) {
-				result = result + first_delim;
-			}
-		}
-	}
-	return result;
+  if (lst.length == 0) {
+    return "";
+  } else if (lst.length == 1) {
+    return lst[0];
+  }
+  var result = "";
+  for (i = 0; i < lst.length; i++) {
+    if (i == (lst.length - 1)) {
+      // Last element
+      result = result + second_delim + lst[i];
+    } else {
+      result = result + lst[i];
+      if (i != (lst.length - 2) || lst.length > 2) {
+        result = result + first_delim;
+      }
+    }
+  }
+  return result;
 }
 
 function A(elem, url) {
-	if (!url) {
-		return elem;
-	}
-	var a = document.createElement('a');
-	a.setAttribute('href', url);
-	a.appendChild(elem);
-	return a;
+  if (!url) {
+    return elem;
+  }
+  var a = document.createElement('a');
+  a.setAttribute('href', url);
+  a.appendChild(elem);
+  return a;
 }
 
 function addText(elem, txt) {
-	elem.appendChild(document.createTextNode(txt));
+  elem.appendChild(document.createTextNode(txt));
 }
 
 // Make a DOM element representing the event.
 function eventElement(ev, isFuture) {
-	var evP = document.createElement('p');
-	var aboveEvent = document.createElement('small');
-	evP.appendChild(aboveEvent);
-	var evDate = document.createTextNode(
-		ev["start_time_ts"].toLocaleDateString()
-		+ " "
-		+ ev["start_time_ts"].toLocaleTimeString()
-	);
-	aboveEvent.appendChild(A(evDate, ev['url']));
-	if (ev['tickets'] && isFuture) {
-		var tickets = document.createTextNode("🎫 tickets");
-		addText(aboveEvent, " ");
-		aboveEvent.appendChild(A(tickets, ev['tickets']))
-	}
-	evP.appendChild(document.createElement('br'));
-	var evTitle = document.createElement('strong');
-	if (isFuture) {
-		addText(evTitle, '🎵 ');
-	} else {
-		addText(evTitle, '✔️ ');
-	}
-	evTitle.appendChild(document.createTextNode(ev['name']));
-	evP.appendChild(evTitle);
-	if (ev['instrument']) {
-		if (isFuture) {
-			evP.appendChild(document.createTextNode(" – will play "));
-		} else {
-			evP.appendChild(document.createTextNode(" – played "));
-		}
-		evP.appendChild(document.createTextNode(ev['instrument']));
-	}
-	if (ev['with'].length) {
-		evP.appendChild(document.createTextNode(" with "));
-		evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
-	}
-	if (ev['venue']) {
-		evP.appendChild(document.createTextNode(" in "));
-		var venue = document.createTextNode(ev['venue']);
-		evP.appendChild(A(venue, ev['venue_url']));
-	}
-	if (ev['description']) {
-		evP.appendChild(document.createTextNode(' - '));
-		evP.appendChild(document.createTextNode(ev['description']));
-	} else {
-		addText(evP, ".");
-	}
+  var evP = document.createElement('p');
+  var aboveEvent = document.createElement('small');
+  evP.appendChild(aboveEvent);
+  const options = {
+    'year': 'numeric',
+    'month': 'short',
+    'day': 'numeric',
+    'hour': 'numeric',
+  };
 
-	// The enclosing div. (Maybe unnecessary?)
-	var evDiv = document.createElement('div');
-	evDiv.setAttribute('class', 'event');
-	evDiv.appendChild(evP);
-	return evDiv;
+  var evDate = document.createTextNode(
+    ev["start_time_ts"].toLocaleString(undefined, options)
+  );
+  aboveEvent.appendChild(A(evDate, ev['url']));
+  if (ev['tickets'] && isFuture) {
+    var tickets = document.createTextNode("🎫 tickets");
+    addText(aboveEvent, " ");
+    aboveEvent.appendChild(A(tickets, ev['tickets']))
+  }
+  evP.appendChild(document.createElement('br'));
+  var evTitle = document.createElement('strong');
+  if (isFuture) {
+    addText(evTitle, '🎵 ');
+  } else {
+    addText(evTitle, '✔️ ');
+  }
+  evTitle.appendChild(document.createTextNode(ev['name']));
+  evP.appendChild(evTitle);
+  if (ev['instrument']) {
+    if (isFuture) {
+      evP.appendChild(document.createTextNode(" – will play "));
+    } else {
+      evP.appendChild(document.createTextNode(" – played "));
+    }
+    evP.appendChild(document.createTextNode(ev['instrument']));
+  }
+  if (ev['with'].length) {
+    evP.appendChild(document.createTextNode(" with "));
+    evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
+  }
+  if (ev['venue']) {
+    evP.appendChild(document.createTextNode(" in "));
+    var venue = document.createTextNode(ev['venue']);
+    evP.appendChild(A(venue, ev['venue_url']));
+  }
+  if (ev['description'] && isFuture) {
+    evP.appendChild(document.createTextNode(' - '));
+    evP.appendChild(document.createTextNode(ev['description']));
+  } else {
+    addText(evP, ".");
+  }
+
+  // The enclosing div. (Maybe unnecessary?)
+  var evDiv = document.createElement('div');
+  evDiv.setAttribute('class', 'event');
+  evDiv.appendChild(evP);
+  return evDiv;
 }
 
 function populatePerformances() {
-	var futureEventsDiv = document.getElementById("future-events");
-	var pastEventsDiv = document.getElementById("past-events");
+  var futureEventsDiv = document.getElementById("future-events");
+  var pastEventsDiv = document.getElementById("past-events");
 
-	// Proof of concept for page updates.
-	var pastEvents = [];
-	var futureEvents = [];
-	const now = new Date();
-	for (i in performancesList) {
-		var ev = performancesList[i];
-		if (ev['name'] == "end_marker") {
-			// Don't use this element.
-			break;
-		}
-		if (ev['start_time']) {
-			var d = new Date(Date.parse(ev['start_time']));
-			ev['start_time_ts'] = d;
-			if (ev['start_time_ts'].getTime() > now.getTime()) {
-				futureEvents.push(ev);
-			} else {
-				pastEvents.push(ev);
-			}
-		} else {
-			console.log("Event " + ev['name'] + " is missing start_time");
-		}
-	}
-	// Sort events by date.
-	futureEvents.sort(function(a, b) {
-		// Reverse chronological.
-		if (a['start_time_ts'].getTime() > b['start_time_ts'].getTime()) {
-			return 1;
-		} else {
-			return -1;
-		}
-	});
-	pastEvents.sort(function(a, b) {
-		// Chronological.
-		if (a['start_time_ts'].getTime() < b['start_time_ts'].getTime()) {
-			return 1;
-		} else {
-			return -1;
-		}
-	});
+  // Proof of concept for page updates.
+  var pastEvents = [];
+  var futureEvents = [];
+  const now = new Date();
+  for (i in performancesList) {
+    var ev = performancesList[i];
+    if (ev['name'] == "end_marker") {
+      // Don't use this element.
+      break;
+    }
+    if (ev['start_time']) {
+      var d = new Date(Date.parse(ev['start_time']));
+      ev['start_time_ts'] = d;
+      if (ev['start_time_ts'].getTime() > now.getTime()) {
+        futureEvents.push(ev);
+      } else {
+        pastEvents.push(ev);
+      }
+    } else {
+      console.log("Event " + ev['name'] + " is missing start_time");
+    }
+  }
+  // Sort events by date.
+  futureEvents.sort(function(a, b) {
+    // Reverse chronological.
+    if (a['start_time_ts'].getTime() > b['start_time_ts'].getTime()) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+  pastEvents.sort(function(a, b) {
+    // Chronological.
+    if (a['start_time_ts'].getTime() < b['start_time_ts'].getTime()) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
 
-	if (futureEvents.length > 0) {
-		var hdr = document.createElement('h2');
-		hdr.setAttribute('id', 'upcoming-performances');
-		hdr.appendChild(document.createTextNode("Upcoming Performances"));
-		futureEventsDiv.appendChild(hdr);
-		futureEvents.forEach((ev) => futureEventsDiv.appendChild(eventElement(ev, true)));
-	}
-	if (pastEvents.length > 0) {
-		var hdr = document.createElement('h2');
-		hdr.setAttribute('id', 'past-performances');
-		hdr.appendChild(document.createTextNode("Past Performances"));
-		pastEventsDiv.appendChild(hdr);
-		pastEvents.forEach((ev) => pastEventsDiv.appendChild(eventElement(ev, false)));
-	}
+  if (futureEvents.length > 0) {
+    var prettyFuture = new PrettyEvents(futureEvents, futureEventsDiv, 'Upcoming Performances', 'upcoming-performances');
+    prettyFuture.populate();
+  }
+  if (pastEvents.length > 0) {
+    var hdr = document.createElement('h2');
+    hdr.setAttribute('id', 'past-performances');
+    hdr.appendChild(document.createTextNode("Past Performances"));
+    pastEventsDiv.appendChild(hdr);
+    pastEvents.forEach((ev) => pastEventsDiv.appendChild(eventElement(ev, false)));
+  }
 }
+
 window.addEventListener('load', (event) => {
-	populatePerformances();
+  populatePerformances();
 });
 </script>
