@@ -22,7 +22,11 @@ gel and ensuring tight backing for vocalists. These sessions have honed his
 walking bass skills and deepened his repertoire of tunes.
 
 In his home studio in North Dublin, Maciej takes a [natural, organic
+<<<<<<< HEAD:content/bio.md
 approach][appr]) to recording and mixing. He prefers live
+=======
+approach]({{< relref "approach.md" >}}) to recording and mixing. He prefers live
+>>>>>>> 6a8a89d (Update content to a new version.):content/bio/index.md
 recordings, rather than track-by-track, capturing performances that breathe and
 feel authentic. His meticulous attention to microphone placement, phase
 alignment, and ambience allows him to mix with a blend of classical techniques
@@ -37,8 +41,9 @@ Club in Belfast.
 Looking ahead, Maciej is focused on original music creation, whether for himself
 or in collaboration with others. His dream is to write and release songs,
 helping artists bring their creative visions to life through his [production
-work][mus]). Ultimately, it's the act of creating something new that fuels his
-passion, making music the art form closest to his heart.
+work]({{< relref "music/_index.md" >}}). Ultimately, it's the act of creating
+something new that fuels his passion, making music the art form closest to his
+heart.
 
 [appr]: {{< relref "approach.md" >}}
 [jam]: https://facebook.com/dublinjazzjam
