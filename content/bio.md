@@ -23,7 +23,11 @@ walking bass skills and deepened his repertoire of tunes.
 
 In his home studio in North Dublin, Maciej takes a [natural, organic
 <<<<<<< HEAD:content/bio.md
+<<<<<<< HEAD:content/bio.md
 approach][appr]) to recording and mixing. He prefers live
+=======
+approach]({{< relref "approach.md" >}}) to recording and mixing. He prefers live
+>>>>>>> 6a8a89d (Update content to a new version.):content/bio/index.md
 =======
 approach]({{< relref "approach.md" >}}) to recording and mixing. He prefers live
 >>>>>>> 6a8a89d (Update content to a new version.):content/bio/index.md
