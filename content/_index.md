@@ -7,20 +7,43 @@ lastmod: "2024-09-24T20:30:00+09:00"
 image: maciej_on_bass_360px.jpg
 ---
 
-**Maciej Bliziński** is a Dublin-based [music producer][mus] and [bass
-player][bass]. In recording, mixing, or playing bass, Maciej aims to create
-[authentic, organic sound][appr].
+{{< social >}}
 
-[mus]: {{< relref "production-showcase.md" >}}
-[bass]: {{< relref "bass.md" >}}
-[appr]: {{< relref "approach.md" >}}
+Hi, I’m Maciej Bliziński, music producer and bass player based in Dublin. I’m
+passionate about creating authentic, organic sound, whether I’m recording,
+mixing, or playing bass.
 
-<!--more-->
+## Music Production
+
+I’m here to help you realize the full potential of your music. [Explore my
+approach][appr] to music production, and [listen to my work][mus].
+
+{{< youtube 4WHzSyDdsLk >}}
+
+&nbsp;
+
+## Bass
+
+As a bass player I specialize in jazz, and a number of styles of Brazilian
+music: bossa nova, samba, and chorinho. I usually play in the Dublin area [with
+various artists][perf], jazz and otherwise.
 
 <!--
-Maciej regularly collaborates with pianist [Gediminas Karkauskas][ged] and
-drummer [Riccardo Marenghi][ric] in a jazz trio since 2022.
-
-[ged]: https://www.offpitchrecords.com/
-[ric]: https://www.instagram.com/riccardo_marenghi/
+* [Music production &#187;][mus]
+* [Bass &#187;][bass]
 -->
+
+I am a member of [Pstryk!][pstryk], the interactive performance for children.
+
+<!--
+{{< instagram "C65gcEWtjDG" >}}
+-->
+
+
+[appr]: {{< relref "approach.md" >}}
+[bass]: {{< relref "bass.md" >}}
+[ged]: https://www.offpitchrecords.com/
+[mus]: {{< relref "music/_index.md" >}}
+[perf]: {{< relref "performances.md" >}}
+[pstryk]: https://www.instagram.com/pstrykofficial
+[ric]: https://www.instagram.com/riccardo_marenghi/

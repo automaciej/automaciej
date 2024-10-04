@@ -7,6 +7,7 @@ vim:ts=2 sts=2 sw=2 expandtab:
 
 {{ .Content }}
 
+{{ if .Pages }}
 <h2>Najnowsze wpisy</h2>
 
 <ul class="split-list year-list">
@@ -30,6 +31,8 @@ vim:ts=2 sts=2 sw=2 expandtab:
 </li>
 {{ end }}
 </ul>
+
+{{ end }}
 
 </div>
 
