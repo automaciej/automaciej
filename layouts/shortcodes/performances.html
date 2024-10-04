@@ -1,11 +1,27 @@
-<p>
-<small>
-	<a href="#future-performances">upcoming performances »</a> <br/>
-	<a href="#past-performances">past performances »</a>
-</small>
-</p>
+{{/* vim:set sw=2 ts=2 sts=2 expandtab: */}}
+{{- $future := true -}}
+{{- $past := true -}}
+{{- if or (.Get "future") (.Get "past") -}}
+{{- if .Get "future" -}}
+{{- $future = true -}}
+{{- else -}}
+{{- $future = false -}}
+{{- end -}}
+{{- if .Get "past" -}}
+{{- $past = true -}}
+{{- else -}}
+{{- $past = false -}}
+{{- end -}}
+{{- end -}}
+
+{{- if $future -}}
+<hr />
 <div id="future-events"></div>
+{{- end }}
+{{ if $past -}}
+<hr />
 <div id="past-events"></div>
+{{- end }}
 
 <!-- Create the JSON structure -->
 
@@ -20,20 +36,151 @@ var performancesList = {{ $.Site.Data.performances | jsonify (dict "indent" "  "
 class PrettyEvents {
   #eventList;
   #parentObj;
-  #title;
-  #headerID;
-  constructor(eventList, parentObj, title, headerID) {
+  #isFuture;
+  constructor(eventList, parentObj, isFuture) {
     this.#eventList = eventList;
     this.#parentObj = parentObj;
-    this.#title = title;
-    this.#headerID = headerID;
+    this.#isFuture = isFuture;
   }
+
+  // Make a DOM element representing the event.
+  eventElement(ev) {
+    var evP = document.createElement('p');
+    var aboveEvent = document.createElement('small');
+    evP.appendChild(aboveEvent);
+    const options = {
+      'year': 'numeric',
+      'month': 'short',
+      'day': 'numeric',
+      'hour': 'numeric',
+    };
+
+    var evDate = document.createTextNode(
+      ev["start_time_ts"].toLocaleString(undefined, options)
+    );
+    aboveEvent.appendChild(A(evDate, ev['url']));
+    if (ev['tickets'] && this.#isFuture) {
+      var tickets = document.createTextNode("🎫 tickets");
+      addText(aboveEvent, " ");
+      aboveEvent.appendChild(A(tickets, ev['tickets']))
+    }
+    evP.appendChild(document.createElement('br'));
+    var evTitle = document.createElement('strong');
+    if (this.#isFuture) {
+      addText(evTitle, '🎵 ');
+    } else {
+      addText(evTitle, '✔️ ');
+    }
+    evTitle.appendChild(document.createTextNode(ev['name']));
+    evP.appendChild(evTitle);
+    if (ev['instrument']) {
+      if (this.#isFuture) {
+        evP.appendChild(document.createTextNode(" – will play "));
+      } else {
+        evP.appendChild(document.createTextNode(" – played "));
+      }
+      evP.appendChild(document.createTextNode(ev['instrument']));
+    }
+    if (ev['with'].length) {
+      evP.appendChild(document.createTextNode(" with "));
+      evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
+    }
+    if (ev['venue']) {
+      evP.appendChild(document.createTextNode(" in "));
+      var venue = document.createTextNode(ev['venue']);
+      evP.appendChild(A(venue, ev['venue_url']));
+    }
+    if (ev['description'] && this.#isFuture) {
+      evP.appendChild(document.createTextNode(' - '));
+      evP.appendChild(document.createTextNode(ev['description']));
+    } else {
+      addText(evP, ".");
+    }
+
+    // The enclosing div. (Maybe unnecessary?)
+    var evDiv = document.createElement('div');
+    evDiv.setAttribute('class', 'event');
+    evDiv.appendChild(evP);
+    return evDiv;
+  }
+
   populate() {
-    var hdr = document.createElement('h2');
-    hdr.setAttribute('id', this.#headerID);
-    hdr.appendChild(document.createTextNode(this.#title));
-    this.#parentObj.appendChild(hdr);
-    this.#eventList.forEach((ev) => this.#parentObj.appendChild(eventElement(ev, true)));
+    this.#eventList.forEach((ev) => this.#parentObj.appendChild(this.eventElement(ev)));
+  }
+}
+
+// This class represents a template.
+class CompactEvents {
+  #eventList;
+  #parentObj;
+  #isFuture;
+  constructor(eventList, parentObj, title, headerID, isFuture) {
+    this.#eventList = eventList;
+    this.#parentObj = parentObj;
+    this.#isFuture = isFuture;
+  }
+
+  // Make a DOM element representing the event.
+  eventElement(ev) {
+    var compact = document.createElement('li');
+    const optionsFuture = {
+      'year': 'numeric',
+      'month': 'short',
+      'day': 'numeric',
+      'hour': 'numeric',
+    };
+
+    const optionsPast = {
+      'year': 'numeric',
+      'month': 'short',
+      'day': 'numeric',
+    };
+
+    var evDate = document.createTextNode(
+      ev["start_time_ts"].toLocaleString(undefined, this.#isFuture ? optionsFuture : optionsPast)
+    );
+    compact.appendChild(A(evDate, ev['url']));
+    addText(compact, ': ');
+    if (ev['tickets'] && this.#isFuture) {
+      var tickets = document.createTextNode("🎫");
+      addText(compact, " ");
+      compact.appendChild(A(tickets, ev['tickets']))
+    }
+    compact.appendChild(document.createTextNode(ev['name']));
+    // TODO: Perhaps I can make this a collapsible.
+    /* 
+    if (ev['instrument']) {
+      if (this.#isFuture) {
+        evP.appendChild(document.createTextNode(" – will play "));
+      } else {
+        evP.appendChild(document.createTextNode(" – played "));
+      }
+      evP.appendChild(document.createTextNode(ev['instrument']));
+    }
+    if (ev['with'].length) {
+      evP.appendChild(document.createTextNode(" with "));
+      evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
+    }
+    if (ev['venue']) {
+      evP.appendChild(document.createTextNode(" in "));
+      var venue = document.createTextNode(ev['venue']);
+      evP.appendChild(A(venue, ev['venue_url']));
+    }
+    if (ev['description'] && this.#isFuture) {
+      evP.appendChild(document.createTextNode(' - '));
+      evP.appendChild(document.createTextNode(ev['description']));
+    } else {
+      addText(evP, ".");
+    }
+    */
+
+    return compact;
+  }
+
+  populate() {
+    var ul = document.createElement('ul');
+    this.#eventList.forEach((ev) => ul.appendChild(this.eventElement(ev)));
+    this.#parentObj.appendChild(ul);
   }
 }
 
@@ -70,67 +217,6 @@ function A(elem, url) {
 
 function addText(elem, txt) {
   elem.appendChild(document.createTextNode(txt));
-}
-
-// Make a DOM element representing the event.
-function eventElement(ev, isFuture) {
-  var evP = document.createElement('p');
-  var aboveEvent = document.createElement('small');
-  evP.appendChild(aboveEvent);
-  const options = {
-    'year': 'numeric',
-    'month': 'short',
-    'day': 'numeric',
-    'hour': 'numeric',
-  };
-
-  var evDate = document.createTextNode(
-    ev["start_time_ts"].toLocaleString(undefined, options)
-  );
-  aboveEvent.appendChild(A(evDate, ev['url']));
-  if (ev['tickets'] && isFuture) {
-    var tickets = document.createTextNode("🎫 tickets");
-    addText(aboveEvent, " ");
-    aboveEvent.appendChild(A(tickets, ev['tickets']))
-  }
-  evP.appendChild(document.createElement('br'));
-  var evTitle = document.createElement('strong');
-  if (isFuture) {
-    addText(evTitle, '🎵 ');
-  } else {
-    addText(evTitle, '✔️ ');
-  }
-  evTitle.appendChild(document.createTextNode(ev['name']));
-  evP.appendChild(evTitle);
-  if (ev['instrument']) {
-    if (isFuture) {
-      evP.appendChild(document.createTextNode(" – will play "));
-    } else {
-      evP.appendChild(document.createTextNode(" – played "));
-    }
-    evP.appendChild(document.createTextNode(ev['instrument']));
-  }
-  if (ev['with'].length) {
-    evP.appendChild(document.createTextNode(" with "));
-    evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
-  }
-  if (ev['venue']) {
-    evP.appendChild(document.createTextNode(" in "));
-    var venue = document.createTextNode(ev['venue']);
-    evP.appendChild(A(venue, ev['venue_url']));
-  }
-  if (ev['description'] && isFuture) {
-    evP.appendChild(document.createTextNode(' - '));
-    evP.appendChild(document.createTextNode(ev['description']));
-  } else {
-    addText(evP, ".");
-  }
-
-  // The enclosing div. (Maybe unnecessary?)
-  var evDiv = document.createElement('div');
-  evDiv.setAttribute('class', 'event');
-  evDiv.appendChild(evP);
-  return evDiv;
 }
 
 function populatePerformances() {
@@ -178,15 +264,20 @@ function populatePerformances() {
   });
 
   if (futureEvents.length > 0) {
-    var prettyFuture = new PrettyEvents(futureEvents, futureEventsDiv, 'Upcoming Performances', 'upcoming-performances');
-    prettyFuture.populate();
+    var hdr = document.createElement('h2');
+    hdr.setAttribute('id', 'future-performances');
+    hdr.appendChild(document.createTextNode('Upcoming Performances'));
+    futureEventsDiv.appendChild(hdr);
+    var tmpl = new PrettyEvents(futureEvents, futureEventsDiv, true);
+    tmpl.populate();
   }
   if (pastEvents.length > 0) {
     var hdr = document.createElement('h2');
     hdr.setAttribute('id', 'past-performances');
     hdr.appendChild(document.createTextNode("Past Performances"));
     pastEventsDiv.appendChild(hdr);
-    pastEvents.forEach((ev) => pastEventsDiv.appendChild(eventElement(ev, false)));
+    var tmpl = new CompactEvents(pastEvents, pastEventsDiv, false);
+    tmpl.populate();
   }
 }
 
