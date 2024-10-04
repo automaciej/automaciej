@@ -33,64 +33,48 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"
   siteLogo = "/images/automaciej-logo.jpg"
-  twitterHandle = "automaciej"
-  githubName = "automaciej"
-  facebookUrlPath = "maciej.blizinski"
-  tiktokName = "automaciej"
-  instagramHandle = "mblizinski"
-  mastodonLink = "https://mastodon.ie/@automaciej"
-  description = "Music production. Acoustic bass. Natural sound. Bringing ideas to life."
+  description = "Music production. Natural sound. Bringing ideas to life."
   shareImage = "bio/images/maciej_on_bass_hi.jpg"
   favicon = "images/favicon.png"
   licensed = 1
 
-  [params.visual]
-    [params.visual.image]
-      enable = true
-      file = "bio/images/background.jpg"
+[params.social]
+  linktree = "mblizinski"
+  instagramHandle = "mblizinski"
+  mastodonLink = "https://mastodon.ie/@automaciej"
+  githubName = "automaciej"
+  tiktokName = "automaciej"
+  facebookUrlPath = "maciej.blizinski"
+  twitterHandle = "automaciej"
+  soundcloud = "maciej-blizinski"
+  linkedIn = "automaciej"
 
-  [[params.links]]
-    [params.links.list1]
-      heading = "About"
-      [[params.links.list1.link]]
-        text = "Music"
-        url = "music/"
-      [[params.links.list1.link]]
-        text = "Bass"
-        url = "bass/"
-      [[params.links.list1.link]]
-        text = "Performances"
-        url = "performances"
+[params.visual]
+  [params.visual.image]
+    enable = true
+    file = "images/background.jpg"
 
-    [params.links.list2]
-      heading = "Social"
-      [[params.links.list2.link]]
-        text = "Instagram"
-        url = "http://instagram.com/mblizinski"
-      [[params.links.list2.link]]
-        text = "Facebook"
-        url = "http://facebook.com/maciej.blizinski"
-      [[params.links.list2.link]]
-        text = "TikTok"
-        url = "http://tiktok.com/@automaciej"
-      [[params.links.list2.link]]
-        text = "SoundCloud"
-        url = "http://soundcloud.com/maciej-blizinski"
+[[params.links]]
+  [params.links.list2]
+    heading = "EPK"
+    [[params.links.list2.link]]
+      text = "Bio"
+      ref = "bio.md"
+    [[params.links.list2.link]]
+      text = "Performances"
+      ref = "performances.md"
+    [[params.links.list2.link]]
+      text = "Photos"
+      ref = "photos.md"
+    [[params.links.list2.link]]
+      text = "Press"
+      ref = "press.md"
 
-    [params.links.list3]
-      heading = "Resources"
-      [[params.links.list3.link]]
-        text = "linktr.ee"
-        url = "http://linktr.ee/mblizinski"
-      [[params.links.list3.link]]
-        text = "Bio"
-        url = "bio/"
-      [[params.links.list3.link]]
-        text = "Press"
-        url = "press/"
-      [[params.links.list3.link]]
-        text = "Photos"
-        url = "photos/"
+  [params.links.list3]
+    heading = "More links"
+    [[params.links.list3.link]]
+      text = "linktr.ee/mblizinski"
+      url = "https://linktr.ee/mblizinski"
 
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.

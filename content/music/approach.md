@@ -16,16 +16,14 @@ the music.
 
 <!--more-->
 
-I draw inspiration from engineers like Al Schmitt and Andrew Scheps, both of
-whom bring different philosophies to recording and mixing. Al Schmitt's approach
-emphasizes simplicity, using minimal equalization and compression to maintain
-the purity of the sound. Andrew Scheps, on the other hand, is known for
-embracing more complex digital workflows, layering effects, and using parallel
-processing to create rich, dynamic mixes. In September 2023, I attended a
-week-long seminar with Scheps in France, which deepened my understanding of how
-to achieve an analog warmth in a digital context. Seeing his hands-on approach
-to mixing inspired me to bring more flexibility and creative possibilities into
-my own work.
+I draw inspiration from Al Schmitt and Andrew Scheps. Al Schmitt's approach
+emphasizes simplicity, minimizing interventions and maintaining the purity of
+the sound. Andrew Scheps is known for embracing more complex digital workflows
+to create rich, dynamic mixes. In September 2023 I attended a [week-long seminar
+with Scheps in France][mwtm], which deepened my understanding of how to achieve
+an analog warmth in a digital context.
+
+{{< instagram "C1GGwHKq_pt" >}}
 
 The recording environment is a key part of my process. Whether we’re working in
 a professional studio, a rehearsal room, or an unconventional space, I’ll help
@@ -61,3 +59,4 @@ essence of your sound.
 While I don’t handle mastering, I leave minimal work for the mastering engineer.
 My mixes are balanced and loud, providing a strong foundation for final touches.
 
+[mwtm]: https://www.instagram.com/mblizinski/p/C1GGwHKq_pt/
