@@ -22,26 +22,25 @@ gel and ensuring tight backing for vocalists. These sessions have honed his
 walking bass skills and deepened his repertoire of tunes.
 
 In his home studio in North Dublin, Maciej takes a [natural, organic
-approach]({{< relref "approach.md" >}}) to recording and mixing. He prefers live
-recordings, rather than track-by-track, capturing performances that breathe and
-feel authentic. His meticulous attention to microphone placement, phase
-alignment, and ambience allows him to mix with a blend of classical techniques
-and modern digital tools.
+approach][appr] to recording and mixing. He prefers live recordings, rather than
+track-by-track, capturing performances that breathe and feel authentic. His
+meticulous attention to microphone placement, phase alignment, and ambience
+allows him to mix with a blend of classical techniques and modern digital tools.
 
 A proud moment in his career was co-writing for his band Funksters in Poland,
 whose members have since gone on to successful careers. These days, Maciej is
-most proud of his work with pianist [Gediminas Karkauskas][ged] and drummer
-[Riccardo Marenghi][ric], particularly their recent performance at Scott’s Jazz
-Club in Belfast.
+excited about his collaboration with pianist [Gediminas Karkauskas][ged] and
+drummer [Riccardo Marenghi][ric].
 
 Looking ahead, Maciej is focused on original music creation, whether for himself
 or in collaboration with others. His dream is to write and release songs,
 helping artists bring their creative visions to life through his [production
-work]({{< relref "music/_index.md" >}}). Ultimately, it's the act of creating
-something new that fuels his passion, making music the art form closest to his
-heart.
+work][mus]). Ultimately, it's the act of creating something new that fuels his
+passion, making music the art form closest to his heart.
 
+[appr]: {{< relref "approach.md" >}}
 [jam]: https://facebook.com/dublinjazzjam
 [marek]: https://en.wikipedia.org/wiki/Marek_Blizi%C5%84ski
 [ged]: https://www.offpitchrecords.com/
 [ric]: https://www.instagram.com/riccardo_marenghi/
+[mus]: {{< relref "music/_index.md" >}} "Music production showcase"
