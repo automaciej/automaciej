@@ -5,6 +5,8 @@ description: "My goal is to help you produce your original music."
 date: "2022-09-05T15:02:43+01:00"
 lastmod: "2024-09-25T10:30:45+02:00"
 
+aliases: [ "/bio/music" ]
+
 ---
 
 {{< tableofcontents >}}
