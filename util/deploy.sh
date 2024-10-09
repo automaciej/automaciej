@@ -18,7 +18,7 @@ hugo=hugo
 readonly hugo
 
 helpmsg() {
-  echo "$0 [ deploy | draft | test ]"
+  echo "$0 [ deploy | preview | dev ]"
 }
 
 function build {
@@ -44,7 +44,7 @@ case "${1:-}" in
     "${RSYNC[@]}" public/ "${PREVIEW_DEST?}"
     echo "Done."
     ;;
-  test)
+  dev)
     ${hugo} -w -D -F \
 	    --templateMetrics \
 	    server
