@@ -1,0 +1,16 @@
+name = "Kind Of New: Cordillera Serena"
+url = ""
+instrument = "double bass"
+with = [
+	"Rodrigo Almonte",
+	"Sorcha McCague",
+	"Jarlath Byrne",
+]
+description = """\
+"""
+
+venue = "J.T. Pim's"
+venue_url = ""
+start_time = 2024-12-08T20:30:00
+tickets = ""
+significant = true

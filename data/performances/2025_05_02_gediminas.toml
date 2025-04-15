@@ -1,0 +1,15 @@
+name = "Gediminas Karkauskas Trio"
+url = "https://www.newparkmusic.ie/event-details-registration/newpark-concert-series-with-gediminas-karkauskas-trio"
+instrument = "double bass"
+with = [
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = """\
+"""
+
+venue = "Newpark School of Music"
+venue_url = "https://www.newparkmusic.ie/event-details-registration/newpark-concert-series-with-gediminas-karkauskas-trio"
+start_time = 2025-05-02T20:00:00
+tickets = "https://www.eventbrite.ie/e/newpark-concert-series-with-gediminas-karkauskas-trio-tickets-1088658068589"
+significant = true
