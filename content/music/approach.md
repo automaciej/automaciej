@@ -56,7 +56,4 @@ and more layered approaches depending on the project, I mix in the box with
 flexibility, using the tools and techniques best suited to bringing out the
 essence of your sound.
 
-While I don’t handle mastering, I leave minimal work for the mastering engineer.
-My mixes are balanced and loud, providing a strong foundation for final touches.
-
 [mwtm]: https://www.instagram.com/mblizinski/p/C1GGwHKq_pt/
