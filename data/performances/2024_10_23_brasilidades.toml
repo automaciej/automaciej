@@ -1,0 +1,15 @@
+name = "Brasilidades Night"
+url = ""
+instrument = "7 string guitar"
+with = [
+	"Luisa Aniballi",
+	"William Alexandre Ribeiro",
+]
+description = """\
+"""
+
+venue = "International Bar"
+venue_url = ""
+start_time = 2024-10-23T20:30:00
+tickets = ""
+significant = true

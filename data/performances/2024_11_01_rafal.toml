@@ -1,0 +1,14 @@
+name = "Violin and guitar duo"
+url = ""
+instrument = "electric guitar"
+with = [
+	"Rafał Szydłowski",
+]
+description = """\
+"""
+
+venue = "People's Restaurant, Townparks, Cavan"
+venue_url = ""
+start_time = 2024-11-01T20:30:00
+tickets = ""
+significant = true

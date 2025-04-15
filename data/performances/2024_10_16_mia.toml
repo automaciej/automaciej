@@ -1,0 +1,16 @@
+name = "Mia Byrne Quartet"
+url = ""
+instrument = "double bass"
+with = [
+	"Mia Byrne",
+	"Darragh Groome",
+	"Sidney Edge",
+]
+description = """\
+"""
+
+venue = "Juno"
+venue_url = ""
+start_time = 2024-10-16T20:30:00
+tickets = ""
+significant = true
