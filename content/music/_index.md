@@ -1,6 +1,6 @@
 ---
 title: "Music production"
-tagline: "Bring your music to life"
+tagline: "Produced by Maciej"
 description: "My goal is to help you produce your original music."
 date: "2022-09-05T15:02:43+01:00"
 lastmod: "2024-09-25T10:30:45+02:00"
@@ -12,6 +12,14 @@ aliases: [ "/bio/music" ]
 {{< tableofcontents >}}
 
 ## Selected production
+
+### Je te veux by Zoe Hayter
+
+{{< bandcamp 2840110792 "https://zoehayter.bandcamp.com/track/je-te-veux" "Je te veux by Zoe Hayter" >}}
+
+### Run For Me by emily jane
+
+{{< bandcamp 2667761784 "https://emilyjane1999.bandcamp.com/track/run-for-me" "Run For Me by emily jane" >}}
 
 ### Chris Comhaill and John Mahon (2024)
 
