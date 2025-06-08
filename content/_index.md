@@ -18,7 +18,12 @@ mixing, or playing bass.
 I’m here to help you realize the full potential of your music. [Explore my
 approach][appr] to music production, and [listen to my work][mus].
 
-{{< youtube 4WHzSyDdsLk >}}
+### Latest releases
+
+
+{{< bandcamp 2840110792 "https://zoehayter.bandcamp.com/track/je-te-veux" "Je te veux by Zoe Hayter" >}}
+
+{{< bandcamp 2667761784 "https://emilyjane1999.bandcamp.com/track/run-for-me" "Run For Me by emily jane" >}}
 
 &nbsp;
 
