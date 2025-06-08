@@ -6,6 +6,9 @@ aliases: [ "/bio/press" ]
 
 ---
 
+**Sligo Jazz Festival**
+
+{{< instagram-reel "DItF_ktxY_z" >}}
 
 **Dublin Jazz Jam Session**
 
