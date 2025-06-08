@@ -1,0 +1,15 @@
+name = "Gediminas Karkauskas Trio"
+url = ""
+instrument = "double bass"
+with = [
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = """\
+"""
+
+venue = "Wexford Arts Centre"
+venue_url = ""
+start_time = 2025-05-22T20:00:00
+tickets = ""
+significant = true

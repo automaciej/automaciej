@@ -1,0 +1,16 @@
+name = "Linley Hamilton Quartet"
+url = ""
+instrument = "double bass"
+with = [
+	"Linley Hamilton",
+	"Gediminas Karkauskas",
+	"Riccardo Marenghi",
+]
+description = """\
+"""
+
+venue = "Rathfriland Commumity Centre"
+venue_url = ""
+start_time = 2025-06-06T20:00:00
+tickets = ""
+significant = true
