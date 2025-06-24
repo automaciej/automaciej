@@ -13,11 +13,11 @@ aliases: [ "/bio/music" ]
 
 ## Selected production
 
-### Je te veux by Zoe Hayter
+### Je te veux by Zoe Hayter (2025)
 
 {{< bandcamp 2840110792 "https://zoehayter.bandcamp.com/track/je-te-veux" "Je te veux by Zoe Hayter" >}}
 
-### Run For Me by emily jane
+### Run For Me by emily jane (2025)
 
 {{< bandcamp 2667761784 "https://emilyjane1999.bandcamp.com/track/run-for-me" "Run For Me by emily jane" >}}
 
