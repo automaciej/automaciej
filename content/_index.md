@@ -1,54 +1,31 @@
 ---
 title: "Maciej Bliziński"
-tagline: "Support. Record. Mix."
-description: "Maciej Bliziński is a bass player based in Dublin, Ireland. He specializes in jazz, bossa nova, samba, jazz fusion, and acid jazz."
-date: "2024-09-24T20:30:00+09:00"
-lastmod: "2024-09-24T20:30:00+09:00"
+tagline: "Producer-turned-musicmaker"
+description: "Maciej Bliziński is a Dublin-based musician working on original music, exploring the intersection of production craft and personal expression."
+date: "2025-07-01T20:30:00+09:00"
+lastmod: "2025-07-01T20:30:00+09:00"
 image: maciej_on_bass_360px.jpg
 ---
 
 {{< social >}}
 
-Hi, I’m Maciej Bliziński, music producer and bass player based in Dublin. I’m
-passionate about creating authentic, organic sound, whether I’m recording,
-mixing, or playing bass.
+I'm a producer-turned-musicmaker. Going back to my roots, thirty-five years
+back in time. Currently focused entirely on an original music project,
+collaboration across time.
 
-## Music Production
+Not taking on new production work.
 
-I’m here to help you realize the full potential of your music. [Explore my
-approach][appr] to music production, and [listen to my work][mus].
+## Musical Background
 
-### Latest releases
+My path began in Warsaw's musical scene, leading jazz and acid jazz bands
+before moving to Dublin in 2007. I spent years developing my ear through live
+performance - from co-organizing Dublin Jazz Jam Sessions to working with
+artists like pianist [Gediminas Karkauskas][ged] and drummer [Riccardo
+Marenghi][ric].
 
-
-{{< bandcamp 2840110792 "https://zoehayter.bandcamp.com/track/je-te-veux" "Je te veux by Zoe Hayter" >}}
-
-{{< bandcamp 2667761784 "https://emilyjane1999.bandcamp.com/track/run-for-me" "Run For Me by emily jane" >}}
-
-&nbsp;
-
-## Bass
-
-As a bass player I specialize in jazz, and a number of styles of Brazilian
-music: bossa nova, samba, and chorinho. I usually play in the Dublin area [with
-various artists][perf], jazz and otherwise.
-
-<!--
-* [Music production &#187;][mus]
-* [Bass &#187;][bass]
--->
-
-I am a member of [Pstryk!][pstryk], the interactive performance for children.
-
-<!--
-{{< instagram "C65gcEWtjDG" >}}
--->
-
+See my [music production work][mus] I did for other artists.
 
 [appr]: {{< relref "approach.md" >}}
-[bass]: {{< relref "bass.md" >}}
 [ged]: https://www.offpitchrecords.com/
 [mus]: {{< relref "music/_index.md" >}}
-[perf]: {{< relref "performances.md" >}}
-[pstryk]: https://www.instagram.com/pstrykofficial
 [ric]: https://www.instagram.com/riccardo_marenghi/
