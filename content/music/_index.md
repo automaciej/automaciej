@@ -13,11 +13,15 @@ aliases: [ "/bio/music" ]
 
 ## Selected production
 
-### Je te veux by Zoe Hayter (2025)
+### To Promenade by emily jane (June 2025)
+
+{{< bandcampalbum 2074281446 "https://emilyjane1999.bandcamp.com/album/to-promenade" "To Promenade by emily jane" >}}
+
+### Je te veux by Zoe Hayter (May 2025)
 
 {{< bandcamp 2840110792 "https://zoehayter.bandcamp.com/track/je-te-veux" "Je te veux by Zoe Hayter" >}}
 
-### Run For Me by emily jane (2025)
+### Run For Me by emily jane (May 2025)
 
 {{< bandcamp 2667761784 "https://emilyjane1999.bandcamp.com/track/run-for-me" "Run For Me by emily jane" >}}
 
