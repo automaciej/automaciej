@@ -40,7 +40,6 @@ work]({{< relref "music/_index.md" >}}). Ultimately, it's the act of creating
 something new that fuels his passion, making music the art form closest to his
 heart.
 
-[appr]: {{< relref "approach.md" >}}
 [jam]: https://facebook.com/dublinjazzjam
 [marek]: https://en.wikipedia.org/wiki/Marek_Blizi%C5%84ski
 [ged]: https://www.offpitchrecords.com/
