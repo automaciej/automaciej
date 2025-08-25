@@ -9,8 +9,8 @@ image: maciej_on_bass_360px.jpg
 
 {{< social >}}
 
-I'm a producer-turned-musicmaker. Going back to my roots. Currently focused
-entirely on an original music project, collaboration across time.
+I'm a producer-turned-musicmaker. Going back to my roots. Currently focused on
+an original music project, a collaboration across time.
 
 ## Musical Background
 
