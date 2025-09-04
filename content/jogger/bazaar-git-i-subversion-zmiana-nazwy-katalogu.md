@@ -100,35 +100,36 @@ i trzymać się tematu.
 ----
 **Komentarze**
 
-* Uzytkownik (2007-06-07 11:46:51): <p>Najdardziej lubię bazaar &#8211; co
+* Uzytkownik (2007-06-07 11:46:51): Najdardziej lubię bazaar &#8211; co
   z tego, jak jest on praktycznie nieużywany i niewspierany przez
-  cokolwiek&#8230;</p>
-* hirman (2007-06-08 00:30:03): <p>Tak naprawdę to żadne z opisanych przez
-  Ciebie narzędzi nie należy do grupy <span class="caps">SCM</span>, są to
-  narzędzia typu <span class="caps">VCS</span>. Do pierwszej grupy można
-  zaliczyć np. Traca, który bazuje na Subversion.</p>
-* Automaciej (2007-06-08 01:57:24): <p>@hirman: Podasz jakieś źródła? Szukałem
-  na Wikipedii potwierdzenia tego co mówisz, ale <a
-  href="http://en.wikipedia.org/wiki/Revision_control" rel="nofollow" >nie
-  znalazłem</a>.</p>
-* hirman (2007-06-08 20:02:12): <p>Polecam bardzo dobrą książkę &#8222;Version
+  cokolwiek&#8230;
+* hirman (2007-06-08 00:30:03): Tak naprawdę to żadne z opisanych przez
+  Ciebie narzędzi nie należy do grupy SCM, są to
+  narzędzia typu VCS. Do pierwszej grupy można
+  zaliczyć np. Traca, który bazuje na Subversion.
+* Automaciej (2007-06-08 01:57:24): @hirman: Podasz jakieś źródła? Szukałem
+  na Wikipedii potwierdzenia tego co mówisz, ale nie
+  znalazłem.
+* hirman (2007-06-08 20:02:12): Polecam bardzo dobrą książkę &#8222;Version
   Control with Subversion&#8221; (http://svnbook.red-bean.com/). W szczególności
-  wstęp do części &#8222;What is Subversion?&#8221;.</p>  <p>Na stronach
+  wstęp do części &#8222;What is Subversion?&#8221;.  Na stronach
   głównych wszyscy używają pojęć version control system bądź revision control
-  system.</p>  <p>Generalnie chodzi o to że żadne z wymienionych narzędzi nie
+  system.  Generalnie chodzi o to że żadne z wymienionych narzędzi nie
   posiada informacji na temat tego co przechowuje. Operuje na czystych danych.
   Może to być kod ale równie dobrze przepisy na wypieki, tygodniowy plan zajęć
-  czy źródła książki.</p>  <p>Trudno znaleźć system spełniający kryteria dla
-  <span class="caps">SCM</span>. Poszukałem trochę i znalazłem:<br /> &#8212;
-  system <span class="caps">SOS</span> firmy ClioSoft dla projektantów
-  sprzętu<br /> &#8212; Daversy do zarządzania zmianami w bazach danych<br />
+  czy źródła książki.  Trudno znaleźć system spełniający kryteria dla
+  SCM. Poszukałem trochę i znalazłem:  
+ &#8212;
+  system SOS firmy ClioSoft dla projektantów
+  sprzętu  
+ &#8212; Daversy do zarządzania zmianami w bazach danych  
+
   &#8212; IntelliJ Renamer dla języka Java (nie jestem jednak do końca pewien
-  czy potrafi wersjonować kod).<br /> Pełna lista (<span class="caps">SCM</span>
-  i <span class="caps">VCS</span>) http://scm.tigris.org/</p>  <p>Przy okazji
-  poszukiwań okazało się że Trac to inny <span class="caps">SCM</span> &#8211;
-  Software Configuration Management :)</p>
-* Automaciej (2007-06-09 23:26:47): <p>Dzisiaj zauważyłem że <a
-  href="http://colabti.de/irclogger/irclogger_log/git?date=2007-06-09,Sat&amp;amp;sel=229#l387"
-  rel="nofollow" >rozmawiano</a> o tej sprawie na <span class="caps">IRC</span>,
+  czy potrafi wersjonować kod).  
+ Pełna lista (SCM
+  i VCS) http://scm.tigris.org/  Przy okazji
+  poszukiwań okazało się że Trac to inny SCM &#8211;
+  Software Configuration Management :)
+* Automaciej (2007-06-09 23:26:47): Dzisiaj zauważyłem że rozmawiano o tej sprawie na IRC,
   #git. Krótko, i niczym się to nie zakończyło, ale przynajmniej ktoś to
-  zauważył. Szkoda że „context” był taki twardogłowy.</p>
+  zauważył. Szkoda że „context” był taki twardogłowy.

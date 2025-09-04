@@ -40,11 +40,12 @@ nie jadłem, bo byłem podekscytowany nowymi zabawkami i po prostu zapomniałem.
 ----
 **Komentarze**
 
-* splash (2007-01-09 07:07:47): <p>Zarobki satysfakcjonujące ? Bo właśnie
+* splash (2007-01-09 07:07:47): Zarobki satysfakcjonujące ? Bo właśnie
   dokonuję analizy zarobków informatyków, i zastanawiam się czy jest to zawód,
-  którego warto się podejmować :)</p>
-* Koval (2007-01-09 09:15:32): <p>jak byłby głównym programistą to na pewno</p>
-* maks (2007-01-09 09:27:24): <p>Ciekaw jestem jak wyglądają zarobki takiego np.
+  którego warto się podejmować :)
+* Koval (2007-01-09 09:15:32): jak byłby głównym programistą to na pewno
+* maks (2007-01-09 09:27:24): Ciekaw jestem jak wyglądają zarobki takiego np.
   administratora sieci, który zazwyczaj wyciąga mniej od programisty. A w
-  kwestii lunchu i nie tylko:<br />
-  http://img404.imageshack.us/img404/5900/arek1lc3.jpg</p>
+  kwestii lunchu i nie tylko:  
+
+  http://img404.imageshack.us/img404/5900/arek1lc3.jpg

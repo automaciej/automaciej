@@ -62,32 +62,33 @@ i bardziej nieuczciwa.
 ----
 **Komentarze**
 
-* Gość (2007-08-14 20:50:22): <p>Kilka dopisków:<br /> Ostro rozmnażający się
-  Chińczycy uczciwie, wręcz niewolniczo produkują dobra świata zachodniego.</p>
-  <p>Mądrzy i uczciwi nie muszą być dorobkiewiczami. Mogą być dziedzicami
+* Gość (2007-08-14 20:50:22): Kilka dopisków:  
+ Ostro rozmnażający się
+  Chińczycy uczciwie, wręcz niewolniczo produkują dobra świata zachodniego.
+  Mądrzy i uczciwi nie muszą być dorobkiewiczami. Mogą być dziedzicami
   jakiegoś dochodu pasywnego. Łatwiej w takich warunkach i się rozwijać, i
   poczynać dzieci niż pracownikom najemnym. Warto też przemyśleć dla siebie, co
   jest sukcesem rozrodczym &#8211; wiele dzieci i dziedziczenie wśród nich
   pozycji pracownika najemnego z pokolenia na pokolenie czy mniej, a o większej
   władzy, swobodzie, komforcie życia. Czy wydaje Ci się, że linii górnika
   łatwiej wyginąć, czy właściciela kopalni, którego stać na najnowsze zdobycze
-  medycyny?</p>  <p>Warto dorzucić w kontekście tych rozważań, że 8 % Azjatów
+  medycyny?  Warto dorzucić w kontekście tych rozważań, że 8 % Azjatów
   jest potomkami jednego z największych gwałcicieli w historii świata Czyngisa
   Chana &#8211; h t t p : / /
-  en.wikipedia.org/wiki/Genghis_Khan#Claimed_descendants_study</p>  <p>Ciekawe w
+  en.wikipedia.org/wiki/Genghis_Khan#Claimed_descendants_study  Ciekawe w
   tym kontekście jest również studium &#8222;Why beautiful people are more
   intelligent&#8221; (h t t p : / / w w w .
   lse.ac.uk/collections/MES/pdf/I2004.pdf) na chwilę obecną orzekające to, co w
   tytule, i przewidujące w dłuższej perspektywie rozdzielenie się ludzkości na
   brzydkich troglodytów i pięknych inteligentów &#8211; każdych krzyżujących się
-  we własnej grupie.</p>
-* GiM (2007-08-15 10:33:39): <p>@Gość: uch, to normalnie zachacza o Wellsa,
+  we własnej grupie.
+* GiM (2007-08-15 10:33:39): @Gość: uch, to normalnie zachacza o Wellsa,
   tylko czekać, ąż troglodyci będą się żywić inteligentami i hodować ich jak
-  bydło :]</p>
-* Gosia (2007-10-14 23:30:36): <p>Cóż... zawsze mnie bawiły opinie osób nie
+  bydło :]
+* Gosia (2007-10-14 23:30:36): Cóż... zawsze mnie bawiły opinie osób nie
   posiadających dzieci na temat trudności ich wychowania, trzeba przyznać, że
   rzeczywiście jest trudno :) ale mówię to z uśmiechem :)))) bo ta trudność jest
   najmilszą na świecie ponad pracę w google i wszelkie mijające
   doznania&#8230;.......ale żeby orzekać korelację pomiędzy własną  naiwnością a
   posiadaniem potomstwa&#8230;..hmmm &#8230;ciekawa jestem rozważań nt
-  rozmnażania zwierząt ;))</p>
+  rozmnażania zwierząt ;))

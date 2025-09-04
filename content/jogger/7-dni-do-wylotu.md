@@ -26,7 +26,7 @@ notarialne pełnomocnictwo do odbioru dyplomu w moim imieniu.
 ----
 **Komentarze**
 
-* hcz (2006-12-29 10:35:55): <p>Zastanawiałem się nad tym ostatnio: czy
-  &#8222;tylko&#8221; i &#8222;wyłącznie&#8221; nie są synonimami?</p>
-* Automaciej (2006-12-29 10:38:36): <p>Redundantny jest ten ludzki język jest
-  redundantny.</p>
+* hcz (2006-12-29 10:35:55): Zastanawiałem się nad tym ostatnio: czy
+  &#8222;tylko&#8221; i &#8222;wyłącznie&#8221; nie są synonimami?
+* Automaciej (2006-12-29 10:38:36): Redundantny jest ten ludzki język jest
+  redundantny.

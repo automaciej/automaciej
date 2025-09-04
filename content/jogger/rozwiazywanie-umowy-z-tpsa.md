@@ -65,63 +65,77 @@ albo nie wiedziała co mówi albo kłamała w żywe oczy.
 ----
 **Komentarze**
 
-* i0 (2007-05-23 11:00:03): <p>Możliwe, że jedno i drugie równocześnie.</p>
-  <p>Gdy po powrocie z Tele2 do <span class="caps">TPSA</span> ( ;-) ) chciałem
+* i0 (2007-05-23 11:00:03): Możliwe, że jedno i drugie równocześnie.
+  Gdy po powrocie z Tele2 do TPSA ( ;-) ) chciałem
   wrócić do podstawowych ustawień połączeń, czyli domyślne 1033, to wniosek
   składałem dokładnie 3 razy. Od drugiego razu pani w telepunkcie wyskakiwało,
   że już jest włączone. Łącznie dwa miesiące nerwów. Żeby było zabawniej &#8212;
   to nie jest mój telefon, ale mam upoważnienie prawne do występowania w imieniu
-  abonenta. Poinformowałem o tym <span class="caps">TPSA</span>, wzięli sobie
+  abonenta. Poinformowałem o tym TPSA, wzięli sobie
   ksero, wszystko ok. Tylko jakoś błękitna linia nadal nie chce ze mną
-  rozmawiać. Burdel jednym słowem. Burdel i ignorancja.</p>
-* AdamK (2007-05-23 11:03:58): <p>Ciesz się że nie przenosiłeś numeru z <span
-  class="caps">TPSA</span> do innego operatora, to dopiero jest jazda.</p>
-* Hannibal (2007-05-23 13:27:30): <p>Francuzi zachowują się w Polsce jak w
+  rozmawiać. Burdel jednym słowem. Burdel i ignorancja.
+* AdamK (2007-05-23 11:03:58): Ciesz się że nie przenosiłeś numeru z TPSA do innego operatora, to dopiero jest jazda.
+* Hannibal (2007-05-23 13:27:30): Francuzi zachowują się w Polsce jak w
   swojej kolonii, czyli &#8211; aby ściągnąć jak najwięcej zysków. Z góry
   zakładają, że nie zapłacą żadnych kar urzędowych nakładanych przez panią
   Steżyńską, bo załatwią sprawę prawnicy &#8211; i mają rację, sądy trzymają z
-  silniejszym.</p>
-* i0 (2007-05-23 13:33:43): <p>O tak, bo przecież <span class="caps">TPSA</span>
-  zepsuła się z chwilą przejęcia przez <span class="caps">FTG</span>. To jest
+  silniejszym.
+* i0 (2007-05-23 13:33:43): O tak, bo przecież TPSA
+  zepsuła się z chwilą przejęcia przez FTG. To jest
   tak samo zabawne jak jedna z reklam telewizyjnych konkurencji TP: ,,zmieniły
   się rachunki na niższe i operator na polskiego&#8217;&#8216; &#8212;
-  monopolista pozostał, tylko bandera się zmieniła.</p>
-* pesymizm (2007-05-23 13:47:41): <p>Nie ma to jak
-  &#8222;profesjonalizm&#8221;.... :)</p>
-* Bonjoure (2007-05-25 21:49:53): <p>Dlatego właśnie od kilku lat nie mam
+  monopolista pozostał, tylko bandera się zmieniła.
+* pesymizm (2007-05-23 13:47:41): Nie ma to jak
+  &#8222;profesjonalizm&#8221;.... :)
+* Bonjoure (2007-05-25 21:49:53): Dlatego właśnie od kilku lat nie mam
   telefonu stacjonarnego, a ta ich Neostrada (tudzież Neozdrada) mnie gila. Żyję
   sobie na mniejszym providerze, któremu zależy, żeby działało i kasa spływała.
   Nawet jeśli jest to raptem 10 zł więcej na miesiąc. W dobie dzisiejszej
-  telefonii komórkowej i VoIP mam Tepsy gdzieś. I to kilka lat&#8230;</p>
-* automaciej (2008-01-31 00:03:44): <p>Rozwiązywanie umowy z TPSA (cz. 2)<br
-  /><br />W maju 2007 pisałem o rozwiązywaniu umowy z TPSA, jak to mnie w żywe
+  telefonii komórkowej i VoIP mam Tepsy gdzieś. I to kilka lat&#8230;
+* automaciej (2008-01-31 00:03:44): Rozwiązywanie umowy z TPSA (cz. 2)  
+  
+W maju 2007 pisałem o rozwiązywaniu umowy z TPSA, jak to mnie w żywe
   oczy okłamali na błękitnej linii. Dalszy ciąg był w skrócie taki: TPSA
   utrzymywała że mam im zapłacić rachunki z tego okresu (~700zł!), ponieważ
-  umowa nie była rozw[...]</p>
-* obserw (2009-05-30 12:57:55): <p>A mnie obciążyli 600 zł za zdany modem
+  umowa nie była rozw[...]
+* obserw (2009-05-30 12:57:55): A mnie obciążyli 600 zł za zdany modem
   Livebox przy rozwiązywaniu umowy. Całe szczęście miałem potwierdzenie zdania.
   Ale koszty ,które poniosłam aby to wyjaśnić poszły w plecy. Mam o wiele więcej
-  uwag do tych dupków. Dla mnie <span class="caps">TPSA</span> nie istnieje.
+  uwag do tych dupków. Dla mnie TPSA nie istnieje.
   Radzę  wszystkim potencjalnym klientom omijać tę &#8222;firmę&#8221; szerokim
-  łukiem.</p>
-* przemekgr (2010-02-26 23:01:17): <p>wzór na wypowiedzenie umowy tpsa -
-  telefon:<br />
-  Łódź dnia 23.02.2010<br /> Adam Kowalski<br /> Pomorska 99 m.99<br /> 99-999
-  Łódź<br /> Nr linii telefonicznej: (99) 999-99-99<br />       Nr ewidencyjny
-  TP: 999-999-9999-9999</p>  <pre><code>
+  łukiem.
+* przemekgr (2010-02-26 23:01:17): wzór na wypowiedzenie umowy tpsa -
+  telefon:  
+
+  Łódź dnia 23.02.2010  
+ Adam Kowalski  
+ Pomorska 99 m.99  
+ 99-999
+  Łódź  
+ Nr linii telefonicznej: (99) 999-99-99  
+       Nr ewidencyjny
+  TP: 999-999-9999-9999  ```
+`
   Telekomunikacja Polska S.A.
   ul. Bażantów 35, 40-668 Katowice                     WYPOWIEDZENIE UMOWY
-  DOT. ŚWIADCZENIA USŁUG TELEKOMUNIKACYJNYCH </code></pre>  <p>Uprzejmie
+  DOT. ŚWIADCZENIA USŁUG TELEKOMUNIKACYJNYCH `
+```  Uprzejmie
   oświadczam, iż wypowiadam umowę o świadczenie wszelkich usług
   telekomunikacyjnych dla numeru (99) 999-99-99 zachowując obowiązujący 30
-  dniowy okres wypowiedzenia (w danym przypadku 1 miesięczny abonament). <br />
+  dniowy okres wypowiedzenia (w danym przypadku 1 miesięczny abonament).   
+
   W związku z powyższym umowa nasza skończy się dniem 31 marca i proszę nie
-  później niż z tym dniem odciąć mnie od waszych usług. <br /> Jednocześnie jako
+  później niż z tym dniem odciąć mnie od waszych usług.   
+ Jednocześnie jako
   że istnieje taka możliwość skorzystam (przez błękitną linię TP) z opcji
   bezpłatnego zawieszenia abonamentu na okres jednego miesiąca – miesiąca
-  marca.<br /> Informuje również że moja decyzja jest ostateczna, bez względu na
-  wprowadzone przez państwa dalsze promocje.<br /> Złożenie tego podania
+  marca.  
+ Informuje również że moja decyzja jest ostateczna, bez względu na
+  wprowadzone przez państwa dalsze promocje.  
+ Złożenie tego podania
   potwierdzone jest stemplem i podpisem pracownika salonu na drugim egzemplarzu
-  podania.</p>  <pre><code>
+  podania.  ```
+`
   Z poważaniem
-  Adam Kowalski </code></pre>
+  Adam Kowalski `
+```

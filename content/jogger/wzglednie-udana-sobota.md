@@ -44,9 +44,9 @@ odniesienia. Proste założenie, nietrywialne implikacje.
 ----
 **Komentarze**
 
-* dexter (2008-06-16 11:51:33): <p>No to życzę też stosunkowo udanej soboty.</p>
-  <p>PS. Czasem warto też wczytać się w równania. Nie można zrozumieć fizyki bez
-  równań...</p>
-* Kasia Rogowska (2008-06-16 19:18:18): <p>O widzisz, ja także postanowiłam
+* dexter (2008-06-16 11:51:33): No to życzę też stosunkowo udanej soboty.
+  PS. Czasem warto też wczytać się w równania. Nie można zrozumieć fizyki bez
+  równań...
+* Kasia Rogowska (2008-06-16 19:18:18): O widzisz, ja także postanowiłam
   przypomnieć sobie trochę zagadnień z fizyki. Co jak co, dobrze się w takich
-  rzeczach orientować, nazywając siebie inżynierem ;)</p>
+  rzeczach orientować, nazywając siebie inżynierem ;)

@@ -29,10 +29,11 @@ dopiero po przetłumaczeniu go z powrotem na angielski.
 ----
 **Komentarze**
 
-* lemiel (2006-04-12 16:31:33): <p>Ale mimo wszystko książka jest rewelacyjna.
-  <br />http://lemiel.jogger.pl/2005/11/#e169463</p>
-* pfm (2006-04-14 00:07:36): <p>Właśnie czytam polskie tłumaczenie SICP (wydane
+* lemiel (2006-04-12 16:31:33): Ale mimo wszystko książka jest rewelacyjna.
+    
+http://lemiel.jogger.pl/2005/11/#e169463
+* pfm (2006-04-14 00:07:36): Właśnie czytam polskie tłumaczenie SICP (wydane
   przez WNT) i muszę przyznać, że jest naprawdę dobre. Tłumacz nawet w paru
   miejscach dopowiada niektóre rzeczy, których autorzy nie powiedzieli. Chociaż
   z oryginałem porównywać nie próbowałem, ale czytając czuję, że nie ma
-  potrzeby.</p>
+  potrzeby.

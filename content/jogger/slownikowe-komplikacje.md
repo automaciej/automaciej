@@ -90,11 +90,11 @@ lewego kciuka.
 ----
 **Komentarze**
 
-* gugosia (2010-06-01 22:01:55): <p>Nie bardzo rozumiem sens upubliczniania
+* gugosia (2010-06-01 22:01:55): Nie bardzo rozumiem sens upubliczniania
   takich rozważań. Przecież lingwistyka i logika już dawno rozkminiły te
-  problemy na znacznie głębszym poziome...</p>
-* Automaciej (2010-06-03 09:57:26): <p>gugosiu, a możesz je streścić albo podać
-  link?</p>
-* marta (2010-06-06 23:59:29): <p>Kocham angielski! Uczę się go wytrwali i
+  problemy na znacznie głębszym poziome...
+* Automaciej (2010-06-03 09:57:26): gugosiu, a możesz je streścić albo podać
+  link?
+* marta (2010-06-06 23:59:29): Kocham angielski! Uczę się go wytrwali i
   powoli zaczynam mówić płynnie, bez tych pauz, w których człowiek się
-  zastanawia, która definicja pasuje.</p>
+  zastanawia, która definicja pasuje.

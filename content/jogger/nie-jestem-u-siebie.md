@@ -31,29 +31,33 @@ U mnie w domu nikt nie czepia się tego, kiedy jem i kiedy śpię.
 ----
 **Komentarze**
 
-* Splash (2006-07-22 13:18:48): <p>Mnie czeka to samo, jutro wyjeżdżam do Babki
-  ;/</p>
-* iss (2006-07-22 13:54:55): <p>Ale naprawdę śniadanie to najważniejszy posiłek
-  dnia. <br />Jednak najlepiej się chodzi spać nad ranem, zanim się ciepło
-  zrobi.</p>
-* Orshi (2006-07-22 14:19:56): <p>Współczuje. Takie gadanie za uchem, wszak w
+* Splash (2006-07-22 13:18:48): Mnie czeka to samo, jutro wyjeżdżam do Babki
+  ;/
+* iss (2006-07-22 13:54:55): Ale naprawdę śniadanie to najważniejszy posiłek
+  dnia.   
+Jednak najlepiej się chodzi spać nad ranem, zanim się ciepło
+  zrobi.
+* Orshi (2006-07-22 14:19:56): Współczuje. Takie gadanie za uchem, wszak w
   dobrej mierze, jest nieznośne. Im dłużej trwa tym czuję się bardziej chora niż
-  wypoczęta ;)</p>
-* Joanna (2006-07-22 23:21:03): <p>No, ale Babcia ma racje. Przy tych upalach
+  wypoczęta ;)
+* Joanna (2006-07-22 23:21:03): No, ale Babcia ma racje. Przy tych upalach
   trzeba duzo pic i to niekoniecznie piwo. A sniadanie jest podstawa dobrego
-  dnia. O!</p>
-* Automaciej (2006-07-22 23:28:20): <p>Joanno! I ty, przeciwko mnie?</p>
-* mama T (2006-07-23 11:42:57): <p>Boze, czy ja tez taka będę???</p>
-* GiM (2006-07-23 12:56:01): <p>babcia to babcia :) <br />Zgadzam się, że
+  dnia. O!
+* Automaciej (2006-07-22 23:28:20): Joanno! I ty, przeciwko mnie?
+* mama T (2006-07-23 11:42:57): Boze, czy ja tez taka będę???
+* GiM (2006-07-23 12:56:01): babcia to babcia :)   
+Zgadzam się, że
   śniadanie najważniejsze, ale komu by się chciało jeść w taki upał? A fakt
   lepiej by było chodzić wcześnie spać, bo u mnie to rano się nie da leżeć (od
-  upału oczywiście ;/), ale to jakoś tak dziwnie się przestawić, nie? :)</p>
-* skryba (2006-07-24 14:47:21): <p>A ja jem kiedy chce i pije kiedy chce. Ot co!
-  Polecam gorąco!</p>
-* Ja-Joanna z pracy (2006-07-24 18:44:43): <p>Ano, Macieju. <br /> <br />(Sama
+  upału oczywiście ;/), ale to jakoś tak dziwnie się przestawić, nie? :)
+* skryba (2006-07-24 14:47:21): A ja jem kiedy chce i pije kiedy chce. Ot co!
+  Polecam gorąco!
+* Ja-Joanna z pracy (2006-07-24 18:44:43): Ano, Macieju.   
+   
+(Sama
   mam tak. We własnym domu. Codziennie. -- &quot;A piłaś dziś dużo? A wzięłaś
-  śniadanie do szkoły?&quot;)</p>
-* mamaT (2007-07-28 12:10:27): <p>Dobry obyczaj potrzebny jest nadzwyczaj: tego
+  śniadanie do szkoły?&quot;)
+* mamaT (2007-07-28 12:10:27): Dobry obyczaj potrzebny jest nadzwyczaj: tego
   rodzaju uwagi mogą dotyczyć malców &#8211; powiedzmy fo 11 roku zycia, a potem
   WARA!!! Mam 58 lat i tez muszę znosic podobne wscibstwo. I to od osoby
-  uwazającej sie za wysoka inteligencję. Aniele Asertywności na pomoc!</p>
+  uwazającej sie za wysoka inteligencję. Aniele Asertywności na pomoc!

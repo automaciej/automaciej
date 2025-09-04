@@ -20,8 +20,8 @@ przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 
 | przedr. | rdzeń | dok. |zwr. | znaczenie |
 | ------- | ----- | ---- | --- | --------- |
-|         | ~     | alać |     | <span class="text-muted">(nie używa się)</span> |
-|         | ~     | alać | się |  <span class="text-muted">(nie używa się)</span> |
+|         | ~     | alać |     | (nie używa się) |
+|         | ~     | alać | się |  (nie używa się) |
 |         | ~     | olić |     | gadać  | głupoty |
 |         | ~     | olić | się |  ~ z czymś: czynić wysiłki które wydają się niewarte celu |
 | do      | ~     | alać |     | szybko jechać  | |
@@ -32,27 +32,27 @@ przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 | na      | ~ |  alać | się | bić |  się (z kimś) |
 | na      | ~ |  olić |     | dużo nałożyć, lub nagadać  | |
 | na      | ~ |  olić | się | upić się |
-| o       | ~ |  alać |     | <span class="text-muted">(nie używa się)</span> |
+| o       | ~ |  alać |     | (nie używa się) |
 | o       | ~ |  alać | się | leniuchować  | |
 | o       | ~ |  olić |     | surowo zganić, zjeść |
 | o       | ~ |  olić | się | ostrzyc się |
 | od      | ~ |  alać |     | wyczyniać  | |
-| od      | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
+| od      | ~ |  alać | się | (nie używa się) |
 | od      | ~ |  olić |     | zrobić, wykonać, wykończyć, udekorować  | |
 | od      | ~ |  olić | się | dać spokój, zostawić, odświętnie / imprezowo się ubrać |
 | po      | ~ |  alać |     | szybko jechać, aczkolwiek nie tak szybko jak z przedrostkiem za~ |
-| po      | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
+| po      | ~ |  alać | się | (nie używa się) |
 | po      | ~ |  olić |     | popsuć, lub doprowadzić do niestabilnego stanu mentalnego |
 | po      | ~ |  olić | się | popsuć się, utracić ład i porządek |
 | pod     | ~ |  alać |     | _na kogoś_ – donosić |
-| pod     | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
+| pod     | ~ |  alać | się | (nie używa się) |
 | pod     | ~ |  olić |     | ukraść, pozostając niezauważonym |
-| pod     | ~ |  olić | się | <span class="text-muted">(nie używa się)</span> |
-| prze    | ~ |  alać |     | <span class="text-muted">(nie używa się)</span> |
-| prze    | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
+| pod     | ~ |  olić | się | (nie używa się) |
+| prze    | ~ |  alać |     | (nie używa się) |
+| prze    | ~ |  alać | się | (nie używa się) |
 | prze    | ~ |  olić |     | przepuścić (pieniądze) |
-| prze    | ~ |  olić | się | <span class="text-muted">(nie używa się)</span> |
-| przy    | ~ |  alać |     | <span class="text-muted">(nie używa się)</span> |
+| prze    | ~ |  olić | się | (nie używa się) |
+| przy    | ~ |  alać |     | (nie używa się) |
 | przy    | ~ |  alać | się | krytykować  | bez wyraźnej potrzeby |
 | przy    | ~ |  olić |     | mocno uderzyć |
 | przy    | ~ |  olić | się | skrytykować  | bez wyraźnej potrzeby |
@@ -61,11 +61,11 @@ przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 | roz     | ~ |  olić |     | rozbić, zepsuć, zniszczyć |
 | roz     | ~ |  olić | się | rozpaść się |
 | s       | ~ |  alać |     | ratować  | się |  ucieczką |
-| s       | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
+| s       | ~ |  alać | się | (nie używa się) |
 | s       | ~ |  olić |     | zepsuć |
 | s       | ~ |  olić | się | spaść, samoistnie się zepsuć |
-| u       | ~ |  alać |     | <span class="text-muted">(nie używa się)</span> |
-| u       | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
+| u       | ~ |  alać |     | (nie używa się) |
+| u       | ~ |  alać | się | (nie używa się) |
 | u       | ~ |  olić |     | obciąć, urwać, ubrudzić, ~ studenta: nie zaliczyć egzaminu |
 | u       | ~ |  olić | się | urwać  | się, upić się |
 | w       | ~ |  alać |     | jeść |
@@ -77,7 +77,7 @@ przedrostek × rdzeń × dokonaność × zwrotność → znaczenie
 | wy      | ~ |  olić |     | wyrzucić |
 | wy      | ~ |  olić | się | upaść |
 | za      | ~ |  alać |     | szybko jechać, wykonywać  | czynność z niesłychaną wprawą (np. „ale on ~ala na tym basie”) |
-| za      | ~ |  alać | się | <span class="text-muted">(nie używa się)</span> |
+| za      | ~ |  alać | się | (nie używa się) |
 | za      | ~ |  olić |     | mocno uderzyć, ukraść |
 | za      | ~ |  olić | się | uderzyć się w jakąś część ciała |
 

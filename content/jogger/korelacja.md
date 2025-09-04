@@ -19,10 +19,10 @@ zajęcia ze statystyki. Teraz już tak nie uważam.
 ----
 **Komentarze**
 
-* Zal (2010-05-16 12:16:36): <p>Świetne :D A jeszcze bardziej bawi to, że
+* Zal (2010-05-16 12:16:36): Świetne :D A jeszcze bardziej bawi to, że
   zdecydowana część ludzi podchodzi do korelacji właśnie w ten, przedstawiony
   przez XKCD, sposób (coś z czymś jest skorelowane = jedno z drugiego
-  wynika).</p>
-* Radek (2010-05-16 16:30:00): <p>Ja bym tylko inaczej przetłumaczył ostatnie
-  zdanie. Jakoś tak bardziej "być może" albo "to niewykluczone".</p>
-  <p>Przypomina się słynny przykład piratów i globalnego ocieplenia :D</p>
+  wynika).
+* Radek (2010-05-16 16:30:00): Ja bym tylko inaczej przetłumaczył ostatnie
+  zdanie. Jakoś tak bardziej "być może" albo "to niewykluczone".
+  Przypomina się słynny przykład piratów i globalnego ocieplenia :D

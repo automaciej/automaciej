@@ -23,7 +23,7 @@ _Żeby było trudniej zgadnąć, nie ma większej wersji zdjęcia._
 ----
 **Komentarze**
 
-* teodor (2006-08-10 23:55:23): <p>hm pojechałbym w prawo</p>
-* Crash (2006-08-11 12:36:39): <p>a ja prosto ;]</p>
-* Claygirl (2006-08-13 10:54:53): <p>Naturalnie w prawo. Przecież to logiczne
-  ;)</p>
+* teodor (2006-08-10 23:55:23): hm pojechałbym w prawo
+* Crash (2006-08-11 12:36:39): a ja prosto ;]
+* Claygirl (2006-08-13 10:54:53): Naturalnie w prawo. Przecież to logiczne
+  ;)

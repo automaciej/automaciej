@@ -101,18 +101,23 @@ w stanie dobrze oceniać własne tłumaczenia, melodie i obrazy.
 ----
 **Komentarze**
 
-* Joanna (Typoagrafka) (2007-07-05 11:26:36): <p>Masz rację, to faktycznie jakoś
+* Joanna (Typoagrafka) (2007-07-05 11:26:36): Masz rację, to faktycznie jakoś
   tak działa, że jak za długo pracujesz na jakąś rzeczą, następuje „zmęczenie
   materiału” i albo błędnie zachwycasz się wszystkim, co zrobiłeś, albo nic Ci
-  się już nie podoba :S<br /> Ale następnego dnia już umysł jest świeży i można
-  spojrzeć inaczej.<br /> Niestety i to czasem nie wystarcza, jak pracujesz nad
-  czymś od dłuższego czasu, np. od kilku tygodni czy miesięcy.</p>  <p>Ciekawe
-  jak inni to robią. Tzn. jak pokonują ten brak możliwości oceny.</p>
-* przemek (2007-07-05 11:31:59): <p>&#62; W polskim nie ma wyrażenia „power-
-  cycling”;</p>  <p>W angielskim chyba także nie, ale ponieważ jest bardzo
-  plastyczny to można stworzyć neologizm (?) i to się trzyma kupy.</p>
-* D4rky (2007-07-05 14:03:52): <p>power-cycling &#8211; przełączanie zasilania?
-  pstrykanie wyłącznikiem?<br /> Fakt, ciężki orzech do zgryzienia ;)</p>
-* G (2007-07-05 14:08:06): <p>hmm, a dlaczego nie:<br /> a) Nie można naprawić
-  maszyny, rebootując/restartując ją w kółko ..<br /> b) Nie można napirawić
-  maszyny, włączając i wyłączając ją w kółko ..</p>
+  się już nie podoba :S  
+ Ale następnego dnia już umysł jest świeży i można
+  spojrzeć inaczej.  
+ Niestety i to czasem nie wystarcza, jak pracujesz nad
+  czymś od dłuższego czasu, np. od kilku tygodni czy miesięcy.  Ciekawe
+  jak inni to robią. Tzn. jak pokonują ten brak możliwości oceny.
+* przemek (2007-07-05 11:31:59): &#62; W polskim nie ma wyrażenia „power-
+  cycling”;  W angielskim chyba także nie, ale ponieważ jest bardzo
+  plastyczny to można stworzyć neologizm (?) i to się trzyma kupy.
+* D4rky (2007-07-05 14:03:52): power-cycling &#8211; przełączanie zasilania?
+  pstrykanie wyłącznikiem?  
+ Fakt, ciężki orzech do zgryzienia ;)
+* G (2007-07-05 14:08:06): hmm, a dlaczego nie:  
+ a) Nie można naprawić
+  maszyny, rebootując/restartując ją w kółko ..  
+ b) Nie można napirawić
+  maszyny, włączając i wyłączając ją w kółko ..

@@ -47,15 +47,15 @@ fragmenty interpretując tak żeby mi pasowało, a inne po prostu ignorując.
 ----
 **Komentarze**
 
-* polska wschodnia (2010-11-24 22:25:33): <p>A może to jest hymn wartości
+* polska wschodnia (2010-11-24 22:25:33): A może to jest hymn wartości
   odrobinę konserwatywnych wśród młodej inteligencji polskojęzycznej? Może taka
   młodzież w polskich współrzędnych geograficznych nie przyjęłaby cię do
   własnego grona. Może jesteś nazbyt liberalny, a ta piosenka wcale nie jest
   stworzona z zamysłem ubawienia ciebie ironią tylko zakreślenia polaryzacji
   tożsamościowej z wyrzuceniem ciebie poza in-group? Takie podsuwam hipotezy,
-  patrząc kto z moich znajomych fanuje na facebooku Poluzjantów. ;)</p>  <p>Jak
+  patrząc kto z moich znajomych fanuje na facebooku Poluzjantów. ;)  Jak
   dla mnie ten tekst to chamstwo, choć ogólnie w ogóle nie wyrażałbym zdania w
   sytuacjach face-to-face. Zawsze znajdzie znajdzie się jakaś większa ryba, co
-  będzie gardzić polskojęzycznym gardzeniem plastikiem.</p>
-* Lam (2011-01-09 23:10:45): <p>moja Lalka! miałam identyczną, miała na imię
-  Sara :) to znaczy ma. mam ją nadal, jest prawie łysa...</p>
+  będzie gardzić polskojęzycznym gardzeniem plastikiem.
+* Lam (2011-01-09 23:10:45): moja Lalka! miałam identyczną, miała na imię
+  Sara :) to znaczy ma. mam ją nadal, jest prawie łysa...

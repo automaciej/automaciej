@@ -20,8 +20,8 @@ tylko użytkownicy joggera._
 ----
 **Komentarze**
 
-* Riddle (2005-10-31 20:39:52): <p>Doceń to, że dzieci wolą się bawić w takie
-  fantowe zabawy niż chodzić z pałami i okradać babcie.</p>
-* automaciej (2005-11-01 22:41:24): <p>To jest raczej refleksja nad sobą niż
+* Riddle (2005-10-31 20:39:52): Doceń to, że dzieci wolą się bawić w takie
+  fantowe zabawy niż chodzić z pałami i okradać babcie.
+* automaciej (2005-11-01 22:41:24): To jest raczej refleksja nad sobą niż
   narzekanie na dzieci. Po prostu nagle zorientowałem się że stałem się
-  człowiekiem który nikomu nie otwiera drzwi...</p>
+  człowiekiem który nikomu nie otwiera drzwi...

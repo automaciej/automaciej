@@ -70,15 +70,15 @@ ciekawe, mechanizm ten potrafi poradzić sobie z napisami w UTF-8.
 ----
 **Komentarze**
 
-* Ja-Joanna (2007-05-17 01:04:31): <p>U mnie &#8222;roku pańskiego&#8221; nie
-  działa. Podaje czas w <span class="caps">UTC</span>. Tzn. pisze: <span
-  class="caps">UTC</span> 2007, a nie roku pańskiego<br /> zresztą roku
-  pańskiego pojawia mi się jako &#8222;roku pa\305\204skiego&#8221; :(</p>
-* mamaT (2007-05-17 09:13:03): <p>masz znakomity &#8222;pazur
+* Ja-Joanna (2007-05-17 01:04:31): U mnie &#8222;roku pańskiego&#8221; nie
+  działa. Podaje czas w UTC. Tzn. pisze: UTC 2007, a nie roku pańskiego  
+ zresztą roku
+  pańskiego pojawia mi się jako &#8222;roku pa\305\204skiego&#8221; :(
+* mamaT (2007-05-17 09:13:03): masz znakomity &#8222;pazur
   pedagogiczny&#8221; ;-) potrafisz zainteresować czlowieka. Moze nawet
-  tępaka.</p>
-* i0 (2007-05-17 11:56:09): <p>Ja-Joanna: locale ustawione na pl_PL.UTF-8? U
-  mnie działa i się nie buntuje. ;&#62;</p>
-* Cezary Okupski (2007-06-03 02:31:12): <p>Taka widać różnica w działaniu
-  &#60;kbd&#62;date&#60;/kbd&#62; w <span class="caps">BSD</span> (także Mac OS
-  X) od Linuksa. Potwierdzam efekt.</p>
+  tępaka.
+* i0 (2007-05-17 11:56:09): Ja-Joanna: locale ustawione na pl_PL.UTF-8? U
+  mnie działa i się nie buntuje. ;&#62;
+* Cezary Okupski (2007-06-03 02:31:12): Taka widać różnica w działaniu
+  &#60;kbd&#62;date&#60;/kbd&#62; w BSD (także Mac OS
+  X) od Linuksa. Potwierdzam efekt.

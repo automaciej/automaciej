@@ -59,58 +59,57 @@ ogóle zablokować komentarze?
 ----
 **Komentarze**
 
-* Joanna (Typoagrafka) (2007-11-17 22:36:54): <p>Rozumiem Twoje rozterki, sama
+* Joanna (Typoagrafka) (2007-11-17 22:36:54): Rozumiem Twoje rozterki, sama
   je miewam nie raz. Dawniej się tak nie przejmowałam, a ostatnio tak mnie
   wkurzyły komentarze nie na temat, że je po prostu usunęłam (komentując ów fakt
-  w samej notce).</p>  <p>Myślę, że nie ma jednoznacznej odpowiedzi i wszystko
+  w samej notce).  Myślę, że nie ma jednoznacznej odpowiedzi i wszystko
   zależy od konkretnego artykułu, komentarza i komentującego :-) A także od
   aktualnego nastawienia i nastroju autora artykułu (&#8222;właściciela
-  bloga&#8221;). Nie ma czarne/białe.</p>
-* hcz (2007-11-17 23:52:43): <p>Sprawa wydaje mi się dość prosta. Decydujesz się
+  bloga&#8221;). Nie ma czarne/białe.
+* hcz (2007-11-17 23:52:43): Sprawa wydaje mi się dość prosta. Decydujesz się
   na blogowanie == godzisz się na komentarze nie na temat. Jeśli Ci to
-  przeszkadza to przerzuć się na dyskutowanie <span class="caps">IRL</span> w
-  cztery oczy. Wtedy będziesz mógł na bieżąco kontrolować przebieg dysputy.</p>
-  <p>Problem nie jest nowy. Muzyk nagrywający płytę też naraża się na pochopne
+  przeszkadza to przerzuć się na dyskutowanie IRL w
+  cztery oczy. Wtedy będziesz mógł na bieżąco kontrolować przebieg dysputy.
+  Problem nie jest nowy. Muzyk nagrywający płytę też naraża się na pochopne
   komentarze w stylu &#8222;nie podoba mi się brzmienie gitary w drugim
   utworze&#8221; czy &#8222;perkusista mógł zagrać inaczej niż zagrał&#8221; .
   Bez wnikania w to, co twórca chciał powiedzieć. Podobnie filmowiec, pisarz,
-  ktokolwiek kto &#8222;wypowiada&#8221; się publicznie&#8230;</p>
-* hcz (2007-11-18 01:27:24): <p>Jeszcze jedno (być może głębsze) przemyślenie:
+  ktokolwiek kto &#8222;wypowiada&#8221; się publicznie&#8230;
+* hcz (2007-11-18 01:27:24): Jeszcze jedno (być może głębsze) przemyślenie:
   czy studenci teologii powinni podlegać jakiejś specjalnej ochronie? Czy
-  fundamentalizm religijny jest tematem tabu w obecności osoby wierzącej?</p>
-  <p>Może w obecności muzułmanina nie należy wypowiadać słowa
+  fundamentalizm religijny jest tematem tabu w obecności osoby wierzącej?
+  Może w obecności muzułmanina nie należy wypowiadać słowa
   &#8222;świnia&#8221; a przy programiście Javy nie wspominać o programowaniu
   funkcyjnym&#8230;? Wszystko możliwe &#8212; polski prezydent (za pośrednictwem
   swego brata(!)) za obraźliwe uznał sformułowanie &#8222;bracia
-  Kaczyńscy&#8221;...</p>
-* Riddle (2007-11-18 03:17:58): <p>Skoro nie na temat, to co robi
-  &#60;blink&#62; w tytule?</p>
-* Automaciej (2007-11-18 04:55:18): <p>@hcz: Sprawa jest prosta jeżeli chodzi o
+  Kaczyńscy&#8221;...
+* Riddle (2007-11-18 03:17:58): Skoro nie na temat, to co robi
+  &#60;blink&#62; w tytule?
+* Automaciej (2007-11-18 04:55:18): @hcz: Sprawa jest prosta jeżeli chodzi o
   komentowanie publikacji gdziekolwiek. Ale jeżeli chodzi o komentarze pod moim
   wpisami na moim joggerze, to sprawa wygląda inaczej: jest to mój jogger i
   komentujący są czymś w rodzaju moich gości. I jeżeli bałaganią, robią to u
-  mnie, a nie u siebie. I dlatego mi to przeszkadza.</p>  <p>Osoba dodająca
+  mnie, a nie u siebie. I dlatego mi to przeszkadza.  Osoba dodająca
   drugi komentarz dopisuje coś nie tylko do mojego wpisu, ale również do
   komentarza powyżej, i często odpisuje na komentarz (nie na temat), zamiast na
-  wpis. Coś jak w łańcuchu Markowa: każdy komentarz zależy od poprzedniego.</p>
-  <p>Najsensowniejsze wydaje mi się połączenie ograniczenia dygresyjności, żeby
+  wpis. Coś jak w łańcuchu Markowa: każdy komentarz zależy od poprzedniego.
+  Najsensowniejsze wydaje mi się połączenie ograniczenia dygresyjności, żeby
   nie karmić trolli, oraz moderacji, czyli zastrzeżeniu że komentarze mogą być
   usuwane według mojego widzimisię. W końcu tutaj to ja mam przycisk do
-  kasowania komentarzy, a nie kto inny.</p>  <p>Co do studentów teologii to nie,
+  kasowania komentarzy, a nie kto inny.  Co do studentów teologii to nie,
   nie powinni podlegać żadnej ochronie. Tutaj chodzi tylko o formę: zamiast
-  wsadzać szpilę w wiadomości na inny temat, napiszę osobny e-mail.</p>
-  <p>@Riddle: Nawiązuje do <a
-  href="http://ars.userfriendly.org/cartoons/?id=20030427" rel="nofollow" >User
-  Friendly</a>.</p>
-* Mystic (2007-11-18 11:07:17): <p>Wydaje mi się, ze ludzie o których piszesz
+  wsadzać szpilę w wiadomości na inny temat, napiszę osobny e-mail.
+  @Riddle: Nawiązuje do User
+  Friendly.
+* Mystic (2007-11-18 11:07:17): Wydaje mi się, ze ludzie o których piszesz
   raczej są z natury tacy ze szukają dziury w całym, wypatrują wszędzie w
   tekstach gdzie ma miejsce urażenie ich, uważają ze wiedza lepiej i ze w
-  pewnych kwestiach naprawią Twój &#8222;zły światopoglad&#8221;.</p>  <p>Po za
+  pewnych kwestiach naprawią Twój &#8222;zły światopoglad&#8221;.  Po za
   tym to tylko ludzie i moze i przeczytają cały wpis to zrozumieją jedynie
-  fragment który ich dotyczy, bo na reszte właściwie nie mają co powiedzieć.</p>
-  <p>Zjednej strony powinno się usunąć komentarze nie na temat, z drugiej skoro
+  fragment który ich dotyczy, bo na reszte właściwie nie mają co powiedzieć.
+  Zjednej strony powinno się usunąć komentarze nie na temat, z drugiej skoro
   Ty pozwalasz sobie na dygresję, jakieś skojarzenia, to moze i owi ludzie też
   sobie na nie pozwolili. Wkońcu gdyby nie taki post to by nie powstał taki
   komentarz. To chyba kolejna z serii spraw pt jeśli chce sie być pełnym
   akceptacji i tolerancji to czy należy to stosować nawet wobec tych którzy nas
-  nie szanują?</p>
+  nie szanują?

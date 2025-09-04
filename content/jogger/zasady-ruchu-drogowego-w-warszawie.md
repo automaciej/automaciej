@@ -16,7 +16,7 @@ _(przetłumaczone z fortune, zbiór
 ----
 **Komentarze**
 
-* Hubert (2006-05-01 00:55:25): <p>Ja zauważyłem ostatnio nową tendencję:
+* Hubert (2006-05-01 00:55:25): Ja zauważyłem ostatnio nową tendencję:
   nieużywanie kierunkowskazów, w przypadku kiedy wykonywany manewr jest
   niezgodny z przepisami. Na przykład zmiana pasa przez ciągłą linię albo z
-  zajechaniem komuś drogi</p>
+  zajechaniem komuś drogi

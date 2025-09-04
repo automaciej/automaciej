@@ -169,159 +169,163 @@ cliches-and-phrases/)
 ----
 **Komentarze**
 
-* torero (2008-11-20 10:59:06): <p>&#62; Odpowiedź akceptowalna: „Ślubuję
-  czystość! Daj mi pierścień!”</p>  <p>Niech zgadnę... tekst przełożony z
+* torero (2008-11-20 10:59:06): &#62; Odpowiedź akceptowalna: „Ślubuję
+  czystość! Daj mi pierścień!”  Niech zgadnę... tekst przełożony z
   jakiejś angielskiej części netu? Bo nie mam zbytnio kontaktów wśród
   licealistów, ale jakiejś specjalnej popularności pierścienia w Polsce nie
-  widzę.</p>  <p>&#62; „Żeby pójść do nieba, wystarczy że zaprosisz Jezusa do
-  swojego serca”</p>  <p>Nie wiem, skąd Ty bierzerz tych chrześcijan, ale ja z
+  widzę.  &#62; „Żeby pójść do nieba, wystarczy że zaprosisz Jezusa do
+  swojego serca”  Nie wiem, skąd Ty bierzerz tych chrześcijan, ale ja z
   takim tekstem [że WYSTARCZY] nie spotkałem się. A nawet jeśli to ma
   jakiekolwiek pokrycie w rzeczywistości &#8211; to ktoś taki o chrześcijaństwie
-  pojęcie ma naprawdę niewielkie.</p>  <p>&#62; Odpowiedź akceptowalna: „Amen!”
-  albo „Chwalmy Pana!” połączone z energicznym potakiwaniem.</p>  <p>WTF???</p>
-  <p>&#62; Tłumaczenie: „Mój ksiądz powiedział że zbliża się kres dziejów.”<br
-  /> Odpowiedź akceptowalna: „Bóg ukarze Polskę za nasze grzechy!” Albo „Polska
-  nie jest wymieniona w Biblii, bo ma się niedługo rozpaść.”<br /> Odpowiedź
+  pojęcie ma naprawdę niewielkie.  &#62; Odpowiedź akceptowalna: „Amen!”
+  albo „Chwalmy Pana!” połączone z energicznym potakiwaniem.  WTF???
+  &#62; Tłumaczenie: „Mój ksiądz powiedział że zbliża się kres dziejów.”  
+ Odpowiedź akceptowalna: „Bóg ukarze Polskę za nasze grzechy!” Albo „Polska
+  nie jest wymieniona w Biblii, bo ma się niedługo rozpaść.”  
+ Odpowiedź
   nieakceptowalna: „Czy wiedziałeś że Chrześcijanie przepowiadali kres dziejów
   już z milion razy i zawsze byli w błędzie?” Albo, „jeżeli jesteś taki pewien,
   podejrzewam że będziesz wystarczająco pewien żeby się założyć o to na jakąś
-  okrągłą sumę.”</p>  <p>A jakiś przykład chrześcijańskiego [nie sekty, tylko
+  okrągłą sumę.”  A jakiś przykład chrześcijańskiego [nie sekty, tylko
   ortodoksyjnego] apelu &#8222;w temacie&#8221; końca świata możesz podać z
   ostatnich parunastu lat? Bo ja to widzę tak: jakiś świadek Jehowy albo ktośtam
   gdzieśtam wszedł na górę, bo mu ten koniec świata z numerologii albo z
   &#8222;Kodu Biblii&#8221; wyszedł, a ktoś inny to rozciąga na całe
-  chrześcijaństwo. Owszem, <em>paręset</em> lat temu bywały takie przypadki
+  chrześcijaństwo. Owszem, *paręset* lat temu bywały takie przypadki
   &#8211; ale nie miało to nic wspólnego z wiarą, a raczej z myśleniem i
-  świadomością życia w &#8222;czasach ostatecznych&#8221;.</p>  <p>&#62;
+  świadomością życia w &#8222;czasach ostatecznych&#8221;.  &#62;
   Odpowiedź nieakceptowalna: „Zamiast się modlić, dlaczego nie przeczytasz
   jakiejś niechrześcijańskiej książki?” Albo, „Będę myśleć za ciebie.” Albo
-  szczególnie, „Wciskasz mi kit.”</p>  <p>W naszym domu książki religijne
-  stanowią może 5% całości z biblioteki, raczej dużej. ICMPTZ?</p>  <p>&#62;
+  szczególnie, „Wciskasz mi kit.”  W naszym domu książki religijne
+  stanowią może 5% całości z biblioteki, raczej dużej. ICMPTZ?  &#62;
   Odpowiedź nieakceptowalna: „Uważanie czegoś bez dowodów wymaga wiary. Nie
-  wierzenie w coś bez dowodów wymaga inteligencji.”</p>  <p>Bzdura. Czy
+  wierzenie w coś bez dowodów wymaga inteligencji.”  Bzdura. Czy
   inteligencja potrzebna Ci jest do tego, żeby bez dowodów akceptować np. cały
-  dorobek nauk przyrodniczych? Czy może wystarczy raczej tylko zaufanie?</p>
-  <p>&#62; „Skąd wiesz, czy to Pan cię powstrzymuje, czy też może tylko twoje
-  lenistwo?”</p>  <p>Sylogizm. Oparty na założeniu, że zajście czegoś, co można
-  tłumaczyć wolą Boską, wynika tylko i wyłącznie z lenistwa.</p>  <p>&#62;
+  dorobek nauk przyrodniczych? Czy może wystarczy raczej tylko zaufanie?
+  &#62; „Skąd wiesz, czy to Pan cię powstrzymuje, czy też może tylko twoje
+  lenistwo?”  Sylogizm. Oparty na założeniu, że zajście czegoś, co można
+  tłumaczyć wolą Boską, wynika tylko i wyłącznie z lenistwa.  &#62;
   Jeżeli chciałeś żebym w ciebie wierzył, dlaczego nie dałeś nam jakiegoś
-  dowodu?</p>  <p>Od tego zdania powinienem właściwie zacząć i na nim skończyć.
-  Chcesz więc <span class="caps">WIARY</span> opartej na <span
-  class="caps">DOWODACH</span>. A wiara oparta na <span
-  class="caps">DOWODACH</span> nie jest wiarą, lecz nauką. Nauka oparta na
+  dowodu?  Od tego zdania powinienem właściwie zacząć i na nim skończyć.
+  Chcesz więc WIARY opartej na DOWODACH. A wiara oparta na DOWODACH nie jest wiarą, lecz nauką. Nauka oparta na
   solidnych podstawach empirycznych nie pozostawi nam wyboru uwierzenia bądź
   nieuwierzenia. Nie ta dyscyplina. W tym znaczeniu ateizm będzie miał zawsze
   słuszność &#8211; ale, przez analogię, będzie to słuszność matematyka,
   odmawiającemu miana nauki np. literaturoznawstwu z uwagi na brak równań w
-  literaturoznawstwie.</p>
-* Zakrecony Informatyk (2008-11-20 11:04:08): <p>Padłem&#8230;. rewelka :-)</p>
-* thot22003 (2008-11-20 11:04:27): <p>podsumowujac te &#8222;odpowiedzi&#8221;:
-  cos dzwoni, ale nie wiadomo w ktorym kosciele.</p>
-* BTM (2008-11-20 11:35:45): <p>@thot22003: to by się w polsce zgadzało, mam ze
-  2 w odległości 100m od bloku. W tym jeden to &#8222;arcykatedra&#8221; ;-)</p>
-* sharnik (2008-11-20 11:45:32): <p>Automaciej: To chyba bardziej przystające do
+  literaturoznawstwie.
+* Zakrecony Informatyk (2008-11-20 11:04:08): Padłem&#8230;. rewelka :-)
+* thot22003 (2008-11-20 11:04:27): podsumowujac te &#8222;odpowiedzi&#8221;:
+  cos dzwoni, ale nie wiadomo w ktorym kosciele.
+* BTM (2008-11-20 11:35:45): @thot22003: to by się w polsce zgadzało, mam ze
+  2 w odległości 100m od bloku. W tym jeden to &#8222;arcykatedra&#8221; ;-)
+* sharnik (2008-11-20 11:45:32): Automaciej: To chyba bardziej przystające do
   warunków amerykańskiego wolnego rynku religijnego. A w tłumaczeniu nie wziąłeś
-  pod uwagę kontekstu kulturowego.</p>  <p>To trochę jakby dyskutować o muzyce w
+  pod uwagę kontekstu kulturowego.  To trochę jakby dyskutować o muzyce w
   ogólności opierając się na przykładzie Paris Hilton. Niby można, ale trochę to
-  bez sensu i strata czasu.</p>
-* btm (2008-11-20 11:46:43): <p>@sharnik: ale jako wywód czysto humorystyczny
-  jakąś tam wartość ma ;&#62;</p>
-* sharnik (2008-11-20 11:48:22): <p>No, podobnie jak książki z dowcipami
+  bez sensu i strata czasu.
+* btm (2008-11-20 11:46:43): @sharnik: ale jako wywód czysto humorystyczny
+  jakąś tam wartość ma ;&#62;
+* sharnik (2008-11-20 11:48:22): No, podobnie jak książki z dowcipami
   sprzedawane w kioskach Ruchu. &#8222;Jakąś tam: to dobre określenie tej
-  wartości ;)</p>
-* btm (2008-11-20 11:48:43): <p>Oj, ale tak to nie muszę tych ksiązek kupować
-  ;&#62;</p>
-* Zal (2008-11-20 11:53:50): <p>Tłumaczenie miłe, do polskich realiów
-  niedopasowane, ale nadal miłe ;]</p>
-* Mr.N. (2008-11-20 12:52:41): <p>Dokładnie, u nas potrzeba czegoś bardziej
-  wyszukanego, błyskotliwego i agresywnego.</p>
-* sharnik (2008-11-20 13:43:47): <p>Mr.N.: Słowo, którego szukałeś to chyba
-  &#8216;wydumanego&#8217;. ;)</p>
-* Virgo Erns (2008-11-20 16:18:49): <p>Zachęciłem się pierwszym powiedzonkiem i
+  wartości ;)
+* btm (2008-11-20 11:48:43): Oj, ale tak to nie muszę tych ksiązek kupować
+  ;&#62;
+* Zal (2008-11-20 11:53:50): Tłumaczenie miłe, do polskich realiów
+  niedopasowane, ale nadal miłe ;]
+* Mr.N. (2008-11-20 12:52:41): Dokładnie, u nas potrzeba czegoś bardziej
+  wyszukanego, błyskotliwego i agresywnego.
+* sharnik (2008-11-20 13:43:47): Mr.N.: Słowo, którego szukałeś to chyba
+  &#8216;wydumanego&#8217;. ;)
+* Virgo Erns (2008-11-20 16:18:49): Zachęciłem się pierwszym powiedzonkiem i
   myślałem, że trochę się pośmieję, a okazało się, ża całościowo to klapa i 5 na
   zawsze straconych minut. Na dodatek, angielska wersja nie nabiera wcale
-  uroku.</p>
-* rozie (2008-11-20 19:14:13): <p>Tłumaczenie: Chciałbym dowalić chrześcijanom,
-  ale nie wiem jak.</p>  <p>Komentarz akceptowalny: Amen.</p>  <p>Komentarz
-  nieakceptowalny: denny wpis.</p>
-* Aciddrinkerek (2008-11-20 21:40:37): <p>rozie &#8211; świetne :D</p>
-* Aciddrinkerek (2008-11-20 21:44:42): <p>Ja bym powiedział inaczej</p>
-  <p>Tłumaczenie: &#8222;Jestem przemądrzałym ateistą, który myśli że pozjadał
+  uroku.
+* rozie (2008-11-20 19:14:13): Tłumaczenie: Chciałbym dowalić chrześcijanom,
+  ale nie wiem jak.  Komentarz akceptowalny: Amen.  Komentarz
+  nieakceptowalny: denny wpis.
+* Aciddrinkerek (2008-11-20 21:40:37): rozie &#8211; świetne :D
+* Aciddrinkerek (2008-11-20 21:44:42): Ja bym powiedział inaczej
+  Tłumaczenie: &#8222;Jestem przemądrzałym ateistą, który myśli że pozjadał
   wszystkie rozumy i pozwala sobie obrażać osoby o wyznaniu, które mi nie
-  pasuje.&#8221; </p>  <p>Komentarz akceptowalny: &#8222;Masz prawo do takiego
+  pasuje.&#8221;   Komentarz akceptowalny: &#8222;Masz prawo do takiego
   myślenia, nie ma dowodów na istnienie Boga i w ogóle odlewasz się na kościoły,
-  dopiekasz im co drugą notkę &#8211; fajnie.&#8221; </p>  <p>Komentarz
+  dopiekasz im co drugą notkę &#8211; fajnie.&#8221;   Komentarz
   nieakceptowalny: &#8222;Wiara polega na tym, że nie trzeba mieć dowodów. A
   jeśli nie wierzysz to zaakceptuj, półgłówku, wierzenia innych. Ponadto jakby
-  ktoś śmiał się z Muzułmanów, to zapewne zareagowałbyś inaczej.</p>
-* rozie (2008-11-20 21:46:43): <p>Z muzułmanów. Małą.</p>
-* Aciddrinkerek (2008-11-20 21:50:06): <p>No ;). Myli mi się już, kiedyś
+  ktoś śmiał się z Muzułmanów, to zapewne zareagowałbyś inaczej.
+* rozie (2008-11-20 21:46:43): Z muzułmanów. Małą.
+* Aciddrinkerek (2008-11-20 21:50:06): No ;). Myli mi się już, kiedyś
   napisałem &#8216;Murzyn&#8217; z małej i ktoś mi uwagę zwrócił. Ale wyznania
-  piszemy z małej &#8211; oczywiście masz rację.</p>
-* egzemplarz (2008-11-20 23:04:06): <p>Powiem krótko: oceniasz chrześcijaństwo z
+  piszemy z małej &#8211; oczywiście masz rację.
+* egzemplarz (2008-11-20 23:04:06): Powiem krótko: oceniasz chrześcijaństwo z
   punktu widzenia osoby która bladego pojęcia o nim nie ma. I rozie ma cholerną
-  rację ;).</p>
-* Feanor (2008-11-20 23:54:38): <p>&#8222;Bogom nie przeszkadzają ateiści, pod
+  rację ;).
+* Feanor (2008-11-20 23:54:38): &#8222;Bogom nie przeszkadzają ateiści, pod
   warunkiem, że są to ateiści gorący, głębocy, żarliwi (...). Ateiści, którzy
   całe życie nie wierzą, całe życie nienawidzą bogów za to, że ci nie istnieją.
-  Taki ateizm jest niczym skała. To prawie wiara&#8221;<br /> Terry Pratchett
-  &#8222;Pomniejsze Bóstwa&#8221; </p>  <p>To tak, żeby nie powtarzać czyjejś
+  Taki ateizm jest niczym skała. To prawie wiara&#8221;  
+ Terry Pratchett
+  &#8222;Pomniejsze Bóstwa&#8221;  To tak, żeby nie powtarzać czyjejś
   kwestii, ze ateiści niedługo zaczną chodzić po domach z ulotkami. W sumie to
   ten cały wielki ateizm robi się zabawny. Ale nie żebym miał coś do ateistów,
-  jestem tolerancyjny i nie ganię innych wyznań.</p>
-* Zal (2008-11-20 23:56:39): <p>@Feanor: Pratchettowy cytat w dużej mierze
+  jestem tolerancyjny i nie ganię innych wyznań.
+* Zal (2008-11-20 23:56:39): @Feanor: Pratchettowy cytat w dużej mierze
   oddaje prawdę ;] Tyle tylko, że zjawisko &#8222;woah! mam jedyną słuszną
-  prawdę do objawienia&#8221; dot. ludzi, a nie samych idei ;]</p>
-* Feanor (2008-11-21 00:23:03): <p>Racja, w sumie ateizm sam w sobie z tego co
+  prawdę do objawienia&#8221; dot. ludzi, a nie samych idei ;]
+* Feanor (2008-11-21 00:23:03): Racja, w sumie ateizm sam w sobie z tego co
   mi wiadomo zakłada brak wiary i w tej formie raczej nikomu on nie przeszkadza
   i nie powinien budzić żadnych emocji. Ale kiedy ateiści zaczynają urządzać
-  krucjaty, walki, szydzenie, to już zaczyna być dosyć dziwne.<br /> Rozumiem
+  krucjaty, walki, szydzenie, to już zaczyna być dosyć dziwne.  
+ Rozumiem
   oczywiście, każdy może mieć własne poglądy i nikt nie powinien nikomu
   zabraniać ich wyrażania, ale niektórzy ateiści lubią je wyrażać bardzo
   dobitnie, nachalnie i w sposób, który często może obrażać ludzi wierzących. Bo
   bądź co bądź choćby w powyższym tekście przedstawiono człowieka wierzącego
   jako osobę nieinteligentną, zacofaną i &#8222;ślepą&#8221;. Nie dosłownie, ale
-  jednak.</p>  <p>&#8222;„Nie jestem rasistą, ale&#8230;”<br /> Tłumaczenie:
+  jednak.  &#8222;„Nie jestem rasistą, ale&#8230;”  
+ Tłumaczenie:
   „Jestem rasistowskim dupkiem który chodzi do białego kościoła i przeszkadza mu
   kiedy są koło niego czarnoskórzy. Uwielbiam rasistowskie kawały i zaraz ci
-  opowiem jeden niezły.”<br /> Odpowiedź akceptowalna: Śmiech, a potem
-  opowiedzenie jeszcze bardziej rasistowskiego dowcipu.<br /> Odpowiedź
-  nieakceptowalna: „Jesteś rasistą i hipokrytą.”&#8221; </p>  <p>Hmm, głosimy
+  opowiem jeden niezły.”  
+ Odpowiedź akceptowalna: Śmiech, a potem
+  opowiedzenie jeszcze bardziej rasistowskiego dowcipu.  
+ Odpowiedź
+  nieakceptowalna: „Jesteś rasistą i hipokrytą.”&#8221;  Hmm, głosimy
   wolność i tolerancję dla każdej rasy, ale tolerancja dla innych ras wcale nie
   przeszkadza w naśmiewaniu się i opowiadaniu kawałów o ludziach o innej wierze.
-  Ale tak, to wierzący są hipokrytami, tak tak.<br /> Z tego co wiem Kościół
+  Ale tak, to wierzący są hipokrytami, tak tak.  
+ Z tego co wiem Kościół
   głosi głównie miłość do każdego człowieka i nigdy od żadnego księdza nie
   usłyszałem, żeby choć aluzjami mówił, że inne rasy są gorsze, wręcz
   przeciwnie. Jezus był Żydem, a Kościół pomaga czarnoskórym mieszkańcom Afryki
   (misje). Gdzie więc podstawy do twierdzenia, że Chrześcijanie są rasistami?
   Może i niektóre stare kobiety faktycznie są równocześnie rasistkami i uważają
   się za wierzące, ale nie wiem dlaczego miałoby to świadczyć o całej
-  religii.</p>
-* Zal (2008-11-21 01:50:00): <p>@Feanor: Odniesienie do rasizmu wiąże się w
-  głównej mierze z <span class="caps">USA</span>. Rasizm jest tam mocno
+  religii.
+* Zal (2008-11-21 01:50:00): @Feanor: Odniesienie do rasizmu wiąże się w
+  głównej mierze z USA. Rasizm jest tam mocno
   zakorzeniony i dot. sporej części ludzi wierzących. Podejrzewam jednak, że
-  ateistów również.</p>  <p>Co do pierwszego akapitu &#8211; wrzuć tam zamiast
+  ateistów również.  Co do pierwszego akapitu &#8211; wrzuć tam zamiast
   ateisty osobę jakiegokolwiek wyznania i&#8230; Wystarczy &#8211; wszystko
   zależy od ludzi. Lubię truskawki, ale nie mogę ich jeść przez całe tygodnie i
   nie lubię, gdy ktoś mi je na siłę wciska. Sam jestem ateistą, ale też nie
-  lubię rozpoczynać krucjat.</p>  <p>Z drugiej zaś strony &#8211; Automaciej
+  lubię rozpoczynać krucjat.  Z drugiej zaś strony &#8211; Automaciej
   jedynie przetłumaczył tekst angielski! Mało kto to dostrzegł ;] Sam w sobie
-  nie rozpoczął żadnej krucjaty.</p>  <p>BA! Nie wypowiadał się w komentarzach,
-  aby nie podsycać flejma. Nie zauważyliście tego? ;]</p>
-* Moarc/J-23 (2008-11-21 12:13:40): <p>:)</p>
-* bsi (2008-11-21 22:01:18): <p>- Co wyjdzie ze skrzyrzowania ateisty ze
-  świadkiem jehowy? &#8211; Człowiek pukający do twoich drzwi bez powodu.</p>
-* może tak może nie (2008-11-22 14:36:18): <p>Z góry przepraszam za przyszłe
+  nie rozpoczął żadnej krucjaty.  BA! Nie wypowiadał się w komentarzach,
+  aby nie podsycać flejma. Nie zauważyliście tego? ;]
+* Moarc/J-23 (2008-11-21 12:13:40): :)
+* bsi (2008-11-21 22:01:18): - Co wyjdzie ze skrzyrzowania ateisty ze
+  świadkiem jehowy? &#8211; Człowiek pukający do twoich drzwi bez powodu.
+* może tak może nie (2008-11-22 14:36:18): Z góry przepraszam za przyszłe
   rozkradanie co niektórych cytatów, niestety sam mam ostatnio (by nie
   powiedzieć zawsze) problemy z błyskotliwością. Nie słuchaj ich, bardzo fajne,
   ostre, bluźniercze, takie jak być powinno. Pat Condell powiedział kiedyś że
   zachowuje powagę i szacunek dla religii na tyle na ile tylko potrafi, co u
   niego wynosi 1 sekundę. Jeśli wierzycie w gadające węże, moralizatorskie mowy
   płonących krzaków i niewidzialnych skrzydlatych przyjaciół czuwających nad
-  waszym łóżkiem, nic tu nie pomoże byśmy się z was was śmiali :)</p>
-* mamaT (2008-11-22 15:08:06): <p>@Feanor &#8211; jestem starą kobietą i
+  waszym łóżkiem, nic tu nie pomoże byśmy się z was was śmiali :)
+* mamaT (2008-11-22 15:08:06): @Feanor &#8211; jestem starą kobietą i
   wypraszam sobie w imieniu mojego pokolenia łączenie daty urodzenia z rasizmem.
-  A powiedzenie &#8222;niektóre&#8221; nic tu nie zmienia.</p>
-* irider (2009-08-21 11:27:28): <p>nic tylko wkleić w jakieś <a
-  href="(http://www.webhumor.pl/" rel="nofollow" >kawały</a>) co by więcej ludzi
-  do tego dotarło :D</p>
+  A powiedzenie &#8222;niektóre&#8221; nic tu nie zmienia.
+* irider (2009-08-21 11:27:28): nic tylko wkleić w jakieś kawały) co by więcej ludzi
+  do tego dotarło :D

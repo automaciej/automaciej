@@ -27,18 +27,22 @@ nie będzie miał wyjścia ― będzie musiał rozstać się z programowaniem.
 ----
 **Komentarze**
 
-* Hubert (2007-03-25 01:14:39): <p>Cóż, jestem absolutnie pewien że D. wymyśli
-  na poczekaniu jakiś powód dla którego nie porzuci programowania.</p>
-* mama T (2007-03-25 13:35:20): <p>nie sądzę, zeby zbyt dobrze pamiętał to, co
+* Hubert (2007-03-25 01:14:39): Cóż, jestem absolutnie pewien że D. wymyśli
+  na poczekaniu jakiś powód dla którego nie porzuci programowania.
+* mama T (2007-03-25 13:35:20): nie sądzę, zeby zbyt dobrze pamiętał to, co
   mówi, a co do honorowego zawodowego harakiri &#8211; jestem dziwnie spokojna,
-  że nie dojdzie :-0 co nie zmienia faktu, ze masz powód do satysfakcji!</p>
-* Piotr W (2007-03-27 20:12:56): <p>Myślę, że on nie przyzna się do błędu i
+  że nie dojdzie :-0 co nie zmienia faktu, ze masz powód do satysfakcji!
+* Piotr W (2007-03-27 20:12:56): Myślę, że on nie przyzna się do błędu i
   nieumiejętnego podejścia do tak odpowiedzialnej dziedziny jaką jest
   programowanie:( Szkoda tylko, że na świecie jest sporo takich ludzi, którzy
-  dumnie określają się słowem &#8222;programista&#8221;.<br /> Ale trzymam
-  kciuki:)</p>
-* automaciej (2007-05-08 20:42:55): <p>Metoda przeżycia<br /><br />Jakoś
+  dumnie określają się słowem &#8222;programista&#8221;.  
+ Ale trzymam
+  kciuki:)
+* automaciej (2007-05-08 20:42:55): Metoda przeżycia  
+  
+Jakoś
   przeżyłem te 4 miesiące ze współpracownikiem-wrogiem. Szykują się następne
-  dwa, więc będę się miał na baczności.<br />Kiedy zaczynałem pracę, myślałem że
+  dwa, więc będę się miał na baczności.  
+Kiedy zaczynałem pracę, myślałem że
   D. zostanie moim co najmniej dobrym kolegą; że będziemy mieli wspólne
-  [...]</p>
+  [...]

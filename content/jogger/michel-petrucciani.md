@@ -23,18 +23,20 @@ romantyczna.](http://www.jazzpages.com/txtext/petrucciani_voce.htm)
 ----
 **Komentarze**
 
-* mama T (2006-07-16 14:12:25): <p>Dla mnie rewelacją jest jego technika lewej
+* mama T (2006-07-16 14:12:25): Dla mnie rewelacją jest jego technika lewej
   ręki. Zawsze uczyłam uczniów ( i sama byłam uczona) pewnej techniki 5 palca,
   specjalne wprawki itd., a tu patrzę - człowiek siecze lewa reką jak karateka!
   Było to na którymś ze ś.p. Jazz Jamboree'ies. By the way - był na scenę
   wnoszony na rękach i miał specjalne przedłużacze do pedałów. Muszę posłuchać
-  go na nowo.</p>
-* RoberT (2007-04-15 19:51:38): <p>Mam to samo. Każda kolejna słuchana płyta
-  powala mnie zupełnie.</p>
-* johnny92 (2008-12-28 17:52:33): <p>czy polecilibyście mi jakieś jego płyty?
+  go na nowo.
+* RoberT (2007-04-15 19:51:38): Mam to samo. Każda kolejna słuchana płyta
+  powala mnie zupełnie.
+* johnny92 (2008-12-28 17:52:33): czy polecilibyście mi jakieś jego płyty?
   obejrzałem na youtube fragment koncertu ( kawałek &#8222;Brazilian
   Like&#8221;). Świetne synkopy, opóźnienia, frazowanie jazzowe, które wprost
   powala z nóg&#8230; Byłbym wdzięczny za podanie jakichś pozycji, które byłyby
-  w tym klimacie:<br />
-  http://pl.youtube.com/watch?v=p6Z5ll568M0&amp;feature=related<br />
-  pozdrawiam</p>
+  w tym klimacie:  
+
+  http://pl.youtube.com/watch?v=p6Z5ll568M0&amp;feature=related  
+
+  pozdrawiam

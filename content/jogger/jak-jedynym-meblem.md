@@ -19,10 +19,10 @@ Jak otworzę Facebooka, to jest po sprawie.
 ----
 **Komentarze**
 
-* lemiel (2015-10-26 09:19:31): <p>Tak od miesiąca zakładam konto na FB. Tak od
-  strzału mi się nie chce. Ale może trzeba?</p>
-* automaciej (2015-10-26 10:05:38): <p>O ile nie masz konkretnego powodu, to
+* lemiel (2015-10-26 09:19:31): Tak od miesiąca zakładam konto na FB. Tak od
+  strzału mi się nie chce. Ale może trzeba?
+* automaciej (2015-10-26 10:05:38): O ile nie masz konkretnego powodu, to
   chyba nie. Jest naprawdę zoptymalizowany żeby uzależniać; „a może teraz pojawi
   się coś ciekawego”. Owszem, czasami się pojawia, choć najczęściej wcale nie.
   Trudniej jest deaktywować konto niż założyć, bo nagle zdajesz sobie sprawę że
-  do szeregu osób nie masz ani maila ani telefonu, tylko kontakt przez FB.</p>
+  do szeregu osób nie masz ani maila ani telefonu, tylko kontakt przez FB.

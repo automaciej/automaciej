@@ -40,8 +40,8 @@ niemożliwe jest udowodnienie mu, że pisze bzdury.
 ----
 **Komentarze**
 
-* gwidon (2006-11-26 00:41:33): <p>waść chyba nigdy kanta ni hegla czy husserla
-  nie zaznał;]</p>
-* Automaciej (2006-11-29 12:52:29): <p>Hegel (1770-1831) i Husserl (1859-1938)
+* gwidon (2006-11-26 00:41:33): waść chyba nigdy kanta ni hegla czy husserla
+  nie zaznał;]
+* Automaciej (2006-11-29 12:52:29): Hegel (1770-1831) i Husserl (1859-1938)
   byli po Kartezjuszu (1596-1650). Pisząc ten tekst w 1991 roku, miałem poznać
-  Hegla dopiero za jakiś czas. Twój domysł jest więc słuszny. :-)</p>
+  Hegla dopiero za jakiś czas. Twój domysł jest więc słuszny. :-)

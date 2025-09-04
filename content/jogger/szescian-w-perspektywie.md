@@ -73,29 +73,30 @@ Ale sam sześcian, niczego sobie.
 ----
 **Komentarze**
 
-* K (2009-11-09 16:55:47): <p>BRZYDKI :(</p>
-* Anonim (2009-12-05 14:47:50): <p>kresek jakoś dużo. ale tekst prof o koniu
-  zacny :D</p>
-* byc moze przyszla pani architekt (2010-01-18 21:44:15): <p>jak na kogoś kto
+* K (2009-11-09 16:55:47): BRZYDKI :(
+* Anonim (2009-12-05 14:47:50): kresek jakoś dużo. ale tekst prof o koniu
+  zacny :D
+* byc moze przyszla pani architekt (2010-01-18 21:44:15): jak na kogoś kto
   nawet tylko zaczął studiować architekturę, gdzie umiejętność wykreślenia
   sześcianu w przestrzeni uważam za niezbędną podstawę rysunku, twój mini
   projekt jest wręcz mizerny. przepraszam, że tak mówię, ale elipsa w dolnej
   podstawie powinna być pozioma (jak i górna, chociaż ta wyszła Ci nieco
   lepiej). rozumiem, że to projekt na komputerze, ale strasznie mnie to razi,
   gdy patrzę na rysunek pełen błędów. dlatego też nie rozumiem jak Ciebie może
-  to nie razić. no i oczywiście linie nie są proste.</p>
-* Amelia (2010-01-19 21:40:31): <p>W ramach doinformowania, powiem cie, ze na
+  to nie razić. no i oczywiście linie nie są proste.
+* Amelia (2010-01-19 21:40:31): W ramach doinformowania, powiem cie, ze na
   ASP uczą geometrii wykreślnej, rysowania w perspektywie itd... i ręczę ci, ze
   nic sie nie wali, bo nie moze... a oprócz poprawności są jeszcze walory
-  estetyczne. pzdr</p>
-* jmim (2010-02-24 16:47:30): <p>juju</p>
-* Automaciej (2010-05-15 22:52:31): <p>@Amelia: Wierzę; prawdopodobnie padłem
-  ofiarą propagandy WAPW! :-)</p>
-* Michaś (2010-12-04 19:11:27): <p>Moje kochanie lepiej rysuję :*</p>
-* specialk (2011-06-15 18:50:36): <p>Macieju, ale "najbardziej prawa" krawędź
+  estetyczne. pzdr
+* jmim (2010-02-24 16:47:30): juju
+* Automaciej (2010-05-15 22:52:31): @Amelia: Wierzę; prawdopodobnie padłem
+  ofiarą propagandy WAPW! :-)
+* Michaś (2010-12-04 19:11:27): Moje kochanie lepiej rysuję :*
+* specialk (2011-06-15 18:50:36): Macieju, ale "najbardziej prawa" krawędź
   leci Ci w lewo. Piony powinny pozostać pionowe przy perspektywie z dwoma
-  punktami zbiegu</p>
-* Automaciej (2011-07-12 00:22:22): <p>@specialk: Typowy problem dla
-  praworęcznej osoby, nie?</p>
-* au (2011-07-21 05:31:04): <p>wyleciałem po roku z powodu że jestem nędza z
-  matematyki.<br /> a Słup jeszcze uczy? ja tam byłem w 1998...</p>
+  punktami zbiegu
+* Automaciej (2011-07-12 00:22:22): @specialk: Typowy problem dla
+  praworęcznej osoby, nie?
+* au (2011-07-21 05:31:04): wyleciałem po roku z powodu że jestem nędza z
+  matematyki.  
+ a Słup jeszcze uczy? ja tam byłem w 1998...

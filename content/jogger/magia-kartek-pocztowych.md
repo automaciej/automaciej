@@ -34,13 +34,16 @@ wyewoluowali!](http://www.tinyrevolution.com/mt/archives/001900.html)
 ----
 **Komentarze**
 
-* hcz (2007-11-30 21:39:11): <p>A pocztówki z Jamesem Bondem też tam były?</p>
-* Petranka (2007-11-30 22:10:19): <p>Mistrz Yoda wylądował na lodówce. Jest
+* hcz (2007-11-30 21:39:11): A pocztówki z Jamesem Bondem też tam były?
+* Petranka (2007-11-30 22:10:19): Mistrz Yoda wylądował na lodówce. Jest
   bardzo miło kiedy przypadkiem się na kartkę zerknie. To jest inny wymiar
   kontaktu, wciąż jeszcze dla nas bardzo cenny. Widocznie nie wszystkie
-  przemiany następują jednocześnia.</p>
-* agat_ (2011-01-27 20:17:28): <p>heh, ja wlasnie tak trafilam tutaj :)<br />
+  przemiany następują jednocześnia.
+* agat_ (2011-01-27 20:17:28): heh, ja wlasnie tak trafilam tutaj :)  
+
   szukalam drukowanych kartek ale takich ktore moge zamowic przez internet i
-  szukalam MagiaKartek.pl.<br /> To jest dobry przyklad na to jak wiele radosci
-  daje ciekawa kartka drukowana.<br /> Pozdrawiam wszystkich ktorzy chca
-  konrynuowac tradycje wysylania takich kartek.</p>
+  szukalam MagiaKartek.pl.  
+ To jest dobry przyklad na to jak wiele radosci
+  daje ciekawa kartka drukowana.  
+ Pozdrawiam wszystkich ktorzy chca
+  konrynuowac tradycje wysylania takich kartek.

@@ -47,30 +47,32 @@ zagięcia; w przypadku typowych notatek efekt będzie jeszcze lepszy.
 ----
 **Komentarze**
 
-* Barthalion (2007-07-16 07:04:32): <p>Świetny pomysł! W życiu bym na coś
-  takiego nie wpadł.</p>
-* D4rky (2007-07-16 15:04:02): <p>niezłe :)</p>
-* Adex (2007-07-16 15:10:22): <p>Ciekawe, ciekawe&#8230; przyda się ;]</p>
-* radmen (2007-07-16 16:16:09): <p>tru, dość ciekawe :)</p>
-* G (2007-07-17 02:13:22): <p>++ <br /> :D</p>
-* hcz (2007-07-17 18:50:39): <p>Naprawdę dobre. Przydałby się mały
-  &#8222;podkład&#8221; teoretyczny lub przynajmniej link do takowego.</p>
-* Automaciej (2007-07-21 19:59:00): <p>Nie znalazłem odpowiedniego linka. Ja
-  wzorowałem się na tym przykładzie z Gimpa:<br />
-  http://www.gimp.org/tutorials/Sketch_Effect/</p>    <p>Jeżeli chodzi o podkład
+* Barthalion (2007-07-16 07:04:32): Świetny pomysł! W życiu bym na coś
+  takiego nie wpadł.
+* D4rky (2007-07-16 15:04:02): niezłe :)
+* Adex (2007-07-16 15:10:22): Ciekawe, ciekawe&#8230; przyda się ;]
+* radmen (2007-07-16 16:16:09): tru, dość ciekawe :)
+* G (2007-07-17 02:13:22): ++   
+ :D
+* hcz (2007-07-17 18:50:39): Naprawdę dobre. Przydałby się mały
+  &#8222;podkład&#8221; teoretyczny lub przynajmniej link do takowego.
+* Automaciej (2007-07-21 19:59:00): Nie znalazłem odpowiedniego linka. Ja
+  wzorowałem się na tym przykładzie z Gimpa:  
+
+  http://www.gimp.org/tutorials/Sketch_Effect/    Jeżeli chodzi o podkład
   teoretyczny, to wykorzystujemy tutaj taką właściwość tekstu, że interesujące
   nas elementy są wszystkie z grubsza jednego rozmiaru. Zakładamy, że obraz
   składa się z sumy dwóch obrazów: jeden z małymi elementami, a drugi z dużymi.
   Obraz z elementami dużymi możemy uzyskać przez rozmycie, a po odjęciu go od
   oryginału dostajemy obraz z samymi elementami małymi. Wielkość interesujących
-  nas elementów wybieramy regulując promień rozmycia.</p>
-* jachacy (2007-09-12 21:06:39): <p>Jakiej wersji ImageMagick używasz? U mnie
-  rozmycie trwa min. minutę dla zdjęcia 3Mpx na procesorze 2Ghz. </p>  <p>Przy
-  okazji zwraca: convert: unrecognized option `-contrast-stretch&#8217;.</p>
-* Automaciej (2008-01-13 22:15:05): <p>ImageMagick 6.3.5.10.  Tak, rozmywanie
+  nas elementów wybieramy regulując promień rozmycia.
+* jachacy (2007-09-12 21:06:39): Jakiej wersji ImageMagick używasz? U mnie
+  rozmycie trwa min. minutę dla zdjęcia 3Mpx na procesorze 2Ghz.   Przy
+  okazji zwraca: convert: unrecognized option `-contrast-stretch&#8217;.
+* Automaciej (2008-01-13 22:15:05): ImageMagick 6.3.5.10.  Tak, rozmywanie
   jest potwornie powolne dla większych zdjęć.  Może warto poszukać innej,
-  szybszej metody rozmywania.</p>
-* vampire (2008-05-09 18:38:19): <p>moze byc szybciej jezeli uzyjesz filtra
-  dolnoprzepustowego zamiast blura&#8230;</p>
-* studentka (2009-01-16 17:47:01): <p>ciekawe. da się to zautomatyzować?</p>
-* Automaciej (2009-01-17 13:00:10): <p>No ba!</p>
+  szybszej metody rozmywania.
+* vampire (2008-05-09 18:38:19): moze byc szybciej jezeli uzyjesz filtra
+  dolnoprzepustowego zamiast blura&#8230;
+* studentka (2009-01-16 17:47:01): ciekawe. da się to zautomatyzować?
+* Automaciej (2009-01-17 13:00:10): No ba!

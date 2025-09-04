@@ -38,22 +38,25 @@ Nooglera](http://steve-yegge.blogspot.com/2007/02/nooglers-view-of-google.html):
 ----
 **Komentarze**
 
-* hcz (2007-05-30 21:35:57): <p>co to są &#8222;spiardle&#8221;?</p>
-* burbie (2007-05-30 23:03:24): <p>Spiardle to przysłówek, jeszcze ujdzie,
-  ale&#8230; inwestygacje?!  :)</p>
-* Automaciej (2007-05-31 00:15:02): <p>Znalazłem jakieś synonimy, proszę bardzo.
-  :-)</p>
-* hcz (2007-05-31 23:56:52): <p>Dochodzenie jest rodzaju męskiego. A na spiardle
-  jak widzę nie ma siły&#8230;</p>
-* Automaciej (2007-06-01 00:23:19): <p>A jak byś przetłumaczył „we were
-  bummed”?</p>
-* hcz (2007-06-01 00:43:25): <p>Nie wiem &#8212; musiałbym poinwestygować. Z
+* hcz (2007-05-30 21:35:57): co to są &#8222;spiardle&#8221;?
+* burbie (2007-05-30 23:03:24): Spiardle to przysłówek, jeszcze ujdzie,
+  ale&#8230; inwestygacje?!  :)
+* Automaciej (2007-05-31 00:15:02): Znalazłem jakieś synonimy, proszę bardzo.
+  :-)
+* hcz (2007-05-31 23:56:52): Dochodzenie jest rodzaju męskiego. A na spiardle
+  jak widzę nie ma siły&#8230;
+* Automaciej (2007-06-01 00:23:19): A jak byś przetłumaczył „we were
+  bummed”?
+* hcz (2007-06-01 00:43:25): Nie wiem &#8212; musiałbym poinwestygować. Z
   pewnością nie &#8222;czuliśmy się spiardle&#8221; bo takiego słowa w języku
-  polskim nie ma. Już raczej &#8222;czuliśmy się chujowo&#8221;...</p>
-* hcz (2007-06-01 00:49:11): <p>Poinwestygowałem: wyruchani albo
-  wydymani&#8230;</p>
-* automaciej (2007-06-12 22:24:11): <p>Alegoria Steve'ego<br /><br />Steve Yegge
+  polskim nie ma. Już raczej &#8222;czuliśmy się chujowo&#8221;...
+* hcz (2007-06-01 00:49:11): Poinwestygowałem: wyruchani albo
+  wydymani&#8230;
+* automaciej (2007-06-12 22:24:11): Alegoria Steve'ego  
+  
+Steve Yegge
   jest jednym z moich ulubionych bloggerów. Właściwie, jest on nawet nie tyle
-  bloggerem, ile autorem artykułów, bo pisze rzadko acz obszernie.<br />Steve
+  bloggerem, ile autorem artykułów, bo pisze rzadko acz obszernie.  
+Steve
   pracuje w Google, co jest dla mnie tematem bardzo na czasie. Szczególnie po
-  artykule[...]</p>
+  artykule[...]

@@ -54,6 +54,6 @@ Freenode](http://www.opencsw.org/support/irc-channel/ "Kanał anglojęzyczny" ).
 ----
 **Komentarze**
 
-* Argon (2012-12-08 15:41:55): <p>Podziękował bardzo, za Usable Solaris.
+* Argon (2012-12-08 15:41:55): Podziękował bardzo, za Usable Solaris.
   Przyszedł czas odkurzyć starą maszynę i trochę z nią porządków zrobić. A
-  pakiety, cóż, jeśli czas pozwoli…</p>
+  pakiety, cóż, jeśli czas pozwoli…
