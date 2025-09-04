@@ -83,6 +83,7 @@ znaczy tutaj, „jesteś sztukmistrzem”.
 ----
 **Komentarze**
 
-* Moarc/J-23 (2008-12-20 21:13:46): <p>Właśnie zastanawiałem się, skąd się biorą
+* Moarc/J-23 (2008-12-20 21:13:46): Właśnie zastanawiałem się, skąd się biorą
   brednie na temat zjawisk paranormalnych, kiedy w do mojego gabinetu wefrunął
-  jak anioł...<br /> Sztukmistrz z Lublina.</p>  <p>;p</p>
+  jak anioł...  
+ Sztukmistrz z Lublina.  ;p

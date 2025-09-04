@@ -133,60 +133,63 @@ przedostatnią sylabę. I co z tego?
 ----
 **Komentarze**
 
-* Cachotterie (2007-08-16 22:27:54): <p>Dziękuję.<br /> Od półtora miesiąca
+* Cachotterie (2007-08-16 22:27:54): Dziękuję.  
+ Od półtora miesiąca
   mieszkam w Londynie, od momentu decyzji o przeprowadzce wszyscy mnie pytali
   &#8222;kiedy planujesz wracać&#8221;. A ja mam nieustannie wrażenie, że nie
   planuję wracać &#8211; i chyba Twoja notka poukładała mi w głowie dość wyraźną
   odpowiedź, dlaczego nie &#8211; bo czuć to wszystko gdzieś czułam już bardzo
   dawno, tyle że błądziło to pod niejasnym pojęciem &#8222;nie jestem patriotką,
-  nie kocham swojego kraju&#8221;.</p>  <p>Tęsknię za ludźmi w Polsce, za
+  nie kocham swojego kraju&#8221;.  Tęsknię za ludźmi w Polsce, za
   rodziną, za przyjaciółmi, szczególnie tymi z licealnych czasów właśnie. Za
-  całą resztą &#8211; podobnie jak Ty&#8230;</p>
-* dracek (2007-08-16 22:53:39): <p>Czasami sam się zastanawiam &#8211; mieszkam
+  całą resztą &#8211; podobnie jak Ty&#8230;
+* dracek (2007-08-16 22:53:39): Czasami sam się zastanawiam &#8211; mieszkam
   w tym kraju &#8211; czy ja jestem Polakiem. Chodzę i widzę jak zachowują się
-  inni i nie pasuje do tego obrazu.</p>
-* hcz (2007-08-16 22:56:29): <p>&#8222;Nigdzie w Polsce, poza liceum, nie
-  przynależałem do żadnej grupy z którą mógłbym się identyfikować.&#8221; </p>
-  <p>Być może te właśnie słowa są najważniejsze z tego, co napisałeś. I może
+  inni i nie pasuje do tego obrazu.
+* hcz (2007-08-16 22:56:29): &#8222;Nigdzie w Polsce, poza liceum, nie
+  przynależałem do żadnej grupy z którą mógłbym się identyfikować.&#8221; 
+  Być może te właśnie słowa są najważniejsze z tego, co napisałeś. I może
   Polska nie jest tu najważniejsza. Może po prostu (podobnie jak ja &#8212; tak
-  mi się przynajmniej wydaje) masz instynkt stadny w zaniku&#8230;</p>
-* szopa (2007-08-17 00:01:46): <p>Nie chcę Cię rozczarować, ale Twój wpis aż
+  mi się przynajmniej wydaje) masz instynkt stadny w zaniku&#8230;
+* szopa (2007-08-17 00:01:46): Nie chcę Cię rozczarować, ale Twój wpis aż
   epatuje polskością. Nawet jeżeli nie nosisz białych skarpetek i nie masz
   krótko ogolonych włosów, to za jego pomocą właśnie udowodniłeś, że całkowicie
-  zasługujesz na różowy dowód osobisty z orzełkiem.</p>  <p>Z moich obserwacji
+  zasługujesz na różowy dowód osobisty z orzełkiem.  Z moich obserwacji
   wynika, że podobne uczucia żywi bardzo wielu młodych, wykształconych Polaków
   za granicą. Za to, nie zaobserwowałem ich ani u Flamandów, ani u Niemców, ani
-  u Holendrów, Włochów albo Amerykanów.</p>  <p>Pozdrowienia z Hagi.</p>
-* hcz (2007-08-17 00:06:54): <p>@szopa: To ciekawe&#8230; Twierdzisz, że
+  u Holendrów, Włochów albo Amerykanów.  Pozdrowienia z Hagi.
+* hcz (2007-08-17 00:06:54): @szopa: To ciekawe&#8230; Twierdzisz, że
   przedstawiciele wymienionych przez Ciebie nacji nie mają problemów z
-  tożsamością...?</p>
-* Cachotterie (2007-08-17 09:27:33): <p>Szopa: od kiedy to, że statystyczny
+  tożsamością...?
+* Cachotterie (2007-08-17 09:27:33): Szopa: od kiedy to, że statystyczny
   Niemiec dobrze się czuje ze swoją narodowością ma cokolwiek wspólnego z tym,
   czy wykształcony Polak się czuje dobrze ze swoją? Gdzie tu jest jakikolwiek
-  związek, udowadniający &#8222;ach, jaki Ty jesteś polski&#8221;?<br /> I co
+  związek, udowadniający &#8222;ach, jaki Ty jesteś polski&#8221;?  
+ I co
   niby jest takie &#8222;polskie&#8221; &#8211; to że ktoś nie czuje związku z
   krajem i większością rodaków? W takim razie postawa odwrotna &#8211; czyli
   tych którzy np. z podudek ideologicznych w kraju zostają &#8211; to już jest
-  niepolska?</p>  <p>To że podobne uczucia żywi bardzo wielu Polaków za granicą,
+  niepolska?  To że podobne uczucia żywi bardzo wielu Polaków za granicą,
   zwykle wykształconych, nie jest niczym dziwnym, czysta statystyka rzekłabym.
   Ci którzy dobrze się czują z Polską i polskością zostają w Polsce, a nie
-  wyjeżdżają.</p>
-* hcz (2007-08-17 22:13:06): <p><span class="caps">BTW</span> we włoskim też
-  jest prześmieszny akcent na przedostatnią sylabę...</p>
-* szopa (2007-08-17 22:14:52): <p>ad Hcz i ad Cachotteriel</p>  <p>Nie twierdzę,
+  wyjeżdżają.
+* hcz (2007-08-17 22:13:06): BTW we włoskim też
+  jest prześmieszny akcent na przedostatnią sylabę...
+* szopa (2007-08-17 22:14:52): ad Hcz i ad Cachotteriel  Nie twierdzę,
   że inne nacje nie mają problemów tożsamościowych (o Flamandach na pewno wiem,
   że mają, przede wszystkim na linii bycia Belgiem/bycia Flamandem). Nie
   twierdzę również, że ktoś, kto nie wyjeżdża z Polski zachowuje się nie po
   polsku &#8212; nie wiem, jaki fragment mojego komentarza mógł to
-  zasugerować.</p>  <p>Twierdzę jednak, że młodzi Polacy wyjeżdżający na Zachód
+  zasugerować.  Twierdzę jednak, że młodzi Polacy wyjeżdżający na Zachód
   przeżywają swoje problemy tożsamościowe w bardzo charakterystyczny sposób,
   inny niż na przykład Niemcy, Włosi czy Amerykanie. I chyba nawet trochę
   częściej (to ostatnie zapewne się bierze z tego, że Polacy postrzegają siebie
-  jako dużo biedniejszych niż mieszkańców krajów, do których wyjeżdżają).</p>
-  <p>Ten charakterystyczny sposób przeżywania problemów tożsamościowych
-  zaobserwowałem u siebie, moich znajomych i Automacieja właśnie.</p>
-* Cachotterie (2007-08-17 23:04:18): <p>Cóż, myślę że bardziej niż z narodowości
-  wynika to z poziomu społeczno-intelektualnego wyjeżdżających&#8230;<br /> W
+  jako dużo biedniejszych niż mieszkańców krajów, do których wyjeżdżają).
+  Ten charakterystyczny sposób przeżywania problemów tożsamościowych
+  zaobserwowałem u siebie, moich znajomych i Automacieja właśnie.
+* Cachotterie (2007-08-17 23:04:18): Cóż, myślę że bardziej niż z narodowości
+  wynika to z poziomu społeczno-intelektualnego wyjeżdżających&#8230;  
+ W
   żadnym innym chyba kraju z taką pogardą jak w Polsce nie traktuje się elity
   intelektualnej (bo skąd się wzięło określenie wykształciuchy jak nie z
   pogardy/lekceważenia). W żadnym też innym kraju chyba ludzie w zawodach typu
@@ -200,52 +203,65 @@ przedostatnią sylabę. I co z tego?
   zmywak, to wciąż niejednokrotnie są to łebscy ludzie. Natomiast emigranci z
   Niemiec, Belgii (czy skąd tam jeszcze) &#8211; wydaje mi się &#8211;
   prezentują zdecydowanie szerszy przekrój społeczny, nie ma jakiejś wybijającej
-  się wyjeżdżającej grupy.<br /> Myślę że Ameryki nie odkryję twierdzeniem, że
+  się wyjeżdżającej grupy.  
+ Myślę że Ameryki nie odkryję twierdzeniem, że
   statystyczny misio-bysio bezkarkowy (tudzież jego niemiecki odpowiednik)
   raczej nie zaprząta sobie głowy problemami tożsamościowymi, natomiast
   zdecydowanie częściej takie coś przytrafia się komuś &#8222;głębszemu&#8221;
-  intelektualnie.</p>  <p>Chodzi mi o to po prostu, że jeśli z Polski wyjedzie
+  intelektualnie.  Chodzi mi o to po prostu, że jeśli z Polski wyjedzie
   100 osób, z czego np. 90 to &#8222;elyta&#8221;, to zdecydowanie łatwiej w
   takiej grupie zaobserwować problemy tożsamościowe &#8211; bo te osoby po
   prostu myślą już na takim poziomie abstrakcji. Natomiast jeśli z Niemiec na
   100 osób &#8222;elyty&#8221; jest 20 (czyli jeśli rozkład wyjeżdżających
   odpowiada rozkładowi populacji) to te problemy i ich przeżywanie jest dużo
-  mniej zauważalne&#8230;</p>  <p>Druga rzecz, że czytasz polskie blogi,
+  mniej zauważalne&#8230;  Druga rzecz, że czytasz polskie blogi,
   rozmawiasz z polskimi znajomymi, łatwo Ci zaobserwować problemy tożsamościowe.
   Ile czytasz belgijskich/niemieckich/francuskich blogów i ilu masz bliskich
   znajomych tej narodowości, żeby móc mówić &#8211; ci emigranci nie mają takich
-  problemów jak polscy emigranci?...</p>
-* szopa (2007-08-18 02:07:14): <p>Akurat tak się składa, że mam całkiem dużo
+  problemów jak polscy emigranci?...
+* szopa (2007-08-18 02:07:14): Akurat tak się składa, że mam całkiem dużo
   znajomych z różnych krajów, niektórych nawet dość bliskich. Zeszły rok
   spędziłem w Leuven, gdzie łatwiej się czasami po angielsku w sklepie dogadać
   niż po holendersku, teraz z kolei pracuję w małej, ale bardzo międzynarodowej
   firmie. Też mają jakieś tam swoje problemy z tożsamością (może oprócz
   Holendrów, bo oni nie wydają się zdolni do tak wyrafinowanych uczuć), ale (jak
-  już mówiłem) wydawały się inne niż nasze.</p>  <p>Poza tym, zauważ, że w
+  już mówiłem) wydawały się inne niż nasze.  Poza tym, zauważ, że w
   pewnym sensie nie ma czegoś takiego jak belgijscy abo holenderscy
   emigranci&#8230; Prosty Belg/Holender/Niemiec nie ma zbytnio interesu w
   szukaniu szczęścia na drugim końcu Europy &#8212; u siebie ma najlepsza opiekę
   socjalną, bezpieczeństwo zatrudnienia, sporo kasy. Jeżeli już wyjeżdża, to
   raczej na lepszą uczelnię, do ciekawszej pracy itp. To daje im zupełnie inną
   perspektywę: nie są tacy zgorzkniali i wkurzeni na swój własny kraj jak
-  my.</p>  <p>Z drugiej strony, po roku spędzonym w szeroko pojętej Flatlandii
+  my.  Z drugiej strony, po roku spędzonym w szeroko pojętej Flatlandii
   stwierdzam, że Polska jest wcale mieszkalnym krajem i z pewną ulgą przyjmuję,
-  że następny rok pomieszkam sobie w Warszawie.</p>
-* Asia (2011-08-23 14:07:39): <p>"There is a Polish word, "żal", a beautiful
+  że następny rok pomieszkam sobie w Warszawie.
+* Asia (2011-08-23 14:07:39): "There is a Polish word, "żal", a beautiful
   word, impossible to translate. It means sadness, nostalgia, regret, being
   hurt, and yet it is something else. It feels like a howling inside you, so
-  unbearable that itbreaks your heart".<br /> Artur Rubinstein "My young years"
-  Alfred A. Knopfy, New York 1973.</p>  <p>Żal mi tamtych nocy i dni<br /> W
-  ogniu Twoich rąk<br /> Nieznany dziki ląd<br /> Czy wiesz<br /> Może to<br />
-  Była miłość</p>  <p>Bajm - Żal mi tamtych nocy i dni</p>  <p>Polskość
-  przepadła. Dziś to postreżim "nie wolno - musisz" kontra tułaczka.</p>
-  <p>Joanna 1979</p>
-* Asia (2011-08-23 14:09:56): <p>"There is a Polish word, "żal", a beautiful
+  unbearable that itbreaks your heart".  
+ Artur Rubinstein "My young years"
+  Alfred A. Knopfy, New York 1973.  Żal mi tamtych nocy i dni  
+ W
+  ogniu Twoich rąk  
+ Nieznany dziki ląd  
+ Czy wiesz  
+ Może to  
+
+  Była miłość  Bajm - Żal mi tamtych nocy i dni  Polskość
+  przepadła. Dziś to postreżim "nie wolno - musisz" kontra tułaczka.
+  Joanna 1979
+* Asia (2011-08-23 14:09:56): "There is a Polish word, "żal", a beautiful
   word, impossible to translate. It means sadness, nostalgia, regret, being
   hurt, and yet it is something else. It feels like a howling inside you, so
-  unbearable that itbreaks your heart".<br /> Artur Rubinstein "My young years"
-  Alfred A. Knopfy, New York 1973.</p>  <p>Żal mi tamtych nocy i dni<br /> W
-  ogniu Twoich rąk<br /> Nieznany dziki ląd<br /> Czy wiesz<br /> Może to<br />
-  Była miłość</p>  <p>Bajm - Żal mi tamtych nocy i dni</p>  <p>Polskość
-  przepadła. Dziś to postreżim "nie wolno - musisz" kontra tułaczka.</p>
-  <p>Joanna 1979</p>
+  unbearable that itbreaks your heart".  
+ Artur Rubinstein "My young years"
+  Alfred A. Knopfy, New York 1973.  Żal mi tamtych nocy i dni  
+ W
+  ogniu Twoich rąk  
+ Nieznany dziki ląd  
+ Czy wiesz  
+ Może to  
+
+  Była miłość  Bajm - Żal mi tamtych nocy i dni  Polskość
+  przepadła. Dziś to postreżim "nie wolno - musisz" kontra tułaczka.
+  Joanna 1979

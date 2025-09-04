@@ -18,4 +18,4 @@ I odłożę słuchawkę.
 ----
 **Komentarze**
 
-* mama T (2006-07-15 12:42:05): <p>móżdżek jej się zawiesił?</p>
+* mama T (2006-07-15 12:42:05): móżdżek jej się zawiesił?

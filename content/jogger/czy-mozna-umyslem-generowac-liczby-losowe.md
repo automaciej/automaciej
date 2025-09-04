@@ -66,26 +66,27 @@ Macie jakieś inne pomysły?
 ----
 **Komentarze**
 
-* 9gods (2007-08-20 10:29:32): <p>Przeprowadzano eksperymenty (na
+* 9gods (2007-08-20 10:29:32): Przeprowadzano eksperymenty (na
   uniwersytetach), w których komputer non stop generował losowe cyfry a
   uczestnikom kazano koncentrować się na jednej z nich. I próbki wykazywały, że
   wybrana cyfra występowała o jakiś znaczący procent (większy niż błąd
-  statystyczny) częściej niż inne.</p>
-* 9gods (2007-08-20 11:43:18): <p>Kiedy prosisz człowieka o wybranie losowo
+  statystyczny) częściej niż inne.
+* 9gods (2007-08-20 11:43:18): Kiedy prosisz człowieka o wybranie losowo
   jakieś cyfry, będzie oczywiście ona z czymś związana: albo będzie to ulubiona,
   albo ostatnio usłyszana czy może taka, która wydaje mu się najmniej
   prawdopodobna. I tu można stwierdzić, że nie do końca jest ona losowa. Ale
   proces wybierania sposobu wybierania :) można już nazwać losowym, bo często
-  nawet dla tej osoby jest on niewiadomy.</p>  <p>Cyfr jest niewiele i zawsze
+  nawet dla tej osoby jest on niewiadomy.  Cyfr jest niewiele i zawsze
   przy pytaniu o nie jest duża szansa, że ktoś wykorzysta schemat, który był już
   raz przez niego użyty. Jednak przy większych liczbach możemy już mówić o
-  losowości.</p>  <p>Co zaś się tyczy twojej paniki to powstaje ona dla tego, że
+  losowości.  Co zaś się tyczy twojej paniki to powstaje ona dla tego, że
   chcesz intelektualizować, zamiast losować :) Po prostu wyrzuć z siebie ciąg
-  przypadkowych liczb nie próbując ich oceniać.</p>
-* Automaciej (2007-08-21 08:48:43): <p>„Po prostu wyrzuć z siebie ciąg
-  przypadkowych liczb nie próbując ich oceniać.”<br /> Dokładnie w ten sposób
-  ulega się sugestii i manipulacji.</p>
-* Alaxafel (2008-01-16 15:28:45): <p>Umysłem to średnio, ale zawsze można
+  przypadkowych liczb nie próbując ich oceniać.
+* Automaciej (2007-08-21 08:48:43): „Po prostu wyrzuć z siebie ciąg
+  przypadkowych liczb nie próbując ich oceniać.”  
+ Dokładnie w ten sposób
+  ulega się sugestii i manipulacji.
+* Alaxafel (2008-01-16 15:28:45): Umysłem to średnio, ale zawsze można
   spojrzeć na zegarek i wziąć ostatnią cyfrę sekundnika &#8211; jeśli potrzebna
   jest jedna liczba losowa to mamy gwarancję że ona jest losowa, bo kto bez
-  uprzedniego sprawdzenia powie która jest aktualnie sekunda?</p>
+  uprzedniego sprawdzenia powie która jest aktualnie sekunda?

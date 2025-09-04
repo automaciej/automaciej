@@ -60,44 +60,57 @@ starym, byłoby łatwiej.
 ----
 **Komentarze**
 
-* ola (2006-10-28 17:25:28): <p>a jaki przedział wiekowy masz na myśli pisząc
-  starsi ludzie?:)</p>
-* ajot (2006-10-28 17:43:32): <p>Kto chce, ten potrafi korzystać z Internetu.
-  <br />Mój ojciec doskonale sobie radzi w podstawowym zakresie. Na co dzień
-  używa Linuksa. <br />W zeszłym roku podłączałem internet facetowi grubo po
+* ola (2006-10-28 17:25:28): a jaki przedział wiekowy masz na myśli pisząc
+  starsi ludzie?:)
+* ajot (2006-10-28 17:43:32): Kto chce, ten potrafi korzystać z Internetu.
+    
+Mój ojciec doskonale sobie radzi w podstawowym zakresie. Na co dzień
+  używa Linuksa.   
+W zeszłym roku podłączałem internet facetowi grubo po
   sześćdziesiątce &quot;bo coś na starość trzeba robić, a w dodatku wnuki będą
-  do mnie chętniej jeździć&quot;</p>
-* ola (2006-10-28 17:45:16): <p>mój właśnie też ale babcia już nie:)</p>
-* thot22003 (2006-10-28 18:11:11): <p>moja babcia tez nie jest zainteresowana.
+  do mnie chętniej jeździć&quot;
+* ola (2006-10-28 17:45:16): mój właśnie też ale babcia już nie:)
+* thot22003 (2006-10-28 18:11:11): moja babcia tez nie jest zainteresowana.
   mimo, ze uzywa innych &quot;nowoczesnych&quot; urzadzen, to komputer juz nie
   za bardzo. jeszcze niedawno chciala nawet kupic taki (win 98 ;) ) ale w
   ostatecznosci stwierdzila ze lepiej nie. boi sie zepsuc i ze sobie nie poradzi
   z naprawa i bedzie musiala kogos wolac ;) to chyba najbardziej ja przeraza. a
-  poza tym na codzien ma zajecia inne, na nude nie narzeka :)</p>
-* mama T (2006-10-28 20:36:06): <p>a jak jeszcze sobie kupię laptopa, to
+  poza tym na codzien ma zajecia inne, na nude nie narzeka :)
+* mama T (2006-10-28 20:36:06): a jak jeszcze sobie kupię laptopa, to
   zobaczysz, jak ja się wyuczę! Myslę sobie, ze jak dziadek opanuje internet, to
-  po co wnuk do niego będzie chodził? Wszystko mailem się złatwi.  <br />jednak
+  po co wnuk do niego będzie chodził? Wszystko mailem się złatwi.    
+jednak
   zorganizowanie rozbudowanej roszinnej imprezy z uzyciem mailowej
-  korespondencji TO JEST TO! Dziadkowie, Babcie - do laptopów!</p>
-* KKK (2006-10-29 11:55:25): <p>Czytam i śmieję się do rozpuku. Starsi ludzie
-  używają komputerów.  <br />Mój ojciec urodził się w 1930 roku, zaczął używać
-  komputera, mając ponad 70 lat na karku.  <br />Kupił sobie komputer w Vobisie,
-  z legalnym Windows XP Home i natychmiast zainstalował sobie internet.  <br
-  />Od momentu zakupu, system ani razu mu się nie zawiesił (!).  <br />A jest
-  włączony po kilka godzin na dobę, codziennie! <br /> <br />Ojciec używa kilku
+  korespondencji TO JEST TO! Dziadkowie, Babcie - do laptopów!
+* KKK (2006-10-29 11:55:25): Czytam i śmieję się do rozpuku. Starsi ludzie
+  używają komputerów.    
+Mój ojciec urodził się w 1930 roku, zaczął używać
+  komputera, mając ponad 70 lat na karku.    
+Kupił sobie komputer w Vobisie,
+  z legalnym Windows XP Home i natychmiast zainstalował sobie internet.    
+Od momentu zakupu, system ani razu mu się nie zawiesił (!).    
+A jest
+  włączony po kilka godzin na dobę, codziennie!   
+   
+Ojciec używa kilku
   różnych komunikatorów, bierze udział w zbiorowych konferencjach w Skype i nie
-  tylko.  <br />Tłumaczy m.in. dokumenty Unijne na międzynarodowy język
+  tylko.    
+Tłumaczy m.in. dokumenty Unijne na międzynarodowy język
   Esperanto, na zlecenie Pani Walstrom (Komisarza UE do spraw komunikacji
   językowej). Nikt nie pomaga mojemu ojcu w obsłudze komputera, a zaznaczam, ze
-  wcześniej miał do czynienia wyłącznie z maszyną do pisania. <br />Ojciec ma
-  mnóstwo znajomych w jego wieku i starszych, na całym świecie. <br />Nie wiem,
-  skąd bierze się ta pogłoska, że komputera używają tylko młodzi ludzie?</p>
-* Nela (2006-12-03 00:22:37): <p>Też zawsze się nad tym zastanawiałam. Nawet
+  wcześniej miał do czynienia wyłącznie z maszyną do pisania.   
+Ojciec ma
+  mnóstwo znajomych w jego wieku i starszych, na całym świecie.   
+Nie wiem,
+  skąd bierze się ta pogłoska, że komputera używają tylko młodzi ludzie?
+* Nela (2006-12-03 00:22:37): Też zawsze się nad tym zastanawiałam. Nawet
   moja mama &#8222;boi się&#8221; korzystać z internetu, z komputera bo coś
-  zepsuje. Nie wie ile traci</p>
-* junda1 (2008-01-18 22:47:11): <p>moja babcia ma 89 lat i robi na internecie z
-  3h nawieczur</p>
-* Domini (2009-05-11 14:42:45): <p>Aby taniej żyć powinniśmy zdecydowanie piec
-  dla siebie <br /> __CHLEB typu <span class="caps">KR-IRL</span>.<br /> Zjadamy
+  zepsuje. Nie wie ile traci
+* junda1 (2008-01-18 22:47:11): moja babcia ma 89 lat i robi na internecie z
+  3h nawieczur
+* Domini (2009-05-11 14:42:45): Aby taniej żyć powinniśmy zdecydowanie piec
+  dla siebie   
+ __CHLEB typu KR-IRL.  
+ Zjadamy
   mniej innych produktów, i jesteśmy syci, również biologicznie prawidłowo
-  odżywieni, zwłaszcza jako ludzie starsi. To ważne.</p>
+  odżywieni, zwłaszcza jako ludzie starsi. To ważne.

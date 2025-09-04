@@ -33,8 +33,8 @@ trójstronna moneta.
 ----
 **Komentarze**
 
-* Ja-Joanna (2006-09-30 20:06:05): <p>Co do koloru urli chyba potrafię Ci pomóc,
-  jeśli to jeszcze aktualne.</p>
-* Ja-Joanna (2006-09-30 20:12:56): <p>PS: 25 out of 30.</p>
-* Marek (2006-10-02 14:05:34): <p>26 na 30. Ciekawe, czy wszyscy mieliśmy
-  problemy w tych samych miejscach... :)</p>
+* Ja-Joanna (2006-09-30 20:06:05): Co do koloru urli chyba potrafię Ci pomóc,
+  jeśli to jeszcze aktualne.
+* Ja-Joanna (2006-09-30 20:12:56): PS: 25 out of 30.
+* Marek (2006-10-02 14:05:34): 26 na 30. Ciekawe, czy wszyscy mieliśmy
+  problemy w tych samych miejscach... :)

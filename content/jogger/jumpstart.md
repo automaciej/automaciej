@@ -64,10 +64,14 @@ W następny weekend spróbuję pobawić się zone'ami.
 ----
 **Komentarze**
 
-* Bonjoure (2008-05-20 07:40:26): <p>No faktycznie! Gnome się przyda&#8230;
-  ;)</p>
-* el_pilar (2009-04-02 19:17:15): <p>Witam,<br /> jak u netry z poziomem
-  głośności, mam zamiar kupić taką żeby<br /> potestować solarisa a później
-  wrzucić debiana i niech pracuje<br /> jako router. Problem tylko w tym, że jak
-  będzie za głośna to <br /> ludzie w jej pobliżu oszaleją...</p>
-  <p>Pozdrawiam</p>
+* Bonjoure (2008-05-20 07:40:26): No faktycznie! Gnome się przyda&#8230;
+  ;)
+* el_pilar (2009-04-02 19:17:15): Witam,  
+ jak u netry z poziomem
+  głośności, mam zamiar kupić taką żeby  
+ potestować solarisa a później
+  wrzucić debiana i niech pracuje  
+ jako router. Problem tylko w tym, że jak
+  będzie za głośna to   
+ ludzie w jej pobliżu oszaleją...
+  Pozdrawiam

@@ -30,21 +30,22 @@ tyłu, i o tym właśnie mówi artykuł.
 ----
 **Komentarze**
 
-* s (2007-01-20 14:22:07): <p>jakiś dziwny ten obrazek: ,,click here to download
-  plugin&#8217;&#8216;.</p>
-* Medra (2007-01-20 14:42:39): <p>@S: flasha Ci chyba brakuje :)</p>
-* s (2007-01-20 15:10:09): <p>@Medra: Fakt. Sprawdziłem. Brakuje. Niestety
+* s (2007-01-20 14:22:07): jakiś dziwny ten obrazek: ,,click here to download
+  plugin&#8217;&#8216;.
+* Medra (2007-01-20 14:42:39): @S: flasha Ci chyba brakuje :)
+* s (2007-01-20 15:10:09): @Medra: Fakt. Sprawdziłem. Brakuje. Niestety
   pakiet mieszka w sekcji non-free więc nie zainstaluję bo mnie vrms
-  przeklnie.</p>
-* Shaitan [D4] (2007-01-20 23:26:21): <p>ja sie po prostu pol-klade na krzesle,
-  opierajac nogi o bok lozka i jest dobrze :P</p>
-* Beata (2007-01-21 21:28:16): <p>Ani nie należy więc wklęsać dołu pleców, ani
+  przeklnie.
+* Shaitan [D4] (2007-01-20 23:26:21): ja sie po prostu pol-klade na krzesle,
+  opierajac nogi o bok lozka i jest dobrze :P
+* Beata (2007-01-21 21:28:16): Ani nie należy więc wklęsać dołu pleców, ani
   go uwypuklać. Wedle Techniki Alexandra siedząc na krześle powinno się ustawić
   kość krzyżową pionowo, o tak:
   http://www.greenwichgateway.com/bhhs/images/alexandertechnique_goodposture.jpg
-  , <br /> http://www.mothernature.com/Library/Bookshelf/Books/46/5.cfm .</p>
-* Antonymous (2007-01-23 14:41:51): <p>@s: obiły mi się o oczy jakieś „wolne”
+  ,   
+ http://www.mothernature.com/Library/Bookshelf/Books/46/5.cfm .
+* Antonymous (2007-01-23 14:41:51): @s: obiły mi się o oczy jakieś „wolne”
   odtwarzacze flasha: http://www.gnu.org/software/gnash &#8212; nie wiem, co to
-  warte, nie jestem aż takim masochistą.</p>
-* aliceq (2007-01-23 17:44:59): <p>gnash z tego co pamietam nie radzi sobie z
-  filmikami z youtube</p>
+  warte, nie jestem aż takim masochistą.
+* aliceq (2007-01-23 17:44:59): gnash z tego co pamietam nie radzi sobie z
+  filmikami z youtube

@@ -74,10 +74,10 @@ Więc... jak działa ta tablica? Gdzie jest ten zakaz?
 ----
 **Komentarze**
 
-* d33tah (2015-04-13 21:44:27): <p>Gdyby tak się rozdrabniać, zamiast każdego
+* d33tah (2015-04-13 21:44:27): Gdyby tak się rozdrabniać, zamiast każdego
   zakazu mielibyśmy książki. W zasadzie, tego typu post możnaby napisać o każdym
-  znaku drogowym.</p>
-* Michał Górny (2015-04-14 07:34:44): <blockquote>   <p>Albo lepiej, wykupuję
-  billboard z tym właśnie gigantycznym napisem. Czy teraz nie wolno nikomu robić
-  zdjęć na tej ulicy?</p> </blockquote>  <p>Zrób to! A potem wstaw fotkę… oh,
-  wait.</p>
+  znaku drogowym.
+* Michał Górny (2015-04-14 07:34:44): > Albo lepiej, wykupuję
+>   billboard z tym właśnie gigantycznym napisem. Czy teraz nie wolno nikomu robić
+>   zdjęć na tej ulicy?  Zrób to! A potem wstaw fotkę… oh,
+  wait.

@@ -37,9 +37,8 @@ człowiekiem, zamiast rozdziawiać gębę i prosić o autograf.
 ----
 **Komentarze**
 
-* Kasia Rogowska (2007-12-18 11:35:21): <p>Jeśli aktor nie jest zapatrzony w
+* Kasia Rogowska (2007-12-18 11:35:21): Jeśli aktor nie jest zapatrzony w
   siebie i swoją sławę, to myślę, że to dla niego miła odmiana, gdy ktoś z nim
-  rozmawia jak ze &#8222;zwykłym&#8221; człowiekiem.</p>  <p><span
-  class="caps">BTW</span>, ja też bym go nie rozpoznała (w sumie nawet nazwisko
+  rozmawia jak ze &#8222;zwykłym&#8221; człowiekiem.  BTW, ja też bym go nie rozpoznała (w sumie nawet nazwisko
   nic mi nie mówi&#8230;), ale przez głowę szybko przeleciała mi myśl o
-  podobieństwie do Jacka Nicholsona :)</p>
+  podobieństwie do Jacka Nicholsona :)

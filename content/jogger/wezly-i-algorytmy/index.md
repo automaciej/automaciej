@@ -30,16 +30,16 @@ Na przykład, węzeł ratowniczy tworzy pętlę, która się nie zaciska.
 
 [ratowniczy-webm]: /2018/08/wezly-zeglarskie/wezel-ratowniczy-wiazanie.webm
 
-<video width="200" height="113" controls autoplay loop>
-<source src="wezel-ratowniczy-wiazanie.webm" type="video/webm"/>
-(Twoja przeglądarka nie wyświetla filmów.)
-</video>
+![Węzeł ratowniczy - wiązanie][ratowniczy]
 
-<small>
+[Wersja wideo (WebM)](wezel-ratowniczy-wiazanie.webm)
+
+
+
 _Sposób wiązania węzła który tu pokazuję jest amatorski, ale pokazuje w jaki
 sposób węzeł jest zrobiony. Szybkie wiązanie tego węzła można zobaczyć na
 YouTube pod hasłem {{< yt-search "węzeł ratowniczy na sobie" >}}._
-</small>
+
 
 W ten sposób możemy się opasać liną, zawiązać ten węzeł, i to pozwoli na
 przykład załodze statku wyciągnąć nas z wody. Swoją drogą, wiązanie węzła

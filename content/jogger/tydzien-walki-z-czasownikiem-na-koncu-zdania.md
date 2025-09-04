@@ -13,8 +13,9 @@ biorą i na końcu zdania umieszczają, chyba nad niczym się nie zastanawiając
 ----
 **Komentarze**
 
-* dentharg (2004-05-19 23:34:08): <p>Masz babol: &quot;zastanawiając&quot; to
+* dentharg (2004-05-19 23:34:08): Masz babol: &quot;zastanawiając&quot; to
   imiesłów. Prawidłowo winno być: &quot;... chyba nad niczym nie zastanawiając
   się&quot;. Choć i tu bym polemizował sam ze sobą, bo &quot;się&quot; to
-  przecież partykuła. Grunt to się zrozumieć. Się. Zrozumieć. Spać.</p>
-* Ja (2009-01-13 19:13:22): <p>Hihi^^<br /> Fajne :D</p>
+  przecież partykuła. Grunt to się zrozumieć. Się. Zrozumieć. Spać.
+* Ja (2009-01-13 19:13:22): Hihi^^  
+ Fajne :D

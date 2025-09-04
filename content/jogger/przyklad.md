@@ -48,5 +48,5 @@ ludzi i potrafią zmieniać w naszą rzeczywistość.
 ----
 **Komentarze**
 
-* blackhole (2004-01-01 20:14:39): <p>Chyba byłbyś dobrym nauczycielem :)</p>
-* zbychuk (2004-01-01 20:17:04): <p>Tak trzymać :-D</p>
+* blackhole (2004-01-01 20:14:39): Chyba byłbyś dobrym nauczycielem :)
+* zbychuk (2004-01-01 20:17:04): Tak trzymać :-D

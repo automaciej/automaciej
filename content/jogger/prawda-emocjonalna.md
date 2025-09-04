@@ -79,101 +79,101 @@ powiedzieć, że to taki specjalny _rodzaj_ prawdy, w którym farmazony są OK.
 ----
 **Komentarze**
 
-* error777 (2008-02-25 13:07:05): <p>Jest 2 rodzaj prawdy wg ks. Tischnera
+* error777 (2008-02-25 13:07:05): Jest 2 rodzaj prawdy wg ks. Tischnera
   &#8211; gówno prawda&#8230;:-) A na poważnie to jest takie ujęcie prawdy w
   językach formalnych&#8230; określasz TO jako swój język i jest OK (patrz
-  Alfred Tarski).</p>
-* Barry (2008-02-25 17:00:29): <p>Ok, przypadek z życia wzięty:<br /> Znajomy a
-  twierdzi, że zaprosił b na imprezę.<br /> B twierdzi, że nie dostał od a
-  zaproszenia.<br /> Nie mam podstawy, by przypuszczać, że któryś z nich kłamie.
-  I co teraz (z <span class="caps">MOJEGO</span> punktu widzenia)?</p>
-* yacoob (2008-02-25 19:23:35): <p>Prawda emocjonalna? Bah.</p>
-  <p>&#8222;Prawdą było że X uważał że było Y&#8221;. Czyli ktoś po prostu
+  Alfred Tarski).
+* Barry (2008-02-25 17:00:29): Ok, przypadek z życia wzięty:  
+ Znajomy a
+  twierdzi, że zaprosił b na imprezę.  
+ B twierdzi, że nie dostał od a
+  zaproszenia.  
+ Nie mam podstawy, by przypuszczać, że któryś z nich kłamie.
+  I co teraz (z MOJEGO punktu widzenia)?
+* yacoob (2008-02-25 19:23:35): Prawda emocjonalna? Bah.
+  &#8222;Prawdą było że X uważał że było Y&#8221;. Czyli ktoś po prostu
   przesunął określenie z jednej sfery do drugiej, bo mu pasowało. Ale
-  technicznie rzecz biorąc &#8222;prawda emocjonalna&#8221; != prawda.</p>  <p>I
-  tyle.</p>
-* jacek (2008-02-25 20:28:46): <p>Czy historia jest jedna, stała, obiektywna? A
+  technicznie rzecz biorąc &#8222;prawda emocjonalna&#8221; != prawda.  I
+  tyle.
+* jacek (2008-02-25 20:28:46): Czy historia jest jedna, stała, obiektywna? A
   może przeszłość nie istnieje podobnie jak przyszłość? Dobudowujemy ją sobie do
   teraźniejszości, zgodnie z wielkością prawdopodobieństwa &#8211; skoro
   szklanka leży na podłodze i poza mną nie ma tu nikogo, to na pewno ją z tego
   stołu zrzuciłem. Zupełnie tego nie pamiętam? Nie szkodzi, zaraz sobie tę
-  pamięć dobuduję &#8211; to prawdziwe, co najbardziej prawdopodobne. </p>
-  <p>Spotykasz znajomego, wspominacie wspólną historię &#8211; i nagle dwie
+  pamięć dobuduję &#8211; to prawdziwe, co najbardziej prawdopodobne. 
+  Spotykasz znajomego, wspominacie wspólną historię &#8211; i nagle dwie
   historie. Przekonujecie się nawzajem i powstaje historia kolejna, wypadkowa.
   Jak było naprawdę? Ale co to znaczy naprawdę? Teista może odpowiedzieć &#8211;
   istnieje prawdziwa historia &#8211; w oczach Boga. Ale jak poradzić sobie bez
-  zewnętrznego obserwatora? Zwłaszcza w epoce mechaniki kwantowej?</p>
-  <p>Gorąco polecam nową powieść Jacka Dukaja, &#8222;Lód&#8221; (i wszystkie
+  zewnętrznego obserwatora? Zwłaszcza w epoce mechaniki kwantowej?
+  Gorąco polecam nową powieść Jacka Dukaja, &#8222;Lód&#8221; (i wszystkie
   poprzednie oczywiście też!) &#8211; m.in. zderzenie logiki klasycznej,
-  Boolowskiej z logiką wielowartościową, rozmytą.</p>
-* Barry (2008-02-25 20:48:01): <p>jacek: właśnie też cholernie korciło mnie,
+  Boolowskiej z logiką wielowartościową, rozmytą.
+* Barry (2008-02-25 20:48:01): jacek: właśnie też cholernie korciło mnie,
   żeby jakoś do &#8222;Lodu&#8221; nawiązać, bo wczoraj skończyłem wreszcie
-  :)</p>
-* Automaciej (2008-02-27 10:00:28): <p>@jacek: A podobno nie lubisz
+  :)
+* Automaciej (2008-02-27 10:00:28): @jacek: A podobno nie lubisz
   subiektywizmu! Ale zostawmy historię. Jak jest z teraźniejszością? Jest jedna,
-  czy więcej?</p>
-* error777 (2008-02-27 10:04:38): <p>@automaciej: A może bardziej ogólnie. Skoro
+  czy więcej?
+* error777 (2008-02-27 10:04:38): @automaciej: A może bardziej ogólnie. Skoro
   teraźniejszość jest elementem tzw. czasu to czy czas jest jeden, czy więcej
-  czasów?</p>
-* Automaciej (2008-02-27 10:06:11): <p>/me bierze brzytwę Ockhama</p>    <p>
-  <strong>** CIACH!!! **</strong> </p>    <p>Jest jeden czas.</p>
-* error777 (2008-02-27 10:07:12): <p>Zatem dlaczego teraźniejszości ma byś
-  więcej?</p>
-* Automaciej (2008-02-27 10:09:36): <p>@error777: Nie mam pojęcia; Jacka się
-  zapytaj!</p>
-* jacek (2008-02-27 11:48:07): <p>Małe sprostowanie &#8211; nie zgadzam się z
+  czasów?
+* Automaciej (2008-02-27 10:06:11): /me bierze brzytwę Ockhama    **** CIACH!!! ****    Jest jeden czas.
+* error777 (2008-02-27 10:07:12): Zatem dlaczego teraźniejszości ma byś
+  więcej?
+* Automaciej (2008-02-27 10:09:36): @error777: Nie mam pojęcia; Jacka się
+  zapytaj!
+* jacek (2008-02-27 11:48:07): Małe sprostowanie &#8211; nie zgadzam się z
   wizją historii, którą przedstawiłem wyżej. To było takie rozszerzenie
-  horyzontu dyskusji.</p>  <p>Wizja pochodzi z &#8222;Lodu&#8221; Dukaja i jest
+  horyzontu dyskusji.  Wizja pochodzi z &#8222;Lodu&#8221; Dukaja i jest
   wg mnie prawdziwa &#8211; jako &#8222;praktyczne&#8221; ujęcie historii. Czyli
   obraz Historii (tej jedynej, rzeczywistej, obiektywnej) dostępny naszemu
-  poznaniu.</p>  <p>A w obiektywną Historię wierzę. Podobnie, jak w obiektywną
+  poznaniu.  A w obiektywną Historię wierzę. Podobnie, jak w obiektywną
   Rzeczywistość. Jeśli jakieś zdarzenie miało miejsce, to miało miejsce również
   wtedy, gdy nikt go nie dostrzegł. Jeśli jabłko jest czerwone, to jest czerwone
   nawet wtedy, gdy spogląda na nie jedynie daltonista. Jeśli coś jest
   informacją, to jest informacją również wtedy, gdy nie ma żadnego odbiorcy
-  ;)</p>
-* error777 (2008-02-27 11:53:47): <p>@jacek: Zatem to że jabłko &#8222;jest
+  ;)
+* error777 (2008-02-27 11:53:47): @jacek: Zatem to że jabłko &#8222;jest
   czerwone&#8221; to wynik uzgodnienia przez naszych dalekich przodków nazwy
   &#8222;czerwony&#8221; i wskazaniem palcem na &#8222;takie&#8221; jabłko.
   Matematyka to też język bardzo wysoko obiektywny i ciągle się rozwijający
-  (nowe definicje).</p>
-* jacek (2008-02-27 12:20:06): <p>@error777: No właśnie &#8211;
+  (nowe definicje).
+* jacek (2008-02-27 12:20:06): @error777: No właśnie &#8211;
   &#8222;takie&#8221; jabłko &#8211; czyli jabłko obiektywnie posiadające cechę
   &#8222;bycia czerwonym&#8221;.  To czy tę cechę jakoś nazwiemy nie ma
-  znaczenia.   </p>  <p>W krainie ślepców nie będzie kolorów. Ale jabłka nadal
+  znaczenia.     W krainie ślepców nie będzie kolorów. Ale jabłka nadal
   będą czerwone (czyli będą posiadały obiektywnie cechę X, którą my umówiliśmy
-  się nazywać &#8222;kolorem czerwonym&#8221;).</p>
-* error777 (2008-02-27 12:28:07): <p>@jacek: Tylko że któryś z jaskiniowców
+  się nazywać &#8222;kolorem czerwonym&#8221;).
+* error777 (2008-02-27 12:28:07): @jacek: Tylko że któryś z jaskiniowców
   pierwszy wykonał skojarzenie &#8222;wymowy&#8221; (ba neologizmu) ze
   wskazaniem &#8222;przedmiotu&#8221; a drugi to podchwycił i powstała
   &#8222;umowa&#8221;. A co w przypadku gdy w &#8222;aborygeńskim&#8221; języku
   nie ma &#8222;nazwy&#8221; dla cechy Y a w &#8222;polskim&#8221; jest nazwana
-  zarówno cecha X oraz Y &#8211; co to oznacza?</p>
-* jacek (2008-02-27 12:44:36): <p>@error777: Obiekt A ma (obiektywnie) cechy X,
+  zarówno cecha X oraz Y &#8211; co to oznacza?
+* jacek (2008-02-27 12:44:36): @error777: Obiekt A ma (obiektywnie) cechy X,
   Y, Z. W języku &#8222;aborygeńskim&#8221; nie ma &#8222;nazwy&#8221; dla
   żadnej z nich. W języku &#8222;polskim&#8221; cechy X i Y razem nazywamy Q.
   Oznacza to tylko tyle, że nasze postrzeganie rzeczywistości obiektywnej nie
   jest doskonałe. Przybliżamy ją sobie, poznajemy coraz lepiej. A ona istnieje
-  niezależnie od naszego postrzegania i poznania.</p>
-* error777 (2008-02-27 13:03:45): <p>@jacek:  Jeżeli jabłko składa się z atomów
+  niezależnie od naszego postrzegania i poznania.
+* error777 (2008-02-27 13:03:45): @jacek:  Jeżeli jabłko składa się z atomów
   węgla i &#8222;ja&#8221; tak samo (a może inaczej?). Zatem jeżeli znajdziemy
   nazwy dla &#8222;cecha&#8221; atomów to jednocześnie definujemy siebie. Zatem
-  rozdzielenie na podmiot i przedmiot na jakiej podstawie jest  budowane?</p>
-* jacek (2008-02-27 13:13:26): <p>@error777: Niestety, zupełnie tego
-  wnioskowania nie rozumiem.</p>  <p>Jabłko składa się z atomów. Komputer składa
+  rozdzielenie na podmiot i przedmiot na jakiej podstawie jest  budowane?
+* jacek (2008-02-27 13:13:26): @error777: Niestety, zupełnie tego
+  wnioskowania nie rozumiem.  Jabłko składa się z atomów. Komputer składa
   się z atomów. Mogę znaleźć nazwę dla jakiejś cechy atomu. Coś z tego
-  wynika?</p>
-* error777 (2008-02-27 13:19:20): <p>@jacek: No to właśnie problem ograniczonej
+  wynika?
+* error777 (2008-02-27 13:19:20): @jacek: No to właśnie problem ograniczonej
   komunikacji :-). Skoro możesz w przypisać nazwę &#8222;czerwony&#8221; do
   jabłka, to może kiedyś (w przyszłości) ktoś przypisze nazwę &#8222;żywy&#8221;
   np. atomowi lub np. wiatrowi&#8230; czyste spekulacje. Tak samo każdy z nas ma
   do wyboru różnorodność definicji subiektywy / obiektywny&#8230; ale którąś z
-  nich uważa za &#8222;własną&#8221; (identyfikuje się z nią).</p>
-* Automaciej (2008-02-28 10:09:13): <p>@jacek: Co do rzeczywistości i jabłka, to
+  nich uważa za &#8222;własną&#8221; (identyfikuje się z nią).
+* Automaciej (2008-02-28 10:09:13): @jacek: Co do rzeczywistości i jabłka, to
   się zgadzam. Jabłko jest i jest czerwone nawet wtedy, kiedy nikt go nie
-  widzi.</p>  <p>Jak ktoś chce to rozpatrywać bardziej formalnie, to można
+  widzi.  Jak ktoś chce to rozpatrywać bardziej formalnie, to można
   powiedzieć, że struktura atomów, którą potocznie nazywamy jabłkiem, znajduje
   się w danym miejscu i czasie niezależnie od ewentualnych obserwatorów. A o
-  informacji napiszę w <a
-  href="http://automaciej.jogger.pl/2008/02/26/definicja-informacji/"
-  rel="nofollow" >tamtym poście</a>.</p>
+  informacji napiszę w tamtym poście.

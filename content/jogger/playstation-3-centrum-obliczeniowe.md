@@ -34,10 +34,12 @@ z powrotem €65. Aż śmiesznie. Ale przynajmniej pozbyłem się zawalidrogi.
 ----
 **Komentarze**
 
-* Cthulhu (2007-03-29 13:32:48): <p>PS3 ma z tego co pamiętam 256mb pamięci dla
-  grafiki i drugie tyle dla reszty.<br /> No i znów wychodzi to, że ta konsola
-  jest dobra do wszystkiego tylko nie do grania ;].<br /> A programy muszą być
+* Cthulhu (2007-03-29 13:32:48): PS3 ma z tego co pamiętam 256mb pamięci dla
+  grafiki i drugie tyle dla reszty.  
+ No i znów wychodzi to, że ta konsola
+  jest dobra do wszystkiego tylko nie do grania ;].  
+ A programy muszą być
   specjalnie napisane, specjalnie skompilowane (ale gcc sobie z tym radzi).
-  Jednowątkowy program nie wykorzysta mocy drzemiącej w Cellu.</p>
-* Hubert (2007-03-29 23:46:48): <p>Przyznam, że wyrafinowana
-  wymówka&#8230;;)</p>
+  Jednowątkowy program nie wykorzysta mocy drzemiącej w Cellu.
+* Hubert (2007-03-29 23:46:48): Przyznam, że wyrafinowana
+  wymówka&#8230;;)

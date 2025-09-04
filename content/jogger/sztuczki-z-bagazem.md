@@ -55,21 +55,22 @@ przestawię na irlandzki czas (IST).
 ----
 **Komentarze**
 
-* sisi (2008-06-24 07:53:45): <p>A to dziwne, szczerze mówiąc. Leciałam już do
+* sisi (2008-06-24 07:53:45): A to dziwne, szczerze mówiąc. Leciałam już do
   Stanów, Meksyku, Chin i na Filipiny &#8211; zawsze z jedną lub dwiema
   przesiadkami i nigdy nie musiałam na tych przesiadkowych lotniskach odbierać
   bagażu albo się ponownie check-inować... Wszystkie boarding passy zawsze
   dostawałam na początku podróży. I to nawet jeśli nie leciałam tylko jednymi
-  liniami.</p>
-* Mike (2008-06-24 09:09:19): <p>Ja przerabialem ten model przylotu o 05:15 i
+  liniami.
+* Mike (2008-06-24 09:09:19): Ja przerabialem ten model przylotu o 05:15 i
   pojscia tego samego dnia do pracy. Bedziesz zmeczony o 10, a o 14 bedziesz
   padal na pysk. Okolo 16 jesli jeszcze nie bedziesz w lozku nie bedziesz w
   stanie wypowiedziec logicznego zdania, bo Twoj mozg po prostu przejdzie w stan
-  hibernacji.<br /> Innymi slowy, wez dodatkowy dzien wolnego. Nie ma sensu sie
-  tak meczyc.</p>
-* Wanted (2008-06-24 16:46:01): <p>Kopie naklejek bagażowych powinieneś dostać
+  hibernacji.  
+ Innymi slowy, wez dodatkowy dzien wolnego. Nie ma sensu sie
+  tak meczyc.
+* Wanted (2008-06-24 16:46:01): Kopie naklejek bagażowych powinieneś dostać
   przy odprawie, a na nich jest napisane jaką drogą bagaż wędruje. Na
   tradycyjnych liniach zawsze mi przesyłali automatycznie do miejsca docelowego
-  bez odbierania pośrodku, choć można o taką opcję poprosić.</p>  <p>Natomiast
+  bez odbierania pośrodku, choć można o taką opcję poprosić.  Natomiast
   prawie nigdy nie działa to na tanich liniach, bo mają uproszczone procedury,
-  np. RyanAir ma w ogóle inny format naklejek.</p>
+  np. RyanAir ma w ogóle inny format naklejek.

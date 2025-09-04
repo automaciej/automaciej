@@ -32,6 +32,6 @@ określacie takie stanowisko w CV?
 ----
 **Komentarze**
 
-* SirMike (2006-10-18 19:45:27): <p>Ja bym napisał manager projektu i główny
-  programista.</p>
-* Anonim (2007-10-08 13:43:52): <p>wyrobnik</p>  <p>:)</p>
+* SirMike (2006-10-18 19:45:27): Ja bym napisał manager projektu i główny
+  programista.
+* Anonim (2007-10-08 13:43:52): wyrobnik  :)

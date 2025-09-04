@@ -81,17 +81,17 @@ jestem pewien, że nie tylko ja.
 ----
 **Komentarze**
 
-* n3m0 (2012-03-12 00:23:23): <p>Dzięki. Wartościowa informacja czego w
-  pierwszych krokach nauczyć potomstwo...</p>  <p>BTW. zabawne jak autorytet (tu
-  w postaci nauczyciela) wyłącza krytyczne myślenie :)</p>
-* Caladan (2012-03-12 00:28:28): <p>Jak ja robiłem testy do swojej magisterki,
+* n3m0 (2012-03-12 00:23:23): Dzięki. Wartościowa informacja czego w
+  pierwszych krokach nauczyć potomstwo...  BTW. zabawne jak autorytet (tu
+  w postaci nauczyciela) wyłącza krytyczne myślenie :)
+* Caladan (2012-03-12 00:28:28): Jak ja robiłem testy do swojej magisterki,
   to wziąłem pod uwagę coś takiego. Tylko u mnie w zakładzie takie testy robi
-  się dość często i dostałem po prostu sprawdzoną metodologię testów :)</p>
-* 3B| (2012-03-12 07:13:21): <p>Dla mnie od razu podejrzane wydawały się
+  się dość często i dostałem po prostu sprawdzoną metodologię testów :)
+* 3B| (2012-03-12 07:13:21): Dla mnie od razu podejrzane wydawały się
   parametry przepływności. Przeciętny człowiek wszystkie próbki, które zrobiłeś
   odbiera bez różnicy. Okazało się nagle, że wszyscy badani są audiofilami
-  :)</p>
-* sztywny (2012-03-12 12:52:33): <p>Zgadzam się, że nauka w szkole jest
+  :)
+* sztywny (2012-03-12 12:52:33): Zgadzam się, że nauka w szkole jest
   prezentowana za bardzo jako jakiś przyrodzony i ukończony twór dany nam
   niewiadomo skąd, a za mało jako coś kreowanego przez ludzi i ciągle się
   zmieniającego, nie wiem tylko, czy naprawdę rozwiązaniem tego problemu jest
@@ -107,7 +107,7 @@ jestem pewien, że nie tylko ja.
   pewno warto o tym wspomnieć np. na lekcji biologii przed omówioniem
   konkretnych eksperymentów jakie prowadzą biolodzy, ale powiem szczerze że nie
   rozumiem prezentowania tego zagadnienia jako jakiegoś kamienia węgielnego
-  nauki.</p>  <p>Podobnie nie mogą sobie wyobrazić jak lektura prac czy
+  nauki.  Podobnie nie mogą sobie wyobrazić jak lektura prac czy
   opracowań prac Kuhna, Poppera czy Bacona, może przełożyć się na zrozumienie
   tego, co w praktyce robią naukowcy - w miejscach w których te prace
   rzeczywiście wpłynęły na naukę wpływ ten był raczej pośredni i dziś rezultaty
@@ -116,7 +116,7 @@ jestem pewien, że nie tylko ja.
   praw naukowych bez ich empirycznego potwierdzenia. To wszystko są zresztą
   zagadnienia bardzo jednostronne, dotyczące tylko weryfikacji hipotez, a nie
   ich tworzenia, co jest conajmniej tak samo ważne i dużo bardziej skomplikowane
-  w analizie.</p>  <p>Jeśli więc chcę zrozumieć grawitacje i jednocześnie
+  w analizie.  Jeśli więc chcę zrozumieć grawitacje i jednocześnie
   proces, który doprowadził do jej odkrycia, to może jednak wciąż najlepszym
   sposobem jest odtworzenie eksperymentu Galileusza i próba matematycznej
   analizy jego rezultatów, a nie studiowanie esejów filozoficznych na temat
@@ -124,12 +124,11 @@ jestem pewien, że nie tylko ja.
   wiemy to co wiemy", niż na proste "skąd wiemy to co wiemy?". Nie ujmuje tu
   wartości filozofii nauki, po prostu nie równałbym jej z samą nauką, w końcu
   istotą metody naukowej było właśnie odejście od snucia takich "filozoficznych"
-  rozważań w stronę jak najbardziej bezpośredniego badania faktów.</p>
-* Sigvatr (2012-03-12 17:52:15): <blockquote>   <p>Nie nauczono mnie natomiast
-  jednej ważnej rzeczy: jak to się stało, że to wszystko wiemy.</p>
-  </blockquote>  <p>Ja tam miałem w szkole podstawowej opisy doświadczeń i
-  metody naukowej.</p>
-* oPgdQiWikhMjWMN (2012-06-17 14:49:03): <p>Inni albo nie wiedzieli, że w csaize
+  rozważań w stronę jak najbardziej bezpośredniego badania faktów.
+* Sigvatr (2012-03-12 17:52:15): > Nie nauczono mnie natomiast
+>   jednej ważnej rzeczy: jak to się stało, że to wszystko wiemy.  Ja tam miałem w szkole podstawowej opisy doświadczeń i
+  metody naukowej.
+* oPgdQiWikhMjWMN (2012-06-17 14:49:03): Inni albo nie wiedzieli, że w csaize
   obiadu średnio byli warci dużo więcej niż 1 milion $ (biorąc pod uwagę majątek
   Pana Tada Witkowicza) albo nie mieli odwagi/potrzeby, żeby uścisnąć dłoń tego
   przedsiębiorczego Polaka. Zacytowałam fragment twojego postu, żeby podzielić
@@ -141,4 +140,4 @@ jestem pewien, że nie tylko ja.
   walczyć o swoje!!!) nie zgadzają się ze swoim losem i postanawiają kreować
   własne życie według swojego scenariuszu, są cechami ktf3re wskazują na to że
   osoba adekwatnie odbiera rzeczywistość i jest w stanie sama sukces osiągnąć.
-  Czego ja Tobie szczerze życzę!</p>
+  Czego ja Tobie szczerze życzę!

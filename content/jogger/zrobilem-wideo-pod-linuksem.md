@@ -14,7 +14,7 @@ i mastering audio też zrobiłem sam, w sensie technicznym. W sensie koncepcyjny
 montażu pomagała mi swoimi wskazówkami [sama
 artystka](http://www.youtube.com/user/wobblyfin).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9xuCkNZqmS0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{< youtube "9xuCkNZqmS0" >}}
 
 Celem ćwiczenia było sprawdzenie uda się to w ogóle zrobić, czy też nie: jedna
 lustrzanka, 3 telefony, ani centa wydanego na oprogramowanie, i wszystko
@@ -54,47 +54,47 @@ tylko lepsze.
 ----
 **Komentarze**
 
-* torero (2012-09-03 07:56:22): <p>Niedobrze z tą cinelerrą, niedobrze...
+* torero (2012-09-03 07:56:22): Niedobrze z tą cinelerrą, niedobrze...
   właśnie mam trochę materiału z występów dziecka i miałem zacząć się jej uczyć,
   bo czytałem, ze ponoć przezaawansowany :( OTOH ucząc się Blendera w jednej
-  umiejętności będę teraz miał od razu dwie :)</p>
-* Burro (2012-09-03 09:51:18): <p>Dzięki. Przyda się zwłaszcza, że pewnie sam
-  bym się za Blendera nie zabrał w tym kontekście. :)</p>
-* 3B| (2012-09-03 09:53:09): <p>Testowałeś może <a
-  href="http://www.openshotvideo.com/" rel="nofollow">OpenShot</a>? Ja go kilka
+  umiejętności będę teraz miał od razu dwie :)
+* Burro (2012-09-03 09:51:18): Dzięki. Przyda się zwłaszcza, że pewnie sam
+  bym się za Blendera nie zabrał w tym kontekście. :)
+* 3B| (2012-09-03 09:53:09): Testowałeś może OpenShot? Ja go kilka
   razy używałem i wydawał się stabilny. Nie wiem jak z zaawansowanymi funkcjami,
-  ale do zastosowań amatorskich mi wystarcza.</p>
-* occulkot (2012-09-03 10:00:52): <p>Ja filmiki ostatnio montuje w kdenlive.
+  ale do zastosowań amatorskich mi wystarcza.
+* occulkot (2012-09-03 10:00:52): Ja filmiki ostatnio montuje w kdenlive.
   Duzo efektow przejsc, mozliwosc pracy z klipami "proxy" (gorsza jakosc,
   szybszy rendering). W dodatku bardzo stabilne nawet przy duzym
   projekcie.Openshot sprawdzalem, jest w porownaniu z kdenlive uproszczony,
-  mniej opcji przelotow itd.</p>
-* dobeer (2012-09-03 11:02:56): <p>Czepie się deprecjonowania Blendera, że to
+  mniej opcji przelotow itd.
+* dobeer (2012-09-03 11:02:56): Czepie się deprecjonowania Blendera, że to
   niby 3D z przyrostami ;) Generalnie to był i jest zestaw narzędzi do tworzenia
   animacji. Inna sprawa, że użytkownicy zazwyczaj ograniczają się do
   wykorzystania go tylko do "czyde". A i z klikaniem myszką da się go używać,
-  tylko klawiszami zdecydowanie łatwiej.<br /> BTW. Generowałeś gotowy plik
+  tylko klawiszami zdecydowanie łatwiej.  
+ BTW. Generowałeś gotowy plik
   wideo czy obrazki i później to konwertowałeś jakimś kodekiem? Pytam, bo mnie
   ostatnim razem brzydko przycinał wideo, pomogło dopiero kodowanie przez jpeg-i
   ffmpeg-iem (tu nie jestem pewien przyczyny, może to wina sprzętu na którym
-  działał blender, ale ffmpeg pomógł).</p>
-* automaciej (2012-09-03 11:25:07): <p>dobeer, czy w Blenderze da się w miarę
+  działał blender, ale ffmpeg pomógł).
+* automaciej (2012-09-03 11:25:07): dobeer, czy w Blenderze da się w miarę
   prosto zrobić animację 2D? Np. taką jakiej elementy widać w Storm
-  (http://youtu.be/HhGuXCuDb1U)</p>  <p>Co do eksportowania, to eksportowałem od
+  (http://youtu.be/HhGuXCuDb1U)  Co do eksportowania, to eksportowałem od
   razu docelowe wideo, w kodeku H.264, a dźwięk w PCM. Z wideo nie było żadnych
   problemów, poza tylko momentem kiedy zauważyłem że rozdzielczość jest nie do
   końca taka jak chciałem, i znalazłem ustawienie gdzie się ustawia wielkość
-  renderu w procentach docelowej rozdzielczości, domyślnie 50% (dlaczego?!).</p>
-  <p>Dźwięk przygotowywałem osobno, a potem wszystko złożyłem w całość przy
-  pomoc ffmpeg/avconv.</p>
-* dobeer (2012-09-03 11:50:57): <p>I tak i nie :) Da się zrobić, raczej nie
+  renderu w procentach docelowej rozdzielczości, domyślnie 50% (dlaczego?!).
+  Dźwięk przygotowywałem osobno, a potem wszystko złożyłem w całość przy
+  pomoc ffmpeg/avconv.
+* dobeer (2012-09-03 11:50:57): I tak i nie :) Da się zrobić, raczej nie
   będzie to proste. Blender jest bardzo rozbudowanym narzędziem i nawet proste
   rzeczy potrafią być tam nieoczywiste. Dodam tylko, że w gałęzi 2.6 i tak jest
   łatwiej niż 2.4 (jak to przeczyta stary wyjadacz, to może się niezgodzić, ale
-  dla nowych użytkowników jednak 2.6 jest łatwiejsza)</p>  <p>Co do domyślnych
+  dla nowych użytkowników jednak 2.6 jest łatwiejsza)  Co do domyślnych
   ustawień na 50%, tak już jest bo do modelowania najczęściej trzeba na szybko
   coś podejrzeć, wiec to takie pójście na rękę co by nie marnować zasobów na
   pełnowymiarowe podglądy. Do finalnych renderów i tak najczęściej się siedzi i
-  dłubie własne optymalne ustawienia.</p>
-* automaciej (2012-09-23 09:28:24): <p>Jeżeli chodzi o robienie animacji 2D, czy
-  są jakieś inne programy które są prostsze niż Blender?</p>
+  dłubie własne optymalne ustawienia.
+* automaciej (2012-09-23 09:28:24): Jeżeli chodzi o robienie animacji 2D, czy
+  są jakieś inne programy które są prostsze niż Blender?

@@ -31,10 +31,10 @@ poleconym do dziekanatu.
 ----
 **Komentarze**
 
-* Ja-Joanna (2006-10-06 16:56:21): <p>GRATULACJE!!!!! (jestem pierwsza,
-  hurrraaaa!)</p>
-* mama T (2006-10-08 08:50:52): <p>NIECHŻE CIĘ UŚCISKAM, PRZYNAJMNIEJ
-  WIRTUALNIE! CIESZĘ SIĘ!!!!</p>
-* Marek (2006-10-09 12:42:19): <p>Uff! Jakże się cieszę! Co za ulga! Tyle
-  wyczekiwania... Super! Gratulacje!</p>
-* mama T (2006-10-13 18:00:41): <p>wiesz juz, kiedy obrona?</p>
+* Ja-Joanna (2006-10-06 16:56:21): GRATULACJE!!!!! (jestem pierwsza,
+  hurrraaaa!)
+* mama T (2006-10-08 08:50:52): NIECHŻE CIĘ UŚCISKAM, PRZYNAJMNIEJ
+  WIRTUALNIE! CIESZĘ SIĘ!!!!
+* Marek (2006-10-09 12:42:19): Uff! Jakże się cieszę! Co za ulga! Tyle
+  wyczekiwania... Super! Gratulacje!
+* mama T (2006-10-13 18:00:41): wiesz juz, kiedy obrona?

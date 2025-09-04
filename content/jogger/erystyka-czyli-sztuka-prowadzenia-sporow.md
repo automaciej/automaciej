@@ -83,22 +83,19 @@ sprawdza się w praktyce.
 ----
 **Komentarze**
 
-* reod (2007-06-10 21:17:57): <p>Też czytałem, ale nie wywarła dla mnie
-  większego znaczenia. </p>  <p>PS: <a
-  href="http://cytaty.jogger.pl/2007/06/10/253/" rel="nofollow" >mam
-  cię!</a></p>
-* hcz (2007-06-11 00:20:40): <p>&#8222;Czytanie filozofa nie jest jest łatwe dla
-  kogoś kto od iluś już lat czyta wyłącznie tutoriale i slashdot.&#8221; </p>
-  <p>No prawie gotów byłbym się wzruszyć, gdybym nie pamiętał słów pewnego
+* reod (2007-06-10 21:17:57): Też czytałem, ale nie wywarła dla mnie
+  większego znaczenia.   PS: mam
+  cię!
+* hcz (2007-06-11 00:20:40): &#8222;Czytanie filozofa nie jest jest łatwe dla
+  kogoś kto od iluś już lat czyta wyłącznie tutoriale i slashdot.&#8221; 
+  No prawie gotów byłbym się wzruszyć, gdybym nie pamiętał słów pewnego
   kolegi, który klarował mi (całkiem niedawno) że woli przeczytać jakąś porządną
-  książkę, zanim zabierze się za klepanie kodu&#8230;</p>
-* ja (2007-06-12 07:04:06): <p>Na defekty we wnioskowaniu ludzi
+  książkę, zanim zabierze się za klepanie kodu&#8230;
+* ja (2007-06-12 07:04:06): Na defekty we wnioskowaniu ludzi
   najpraktyczniejsza w rzeczywistości wydaje mi się racja ekonomiczna. Jeśli
   dopuszczenie pewnego błędu we wnioskowaniu X pozostawi mój portfel grubszym,
   to należy go dopuścić. A po wykonaniu błędu (po pracy) można sobie pozwolić na
-  więcej regenerującego prawdziwego poznania. ;)</p>
-* Automaciej (2007-06-12 20:16:08): <p>@Joanna: W takim razie <a
-  href="http://angryaussie.wordpress.com/2007/05/30/the-real-inconvenient-truth-
-  is-that-global-warming-deniers-are-liars/" rel="nofollow" >ocieplenie klimatu
-  nie ma miejsca</a> (ograniczanie emisji dwutlenku węgla uszczupliłoby nasze
-  portfele).</p>
+  więcej regenerującego prawdziwego poznania. ;)
+* Automaciej (2007-06-12 20:16:08): @Joanna: W takim razie ocieplenie klimatu
+  nie ma miejsca (ograniczanie emisji dwutlenku węgla uszczupliłoby nasze
+  portfele).

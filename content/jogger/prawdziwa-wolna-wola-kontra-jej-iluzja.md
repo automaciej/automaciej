@@ -32,21 +32,22 @@ wolną wolę _naprawdę?_
 ----
 **Komentarze**
 
-* Zal (2009-06-17 11:16:27): <p>Dodać pierwiastek losowości? Tak, aby jego
+* Zal (2009-06-17 11:16:27): Dodać pierwiastek losowości? Tak, aby jego
   zachowanie nie mogło być deterministyczne? Ew. wiedzę z której mógłby
   korzystać i na podstawie której mógłby podejmować decyzję (moja praca
-  magisterska).</p>  <p>Z drugiej zaś strony można ugryźć kwestię tego, czy w
+  magisterska).  Z drugiej zaś strony można ugryźć kwestię tego, czy w
   pełni "wolna wola" w ogóle istnieje. Jak w praktyce odróżnić wolną wolę od
   deterministycznego systemu, którego przewidzieć nie jesteśmy będąc jego
-  częścią?</p>
-* Adriano (2009-06-17 11:42:59): <blockquote> <p>Dodać pierwiastek
-  losowości?</p> </blockquote>  <p>Wówczas decyzje będą zależne od losowości
-  ;)</p>
-* Anhalter (2009-06-17 11:52:38): <p>Polecam zbiór artykułów i esejów "The
-  Mind's I" pod redakcją Douglasa Hofstadtera.<br /> Takich paradoksów w tym
+  częścią?
+* Adriano (2009-06-17 11:42:59): > Dodać pierwiastek
+>   losowości?  Wówczas decyzje będą zależne od losowości
+  ;)
+* Anhalter (2009-06-17 11:52:38): Polecam zbiór artykułów i esejów "The
+  Mind's I" pod redakcją Douglasa Hofstadtera.  
+ Takich paradoksów w tym
   temacie jest 1001. Czasami mi się wydaje, że nie ma czegoś takiego jak
-  myślenia i świadomość, że to tylko jakaś iluzja.</p>
-* cieslo (2009-06-17 12:10:31): <p>Ha, a co z definicją "prawdy" (zakładam że
+  myślenia i świadomość, że to tylko jakaś iluzja.
+* cieslo (2009-06-17 12:10:31): Ha, a co z definicją "prawdy" (zakładam że
   iluzja = fałsz)? To co dochodzi do zmysłów + proces w mózgu + reakcja to model
   działania agenta. Wszystkie elementy poprzedniego zdania zawierają się w
   jednej substancji "akwarium" (podobnie jak człowiek w atomach) i jako takie są
@@ -56,8 +57,8 @@ wolną wolę _naprawdę?_
   ich zawartość, co powoduje wzrost "prawdziwości" (wewnętrzny), przekonanie o
   własnej wiedzy itp. W mojej opinii wolna wola to ten właśnie proces. Jeżeli
   istnienie procesu jest "prawdą" uważaną jako ciąg przyczynowo-skutkowy, to czy
-  "iluzja" definiuje jako przyczyna-bez skutku?</p>
-* viroos (2009-06-17 15:10:06): <p>Dla mnie z wolną wolą będziemy mieli do
+  "iluzja" definiuje jako przyczyna-bez skutku?
+* viroos (2009-06-17 15:10:06): Dla mnie z wolną wolą będziemy mieli do
   czynienia w tedy jak Właściciel Akwarium nie będzie mógł przewidzieć naszych
   zachowań. I będzie to spowodowane nie losowością tylko "rozważaniami za i
   przeciw w deterministycznym mózgu". Tyko, że skoro mózg jest deterministyczny
@@ -71,24 +72,23 @@ wolną wolę _naprawdę?_
   liczbowo miłości czy dobra (przynajmniej ja nie potrafię, o miłości był
   odcinek xkcd). Zresztą nawet w świecie fizyki zasada nieoznaczoności
   nieoznaczoności daje nam jakiś niedeterminizm, ale to jeszcze chyba za mało,
-  aby mówić o wolnej woli.</p>  <p>Druga sprawa to to, że Właściciel Akwarium
+  aby mówić o wolnej woli.  Druga sprawa to to, że Właściciel Akwarium
   nie powinien nami manipulować, zmieniając warunki w akwarium. Gdyż nawet
   zakładając że działamy niedeterministycznie to można z dużym
   prawdopodobieństwem określić nasze reakcje na określone bodźce. A tym samym
   "zmusić" do konkretnego  działania. Czyli o wolnej woli raczej nie może być
-  mowy.</p>  <p>Jeśli mamy rozważać wolną wolę to może  Właściciel Akwarium nie
-  powinien w ogóle istnieć?</p>
-* Minio (2009-06-17 15:19:11): <blockquote> <p>Co należałoby zmienić, co
-  należałoby dodać, żeby nasz samoświadomy program miał wolną wolę naprawdę?</p>
-  </blockquote>  <p>Pytanie zasadza się na stwierdzeniu że wolna wola naprawdę
-  istnieje. Co jest kwestią dyskusyjną.</p>  <p>Wg mnie nie chodzi o opozycję
+  mowy.  Jeśli mamy rozważać wolną wolę to może  Właściciel Akwarium nie
+  powinien w ogóle istnieć?
+* Minio (2009-06-17 15:19:11): > Co należałoby zmienić, co
+>   należałoby dodać, żeby nasz samoświadomy program miał wolną wolę naprawdę?  Pytanie zasadza się na stwierdzeniu że wolna wola naprawdę
+  istnieje. Co jest kwestią dyskusyjną.  Wg mnie nie chodzi o opozycję
   między determinizmem a wolnością (liberum arbitrium indifferentiae). Raczej
   chodzi o to, by determinizmu nie postrzegać w sposób fatalistyczny. Mam
   wrażenie że często w dyskusjach na ten temat ludzie stawiają znak równości
   między determinizmem a fatalizmem, i nie mogąc znieść tego ostatniego z
   konieczności opowiadają się za wolnością. Zupełnie jakby nie istniała inna
-  alternatywa.</p>
-* yachoo (2009-06-17 23:16:02): <p>A teraz załóżmy, że my mamy wolną wolę.
+  alternatywa.
+* yachoo (2009-06-17 23:16:02): A teraz załóżmy, że my mamy wolną wolę.
   Próbujemy więc stworzyć robota na własne podobieństwo ( nazwijmy siebie
   Stwórcą :P ). Potrzebujemy algorytmu tworzącego wolną wolę. Załóżmy, że jest
   to kompletna losowość: ...nie bardzo. Inaczej rozmawiając z kolegą mógłbym
@@ -100,14 +100,16 @@ wolną wolę _naprawdę?_
   więc spisania sobie tych zachowań i do wszystkich innych sytuacji przypisanie
   kompletnej losowości. Następnie można by napisać algorytm nauki z otoczenia,
   doświadczania, oraz losowego zapominania co i jak (żeby "zaimplementować" błąd
-  ludzki).</p>  <p>No i teraz z powyższego to już chyba widać, czy to prawdziwa
-  wolna wola... albo i nie :P</p>
-* hcz.jogger.pl (2009-06-18 15:12:16): <p>Wolna wola – moje aktualne
-  stanowisko<br /><br />Notka Automacieja skłoniła mnie do przemyślenia (czy
+  ludzki).  No i teraz z powyższego to już chyba widać, czy to prawdziwa
+  wolna wola... albo i nie :P
+* hcz.jogger.pl (2009-06-18 15:12:16): Wolna wola – moje aktualne
+  stanowisko  
+  
+Notka Automacieja skłoniła mnie do przemyślenia (czy
   raczej uporządkowania) moich poglądów na temat wolnej woli. Być może mój sąd
   jest naiwny i ktoś, znający się na tym jak funkcjonuje ludzki mózg,
-  natychmiast mnie wyśmieje. Wtedy z p[...]</p>
-* C (2009-06-21 08:30:40): <p>Wedle kontynentalnych tradycji myślicielskich
+  natychmiast mnie wyśmieje. Wtedy z p[...]
+* C (2009-06-21 08:30:40): Wedle kontynentalnych tradycji myślicielskich
   (http://en.wikipedia.org/wiki/Liar_paradox#Alfred_Tarski), których jesteśmy
   spadkobiercami, należałoby rozgraniczyć metajęzykowe "SAMOŚWIADOMOŚĆ" ze
   świata programisty od "samoświadomość" z akwarium. Które miałoby by być
@@ -117,8 +119,10 @@ wolną wolę _naprawdę?_
   akwarium jest lepszą jakościowo wolną wolą niż np. decyzja programisty, że
   stworzy drugiego agenta w innym akwarium zamiast pozgrzytania oknem? Czy
   lepszą jakościowo wolną wolą jest np. pomoc innemu bytowi, o którym dość dużo
-  podobnych humanoidów mówi, że jest humanoidem w potrzebie?</p>
-* Biały Jogger (2009-07-12 12:58:29): <p>Wolna wola (a wolność)<br /><br />Temat
+  podobnych humanoidów mówi, że jest humanoidem w potrzebie?
+* Biały Jogger (2009-07-12 12:58:29): Wolna wola (a wolność)  
+  
+Temat
   zaczął Automaciej, pytając o „prawdziwą wolną wolę”. Podjął go hcz, stawiając
   tezę, że wolna wola jest iluzją. I ja się z nim zasadniczo zgadzam. Ale na tym
-  się sprawa nie kończy (o czym na koniec).</p>
+  się sprawa nie kończy (o czym na koniec).
