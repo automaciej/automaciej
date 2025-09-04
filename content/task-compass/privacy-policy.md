@@ -4,6 +4,7 @@ tagline: "Privacy Policy"
 description: "Privacy policy for the Task Compass app"
 date: "2025-09-03T08:54:00+01:00"
 lastmod: "2025-09-03T08:54:00+01:00"
+excludeFromRSS: true
 
 ---
 ## Privacy Policy for Task Compass

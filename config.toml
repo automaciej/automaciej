@@ -14,7 +14,7 @@ languageCode = "en"
 title = "Maciej Bliziński"
 baseurl = "https://blizin.ski"
 theme = "hugo-split-theme"
-rssLimit = 20
+rssLimit = 50
 enableGitInfo = true
 copyright = "&copy;2003-2024 Maciej Bliziński"
 [author]
