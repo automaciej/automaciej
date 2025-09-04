@@ -26,8 +26,8 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
   tag = "tags"
 
 [permalinks]
-  jogger = "/jogger/:year/:filename/"
-  page = "/:filename/"
+  jogger = "/jogger/:year/:contentbasename/"
+  page = "/:contentbasename/"
 
 [params]
   authorName = "Maciej Bliziński"
