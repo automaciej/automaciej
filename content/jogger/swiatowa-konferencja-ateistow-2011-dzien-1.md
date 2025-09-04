@@ -5,11 +5,13 @@ title = "Światowa Konferencja Ateistów 2011, dzień 1"
 aliases = [ "/2011/06/swiatowa-konferencja-ateistow-2011-dzien-1/",]
 
 +++
-Mój żywot człowieka pracującego jest ostatnio przeplatany przerywnikami,
-takimi jak na przykład [World Atheist Convention
-2011](http://considertheteacosy.wordpress.com/2011/06/03/world-atheist-
-conference-day-1/ "Strona po angielsku" ). Wczoraj odbył się pierwszy dzień
-konferencji.
+
+Mój żywot człowieka pracującego jest ostatnio przeplatany przerywnikami, takimi
+jak na przykład [World Atheist Convention
+2011](http://considertheteacosy.wordpress.com/2011/06/03/world-atheist-conference-day-1/
+"Strona po angielsku" ). Wczoraj odbył się pierwszy dzień konferencji.
+
+<!--more-->
 
 Konferencję otworzył [Michael Nugent](http://www.michaelnugent.com/ "Blog o
 szczęściu i ateizmie" ), prezes irlandzkiego stowarzyszenia ateistów. „Ateizm

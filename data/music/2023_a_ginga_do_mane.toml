@@ -1,0 +1,14 @@
+title = "A ginga do Mané"
+artist = "Regional Massapê"
+date = 2023-08-01T00:00:00
+
+description = """\
+Recording of Regional Massapê performing A ginga do Mané.
+"""
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["recording engineer", "mix engineer"]
+
+[links]
+instagram = "CzmXMQpsznl"

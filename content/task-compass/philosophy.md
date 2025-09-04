@@ -1,57 +1,78 @@
 ---
-title: "Task Compass: Philosophy and Design"
-description: "Deeper exploration of the design principles and approach behind Task Compass."
+title: "Philosophy of Task Compass"
+description: "Why Task Compass exists, and the principles that guide its design."
 date: "2025-09-03T09:00:00+01:00"
-lastmod: "2025-10-14T12:00:00+01:00"
-excludeFromRSS: true
-
+lastmod: "2025-11-26T18:30:00+01:00"
 ---
 
-This page explores the design philosophy, principles, and evolution of Task Compass. For the core explanation of how it works, see the [main Task Compass page](/task-compass/).
+# Main principles
 
-## The Philosophy: Depth Over Breadth {#philosophy}
+1. Respect how human mind works
+2. Don't do the same work twice
+3. Learn from what we do, now what we say
 
-Task Compass does one thing exceptionally well: **learning what you're avoiding so you can address it strategically**.
+<!--more-->
 
-No feature bloat. No time tracking, dependencies, or project hierarchies. No manual categorization, effort estimation, or explicit difficulty scoring. Just intelligent prioritization that respects how your mind works and learns from task completion patterns.
+I built Task Compass because I was frustrated. I've been using to-do lists for
+years, on paper and in apps. Writing tasks down solved the problem of forgetting
+what to do, but it didn't solve the problem of tracking what's important. The
+second issue was that looking at the to-do list would overwhelm me, because my
+brain thought that I have to do those tasks all at once.
 
-This radical simplicity is intentional. The apps that win their category do so by doing one thing exceptionally well, not by doing everything adequately. Task Compass's one thing is learning from what you actually complete.
+## 1. Respect How Our Minds Work
 
-## What Makes This Different {#different}
+### Pairwise comparisons are the first class citizen
 
-Most productivity apps are feature lists dressed up as solutions. They add Gantt charts, time tracking, dependencies, subtasks, tags, and custom fields. They give you more ways to organize. More ways to categorize. More decisions to make.
+We are not good at assigning an absolute score to individual list items. We're
+slightly better at stack-ranking. We excel at *comparing* things.
 
-Task Compass goes the opposite direction. It eliminates decisions by making them automatically based on task completion patterns.
+{{< reminder_comparison
+    title1="Buy milk" desc1="1L, full"
+    title2="Bring the coat to the tailor" desc2="Remember the buttons"
+    >}}
 
-You never manually categorize tasks. You never estimate difficulty. You never track time. You answer one simple question repeatedly: "Which task is more important?" The system handles everything else.
+This is a natural, intuitive question. It doesn't demand a complex internal
+rating system; it's a simple, honest choice.
 
-The Eisenhower Matrix is there—the quadrants exist—but you never see them explicitly. The categorization emerges from your importance rankings and task completion patterns, not from manual sorting. The intelligence is invisible. The experience feels effortless.
+This process offloads the rest of the cognitive burden of prioritization to the
+app.
 
-This is the difference between stated preference ("I think this will be hard") and revealed preference ("I've been avoiding this for three days").
+### Looking at the entire list not required
 
-## Design Principles {#principles}
+When you open Task Compass, you're not presented with a long to-do list.
 
-**Respect human cognition**. Design around how minds actually work, not how productivity gurus think they should work.
+1. If there's still prioritization work to be done, you're shown two tasks and
+   asked to choose the more important one.
 
-**Learn from what gets done**. Which tasks you finish reveals more than difficulty estimates. Notice completion patterns, spot resistance, adapt automatically.
+2. If prioritization is complete, the app shows you your #1 priority and a
+   button to start the Pomodoro timer.
 
-**Minimize cognitive load**. Every decision you make is energy spent. Automate everything that can be automated. Ask only what must be asked.
+3. If you want to see more, you can see your #2 and #3 tasks.
 
-**Integrate seamlessly**. Don't create a parallel system. Work with Apple Reminders. Add intelligence on top of what users already have.
+## 2. Do the work only once
 
-**Stay focused**. One thing done exceptionally well beats many things done adequately. The focus is learning from completion patterns. Everything else is out of scope.
+The app remembers your decisions, so it won't ask you about the same two tasks
+twice. It builds an internal importance ranking based on your choices, but it
+won't overwhelm you with the entire list; the whole point is that you only need
+to see your most important task at any given moment.
 
-## The Evolution {#evolution}
+If you said that A is more important than B, the app will always put A above B
+in the ranking.
 
-Task Compass continues to get smarter:
+As you keep using the app, it will ask you for comparisons that are necessary to
+update the importance ranking.
 
-- Multiple resistance signals (completion velocity, time-of-day patterns, task context)
-- Enhanced algorithms (fewer questions, better accuracy)
-- Deeper platform integration (Shortcuts, Siri, widgets)
-- Refined suggestion intelligence (learning from your responses)
+## 3. Detect Resistance Automatically
 
-The focus remains constant. No feature bloat. No complexity creep. Just increasingly sophisticated intelligence about what you're avoiding and why.
+There's often a gap between our intentions and our actions. We *say* a task is
+our #1 priority, but then we spend three days avoiding it. Your actions speak
+louder than your words.
 
----
+Task Compass listens to your actions. It doesn't ask you to guess how
+"difficult" a task will be. It simply watches what you complete. If an important
+task keeps sitting on your list, the app recognizes this as **resistance**. It
+learns what you're avoiding, and helps you address it.
 
-This is task management that aligns with human cognition rather than fighting against it.
+## How It's Implemented
+
+

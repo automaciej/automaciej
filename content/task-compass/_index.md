@@ -1,43 +1,59 @@
 ---
 title: "Task Compass"
-description: "Task Compass helps you with your to-do lists."
+description: "Priority tool that learns what you're avoiding."
 date: "2025-09-03T08:54:00+01:00"
-lastmod: "2025-10-03T10:17:00+01:00"
+lastmod: "2025-11-25T08:30:00+01:00"
 excludeFromRSS: true
+app: "task_compass"
 
 ---
 
-## "I made all my todo lists. It's not helping."
+> "I did all my TODOs and it isn't helping!"
 
-You know what needs doing. You've written it down. But now you stare at the list
-with no idea where to start. Everything feels equally important. I built Task
-Compass because I had this exact problem.
+Task Compass guides you through task prioritization and execution.
 
-## "Which task is more important?"
+<!--more-->
 
-Task Compass asks you simple questions: "Is responding to your landlord more
-important than finishing the project draft?"
+Task Compass is your friend in using Apple Reminders as a TODO list.
 
-Your answers gradually build a complete ranking. The app then tells you which
-task matters most right now and lets you start a Pomodoro timer to focus.
+Unlike traditional manual systems, Task Compass is semi-automatic: you decide
+the priorities, while the app drives the process. Your role is to decide on
+trade-offs:
 
-## Why comparisons work
+{{< reminder_comparison
+    title1="Buy milk" desc1="1L, full"
+    title2="Bring the coat to the tailor" desc2="Remember the buttons"
+    >}}
 
-Absolute ratings don't work. "How important is this from 1-10?" sounds
-reasonable until tomorrow when something urgent appears and your entire scale
-shifts.
+The app instantly analyzes your decisions, asks for more comparisons as needed,
+and presents you with your most important task.
 
-But "which is more important right now?" - that's easy to answer. The app learns
-from your choices to figure out what actually matters.
+{{< priority_task
+    title="Bring the coat to the tailor"
+    description="Remember the buttons" label="Your #1 priority"
+    >}}
 
-## What if you avoid a task?
+Then it keeps it easy to keep your list prioritized as you add more tasks.
 
-Some tasks sit there for days while you check off everything around them. The
-app notices this pattern and suggests setting a specific time to tackle them.
-It's not about how hard the task is - it's the psychological resistance to
-starting it.
+## Integration with Apple Reminders
 
-## Works With Apple Reminders
+The best tools are the ones that fit into your existing workflow. Task Compass
+is not another to-do list app; it's a layer of automation that sits on top of
+the to-do list you already use: **Apple Reminders**. There's no accounts,
+passwords, data migration, no new systems to learn.
 
-Your tasks sync automatically. Task Compass adds the intelligence on top of what
-you already have.
+## A Compass, Not a Map
+
+Task Compass is not a map that shows you every possible path. It's a compass
+that points you in the right direction, one step at a time.
+
+The vision is to create a tool that feels less like a piece of software and more
+like a trusted advisor—one that understands your goals and helps you stay
+focused on the work that truly matters.
+
+----
+
+See the [FAQ][faq] and [Task Compass philosophy][philo] for more information.
+
+[faq]: {{% relref faq.md %}} "Frequently Asked Questions"
+[philo]: {{% relref philosophy.md %}} "Task Compass Philosophy"

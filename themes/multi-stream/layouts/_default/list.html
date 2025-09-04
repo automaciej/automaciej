@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{ $appData := "" }}
+{{ if .Params.app }}
+    {{ $appData = index .Site.Data.apps .Params.app }}
+{{ end }}
+<div class="list-page">
+    <div class="container">
+        {{ if and $appData $appData.testflight }}
+            {{ partial "testflight-banner.html" $appData }}
+        {{ end }}
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Content }}
+            <div class="section-intro">
+                {{ . }}
+            </div>
+            {{ end }}
+        </header>
+
+        <div class="list-container">
+            <div class="posts-list">
+            {{ range .Pages }}
+            <article class="post-card">
+                <a href="{{ .RelPermalink }}" class="post-card-link">
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <time datetime="{{ .Date.Format "2006-01-02" }}">
+                                {{ .Date.Format "January 2, 2006" }}
+                            </time>
+                        </div>
+                        <h3>{{ .Title }}</h3>
+                        {{ with .Description }}
+                        <div class="post-description">
+                            {{ . }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </a>
+            </article>
+            {{ end }}
+        </div>
+        </div>
+    </div>
+</div>
+{{ end }}

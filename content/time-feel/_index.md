@@ -1,12 +1,14 @@
 ---
 title: "Time Feel"
-tagline: "Making the invisible visible"
 description: "Interactive metronome with real-time timing feedback for musicians."
 date: "2025-09-21T15:30:00+01:00"
 lastmod: "2025-09-21T15:30:00+01:00"
 excludeFromRSS: true
+app: "time_feel"
 
 ---
+
+_Changing timing from invisible to visible_
 
 {{< instagram-reel DPttqZ-DFIa "Time Feel in action" >}}
 

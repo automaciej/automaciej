@@ -1,0 +1,6 @@
+name = "Time Feel"
+type = "music"
+description = "Interactive metronome with real-time timing feedback for musicians."
+subsection = "time-feel"
+platforms = ["iOS"]
+testflight = "https://testflight.apple.com/join/sPfDFZuV"

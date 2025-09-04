@@ -1,0 +1,31 @@
+title = "Je te veux"
+artist = "Zoe Hayter"
+date = 2025-05-01T00:00:00
+
+description = """\
+Single production for Zoe Hayter.
+"""
+
+[[credits]]
+name = "Zoe Hayter"
+roles = ["guitar", "vocals", "composer"]
+
+[[credits]]
+name = "Rafał Szydłowski"
+roles = ["violin"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["piano", "double bass", "producer", "mixing engineer"]
+
+[[credits]]
+name = "Riccardo Marenghi"
+roles = ["drums"]
+
+[[credits]]
+name = "Liam Larkin"
+roles = ["mastering engineer"]
+
+[links]
+bandcamp_track = "2840110792"
+bandcamp_url = "https://zoehayter.bandcamp.com/track/je-te-veux"

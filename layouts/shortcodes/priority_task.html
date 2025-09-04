@@ -1,0 +1,7 @@
+<div class="priority-task-container">
+  <div class="priority-label">{{ .Get "label" }}</div>
+  <div class="reminder-card priority-task">
+    <div class="reminder-title">{{ .Get "title" }}</div>
+    <div class="reminder-body">{{ .Get "description" | markdownify }}</div>
+  </div>
+</div>

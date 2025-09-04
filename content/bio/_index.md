@@ -4,6 +4,7 @@ date: "2022-09-05T15:02:43+01:00"
 lastmod: "2023-12-20T10:30:45+02:00"
 tagline: "Bio"
 aliases: [ "/bio/about" ]
+image: "/images/background.jpg"
 ---
 
 Maciej, raised in a musical family in Warsaw, Poland, was inspired early on by
@@ -21,9 +22,9 @@ where he often anchors the sessions as the main bass player, helping musicians
 gel and ensuring tight backing for vocalists. These sessions have honed his
 walking bass skills and deepened his repertoire of tunes.
 
-In his home studio in North Dublin, Maciej takes a [natural, organic
-approach][appr]) to recording and mixing. He prefers live recordings, rather
-than track-by-track, capturing performances that breathe and feel authentic. His
+In his home studio in North Dublin, Maciej takes a natural, organic approach to
+recording and mixing. He is comfortable with live recordings as much as with
+track-by-track, capturing performances that breathe and feel authentic. His
 meticulous attention to microphone placement, phase alignment, and ambience
 allows him to mix with a blend of classical techniques and modern digital tools.
 

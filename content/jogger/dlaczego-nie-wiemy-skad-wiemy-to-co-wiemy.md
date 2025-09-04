@@ -19,10 +19,14 @@ przeprowadziłem, a wyniki pieczołowicie skompilowałem w zgrabny raport. Z
 elegancką tabelką pełną procentów, dumny z siebie, poszedłem do asystenta.
 Rozmowa wyglądała mniej więcej tak:
 
+<!--more-->
+
 Automaciej: „Oto wyniki, przy 112 prawie zawsze słyszeli różnicę, przy 128 już
 czasami nie, a przy 256 i 320 już dość rzadko, tylko niektóre osoby były chyba
 bardzo spostrzegawcze, bo czasami...”  
+
 Asystent: „Dobrze, a próbki kontrolne?”  
+
 Automaciej: „To znaczy?”
 
 Asystent spojrzał na mnie badawczo.
@@ -79,7 +83,8 @@ Tak przygotowany, na studiach nie najadłbym się wstydu przed asystentem, i
 jestem pewien, że nie tylko ja.
 
 ----
-**Komentarze**
+
+## Komentarze
 
 * n3m0 (2012-03-12 00:23:23): Dzięki. Wartościowa informacja czego w
   pierwszych krokach nauczyć potomstwo...  BTW. zabawne jak autorytet (tu
@@ -125,8 +130,11 @@ jestem pewien, że nie tylko ja.
   wartości filozofii nauki, po prostu nie równałbym jej z samą nauką, w końcu
   istotą metody naukowej było właśnie odejście od snucia takich "filozoficznych"
   rozważań w stronę jak najbardziej bezpośredniego badania faktów.
-* Sigvatr (2012-03-12 17:52:15): > Nie nauczono mnie natomiast
->   jednej ważnej rzeczy: jak to się stało, że to wszystko wiemy.  Ja tam miałem w szkole podstawowej opisy doświadczeń i
+* Sigvatr (2012-03-12 17:52:15):
+  > Nie nauczono mnie natomiast
+  >   jednej ważnej rzeczy: jak to się stało, że to wszystko wiemy.
+
+  Ja tam miałem w szkole podstawowej opisy doświadczeń i
   metody naukowej.
 * oPgdQiWikhMjWMN (2012-06-17 14:49:03): Inni albo nie wiedzieli, że w csaize
   obiadu średnio byli warci dużo więcej niż 1 milion $ (biorąc pod uwagę majątek

@@ -1,0 +1,38 @@
+title = "Ocean"
+artist = "Funksters"
+date = 2000-11-01T00:00:00
+
+description = """\
+Original composition recorded with Funksters in Denmark at Backyard Studio in Aarhus, November 2000.
+"""
+
+[[credits]]
+name = "Ola Bieńkowska"
+roles = ["vocals", "backing vocals"]
+
+[[credits]]
+name = "Agnieszka Kowalska"
+roles = ["backing vocals"]
+
+[[credits]]
+name = "Andrzej Rękas"
+roles = ["trombone"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["composer", "guitar", "recording engineer", "mix engineer"]
+
+[[credits]]
+name = "Paweł Nowacki"
+roles = ["keyboards"]
+
+[[credits]]
+name = "Bartosz Wojciechowski"
+roles = ["bass"]
+
+[[credits]]
+name = "Artur Lipiński"
+roles = ["drums"]
+
+[links]
+soundcloud = "211181460"

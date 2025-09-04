@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {{- if .IsHome -}}
+        {{ .Site.Title }}
+    {{- else if .IsPage -}}
+        {{ .Title }} - {{ if .CurrentSection.IsHome }}{{ .Site.Title }}{{ else }}{{ .CurrentSection.Title }}{{ end }}
+    {{- else -}}
+        {{/* This covers sections, taxonomies, etc. */}}
+        {{ .Title }} - {{ .Site.Title }}
+    {{- end -}}
+</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+    {{ if .Site.Params.favicon }}
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
+    {{ end }}
+
+    <link rel="stylesheet" href="{{ "css/lineicons.css" | relURL }}">
+
+    {{ $styles := resources.Get "css/main.css" }}
+    {{ if $styles }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    {{ end }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!event.target.closest('.site-nav')) {
+                        navToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+
+                // Close menu when clicking a link
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        navToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

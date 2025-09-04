@@ -11,6 +11,8 @@ title: Jak się uczę portugalskiego - Komentarze
 
 Komentarze do wpisu [_Jak się uczę portugalskiego_][jaksieucze].
 
+<!--more-->
+
 [jaksieucze]: {{< relref "jogger/jak-sie-ucze-portugalskiego.md" >}}
 
 * quest (2015-12-24 19:51:13): Ciekawy wybór. Możesz wyjaśnić dlaczego akurat

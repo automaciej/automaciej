@@ -20,6 +20,7 @@ Powodem jest różnica pomiędzy niemieckim i angielskim nazewnictwem dźwiękó
 
 ![Niemiecka: CDEFGAH; Angielska: CDEFGAB](/images/nazwy-dźwięków-angielskie-i-niemieckie.png)
 
+<!--
 W zapisie ABC:
 
     X:1
@@ -28,6 +29,7 @@ W zapisie ABC:
     C4 D4 E4 F4 G4 A4 _B4 =B4
     w:(En)~C D E F G A B♭ B
     w:(De)~C D E F G A B H
+    -->
 
 Żeby było śmiesznie, nazwa B istnieje w obu konwencjach, tylko oznacza coś
 innego: w niemieckiej dźwięk pół tonu nad A, a w angielskiej dźwięk który jest

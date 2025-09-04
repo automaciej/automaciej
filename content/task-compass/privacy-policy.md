@@ -29,6 +29,10 @@ iCloud service.
 **Timing information**: The app stores the time you took to make each choice, to
 present good results with fewer questions.
 
+**Task Comparisons**: The app stores your importance and difficulty rankings for
+tasks locally on your device and syncs them across your devices using Apple's
+iCloud service.
+
 ### How The App Uses Your Information
 
 - To display your reminders within the app for prioritization

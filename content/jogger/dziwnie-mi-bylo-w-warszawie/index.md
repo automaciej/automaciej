@@ -14,9 +14,9 @@ Pojechałem do Warszawy na kilka dni. Inaczej niż wcześniej. Tym razem nie do
 urzędu miasta, ani do prawnika, ani na sesję z mediatorami, ani na rozprawę
 sądową. Przyjechałem zobaczyć Warszawę.
 
-{{< figure src="warszawa-2017-640px.jpg" title="Widok z tarasu w PKiN" alt="Widok z tarasu PKiN. Słoneczny zimowy dzień, ale bez śniegu. Widać Galerię Centrum, Rotundę, i dalej panoramę miasta w kierunku Wisły." >}}
-
 <!--more-->
+
+{{< figure src="warszawa-2017-640px.jpg" title="Widok z tarasu w PKiN" alt="Widok z tarasu PKiN. Słoneczny zimowy dzień, ale bez śniegu. Widać Galerię Centrum, Rotundę, i dalej panoramę miasta w kierunku Wisły." >}}
 
 Kiedy odwiedzam stare kąty, co prawda widzę Warszawę aktualną, nową, ale mam
 równoległe wrażenie, że się cofnąłem w czasie, i jestem emocjonalnie w roku
