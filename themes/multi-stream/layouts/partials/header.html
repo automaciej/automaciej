@@ -1,0 +1,24 @@
+<header class="site-header">
+    <div class="container">
+        <nav class="site-nav">
+            {{ if and .IsPage (ne .CurrentSection .Site.Home) }}
+                <a href="{{ .CurrentSection.Permalink }}" class="site-title">{{ .CurrentSection.Title }}</a>
+            {{ else }}
+                <a href="{{ "/" | relURL }}" class="site-title">{{ .Site.Title }}</a>
+            {{ end }}
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="{{ "/jogger/" | relURL }}">Jogger</a></li>
+                <li><a href="{{ "/music/" | relURL }}">Music</a></li>
+                <li><a href="{{ "/bio/performances/" | relURL }}">Performances</a></li>
+                <li><a href="{{ "/time-feel/" | relURL }}">Time Feel</a></li>
+                <li><a href="{{ "/task-compass/" | relURL }}">Task Compass</a></li>
+                <li><a href="{{ "/bio/" | relURL }}">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

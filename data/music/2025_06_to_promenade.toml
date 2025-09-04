@@ -1,0 +1,44 @@
+title = "To Promenade"
+artist = "emily jane"
+album = "To Promenade"
+date = 2025-06-01T00:00:00
+
+description = """\
+Full album production for emily jane's debut album.
+"""
+
+[[credits]]
+name = "emily jane"
+roles = ["vocals"]
+
+[[credits]]
+name = "Emily Jane Cooke"
+roles = ["songwriter", "producer"]
+
+[[credits]]
+name = "Kaelan Zipoli"
+roles = ["piano"]
+
+[[credits]]
+name = "Sorcha McCague"
+roles = ["other instrument"]
+
+[[credits]]
+name = "Aidan Liam Gray"
+roles = ["electric bass guitar"]
+
+[[credits]]
+name = "Darragh Groome"
+roles = ["drums"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["producer", "recording engineer", "mixing engineer"]
+
+[[credits]]
+name = "Seán Mac Erlaine"
+roles = ["mastering engineer"]
+
+[links]
+bandcamp_album = "2074281446"
+bandcamp_url = "https://emilyjane1999.bandcamp.com/album/to-promenade"

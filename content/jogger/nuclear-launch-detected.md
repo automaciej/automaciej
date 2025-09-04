@@ -12,8 +12,9 @@ zrobiony świecący pendrive USB.
 Starcraft jest dla mnie szczególnie nostalgiczną grą, ponieważ jest w sumie
 powodem dla którego jestem tu gdzie jestem i robię to co robię.
 
-----
-**Komentarze**
+<!--more-->
+
+## Komentarze
 
 * Gracz (2010-07-27 11:14:07): 390 zł? Za pierwszą z trzech gier? Łał, ja
   nawet za podstawową nie zapłacę tyle ile chcą. Być może nie jestem takim fanem

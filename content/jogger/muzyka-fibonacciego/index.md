@@ -12,8 +12,6 @@ title: Muzyka Fibonacciego
 
 ---
 
-{{< youtube "IGJeGOw8TzQ" >}}
-
 Myśląc o tworzeniu muzyki w oparciu o idee matematyczne, od razu się
 zastanawiam, jaka idea za tym stoi. Istnieją ciekawe związki pomiędzy matematyką
 i muzyką, na przykład to, że częstotliwości podstawowe nut można policzyć jako
@@ -21,6 +19,8 @@ i muzyką, na przykład to, że częstotliwości podstawowe nut można policzyć
 oczywiście arbitralnie, w oparciu o fizykę i fizjologię ucha.
 
 <!--more-->
+
+{{< youtube "IGJeGOw8TzQ" >}}
 
 Idea chyba polega na tym, że próbujemy rozciągnąć te zależności
 matematyczno&ndash;muzyczne dalej. Skoro ciąg Fibonacciego ma unikalne właściwości,

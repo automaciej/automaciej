@@ -1,0 +1,319 @@
+<style>
+.event {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.event-chevron {
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.event-date {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.event-date a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.event-date a:hover {
+  color: var(--accent);
+}
+
+.event-title {
+  flex-grow: 1;
+}
+
+.event-tickets {
+  margin-left: auto;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.event-tickets:hover {
+  opacity: 0.8;
+}
+
+.event-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.event-details-content p {
+  margin-bottom: 0.5rem;
+}
+
+.event-details-content p:last-child {
+  margin-bottom: 0;
+}
+</style>
+
+<p>
+<small>
+	<a href="#future-performances">upcoming performances »</a> <br/>
+	<a href="#past-performances">past performances »</a>
+</small>
+</p>
+<div id="future-events"></div>
+<div id="past-events"></div>
+
+<!-- Create the JSON structure -->
+
+<script>
+// What a wonderful feature of Hugo to automatically serialize into
+// JSON!
+var performancesList = {{ $.Site.Data.performances | jsonify (dict "indent" "  ") | safeJS }};
+
+// TODO: Move this to a separate file.
+
+// This class represents a template.
+class PrettyEvents {
+  #eventList;
+  #parentObj;
+  #title;
+  #headerID;
+  constructor(eventList, parentObj, title, headerID) {
+    this.#eventList = eventList;
+    this.#parentObj = parentObj;
+    this.#title = title;
+    this.#headerID = headerID;
+  }
+  populate() {
+    var hdr = document.createElement('h2');
+    hdr.setAttribute('id', this.#headerID);
+    hdr.appendChild(document.createTextNode(this.#title));
+    this.#parentObj.appendChild(hdr);
+    this.#eventList.forEach((ev) => this.#parentObj.appendChild(eventElement(ev, true)));
+  }
+}
+
+function joinList(lst, first_delim, second_delim) {
+  if (lst.length == 0) {
+    return "";
+  } else if (lst.length == 1) {
+    return lst[0];
+  }
+  var result = "";
+  for (i = 0; i < lst.length; i++) {
+    if (i == (lst.length - 1)) {
+      // Last element
+      result = result + second_delim + lst[i];
+    } else {
+      result = result + lst[i];
+      if (i != (lst.length - 2) || lst.length > 2) {
+        result = result + first_delim;
+      }
+    }
+  }
+  return result;
+}
+
+function A(elem, url) {
+  if (!url) {
+    return elem;
+  }
+  var a = document.createElement('a');
+  a.setAttribute('href', url);
+  a.appendChild(elem);
+  return a;
+}
+
+function addText(elem, txt) {
+  elem.appendChild(document.createTextNode(txt));
+}
+
+// Make a DOM element representing the event.
+function eventElement(ev, isFuture) {
+  const eventId = 'event-' + Math.random().toString(36).substr(2, 9);
+
+  // Main container
+  var evDiv = document.createElement('div');
+  evDiv.setAttribute('class', 'event');
+
+  // Header (always visible)
+  var evHeader = document.createElement('div');
+  evHeader.setAttribute('class', 'event-header');
+  evHeader.style.cursor = 'pointer';
+
+  // Chevron
+  var chevron = document.createElement('span');
+  chevron.setAttribute('class', 'event-chevron');
+  chevron.textContent = '›';
+  evHeader.appendChild(chevron);
+
+  // Date (linked for future events only)
+  const options = {
+    'year': 'numeric',
+    'month': 'short',
+    'day': 'numeric',
+    'hour': 'numeric',
+  };
+  var dateText = ev["start_time_ts"].toLocaleString(undefined, options);
+  var dateSpan = document.createElement('span');
+  dateSpan.setAttribute('class', 'event-date');
+  if (isFuture && ev['url']) {
+    var dateLink = document.createElement('a');
+    dateLink.setAttribute('href', ev['url']);
+    dateLink.textContent = dateText;
+    dateSpan.appendChild(dateLink);
+  } else {
+    dateSpan.textContent = dateText;
+  }
+  evHeader.appendChild(dateSpan);
+
+  // Title
+  var evTitle = document.createElement('strong');
+  evTitle.setAttribute('class', 'event-title');
+  if (isFuture) {
+    addText(evTitle, '🎵 ');
+  } else {
+    addText(evTitle, '✔️ ');
+  }
+  evTitle.appendChild(document.createTextNode(ev['name']));
+  evHeader.appendChild(evTitle);
+
+  // Tickets (for future events)
+  if (ev['tickets'] && isFuture) {
+    var ticketsLink = document.createElement('a');
+    ticketsLink.setAttribute('href', ev['tickets']);
+    ticketsLink.setAttribute('class', 'event-tickets');
+    ticketsLink.textContent = '🎫 tickets';
+    evHeader.appendChild(ticketsLink);
+  }
+
+  evDiv.appendChild(evHeader);
+
+  // Details (collapsible)
+  var evDetails = document.createElement('div');
+  evDetails.setAttribute('class', 'event-details');
+  evDetails.setAttribute('id', eventId);
+  evDetails.style.display = 'none';
+
+  var detailsList = document.createElement('div');
+  detailsList.setAttribute('class', 'event-details-content');
+
+  if (ev['venue']) {
+    var venueP = document.createElement('p');
+    addText(venueP, '📍 Venue: ');
+    var venueText = document.createTextNode(ev['venue']);
+    venueP.appendChild(A(venueText, ev['venue_url']));
+    detailsList.appendChild(venueP);
+  }
+
+  if (ev['instrument']) {
+    var instrumentP = document.createElement('p');
+    if (isFuture) {
+      addText(instrumentP, '🎸 Will play: ');
+    } else {
+      addText(instrumentP, '🎸 Played: ');
+    }
+    addText(instrumentP, ev['instrument']);
+    detailsList.appendChild(instrumentP);
+  }
+
+  if (ev['with'] && ev['with'].length) {
+    var withP = document.createElement('p');
+    addText(withP, '👥 With: ');
+    addText(withP, joinList(ev['with'], ", ", " and "));
+    detailsList.appendChild(withP);
+  }
+
+  if (ev['description']) {
+    var descP = document.createElement('p');
+    addText(descP, '📝 ');
+    addText(descP, ev['description']);
+    detailsList.appendChild(descP);
+  }
+
+  evDetails.appendChild(detailsList);
+  evDiv.appendChild(evDetails);
+
+  // Toggle functionality
+  evHeader.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') return; // Don't toggle if clicking links
+    const details = document.getElementById(eventId);
+    const isHidden = details.style.display === 'none';
+    details.style.display = isHidden ? 'block' : 'none';
+    chevron.textContent = isHidden ? '▾' : '›';
+  });
+
+  return evDiv;
+}
+
+function populatePerformances() {
+  var futureEventsDiv = document.getElementById("future-events");
+  var pastEventsDiv = document.getElementById("past-events");
+
+  // Proof of concept for page updates.
+  var pastEvents = [];
+  var futureEvents = [];
+  const now = new Date();
+  for (i in performancesList) {
+    var ev = performancesList[i];
+    if (ev['name'] == "end_marker") {
+      // Don't use this element.
+      break;
+    }
+    if (ev['start_time']) {
+      var d = new Date(Date.parse(ev['start_time']));
+      ev['start_time_ts'] = d;
+      if (ev['start_time_ts'].getTime() > now.getTime()) {
+        futureEvents.push(ev);
+      } else {
+        pastEvents.push(ev);
+      }
+    } else {
+      console.log("Event " + ev['name'] + " is missing start_time");
+    }
+  }
+  // Sort events by date.
+  futureEvents.sort(function(a, b) {
+    // Reverse chronological.
+    if (a['start_time_ts'].getTime() > b['start_time_ts'].getTime()) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+  pastEvents.sort(function(a, b) {
+    // Chronological.
+    if (a['start_time_ts'].getTime() < b['start_time_ts'].getTime()) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+
+  if (futureEvents.length > 0) {
+    var prettyFuture = new PrettyEvents(futureEvents, futureEventsDiv, 'Upcoming Performances', 'upcoming-performances');
+    prettyFuture.populate();
+  }
+  if (pastEvents.length > 0) {
+    var hdr = document.createElement('h2');
+    hdr.setAttribute('id', 'past-performances');
+    hdr.appendChild(document.createTextNode("Past Performances"));
+    pastEventsDiv.appendChild(hdr);
+    pastEvents.forEach((ev) => pastEventsDiv.appendChild(eventElement(ev, false)));
+  }
+}
+
+window.addEventListener('load', (event) => {
+  populatePerformances();
+});
+</script>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogger - {{ .Site.Title }}</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            page-break-after: avoid;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.3em;
+        }
+
+        .book-title {
+            font-size: 3em;
+            text-align: center;
+            margin: 2em 0;
+            page-break-after: always;
+        }
+
+        .post-date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+
+        .post {
+            page-break-inside: avoid;
+            margin-bottom: 3em;
+        }
+
+        .post-content {
+            text-align: justify;
+        }
+
+        .post-content p {
+            margin-bottom: 1em;
+            text-indent: 2em;
+        }
+
+        .post-content p:first-child {
+            text-indent: 0;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto;
+            page-break-inside: avoid;
+        }
+
+        .post-content blockquote {
+            margin: 1em 2em;
+            padding-left: 1em;
+            border-left: 3px solid #ccc;
+            font-style: italic;
+        }
+
+        .post-content pre {
+            background: #f5f5f5;
+            padding: 1em;
+            overflow-x: auto;
+            page-break-inside: avoid;
+        }
+
+        .post-content code {
+            font-family: 'Courier New', monospace;
+            background: #f5f5f5;
+            padding: 0.2em 0.4em;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .post-content ul, .post-content ol {
+            margin-left: 2em;
+            margin-bottom: 1em;
+        }
+
+        .post-content li {
+            margin-bottom: 0.5em;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 2em 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .post {
+                page-break-after: always;
+            }
+            
+            a {
+                color: #333;
+                text-decoration: none;
+            }
+            
+            a[href]:after {
+                content: " (" attr(href) ")";
+                font-size: 0.8em;
+                color: #666;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-title">
+        <h1>Jogger</h1>
+        <p>{{ .Site.Title }}</p>
+        <p style="font-size: 0.6em; color: #666;">
+            {{ .Site.Params.tagline }}<br>
+            Generated {{ now.Format "January 2, 2006" }}
+        </p>
+    </div>
+
+    {{ $posts := where .Site.RegularPages "Section" "jogger" }}
+    {{ $posts = sort $posts "Date" }}
+    {{ range $posts }}
+    <article class="post">
+        <h1>{{ .Title }}</h1>
+        <div class="post-date">{{ .Date.Format "January 2, 2006" }}</div>
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    </article>
+    <hr>
+    {{ end }}
+
+    <div style="text-align: center; margin-top: 3em; color: #666;">
+        <p>End of Jogger</p>
+        <p>Total posts: {{ len $posts }}</p>
+    </div>
+</body>
+</html>

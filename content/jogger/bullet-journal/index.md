@@ -3,7 +3,7 @@ aliases:
 - /2016/09/bullet-journal/
 date: '2016-09-28T00:15:00+01:00'
 description: Od stycznia 2015 prowadzę Bullet Journal, notes do spraw organizacyjnych.
-image: /images/2016/bujo-notebook.jpg
+image: bujo-notebook.jpg
 tags:
 - życie
 - rozwój

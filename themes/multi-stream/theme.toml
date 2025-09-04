@@ -1,0 +1,10 @@
+name = "Multi-Stream"
+license = "MIT"
+licenselink = "https://github.com/automaciej/automaciej/blob/main/LICENSE"
+description = "Custom multi-stream theme for blizin.ski"
+homepage = "https://blizin.ski"
+min_version = "0.147.2"
+
+[author]
+  name = "Maciej Bliziński"
+  homepage = "https://blizin.ski"

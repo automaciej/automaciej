@@ -1,3 +1,5 @@
 public
 resources
-private.cfg.sh
+private_cfg.sh
+.hugo_build.lock
+.DS_Store

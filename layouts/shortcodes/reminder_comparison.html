@@ -1,0 +1,12 @@
+<h3 style="text-align: center;">Which task is more important?</h3>
+<div class="reminders-container">
+  <div class="reminder-card priority-task">
+    <div class="reminder-title">{{ .Get "title1" }}</div>
+    <div class="reminder-body">{{ .Get "desc1" | markdownify }}</div>
+  </div>
+  <div class="reminder-card priority-task">
+    <div class="reminder-title">{{ .Get "title2" }}</div>
+    <div class="reminder-body">{{ .Get "desc2" | markdownify }}</div>
+  </div>
+</div>
+

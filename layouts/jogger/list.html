@@ -1,39 +1,70 @@
-{{/*
-vim:ts=2 sts=2 sw=2 expandtab:
-*/}}
 {{ define "main" }}
+<div class="list-page">
+    <div class="container">
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Content }}
+            <div class="section-intro">
+                {{ . }}
+            </div>
+            {{ end }}
+        </header>
 
-<div class="split-bio">
-
-{{ .Content }}
-
-{{ if .Pages }}
-<h2>Najnowsze wpisy</h2>
-
-<ul class="split-list year-list">
-{{ range .Pages.GroupByDate "2006" "desc" }}
-<li>
-  <h3 class="title">{{ .Key }}</h3>
-  <ul class="split-list page-list">
-    {{ range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        <div class="page-list-date">
-        {{- .Date | time.Format ":date_medium" -}}
+        {{ if .Pages }}
+        <div class="posts-list">
+            {{ range .Pages.GroupByDate "2006" "desc" }}
+            <div class="year-group">
+                <h2 class="year-title">{{ .Key }}</h2>
+                {{ range .Pages }}
+                {{ $post := . }}
+                {{ $image := "" }}
+                {{ $imageURL := "" }}
+                {{ if $post.Params.image }}
+                    {{ $imagePath := $post.Params.image }}
+                    {{ $imageResource := $post.Resources.GetMatch $imagePath }}
+                    {{ if $imageResource }}
+                        {{ $imageURL = $imageResource.RelPermalink }}
+                    {{ else }}
+                        {{ $imageURL = $imagePath | relURL }}
+                    {{ end }}
+                {{ else }}
+                    {{ $imageResource := $post.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+                    {{ if $imageResource }}
+                        {{ $imageURL = $imageResource.RelPermalink }}
+                    {{ end }}
+                {{ end }}
+                <article class="post-card">
+                    {{ if $imageURL }}
+                    <div class="post-card-image">
+                        <a href="{{ $post.RelPermalink }}">
+                            <img src="{{ $imageURL }}" alt="{{ $post.LinkTitle }}">
+                        </a>
+                    </div>
+                    {{ end }}
+                    <div class="post-card-content">
+                        <h3><a href="{{ $post.RelPermalink }}">{{ $post.LinkTitle }}</a></h3>
+                        <div class="post-meta">
+                            <time datetime="{{ $post.Date.Format "2006-01-02" }}">
+                                {{ $post.Date.Format "January 2, 2006" }}
+                            </time>
+                        </div>
+                        {{ with $post.Summary }}
+                        <div class="post-summary">
+                            {{ . }}
+                        </div>
+                        {{ end }}
+                        {{ if $post.Truncated }}
+                        <div class="read-more">
+                            <a href="{{ $post.RelPermalink }}">czytaj dalej&nbsp;»</a>
+                        </div>
+                        {{ end }}
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+            {{ end }}
         </div>
-        <div class="page-list-title">
-        {{- .LinkTitle -}}
-        </div>
-      </a>
-    </li>
-    {{ end }}
-  </ul>
-</li>
-{{ end }}
-</ul>
-
-{{ end }}
-
+        {{ end }}
+    </div>
 </div>
-
 {{ end }}

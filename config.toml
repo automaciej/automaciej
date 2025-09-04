@@ -13,10 +13,10 @@ defaultContentLanguage = "en"
 languageCode = "en"
 title = "Maciej Bliziński"
 baseurl = "https://blizin.ski"
-theme = "hugo-split-theme"
-rssLimit = 20
+theme = "multi-stream"
+rssLimit = 50
 enableGitInfo = true
-copyright = "&copy;2003-2024 Maciej Bliziński"
+copyright = "&copy;2025 Maciej Bliziński"
 [author]
   [author.maciej]
     name = "Maciej Bliziński"
@@ -33,7 +33,7 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"
   siteLogo = "/images/automaciej-logo.jpg"
-  description = "Producer-turned-musicmaker. Collaborating across time."
+  description = "Dublin-based musician working on Tostarista—an album bringing my late father's guitar compositions to life. Also building apps for musicians and creative professionals."
   shareImage = "bio/images/maciej_on_bass_hi.jpg"
   favicon = "images/favicon.png"
   licensed = 1
@@ -55,29 +55,41 @@ copyright = "&copy;2003-2024 Maciej Bliziński"
     file = "images/background.jpg"
 
 [[params.links]]
+  [params.links.list1]
+    heading = "Projects"
+    [[params.links.list1.link]]
+      text = "Time Feel"
+      title = "Interactive metronome for musicians passionate about timing"
+      ref = "time-feel/_index.md"
+    [[params.links.list1.link]]
+      text = "Task Compass"
+      title = "Priority tool for managing competing tasks"
+      ref = "task-compass/_index.md"
+    [[params.links.list1.link]]
+      text = "Music Production"
+      title = "Work produced for other artists"
+      ref = "music/_index.md"
+
   [params.links.list2]
     heading = "EPK"
     [[params.links.list2.link]]
       text = "Bio"
+      title = "Biography and background"
       ref = "bio.md"
     [[params.links.list2.link]]
-      text = "Performances"
-      ref = "performances.md"
-    [[params.links.list2.link]]
       text = "Photos"
+      title = "Press photos and images"
       ref = "photos.md"
     [[params.links.list2.link]]
       text = "Press"
+      title = "Press coverage and media"
       ref = "press.md"
-
-  [params.links.list3]
-    heading = "More links"
-    [[params.links.list3.link]]
-      text = "linktr.ee/mblizinski"
-      url = "https://linktr.ee/mblizinski"
 
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
   fractions = false
 [imaging.exif]
   includeFields = ".*"
+
+[markup.goldmark.renderer]
+  unsafe = true

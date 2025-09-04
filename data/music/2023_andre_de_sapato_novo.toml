@@ -1,0 +1,14 @@
+title = "André de sapato novo"
+artist = "Regional Massapê"
+date = 2023-06-01T00:00:00
+
+description = """\
+Recording of Regional Massapê performing André de sapato novo.
+"""
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["recording engineer", "mix engineer"]
+
+[links]
+instagram = "Cy0YKUdqZB6"

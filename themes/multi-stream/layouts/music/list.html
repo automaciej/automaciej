@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="music-page">
+    <div class="container">
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.description }}
+            <p class="section-description">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        <div class="music-productions">
+            {{ $musicProductions := sort .Site.Data.music "date" "desc" }}
+
+            <div class="music-column">
+            {{ range $index, $production := $musicProductions }}
+            {{ if eq (mod $index 2) 0 }}
+            {{ partial "music-card.html" $production }}
+            {{ end }}
+            {{ end }}
+            </div>
+
+            <div class="music-column">
+            {{ range $index, $production := $musicProductions }}
+            {{ if eq (mod $index 2) 1 }}
+            {{ partial "music-card.html" $production }}
+            {{ end }}
+            {{ end }}
+            </div>
+        </div>
+
+        <footer class="music-footer">
+            <p><strong>Note:</strong> I occasionally collaborate on projects that align artistically. I'm not taking general production work. If you have something unusual in mind, <a href="mailto:maciej.blizinski@gmail.com">reach out</a>.</p>
+        </footer>
+    </div>
+</div>
+{{ end }}

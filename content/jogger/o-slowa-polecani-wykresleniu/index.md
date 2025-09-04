@@ -12,8 +12,6 @@ title: O słowa „polecani” wykreśleniu
 
 ---
 
-{{< figure attrlink="https://flic.kr/p/8CdMVx" attr="fot. Tom Taker" src="cat-fight.jpg" >}}
-
 Chciałbym opowiedzieć o Wielkiej Awanturze o Dział Lekarzy. Po części dlatego,
 żeby przyszłe pokolenia internautów mogły uczyć się na błędach obecnego
 pokolenia. Po części też dlatego, żebym ja sam mógł się rozliczyć z tym okresem

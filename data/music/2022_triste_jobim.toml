@@ -1,0 +1,14 @@
+title = "Triste"
+artist = "Antonio Carlos Jobim (cover)"
+date = 2022-08-01T00:00:00
+
+description = """\
+Cover of Antonio Carlos Jobim's Triste.
+"""
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["recording engineer", "mix engineer"]
+
+[links]
+youtube = "t4omYtBjZwA"

@@ -1,17 +1,21 @@
 ---
-title: "Music production"
-tagline: "Produced by Maciej"
-description: "My goal is to help you produce your original music."
+title: "Music Production"
+tagline: "Artist body of work"
+description: ""
 date: "2022-09-05T15:02:43+01:00"
-lastmod: "2024-09-25T10:30:45+02:00"
+lastmod: "2025-10-14T10:30:45+02:00"
 
 aliases: [ "/bio/music" ]
 
 ---
 
+# Music Production
+
+---
+
 {{< tableofcontents >}}
 
-## Selected production
+## Selected Productions
 
 ### To Promenade by emily jane (June 2025)
 
@@ -95,3 +99,5 @@ With Gaudiê Otero on guitar and Sara Yamit on vocals.
 &nbsp;
 
 ----
+
+**Note:** I occasionally collaborate on projects that align artistically. I'm not taking general production work. If you have something unusual in mind, [reach out](mailto:maciej.blizinski@gmail.com).

@@ -1,0 +1,14 @@
+title = "Estate"
+artist = "Bruno Martino (cover)"
+date = 2022-09-01T00:00:00
+
+description = """\
+Cover of Bruno Martino's Estate.
+"""
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["recording engineer", "mix engineer"]
+
+[links]
+youtube = "BvqKqjoZG8c"

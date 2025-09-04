@@ -1,0 +1,84 @@
+<article class="music-card" id="{{ .title | urlize }}">
+    <div class="music-header">
+        <h2>{{ .title }}</h2>
+        <div class="music-meta">
+            <span class="artist">{{ .artist }}</span>
+            {{ with .album }}
+            <span class="album">• {{ . }}</span>
+            {{ end }}
+            <span class="date">• {{ dateFormat "January 2006" .date }}</span>
+        </div>
+    </div>
+    {{ with .image }}
+    <div class="music-image">
+        <img src="{{ printf "/images/music/%s" . | relURL }}" alt="{{ $.title }}">
+    </div>
+    {{ end }}
+
+    {{ with .description }}
+    <div class="music-description">
+        <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    {{ with .credits }}
+    <div class="music-credits">
+        <strong>Credits:</strong>
+        <ul>
+            {{ range . }}
+            <li>
+                <strong>{{ .name }}</strong> - {{ delimit .roles ", " }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    {{ with .links }}
+    <div class="music-links">
+        {{ if .bandcamp_album }}
+        <div class="embed bandcamp-embed">
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ .bandcamp_album }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
+                <a href="{{ .bandcamp_url }}">Listen on Bandcamp</a>
+            </iframe>
+        </div>
+        {{ end }}
+
+        {{ if .bandcamp_track }}
+        <div class="embed bandcamp-embed">
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track={{ .bandcamp_track }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
+                <a href="{{ .bandcamp_url }}">Listen on Bandcamp</a>
+            </iframe>
+        </div>
+        {{ end }}
+
+        {{ if .youtube }}
+        <div class="embed youtube-embed">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ .youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        {{ end }}
+
+        {{ if .instagram }}
+        <div class="embed instagram-link">
+            <a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener">
+                <i class="lni lni-instagram"></i> View on Instagram
+            </a>
+        </div>
+        {{ end }}
+
+        {{ if .soundcloud }}
+        <div class="embed soundcloud-embed">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .soundcloud }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        </div>
+        {{ end }}
+
+        {{ if .streaming }}
+        <div class="embed streaming-link">
+            <a href="{{ .streaming }}" target="_blank" rel="noopener">
+                <i class="lni lni-music"></i> Listen on all streaming platforms
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</article>

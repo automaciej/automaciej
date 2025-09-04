@@ -16,6 +16,4 @@ zamknięty w 2016 i ostała się z niego [planeta][planeta] (dzięki, rozie!).
 
 Polecam wpisy: {{< joggermenu >}}
 
-----
-
 [planeta]: https://zakr.es/planetjogger/

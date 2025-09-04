@@ -1,0 +1,22 @@
+title = "Bolero de Satã"
+artist = "Guinga (performed by Gaudiê Otero and Sara Yamit)"
+date = 2024-03-01T00:00:00
+
+description = """\
+Recording of Guinga's Bolero de Satã with Gaudiê Otero on guitar and Sara Yamit on vocals.
+"""
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["recording engineer", "mix engineer"]
+
+[[credits]]
+name = "Gaudiê Otero"
+roles = ["guitar"]
+
+[[credits]]
+name = "Sara Yamit"
+roles = ["vocals"]
+
+[links]
+youtube = "4WHzSyDdsLk"

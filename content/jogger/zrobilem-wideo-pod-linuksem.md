@@ -14,6 +14,8 @@ i mastering audio też zrobiłem sam, w sensie technicznym. W sensie koncepcyjny
 montażu pomagała mi swoimi wskazówkami [sama
 artystka](http://www.youtube.com/user/wobblyfin).
 
+<!--more-->
+
 {{< youtube "9xuCkNZqmS0" >}}
 
 Celem ćwiczenia było sprawdzenie uda się to w ogóle zrobić, czy też nie: jedna

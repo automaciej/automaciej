@@ -1,0 +1,1270 @@
+/* Multi-Stream Theme - Minimal Base Styles */
+
+:root {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Light mode (default) */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f7;
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --border-color: #d2d2d7;
+    --accent: #0071e3;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #000000;
+        --bg-secondary: #1d1d1f;
+        --text-primary: #f5f5f7;
+        --text-secondary: #a1a1a6;
+        --border-color: #424245;
+        --accent: #2997ff;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+}
+
+/* Reduce header padding on narrow screens */
+@media (max-width: 767px) {
+    .site-header {
+        padding: 10px 0;
+    }
+}
+
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.site-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+/* Hamburger toggle button */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: var(--accent);
+}
+
+/* Mobile navigation */
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+/* Main content */
+main {
+    min-height: 60vh;
+    padding: 0 0 40px 0;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 40px 0;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* Links */
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 0.5rem; /* Reduced by half */
+    margin-top: 1rem;
+}
+
+/* Hero section */
+.hero {
+    padding: 60px 0 40px 0;
+}
+
+/* Reduce hero padding on narrow screens */
+@media (max-width: 767px) {
+    .hero {
+        padding: 15px 0 10px 0;
+    }
+}
+
+/* Ensure no background on wider screens */
+@media (min-width: 431px) {
+    .hero-text {
+        background: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+/* Display photo as background with text overlay on very narrow screens */
+@media (max-width: 430px) {
+    .hero {
+        position: relative;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        padding: 3rem 0;
+        background-image: url('/bio/images/maciej_on_bass_1024px.jpg');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0.4) 60%,
+            var(--bg-primary) 100%);
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .hero-text {
+        text-align: center;
+        color: #ffffff;
+        padding-top: 6rem;
+    }
+
+    .hero h1 {
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 1rem;
+    }
+
+    .hero .tagline {
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+    .hero .social {
+        background: none;
+    }
+
+    .hero-photo {
+        display: none;
+    }
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.hero-photo {
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.hero-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border-color);
+}
+
+.hero-text {
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.hero .social {
+    margin: 1rem 0 0 0;
+}
+
+.hero .social ul {
+    justify-content: flex-start;
+}
+
+/* Stream columns */
+.stream-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Increase gap on wider screens */
+@media (min-width: 768px) {
+    .stream-columns {
+        gap: 2rem;
+    }
+}
+
+/* Mobile: Stack Music on top, then Apps, then Bio */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .stream-columns {
+        grid-template-columns: 1fr;
+    }
+
+    /* Order on tablet: Music, Apps, Bio */
+    .music-stream { order: 1; }
+    .apps-stream { order: 2; }
+    .bio-stream { order: 3; }
+}
+
+/* Desktop: Three columns */
+@media (min-width: 1024px) {
+    .stream-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.stream-column h2 {
+    margin-bottom: 1.5rem;
+}
+
+.stream-column h2 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.stream-column h2 a:hover {
+    color: var(--accent);
+}
+
+/* Hide Music and Apps section headers on narrow screens to save space */
+@media (max-width: 767px) {
+    .music-stream h2,
+    .apps-stream h2 {
+        display: none;
+    }
+}
+
+.stream-content {
+    /* Removed background - individual items will have their own containers */
+}
+
+/* Music preview on homepage */
+.music-preview {
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.music-preview:last-of-type {
+    margin-bottom: 1rem;
+}
+
+/* Default: hide mobile link, show desktop link */
+.view-all-link-mobile {
+    display: none;
+}
+
+.view-all-link-desktop {
+    display: inline-block;
+}
+
+/* Horizontal layout on narrow screens */
+@media (max-width: 767px) {
+    .music-preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem;
+        align-items: flex-start;
+    }
+
+    .embed-preview {
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+
+    .music-preview-image {
+        flex-shrink: 0;
+        margin-right: 0.75rem;
+    }
+
+    .music-preview-image a {
+        display: block;
+    }
+
+    .music-preview-image img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+
+    .music-preview-image img:hover {
+        opacity: 0.85;
+    }
+
+    .music-preview-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* Hide 2nd and 3rd releases on narrow screens */
+    .music-preview-desktop-only {
+        display: none;
+    }
+
+    /* Show mobile link, hide desktop link */
+    .view-all-link-mobile {
+        display: inline-block !important;
+    }
+
+    .view-all-link-desktop {
+        display: none !important;
+    }
+}
+
+/* Tablet horizontal layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .music-preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem;
+        align-items: flex-start;
+    }
+
+    .embed-preview {
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+
+    .music-preview-image {
+        flex-shrink: 0;
+        margin-right: 0.75rem;
+    }
+
+    .music-preview-image a {
+        display: block;
+    }
+
+    .music-preview-image img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+
+    .music-preview-image img:hover {
+        opacity: 0.85;
+    }
+
+    .music-preview-content {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+/* Full width image on wide screens */
+@media (min-width: 1024px) {
+    .music-preview-image {
+        margin-bottom: 1rem;
+    }
+
+    .music-preview-image a {
+        display: block;
+    }
+
+    .music-preview-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+
+    .music-preview-image img:hover {
+        opacity: 0.85;
+    }
+}
+
+.music-preview h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.music-preview h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.music-preview h3 a:hover {
+    color: var(--accent);
+}
+
+.music-preview-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.music-preview-meta .artist {
+    font-weight: 500;
+}
+
+.embed-preview {
+    margin-top: 0;
+}
+
+.embed-preview iframe {
+    border-radius: 8px;
+}
+
+.stream-footer {
+    margin-top: 0;
+    text-align: center;
+}
+
+.view-all-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+/* Show all 3 music previews on all screen sizes */
+
+/* Post content */
+.post-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+    display: block;
+}
+
+.post-content p {
+    text-indent: 0; /* Removed text indentation */
+    margin-bottom: 0.45rem; /* Increased by 50% from 0.3rem */
+}
+
+.post-content blockquote,
+.stream-content blockquote,
+.section-intro blockquote {
+    position: relative;
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.post-content blockquote::before,
+.stream-content blockquote::before,
+.section-intro blockquote::before {
+    content: '“';
+    position: absolute;
+    top: -0.2em;
+    left: 0.1em;
+    font-size: 4em;
+    color: var(--border-color);
+    opacity: 0.6;
+    line-height: 1;
+}
+
+.post-content blockquote p,
+.stream-content blockquote p,
+.section-intro blockquote p {
+    text-indent: 0;
+    margin-bottom: 0;
+}
+
+.post-content ul,
+.post-content ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0;
+}
+
+.post-content li p {
+    text-indent: 0;
+}
+
+.post-content table,
+.stream-content table,
+.section-intro table {
+    width: 100%;
+    border-collapse: separate; /* Allows for border-spacing */
+    border-spacing: 0; /* Vertical spacing between rows */
+    margin-bottom: 1rem;
+}
+
+.post-content th,
+.post-content td,
+.stream-content th,
+.stream-content td,
+.section-intro th,
+.section-intro td {
+    padding: 0 0.25rem; /* Further reduced horizontal padding for column margin */
+    text-align: left;
+    vertical-align: top;
+}
+
+.post-content th,
+.stream-content th,
+.section-intro th {
+    background-color: var(--bg-secondary);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.post-content tr:nth-child(even),
+.stream-content tr:nth-child(even),
+.section-intro tr:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+
+@media (max-width: 767px) {
+    .post-content img {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+.post-header {
+    margin-bottom: 2rem;
+}
+
+.post-illustration {
+    max-width: 720px;
+    margin: 0 auto 2rem auto;
+    overflow: hidden;
+}
+
+.post-illustration img {
+    width: 100%;
+    max-height: 720px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.post-meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Post cards */
+.post-card {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.post-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.post-card-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow: 1;
+
+}
+
+
+
+.post-card-content .post-meta {
+
+    order: 1; /* Date appears first */
+
+    font-size: 0.8rem;
+
+    color: var(--text-secondary);
+
+    margin-bottom: 0.2rem;
+
+}
+
+
+
+.post-card-content h3 {
+
+    order: 2; /* Title appears after date */
+
+    font-size: 1.25rem;
+
+    margin: 0 0 0.5rem 0; /* No top margin */
+
+}
+
+
+
+.post-card-content .post-description {
+
+    order: 3; /* Description last */
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .post-card-content h3 {
+
+        font-weight: normal;
+
+    }
+
+}
+
+
+
+
+/* Bio stream content */
+.bio-stream .stream-content {
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.bio-stream .stream-content h2 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.bio-stream .stream-content h2:first-child {
+    margin-top: 0;
+}
+
+.bio-stream .stream-content p {
+    margin-bottom: 1rem;
+}
+
+
+.stream-content ul,
+.stream-content ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.stream-content li {
+    margin-bottom: 0;
+}
+
+.bio-stream .stream-content hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+    opacity: 0.5;
+}
+
+/* Social links */
+.social {
+    margin: 1.5rem 0;
+}
+
+.social ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.social li {
+    margin: 0;
+}
+
+.social a {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social a:hover {
+    color: var(--accent);
+}
+
+/* Music page */
+.music-page {
+    padding: 2rem 0;
+}
+
+.testflight-banner {
+    background: #28A745;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.testflight-banner a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block;
+}
+
+.testflight-banner a:hover {
+    opacity: 0.9;
+}
+
+.app-download-banner {
+    background: #28A745;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.app-download-banner a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.app-download-banner a:hover {
+    opacity: 0.9;
+}
+
+.app-download-banner .download-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.app-download-banner .download-caption {
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.music-listen-banner {
+    background: #28A745;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.music-listen-banner a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+}
+
+.music-listen-banner a:hover {
+    opacity: 0.9;
+}
+
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.section-intro {
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.section-intro p {
+    margin: 0 0 1rem 0;
+}
+
+.section-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.section-intro ul,
+.section-intro ol {
+    margin: 0 0 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.section-intro li {
+    margin-bottom: 0.5rem;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+.music-productions {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.music-column {
+    /* Single column on mobile */
+}
+
+/* Two-column masonry layout on wide screens */
+@media (min-width: 1024px) {
+    .music-productions {
+        max-width: 1200px;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .music-column {
+        flex: 1;
+    }
+}
+
+.music-card {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    break-inside: avoid;
+}
+
+.music-image {
+    margin-bottom: 1.5rem;
+}
+
+.music-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.music-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.music-meta {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.music-meta .artist {
+    font-weight: 500;
+}
+
+.music-description {
+    margin: 1rem 0;
+}
+
+.music-credits {
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.music-credits ul {
+    list-style: none;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+}
+
+.music-credits li {
+    margin: 0.25rem 0;
+    color: var(--text-secondary);
+}
+
+.music-links {
+    margin-top: 1.5rem;
+}
+
+.embed {
+    margin: 1rem 0;
+}
+
+.embed iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.instagram-link a,
+.streaming-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.instagram-link a:hover,
+.streaming-link a:hover {
+    opacity: 0.9;
+}
+
+.music-footer {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Reminders shortcode */
+.reminders-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.reminder-card {
+    flex: 1;
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.reminder-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.reminder-body {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.reminder-body p {
+    text-indent: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .reminders-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .posts-list {
+        display: block; /* Change from grid to block */
+    }
+
+    .post-card {
+        background: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0; /* Ensure no external margin */
+    }
+
+    .post-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .post-card-link {
+        padding: 0; /* Removed all padding */
+        border-bottom: 1px solid var(--border-color); /* Add separator for list items */
+    }
+
+    .post-card-link:last-child {
+        border-bottom: none; /* No separator for the last item */
+    }
+
+    .post-card-link h3 { /* Target h3 inside post-card-link */
+        margin: 0;
+    }
+
+    .post-card .post-card-content { /* Explicitly set padding for post-card-content */
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .post-card .post-meta,
+    .post-card .post-description {
+        display: none; /* Hide meta and description */
+    }
+}
+
+@media (max-width: 767px) {
+    .list-container {
+        background-color: var(--bg-secondary);
+        border-radius: 12px;
+        padding: 0;
+    }
+
+    .list-container .posts-list {
+        display: block;
+        gap: 0;
+    }
+
+    .list-container .post-card {
+        background: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .list-container .post-card:last-child {
+        border-bottom: none;
+    }
+
+    .list-container .post-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .list-container .post-card-link {
+        padding: 0.5rem 1rem;
+        display: flex; /* Use flex to control order */
+        flex-direction: column; /* Stack date above title */
+    }
+    
+    .list-container .post-card-link h3 {
+        margin: 0;
+        font-weight: normal; /* Make title text regular */
+        font-size: 1.1rem; /* Adjust if needed */
+        line-height: 1.4;
+        color: var(--text-primary); /* Ensure title color is primary */
+    }
+
+    .list-container .post-meta { /* Style the date */
+        display: block; /* Show date */
+        font-size: 0.8rem; /* Small text */
+        color: var(--text-secondary); /* Secondary color */
+        margin-bottom: 0.2rem; /* Keep close to title */
+        order: -1; /* Place above title */
+    }
+
+    .list-container .post-description { /* Ensure description remains hidden */
+        display: none;
+    }
+}
+
+/* Priority Task shortcode */
+.priority-task-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reminder-card.priority-task {
+    max-width: 300px; /* Or adjust as needed */
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
+}
+
+.post-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.post-card-content .post-meta {
+    order: 1; /* Date appears first */
+    font-size: 0.8rem; /* Small text */
+    color: var(--text-secondary); /* Secondary color */
+    margin-bottom: 0.2rem; /* Keep close to title */
+}
+
+.post-card-content h3 {
+    order: 2; /* Title appears after date */
+    font-size: 1.25rem;
+    margin-top: 0; /* Keep close to date */
+    margin-bottom: 0.5rem; /* Space below title */
+}
+
+.post-card-content .post-description {
+    order: 3; /* Description appears after title */
+    margin-top: auto; /* Push description to bottom to ensure consistent card height */
+}
+
+.post-card-content .post-description {
+    order: 3; /* Description appears after title */
+}
+
+@media (max-width: 767px) {
+    .post-card h3 {
+        font-weight: normal;
+    }
+}
+
+
