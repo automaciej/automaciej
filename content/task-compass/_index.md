@@ -4,56 +4,59 @@ tagline: "Task Compass"
 description: "Task Compass helps you with your to-do lists."
 date: "2025-09-03T08:54:00+01:00"
 lastmod: "2025-09-03T08:54:00+01:00"
+excludeFromRSS: true
 
 ---
 
-Task Compass is an iOS app that transforms the question "What should I do?" into
-a decision-making process. Moving beyond productivity frameworks, it uses
-ranking combined with psychology to detect what's blocking you.
+# Task Compass
 
-## Comparisons Over Lists
+**Most todo apps are just notepads. They don't help you figure out what
+matters.**
 
-The app is based on an insight: humans excel at comparisons but struggle with
-judgments. Instead of asking "How important is this task on a scale of 1-10?",
-Task Compass uses comparisons—"Is Task A more important than Task B?" This
-approach eliminates the "everything feels urgent" trap while building
-understanding of your priorities.
+Task Compass asks you one simple question at a time: "Which task is more
+important?" Your answers build a complete priority ranking automatically. No
+more staring at a list of 40 tasks wondering where to start.
 
-The task intake system presents comparisons using optimization to determine
-which questions need answers. Through selections, you can rank tasks while the
-app learns from your decisions to reduce ranking work.
+## How It Works
 
-## Detection, Not Assessment
+You answer questions like "Is the client proposal more important than scheduling
+the dentist?" The app figures out your complete priority order from these
+comparisons—usually after answering slightly more questions than you have tasks.
 
-When tasks sit incomplete for days, the app understands your resistance and
-suggests strategies like scheduling tasks, breaking them down, or reconsidering
-their priority.
+Then it shows you: **Your most important task is X.** Tap to start a Pomodoro
+timer.
 
-This approach is more accurate than prediction because resistance emerges from
-factors you can't anticipate: barriers, steps, dependencies, or factors not
-fully accessible to your consciousness.
+## Why Comparisons Work
 
-## Apple Integration
+Humans are terrible at rating things on a scale of 1-10. Is this task a 7 or an
+8? Everything feels urgent.
 
-Task Compass integrates with Apple Reminders—no data migration required. Your
-reminders sync while preserving context like notes, due dates, and calendar
-assignments. The app works with your workflow, letting you move between
-prioritization and getting things done.
+But we're excellent at choosing between two options. "Which matters more?" is
+easy to answer. Task Compass uses your choices to infer what you actually care
+about.
 
-Rankings sync across your devices through CloudKit, ensuring your priority
-decisions are current whether you're planning on your iPhone or executing on
-your iPad.
+## Resistance Detection
 
-## Workflow
+Some tasks sit incomplete for days while you check off everything around them.
+Task Compass notices this pattern and flags resistant tasks—then suggests
+scheduling them, breaking them down, or reconsidering whether they matter at
+all.
 
-The app works with how people organize their lives, supporting priority contexts
-for projects or life areas while managing rankings and task organization.
+This works because resistance emerges from real barriers: missing information,
+dependencies, or subconscious blocks you can't predict in advance.
 
-Tasks are organized as you provide input, with the system detecting resistance
-patterns in the background. Tasks start in "Do Now" and move to "Schedule" when
-the app detects resistance, while tasks remain in "Consider" unless patterns
-suggest they need attention.
+## Works With Apple Reminders
 
-Task Compass replaces overwhelm with clarity using detection, helping you
-understand what matters and take care of it—while recognizing what's holding you
-back.
+Your existing reminders sync automatically. No data migration, no new account,
+no passwords. Everything stays in Apple Reminders—notes, due dates, calendar
+events—while Task Compass adds intelligent prioritization on top.
+
+Rankings sync across devices. Plan on your iPhone, execute on your iPad.
+
+<!--
+## Coming Soon
+
+Task Compass launches [DATE]. Sign up below for early access.
+
+[Email signup form]
+-->
