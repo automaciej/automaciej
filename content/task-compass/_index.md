@@ -1,62 +1,43 @@
 ---
 title: "Task Compass"
-tagline: "Task Compass"
 description: "Task Compass helps you with your to-do lists."
 date: "2025-09-03T08:54:00+01:00"
-lastmod: "2025-09-03T08:54:00+01:00"
+lastmod: "2025-10-03T10:17:00+01:00"
 excludeFromRSS: true
 
 ---
 
-# Task Compass
+## "I made all my todo lists. It's not helping."
 
-**Most todo apps are just notepads. They don't help you figure out what
-matters.**
+You know what needs doing. You've written it down. But now you stare at the list
+with no idea where to start. Everything feels equally important. I built Task
+Compass because I had this exact problem.
 
-Task Compass asks you one simple question at a time: "Which task is more
-important?" Your answers build a complete priority ranking automatically. No
-more staring at a list of 40 tasks wondering where to start.
+## "Which task is more important?"
 
-## How It Works
+Task Compass asks you simple questions: "Is responding to your landlord more
+important than finishing the project draft?"
 
-You answer questions like "Is the client proposal more important than scheduling
-the dentist?" The app figures out your complete priority order from these
-comparisons—usually after answering slightly more questions than you have tasks.
+Your answers gradually build a complete ranking. The app then tells you which
+task matters most right now and lets you start a Pomodoro timer to focus.
 
-Then it shows you: **Your most important task is X.** Tap to start a Pomodoro
-timer.
+## Why comparisons work
 
-## Why Comparisons Work
+Absolute ratings don't work. "How important is this from 1-10?" sounds
+reasonable until tomorrow when something urgent appears and your entire scale
+shifts.
 
-Humans are terrible at rating things on a scale of 1-10. Is this task a 7 or an
-8? Everything feels urgent.
+But "which is more important right now?" - that's easy to answer. The app learns
+from your choices to figure out what actually matters.
 
-But we're excellent at choosing between two options. "Which matters more?" is
-easy to answer. Task Compass uses your choices to infer what you actually care
-about.
+## What if you avoid a task?
 
-## Resistance Detection
-
-Some tasks sit incomplete for days while you check off everything around them.
-Task Compass notices this pattern and flags resistant tasks—then suggests
-scheduling them, breaking them down, or reconsidering whether they matter at
-all.
-
-This works because resistance emerges from real barriers: missing information,
-dependencies, or subconscious blocks you can't predict in advance.
+Some tasks sit there for days while you check off everything around them. The
+app notices this pattern and suggests setting a specific time to tackle them.
+It's not about how hard the task is - it's the psychological resistance to
+starting it.
 
 ## Works With Apple Reminders
 
-Your existing reminders sync automatically. No data migration, no new account,
-no passwords. Everything stays in Apple Reminders—notes, due dates, calendar
-events—while Task Compass adds intelligent prioritization on top.
-
-Rankings sync across devices. Plan on your iPhone, execute on your iPad.
-
-<!--
-## Coming Soon
-
-Task Compass launches [DATE]. Sign up below for early access.
-
-[Email signup form]
--->
+Your tasks sync automatically. Task Compass adds the intelligence on top of what
+you already have.
