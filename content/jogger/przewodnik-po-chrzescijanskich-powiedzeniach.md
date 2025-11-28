@@ -12,6 +12,8 @@ aliases = [ "/2008/11/przewodnik-po-chrzescijanskich-powiedzeniach/",]
 **Odpowiedź akceptowalna**: „Ślubuję czystość! Daj mi pierścień!”  
 **Odpowiedź nieakceptowalna**: „I jak ci się to sprawdza?” albo „W którym miejscu dokładnie Biblia to mówi?”
 
+<!--more-->
+
 ### „Żeby pójść do nieba, wystarczy że zaprosisz Jezusa do swojego serca”
 
 **Tłumaczenie**: „Będziesz smażyć się w piekle jeżeli nie odmówisz tej modlitwy, chłoptasiu.”  

@@ -54,13 +54,6 @@ body {
     z-index: 100;
 }
 
-/* Reduce header padding on narrow screens */
-@media (max-width: 767px) {
-    .site-header {
-        padding: 10px 0;
-    }
-}
-
 .site-nav {
     display: flex;
     justify-content: space-between;
@@ -109,54 +102,6 @@ body {
     color: var(--accent);
 }
 
-/* Mobile navigation */
-@media (max-width: 767px) {
-    .nav-toggle {
-        display: flex;
-    }
-
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 1rem;
-        margin-top: 0.5rem;
-        flex-direction: column;
-        gap: 1rem;
-        min-width: 200px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu li {
-        margin: 0;
-    }
-
-    .nav-menu a {
-        display: block;
-        padding: 0.5rem;
-    }
-
-    .nav-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .nav-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .nav-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-    }
-}
-
 /* Main content */
 main {
     min-height: 60vh;
@@ -193,24 +138,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 60px 0 40px 0;
 }
 
-/* Reduce hero padding on narrow screens */
-@media (max-width: 767px) {
-    .hero {
-        padding: 15px 0 10px 0;
-    }
-}
-
-/* Ensure no background on wider screens */
-@media (min-width: 431px) {
+/* Display photo as background with text overlay on very narrow screens */
+@media (max-width: 430px) {
     .hero-text {
+	/* Ensure no background on wider screens */
         background: none;
         padding-top: 0;
         padding-bottom: 0;
     }
-}
-
-/* Display photo as background with text overlay on very narrow screens */
-@media (max-width: 430px) {
     .hero {
         position: relative;
         margin-left: calc(-50vw + 50%);
@@ -364,14 +299,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent);
 }
 
-/* Hide Music and Apps section headers on narrow screens to save space */
-@media (max-width: 767px) {
-    .music-stream h2,
-    .apps-stream h2 {
-        display: none;
-    }
-}
-
 .stream-content {
     /* Removed background - individual items will have their own containers */
 }
@@ -395,62 +322,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .view-all-link-desktop {
     display: inline-block;
-}
-
-/* Horizontal layout on narrow screens */
-@media (max-width: 767px) {
-    .music-preview {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-        align-items: flex-start;
-    }
-
-    .embed-preview {
-        flex-basis: 100%;
-        margin-top: 0;
-    }
-
-    .music-preview-image {
-        flex-shrink: 0;
-        margin-right: 0.75rem;
-    }
-
-    .music-preview-image a {
-        display: block;
-    }
-
-    .music-preview-image img {
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: opacity 0.2s;
-    }
-
-    .music-preview-image img:hover {
-        opacity: 0.85;
-    }
-
-    .music-preview-content {
-        flex: 1;
-        min-width: 0;
-    }
-
-    /* Hide 2nd and 3rd releases on narrow screens */
-    .music-preview-desktop-only {
-        display: none;
-    }
-
-    /* Show mobile link, hide desktop link */
-    .view-all-link-mobile {
-        display: inline-block !important;
-    }
-
-    .view-all-link-desktop {
-        display: none !important;
-    }
 }
 
 /* Tablet horizontal layout */
@@ -574,12 +445,19 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-.post-content img {
+/* Ensure all embedded media within post content are responsive */
+.post-content img,
+.post-content video,
+.post-content iframe {
     max-width: 100%;
     height: auto;
+    display: block;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.post-content img {
     border-radius: 12px;
     margin: 2rem 0;
-    display: block;
 }
 
 .post-content p {
@@ -589,7 +467,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-content blockquote,
 .stream-content blockquote,
-.section-intro blockquote {
+.section-intro blockquote,
+.post-summary blockquote {
     position: relative;
     background-color: var(--bg-secondary);
     border-radius: 8px;
@@ -600,7 +479,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-content blockquote::before,
 .stream-content blockquote::before,
-.section-intro blockquote::before {
+.section-intro blockquote::before,
+.post-summary blockquote::before {
     content: '“';
     position: absolute;
     top: -0.2em;
@@ -613,7 +493,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-content blockquote p,
 .stream-content blockquote p,
-.section-intro blockquote p {
+.section-intro blockquote p,
+.post-summary blockquote p {
     text-indent: 0;
     margin-bottom: 0;
 }
@@ -666,13 +547,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--bg-secondary);
 }
 
-@media (max-width: 767px) {
-    .post-content img {
-        width: 100%;
-        margin: 1rem 0;
-    }
-}
-
 .post-header {
     margin-bottom: 2rem;
 }
@@ -685,10 +559,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-illustration img {
     width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
     max-height: 720px;
     object-fit: cover;
     border-radius: 12px;
     display: block;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .post-meta {
@@ -707,6 +583,14 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--bg-secondary);
     border-radius: 12px;
     transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 1rem;
+    overflow: hidden; /* To contain child elements with border-radius */
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
 }
 
 .post-card:hover {
@@ -714,75 +598,51 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
-.post-card-link {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 1.25rem;
-    text-decoration: none;
-    color: inherit;
+.post-card-image {
+    flex-shrink: 0;
+    width: 200px; /* Adjust as needed */
+    border-radius: 8px;
+    overflow: hidden;
 }
 
+.post-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
+.jogger-posts-list .post-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.jogger-posts-list .read-more {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-weight: 500;
+    color: var(--accent);
+}
 
 .post-card-content {
-
     display: flex;
-
     flex-direction: column;
-
     flex-grow: 1;
-
 }
-
-
 
 .post-card-content .post-meta {
-
-    order: 1; /* Date appears first */
-
     font-size: 0.8rem;
-
     color: var(--text-secondary);
-
     margin-bottom: 0.2rem;
-
 }
-
-
 
 .post-card-content h3 {
-
-    order: 2; /* Title appears after date */
-
     font-size: 1.25rem;
-
     margin: 0 0 0.5rem 0; /* No top margin */
-
 }
-
-
 
 .post-card-content .post-description {
-
-    order: 3; /* Description last */
-
 }
-
-
-
-@media (max-width: 767px) {
-
-    .post-card-content h3 {
-
-        font-weight: normal;
-
-    }
-
-}
-
-
-
 
 /* Bio stream content */
 .bio-stream .stream-content {
@@ -807,7 +667,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .stream-content ul,
-.stream-content ol {
+.stream-content ol,
+main ul,
+main ol
+{
     margin: 0;
     padding-left: 1.5rem;
 }
@@ -1115,109 +978,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
-@media (max-width: 767px) {
-    .reminders-container {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 767px) {
-    .posts-list {
-        display: block; /* Change from grid to block */
-    }
-
-    .post-card {
-        background: none;
-        border-radius: 0;
-        padding: 0;
-        margin: 0; /* Ensure no external margin */
-    }
-
-    .post-card:hover {
-        transform: none;
-        box-shadow: none;
-    }
-
-    .post-card-link {
-        padding: 0; /* Removed all padding */
-        border-bottom: 1px solid var(--border-color); /* Add separator for list items */
-    }
-
-    .post-card-link:last-child {
-        border-bottom: none; /* No separator for the last item */
-    }
-
-    .post-card-link h3 { /* Target h3 inside post-card-link */
-        margin: 0;
-    }
-
-    .post-card .post-card-content { /* Explicitly set padding for post-card-content */
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .post-card .post-meta,
-    .post-card .post-description {
-        display: none; /* Hide meta and description */
-    }
-}
-
-@media (max-width: 767px) {
-    .list-container {
-        background-color: var(--bg-secondary);
-        border-radius: 12px;
-        padding: 0;
-    }
-
-    .list-container .posts-list {
-        display: block;
-        gap: 0;
-    }
-
-    .list-container .post-card {
-        background: none;
-        border-radius: 0;
-        padding: 0;
-        margin: 0;
-        border-bottom: 1px solid var(--border-color);
-    }
-    
-    .list-container .post-card:last-child {
-        border-bottom: none;
-    }
-
-    .list-container .post-card:hover {
-        transform: none;
-        box-shadow: none;
-    }
-
-    .list-container .post-card-link {
-        padding: 0.5rem 1rem;
-        display: flex; /* Use flex to control order */
-        flex-direction: column; /* Stack date above title */
-    }
-    
-    .list-container .post-card-link h3 {
-        margin: 0;
-        font-weight: normal; /* Make title text regular */
-        font-size: 1.1rem; /* Adjust if needed */
-        line-height: 1.4;
-        color: var(--text-primary); /* Ensure title color is primary */
-    }
-
-    .list-container .post-meta { /* Style the date */
-        display: block; /* Show date */
-        font-size: 0.8rem; /* Small text */
-        color: var(--text-secondary); /* Secondary color */
-        margin-bottom: 0.2rem; /* Keep close to title */
-        order: -1; /* Place above title */
-    }
-
-    .list-container .post-description { /* Ensure description remains hidden */
-        display: none;
-    }
-}
-
 /* Priority Task shortcode */
 .priority-task-container {
     margin: 2rem 0;
@@ -1239,32 +999,190 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-card-content .post-meta {
-    order: 1; /* Date appears first */
     font-size: 0.8rem; /* Small text */
     color: var(--text-secondary); /* Secondary color */
     margin-bottom: 0.2rem; /* Keep close to title */
 }
 
 .post-card-content h3 {
-    order: 2; /* Title appears after date */
     font-size: 1.25rem;
     margin-top: 0; /* Keep close to date */
     margin-bottom: 0.5rem; /* Space below title */
 }
 
 .post-card-content .post-description {
-    order: 3; /* Description appears after title */
     margin-top: auto; /* Push description to bottom to ensure consistent card height */
 }
 
-.post-card-content .post-description {
-    order: 3; /* Description appears after title */
-}
 
-@media (max-width: 767px) {
-    .post-card h3 {
-        font-weight: normal;
+/*
+   ==============================================
+   Mobile Styles (up to 768px)
+   ==============================================
+*/
+@media (max-width: 768px) {
+    /*
+       ----------------------------------------------
+       General Mobile Styles
+       ----------------------------------------------
+    */
+    /* Header */
+    .site-header {
+        padding: 10px 0;
+    }
+
+    /* Mobile navigation */
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-menu li {
+        margin: 0;
+    }
+    .nav-menu a {
+        display: block;
+        padding: 0.5rem;
+    }
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 15px 0 10px 0;
+    }
+
+    /* Stream columns */
+    .music-stream h2,
+    .apps-stream h2 {
+        display: none;
+    }
+
+    /* Music preview on homepage */
+    .music-preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.1rem;
+        align-items: flex-start;
+    }
+    .embed-preview {
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+    .music-preview-image {
+        flex-shrink: 0;
+        margin-right: 0.75rem;
+    }
+    .music-preview-image a {
+        display: block;
+    }
+    .music-preview-image img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+    .music-preview-image img:hover {
+        opacity: 0.85;
+    }
+    .music-preview-content {
+        flex: 1;
+        min-width: 0;
+    }
+    .music-preview-desktop-only {
+        display: none;
+    }
+    .view-all-link-mobile {
+        display: inline-block !important;
+    }
+    .view-all-link-desktop {
+        display: none !important;
+    }
+
+    /* Post content */
+    .post-content img {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Reminders shortcode */
+    .reminders-container {
+        flex-direction: column;
+    }
+
+    .posts-list {
+	gap: 0.25rem;
+    }
+
+    .post-card {
+	background: none;
+	margin-bottom: 0; /* no margins on narrow screens */
+	padding: 0;
+    }
+
+    .post-card .post-meta {
+	margin-bottom: 0;
+    }
+
+    .post-card-content .post-description {
+	/* Don't display the description on narrow screens. */
+        display: none;
+    }
+
+    /*
+       ----------------------------------------------
+       Jogger Mobile Styles
+       ----------------------------------------------
+    */
+    .jogger-posts-list .post-card-image {
+        width: 100%;
+        max-height: 200px; /* Adjust as needed */
+    }
+
+    .jogger-posts-list img {
+    }
+
+    .jogger-posts-list .post-card {
+        flex-direction: column;
+        padding: 1.25rem; /* Restore padding for jogger cards */
+        background: var(--bg-secondary); /* Restore background for jogger cards */
+        border-radius: 12px; /* Restore border-radius for jogger cards */
+        margin-bottom: 1rem; /* Restore margin for jogger cards */
+        border-bottom: none; /* Remove the generic border */
+    }
+
+    .jogger-posts-list .post-card:hover {
+        transform: translateY(-5px); /* Restore hover effect */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .jogger-posts-list .post-card .post-meta,
+    .jogger-posts-list .post-card .post-description {
+        display: block; /* Restore meta and description for jogger cards */
     }
 }
-
-

@@ -14,7 +14,10 @@ title: Stojąc w ścisku
 W komunikacji miejskiej denerwuje nas, kiedy stoimy w ścisku, bo ktoś blokuje
 dojście do luźnej części pojazdu.
 
+<!--more-->
+
 {{< figure src="tlok-w-autobusie.jpg"
+width="400px"
 alt="Plan autobusu widzianego z góry. Połowa autobusu jest pełna ludzi, druga połowa pusta. W przejściu jest jedna osoba która blokuje przejście. Strzałka która pokazuje na tę osobę jest opisana: Ty."
 >}}
 

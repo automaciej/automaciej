@@ -12,7 +12,7 @@ materials, and includes a blog with posts dating back to 2003.
 ## Key Technologies
 
 - **Hugo**: v0.147.2 (extended version) - Static site generator
-- **Theme**: hugo-split-theme - Custom split-screen layout
+- **Theme**: multi-stream - Custom split-screen layout
 - **Content**: Markdown files with TOML front matter
 - **Deployment**: Shell script-based rsync deployment
 

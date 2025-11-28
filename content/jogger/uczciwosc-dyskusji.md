@@ -9,13 +9,15 @@ title: Uczciwość dyskusji
 
 ---
 
-Pod moim [niedawnym wpisem](/2009/01/kto-wygral-dyskusje/)
+Pod moim [niedawnym wpisem]({{% relref kto-wygral-dyskusje.md %}})
 o wygrywaniu dyskusji, Hoppke napisał komentarz, w którym...  zresztą, po prostu
 go przytoczę w całości:
 
 > I IMO nie ma „nieuczciwej” dyskusji. Najwyżej dochodzi do takiej rozbieżności
 > użytych środków/oczekiwań, że dyskusja się kończy. I nawet wtedy wiadomo, kto
 > wygrał.  
+
+<!--more-->
 
 Ocena wygranej zależy oczywiście od subiektywnych kryteriów, ale większość
 ludzi ma je dość zbieżne. Punkty zdobywa się np. za: sprowokowanie przeciwnika

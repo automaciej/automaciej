@@ -1,7 +1,7 @@
 +++
 date = "2007-11-17T22:27:29"
 draft = false
-title = "Komentarze &lt;blink&gt;nie&lt;/blink&gt; na temat"
+title = "Komentarze <blink>nie</blink> na temat"
 aliases = [ "/2007/11/komentarze-nie-na-temat/",]
 
 +++

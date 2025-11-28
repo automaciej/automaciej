@@ -11,7 +11,7 @@
         </header>
 
         {{ if .Pages }}
-        <div class="posts-list">
+        <div class="jogger-posts-list">
             {{ range .Pages.GroupByDate "2006" "desc" }}
             <div class="year-group">
                 <h2 class="year-title">{{ .Key }}</h2>
@@ -30,7 +30,8 @@
                 {{ else }}
                     {{ $imageResource := $post.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
                     {{ if $imageResource }}
-                        {{ $imageURL = $imageResource.RelPermalink }}
+			{{ $thumbnail := $imageResource.Resize "400x" }}
+                        {{ $imageURL = $thumbnail.RelPermalink }}
                     {{ end }}
                 {{ end }}
                 <article class="post-card">
