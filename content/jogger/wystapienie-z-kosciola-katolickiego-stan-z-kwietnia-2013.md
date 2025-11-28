@@ -16,9 +16,9 @@ człowiek: Kościele, zapisz sobie, że z ciebie wystąpiłem.
 kościół: Niczego sobie nie zapiszę.  
 człowiek: Ale ja proszę! Żądam!  
 kościół: Możesz nam skoczyć, człowieku.  
+<!--more-->
 człowiek: GIODO, proszę kazać kościołowi mnie wypisać!  
-GIODO: Tia... jest zapis ["i 3"](/2012/05/22/i-3/)
-a pan jesteś członek.  
+GIODO: Tia... jest zapis "i 3" a pan jesteś członek.  
 człowiek: Ale ja nie jestem żaden członek!  
 GIODO: Kościele, jest członek czy nie jest członek?  
 kościół: Ależ oczywiście że jest członek.  
