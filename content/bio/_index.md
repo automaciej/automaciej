@@ -30,9 +30,8 @@ allows him to mix with a blend of classical techniques and modern digital tools.
 
 A proud moment in his career was co-writing for his band Funksters in Poland,
 whose members have since gone on to successful careers. These days, Maciej is
-most proud of his work with pianist [Gediminas Karkauskas][ged] and drummer
-[Riccardo Marenghi][ric], particularly their recent performance at Scott’s Jazz
-Club in Belfast.
+most proud of his work with singer [Gaia Marenghi][gaia] and drummer
+[Riccardo Marenghi][ric].
 
 Looking ahead, Maciej is focused on original music creation, whether for himself
 or in collaboration with others. His dream is to write and release songs,
@@ -43,6 +42,6 @@ heart.
 
 [jam]: https://facebook.com/dublinjazzjam
 [marek]: https://en.wikipedia.org/wiki/Marek_Blizi%C5%84ski
-[ged]: https://www.offpitchrecords.com/
 [ric]: https://www.instagram.com/riccardo_marenghi/
 [mus]: {{< relref "music/_index.md" >}} "Music production showcase"
+[gaia]: https://www.instagram.com/gaiamarenghi/ "Gaia Marenghi on Instagram"
