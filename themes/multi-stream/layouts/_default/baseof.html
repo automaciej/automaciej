@@ -1,30 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-    {{- if .IsHome -}}
-        {{ .Site.Title }}
-    {{- else if .IsPage -}}
-        {{ .Title }} - {{ if .CurrentSection.IsHome }}{{ .Site.Title }}{{ else }}{{ .CurrentSection.Title }}{{ end }}
-    {{- else -}}
-        {{/* This covers sections, taxonomies, etc. */}}
-        {{ .Title }} - {{ .Site.Title }}
-    {{- end -}}
-</title>
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-
-    {{ if .Site.Params.favicon }}
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
-    {{ end }}
-
-    <link rel="stylesheet" href="{{ "css/lineicons.css" | relURL }}">
-
-    {{ $styles := resources.Get "css/main.css" }}
-    {{ if $styles }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-    {{ end }}
+  {{ partial "head.html" . }}
 </head>
 <body>
     {{ partial "header.html" . }}
