@@ -32,7 +32,7 @@ Combines stack ranking with Eisenhower matrix. Gets you unstuck when you have to
 
 Built because standard productivity apps assume everyone's brain works the same way. Mine doesn't.
 
-[Learn more about Task Compass](/task-compass/)
+[Learn more about Task Compass](https://task-compass.app/)
 
 ---
 

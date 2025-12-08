@@ -101,7 +101,11 @@
                         {{ range .Site.Data.apps }}
                         <article class="app-preview">
                             <div class="app-header">
+                              {{ if .subsection }}
                                 <h3><a href="/{{ .subsection }}/">{{ .name }}&nbsp;»</a></h3>
+                              {{ else if .app_site }}
+                                <h3><a href="{{ .app_site }}">{{ .name }}&nbsp;»</a></h3>
+                              {{ end }}
                                 <p class="app-type">
                                     {{ .type }}
                                     {{ with .platforms }}
@@ -123,8 +127,8 @@
                         </article>
                         {{ end }}
 
-                        {{ $appPosts := where .Site.RegularPages "Section" "in" (slice "task-compass" "time-feel") }}
-                        {{ $appPosts = where $appPosts "Type" "in" (slice "task-compass" "time-feel") }}
+                        {{ $appPosts := where .Site.RegularPages "Section" "in" (slice "time-feel") }}
+                        {{ $appPosts = where $appPosts "Type" "in" (slice "time-feel") }}
                         {{ $appPosts = where $appPosts "Params.excludeFromRSS" "!=" true }}
                         {{ range first 3 (sort $appPosts "Date" "desc") }}
                         <article class="app-post-preview">
