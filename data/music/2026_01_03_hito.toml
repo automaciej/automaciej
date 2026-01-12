@@ -1,0 +1,34 @@
+title = "Hope Is The One"
+artist = "Zoe Hayter"
+date = 2026-01-03T00:00:00
+
+description = """\
+Single production for Zoe Hayter.
+"""
+
+image = "zoe-hito.jpg"
+
+[[credits]]
+name = "Zoe Hayter"
+roles = ["guitar", "vocals", "composer"]
+
+[[credits]]
+name = "Rafał Szydłowski"
+roles = ["violin"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["piano", "electric bass", "producer", "mixing engineer"]
+
+[[credits]]
+name = "Riccardo Marenghi"
+roles = ["drums"]
+
+[[credits]]
+name = "Liam Larkin"
+roles = ["mastering engineer"]
+
+[links]
+bandcamp_track = "582427917"
+bandcamp_url = "https://zoehayter.bandcamp.com/track/hope-is-the-one"
+streaming = "https://distrokid.com/hyperfollow/zoehayter/hope-is-the-one"
