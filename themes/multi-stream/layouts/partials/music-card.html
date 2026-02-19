@@ -3,8 +3,10 @@
         <h2>{{ .title }}</h2>
         <div class="music-meta">
             <span class="artist">{{ .artist }}</span>
-            {{ with .album }}
-            <span class="album">• {{ . }}</span>
+            {{ if .single }}
+            <span class="release-type">• Single</span>
+            {{ else if .album }}
+            <span class="album">• {{ .album }}</span>
             {{ end }}
             <span class="date">• {{ dateFormat "January 2006" .date }}</span>
         </div>
@@ -76,6 +78,22 @@
         <div class="embed streaming-link">
             <a href="{{ .streaming }}" target="_blank" rel="noopener">
                 <i class="lni lni-music"></i> Listen on all streaming platforms
+            </a>
+        </div>
+        {{ end }}
+
+        {{ if .spotify }}
+        <div class="embed streaming-link">
+            <a href="{{ .spotify }}" target="_blank" rel="noopener">
+                <i class="lni lni-spotify"></i> Listen on Spotify
+            </a>
+        </div>
+        {{ end }}
+
+        {{ if .apple_music }}
+        <div class="embed streaming-link">
+            <a href="{{ .apple_music }}" target="_blank" rel="noopener">
+                <i class="lni lni-apple-music"></i> Listen on Apple Music
             </a>
         </div>
         {{ end }}

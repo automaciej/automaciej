@@ -1,9 +1,11 @@
 title = "Hope Is The One"
 artist = "Zoe Hayter"
+single = true
 date = 2026-01-03T00:00:00
 
 description = """\
-Single production for Zoe Hayter.
+Single production with Zoe Hayter. The song's title comes from an Czech saying
+that hope dies last.
 """
 
 image = "zoe-hito.jpg"
@@ -14,7 +16,7 @@ roles = ["guitar", "vocals", "composer"]
 
 [[credits]]
 name = "Rafał Szydłowski"
-roles = ["violin"]
+roles = ["electric violin"]
 
 [[credits]]
 name = "Maciej Bliziński"
