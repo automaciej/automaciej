@@ -1,14 +1,35 @@
 title = "Run For Me"
 artist = "emily jane"
 date = 2025-05-15T00:00:00
+single = true
 
 description = """\
 Single production for emily jane.
 """
 
 [[credits]]
+name = "Emily Jane Cooke"
+roles = ["vocals", "songwriter", "producer"]
+
+[[credits]]
+name = "Kaelan Zipoli"
+roles = ["piano"]
+
+[[credits]]
+name = "Aidan Liam Gray"
+roles = ["electric bass", "double bass"]
+
+[[credits]]
+name = "Darragh Groome"
+roles = ["drums"]
+
+[[credits]]
 name = "Maciej Bliziński"
-roles = ["producer", "recording engineer", "mix engineer"]
+roles = ["co-producer", "recording engineer", "mixing engineer"]
+
+[[credits]]
+name = "Seán Mac Erlaine"
+roles = ["mastering engineer"]
 
 [links]
 bandcamp_track = "2667761784"

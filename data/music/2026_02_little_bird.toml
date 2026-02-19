@@ -1,0 +1,28 @@
+title = "Little Bird, Frost Is All Over, Cormac Murphy's Jig"
+artist = "John Mahon"
+album = "John Mahon & Friends"
+single = true
+date = 2026-01-31T00:00:00
+
+description = """\
+An acoustic recording with John Mahon and Cormac Murphy.
+"""
+
+image = "little-bird.jpg"
+
+[[credits]]
+name = "John Mahon"
+roles = ["guitar", "vocals"]
+
+[[credits]]
+name = "Cormac Murphy"
+roles = ["concertina"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["producer", "recording engineer", "mixing engineer"]
+
+[links]
+# bandcamp_track = ""
+# bandcamp_url = ""
+streaming = "https://distrokid.com/hyperfollow/johnmahon/little-bird-frost-is-all-over-cormac-murphys-jig"
