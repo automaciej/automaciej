@@ -833,20 +833,18 @@ main ol
     margin: 0 auto;
 }
 
-.music-column {
-    /* Single column on mobile */
-}
-
-/* Two-column masonry layout on wide screens */
+/* Two-column grid on wide screens */
 @media (min-width: 1024px) {
     .music-productions {
         max-width: 1200px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        align-items: start;
     }
 
-    .music-column {
-        flex: 1;
+    .music-productions .music-card {
+        margin-bottom: 0;
     }
 }
 

@@ -10,22 +10,9 @@
 
         <div class="music-productions">
             {{ $musicProductions := sort .Site.Data.music "date" "desc" }}
-
-            <div class="music-column">
-            {{ range $index, $production := $musicProductions }}
-            {{ if eq (mod $index 2) 0 }}
-            {{ partial "music-card.html" $production }}
+            {{ range $musicProductions }}
+            {{ partial "music-card.html" . }}
             {{ end }}
-            {{ end }}
-            </div>
-
-            <div class="music-column">
-            {{ range $index, $production := $musicProductions }}
-            {{ if eq (mod $index 2) 1 }}
-            {{ partial "music-card.html" $production }}
-            {{ end }}
-            {{ end }}
-            </div>
         </div>
 
         <footer class="music-footer">
