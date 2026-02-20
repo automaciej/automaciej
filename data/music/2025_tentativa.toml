@@ -2,6 +2,7 @@ title = "Tentativa"
 artist = "Luisa Annibali, Julio Batista & William Alexandre"
 date = 2025-12-12T00:00:00
 project = "tentativa"
+image = "tentativa.jpg"
 
 description = """\
 Debut studio album by the Brasilidades ensemble, featuring Choro, Samba, \
@@ -25,4 +26,5 @@ name = "Maciej Bliziński"
 roles = ["recording engineer", "mixing engineer", "mastering engineer"]
 
 [links]
+bandcamp_album = "898668530"
 bandcamp_url = "https://luisaannibali.bandcamp.com/album/tentativa"

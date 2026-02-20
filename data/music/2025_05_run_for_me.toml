@@ -3,6 +3,7 @@ artist = "emily jane"
 date = 2025-05-15T00:00:00
 single = true
 project = "emily_jane_cooke"
+image = "runforme.jpg"
 
 description = """\
 Single production for emily jane.
