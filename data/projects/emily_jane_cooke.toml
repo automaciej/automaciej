@@ -1,0 +1,16 @@
+name = "Emily-Jane Cooke"
+country = "Republic of Ireland"
+roles = [
+	"co-producer",
+	"recording engineer",
+	"mixing engineer",
+]
+start_year = 2025
+end_year = 2025
+description = """\
+Co-production and recording of Emily Jane Cooke's debut EP "To Promenade," \
+released on Bandcamp, Spotify, and Apple Music.\
+"""
+with = [
+	"Emily Jane Cooke",
+]

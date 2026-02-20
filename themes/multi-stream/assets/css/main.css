@@ -1184,3 +1184,518 @@ main ol
         display: block; /* Restore meta and description for jogger cards */
     }
 }
+
+/* ================================================
+   Projects feature
+   ================================================ */
+
+/* Projects strip on /music/ page */
+.music-projects-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.music-section-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.music-section-label a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.music-section-label a:hover {
+    color: var(--accent);
+}
+
+.music-projects-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.project-chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.project-chip:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.project-chip:hover .project-chip-years {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.project-chip-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.project-chip-more {
+    background: transparent;
+    border-color: transparent;
+    color: var(--accent);
+}
+
+.project-chip-more:hover {
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.project-chip-more:hover .project-chip-years {
+    color: var(--accent);
+}
+
+.project-chip-years {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Active / Past section headings on projects list */
+.projects-section-label {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    margin: 2rem 0 1rem;
+}
+
+.projects-section-label:first-of-type {
+    margin-top: 0;
+}
+
+/* Project cards grid on /music/projects/ */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.project-card-header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.project-years {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin: 0;
+}
+
+.project-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 0.25rem;
+}
+
+.project-stats span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+.project-people {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* "More from this project" link on music cards and previews */
+.music-project-link {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.music-project-link a {
+    font-size: 0.875rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.music-project-link a:hover {
+    text-decoration: underline;
+}
+
+/* Individual project page */
+.music-project-page {
+    padding: 2rem 0;
+}
+
+.music-project-page .section-header dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.3rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.music-project-page .section-header dt {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.music-project-page .section-header dd {
+    margin: 0;
+}
+
+.music-project-page section {
+    margin-top: 2.5rem;
+}
+
+.music-project-page section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.music-project-page section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.music-project-page section ul li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}
+
+.music-project-page section ul li:last-child {
+    border-bottom: none;
+}
+
+/* ============================================================
+   Simple performances table (/music/performances/)
+   ============================================================ */
+
+.performances-simple-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.performances-simple-table td {
+    padding: 0.3em 0.8em 0.3em 0;
+    vertical-align: top;
+    border-bottom: 1px solid var(--muted-border-color, #e0e0e0);
+    font-size: 0.95rem;
+}
+
+.performances-simple-table td.perf-date {
+    white-space: nowrap;
+    color: var(--secondary);
+    width: 10em;
+}
+
+.performances-simple-table td.perf-name {
+    font-weight: 500;
+}
+
+.performances-simple-table td.perf-venue {
+    color: var(--secondary);
+}
+
+/* ============================================================
+   Music Activity Report (/music/report/)
+   ============================================================ */
+
+.music-report {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.report-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid currentColor;
+}
+
+.report-header h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.report-meta {
+    border-collapse: collapse;
+    margin-bottom: 1.2rem;
+}
+
+.report-meta td {
+    padding: 0.15em 1.5em 0.15em 0;
+    vertical-align: top;
+    font-size: 0.95rem;
+}
+
+.report-meta td:first-child {
+    color: var(--secondary);
+    white-space: nowrap;
+}
+
+.report-intro {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.report-print-link {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.report-section {
+    margin-bottom: 3rem;
+}
+
+.report-section h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.report-count {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+/* Summary tables */
+.report-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.report-summary-table th {
+    text-align: left;
+    padding: 0.4em 0.5em;
+    border-bottom: 1px solid currentColor;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.report-summary-table td {
+    padding: 0.35em 0.5em;
+    border-bottom: 1px solid var(--muted-border-color, #ddd);
+}
+
+.report-summary-table td:nth-child(3),
+.report-summary-table td:nth-child(4),
+.report-summary-table th:nth-child(3),
+.report-summary-table th:nth-child(4) {
+    text-align: right;
+}
+
+/* Projects table */
+.report-projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.report-projects-table th {
+    text-align: left;
+    padding: 0.4em 0.5em;
+    border-bottom: 1px solid currentColor;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.report-projects-table td {
+    padding: 0.5em 0.5em;
+    vertical-align: top;
+    border-bottom: 1px solid var(--muted-border-color, #ddd);
+}
+
+.report-details-cell {
+    padding: 0 !important;
+}
+
+.report-detail-section {
+    display: block;
+    padding: 0.4em 0.5em;
+    border-bottom: 1px solid var(--muted-border-color, #eee);
+    font-size: 0.88rem;
+}
+
+.report-detail-section:last-child {
+    border-bottom: none;
+}
+
+.report-detail-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--secondary);
+    margin-bottom: 0.2em;
+}
+
+.report-detail-value {
+    display: block;
+}
+
+.report-releases-list {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.report-releases-list li {
+    word-break: break-all;
+}
+
+/* Performances list */
+.report-perf-list {
+    list-style: decimal;
+    padding-left: 2.2em;
+    margin: 0;
+}
+
+.report-perf-item {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--muted-border-color, #eee);
+}
+
+.report-perf-item:last-child {
+    border-bottom: none;
+}
+
+.report-perf-header {
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
+
+.report-perf-date {
+    font-weight: bold;
+    font-family: var(--font-sans);
+}
+
+.report-perf-name {
+    font-weight: 600;
+}
+
+.report-perf-venue {
+    color: var(--secondary);
+}
+
+.report-perf-details {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-family: var(--font-sans);
+}
+
+.report-perf-details span::after {
+    content: " · ";
+}
+
+.report-perf-details span:last-child::after {
+    content: "";
+}
+
+/* Print styles */
+@media print {
+    nav, .site-header, .site-footer, .report-print-link, .no-print {
+        display: none !important;
+    }
+
+    .music-report {
+        max-width: 100%;
+        padding: 0;
+        font-size: 10pt;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .report-header h1 { font-size: 16pt; }
+    .report-section h2 { font-size: 12pt; }
+
+    .report-perf-item {
+        break-inside: avoid;
+    }
+
+    .report-section {
+        break-before: auto;
+    }
+
+    a { color: #000; text-decoration: none; }
+    a[href]::after { content: " (" attr(href) ")"; font-size: 8pt; }
+}

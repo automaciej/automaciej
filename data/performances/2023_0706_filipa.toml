@@ -1,4 +1,6 @@
 name = "Lulu's Jazz Club presents Swing'in Nova Quartet"
+country = "Republic of Ireland"
+city = "Dublin"
 url = ""
 instrument = "double bass"
 with = [
@@ -7,8 +9,10 @@ with = [
 	"Dylan Lynch",
 ]
 description = """\
-A selection of old swing tunes, bossa nova classics and heartfelt originals, tastefully
-performed in an intimate setting.
+An evening led by singer Filipa Quintino, blending jazz standards, bossa nova classics, \
+and her own original compositions in Portuguese — "Lágrima de Preta" and "Entro Devagar". \
+Bruno Bernardo doubled on guitar and trombone. The programme included Desafinado, Wave, \
+Triste, My Funny Valentine, Witchcraft, and Lovely Day, among others.\
 """
 
 venue = "International Bar"

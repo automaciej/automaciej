@@ -1,0 +1,20 @@
+title = "Libera"
+artist = "Luisa Annibali"
+date = 2025-11-20T00:00:00
+project = "libera"
+
+description = """\
+Debut album by Luisa Annibali, blending jazz with Italian lyrics, Latin, and \
+Brazilian rhythms. Maciej contributed vocal recording and mixing on one track.\
+"""
+
+[[credits]]
+name = "Luisa Annibali"
+roles = ["vocals", "composer"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["recording engineer", "mixing engineer"]
+
+[links]
+bandcamp_url = "https://luisaannibali.bandcamp.com/album/libera"

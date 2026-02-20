@@ -1,4 +1,6 @@
 name = "Cookin' Sessions at Juno"
+country = "Republic of Ireland"
+city = "Dublin"
 url = ""
 instrument = "double bass"
 with = [

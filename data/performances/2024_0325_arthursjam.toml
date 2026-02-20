@@ -1,4 +1,7 @@
 name = "Arthur's Jazz Jam"
+country = "Republic of Ireland"
+city = "Dublin"
+project = "arthurs_jazz_jam"
 url = ""
 instrument = "double bass"
 with = [
@@ -6,9 +9,7 @@ with = [
 	"Luca Eremita McArdle",
 	"Michael McCarthy",
 ]
-description = """\
-A jazz jam session under the auspices of DCU.
-"""
+description = ""
 
 venue = "Arthur's Blues and Jazz Club"
 venue_url = "https://www.eventbrite.ie/o/arthurs-blues-and-jazz-club-7474750537"

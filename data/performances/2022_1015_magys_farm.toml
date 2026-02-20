@@ -1,4 +1,7 @@
 name = "Jazz Piano Trio"
+country = "Northern Ireland"
+city = "near Belfast"
+project = "karkauskas_trio"
 url = ""
 instrument = "Fender Precision bass"
 with = [

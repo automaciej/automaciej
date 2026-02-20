@@ -1,5 +1,7 @@
 name = "Kind Of New: Cordillera Serena"
-url = ""
+country = "Republic of Ireland"
+city = "Dublin"
+url = "https://www.jazzireland.ie/jazz-events/gig/6036-the-kind-of-new-series-presents-cordillera-serena.html"
 instrument = "double bass"
 with = [
 	"Rodrigo Almonte",

@@ -1,0 +1,12 @@
+name = "Arthur's Jazz Jam"
+country = "Republic of Ireland"
+roles = [
+	"double bass",
+]
+start_year = 2022
+end_year = 2025
+description = "A jazz jam session under the auspices of DCU jazz department, held at Arthur's Blues & Jazz Club. I am occasionally part of the house band."
+with = [
+	"Hayley Kavanagh",
+	"Eric Doyle",
+]

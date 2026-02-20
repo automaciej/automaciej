@@ -1,0 +1,19 @@
+name = "Tentativa"
+start_year = 2025
+end_year = 2025
+country = "Republic of Ireland"
+roles = [
+	"recording engineer",
+	"mixing engineer",
+	"mastering engineer",
+]
+description = """\
+Studio album by Luisa Annibali, Julio Batista, and William Alexandre — the \
+Brasilidades ensemble. A blend of Choro, Samba, Bossa Nova, and original music \
+in Portuguese and Italian. Maciej recorded, mixed, and mastered all ten tracks.\
+"""
+with = [
+	"Luisa Annibali",
+	"Julio Batista",
+	"William Alexandre",
+]

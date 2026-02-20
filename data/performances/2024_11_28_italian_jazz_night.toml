@@ -1,0 +1,16 @@
+name = "The Italian Jazz Night at Lulu's Jazz Club"
+country = "Republic of Ireland"
+city = "Dublin"
+url = "https://www.jazzireland.ie/jazz-events/gig/6040-the-italian-jazz-night-at-lulu-s-jazz-club.html"
+instrument = "double bass"
+with = [
+	"Luisa Annibali",
+]
+description = """\
+"""
+
+venue = "International Bar"
+venue_url = "https://www.facebook.com/internationaljazz/"
+start_time = 2024-11-28T20:30:00
+tickets = ""
+significant = true

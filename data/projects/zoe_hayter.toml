@@ -1,0 +1,18 @@
+name = "Zoe Hayter"
+country = "Republic of Ireland"
+roles = [
+	"co-writer",
+	"producer",
+	"arranger",
+	"recording engineer",
+	"mixing engineer",
+	"mastering engineer",
+]
+start_year = 2025
+description = "Music production collaboration with singer-songwriter Zoe Hayter."
+with = [
+	"Zoe Hayter",
+	"Rafał Szydłowski",
+	"Riccardo Marenghi",
+	"Oleg Bezuglov",
+]
