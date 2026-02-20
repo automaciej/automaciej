@@ -1,0 +1,16 @@
+name = "John Mahon & Friends"
+start_year = 2024
+end_year = 2025
+country = "Republic of Ireland"
+roles = [
+	"producer",
+	"mixing engineer",
+]
+description = """\
+A series of recording sessions at Maciej's studio with Dublin-based guitarist \
+and singer John Mahon and his collaborators. "Little Bird" is the first released \
+track; seven further tracks from the sessions are awaiting release.\
+"""
+with = [
+	"John Mahon",
+]

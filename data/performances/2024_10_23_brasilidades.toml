@@ -1,4 +1,7 @@
 name = "Brasilidades Night"
+country = "Republic of Ireland"
+city = "Dublin"
+project = "brasilidades"
 url = ""
 instrument = "7 string guitar"
 with = [

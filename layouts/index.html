@@ -1,0 +1,168 @@
+{{ define "main" }}
+<div class="home">
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                {{ with .Params.image }}
+                <div class="hero-photo">
+                    <img src="{{ printf "/bio/images/%s" . | relURL }}" alt="{{ $.Site.Title }}">
+                </div>
+                {{ end }}
+                <div class="hero-text">
+                    <h1>{{ .Site.Title }}</h1>
+                    {{ with .Params.tagline }}
+                    <p class="tagline">{{ . }}</p>
+                    {{ end }}
+                    {{ partial "social.html" . }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="streams">
+        <div class="container">
+            <div class="stream-columns">
+                <div class="stream-column music-stream">
+                    <h2><a href="/music/">Music »</a></h2>
+                    <div class="stream-content">
+                        {{ $musicProductions := sort .Site.Data.music "date" "desc" }}
+                        {{ range $index, $production := first 3 $musicProductions }}
+                        <article class="music-preview{{ if gt $index 0 }} music-preview-desktop-only{{ end }}">
+                            {{ with $production.image }}
+                            <div class="music-preview-image">
+                                <a href="/music/#{{ $production.title | urlize }}">
+                                    <img src="{{ printf "/images/music/%s" . | relURL }}" alt="{{ $production.title }}">
+                                </a>
+                            </div>
+                            {{ end }}
+                            <div class="music-preview-content">
+                                <h3><a href="/music/">{{ $production.title }}</a></h3>
+                                <div class="music-preview-meta">
+                                    <span class="artist">{{ $production.artist }}</span>
+                                    {{ with $production.date }}
+                                    <span class="date">• {{ dateFormat "Jan 2006" . }}</span>
+                                    {{ end }}
+                                </div>
+                            </div>
+                            {{ with $production.links }}
+                                {{ if .youtube }}
+                                <div class="embed-preview youtube-preview">
+                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/{{ .youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                {{ else if .bandcamp_album }}
+                                <div class="embed-preview bandcamp-preview">
+                                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ .bandcamp_album }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless></iframe>
+                                </div>
+                                {{ else if .bandcamp_track }}
+                                <div class="embed-preview bandcamp-preview">
+                                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track={{ .bandcamp_track }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless></iframe>
+                                </div>
+                                {{ end }}
+                                {{ if .streaming }}
+                                <div class="music-listen-banner">
+                                    <a href="{{ .streaming }}" target="_blank" rel="noopener">
+                                        Listen on streaming platforms&nbsp;»
+                                    </a>
+                                </div>
+                                {{ else if .bandcamp_url }}
+                                <div class="music-listen-banner">
+                                    <a href="{{ .bandcamp_url }}" target="_blank" rel="noopener">
+                                        Listen on Bandcamp&nbsp;»
+                                    </a>
+                                </div>
+                                {{ else if .spotify_url }}
+                                <div class="music-listen-banner">
+                                    <a href="{{ .spotify_url }}" target="_blank" rel="noopener">
+                                        Listen on Spotify&nbsp;»
+                                    </a>
+                                </div>
+                                {{ else if .apple_music_url }}
+                                <div class="music-listen-banner">
+                                    <a href="{{ .apple_music_url }}" target="_blank" rel="noopener">
+                                        Listen on Apple Music&nbsp;»
+                                    </a>
+                                </div>
+                                {{ end }}
+                            {{ end }}
+                            {{ with $production.project }}
+                            <div class="music-project-link">
+                                <a href="/music/projects/{{ . }}/">More from this project&nbsp;&#xBB;</a>
+                            </div>
+                            {{ end }}
+                        </article>
+                        {{ end }}
+                        <div class="stream-footer">
+                            <a href="/music/" class="view-all-link view-all-link-desktop">View all music productions →</a>
+                            {{ $second := index $musicProductions 1 }}
+                            {{ $third := index $musicProductions 2 }}
+                            <a href="/music/#{{ $second.title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.title }}, {{ $third.title }}, and more »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stream-column apps-stream">
+                    <h2><a href="/apps/">Apps »</a></h2>
+                    <div class="stream-content">
+                        {{ range .Site.Data.apps }}
+                        <article class="app-preview">
+                            <div class="app-header">
+                              {{ if .subsection }}
+                                <h3><a href="/{{ .subsection }}/">{{ .name }}&nbsp;»</a></h3>
+                              {{ else if .app_site }}
+                                <h3><a href="{{ .app_site }}">{{ .name }}&nbsp;»</a></h3>
+                              {{ end }}
+                                <p class="app-type">
+                                    {{ .type }}
+                                    {{ with .platforms }}
+                                    • {{ delimit . ", " }}
+                                    {{ end }}
+                                </p>
+                            </div>
+                            <p class="app-description">{{ .description }}</p>
+                            {{ if .testflight }}
+                            <div class="app-download-banner">
+                                <a href="{{ .testflight }}" target="_blank" rel="noopener">
+                                    <span class="download-text">Download {{ .name }}&nbsp;»</span>
+                                    <span class="download-caption">beta for {{ delimit .platforms " and " }}</span>
+                                </a>
+                            </div>
+                            {{ else if .appstore }}
+                            <a href="{{ .appstore }}" target="_blank" rel="noopener" class="app-download-link">App Store →</a>
+                            {{ end }}
+                        </article>
+                        {{ end }}
+
+                        {{ $appPosts := where .Site.RegularPages "Section" "in" (slice "time-feel") }}
+                        {{ $appPosts = where $appPosts "Type" "in" (slice "time-feel") }}
+                        {{ $appPosts = where $appPosts "Params.excludeFromRSS" "!=" true }}
+                        {{ range first 3 (sort $appPosts "Date" "desc") }}
+                        <article class="app-post-preview">
+                            <h3><a href="{{ .RelPermalink }}">{{ .Title }} »</a></h3>
+                            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+                            {{ with .Summary }}
+                            <div class="post-summary">{{ . }}</div>
+                            {{ end }}
+                            {{ if .Truncated }}
+                            <p class="read-more"><a href="{{ .RelPermalink }}">Read more »</a></p>
+                            {{ end }}
+                        </article>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <div class="stream-column bio-stream">
+                    <h2><a href="/bio/">Bio »</a></h2>
+                    <div class="stream-content">
+                        {{ with .Content }}
+                        {{ . }}
+                        {{ end }}
+                        <div class="stream-footer">
+                            <a href="/bio/" class="view-all-link">More about me →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

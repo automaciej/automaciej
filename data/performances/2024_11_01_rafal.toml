@@ -1,4 +1,6 @@
 name = "Violin and guitar duo"
+country = "Republic of Ireland"
+city = "Cavan"
 url = ""
 instrument = "electric guitar"
 with = [

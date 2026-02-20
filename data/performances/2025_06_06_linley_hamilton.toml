@@ -1,4 +1,6 @@
 name = "Linley Hamilton Quartet"
+country = "Northern Ireland"
+city = "Rathfriland"
 url = ""
 instrument = "double bass"
 with = [
@@ -9,7 +11,7 @@ with = [
 description = """\
 """
 
-venue = "Rathfriland Commumity Centre"
+venue = "Rathfriland Community Centre"
 venue_url = ""
 start_time = 2025-06-06T20:00:00
 tickets = ""

@@ -1,0 +1,23 @@
+name = "Italian Fusion Festival 2022 – Jazz & Pizza Edition"
+country = "Republic of Ireland"
+city = "Dublin (Portobello)"
+url = "https://www.italianfusionfestival.com/the-jazz-pizza-edition-lineup-2022/"
+instrument = "double bass"
+with = [
+	"Marco Francescangeli",
+	"Luisa Annibali",
+	"Riccardo Marenghi",
+	"Dario Rodighiero",
+	"Graham Wood",
+	"Mary Murphy",
+]
+description = """\
+Performed as part of the house band at the Italian Fusion Festival's Jazz & Pizza \
+Edition. The house band closed the evening with a jam session at 11:30 PM.\
+"""
+
+venue = "Bello Bar"
+venue_url = "https://www.italianfusionfestival.com/"
+start_time = 2022-07-08T23:30:00
+tickets = ""
+significant = true

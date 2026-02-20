@@ -1,4 +1,7 @@
 name = "Gediminas Karkauskas Trio"
+country = "Northern Ireland"
+city = "Belfast"
+project = "karkauskas_trio"
 url = ""
 instrument = "double bass"
 with = [

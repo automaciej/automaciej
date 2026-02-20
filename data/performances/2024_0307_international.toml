@@ -1,4 +1,6 @@
 name = "Lulu's Jazz Club: A Night of Bop"
+country = "Republic of Ireland"
+city = "Dublin"
 url = ""
 instrument = "double bass"
 with = [

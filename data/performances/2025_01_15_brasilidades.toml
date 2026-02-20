@@ -1,0 +1,19 @@
+name = "Brasilidade's Night"
+country = "Republic of Ireland"
+city = "Dublin"
+project = "brasilidades"
+url = "https://www.jazzireland.ie/jazz-events/gig/6097-brasilidade-s-night-concerts-jam-session.html"
+instrument = "7 string guitar"
+with = [
+	"Edi Nunes",
+	"Alexandre Guerra",
+]
+description = """\
+An evening celebrating Brazilian Chorinho and the music of Djavan.
+"""
+
+venue = "International Bar"
+venue_url = "https://www.facebook.com/internationaljazz/"
+start_time = 2025-01-15T20:30:00
+tickets = ""
+significant = true

@@ -29,6 +29,8 @@
 // What a wonderful feature of Hugo to automatically serialize into
 // JSON!
 var performancesList = {{ $.Site.Data.performances | jsonify (dict "indent" "  ") | safeJS }};
+var projectsList = {{ $.Site.Data.projects | jsonify (dict "indent" "  ") | safeJS }};
+var simplePast = {{ if .Get "simple_past" }}true{{ else }}false{{ end }};
 
 // TODO: Move this to a separate file.
 
@@ -122,65 +124,132 @@ class CompactEvents {
 
   // Make a DOM element representing the event.
   eventElement(ev) {
-    var compact = document.createElement('li');
+    var li = document.createElement('li');
+    var ul = document.createElement('ul');
+    ul.style.listStyle = 'none';
+    li.appendChild(ul);
+
     const optionsFuture = {
       'year': 'numeric',
       'month': 'short',
       'day': 'numeric',
       'hour': 'numeric',
     };
-
     const optionsPast = {
       'year': 'numeric',
       'month': 'short',
       'day': 'numeric',
     };
 
-    var evDate = document.createTextNode(
-      ev["start_time_ts"].toLocaleString(undefined, this.#isFuture ? optionsFuture : optionsPast)
-    );
-    compact.appendChild(A(evDate, ev['url']));
-    addText(compact, ': ');
-    if (ev['tickets'] && this.#isFuture) {
-      var tickets = document.createTextNode("🎫");
-      addText(compact, " ");
-      compact.appendChild(A(tickets, ev['tickets']))
+    function labelItem(label, ...children) {
+      var item = document.createElement('li');
+      item.appendChild(document.createTextNode(label));
+      children.forEach(c => item.appendChild(c));
+      return item;
     }
-    compact.appendChild(document.createTextNode(ev['name']));
-    // TODO: Perhaps I can make this a collapsible.
-    /* 
-    if (ev['instrument']) {
-      if (this.#isFuture) {
-        evP.appendChild(document.createTextNode(" – will play "));
-      } else {
-        evP.appendChild(document.createTextNode(" – played "));
-      }
-      evP.appendChild(document.createTextNode(ev['instrument']));
-    }
-    if (ev['with'].length) {
-      evP.appendChild(document.createTextNode(" with "));
-      evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
-    }
-    if (ev['venue']) {
-      evP.appendChild(document.createTextNode(" in "));
-      var venue = document.createTextNode(ev['venue']);
-      evP.appendChild(A(venue, ev['venue_url']));
-    }
-    if (ev['description'] && this.#isFuture) {
-      evP.appendChild(document.createTextNode(' - '));
-      evP.appendChild(document.createTextNode(ev['description']));
-    } else {
-      addText(evP, ".");
-    }
-    */
 
-    return compact;
+    // Resolve project and display name
+    var proj = ev['project'] ? projectsList[ev['project']] : null;
+    var displayName = ev['name'] || (proj ? proj['name'] : '');
+    var nameInferredFromProject = !ev['name'] && proj;
+
+    // Event name (only if there is one)
+    if (displayName) {
+      ul.appendChild(labelItem("Event name: ", document.createTextNode(displayName)));
+    }
+
+    // Project link (skip when name was inferred from project to avoid redundancy)
+    if (proj && ev['name']) {
+      var projLink = A(document.createTextNode(proj['name']), '/music/projects/' + ev['project'] + '/');
+      ul.appendChild(labelItem("Project: ", projLink));
+    }
+
+    // Date
+    var dateText = ev["start_time_ts"].toLocaleString(undefined, this.#isFuture ? optionsFuture : optionsPast);
+    var dateNode = document.createTextNode(dateText);
+    if (ev['tickets'] && this.#isFuture) {
+      var ticketLink = A(document.createTextNode("🎫 tickets"), ev['tickets']);
+      ul.appendChild(labelItem("Date: ", dateNode, document.createTextNode(" "), ticketLink));
+    } else {
+      ul.appendChild(labelItem("Date: ", dateNode));
+    }
+
+    // Venue
+    if (ev['venue']) {
+      ul.appendChild(labelItem("Venue: ", A(document.createTextNode(ev['venue']), ev['venue_url'])));
+    }
+
+    // Involvement
+    if (ev['instrument']) {
+      ul.appendChild(labelItem("Played ", document.createTextNode(ev['instrument'])));
+    }
+
+    // With
+    if (ev['with'] && ev['with'].length) {
+      ul.appendChild(labelItem("With: ", document.createTextNode(joinList(ev['with'], ", ", " and "))));
+    }
+
+    // Description
+    if (ev['description']) {
+      ul.appendChild(labelItem("Description: ", document.createTextNode(ev['description'])));
+    }
+
+    // Link
+    if (ev['url']) {
+      var small = document.createElement('small');
+      small.appendChild(A(document.createTextNode(ev['url']), ev['url']));
+      ul.appendChild(labelItem("Link: ", small));
+    }
+
+    return li;
   }
 
   populate() {
-    var ul = document.createElement('ul');
-    this.#eventList.forEach((ev) => ul.appendChild(this.eventElement(ev)));
-    this.#parentObj.appendChild(ul);
+    var ol = document.createElement('ol');
+    this.#eventList.forEach((ev) => ol.appendChild(this.eventElement(ev)));
+    this.#parentObj.appendChild(ol);
+  }
+}
+
+// Simple tabular view: date | event name | venue
+class SimpleEvents {
+  #eventList;
+  #parentObj;
+  constructor(eventList, parentObj) {
+    this.#eventList = eventList;
+    this.#parentObj = parentObj;
+  }
+
+  populate() {
+    var table = document.createElement('table');
+    table.setAttribute('class', 'performances-simple-table');
+    var tbody = document.createElement('tbody');
+    table.appendChild(tbody);
+    const opts = { 'year': 'numeric', 'month': 'short', 'day': 'numeric' };
+    this.#eventList.forEach((ev) => {
+      var proj = ev['project'] ? projectsList[ev['project']] : null;
+      var displayName = ev['name'] || (proj ? proj['name'] : '');
+
+      var tr = document.createElement('tr');
+
+      var tdDate = document.createElement('td');
+      tdDate.setAttribute('class', 'perf-date');
+      tdDate.appendChild(document.createTextNode(ev['start_time_ts'].toLocaleString(undefined, opts)));
+      tr.appendChild(tdDate);
+
+      var tdName = document.createElement('td');
+      tdName.setAttribute('class', 'perf-name');
+      if (displayName) { tdName.appendChild(document.createTextNode(displayName)); }
+      tr.appendChild(tdName);
+
+      var tdVenue = document.createElement('td');
+      tdVenue.setAttribute('class', 'perf-venue');
+      if (ev['venue']) { tdVenue.appendChild(A(document.createTextNode(ev['venue']), ev['venue_url'])); }
+      tr.appendChild(tdVenue);
+
+      tbody.appendChild(tr);
+    });
+    this.#parentObj.appendChild(table);
   }
 }
 
@@ -257,9 +326,9 @@ function populatePerformances() {
   pastEvents.sort(function(a, b) {
     // Chronological.
     if (a['start_time_ts'].getTime() < b['start_time_ts'].getTime()) {
-      return 1;
-    } else {
       return -1;
+    } else {
+      return 1;
     }
   });
 
@@ -276,8 +345,13 @@ function populatePerformances() {
     hdr.setAttribute('id', 'past-performances');
     hdr.appendChild(document.createTextNode("Past Performances"));
     pastEventsDiv.appendChild(hdr);
-    var tmpl = new CompactEvents(pastEvents, pastEventsDiv, false);
-    tmpl.populate();
+    if (simplePast) {
+      var tmpl = new SimpleEvents(pastEvents, pastEventsDiv);
+      tmpl.populate();
+    } else {
+      var tmpl = new CompactEvents(pastEvents, pastEventsDiv, false);
+      tmpl.populate();
+    }
   }
 }
 

@@ -1,0 +1,20 @@
+name = "Kildare Jazz Festival 2026: Dorota Konchevska – Blooming Rooms"
+country = "Republic of Ireland"
+city = "Newbridge"
+url = "https://www.riverbank.ie/event/kildare-jazz-festival-2026-dorota-konchevska-blooming-rooms/"
+instrument = "double bass and electric guitar"
+with = [
+	"Dorota Konchevska",
+	"Chris Hokamp",
+]
+description = """\
+Blooming Rooms is a new collaborative project shaped by the idea, echoed
+recently by Marina Abramović, that artists can shift collective energy through
+intentional creation.
+"""
+
+venue = "Riverbank Arts Centre"
+venue_url = "https://www.riverbank.ie/"
+start_time = 2026-03-28T15:30:00
+tickets = "https://www.riverbank.ie/event/kildare-jazz-festival-2026-dorota-konchevska-blooming-rooms/"
+significant = true

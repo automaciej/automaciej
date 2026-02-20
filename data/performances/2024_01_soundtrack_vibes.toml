@@ -1,9 +1,14 @@
 name = "Soundtrack Vibes: NCH Gamelan Orchestra and Special guests The Hum"
+country = "Republic of Ireland"
+city = "Dublin"
+project = "soundtrack_vibes"
 url = "https://web.archive.org/web/20230901000000*/https://www.nch.ie/all-events-listing/soundtrack-vibes-nch-gamelan-orchestra-and-special-guests-the-hum/"
 instrument = "Fender Precision bass"
 with = [
+	"Sergio Milani",
 	"The NCH Gamelan Ensemble",
 	"The Hum",
+	"David Rieger",
 ]
 description = """\
 New arrangements of classic TV soundtracks from the NCH Gamelan Orchestra and

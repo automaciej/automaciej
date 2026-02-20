@@ -1,4 +1,6 @@
 name = "Irish Women in Jazz"
+country = "Republic of Ireland"
+city = "Dublin"
 url = "https://www.eventbrite.ie/e/irish-women-in-jazz-tickets-878445683687"
 instrument = "double bass"
 with = [

@@ -1,14 +1,14 @@
 name = "Arthur's Jazz Jam"
+country = "Republic of Ireland"
+city = "Dublin"
+project = "arthurs_jazz_jam"
 url = ""
 instrument = "double bass"
 with = [
-	# "Hayley Kavanagh",
-	# "Eric Doyle",
-	# "Giovanny Stanescu",
+	"Hayley Kavanagh",
+	"Eric Doyle",
 ]
-description = """\
-Jazz jam session under the auspices of DCU jazz department.
-"""
+description = ""
 
 venue = "Arthur's Blues & Jazz Club"
 venue_url = ""

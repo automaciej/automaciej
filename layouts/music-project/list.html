@@ -1,0 +1,160 @@
+{{ define "main" }}
+{{- $key := .Params.key -}}
+<div class="music-project-page">
+  <div class="container">
+    {{- if $key -}}
+    {{- $proj := index $.Site.Data.projects $key -}}
+
+    {{- $performances := slice -}}
+    {{- range $.Site.Data.performances -}}
+      {{- if eq .project $key -}}
+        {{- $performances = $performances | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $performances = sort $performances "start_time" -}}
+
+    {{- $music := slice -}}
+    {{- range $.Site.Data.music -}}
+      {{- if eq .project $key -}}
+        {{- $music = $music | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $music = sort $music "date" -}}
+
+    <header class="section-header">
+      <h1>{{ .Title }}</h1>
+      {{ with $proj.description }}
+      <p>{{ . }}</p>
+      {{ end }}
+      <dl>
+        {{ if $proj.start_year }}
+        <dt>Active</dt>
+        <dd>{{ $proj.start_year }}{{ with $proj.end_year }}{{ if ne . $proj.start_year }}–{{ . }}{{ end }}{{ end }}</dd>
+        {{ end }}
+        {{ with $proj.with }}
+        <dt>With</dt>
+        <dd>{{ delimit . ", " " and " }}</dd>
+        {{ end }}
+        {{ with $proj.url }}
+        <dt>Web</dt>
+        <dd><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></dd>
+        {{ end }}
+      </dl>
+    </header>
+
+    {{ with .Content }}
+    <div class="project-content">{{ . }}</div>
+    {{ end }}
+
+    {{ if $performances }}
+    <section>
+      <h2>Performances</h2>
+      <ul>
+        {{ range $performances }}
+        <li>
+          {{ dateFormat "2 January 2006" .start_time }} –
+          {{ with .name }}{{ . }}{{ end }}
+          {{ with .venue }}, {{ . }}{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ if $music }}
+    <section>
+      <h2>Releases</h2>
+      {{ range $music }}
+      {{ partial "music-card.html" . }}
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{- else -}}
+
+    <header class="section-header">
+      <h1>{{ .Title }}</h1>
+    </header>
+
+    {{- $activeEntries := slice -}}
+    {{- $pastEntries := slice -}}
+    {{- range .Sections -}}
+      {{- $key := .Params.key -}}
+      {{- $proj := index $.Site.Data.projects $key -}}
+
+      {{- $perfCount := 0 -}}
+      {{- range $.Site.Data.performances -}}
+        {{- if eq .project $key -}}{{- $perfCount = add $perfCount 1 -}}{{- end -}}
+      {{- end -}}
+
+      {{- $musicCount := 0 -}}
+      {{- range $.Site.Data.music -}}
+        {{- if eq .project $key -}}{{- $musicCount = add $musicCount 1 -}}{{- end -}}
+      {{- end -}}
+
+      {{- $entry := dict
+        "permalink" .RelPermalink
+        "title" .Title
+        "start_year" ($proj.start_year | default 0)
+        "end_year" $proj.end_year
+        "description" $proj.description
+        "with" $proj.with
+        "perfCount" $perfCount
+        "musicCount" $musicCount
+      -}}
+      {{- if $proj.end_year -}}
+        {{- $pastEntries = $pastEntries | append $entry -}}
+      {{- else -}}
+        {{- $activeEntries = $activeEntries | append $entry -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $activeEntries = sort $activeEntries "start_year" "desc" -}}
+    {{- $pastEntries = sort $pastEntries "start_year" "desc" -}}
+
+    {{- if $activeEntries -}}
+    <h2 class="projects-section-label">Active</h2>
+    <div class="projects-grid">
+      {{- range $activeEntries -}}
+      {{- template "project-card" . -}}
+      {{- end -}}
+    </div>
+    {{- end -}}
+
+    {{- if $pastEntries -}}
+    <h2 class="projects-section-label">Past</h2>
+    <div class="projects-grid">
+      {{- range $pastEntries -}}
+      {{- template "project-card" . -}}
+      {{- end -}}
+    </div>
+    {{- end -}}
+
+    {{- end -}}
+  </div>
+</div>
+{{ end }}
+
+{{- define "project-card" -}}
+<a href="{{ .permalink }}" class="project-card">
+  <div class="project-card-header">
+    <h2>{{ .title }}</h2>
+    <span class="project-years">
+      {{- .start_year -}}
+      {{- with .end_year -}}
+        {{- if ne . $.start_year -}}–{{ . }}{{- end -}}
+      {{- else -}}–{{- end -}}
+    </span>
+  </div>
+  {{- with .description -}}
+  <p class="project-description">{{ truncate 160 . }}</p>
+  {{- end -}}
+  <div class="project-stats">
+    {{- if .perfCount -}}<span>{{ .perfCount }} performance{{ if gt .perfCount 1 }}s{{ end }}</span>{{- end -}}
+    {{- if .musicCount -}}<span>{{ .musicCount }} release{{ if gt .musicCount 1 }}s{{ end }}</span>{{- end -}}
+  </div>
+  {{- with .with -}}
+  <div class="project-people">With {{ delimit . ", " " and " }}</div>
+  {{- end -}}
+</a>
+{{- end -}}

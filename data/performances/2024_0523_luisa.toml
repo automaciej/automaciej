@@ -1,4 +1,6 @@
 name = "Lulu's Jazz Club presents Ella & Joe"
+country = "Republic of Ireland"
+city = "Dublin"
 url = ""
 instrument = "double bass"
 with = [

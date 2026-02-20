@@ -47,6 +47,7 @@ case "${1:-}" in
   dev)
     ${hugo} -w -D -F \
 	    --templateMetrics \
+	    --baseURL http://localhost:1313 \
 	    server
     ;;
   *)

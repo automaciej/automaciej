@@ -99,4 +99,9 @@
         {{ end }}
     </div>
     {{ end }}
+    {{ with .project }}
+    <div class="music-project-link">
+        <a href="/music/projects/{{ . }}/">More from this project&nbsp;&#xBB;</a>
+    </div>
+    {{ end }}
 </article>

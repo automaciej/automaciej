@@ -1,0 +1,231 @@
+{{ define "main" }}
+{{- /* Build sorted slices from data maps */ -}}
+{{- $perfs := slice -}}
+{{- range $k, $v := $.Site.Data.performances -}}
+  {{- $perfs = $perfs | append $v -}}
+{{- end -}}
+{{- $perfs = sort $perfs "start_time" "asc" -}}
+
+{{- $projs := slice -}}
+{{- range $k, $v := $.Site.Data.projects -}}
+  {{- $projs = $projs | append (merge $v (dict "key" $k)) -}}
+{{- end -}}
+{{- $projs = sort $projs "start_year" "asc" -}}
+
+{{- /* ── Summary data ───────────────────────────────────────────────── */ -}}
+{{- $sc := newScratch -}}
+{{- $ycPairs     := slice -}}
+{{- $summCountries := slice -}}
+
+{{- /* Performances: accumulate by year+country */ -}}
+{{- range $k, $v := $.Site.Data.performances -}}
+  {{- $year := dateFormat "2006" $v.start_time -}}
+  {{- $c    := $v.country | default "Unknown" -}}
+  {{- $sc.Add (printf "yc|%s|%s|perfs" $year $c) 1 -}}
+  {{- $sc.Add (printf "c|%s|perfs" $c) 1 -}}
+  {{- $pair := printf "%s|%s" $year $c -}}
+  {{- if not (in $ycPairs $pair) -}}{{- $ycPairs = $ycPairs | append $pair -}}{{- end -}}
+  {{- if not (in $summCountries $c) -}}{{- $summCountries = $summCountries | append $c -}}{{- end -}}
+{{- end -}}
+
+{{- /* Releases: country derived from linked project */ -}}
+{{- range $k, $v := $.Site.Data.music -}}
+  {{- if $v.project -}}
+    {{- $proj := index $.Site.Data.projects $v.project -}}
+    {{- if $proj -}}
+      {{- $year := dateFormat "2006" $v.date -}}
+      {{- $c    := $proj.country | default "Unknown" -}}
+      {{- $sc.Add (printf "yc|%s|%s|releases" $year $c) 1 -}}
+      {{- $sc.Add (printf "c|%s|releases" $c) 1 -}}
+      {{- $pair := printf "%s|%s" $year $c -}}
+      {{- if not (in $ycPairs $pair) -}}{{- $ycPairs = $ycPairs | append $pair -}}{{- end -}}
+      {{- if not (in $summCountries $c) -}}{{- $summCountries = $summCountries | append $c -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Projects: count by country */ -}}
+{{- range $k, $v := $.Site.Data.projects -}}
+  {{- $c := $v.country | default "Unknown" -}}
+  {{- $sc.Add (printf "c|%s|projects" $c) 1 -}}
+  {{- if not (in $summCountries $c) -}}{{- $summCountries = $summCountries | append $c -}}{{- end -}}
+{{- end -}}
+
+{{- $ycPairs       = sort $ycPairs -}}
+{{- $summCountries = sort $summCountries -}}
+
+<div class="music-report">
+
+  <div class="report-header">
+    <h1>Artistic Activity Report</h1>
+    <table class="report-meta">
+      <tr><td>Name</td><td><strong>Maciej Bliziński</strong></td></tr>
+      <tr><td>Location</td><td>Dublin, Ireland</td></tr>
+      <tr><td>Document generated</td><td>{{ now.Format "2 January 2006" }}</td></tr>
+    </table>
+    <p class="report-intro">This document provides a comprehensive record of musical projects and live performances for the purpose of documenting artistic activity in Ireland.</p>
+    <p class="report-print-link no-print"><a href="javascript:window.print()">Print / Save as PDF</a></p>
+  </div>
+
+  <div class="report-section">
+    <h2>Activity Summary by Country (Totals)</h2>
+    <table class="report-summary-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Projects</th>
+          <th>Releases</th>
+          <th>Performances</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $summCountries -}}
+        {{- $co := . -}}
+        {{- $pr := $sc.Get (printf "c|%s|projects" $co) | default 0 -}}
+        {{- $re := $sc.Get (printf "c|%s|releases" $co) | default 0 -}}
+        {{- $pf := $sc.Get (printf "c|%s|perfs" $co) | default 0 -}}
+        <tr>
+          <td>{{ $co }}</td>
+          <td>{{ $pr }}</td>
+          <td>{{ $re }}</td>
+          <td>{{ $pf }}</td>
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="report-section">
+    <h2>Activity Summary by Year and Country</h2>
+    <table class="report-summary-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Country</th>
+          <th>Performances</th>
+          <th>Releases</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $ycPairs -}}
+        {{- $parts := split . "|" -}}
+        {{- $yr    := index $parts 0 -}}
+        {{- $co    := index $parts 1 -}}
+        {{- $p     := $sc.Get (printf "yc|%s|%s|perfs" $yr $co) | default 0 -}}
+        {{- $r     := $sc.Get (printf "yc|%s|%s|releases" $yr $co) | default 0 -}}
+        <tr>
+          <td>{{ $yr }}</td>
+          <td>{{ $co }}</td>
+          <td>{{ $p }}</td>
+          <td>{{ $r }}</td>
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="report-section">
+    <h2>1. Musical Projects and Collaborations</h2>
+    <table class="report-projects-table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Country</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $projs }}
+        {{- $projKey := .key -}}
+        {{- $releases := slice -}}
+        {{- range $mk, $mv := $.Site.Data.music -}}
+          {{- if eq $mv.project $projKey -}}
+            {{- $releases = $releases | append $mv -}}
+          {{- end -}}
+        {{- end -}}
+        <tr>
+          <td><strong>{{ .name }}</strong><br><small class="report-years">{{- if and .end_year (eq .end_year .start_year) -}}
+              {{- .start_year -}}
+            {{- else if .end_year -}}
+              {{- .start_year -}}–{{- .end_year -}}
+            {{- else -}}
+              {{- .start_year -}}–present
+            {{- end -}}</small></td>
+          <td>{{ with .country }}{{ . }}{{ end }}</td>
+          <td class="report-details-cell">
+            {{- with .roles -}}
+            <div class="report-detail-section">
+              <span class="report-detail-label">Roles</span>
+              <span class="report-detail-value">{{ delimit . ", " }}</span>
+            </div>
+            {{- end -}}
+            {{- with .with -}}
+            <div class="report-detail-section">
+              <span class="report-detail-label">With</span>
+              <span class="report-detail-value">{{ delimit . ", " }}</span>
+            </div>
+            {{- end -}}
+            {{- if $releases -}}
+            <div class="report-detail-section">
+              <span class="report-detail-label">Releases</span>
+              <ul class="report-releases-list">
+                {{- range (sort $releases "date" "asc") -}}
+                {{- $url := "" -}}
+                {{- with .links -}}
+                  {{- if .streaming -}}{{- $url = .streaming -}}
+                  {{- else if .bandcamp_url -}}{{- $url = .bandcamp_url -}}
+                  {{- else if .youtube -}}{{- $url = printf "https://www.youtube.com/watch?v=%s" .youtube -}}
+                  {{- else if .apple_music_url -}}{{- $url = .apple_music_url -}}
+                  {{- else if .spotify_url -}}{{- $url = .spotify_url -}}
+                  {{- else if .soundcloud -}}{{- $url = printf "https://soundcloud.com/tracks/%s" .soundcloud -}}
+                  {{- end -}}
+                {{- end -}}
+                <li>"{{ .title }}"{{ with $url }} — <a href="{{ . }}">{{ . }}</a>{{ end }}</li>
+                {{- end -}}
+              </ul>
+            </div>
+            {{- end -}}
+            {{- with .description -}}
+            <div class="report-detail-section">
+              <span class="report-detail-label">Description</span>
+              <span class="report-detail-value">{{ . }}</span>
+            </div>
+            {{- end -}}
+          </td>
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="report-section">
+    <h2>2. Documented Performances</h2>
+    <p class="report-count">{{ len $perfs }} performances on record.</p>
+    <ol class="report-perf-list">
+      {{- range $perfs }}
+      {{- $proj := false -}}
+      {{- if .project }}{{- $proj = index $.Site.Data.projects .project -}}{{- end }}
+      {{- $displayName := .name -}}
+      {{- if and (not .name) $proj }}{{- $displayName = $proj.name -}}{{- end }}
+      <li class="report-perf-item">
+        <div class="report-perf-header">
+          {{- with $displayName }}<span class="report-perf-name">{{ . }}</span>{{ end -}}
+          {{- with .venue }} — <span class="report-perf-venue">{{ . }}</span>{{ end -}}
+          {{- with .city }} — <span class="report-perf-city">{{ . }}</span>{{ end }}<br>
+          <span class="report-perf-date">{{ dateFormat "2 January 2006" .start_time }}</span>
+        </div>
+        <div class="report-perf-details">
+          {{- with .country }}<span>Country: {{ . }}</span>{{ end -}}
+          {{- with .instrument }}<span>Role: {{ . }}</span>{{ end -}}
+          {{- with .with }}<span>With: {{ delimit . ", " " and " }}</span>{{ end -}}
+          {{- if and $proj .name }}<span>Project: {{ $proj.name }}</span>{{ end -}}
+          {{- with .description }}<span>Notes: {{ . }}</span>{{ end -}}
+          {{- with .url }}<span>Link: <a href="{{ . }}">{{ . }}</a></span>{{ end -}}
+        </div>
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+
+</div>
+{{ end }}

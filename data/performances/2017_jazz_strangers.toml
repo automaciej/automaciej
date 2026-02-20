@@ -1,4 +1,6 @@
 name = "Jazz Strangers"
+country = "Republic of Ireland"
+city = "Dublin"
 url = ""
 instrument = "5 string bass"
 with = [

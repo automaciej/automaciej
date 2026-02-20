@@ -1,0 +1,17 @@
+name = "Gaia Marenghi"
+country = "Republic of Ireland"
+roles = [
+	"co-writer",
+	"producer",
+	"arranger",
+	"recording engineer",
+	"mixing engineer",
+	"mastering engineer",
+]
+start_year = 2025
+description = "Music production collaboration with vocalist and songwriter Gaia Marenghi."
+with = [
+	"Gaia Marenghi",
+	"Riccardo Marenghi",
+	"Oleg Bezuglov",
+]

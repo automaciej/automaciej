@@ -1,0 +1,14 @@
+name = "Arthur's Jazz Jam"
+country = "Republic of Ireland"
+city = "Dublin"
+project = "arthurs_jazz_jam"
+url = ""
+instrument = "double bass"
+with = []
+description = ""
+
+venue = "Arthur's Blues & Jazz Club"
+venue_url = ""
+start_time = 2025-01-01T00:00:00  # date approximate
+tickets = ""
+significant = true

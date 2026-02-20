@@ -1,0 +1,15 @@
+name = "Brasilidades"
+country = "Republic of Ireland"
+roles = [
+	"double bass",
+]
+start_year = 2023
+end_year = 2025
+description = """\
+An evening of Brazilian music at Lulu's Jazz Club (International Bar, Dublin), \
+celebrating Chorinho and the music of artists like Djavan. Part of the grassroots \
+Brazilian music scene in Dublin city centre.\
+"""
+with = [
+	"Luisa Aniballi",
+]
