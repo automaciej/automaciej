@@ -1,12 +1,14 @@
 title = "Tentativa"
 artist = "Luisa Annibali, Julio Batista & William Alexandre"
 date = 2025-12-12T00:00:00
-project = "tentativa"
+project = "luisa_annibali"
 image = "tentativa.jpg"
 
 description = """\
-Debut studio album by the Brasilidades ensemble, featuring Choro, Samba, \
-Bossa Nova, and original music in Portuguese and Italian.\
+Debut studio album by the Brasilidades ensemble — Luisa Annibali, Julio \
+Batista, and William Alexandre — featuring Choro, Samba, Bossa Nova, and \
+original music in Portuguese and Italian. Maciej recorded, mixed, and \
+mastered all ten tracks.\
 """
 
 [[credits]]

@@ -28,7 +28,13 @@
       {{ end }}
       <dl>
         {{ if $proj.start_year }}
-        <dt>Active</dt>
+        <dt>
+        {{ if not $proj.end_year }}
+        Active
+        {{ else }}
+        Concluded
+        {{ end }}
+        </dt>
         <dd>{{ $proj.start_year }}{{ with $proj.end_year }}{{ if ne . $proj.start_year }}–{{ . }}{{ end }}{{ end }}</dd>
         {{ end }}
         {{ with $proj.with }}
@@ -64,9 +70,11 @@
     {{ if $music }}
     <section>
       <h2>Releases</h2>
-      {{ range $music }}
-      {{ partial "music-card.html" . }}
-      {{ end }}
+      <div class="music-productions">
+        {{ range $music }}
+        {{ partial "music-card.html" (merge . (dict "hide_project_link" true)) }}
+        {{ end }}
+      </div>
     </section>
     {{ end }}
 
