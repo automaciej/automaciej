@@ -1,0 +1,26 @@
+name = "Dorota Konchevska"
+country = "Republic of Ireland"
+roles = [
+	"performer",
+	"producer",
+]
+start_year = 2025
+url = "https://www.iamdorota.com"
+description = """
+Dorota Konchevska is an experimental powerhouse whose work transcends the 
+boundaries of traditional music to become a visceral multimedia experience. 
+A Polish-born producer and composer based in Ireland, Dorota uses her 
+background in music technology and electronic manipulation to create 
+soundscapes that are as haunting as they are beautiful.
+
+Her "enigmatic rituals" of sound and image explore the deep-seated human 
+fears and desires, drawing inspiration from the works of Georges Bataille 
+and the avant-garde traditions of the School of Paris. With a distinct 
+sound that blends electronic beats with atmospheric melodies and 
+traditional instrumentation, Konchevska is an artist who isn't afraid to 
+confront the "dark gruesome side of society."
+"""
+with = [
+	"Dorota Konchevska",
+	"Chris Hokamp",
+]
