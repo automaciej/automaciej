@@ -5,8 +5,16 @@ project = "zoe_hayter"
 date = 2026-01-03T00:00:00
 
 description = """\
-Single production with Zoe Hayter. The song's title comes from an Czech saying
-that hope dies last.
+Inspired by the Czech proverb "Naděje umírá poslední" (hope dies last), this \
+single production functions as a heartfelt praise to hope. The song \
+demonstrates a maturation into a rich, ensemble-driven aesthetic that \
+utilizes the full range of Zoe Hayter's theatrical background.
+
+The track features a dynamic build from quiet vulnerability into an \
+energetic, band-driven anthem. The violin work by Rafał Szydłowski acts as \
+the metaphorical "voice of hope," while Maciej Bliziński’s piano and electric \
+bass provide a modern, grounded foundation for Zoe's rustic and angelic \
+vocals.\
 """
 
 image = "zoe-hito.jpg"

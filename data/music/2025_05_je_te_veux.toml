@@ -6,7 +6,15 @@ project = "zoe_hayter"
 image = "jeteveux.jpg"
 
 description = """\
-Single production for Zoe Hayter.
+This single highlights Zoe Hayter’s French heritage and her ability to blend \
+intimate storytelling with a charming linguistic delivery. The track is \
+enriched by a timeless jazzy violin melody and explores themes of desire \
+and the appreciation of a fleeting moment.
+
+In collaboration with Maciej Bliziński, Zoe has crafted a sound that is both \
+intimate and anthemic, utilizing the full range of her theatrical \
+background. Maciej's double bass and piano provide a jazz-inflected acoustic \
+resonance that complements Hayter's vocal character.\
 """
 
 [[credits]]
