@@ -2,6 +2,7 @@ title = "Libera"
 artist = "Luisa Annibali"
 date = 2025-11-20T00:00:00
 project = "libera"
+image = "libera.jpg"
 
 description = """\
 Debut album by Luisa Annibali, blending jazz with Italian lyrics, Latin, and \
@@ -17,4 +18,5 @@ name = "Maciej Bliziński"
 roles = ["recording engineer", "mixing engineer"]
 
 [links]
+bandcamp_album = "3135436538"
 bandcamp_url = "https://luisaannibali.bandcamp.com/album/libera"
