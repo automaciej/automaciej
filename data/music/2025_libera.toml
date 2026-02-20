@@ -5,8 +5,16 @@ project = "luisa_annibali"
 image = "libera.jpg"
 
 description = """\
-Debut album by Luisa Annibali, blending jazz with Italian lyrics, Latin, and \
-Brazilian rhythms. Maciej contributed vocal recording and mixing on one track.\
+"Libera" is a landmark solo album from Luisa Annibali, representing the \
+culmination of five years of songwriting. It blends jazz with Italian lyrics \
+and Latin rhythms, drawing comparisons to artists like Esperanza Spalding and \
+Gretchen Parlato.
+
+The album showcases Luisa's fearless genre-blending, incorporating Italian \
+melodic richness, Brazilian rhythms, and modern neo-soul influences. Maciej's \
+involvement in the vocal recording and mixing ensured that the expressive \
+vocals and boundless energy of the performance were captured with pristine \
+clarity.\
 """
 
 [[credits]]

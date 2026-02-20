@@ -5,7 +5,15 @@ single = true
 project = "gaia_marenghi"
 
 description = """\
-Single co-written and produced with Gaia Marenghi.
+"Talkative" serves as the primary exemplar of the Marenghi-Bliziński \
+partnership. Co-written by the artist and the producer, the track is a \
+multi-layered composition that features a unique instrumentation blend, \
+including violin by Oleg Bezuglov.
+
+The narrative surrounding the track is one of intellectual exchange. The title \
+implies a focus on communication, a theme that is reflected in the \
+arrangement where the voice, violin, and percussion engage in a dynamic \
+dialogue, weaving together elements of sophisticated pop and acoustic jazz.\
 """
 
 image = "gaia-talkative.jpg"

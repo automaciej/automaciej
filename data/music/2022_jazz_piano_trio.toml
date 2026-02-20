@@ -5,6 +5,13 @@ project = "karkauskas_trio"
 
 description = """\
 Jazz piano trio performing in 5/4 time signature.
+
+The presence of Riccardo Marenghi, an Italian-born drummer trained at \
+Milan's prestigious C.E.M.M. Institute and influenced by West African and \
+Afro-Cuban traditions, provides a sophisticated bedrock for the trio's \
+exploration of complex time signatures. This rhythmic depth allow the \
+ensemble to navigate the 5/4 meter with intellectual and emotional \
+freedom.\
 """
 
 [[credits]]
