@@ -8,6 +8,32 @@
             {{ end }}
         </header>
 
+        {{- $projectsPage := $.Site.GetPage "/music/projects" -}}
+        {{- if and $projectsPage $projectsPage.Sections -}}
+        <section class="music-projects-section">
+            <h2 class="music-section-label"><a href="{{ $projectsPage.RelPermalink }}">Projects</a></h2>
+            <div class="music-projects-strip">
+                {{- range $projectsPage.Sections -}}
+                {{- $key := .Params.key -}}
+                {{- $proj := index $.Site.Data.projects $key -}}
+                {{- if not $proj.end_year -}}
+                <a href="{{ .RelPermalink }}" class="project-chip">
+                    <span class="project-chip-name">{{ .Title }}</span>
+                    {{- if $proj -}}
+                    <span class="project-chip-years">
+                        {{- $proj.start_year -}}–
+                    </span>
+                    {{- end -}}
+                </a>
+                {{- end -}}
+                {{- end -}}
+                <a href="{{ $projectsPage.RelPermalink }}" class="project-chip project-chip-more">
+                    <span class="project-chip-name">more&nbsp;&#xBB;</span>
+                </a>
+            </div>
+        </section>
+        {{- end -}}
+
         <div class="music-productions">
             {{ $musicProductions := sort .Site.Data.music "date" "desc" }}
             {{ range $musicProductions }}
