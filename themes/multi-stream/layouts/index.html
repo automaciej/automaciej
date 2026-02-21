@@ -84,6 +84,11 @@
                                 </div>
                                 {{ end }}
                             {{ end }}
+                            {{ with $production.project }}
+                            <div class="music-project-link">
+                                <a href="/music/projects/{{ . }}/">More from this project&nbsp;&#xBB;</a>
+                            </div>
+                            {{ end }}
                         </article>
                         {{ end }}
                         <div class="stream-footer">
