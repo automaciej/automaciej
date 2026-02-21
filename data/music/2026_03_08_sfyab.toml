@@ -1,0 +1,36 @@
+title = "Song For You And Bob"
+artist = "Zoe Hayter"
+single = true
+project = "zoe_hayter"
+date = 2026-03-08T00:00:00
+
+description = """\
+"""
+
+image = "zoe-sfyab.jpg"
+
+[[credits]]
+name = "Zoe Hayter"
+roles = ["guitar", "vocals", "composer"]
+
+[[credits]]
+name = "Rafał Szydłowski"
+roles = ["electric violin"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["composer", "programming", "double bass", "producer", "mixing engineer"]
+
+[[credits]]
+name = "Riccardo Marenghi"
+roles = ["drums"]
+
+[[credits]]
+name = "Liam Larkin"
+roles = ["mastering engineer"]
+
+[links]
+streaming = "http://distrokid.com/hyperfollow/zoehayter/song-for-you-and-bob-2/"
+# bandcamp_track = "582427917"
+# bandcamp_url = "https://zoehayter.bandcamp.com/track/hope-is-the-one"
+# streaming = "https://distrokid.com/hyperfollow/zoehayter/hope-is-the-one"

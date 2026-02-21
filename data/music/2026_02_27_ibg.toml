@@ -1,0 +1,29 @@
+title = "I'll Be Gone"
+artist = "Gaia Marenghi"
+date = 2026-02-27T00:00:00
+single = true
+project = "gaia_marenghi"
+
+description = """\
+"""
+
+image = "gaia-ibg.png"
+
+[[credits]]
+name = "Gaia Marenghi"
+roles = ["music", "lyrics", "vocals", "backing vocals"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["music", "production", "arrangement", "guitar", "bass", "percussion", "recording", "mixing", "mastering"]
+
+[[credits]]
+name = "Riccardo Marenghi"
+roles = ["drums"]
+
+[[credits]]
+name = "Oleg Bezuglov"
+roles = ["violin"]
+
+[links]
+streaming = "https://snd.click/6nct"
