@@ -132,8 +132,12 @@
                                     <span class="download-caption">beta for {{ delimit .platforms " and " }}</span>
                                 </a>
                             </div>
-                            {{ else if .appstore }}
-                            <a href="{{ .appstore }}" target="_blank" rel="noopener" class="app-download-link">App Store →</a>
+                            {{ else if .app_store }}
+                            <div class="appstore-badge-banner">
+                                <a href="{{ .app_store }}" target="_blank" rel="noopener">
+                                    <img src="/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" class="app-store-badge"/>
+                                </a>
+                            </div>
                             {{ end }}
                         </article>
                         {{ end }}

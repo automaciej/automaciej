@@ -8,12 +8,11 @@ description = ""
 
 [[credits]]
 name = "Maciej Bliziński"
-roles = ["arranger", "bass", "electric guitar", "recording engineer", "mixing engineer"]
+roles = ["arranger", "guitar", "bass", "recording engineer", "mix engineer"]
 
 [[credits]]
 name = "Mayara Mitsuka"
 roles = ["vocals"]
-
 
 [links]
 youtube = "BvqKqjoZG8c"

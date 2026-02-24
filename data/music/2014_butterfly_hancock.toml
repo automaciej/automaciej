@@ -30,5 +30,9 @@ roles = ["vocals"]
 name = "Sylwester Ochmański"
 roles = ["flute"]
 
+[[credits]]
+name = "Marzena Finucane-Rusak"
+roles = ["vocals"]
+
 [links]
 soundcloud = "148905172"
