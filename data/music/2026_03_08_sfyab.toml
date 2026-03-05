@@ -31,6 +31,5 @@ roles = ["mastering engineer"]
 
 [links]
 streaming = "http://distrokid.com/hyperfollow/zoehayter/song-for-you-and-bob-2/"
-# bandcamp_track = "582427917"
-# bandcamp_url = "https://zoehayter.bandcamp.com/track/hope-is-the-one"
-# streaming = "https://distrokid.com/hyperfollow/zoehayter/hope-is-the-one"
+bandcamp_track = "2609221841"
+bandcamp_url = "https://zoehayter.bandcamp.com/track/song-for-you-and-bob"
