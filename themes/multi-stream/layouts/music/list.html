@@ -21,7 +21,7 @@
                     <span class="project-chip-name">{{ .Title }}</span>
                     {{- if $proj -}}
                     <span class="project-chip-years">
-                        {{- $proj.start_year -}}–
+                        (since {{ $proj.start_year -}})
                     </span>
                     {{- end -}}
                 </a>
