@@ -1,0 +1,68 @@
+{{- $key := .Params.key -}}
+{{- $proj := index .Site.Data.projects $key -}}
+{{- $baseURL := .Site.BaseURL -}}
+{{- $music := slice -}}
+{{- range .Site.Data.music -}}
+  {{- if eq .project $key -}}{{- $music = $music | append . -}}{{- end -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": {{ .Title | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }}
+  {{- with $proj.description }},
+  "description": {{ . | jsonify | safeJS }}{{ end }}
+  {{- with $proj.start_year }},
+  "foundingDate": {{ printf "%d" . | jsonify | safeJS }}{{ end }}
+  {{- with $proj.end_year }},
+  "dissolutionDate": {{ printf "%d" . | jsonify | safeJS }}{{ end }}
+  {{- with $proj.url }},
+  "sameAs": {{ . | jsonify | safeJS }}{{ end }}
+  {{- with $proj.with }},
+  "member": [
+    {{- range $i, $name := . }}{{ if $i }},{{ end }}
+    { "@type": "Person", "name": {{ $name | jsonify | safeJS }} }
+    {{- end }}
+  ]{{ end }}
+  {{- if $music }},
+  "track": [
+    {{- range $i, $m := $music }}{{ if $i }},{{ end }}
+    {
+      "@type": {{ if $m.album }}"MusicAlbum"{{ else }}"MusicRecording"{{ end }},
+      "name": {{ $m.title | jsonify | safeJS }},
+      "datePublished": {{ dateFormat "2006-01-02" $m.date | jsonify | safeJS }},
+      "url": {{ printf "%smusic/#%s" $baseURL ($m.title | urlize) | jsonify | safeJS }}
+      {{- with $m.credits }},
+      "creditedTo": [
+        {{- $first := true }}
+        {{- range . }}
+          {{- $person := .name }}
+          {{- range .roles }}{{ if not $first }},{{ end }}{{ $first = false }}
+        { "@type": "Role", "roleName": {{ . | jsonify | safeJS }}, "creditedTo": { "@type": "Person", "name": {{ $person | jsonify | safeJS }} } }
+          {{- end }}
+        {{- end }}
+      ]{{ end }}
+      {{- with $m.links }}
+        {{- $first := true }}
+        {{- $hasBandcamp := .bandcamp_url }}{{- $hasStreaming := .streaming }}
+        {{- $hasSpotify := .spotify }}{{- $hasApple := .apple_music }}{{- $hasYoutube := .youtube }}
+        {{- if or $hasBandcamp $hasStreaming $hasSpotify $hasApple $hasYoutube }},
+      "potentialAction": { "@type": "ListenAction", "target": [
+        {{- with .bandcamp_url }}{{ if not $first }},{{ end }}{{ $first = false }}
+        { "@type": "EntryPoint", "name": "Bandcamp", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
+        {{- with .spotify }}{{ if not $first }},{{ end }}{{ $first = false }}
+        { "@type": "EntryPoint", "name": "Spotify", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
+        {{- with .apple_music }}{{ if not $first }},{{ end }}{{ $first = false }}
+        { "@type": "EntryPoint", "name": "Apple Music", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
+        {{- with .youtube }}{{ if not $first }},{{ end }}{{ $first = false }}
+        { "@type": "EntryPoint", "name": "YouTube", "urlTemplate": {{ printf "https://youtube.com/watch?v=%s" . | jsonify | safeJS }} }{{ end }}
+        {{- with .streaming }}{{ if not $first }},{{ end }}{{ $first = false }}
+        { "@type": "EntryPoint", "name": "Streaming", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
+      ] }{{ end }}
+      {{- end }}
+    }
+    {{- end }}
+  ]{{ end }}
+}
+</script>

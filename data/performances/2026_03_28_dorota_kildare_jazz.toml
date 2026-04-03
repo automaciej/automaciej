@@ -2,6 +2,7 @@ name = "Kildare Jazz Festival 2026: Dorota Konchevska – Blooming Rooms"
 country = "Republic of Ireland"
 city = "Newbridge"
 url = "https://www.riverbank.ie/event/kildare-jazz-festival-2026-dorota-konchevska-blooming-rooms/"
+project = "blooming_rooms"
 instrument = "double bass and electric guitar"
 with = [
 	"Dorota Konchevska",

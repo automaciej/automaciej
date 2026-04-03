@@ -1,0 +1,25 @@
+{{- $s := .Site.Params.social -}}
+{{- $sameAs := slice -}}
+{{- with $s.instagramHandle }}{{ $sameAs = $sameAs | append (printf "https://instagram.com/%s" .) }}{{ end -}}
+{{- with $s.mastodonLink }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with $s.githubName }}{{ $sameAs = $sameAs | append (printf "https://github.com/%s" .) }}{{ end -}}
+{{- with $s.twitterHandle }}{{ $sameAs = $sameAs | append (printf "https://twitter.com/%s" .) }}{{ end -}}
+{{- with $s.linkedIn }}{{ $sameAs = $sameAs | append (printf "https://linkedin.com/in/%s" .) }}{{ end -}}
+{{- with $s.soundcloud }}{{ $sameAs = $sameAs | append (printf "https://soundcloud.com/%s" .) }}{{ end -}}
+{{- with $s.bluesky }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with $s.facebookUrlPath }}{{ $sameAs = $sameAs | append (printf "https://facebook.com/%s" .) }}{{ end -}}
+{{- with $s.tiktokName }}{{ $sameAs = $sameAs | append (printf "https://tiktok.com/@%s" .) }}{{ end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ .Site.Title | jsonify | safeJS }},
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
+  "description": {{ (.Description | default .Site.Params.description) | jsonify | safeJS }},
+  "email": {{ .Site.Params.authorEmail | jsonify | safeJS }},
+  "sameAs": [{{ range $i, $url := $sameAs }}{{ if $i }},{{ end }}{{ $url | jsonify | safeJS }}{{ end }}]
+  {{- with .Params.image }},
+  "image": {{ printf "%sbio/images/%s" $.Site.BaseURL . | jsonify | safeJS }}
+  {{- end }}
+}
+</script>
