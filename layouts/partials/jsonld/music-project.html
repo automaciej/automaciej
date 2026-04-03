@@ -1,8 +1,8 @@
 {{- $key := .Params.key -}}
-{{- $proj := index .Site.Data.projects $key -}}
+{{- $proj := index hugo.Data.projects $key -}}
 {{- $baseURL := .Site.BaseURL -}}
 {{- $music := slice -}}
-{{- range .Site.Data.music -}}
+{{- range hugo.Data.music -}}
   {{- if eq .project $key -}}{{- $music = $music | append . -}}{{- end -}}
 {{- end -}}
 <script type="application/ld+json">

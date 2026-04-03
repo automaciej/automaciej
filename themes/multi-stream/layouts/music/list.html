@@ -15,7 +15,7 @@
             <div class="music-projects-strip">
                 {{- range $projectsPage.Sections -}}
                 {{- $key := .Params.key -}}
-                {{- $proj := index $.Site.Data.projects $key -}}
+                {{- $proj := index hugo.Data.projects $key -}}
                 {{- if not $proj.end_year -}}
                 <a href="{{ .RelPermalink }}" class="project-chip">
                     <span class="project-chip-name">{{ .Title }}</span>
@@ -35,7 +35,7 @@
         {{- end -}}
 
         <div class="music-productions">
-            {{ $musicProductions := sort .Site.Data.music "date" "desc" }}
+            {{ $musicProductions := sort hugo.Data.music "date" "desc" }}
             {{ range $musicProductions }}
             {{ partial "music-card.html" . }}
             {{ end }}

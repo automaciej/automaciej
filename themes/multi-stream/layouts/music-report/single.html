@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{- /* Build sorted slices from data maps */ -}}
 {{- $perfs := slice -}}
-{{- range $k, $v := $.Site.Data.performances -}}
+{{- range $k, $v := hugo.Data.performances -}}
   {{- $perfs = $perfs | append $v -}}
 {{- end -}}
 {{- $perfs = sort $perfs "start_time" "asc" -}}
 
 {{- $projs := slice -}}
-{{- range $k, $v := $.Site.Data.projects -}}
+{{- range $k, $v := hugo.Data.projects -}}
   {{- $projs = $projs | append (merge $v (dict "key" $k)) -}}
 {{- end -}}
 {{- $projs = sort $projs "start_year" "asc" -}}
@@ -18,7 +18,7 @@
 {{- $summCountries := slice -}}
 
 {{- /* Performances: accumulate by year+country */ -}}
-{{- range $k, $v := $.Site.Data.performances -}}
+{{- range $k, $v := hugo.Data.performances -}}
   {{- $year := dateFormat "2006" $v.start_time -}}
   {{- $c    := $v.country | default "Unknown" -}}
   {{- $sc.Add (printf "yc|%s|%s|perfs" $year $c) 1 -}}
@@ -29,9 +29,9 @@
 {{- end -}}
 
 {{- /* Releases: country derived from linked project */ -}}
-{{- range $k, $v := $.Site.Data.music -}}
+{{- range $k, $v := hugo.Data.music -}}
   {{- if $v.project -}}
-    {{- $proj := index $.Site.Data.projects $v.project -}}
+    {{- $proj := index hugo.Data.projects $v.project -}}
     {{- if $proj -}}
       {{- $year := dateFormat "2006" $v.date -}}
       {{- $c    := $proj.country | default "Unknown" -}}
@@ -45,7 +45,7 @@
 {{- end -}}
 
 {{- /* Projects: count by country */ -}}
-{{- range $k, $v := $.Site.Data.projects -}}
+{{- range $k, $v := hugo.Data.projects -}}
   {{- $c := $v.country | default "Unknown" -}}
   {{- $sc.Add (printf "c|%s|projects" $c) 1 -}}
   {{- if not (in $summCountries $c) -}}{{- $summCountries = $summCountries | append $c -}}{{- end -}}
@@ -138,7 +138,7 @@
         {{- range $projs }}
         {{- $projKey := .key -}}
         {{- $releases := slice -}}
-        {{- range $mk, $mv := $.Site.Data.music -}}
+        {{- range $mk, $mv := hugo.Data.music -}}
           {{- if eq $mv.project $projKey -}}
             {{- $releases = $releases | append $mv -}}
           {{- end -}}
@@ -204,7 +204,7 @@
     <ol class="report-perf-list">
       {{- range $perfs }}
       {{- $proj := false -}}
-      {{- if .project }}{{- $proj = index $.Site.Data.projects .project -}}{{- end }}
+      {{- if .project }}{{- $proj = index hugo.Data.projects .project -}}{{- end }}
       {{- $displayName := .name -}}
       {{- if and (not .name) $proj }}{{- $displayName = $proj.name -}}{{- end }}
       <li class="report-perf-item">

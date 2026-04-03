@@ -78,7 +78,7 @@
 <script>
 // What a wonderful feature of Hugo to automatically serialize into
 // JSON!
-var performancesList = {{ $.Site.Data.performances | jsonify (dict "indent" "  ") | safeJS }};
+var performancesList = {{ hugo.Data.performances | jsonify (dict "indent" "  ") | safeJS }};
 
 // TODO: Move this to a separate file.
 

@@ -1,6 +1,6 @@
 {{- $baseURL := .Site.BaseURL -}}
 {{- $authorName := .Site.Params.authorName -}}
-{{- $allPerf := sort .Site.Data.performances "start_time" "desc" -}}
+{{- $allPerf := sort hugo.Data.performances "start_time" "desc" -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,7 +35,7 @@
         },
         "performer": [
           {{- if $p.project }}
-          {{- $proj := index $.Site.Data.projects $p.project }}
+          {{- $proj := index hugo.Data.projects $p.project }}
           {
             "@type": "MusicGroup",
             "name": {{ ($proj.name | default $p.name) | jsonify | safeJS }},
