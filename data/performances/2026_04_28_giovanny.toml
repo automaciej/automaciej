@@ -1,0 +1,26 @@
+name = "DCU BA in Jazz and Contemporary Music Performance Final Year Student Performances"
+country = "Republic of Ireland"
+city = "Dublin"
+url = "https://www.nch.ie/all-events-listing/dcu-ba-in-jazz-and-contemporary-apr26/"
+instrument = "double bass"
+with = [
+	"Giovanny Stanescu",
+	"Bianca Lucaci",
+	"Darragh Groome",
+]
+description = """\
+Final Year Student Performances. A Celebration of Young Irish Jazz:
+An exciting opportunity to see the best of young Irish jazz, as DCU’s BA in Jazz
+and Contemporary Music Performance students take to the stage to perform in
+front of a live audience to showcase their talents, as part of their final
+assessments.
+
+DCU final students will present a programme of original music, devised and
+developed by these promising young musicians.
+"""
+
+venue = "National Concert Hall"
+venue_url = "https://www.nch.ie/"
+start_time = 2026-04-30T15:00:00
+tickets = "https://www.nch.ie/all-events-listing/dcu-ba-in-jazz-and-contemporary-apr26/"
+significant = true
