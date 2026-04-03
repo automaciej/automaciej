@@ -1,0 +1,7 @@
+name = "phpbb3-static"
+position = 5
+category = "archival"
+description = "Converts a live phpBB 3 forum into a static HTML archive. Extracts posts via HTTP, renders them with the prosilver skin, and optionally generates redirects from old URLs."
+app_site = "https://github.com/automaciej/phpbb3-static"
+platforms = ["Linux"]
+license = "GPL-2.0+"

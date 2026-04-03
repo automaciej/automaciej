@@ -1,0 +1,8 @@
+name = "RoadLapse"
+position = 4
+featured = true
+category = "video"
+description = "Transforms long driving or cycling videos into smooth, stabilized time-lapses. 8x speedup, vidstab stabilization, multi-file concatenation, H.265 encoding."
+app_site = "https://github.com/automaciej/roadlapse"
+platforms = ["Linux", "macOS"]
+license = "GPL-3.0+"

@@ -85,9 +85,11 @@
                                 {{ end }}
                             {{ end }}
                             {{ with $production.project }}
+                            {{ if gt (len (where (sort $.Site.Data.music "date") "project" .)) 1 }}
                             <div class="music-project-link">
                                 <a href="/music/projects/{{ . }}/">More from this project&nbsp;&#xBB;</a>
                             </div>
+                            {{ end }}
                             {{ end }}
                         </article>
                         {{ end }}
@@ -103,7 +105,7 @@
                 <div class="stream-column apps-stream">
                     <h2><a href="/apps/">Apps »</a></h2>
                     <div class="stream-content">
-                        {{ range .Site.Data.apps }}
+                        {{ range where (sort .Site.Data.apps "position") "featured" true }}
                         <article class="app-preview">
                             <div class="app-header">
                               {{ if .subsection }}
@@ -111,8 +113,8 @@
                               {{ else if .app_site }}
                                 <h3><a href="{{ .app_site }}">{{ .name }}&nbsp;»</a></h3>
                               {{ end }}
-                                <p class="app-type">
-                                    {{ .type }}
+                                <p class="app-category">
+                                    {{ .category }}
                                     {{ with .platforms }}
                                     • {{ delimit . ", " }}
                                     {{ end }}
