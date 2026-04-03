@@ -3,10 +3,10 @@
 <div class="music-project-page">
   <div class="container">
     {{- if $key -}}
-    {{- $proj := index $.Site.Data.projects $key -}}
+    {{- $proj := index hugo.Data.projects $key -}}
 
     {{- $performances := slice -}}
-    {{- range $.Site.Data.performances -}}
+    {{- range hugo.Data.performances -}}
       {{- if eq .project $key -}}
         {{- $performances = $performances | append . -}}
       {{- end -}}
@@ -14,7 +14,7 @@
     {{- $performances = sort $performances "start_time" -}}
 
     {{- $music := slice -}}
-    {{- range $.Site.Data.music -}}
+    {{- range hugo.Data.music -}}
       {{- if eq .project $key -}}
         {{- $music = $music | append . -}}
       {{- end -}}
@@ -88,15 +88,15 @@
     {{- $pastEntries := slice -}}
     {{- range .Sections -}}
       {{- $key := .Params.key -}}
-      {{- $proj := index $.Site.Data.projects $key -}}
+      {{- $proj := index hugo.Data.projects $key -}}
 
       {{- $perfCount := 0 -}}
-      {{- range $.Site.Data.performances -}}
+      {{- range hugo.Data.performances -}}
         {{- if eq .project $key -}}{{- $perfCount = add $perfCount 1 -}}{{- end -}}
       {{- end -}}
 
       {{- $musicCount := 0 -}}
-      {{- range $.Site.Data.music -}}
+      {{- range hugo.Data.music -}}
         {{- if eq .project $key -}}{{- $musicCount = add $musicCount 1 -}}{{- end -}}
       {{- end -}}
 

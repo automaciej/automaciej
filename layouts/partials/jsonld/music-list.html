@@ -1,5 +1,5 @@
 {{- $baseURL := .Site.BaseURL -}}
-{{- $allMusic := sort .Site.Data.music "date" "desc" -}}
+{{- $allMusic := sort hugo.Data.music "date" "desc" -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

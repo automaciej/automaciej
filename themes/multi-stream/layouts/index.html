@@ -25,7 +25,7 @@
                 <div class="stream-column music-stream">
                     <h2><a href="/music/">Music »</a></h2>
                     <div class="stream-content">
-                        {{ $musicProductions := sort .Site.Data.music "date" "desc" }}
+                        {{ $musicProductions := sort hugo.Data.music "date" "desc" }}
                         {{ range $index, $production := first 3 $musicProductions }}
                         <article class="music-preview{{ if gt $index 0 }} music-preview-desktop-only{{ end }}">
                             {{ with $production.image }}
@@ -85,7 +85,7 @@
                                 {{ end }}
                             {{ end }}
                             {{ with $production.project }}
-                            {{ if gt (len (where (sort $.Site.Data.music "date") "project" .)) 1 }}
+                            {{ if gt (len (where (sort hugo.Data.music "date") "project" .)) 1 }}
                             <div class="music-project-link">
                                 <a href="/music/projects/{{ . }}/">More from this project&nbsp;&#xBB;</a>
                             </div>
@@ -105,7 +105,7 @@
                 <div class="stream-column apps-stream">
                     <h2><a href="/apps/">Apps »</a></h2>
                     <div class="stream-content">
-                        {{ range where (sort .Site.Data.apps "position") "featured" true }}
+                        {{ range where (sort hugo.Data.apps "position") "featured" true }}
                         <article class="app-preview">
                             <div class="app-header">
                               {{ if .subsection }}

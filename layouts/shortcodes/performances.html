@@ -28,8 +28,8 @@
 <script>
 // What a wonderful feature of Hugo to automatically serialize into
 // JSON!
-var performancesList = {{ $.Site.Data.performances | jsonify (dict "indent" "  ") | safeJS }};
-var projectsList = {{ $.Site.Data.projects | jsonify (dict "indent" "  ") | safeJS }};
+var performancesList = {{ hugo.Data.performances | jsonify (dict "indent" "  ") | safeJS }};
+var projectsList = {{ hugo.Data.projects | jsonify (dict "indent" "  ") | safeJS }};
 var simplePast = {{ if .Get "simple_past" }}true{{ else }}false{{ end }};
 
 // TODO: Move this to a separate file.
