@@ -25,6 +25,7 @@
 
 {{ if .IsHome }}
   {{ partial "jsonld/person.html" . }}
+  {{ partial "jsonld/website.html" . }}
 {{ else if and (eq .Type "music-project") .Params.key }}
   {{ partial "jsonld/music-project.html" . }}
 {{ else if and (eq .Section "music") (eq .Kind "section") }}
@@ -35,4 +36,7 @@
   {{ partial "jsonld/apps.html" . }}
 {{ else if and .IsPage (eq .Section "jogger") }}
   {{ partial "rich-data-single.html" . }}
+{{ else if and (eq .Kind "section") (eq .Section "bio") }}
+  {{ partial "jsonld/profilepage.html" . }}
 {{ end }}
+{{ partial "jsonld/breadcrumb.html" . }}

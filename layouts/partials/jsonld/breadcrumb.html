@@ -1,0 +1,26 @@
+{{- if not .IsHome -}}
+{{- $ancestors := .Ancestors -}}
+{{- $n := len $ancestors -}}
+{{- $pages := slice -}}
+{{- range $i, $_ := $ancestors -}}
+  {{- $page := index $ancestors (sub (sub $n 1) $i) -}}
+  {{- $pages = $pages | append $page -}}
+{{- end -}}
+{{- $pages = $pages | append . -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- range $i, $page := $pages }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "name": {{ $page.Title | jsonify | safeJS }},
+      "item": {{ $page.Permalink | jsonify | safeJS }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end -}}

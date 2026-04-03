@@ -21,6 +21,13 @@
         "image": {{ printf "%simages/music/%s" $baseURL . | jsonify | safeJS }}{{ end }}
         {{- if $m.description }},
         "description": {{ $m.description | jsonify | safeJS }}{{ end }}
+        {{- if or (eq $m.composition_origin "cover") (eq $m.composition_origin "standard") }},
+        "recordingOf": {
+          "@type": "MusicComposition",
+          "name": {{ $m.title | jsonify | safeJS }}
+          {{- with $m.original_artist }},
+          "composer": { "@type": "MusicGroup", "name": {{ . | jsonify | safeJS }} }{{ end }}
+        }{{ end }}
         {{- with $m.credits }},
         "creditedTo": [
           {{- $first := true }}
@@ -55,3 +62,27 @@
   ]
 }
 </script>
+{{- $videos := slice -}}
+{{- range hugo.Data.music -}}
+  {{- if and .links .links.youtube -}}
+    {{- $videos = $videos | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $videos -}}
+<script type="application/ld+json">
+[
+  {{- range $i, $v := $videos }}{{ if $i }},{{ end }}
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": {{ $v.title | jsonify | safeJS }},
+    "description": {{ ($v.description | default $v.title) | jsonify | safeJS }},
+    "thumbnailUrl": {{ printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" $v.links.youtube | jsonify | safeJS }},
+    "embedUrl": {{ printf "https://www.youtube.com/embed/%s" $v.links.youtube | jsonify | safeJS }},
+    "uploadDate": {{ dateFormat "2006-01-02" $v.date | jsonify | safeJS }},
+    "url": {{ printf "https://www.youtube.com/watch?v=%s" $v.links.youtube | jsonify | safeJS }}
+  }
+  {{- end }}
+]
+</script>
+{{- end -}}
