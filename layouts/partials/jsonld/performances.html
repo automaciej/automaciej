@@ -1,0 +1,57 @@
+{{- $baseURL := .Site.BaseURL -}}
+{{- $authorName := .Site.Params.authorName -}}
+{{- $allPerf := sort .Site.Data.performances "start_time" "desc" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ .Title | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "itemListElement": [
+    {{- range $i, $p := $allPerf }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "item": {
+        "@type": "MusicEvent",
+        "name": {{ $p.name | jsonify | safeJS }},
+        "startDate": {{ dateFormat "2006-01-02T15:04:05" $p.start_time | jsonify | safeJS }}
+        {{- with $p.url }},
+        "url": {{ . | jsonify | safeJS }}{{ end }}
+        {{- with $p.description }}{{ if . }},
+        "description": {{ . | jsonify | safeJS }}{{ end }}{{ end }},
+        "location": {
+          "@type": "Place",
+          "name": {{ ($p.venue | default $p.city) | jsonify | safeJS }}
+          {{- with $p.venue_url }},
+          "url": {{ . | jsonify | safeJS }}{{ end }},
+          "address": {
+            "@type": "PostalAddress"
+            {{- with $p.city }},
+            "addressLocality": {{ . | jsonify | safeJS }}{{ end }}
+            {{- with $p.country }},
+            "addressCountry": {{ . | jsonify | safeJS }}{{ end }}
+          }
+        },
+        "performer": [
+          {{- if $p.project }}
+          {{- $proj := index $.Site.Data.projects $p.project }}
+          {
+            "@type": "MusicGroup",
+            "name": {{ ($proj.name | default $p.name) | jsonify | safeJS }},
+            "url": {{ printf "%smusic/projects/%s/" $baseURL $p.project | jsonify | safeJS }}
+          },
+          {{- end }}
+          { "@type": "Person", "name": {{ $authorName | jsonify | safeJS }} }
+          {{- range $p.with }},
+          { "@type": "Person", "name": {{ . | jsonify | safeJS }} }
+          {{- end }}
+        ]
+        {{- with $p.tickets }},
+        "offers": { "@type": "Offer", "url": {{ . | jsonify | safeJS }} }{{ end }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>

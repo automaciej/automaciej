@@ -1,0 +1,32 @@
+{{- $apps := sort .Site.Data.apps "position" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ .Title | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "itemListElement": [
+    {{- range $i, $app := $apps }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": {{ $app.name | jsonify | safeJS }},
+        "description": {{ $app.description | jsonify | safeJS }},
+        "applicationCategory": {{ $app.category | jsonify | safeJS }},
+        "operatingSystem": {{ delimit $app.platforms ", " | jsonify | safeJS }}
+        {{- with $app.app_site }},
+        "url": {{ . | jsonify | safeJS }}{{ end }}
+        {{- with $app.appstore }},
+        "installUrl": {{ . | jsonify | safeJS }}
+        {{- else }}{{- with $app.testflight }},
+        "installUrl": {{ . | jsonify | safeJS }}{{ end }}{{ end }}
+        {{- with $app.license }},
+        "license": {{ . | jsonify | safeJS }}{{ end }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>

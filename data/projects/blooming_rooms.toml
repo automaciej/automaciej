@@ -1,10 +1,11 @@
-name = "Dorota Konchevska"
+name = "Blooming Rooms"
 country = "Republic of Ireland"
 roles = [
 	"performer",
 	"producer",
 ]
 start_year = 2025
+end_year = 2026
 url = "https://www.iamdorota.com"
 description = """
 Dorota Konchevska is an experimental powerhouse whose work transcends the 

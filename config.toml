@@ -48,6 +48,7 @@ copyright = "&copy;2025 Maciej Bliziński"
   twitterHandle = "automaciej"
   soundcloud = "maciej-blizinski"
   linkedIn = "automaciej"
+  bluesky = "https://bsky.app/profile/blizin.ski"
 
 [params.visual]
   [params.visual.image]
