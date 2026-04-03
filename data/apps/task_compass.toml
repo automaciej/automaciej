@@ -1,6 +1,8 @@
 name = "Task Compass"
-type = "productivity"
+position = 1
+featured = true
+category = "productivity"
 description = "Helps you prioritize your tasks and stick to what's most important. Integrates with Apple Reminders."
 app_site = "https://task-compass.app"
-platforms = ["iOS", "macOS"]
+platforms = ["iOS", "macOS", "Android"]
 testflight = "https://testflight.apple.com/join/T3DMu1kp"

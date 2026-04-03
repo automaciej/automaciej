@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="list-page">
+    <div class="container">
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Content }}
+            <div class="section-intro">
+                {{ . }}
+            </div>
+            {{ end }}
+        </header>
+
+        <div class="apps-list">
+            {{ range sort .Site.Data.apps "position" }}
+            {{ partial "app-card.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

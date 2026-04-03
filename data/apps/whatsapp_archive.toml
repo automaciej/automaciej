@@ -1,0 +1,7 @@
+name = "whatsapp-archive"
+position = 6
+category = "archival"
+description = "Converts exported WhatsApp chat history (.txt) into a readable HTML page."
+app_site = "https://github.com/automaciej/whatsapp-archive"
+platforms = ["Linux", "Windows"]
+license = "GPL-3.0"
