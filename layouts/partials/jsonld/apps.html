@@ -24,6 +24,8 @@
         "installUrl": {{ . | jsonify | safeJS }}{{ end }}{{ end }}
         {{- with $app.license }},
         "license": {{ . | jsonify | safeJS }}{{ end }}
+        {{- with $app.author }},
+        "author": { "@type": "Person", "name": {{ . | jsonify | safeJS }} }{{ end }}
       }
     }
     {{- end }}

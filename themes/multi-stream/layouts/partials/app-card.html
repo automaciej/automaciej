@@ -8,7 +8,7 @@
         <h2>{{ .name }}</h2>
         {{ end }}
         <p class="app-category">
-            {{ .category }}
+            {{ with .author }}{{ . }} • {{ end }}{{ .category }}
             {{ with .platforms }}• {{ delimit . ", " }}{{ end }}
             {{ with .license }}• {{ . }}{{ end }}
         </p>

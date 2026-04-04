@@ -1,4 +1,5 @@
 name = "Task Compass"
+author = "Maciej Bliziński"
 position = 1
 featured = true
 category = "productivity"
