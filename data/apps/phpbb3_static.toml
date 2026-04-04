@@ -1,4 +1,5 @@
 name = "phpbb3-static"
+author = "Maciej Bliziński"
 position = 5
 category = "archival"
 description = "Converts a live phpBB 3 forum into a static HTML archive. Extracts posts via HTTP, renders them with the prosilver skin, and optionally generates redirects from old URLs."
