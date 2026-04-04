@@ -1,14 +1,22 @@
 title = "Triste"
-artist = "Antonio Carlos Jobim (cover)"
+composition_origin = "standard"
+original_artist = "Antonio Carlos Jobim"
+artist = "Mayara Mitsuka"
 date = 2022-08-01T00:00:00
 
-description = """\
-Cover of Antonio Carlos Jobim's Triste.
-"""
+description = ""
 
 [[credits]]
 name = "Maciej Bliziński"
-roles = ["recording engineer", "mix engineer"]
+roles = ["arranger", "bass", "electric guitar", "recording engineer", "mixing engineer"]
+
+[[credits]]
+name = "Mayara Mitsuka"
+roles = ["vocals"]
+
+[[credits]]
+name = "Ivan Vučica"
+roles = ["videopgraphy"]
 
 [links]
 youtube = "t4omYtBjZwA"

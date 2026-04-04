@@ -1,14 +1,18 @@
 title = "André de sapato novo"
+composition_origin = "standard"
+original_artist = "Jacob do Bandolim"
 artist = "Regional Massapê"
 date = 2023-06-01T00:00:00
 
-description = """\
-Recording of Regional Massapê performing André de sapato novo.
-"""
+description = ""
 
 [[credits]]
 name = "Maciej Bliziński"
-roles = ["recording engineer", "mix engineer"]
+roles = ["recording engineer", "mixing engineer"]
+
+[[credits]]
+name = "Regional Massapê"
+roles = ["performance"]
 
 [links]
 instagram = "Cy0YKUdqZB6"
