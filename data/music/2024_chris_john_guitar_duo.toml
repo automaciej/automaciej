@@ -1,4 +1,5 @@
 title = "Guitar duo session"
+composition_origin = "original"
 artist = "Chris Comhaill and John Mahon"
 date = 2024-06-01T00:00:00
 
@@ -9,6 +10,14 @@ Recording session for guitar duo Chris Comhaill and John Mahon.
 [[credits]]
 name = "Maciej Bliziński"
 roles = ["recording engineer", "mix engineer"]
+
+[[credits]]
+name = "John Mahon"
+roles = ["acoustic guitar"]
+
+[[credits]]
+name = "Chris Comhaill"
+roles = ["acoustic guitar"]
 
 [links]
 instagram = "C8jvuVBMMnQ"

@@ -1,14 +1,34 @@
 title = "Butterfly"
-artist = "Herbie Hancock (cover)"
+composition_origin = "cover"
+original_artist = "Herbie Hancock"
+artist = "Maciej Bliziński"
 date = 2014-06-01T00:00:00
 
-description = """\
-Cover of Herbie Hancock's Butterfly.
-"""
+description = ""
 
 [[credits]]
 name = "Maciej Bliziński"
-roles = ["recording engineer", "mix engineer", "performance"]
+roles = ["recording engineer", "mixing engineer", "bass"]
+
+[[credits]]
+name = "Niall Brady"
+roles = ["recording engineer"]
+
+[[credits]]
+name = "Chris Hokamp"
+roles = ["drums"]
+
+[[credits]]
+name = "Lucyna Pałzewicz"
+roles = ["piano"]
+
+[[credits]]
+name = "Marzena Finucane"
+roles = ["vocals"]
+
+[[credits]]
+name = "Sylwester Ochmański"
+roles = ["flute"]
 
 [links]
 soundcloud = "148905172"

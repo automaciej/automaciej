@@ -2,6 +2,9 @@
     <div class="music-header">
         <h2>{{ .title }}</h2>
         <div class="music-meta">
+            {{ if or (eq .composition_origin "cover") (eq .composition_origin "standard") }}
+            <span class="composition-origin">{{ .composition_origin }}</span>{{ with .original_artist }} • <span class="original-artist">{{ . }}</span>{{ end }} •
+            {{ end }}
             <span class="artist">{{ .artist }}</span>
             {{ if .single }}
             <span class="release-type">• Single</span>
