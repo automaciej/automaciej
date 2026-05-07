@@ -1,0 +1,29 @@
+title = "River"
+composition_origin = "original"
+artist = "Gaia Marenghi"
+date = 2026-06-23T00:00:00
+single = true
+project = "gaia_marenghi"
+
+description = """\
+A bold, minimalist reimagining of Bishop Briggs' 'River.' Stripped of the original's synths, this Dublin-recorded version features the Marenghi siblings (Gaia on vocals, Riccardo on drums) in a raw, 'certified organic' arrangement. It opens with bass and Gaia's powerhouse voice, building into a high-intensity chorus. It captures the tension of the original with a muscular, live-band energy.
+"""
+
+image = "gaia-river.jpg"
+
+[[credits]]
+name = "Gaia Marenghi"
+roles = ["vocals", "backing vocals"]
+
+[[credits]]
+name = "Maciej Bliziński"
+roles = ["production", "arrangement", "guitar", "bass", "percussion", "recording", "mixing", "mastering"]
+
+[[credits]]
+name = "Riccardo Marenghi"
+roles = ["drums"]
+
+[links]
+# streaming = "https://snd.click/6nct"
+# bandcamp_track = "258544418"
+# bandcamp_url = "https://gaiamarenghi.bandcamp.com/track/i-ll-be-gone"

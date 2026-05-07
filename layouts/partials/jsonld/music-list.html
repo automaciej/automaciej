@@ -17,8 +17,13 @@
         "byArtist": { "@type": "MusicGroup", "name": {{ $m.artist | jsonify | safeJS }} },
         "datePublished": {{ dateFormat "2006-01-02" $m.date | jsonify | safeJS }},
         "url": {{ printf "%smusic/#%s" $baseURL ($m.title | urlize) | jsonify | safeJS }}
-        {{- with $m.image }},
-        "image": {{ printf "%simages/music/%s" $baseURL . | jsonify | safeJS }}{{ end }}
+        {{- with $m.image }}
+        {{- $img := resources.Get (printf "images/music/%s" .) }}
+        {{- if $img }}
+        {{- $resized := $img.Resize "800x webp" }},
+        "image": {{ $resized.Permalink | jsonify | safeJS }}
+        {{- end }}
+        {{- end }}
         {{- if $m.description }},
         "description": {{ $m.description | jsonify | safeJS }}{{ end }}
         {{- if or (eq $m.composition_origin "cover") (eq $m.composition_origin "standard") }},
