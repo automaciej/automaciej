@@ -19,7 +19,7 @@
         {{- $music = $music | append . -}}
       {{- end -}}
     {{- end -}}
-    {{- $music = sort $music "date" -}}
+    {{- $music = sort $music "date" "desc" -}}
 
     <header class="section-header">
       <h1>{{ .Title }}</h1>
