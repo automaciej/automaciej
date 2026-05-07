@@ -29,11 +29,15 @@
                         {{ range $index, $production := first 3 $musicProductions }}
                         <article class="music-preview{{ if gt $index 0 }} music-preview-desktop-only{{ end }}">
                             {{ with $production.image }}
+                            {{ $img := resources.Get (printf "images/music/%s" .) }}
+                            {{ if $img }}
+                            {{ $resized := $img.Resize "300x webp" }}
                             <div class="music-preview-image">
                                 <a href="/music/#{{ $production.title | urlize }}">
-                                    <img src="{{ printf "/images/music/%s" . | relURL }}" alt="{{ $production.title }}">
+                                    <img src="{{ $resized.RelPermalink }}" alt="{{ $production.title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
                                 </a>
                             </div>
+                            {{ end }}
                             {{ end }}
                             <div class="music-preview-content">
                                 <h3><a href="/music/">{{ $production.title }}</a></h3>

@@ -15,9 +15,13 @@
         </div>
     </div>
     {{ with .image }}
+    {{ $img := resources.Get (printf "images/music/%s" .) }}
+    {{ if $img }}
+    {{ $resized := $img.Resize "400x webp" }}
     <div class="music-image">
-        <img src="{{ printf "/images/music/%s" . | relURL }}" alt="{{ $.title }}">
+        <img src="{{ $resized.RelPermalink }}" alt="{{ $.title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
     </div>
+    {{ end }}
     {{ end }}
 
     {{ with .description }}
