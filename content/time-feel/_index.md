@@ -1,6 +1,5 @@
 ---
 title: "Time Feel"
-# tagline: "Making the invisible visible"
 description: "Interactive metronome with real-time timing feedback for musicians."
 date: "2025-09-21T15:30:00+01:00"
 lastmod: "2025-09-21T15:30:00+01:00"
