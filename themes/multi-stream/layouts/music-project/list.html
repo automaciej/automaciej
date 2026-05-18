@@ -13,13 +13,14 @@
     {{- end -}}
     {{- $performances = sort $performances "start_time" -}}
 
+    {{- $releasesSection := $.Site.GetPage "/music/releases" -}}
     {{- $music := slice -}}
-    {{- range hugo.Data.music -}}
-      {{- if eq .project $key -}}
+    {{- range $releasesSection.RegularPages -}}
+      {{- if eq .Params.project $key -}}
         {{- $music = $music | append . -}}
       {{- end -}}
     {{- end -}}
-    {{- $music = sort $music "date" "desc" -}}
+    {{- $music = sort $music "Params.release_date" "desc" -}}
 
     <header class="section-header">
       <h1>{{ .Title }}</h1>
@@ -72,7 +73,7 @@
       <h2>Releases</h2>
       <div class="music-productions">
         {{ range $music }}
-        {{ partial "music-card.html" (merge . (dict "hide_project_link" true)) }}
+        {{ partial "music-card.html" (dict "page" . "hide_project_link" true) }}
         {{ end }}
       </div>
     </section>
@@ -84,6 +85,7 @@
       <h1>{{ .Title }}</h1>
     </header>
 
+    {{- $releasesSection := $.Site.GetPage "/music/releases" -}}
     {{- $activeEntries := slice -}}
     {{- $pastEntries := slice -}}
     {{- range .Sections -}}
@@ -96,8 +98,8 @@
       {{- end -}}
 
       {{- $musicCount := 0 -}}
-      {{- range hugo.Data.music -}}
-        {{- if eq .project $key -}}{{- $musicCount = add $musicCount 1 -}}{{- end -}}
+      {{- range $releasesSection.RegularPages -}}
+        {{- if eq .Params.project $key -}}{{- $musicCount = add $musicCount 1 -}}{{- end -}}
       {{- end -}}
 
       {{- $entry := dict

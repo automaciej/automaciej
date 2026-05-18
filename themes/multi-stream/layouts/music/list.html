@@ -35,9 +35,9 @@
         {{- end -}}
 
         <div class="music-productions">
-            {{ $musicProductions := sort hugo.Data.music "date" "desc" }}
-            {{ range $musicProductions }}
-            {{ partial "music-card.html" . }}
+            {{- $releases := .Site.GetPage "/music/releases" -}}
+            {{ range sort $releases.RegularPages "Params.release_date" "desc" }}
+            {{ partial "music-card.html" (dict "page" . "hide_project_link" false) }}
             {{ end }}
         </div>
 

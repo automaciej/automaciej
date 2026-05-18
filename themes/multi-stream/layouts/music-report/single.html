@@ -29,11 +29,12 @@
 {{- end -}}
 
 {{- /* Releases: country derived from linked project */ -}}
-{{- range $k, $v := hugo.Data.music -}}
-  {{- if $v.project -}}
-    {{- $proj := index hugo.Data.projects $v.project -}}
+{{- $releasesSection := $.Site.GetPage "/music/releases" -}}
+{{- range $releasesSection.RegularPages -}}
+  {{- if .Params.project -}}
+    {{- $proj := index $.Site.Data.projects .Params.project -}}
     {{- if $proj -}}
-      {{- $year := dateFormat "2006" $v.date -}}
+      {{- $year := dateFormat "2006" .Params.release_date -}}
       {{- $c    := $proj.country | default "Unknown" -}}
       {{- $sc.Add (printf "yc|%s|%s|releases" $year $c) 1 -}}
       {{- $sc.Add (printf "c|%s|releases" $c) 1 -}}
@@ -138,9 +139,9 @@
         {{- range $projs }}
         {{- $projKey := .key -}}
         {{- $releases := slice -}}
-        {{- range $mk, $mv := hugo.Data.music -}}
-          {{- if eq $mv.project $projKey -}}
-            {{- $releases = $releases | append $mv -}}
+        {{- range $releasesSection.RegularPages -}}
+          {{- if eq .Params.project $projKey -}}
+            {{- $releases = $releases | append . -}}
           {{- end -}}
         {{- end -}}
         <tr>
@@ -169,9 +170,9 @@
             <div class="report-detail-section">
               <span class="report-detail-label">Releases</span>
               <ul class="report-releases-list">
-                {{- range (sort $releases "date" "asc") -}}
+                {{- range (sort $releases "Params.release_date" "asc") -}}
                 {{- $url := "" -}}
-                {{- with .links -}}
+                {{- with .Params.links -}}
                   {{- if .streaming -}}{{- $url = .streaming -}}
                   {{- else if .bandcamp_url -}}{{- $url = .bandcamp_url -}}
                   {{- else if .youtube -}}{{- $url = printf "https://www.youtube.com/watch?v=%s" .youtube -}}
@@ -180,7 +181,7 @@
                   {{- else if .soundcloud -}}{{- $url = printf "https://soundcloud.com/tracks/%s" .soundcloud -}}
                   {{- end -}}
                 {{- end -}}
-                <li>"{{ .title }}"{{ with $url }} — <a href="{{ . }}">{{ . }}</a>{{ end }}</li>
+                <li>"{{ .Title }}"{{ with $url }} — <a href="{{ . }}">{{ . }}</a>{{ end }}</li>
                 {{- end -}}
               </ul>
             </div>

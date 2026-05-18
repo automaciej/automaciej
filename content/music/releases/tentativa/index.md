@@ -1,0 +1,32 @@
+---
+title: Tentativa
+date: '2026-05-18'
+release_date: '2025-12-12T00:00:00'
+composition_origin: original
+artist: Luisa Annibali, Julio Batista & William Alexandre
+project: luisa_annibali
+image: tentativa.jpg
+credits:
+- name: Luisa Annibali
+  roles:
+  - vocals
+  - composer
+- name: Julio Batista
+  roles:
+  - guitar
+- name: William Alexandre
+  roles:
+  - percussion
+- name: Maciej Bliziński
+  roles:
+  - recording engineer
+  - mixing engineer
+  - mastering engineer
+links:
+  bandcamp_album: '898668530'
+  bandcamp_url: https://luisaannibali.bandcamp.com/album/tentativa
+---
+
+"Tentativa" is the studio album debut for the Brasilidades ensemble—Luisa Annibali, Julio Batista, and William Alexandre—exploring the traditions of Choro and Samba. The ten-track album features original music in both Portuguese and Italian.
+
+Maciej served as the recording, mixing, and mastering engineer, ensuring that the organic Choro and Samba textures were captured authentically. The project highlights the rhythmic depth and melodic elegance of the ensemble, contributing to the vibrant grassroots Brazilian music scene in Dublin.

@@ -25,30 +25,29 @@
                 <div class="stream-column music-stream">
                     <h2><a href="/music/">Music »</a></h2>
                     <div class="stream-content">
-                        {{ $musicProductions := sort hugo.Data.music "date" "desc" }}
+                        {{- $releasesSection := .Site.GetPage "/music/releases" -}}
+                        {{- $musicProductions := sort $releasesSection.RegularPages "Params.release_date" "desc" -}}
                         {{ range $index, $production := first 3 $musicProductions }}
                         <article class="music-preview{{ if gt $index 0 }} music-preview-desktop-only{{ end }}">
-                            {{ with $production.image }}
+                            {{ with $production.Params.image }}
                             {{ $img := resources.Get (printf "images/music/%s" .) }}
                             {{ if $img }}
                             {{ $resized := $img.Resize "300x webp" }}
                             <div class="music-preview-image">
-                                <a href="/music/#{{ $production.title | urlize }}">
-                                    <img src="{{ $resized.RelPermalink }}" alt="{{ $production.title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
+                                <a href="/music/#{{ $production.Title | urlize }}">
+                                    <img src="{{ $resized.RelPermalink }}" alt="{{ $production.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
                                 </a>
                             </div>
                             {{ end }}
                             {{ end }}
                             <div class="music-preview-content">
-                                <h3><a href="/music/">{{ $production.title }}</a></h3>
+                                <h3><a href="/music/">{{ $production.Title }}</a></h3>
                                 <div class="music-preview-meta">
-                                    <span class="artist">{{ $production.artist }}</span>
-                                    {{ with $production.date }}
-                                    <span class="date">• {{ dateFormat "Jan 2006" . }}</span>
-                                    {{ end }}
+                                    <span class="artist">{{ $production.Params.artist }}</span>
+                                    <span class="date">• {{ dateFormat "Jan 2006" $production.Params.release_date }}</span>
                                 </div>
                             </div>
-                            {{ with $production.links }}
+                            {{ with $production.Params.links }}
                                 {{ if .youtube }}
                                 <div class="embed-preview youtube-preview">
                                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/{{ .youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -88,8 +87,9 @@
                                 </div>
                                 {{ end }}
                             {{ end }}
-                            {{ with $production.project }}
-                            {{ if gt (len (where (sort hugo.Data.music "date") "project" .)) 1 }}
+                            {{ with $production.Params.project }}
+                            {{ $proj := . }}
+                            {{ if gt (len (where $releasesSection.RegularPages "Params.project" $proj)) 1 }}
                             <div class="music-project-link">
                                 <a href="/music/projects/{{ . }}/">More from this project&nbsp;&#xBB;</a>
                             </div>
@@ -101,7 +101,7 @@
                             <a href="/music/" class="view-all-link view-all-link-desktop">View all music productions →</a>
                             {{ $second := index $musicProductions 1 }}
                             {{ $third := index $musicProductions 2 }}
-                            <a href="/music/#{{ $second.title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.title }}, {{ $third.title }}, and more »</a>
+                            <a href="/music/#{{ $second.Title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
                         </div>
                     </div>
                 </div>

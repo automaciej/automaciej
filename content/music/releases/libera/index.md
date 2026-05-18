@@ -1,0 +1,25 @@
+---
+title: Libera
+date: '2026-05-18'
+release_date: '2025-11-20T00:00:00'
+composition_origin: original
+artist: Luisa Annibali
+project: luisa_annibali
+image: libera.jpg
+credits:
+- name: Luisa Annibali
+  roles:
+  - vocals
+  - composer
+- name: Maciej Bliziński
+  roles:
+  - recording engineer
+  - mixing engineer
+links:
+  bandcamp_album: '3135436538'
+  bandcamp_url: https://luisaannibali.bandcamp.com/album/libera
+---
+
+"Libera" is a landmark solo album from Luisa Annibali, representing the culmination of five years of songwriting. It blends jazz with Italian lyrics and Latin rhythms, drawing comparisons to artists like Esperanza Spalding and Gretchen Parlato.
+
+The album showcases Luisa's fearless genre-blending, incorporating Italian melodic richness, Brazilian rhythms, and modern neo-soul influences. Maciej's involvement in the vocal recording and mixing ensured that the expressive vocals and boundless energy of the performance were captured with pristine clarity.

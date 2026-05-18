@@ -1,0 +1,56 @@
+{{ define "head_extra" }}
+{{- $type := cond .Params.single "MusicRecording" "MusicAlbum" -}}
+{{- $imageURL := "" -}}
+{{- with .Params.image -}}
+  {{- $imageURL = printf "%simages/music/%s" $.Site.BaseURL . -}}
+{{- end -}}
+{{- $streamingURL := "" -}}
+{{- with .Params.links -}}
+  {{- if .streaming -}}{{- $streamingURL = .streaming -}}
+  {{- else if .bandcamp_url -}}{{- $streamingURL = .bandcamp_url -}}
+  {{- else if .spotify -}}{{- $streamingURL = .spotify -}}
+  {{- else if .apple_music -}}{{- $streamingURL = .apple_music -}}
+  {{- end -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ $type }}",
+  "name": "{{ .Title | safeJS }}",
+  "byArtist": {
+    "@type": "Person",
+    "name": "{{ .Params.artist | safeJS }}"
+  },
+  "datePublished": "{{ .Params.release_date | dateFormat "2006-01-02" }}"
+  {{- with $imageURL }},
+  "image": "{{ . | safeJS }}"
+  {{- end -}}
+  {{- with $streamingURL }},
+  "url": "{{ . | safeJS }}"
+  {{- end -}}
+  {{- with .Params.credits }},
+  "recordingOf": {
+    "@type": "MusicComposition",
+    "name": "{{ $.Title | safeJS }}",
+    "lyricist": [
+      {{- range $i, $c := . -}}
+        {{- if $i }},{{ end -}}
+        {"@type": "Person", "name": "{{ $c.name | safeJS }}"}
+      {{- end -}}
+    ]
+  }
+  {{- end }}
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<div class="music-page">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/music/">← Music</a>
+        </nav>
+        {{ partial "music-card.html" (dict "page" . "hide_project_link" false) }}
+    </div>
+</div>
+{{ end }}

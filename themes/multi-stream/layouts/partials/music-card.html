@@ -1,36 +1,38 @@
-<article class="music-card" id="{{ .title | urlize }}">
+{{- $p := .page -}}
+{{- $hideProjectLink := .hide_project_link -}}
+<article class="music-card" id="{{ $p.Title | urlize }}">
     <div class="music-header">
-        <h2>{{ .title }}</h2>
+        <h2><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
         <div class="music-meta">
-            {{ if or (eq .composition_origin "cover") (eq .composition_origin "standard") }}
-            <span class="composition-origin">{{ .composition_origin }}</span>{{ with .original_artist }} • <span class="original-artist">{{ . }}</span>{{ end }} •
+            {{ if or (eq $p.Params.composition_origin "cover") (eq $p.Params.composition_origin "standard") }}
+            <span class="composition-origin">{{ $p.Params.composition_origin }}</span>{{ with $p.Params.original_artist }} • <span class="original-artist">{{ . }}</span>{{ end }} •
             {{ end }}
-            <span class="artist">{{ .artist }}</span>
-            {{ if .single }}
+            <span class="artist">{{ $p.Params.artist }}</span>
+            {{ if $p.Params.single }}
             <span class="release-type">• Single</span>
-            {{ else if .album }}
-            <span class="album">• {{ .album }}</span>
+            {{ else if $p.Params.album }}
+            <span class="album">• {{ $p.Params.album }}</span>
             {{ end }}
-            <span class="date">• {{ dateFormat "January 2006" .date }}</span>
+            <span class="date">• {{ dateFormat "January 2006" $p.Params.release_date }}</span>
         </div>
     </div>
-    {{ with .image }}
+    {{ with $p.Params.image }}
     {{ $img := resources.Get (printf "images/music/%s" .) }}
     {{ if $img }}
     {{ $resized := $img.Resize "400x webp" }}
     <div class="music-image">
-        <img src="{{ $resized.RelPermalink }}" alt="{{ $.title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
+        <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
     </div>
     {{ end }}
     {{ end }}
 
-    {{ with .description }}
+    {{ with $p.Content }}
     <div class="music-description">
-        <p>{{ . }}</p>
+        {{ . }}
     </div>
     {{ end }}
 
-    {{ with .credits }}
+    {{ with $p.Params.credits }}
     <div class="music-credits">
         <strong>Credits:</strong>
         <ul>
@@ -43,7 +45,7 @@
     </div>
     {{ end }}
 
-    {{ with .links }}
+    {{ with $p.Params.links }}
     <div class="music-links">
         {{ if .bandcamp_album }}
         <div class="embed bandcamp-embed">
@@ -106,9 +108,9 @@
         {{ end }}
     </div>
     {{ end }}
-    {{ if and .project (not .hide_project_link) }}
+    {{ if and $p.Params.project (not $hideProjectLink) }}
     <div class="music-project-link">
-        <a href="/music/projects/{{ .project }}/">More from this project&nbsp;&#xBB;</a>
+        <a href="/music/projects/{{ $p.Params.project }}/">More from this project&nbsp;&#xBB;</a>
     </div>
     {{ end }}
 </article>
