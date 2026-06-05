@@ -31,6 +31,9 @@ tracks:
           - producer
           - bass
           - synthesizers
+      - name: Riccardo Marenghi
+        roles:
+          - water bottle
     links:
       youtube: frp5Jy5ebDs
       spotify: https://open.spotify.com/track/64TCbx2wfdz4Rz3i2fk7PI
