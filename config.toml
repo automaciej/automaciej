@@ -10,7 +10,7 @@
 # magick static/images/background-big.jpg -interlace jpeg -quality 35 static/images/background.jpg
 
 defaultContentLanguage = "en"
-languageCode = "en"
+locale = "en"
 title = "Maciej Bliziński"
 baseurl = "https://blizin.ski"
 theme = "multi-stream"
