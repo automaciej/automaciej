@@ -2,7 +2,7 @@
 aliases:
 - /2010/11/alem-tabelke/
 date: '2010-11-27T00:00:00-00:00'
-description: Ja ~ę, tabelka to fajna rzecz!
+description: "Ja ~ę, jaka fajna tabelka!"
 draft: false
 menus:
 - jogger
