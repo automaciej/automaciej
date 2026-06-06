@@ -34,14 +34,14 @@
                             {{ if $img }}
                             {{ $resized := $img.Resize "300x webp" }}
                             <div class="music-preview-image">
-                                <a href="/music/#{{ $production.Title | urlize }}">
+                                <a href="{{ $production.RelPermalink }}">
                                     <img src="{{ $resized.RelPermalink }}" alt="{{ $production.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
                                 </a>
                             </div>
                             {{ end }}
                             {{ end }}
                             <div class="music-preview-content">
-                                <h3><a href="/music/">{{ $production.Title }}</a></h3>
+                                <h3><a href="{{ $production.RelPermalink }}">{{ $production.Title }}</a></h3>
                                 <div class="music-preview-meta">
                                     <span class="artist">{{ $production.Params.artist }}</span>
                                     <span class="date">• {{ dateFormat "Jan 2006" $production.Params.release_date }}</span>
@@ -61,28 +61,18 @@
                                     <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track={{ .bandcamp_track }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless></iframe>
                                 </div>
                                 {{ end }}
-                                {{ if .streaming }}
+                                {{- $listenURL := .streaming | default .bandcamp_url | default .spotify_url | default .apple_music_url -}}
+                                {{- $listenLabel := "Listen on streaming platforms" -}}
+                                {{- if not .streaming -}}
+                                  {{- if .bandcamp_url }}{{- $listenLabel = "Listen on Bandcamp" -}}
+                                  {{- else if .spotify_url }}{{- $listenLabel = "Listen on Spotify" -}}
+                                  {{- else if .apple_music_url }}{{- $listenLabel = "Listen on Apple Music" -}}
+                                  {{- end -}}
+                                {{- end -}}
+                                {{ with $listenURL }}
                                 <div class="music-listen-banner">
-                                    <a href="{{ .streaming }}" target="_blank" rel="noopener">
-                                        Listen on streaming platforms&nbsp;»
-                                    </a>
-                                </div>
-                                {{ else if .bandcamp_url }}
-                                <div class="music-listen-banner">
-                                    <a href="{{ .bandcamp_url }}" target="_blank" rel="noopener">
-                                        Listen on Bandcamp&nbsp;»
-                                    </a>
-                                </div>
-                                {{ else if .spotify_url }}
-                                <div class="music-listen-banner">
-                                    <a href="{{ .spotify_url }}" target="_blank" rel="noopener">
-                                        Listen on Spotify&nbsp;»
-                                    </a>
-                                </div>
-                                {{ else if .apple_music_url }}
-                                <div class="music-listen-banner">
-                                    <a href="{{ .apple_music_url }}" target="_blank" rel="noopener">
-                                        Listen on Apple Music&nbsp;»
+                                    <a href="{{ . }}" target="_blank" rel="noopener">
+                                        {{ $listenLabel }}&nbsp;»
                                     </a>
                                 </div>
                                 {{ end }}
@@ -101,7 +91,7 @@
                             <a href="/music/" class="view-all-link view-all-link-desktop">View all music productions →</a>
                             {{ $second := index $musicProductions 1 }}
                             {{ $third := index $musicProductions 2 }}
-                            <a href="/music/#{{ $second.Title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
+                            <a href="{{ $second.RelPermalink }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
                         </div>
                     </div>
                 </div>
