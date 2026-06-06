@@ -1,6 +1,6 @@
 ---
 title: Tentativa
-date: '2026-05-18'
+date: '2025-12-12'
 release_date: '2025-12-12T00:00:00'
 composition_origin: original
 artist: Luisa Annibali, Julio Batista & William Alexandre

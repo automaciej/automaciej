@@ -1,6 +1,6 @@
 ---
 title: Guitar duo session
-date: '2026-05-18'
+date: '2024-06-01'
 release_date: '2024-06-01T00:00:00'
 composition_origin: original
 artist: Chris Comhaill and John Mahon

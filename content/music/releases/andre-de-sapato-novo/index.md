@@ -1,6 +1,6 @@
 ---
 title: André de sapato novo
-date: '2026-05-18'
+date: '2023-06-01'
 release_date: '2023-06-01T00:00:00'
 composition_origin: standard
 original_artist: Jacob do Bandolim

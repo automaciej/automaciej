@@ -1,6 +1,6 @@
 ---
 title: Butterfly
-date: '2026-05-18'
+date: '2014-06-01'
 release_date: '2014-06-01T00:00:00'
 composition_origin: cover
 original_artist: Herbie Hancock

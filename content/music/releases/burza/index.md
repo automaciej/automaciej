@@ -1,6 +1,6 @@
 ---
 title: Burza
-date: '2026-05-18'
+date: '2000-11-01'
 release_date: '2000-11-01T00:00:00'
 composition_origin: original
 artist: Funksters

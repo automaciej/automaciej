@@ -1,6 +1,6 @@
 ---
 title: Hidden Beach
-date: '2026-05-18'
+date: '2026-06-05'
 release_date: '2026-06-05T00:00:00'
 artist: Maciej Bliziński
 single: true

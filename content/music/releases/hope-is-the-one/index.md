@@ -1,6 +1,6 @@
 ---
 title: Hope Is The One
-date: '2026-05-18'
+date: '2026-01-03'
 release_date: '2026-01-03T00:00:00'
 composition_origin: original
 artist: Zoe Hayter
