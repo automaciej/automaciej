@@ -960,6 +960,7 @@ main ol
 
 .music-header h2 {
     font-size: 1.75rem;
+    margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
@@ -1282,8 +1283,6 @@ main ol
 /* Projects strip on /music/ page */
 .music-projects-section {
     margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .music-section-label {
