@@ -4,9 +4,6 @@
     <div class="music-header">
         <h2><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
         <div class="music-meta">
-            {{ if or (eq $p.Params.composition_origin "cover") (eq $p.Params.composition_origin "standard") }}
-            <span class="composition-origin">{{ $p.Params.composition_origin }}</span>{{ with $p.Params.original_artist }} • <span class="original-artist">{{ . }}</span>{{ end }} •
-            {{ end }}
             <span class="artist">{{ $p.Params.artist }}</span>
             {{ if $p.Params.single }}
             <span class="release-type">• Single</span>
@@ -14,6 +11,9 @@
             <span class="album">• {{ $p.Params.album }}</span>
             {{ end }}
             <span class="date">• {{ dateFormat "January 2006" $p.Params.release_date }}</span>
+            {{ if eq $p.Params.composition_origin "cover" }}{{ with $p.Params.original_artist }}
+            <span class="composition-origin"> • cover of <span class="original-artist">{{ . }}</span></span>
+            {{ end }}{{ end }}
         </div>
     </div>
     {{ with $p.Params.image }}
