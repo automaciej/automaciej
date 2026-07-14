@@ -2,7 +2,15 @@
 {{- $type := cond .Params.single "MusicRecording" "MusicAlbum" -}}
 {{- $imageURL := "" -}}
 {{- with .Params.image -}}
-  {{- $imageURL = printf "%simages/music/%s" $.Site.BaseURL . -}}
+  {{- $img := resources.Get (printf "images/music/%s" .) -}}
+  {{- with $img -}}
+    {{- $imageURL = (.Resize "1200x webp").Permalink -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $imageURL -}}
+  {{- with .Site.Params.shareImage -}}
+    {{- $imageURL = printf "%s%s" $.Site.BaseURL . -}}
+  {{- end -}}
 {{- end -}}
 {{- $streamingURL := "" -}}
 {{- with .Params.links -}}
@@ -12,6 +20,28 @@
   {{- else if .apple_music -}}{{- $streamingURL = .apple_music -}}
   {{- end -}}
 {{- end -}}
+{{- $description := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) -}}
+<meta property="og:type" content="music.song">
+<meta property="og:title" content="{{ .Title }}{{ with .Params.artist }} by {{ . }}{{ end }}">
+{{- with $description }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{- with $imageURL }}
+<meta property="og:image" content="{{ . }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+{{- with .Site.Params.social.twitterHandle }}
+<meta name="twitter:site" content="@{{ . }}">
+{{- end }}
+<meta name="twitter:title" content="{{ .Title }}{{ with .Params.artist }} by {{ . }}{{ end }}">
+{{- with $description }}
+<meta name="twitter:description" content="{{ . }}">
+{{- end }}
+{{- with $imageURL }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
