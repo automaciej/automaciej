@@ -23,7 +23,7 @@
             <span class="download-caption">beta for {{ delimit .platforms " and " }}</span>
         </a>
     </div>
-    {{ else if .appstore }}
-    <a href="{{ .appstore }}" target="_blank" rel="noopener" class="app-download-link">App Store →</a>
+    {{ else if .app_store }}
+    <a href="{{ .app_store }}" target="_blank" rel="noopener" class="app-download-link">App Store →</a>
     {{ end }}
 </article>
