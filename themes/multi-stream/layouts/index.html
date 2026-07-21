@@ -129,6 +129,14 @@
                                 </a>
                             </div>
                             {{ end }}
+                            {{ with .play_store }}
+                            <div class="app-download-banner">
+                                <a href="{{ . }}" target="_blank" rel="noopener">
+                                    <span class="download-text">Join the Android beta&nbsp;»</span>
+                                    <span class="download-caption">on Google Play</span>
+                                </a>
+                            </div>
+                            {{ end }}
                         </article>
                         {{ end }}
 

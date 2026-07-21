@@ -26,4 +26,7 @@
     {{ else if .app_store }}
     <a href="{{ .app_store }}" target="_blank" rel="noopener" class="app-download-link">App Store →</a>
     {{ end }}
+    {{ with .play_store }}
+    <a href="{{ . }}" target="_blank" rel="noopener" class="app-download-link">Android beta on Google Play →</a>
+    {{ end }}
 </article>
