@@ -18,7 +18,7 @@
         "operatingSystem": {{ delimit $app.platforms ", " | jsonify | safeJS }}
         {{- with $app.app_site }},
         "url": {{ . | jsonify | safeJS }}{{ end }}
-        {{- with $app.appstore }},
+        {{- with $app.app_store }},
         "installUrl": {{ . | jsonify | safeJS }}
         {{- else }}{{- with $app.testflight }},
         "installUrl": {{ . | jsonify | safeJS }}{{ end }}{{ end }}
