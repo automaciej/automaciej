@@ -8,3 +8,4 @@ app_site = "https://task-compass.app"
 platforms = ["iOS", "macOS", "Android"]
 # testflight = "https://testflight.apple.com/join/T3DMu1kp"
 app_store = "https://apps.apple.com/ie/app/task-compass/id6751583914"
+play_store = "https://play.google.com/apps/testing/pl.blizinski.taskcompass"
