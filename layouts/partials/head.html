@@ -10,7 +10,7 @@
     {{ .Title }} - {{ .Site.Title }}
 {{- end -}}
 </title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="description" content="{{ .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}">
 
 {{ if .Site.Params.favicon }}
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
