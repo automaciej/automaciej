@@ -19,3 +19,5 @@ credits:
 links:
   youtube: BvqKqjoZG8c
 ---
+
+A recording of Bruno Martino's "Estate" featuring Mayara Mitsuka on vocals, arranged and recorded by Maciej Bliziński in September 2022.

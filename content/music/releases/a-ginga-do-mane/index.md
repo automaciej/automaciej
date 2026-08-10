@@ -15,3 +15,5 @@ credits:
 links:
   instagram: CzmXMQpsznl
 ---
+
+"A ginga do Mané" performed by Regional Massapê, recorded and mixed by Maciej Bliziński in August 2023.

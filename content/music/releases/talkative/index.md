@@ -36,3 +36,5 @@ links:
   bandcamp_track: '1237125898'
   bandcamp_url: https://gaiamarenghi.bandcamp.com/track/talkative
 ---
+
+An original song written and sung by Gaia Marenghi, produced and arranged by Maciej Bliziński, with Riccardo Marenghi on drums and Oleg Bezuglov on violin. Released November 2025.

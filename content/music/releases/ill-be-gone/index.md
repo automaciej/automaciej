@@ -36,3 +36,5 @@ links:
   bandcamp_track: '258544418'
   bandcamp_url: https://gaiamarenghi.bandcamp.com/track/i-ll-be-gone
 ---
+
+An original song written and sung by Gaia Marenghi, produced and arranged by Maciej Bliziński, with Riccardo Marenghi on drums and Oleg Bezuglov on violin. Released February 2026.

@@ -20,3 +20,5 @@ links:
   youtube: 4WHzSyDdsLk
 ---
 
+A recording of Guinga's "Bolero de Satã" featuring Gaudiê Otero on guitar and Sara Yamit on vocals, recorded and mixed by Maciej Bliziński in March 2024.
+

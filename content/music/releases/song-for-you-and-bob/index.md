@@ -34,3 +34,5 @@ links:
   bandcamp_track: '2609221841'
   bandcamp_url: https://zoehayter.bandcamp.com/track/song-for-you-and-bob
 ---
+
+An original composition by Zoe Hayter and Maciej Bliziński, featuring Rafał Szydłowski on electric violin and Riccardo Marenghi on drums. Released March 2026.

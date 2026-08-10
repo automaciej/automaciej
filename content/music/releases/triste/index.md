@@ -22,3 +22,5 @@ credits:
 links:
   youtube: t4omYtBjZwA
 ---
+
+A recording of Antonio Carlos Jobim's "Triste" featuring Mayara Mitsuka on vocals, arranged and recorded by Maciej Bliziński in August 2022, with videography by Ivan Vučica.
