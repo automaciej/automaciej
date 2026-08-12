@@ -16,7 +16,7 @@ baseurl = "https://blizin.ski"
 theme = "multi-stream"
 rssLimit = 50
 enableGitInfo = true
-copyright = "&copy;2025 Maciej Bliziński"
+copyright = "&copy;2026 Maciej Bliziński"
 [author]
   [author.maciej]
     name = "Maciej Bliziński"
