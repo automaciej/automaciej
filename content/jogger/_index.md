@@ -4,10 +4,16 @@ description: Dwa razy dwa jest pięć, więc myj zęby! Blog osobisty.
 lastmod: '2024-09-24T23:57:41+01:00'
 tagline: Jogger
 title: Jogger automaciejowy
+type: blog
 params:
   visual:
     image:
       enable: false
+cascade:
+  type: blog
+  readMoreText: "czytaj dalej »"
+  dateFormat: "02.01.2006"
+  readingTimeLabel: "min czytania"
 
 ---
 

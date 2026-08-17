@@ -1,9 +1,9 @@
-name = "Time Feel"
+name = "Ego Destroyer Metronome"
 author = "Maciej Bliziński"
 position = 2
 featured = true
 category = "music"
-description = "Interactive metronome with real-time timing feedback for musicians."
+description = "Do you think you've got good time? Use this and find out."
 subsection = "time-feel"
 platforms = ["iOS"]
 testflight = "https://testflight.apple.com/join/sPfDFZuV"

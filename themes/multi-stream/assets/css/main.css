@@ -2,6 +2,7 @@
 
 :root {
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-serif: Charter, "Sitka Text", Georgia, "Palatino Linotype", "Book Antiqua", serif;
 }
 
 /* Light mode (default) */
@@ -34,7 +35,6 @@
 
 body {
     font-family: var(--font-sans);
-    font-size: 16px;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
@@ -128,6 +128,7 @@ a:hover {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
     line-height: 1.2;
     margin-bottom: 0.5rem; /* Reduced by half */
     margin-top: 1rem;
@@ -483,6 +484,8 @@ h1, h2, h3, h4, h5, h6 {
 .post-content {
     max-width: 720px;
     margin: 0 auto;
+    font-family: var(--font-serif);
+    font-size: large;
 }
 
 /* Ensure all embedded media within post content are responsive */
@@ -652,12 +655,12 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-.jogger-posts-list .post-card-content {
+.blog-posts-list .post-card-content {
     display: flex;
     flex-direction: column;
 }
 
-.jogger-posts-list .read-more {
+.blog-posts-list .read-more {
     margin-top: auto;
     padding-top: 0.5rem;
     font-weight: 500;
@@ -892,6 +895,9 @@ main ol
     padding: 1.25rem;
     border-radius: 12px;
     margin-bottom: 2rem;
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.7;
 }
 
 .section-intro p {
@@ -1245,18 +1251,18 @@ main ol
 
     /*
        ----------------------------------------------
-       Jogger Mobile Styles
+       Blog Mobile Styles
        ----------------------------------------------
     */
-    .jogger-posts-list .post-card-image {
+    .blog-posts-list .post-card-image {
         width: 100%;
         max-height: 200px; /* Adjust as needed */
     }
 
-    .jogger-posts-list img {
+    .blog-posts-list img {
     }
 
-    .jogger-posts-list .post-card {
+    .blog-posts-list .post-card {
         flex-direction: column;
         padding: 1.25rem; /* Restore padding for jogger cards */
         background: var(--bg-secondary); /* Restore background for jogger cards */
@@ -1265,13 +1271,13 @@ main ol
         border-bottom: none; /* Remove the generic border */
     }
 
-    .jogger-posts-list .post-card:hover {
+    .blog-posts-list .post-card:hover {
         transform: translateY(-5px); /* Restore hover effect */
         box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
-    .jogger-posts-list .post-card .post-meta,
-    .jogger-posts-list .post-card .post-description {
+    .blog-posts-list .post-card .post-meta,
+    .blog-posts-list .post-card .post-description {
         display: block; /* Restore meta and description for jogger cards */
     }
 }

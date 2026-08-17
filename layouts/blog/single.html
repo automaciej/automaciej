@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $imageURL := "" }}
+{{ if .Params.image }}
+    {{ $imagePath := .Params.image }}
+    {{ $imageResource := .Resources.GetMatch $imagePath }}
+    {{ if $imageResource }}
+        {{ $imageURL = $imageResource.RelPermalink }}
+    {{ else }}
+        {{ $imageURL = $imagePath | relURL }}
+    {{ end }}
+{{ else }}
+    {{ $imageResource := .Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+    {{ if $imageResource }}
+        {{ $imageURL = $imageResource.RelPermalink }}
+    {{ end }}
+{{ end }}
+<article class="single-post">
+    <div class="container">
+        <header class="post-header">
+            <h1>{{ .Title }}</h1>
+            {{ if not .Date.IsZero }}
+            <div class="post-meta">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format (or .Params.dateFormat "January 2, 2006") }}
+                </time>
+                {{ with .Params.readingTimeLabel }}
+                <span class="reading-time">&nbsp;· {{ $.ReadingTime }} {{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </header>
+
+        {{ if $imageURL }}
+        <div class="post-illustration">
+            <img src="{{ $imageURL }}" alt="{{ .Title }}">
+        </div>
+        {{ end }}
+
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    </div>
+</article>
+{{ end }}

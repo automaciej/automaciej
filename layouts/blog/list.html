@@ -11,13 +11,12 @@
         </header>
 
         {{ if .Pages }}
-        <div class="jogger-posts-list">
+        <div class="blog-posts-list">
             {{ range .Pages.GroupByDate "2006" "desc" }}
             <div class="year-group">
                 <h2 class="year-title">{{ .Key }}</h2>
                 {{ range .Pages }}
                 {{ $post := . }}
-                {{ $image := "" }}
                 {{ $imageURL := "" }}
                 {{ if $post.Params.image }}
                     {{ $imagePath := $post.Params.image }}
@@ -46,7 +45,7 @@
                         <h3><a href="{{ $post.RelPermalink }}">{{ $post.LinkTitle }}</a></h3>
                         <div class="post-meta">
                             <time datetime="{{ $post.Date.Format "2006-01-02" }}">
-                                {{ $post.Date.Format "January 2, 2006" }}
+                                {{ $post.Date.Format (or $post.Params.dateFormat "January 2, 2006") }}
                             </time>
                         </div>
                         {{ with $post.Summary }}
@@ -56,7 +55,7 @@
                         {{ end }}
                         {{ if $post.Truncated }}
                         <div class="read-more">
-                            <a href="{{ $post.RelPermalink }}">czytaj dalej&nbsp;»</a>
+                            <a href="{{ $post.RelPermalink }}">{{ or $post.Params.readMoreText "Read more »" | safeHTML }}</a>
                         </div>
                         {{ end }}
                     </div>
