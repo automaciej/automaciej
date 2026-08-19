@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ if eq .Section "jogger" }}pl{{ else }}{{ .Site.Language.Lang }}{{ end }}">
 <head>
   {{ partial "head.html" . }}
   {{ block "head_extra" . }}{{ end }}
