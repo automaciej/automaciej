@@ -17,5 +17,5 @@ cascade:
 
 ---
 
-Writing in English, on whatever's on my mind—separate from the
-[Jogger](/jogger/) blog, which is in Polish.
+Writing in English, on whatever's on my mind. Separate from the
+Polish [Jogger](/jogger/).
