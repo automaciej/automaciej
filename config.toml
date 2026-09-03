@@ -27,6 +27,7 @@ copyright = "&copy;2026 Maciej Bliziński"
 
 [permalinks]
   jogger = "/jogger/:year/:contentbasename/"
+  blog = "/blog/:year/:contentbasename/"
   page = "/:contentbasename/"
 
 [params]
