@@ -4,7 +4,9 @@ description: "Do you think you've got good time? Use this and find out."
 date: "2025-09-21T15:30:00+01:00"
 lastmod: "2025-09-21T15:30:00+01:00"
 excludeFromRSS: true
-app: "time_feel"
+app: "ego_destroyer"
+aliases:
+  - /time-feel/
 
 ---
 
@@ -33,4 +35,4 @@ you play.
 
 &nbsp;
 
-{{< instagram-reel DPttqZ-DFIa "Time Feel in action" >}}
+{{< instagram-reel DPttqZ-DFIa "Ego Destroyer Metronome in action" >}}

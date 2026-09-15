@@ -60,9 +60,9 @@ copyright = "&copy;2026 Maciej Bliziński"
   [params.links.list1]
     heading = "Projects"
     [[params.links.list1.link]]
-      text = "Time Feel"
+      text = "Ego Destroyer"
       title = "Interactive metronome for musicians passionate about timing"
-      ref = "time-feel/_index.md"
+      ref = "ego-destroyer/_index.md"
     [[params.links.list1.link]]
       text = "Task Compass"
       title = "Priority tool for managing competing tasks"

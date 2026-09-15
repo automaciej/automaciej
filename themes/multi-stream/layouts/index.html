@@ -140,8 +140,8 @@
                         </article>
                         {{ end }}
 
-                        {{ $appPosts := where .Site.RegularPages "Section" "in" (slice "time-feel") }}
-                        {{ $appPosts = where $appPosts "Type" "in" (slice "time-feel") }}
+                        {{ $appPosts := where .Site.RegularPages "Section" "in" (slice "ego-destroyer") }}
+                        {{ $appPosts = where $appPosts "Type" "in" (slice "ego-destroyer") }}
                         {{ $appPosts = where $appPosts "Params.excludeFromRSS" "!=" true }}
                         {{ range first 3 (sort $appPosts "Date" "desc") }}
                         <article class="app-post-preview">
