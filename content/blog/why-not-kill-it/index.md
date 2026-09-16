@@ -2,7 +2,7 @@
 title: "Why don't you kill it?"
 description: "What would I do if I killed it?"
 date: "2026-09-16T14:18:42+01:00"
-draft: true
+draft: false
 tags: ["productivity"]
 
 ---
