@@ -2,7 +2,7 @@
 <html lang="{{ if eq .Section "jogger" }}pl{{ else }}{{ .Site.Language.Lang }}{{ end }}">
 <head>
   {{ partial "head.html" . }}
-  {{ block "head_extra" . }}{{ end }}
+  {{ block "head_extra" . }}{{ partial "og-tags-default.html" . }}{{ end }}
 </head>
 <body>
     {{ partial "header.html" . }}

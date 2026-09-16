@@ -1,0 +1,33 @@
+{{ $ogDescription := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
+
+{{ $ogImage := "" }}
+{{ with .Params.image }}
+    {{ $imgRes := $.Resources.GetMatch . }}
+    {{ if $imgRes }}
+        {{ $ogImage = $imgRes.Permalink }}
+    {{ else }}
+        {{ $ogImage = . | absURL }}
+    {{ end }}
+{{ else }}
+    {{ with .Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+        {{ $ogImage = .Permalink }}
+    {{ end }}
+{{ end }}
+{{ if not $ogImage }}
+    {{ with .Site.Params.SiteLogo }}
+        {{ $ogImage = . | absURL }}
+    {{ end }}
+{{ end }}
+
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+<meta property="og:description" content="{{ $ogDescription }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ with $ogImage }}<meta property="og:image" content="{{ . }}">{{ end }}
+
+<meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
+{{ with .Site.Params.social.twitterHandle }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
+<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+<meta name="twitter:description" content="{{ $ogDescription }}">
+{{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}

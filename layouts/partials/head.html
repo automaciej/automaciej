@@ -3,6 +3,8 @@
 <title>
 {{- if .IsHome -}}
     {{ .Site.Title }}
+{{- else if and .IsPage (eq .Section "blog") -}}
+    {{ .Title }}
 {{- else if .IsPage -}}
     {{ .Title }} - {{ if .CurrentSection.IsHome }}{{ .Site.Title }}{{ else }}{{ .CurrentSection.Title }}{{ end }}
 {{- else -}}
@@ -10,7 +12,8 @@
     {{ .Title }} - {{ .Site.Title }}
 {{- end -}}
 </title>
-<meta name="description" content="{{ .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}">
+{{ $ogDescription := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
+<meta name="description" content="{{ $ogDescription }}">
 
 {{ if .Site.Params.favicon }}
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
@@ -32,7 +35,9 @@
   {{ partial "jsonld/performances.html" . }}
 {{ else if eq .Layout "apps" }}
   {{ partial "jsonld/apps.html" . }}
-{{ else if and .IsPage (eq .Section "jogger") }}
+{{ else if .Params.app }}
+  {{ partial "jsonld/app-single.html" . }}
+{{ else if and .IsPage (in (slice "jogger" "blog") .Section) }}
   {{ partial "rich-data-single.html" . }}
 {{ else if and (eq .Kind "section") (eq .Section "bio") }}
   {{ partial "jsonld/profilepage.html" . }}

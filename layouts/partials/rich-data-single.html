@@ -43,13 +43,21 @@
       "url": "{{ .Site.BaseURL }}{{ .Site.Params.SiteLogo }}"
     }
   },
-  "description": "{{ with .Description }}{{ . | plainify | safeJS }}{{ else }}Wpis na blogu Automacieja{{ end }}",
+  "description": "{{ if .Description }}{{ .Description | plainify | safeJS }}{{ else if eq .Section "jogger" }}Wpis na blogu Automacieja{{ else }}Post on Automaciej's blog{{ end }}",
   "articleBody": "{{ .Plain | safeJS }}",
   "wordCount": "{{ .WordCount }}",
+  {{ if eq .Section "jogger" }}
   "inLanguage": {
     "@type": "Language",
     "name": "Polish",
     "alternateName": "pl"
   }
+  {{ else }}
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  }
+  {{ end }}
 }
 </script>

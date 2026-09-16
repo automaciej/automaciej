@@ -1,0 +1,16 @@
+{{- /* Shared SoftwareApplication field set for a hugo.Data.apps record. Used
+     nested (apps.html list) and top-level (app-single.html). */ -}}
+"name": {{ .name | jsonify | safeJS }},
+"description": {{ .description | jsonify | safeJS }},
+"applicationCategory": {{ .category | jsonify | safeJS }},
+"operatingSystem": {{ delimit .platforms ", " | jsonify | safeJS }}
+{{- with .app_site }},
+"url": {{ . | jsonify | safeJS }}{{ end }}
+{{- with .app_store }},
+"installUrl": {{ . | jsonify | safeJS }}
+{{- else }}{{- with .testflight }},
+"installUrl": {{ . | jsonify | safeJS }}{{ end }}{{ end }}
+{{- with .license }},
+"license": {{ . | jsonify | safeJS }}{{ end }}
+{{- with .author }},
+"author": { "@type": "Person", "name": {{ . | jsonify | safeJS }} }{{ end }}

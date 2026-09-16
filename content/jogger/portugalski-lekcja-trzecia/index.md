@@ -11,7 +11,7 @@ title: Portugalski, lekcja trzecia
 
 Wersja do posłuchania:
 
-[portugalski-lekcja-trzecia.mp3](/2016/10/portugalski-lekcja-trzecia/portugalski-lekcja-trzecia.mp3)
+[portugalski-lekcja-trzecia.mp3](/jogger/2016/portugalski-lekcja-trzecia/portugalski-lekcja-trzecia.mp3)
 
 
 ### …, o!

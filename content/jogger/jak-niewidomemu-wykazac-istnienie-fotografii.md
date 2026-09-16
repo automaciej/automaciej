@@ -15,8 +15,8 @@ Takie zadano mi pytanie: jak udowodnić niewidomemu, że istnieje fotografia?
 
 <!--more-->
 
-Wiedziałem, do czego to zmierza. Rozmawialiśmy o [zdolnościach
-parapsychologicznych](/2009/02/26/wrodzone-uzdolnienia/).
+Wiedziałem, do czego to zmierza. Rozmawialiśmy o zdolnościach
+parapsychologicznych.
 On mocno wierzył w siły nadprzyrodzone, doświadczał ich, i regularnie odwiedzał
 medium. Jego argumentem było to, że ponieważ ja nie doświadczyłem sił
 nadprzyrodzonych, nigdy nie byłbym w stanie uwierzyć w to, co on „wiedział” że

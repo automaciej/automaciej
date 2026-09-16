@@ -12,20 +12,7 @@
       "position": {{ add $i 1 }},
       "item": {
         "@type": "SoftwareApplication",
-        "name": {{ $app.name | jsonify | safeJS }},
-        "description": {{ $app.description | jsonify | safeJS }},
-        "applicationCategory": {{ $app.category | jsonify | safeJS }},
-        "operatingSystem": {{ delimit $app.platforms ", " | jsonify | safeJS }}
-        {{- with $app.app_site }},
-        "url": {{ . | jsonify | safeJS }}{{ end }}
-        {{- with $app.app_store }},
-        "installUrl": {{ . | jsonify | safeJS }}
-        {{- else }}{{- with $app.testflight }},
-        "installUrl": {{ . | jsonify | safeJS }}{{ end }}{{ end }}
-        {{- with $app.license }},
-        "license": {{ . | jsonify | safeJS }}{{ end }}
-        {{- with $app.author }},
-        "author": { "@type": "Person", "name": {{ . | jsonify | safeJS }} }{{ end }}
+        {{ partial "jsonld/app-fields.html" $app }}
       }
     }
     {{- end }}
