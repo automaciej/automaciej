@@ -715,6 +715,14 @@ main ol
     color: var(--accent);
 }
 
+.social a.bluesky-icon svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.25em;
+}
+
 /* Music page */
 .music-page {
     padding: 2rem 0;
