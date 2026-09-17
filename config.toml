@@ -30,6 +30,35 @@ copyright = "&copy;2026 Maciej Bliziński"
   blog = "/blog/:year/:contentbasename/"
   page = "/:contentbasename/"
 
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 10
+[[menu.main]]
+  name = "Jogger"
+  url = "/jogger/"
+  weight = 20
+[[menu.main]]
+  name = "Music"
+  url = "/music/"
+  weight = 30
+[[menu.main]]
+  name = "Performances"
+  url = "/music/performances/"
+  weight = 40
+[[menu.main]]
+  name = "Ego Destroyer"
+  url = "/ego-destroyer/"
+  weight = 50
+[[menu.main]]
+  name = "Task Compass"
+  url = "https://task-compass.app"
+  weight = 60
+[[menu.main]]
+  name = "About"
+  url = "/bio/"
+  weight = 70
+
 [params]
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"

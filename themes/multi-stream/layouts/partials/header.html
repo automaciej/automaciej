@@ -12,13 +12,9 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="{{ "/blog/" | relURL }}">Blog</a></li>
-                <li><a href="{{ "/jogger/" | relURL }}">Jogger</a></li>
-                <li><a href="{{ "/music/" | relURL }}">Music</a></li>
-                <li><a href="{{ "/music/performances/" | relURL }}">Performances</a></li>
-                <li><a href="{{ "/ego-destroyer/" | relURL }}">Ego Destroyer</a></li>
-                <li><a href="https://task-compass.app">Task Compass</a></li>
-                <li><a href="{{ "/bio/" | relURL }}">About</a></li>
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+                {{ end }}
             </ul>
         </nav>
     </div>
