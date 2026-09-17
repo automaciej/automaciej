@@ -23,7 +23,8 @@
 
 {{ $styles := resources.Get "css/main.css" }}
 {{ if $styles }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ $styles = $styles | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 {{ end }}
 
 {{ if .IsHome }}
