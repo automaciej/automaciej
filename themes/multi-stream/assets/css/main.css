@@ -139,42 +139,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 60px 0 40px 0;
 }
 
-/* Display photo as background with text overlay on very narrow screens */
-@media (max-width: 430px) {
-    .hero-text {
-	/* Ensure no background on wider screens */
-        background: none;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .hero {
-        position: relative;
-        margin-left: calc(-50vw + 50%);
-        margin-right: calc(-50vw + 50%);
-        padding: 3rem 0;
-        background-image: url('/bio/images/maciej_on_bass_1024px.jpg');
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
+/* Mobile: drop photo and big title, keep tagline + social icons */
+@media (max-width: 768px) {
+    .hero-photo {
+        display: none;
     }
 
-    .hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.4) 0%,
-            rgba(0, 0, 0, 0.4) 60%,
-            var(--bg-primary) 100%);
-        z-index: 1;
+    .hero h1 {
+        display: none;
     }
 
     .hero-content {
-        position: relative;
-        z-index: 2;
         flex-direction: column;
         gap: 0;
         width: 100%;
@@ -182,30 +157,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero-text {
         text-align: center;
-        color: #ffffff;
-        padding-top: 6rem;
-    }
-
-    .hero h1 {
-        color: #ffffff;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        margin-bottom: 1rem;
     }
 
     .hero .tagline {
-        color: #ffffff;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        background: rgba(0, 0, 0, 0.5);
-        padding: 1rem;
-        margin-bottom: 0;
-    }
-
-    .hero .social {
-        background: none;
-    }
-
-    .hero-photo {
-        display: none;
+        color: var(--text-secondary);
     }
 }
 
@@ -306,6 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Music preview on homepage */
 .music-preview {
+    position: relative;
     background: var(--bg-secondary);
     padding: 1.25rem;
     border-radius: 12px;
@@ -1462,9 +1418,7 @@ main ol
 
 /* "More from this project" link on music cards and previews */
 .music-project-link {
-    margin-top: 1rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
 }
 
 .music-project-link a {
@@ -1475,6 +1429,20 @@ main ol
 
 .music-project-link a:hover {
     text-decoration: underline;
+}
+
+/* Wide columns: pin to the card's bottom-right corner instead of inline */
+@media (min-width: 768px) {
+    .music-preview {
+        padding-bottom: 4rem;
+    }
+
+    .music-project-link {
+        position: absolute;
+        bottom: 1.25rem;
+        right: 1.25rem;
+        margin-top: 0;
+    }
 }
 
 /* Individual project page */
