@@ -31,42 +31,43 @@ copyright = "&copy;2026 Maciej Bliziński"
   page = "/:contentbasename/"
 
 [[menu.main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Bio"
+  url = "/bio/"
   weight = 10
-[[menu.main]]
-  name = "Jogger"
-  url = "/jogger/"
-  weight = 20
+  title = "Maciej's Bio"
 [[menu.main]]
   name = "Music"
   url = "/music/"
+  weight = 20
+  title = "Music production"
+[[menu.main]]
+  name = "Apps"
+  url = "/apps/"
   weight = 30
+  title = "Maciej's apps"
 [[menu.main]]
-  name = "Performances"
-  url = "/music/performances/"
+  name = "Blog"
+  url = "/blog/"
   weight = 40
+  title = "English blog"
 [[menu.main]]
-  name = "Ego Destroyer"
-  url = "/ego-destroyer/"
+  name = "Live"
+  url = "/music/performances/"
   weight = 50
+  title = "Live performances"
 [[menu.main]]
-  name = "Task Compass"
-  url = "https://task-compass.app"
+  name = "Jogger"
+  url = "/jogger/"
   weight = 60
-[[menu.main]]
-  name = "About"
-  url = "/bio/"
-  weight = 70
+  title = "Polish blog"
 
 [params]
   authorName = "Maciej Bliziński"
   authorEmail = "maciej.blizinski@gmail.com"
   siteLogo = "/images/automaciej-logo.jpg"
-  description = "Dublin-based musician working on Tostarista—an album bringing my late father's guitar compositions to life. Also building apps for musicians and creative professionals."
+  description = "Dublin-based musician and software engineer."
   shareImage = "bio/images/maciej_on_bass_hi.jpg"
   favicon = "images/favicon.png"
-  licensed = 1
 
 [params.social]
   linktree = "mblizinski"

@@ -13,7 +13,7 @@
             </button>
             <ul class="nav-menu">
                 {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+                <li><a href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a></li>
                 {{ end }}
             </ul>
         </nav>
