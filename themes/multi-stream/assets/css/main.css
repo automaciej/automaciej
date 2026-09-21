@@ -1176,6 +1176,9 @@ main ol
     .music-preview-desktop-only {
         display: none;
     }
+    .app-preview-desktop-only {
+        display: none;
+    }
     .view-all-link-mobile {
         display: inline-block !important;
     }

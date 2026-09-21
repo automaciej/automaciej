@@ -23,7 +23,8 @@
         <div class="container">
             <div class="stream-columns">
                 <div class="stream-column music-stream">
-                    <h2><a href="/music/">Music »</a></h2>
+                    {{- $musicPage := .Site.GetPage "/music" -}}
+                    <h2><a href="{{ $musicPage.RelPermalink }}">Music »</a></h2>
                     <div class="stream-content">
                         {{- $releasesSection := .Site.GetPage "/music/releases" -}}
                         {{- $musicProductions := sort $releasesSection.RegularPages "Params.release_date" "desc" -}}
@@ -80,56 +81,61 @@
                             {{ with $production.Params.project }}
                             {{ $proj := . }}
                             {{ if gt (len (where $releasesSection.RegularPages "Params.project" $proj)) 1 }}
+                            {{ $projectPage := $.Site.GetPage (printf "/music/projects/%s" $proj) }}
+                            {{ with $projectPage }}
                             <div class="music-project-link">
-                                <a href="/music/projects/{{ . }}/">More from this project&nbsp;&#xBB;</a>
+                                <a href="{{ .RelPermalink }}">More from this project&nbsp;&#xBB;</a>
                             </div>
+                            {{ end }}
                             {{ end }}
                             {{ end }}
                         </article>
                         {{ end }}
                         <div class="stream-footer">
-                            <a href="/music/" class="view-all-link view-all-link-desktop">View all music productions →</a>
+                            <a href="{{ $musicPage.RelPermalink }}" class="view-all-link view-all-link-desktop">View all music productions →</a>
                             {{ $second := index $musicProductions 1 }}
                             {{ $third := index $musicProductions 2 }}
-                            <a href="/music/#{{ $second.Title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
+                            <a href="{{ $musicPage.RelPermalink }}#{{ $second.Title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="stream-column apps-stream">
-                    <h2><a href="/apps/">Apps »</a></h2>
+                    {{- $appsPage := .Site.GetPage "/apps" -}}
+                    <h2><a href="{{ $appsPage.RelPermalink }}">Apps »</a></h2>
                     <div class="stream-content">
-                        {{ range where (sort hugo.Data.apps "position") "featured" true }}
-                        <article class="app-preview">
+                        {{- $featuredApps := where (sort hugo.Data.apps "position") "featured" true -}}
+                        {{ range $index, $app := $featuredApps }}
+                        <article class="app-preview{{ if gt $index 1 }} app-preview-desktop-only{{ end }}">
                             <div class="app-header">
-                              {{ if .subsection }}
-                                <h3><a href="/{{ .subsection }}/">{{ .name }}&nbsp;»</a></h3>
-                              {{ else if .app_site }}
-                                <h3><a href="{{ .app_site }}">{{ .name }}&nbsp;»</a></h3>
+                              {{ if $app.subsection }}
+                                <h3><a href="/{{ $app.subsection }}/">{{ $app.name }}&nbsp;»</a></h3>
+                              {{ else if $app.app_site }}
+                                <h3><a href="{{ $app.app_site }}">{{ $app.name }}&nbsp;»</a></h3>
                               {{ end }}
                                 <p class="app-category">
-                                    {{ .category }}
-                                    {{ with .platforms }}
+                                    {{ $app.category }}
+                                    {{ with $app.platforms }}
                                     • {{ delimit . ", " }}
                                     {{ end }}
                                 </p>
                             </div>
-                            <p class="app-description">{{ .description }}</p>
-                            {{ if .testflight }}
+                            <p class="app-description">{{ $app.description }}</p>
+                            {{ if $app.testflight }}
                             <div class="app-download-banner">
-                                <a href="{{ .testflight }}" target="_blank" rel="noopener">
-                                    <span class="download-text">Download {{ .name }}&nbsp;»</span>
-                                    <span class="download-caption">beta for {{ delimit .platforms " and " }}</span>
+                                <a href="{{ $app.testflight }}" target="_blank" rel="noopener">
+                                    <span class="download-text">Download {{ $app.name }}&nbsp;»</span>
+                                    <span class="download-caption">beta for {{ delimit $app.platforms " and " }}</span>
                                 </a>
                             </div>
-                            {{ else if .app_store }}
+                            {{ else if $app.app_store }}
                             <div class="appstore-badge-banner">
-                                <a href="{{ .app_store }}" target="_blank" rel="noopener">
+                                <a href="{{ $app.app_store }}" target="_blank" rel="noopener">
                                     <img src="/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" class="app-store-badge"/>
                                 </a>
                             </div>
                             {{ end }}
-                            {{ with .play_store }}
+                            {{ with $app.play_store }}
                             <div class="app-download-banner">
                                 <a href="{{ . }}" target="_blank" rel="noopener">
                                     <span class="download-text">Join the Android beta&nbsp;»</span>
@@ -143,29 +149,34 @@
                         {{ $appPosts := where .Site.RegularPages "Section" "in" (slice "ego-destroyer") }}
                         {{ $appPosts = where $appPosts "Type" "in" (slice "ego-destroyer") }}
                         {{ $appPosts = where $appPosts "Params.excludeFromRSS" "!=" true }}
-                        {{ range first 3 (sort $appPosts "Date" "desc") }}
-                        <article class="app-post-preview">
-                            <h3><a href="{{ .RelPermalink }}">{{ .Title }} »</a></h3>
-                            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
-                            {{ with .Summary }}
+                        {{- $featuredCount := len $featuredApps -}}
+                        {{ range $index, $post := first 3 (sort $appPosts "Date" "desc") }}
+                        <article class="app-post-preview{{ if gt (add $index $featuredCount) 1 }} app-preview-desktop-only{{ end }}">
+                            <h3><a href="{{ $post.RelPermalink }}">{{ $post.Title }} »</a></h3>
+                            <p class="post-meta">{{ $post.Date.Format "Jan 2, 2006" }}</p>
+                            {{ with $post.Summary }}
                             <div class="post-summary">{{ . }}</div>
                             {{ end }}
-                            {{ if .Truncated }}
-                            <p class="read-more"><a href="{{ .RelPermalink }}">Read more »</a></p>
+                            {{ if $post.Truncated }}
+                            <p class="read-more"><a href="{{ $post.RelPermalink }}">Read more »</a></p>
                             {{ end }}
                         </article>
                         {{ end }}
+                        <div class="stream-footer">
+                            <a href="{{ $appsPage.RelPermalink }}" class="view-all-link view-all-link-mobile">View all apps →</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="stream-column bio-stream">
-                    <h2><a href="/bio/">Bio »</a></h2>
+                    {{- $bioPage := .Site.GetPage "/bio" -}}
+                    <h2><a href="{{ $bioPage.RelPermalink }}">Bio »</a></h2>
                     <div class="stream-content">
                         {{ with .Content }}
                         {{ . }}
                         {{ end }}
                         <div class="stream-footer">
-                            <a href="/bio/" class="view-all-link">More about me →</a>
+                            <a href="{{ $bioPage.RelPermalink }}" class="view-all-link">More about me →</a>
                         </div>
                     </div>
                 </div>
