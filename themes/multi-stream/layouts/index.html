@@ -91,7 +91,7 @@
                             <a href="/music/" class="view-all-link view-all-link-desktop">View all music productions →</a>
                             {{ $second := index $musicProductions 1 }}
                             {{ $third := index $musicProductions 2 }}
-                            <a href="{{ $second.RelPermalink }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
+                            <a href="/music/#{{ $second.Title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
                         </div>
                     </div>
                 </div>
