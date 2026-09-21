@@ -1,0 +1,65 @@
+{{/*
+    Reverse-chronological list of music releases, grouped by year,
+    excluding future-dated ones (release .Date in the future),
+    regardless of the site's buildFuture/buildExpired dev-server flags.
+    Rendered as a self-contained card with its own heading and
+    ItemList JSON-LD, each entry linking to its real release page.
+
+    Usage: {{ partial "music-releases.html" . }}
+*/}}
+{{- $releasesSection := site.GetPage "/music/releases" -}}
+{{- $releases := where $releasesSection.RegularPages "Date" "le" now -}}
+{{- $releases = sort $releases "Date" "desc" -}}
+{{- if $releases -}}
+<h2>Music Releases</h2>
+<section class="music-releases-card">
+    <ul class="music-releases-years">
+        {{ range $releases.GroupByDate "2006" }}
+        <li class="music-releases-year">
+            <span class="music-releases-year-label">{{ .Key }}</span>
+            <ul class="music-releases-chips">
+                {{ range .Pages }}
+                {{ $r := . }}
+                {{ $thumb := "" }}
+                {{ with $r.Params.image }}
+                {{ $img := resources.Get (printf "images/music/%s" .) }}
+                {{ if $img }}
+                {{ $thumb = $img.Resize "40x40 webp" }}
+                {{ end }}
+                {{ end }}
+                <li>
+                    <a class="release-chip{{ if not $thumb }} no-thumb{{ end }}" href="{{ $r.RelPermalink }}" title="{{ $r.Title }}{{ with $r.Params.artist }} by {{ . }}{{ end }}">
+                        {{ with $thumb }}
+                        <img class="release-chip-thumb" src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+                        {{ end }}
+                        <span class="release-chip-title">{{ $r.Title | truncate 20 "…" }}</span>
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [
+    {{- range $i, $r := $releases }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "item": {
+        "@type": "MusicRecording",
+        "name": {{ $r.Title | jsonify | safeJS }},
+        "url": {{ $r.Permalink | jsonify | safeJS }},
+        "datePublished": {{ $r.Date.Format "2006-01-02" | jsonify | safeJS }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end -}}

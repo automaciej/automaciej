@@ -134,6 +134,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
 }
 
+/* Card title: one heading level below a stream's h2, used by every
+   preview card (music, app, blog, post-card) */
+.music-preview h3,
+.app-preview h3,
+.blog-post-preview h3,
+.post-card-content h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+}
+
 /* Hero section */
 .hero {
     padding: 60px 0 40px 0;
@@ -159,6 +169,10 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
 
+    .hero-intro {
+        text-align: center;
+    }
+
     .hero .tagline {
         color: var(--text-secondary);
     }
@@ -166,10 +180,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: fit-content;
+    max-width: 720px;
     margin: 0 auto;
+}
+
+.hero-intro {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.hero-intro p:last-child {
+    margin-bottom: 0;
 }
 
 .hero-photo {
@@ -284,12 +311,24 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
-.app-preview h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.6rem;
+.app-preview h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
-.app-preview h3 a {
+/* Blog preview on homepage */
+.blog-post-preview {
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.blog-post-preview:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.blog-post-preview h3 a {
     color: var(--text-primary);
     text-decoration: none;
 }
@@ -385,11 +424,6 @@ h1, h2, h3, h4, h5, h6 {
     .music-preview-image img:hover {
         opacity: 0.85;
     }
-}
-
-.music-preview h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
 }
 
 .music-preview h3 a {
@@ -551,17 +585,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-illustration {
-    max-width: 720px;
+    width: 100%;
+    aspect-ratio: 3 / 1;
     margin: 0 auto 2rem auto;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 .post-illustration img {
     width: 100%;
-    height: auto; /* Ensure aspect ratio is maintained */
-    max-height: 720px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 12px;
     display: block;
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
@@ -635,32 +669,28 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.2rem;
 }
 
-.post-card-content h3 {
-    font-size: 1.25rem;
-    margin: 0 0 0.5rem 0; /* No top margin */
-}
-
 .post-card-content .post-description {
+    margin-top: auto; /* Push description to bottom to ensure consistent card height */
 }
 
 /* Bio stream content */
-.bio-stream .stream-content {
+.bio-stream .bio-summary {
     background: var(--bg-secondary);
     padding: 1.25rem;
     border-radius: 12px;
 }
 
-.bio-stream .stream-content h2 {
+.bio-stream .bio-summary h2 {
     font-size: 1.25rem;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
 }
 
-.bio-stream .stream-content h2:first-child {
+.bio-stream .bio-summary h2:first-child {
     margin-top: 0;
 }
 
-.bio-stream .stream-content p {
+.bio-stream .bio-summary p {
     margin-bottom: 1rem;
 }
 
@@ -678,7 +708,7 @@ main ol
     margin-bottom: 0;
 }
 
-.bio-stream .stream-content hr {
+.bio-stream .bio-summary hr {
     border: none;
     border-top: 1px solid var(--border-color);
     margin: 1.5rem 0;
@@ -1051,27 +1081,6 @@ main ol
     box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
 }
 
-.post-card-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.post-card-content .post-meta {
-    font-size: 0.8rem; /* Small text */
-    color: var(--text-secondary); /* Secondary color */
-    margin-bottom: 0.2rem; /* Keep close to title */
-}
-
-.post-card-content h3 {
-    font-size: 1.25rem;
-    margin-top: 0; /* Keep close to date */
-    margin-bottom: 0.5rem; /* Space below title */
-}
-
-.post-card-content .post-description {
-    margin-top: auto; /* Push description to bottom to ensure consistent card height */
-}
 
 
 /*
@@ -1190,6 +1199,27 @@ main ol
     .post-content img {
         width: 100%;
         margin: 1rem 0;
+    }
+
+    /* Banner image: taller ratio on narrow screens so subjects aren't over-cropped */
+    .post-illustration {
+        aspect-ratio: 16 / 9;
+    }
+
+    .music-releases-year {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    /* Figure-shortcode images cap height instead of stretching to width on mobile */
+    .post-content figure img,
+    .stream-content figure img {
+        width: auto;
+        max-height: 300px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
     }
 
     /* Reminders shortcode */
@@ -1329,6 +1359,81 @@ main ol
 .project-chip-years {
     font-size: 0.8rem;
     color: var(--text-secondary);
+}
+
+.music-releases-card {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.music-releases-years {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.music-releases-year {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.music-releases-year:last-child {
+    border-bottom: none;
+}
+
+.music-releases-year-label {
+    flex-shrink: 0;
+    width: 3.5rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.music-releases-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.release-chip {
+    display: inline-flex;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0 0.6rem 0 0;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.release-chip.no-thumb {
+    padding-left: 0.6rem;
+}
+
+.release-chip-thumb {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.release-chip:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
 }
 
 /* Active / Past section headings on projects list */

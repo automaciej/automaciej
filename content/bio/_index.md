@@ -7,13 +7,21 @@ aliases: [ "/bio/about" ]
 image: "/images/background.jpg"
 ---
 
-Maciej, raised in a musical family in Warsaw, Poland, was inspired early on by
-artists like George Duke, John Scofield, Pat Metheny, Antônio Carlos Jobim, and
-João Gilberto. Though he initially picked up guitar, Maciej always felt more at
-home with bass. His switch from guitar to bass was a turning point, allowing him
-to connect deeply with the groove between the drums and harmonic
-instruments&ndash;a natural fit for both his playing style and his work as a
-producer.
+Music producer and software developer based in Dublin, Ireland. Spent 16 years
+at Google as a Site Reliability Engineer. Pursuing own music production and
+software development full-time since 2023.
+
+Maciej was raised in a musical family in Warsaw, Poland. As a child, Maciej
+explored his father's cassette and vinyl record collection.
+
+<!--more-->
+
+Some of Maciej's favorite tapes were George Duke, John Scofield, Pat Metheny,
+Antônio Carlos Jobim, and João Gilberto. Though he initially picked up guitar,
+Maciej always felt more at home with bass. His switch from guitar to bass was a
+turning point, allowing him to connect deeply with the groove between the drums
+and harmonic instruments, a natural fit for both his playing style and his work
+as a producer.
 
 Maciej studied sound engineering at the Chopin University of Music, leading jazz
 and acid jazz bands before moving to Dublin in 2007. There, he taught himself
@@ -32,6 +40,17 @@ A proud moment in his career was co-writing for his band Funksters in Poland,
 whose members have since gone on to successful careers. These days, Maciej is
 most proud of his work with singer [Gaia Marenghi][gaia] and drummer
 [Riccardo Marenghi][ric].
+
+In 2023, Maciej was selected for a week-long intensive seminar with
+Grammy-winning mixing engineer Andrew Scheps at La Fabrique in France, a highly
+competitive programme run by Mix With The Masters, with roughly three applicants
+for every place.
+
+{{< figure src="Maciej_with_Andrew_Scheps.jpg" alt="Maciej with Andrew Scheps at La Fabrique" caption="With Andrew Scheps at La Fabrique, 2023" width="50%" >}}
+
+In 2025, he was accepted into a two-day seminar in Paris with Grammy-nominated
+producer and multi-instrumentalist Alissia Benveniste, known for her work with
+Mary J. Blige, Bruno Mars, Anderson .Paak, and Bootsy Collins.
 
 Looking ahead, Maciej is focused on original music creation, whether for himself
 or in collaboration with others. His dream is to write and release songs,

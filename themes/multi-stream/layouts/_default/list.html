@@ -3,6 +3,16 @@
 {{ if .Params.app }}
     {{ $appData = index hugo.Data.apps .Params.app }}
 {{ end }}
+{{ $imageURL := "" }}
+{{ if .Params.image }}
+    {{ $imagePath := .Params.image }}
+    {{ $imageResource := .Resources.GetMatch $imagePath }}
+    {{ if $imageResource }}
+        {{ $imageURL = $imageResource.RelPermalink }}
+    {{ else }}
+        {{ $imageURL = $imagePath | relURL }}
+    {{ end }}
+{{ end }}
 <div class="list-page">
     <div class="container">
         {{ if and $appData $appData.testflight }}
@@ -10,10 +20,18 @@
         {{ end }}
         <header class="section-header">
             <h1>{{ .Title }}</h1>
+            {{ if $imageURL }}
+            <div class="post-illustration">
+                <img src="{{ $imageURL }}" alt="{{ .Title }}">
+            </div>
+            {{ end }}
             {{ with .Content }}
             <div class="section-intro">
                 {{ . }}
             </div>
+            {{ end }}
+            {{ if eq .Section "bio" }}
+            {{ partial "music-releases.html" . }}
             {{ end }}
         </header>
 
@@ -40,6 +58,7 @@
             {{ end }}
         </div>
         </div>
+
     </div>
 </div>
 {{ end }}

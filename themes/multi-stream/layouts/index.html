@@ -15,6 +15,11 @@
                     {{ end }}
                     {{ partial "social.html" . }}
                 </div>
+                {{ with .Content }}
+                <div class="hero-intro">
+                    {{ . }}
+                </div>
+                {{ end }}
             </div>
         </div>
     </section>
@@ -171,12 +176,32 @@
                 <div class="stream-column bio-stream">
                     {{- $bioPage := .Site.GetPage "/bio" -}}
                     <h2><a href="{{ $bioPage.RelPermalink }}">Bio »</a></h2>
-                    <div class="stream-content">
-                        {{ with .Content }}
+                    <div class="stream-content bio-summary">
+                        {{ with $bioPage.Summary }}
                         {{ . }}
                         {{ end }}
                         <div class="stream-footer">
                             <a href="{{ $bioPage.RelPermalink }}" class="view-all-link">More about me →</a>
+                        </div>
+                    </div>
+
+                    {{- $blogPage := .Site.GetPage "/blog" -}}
+                    <h2><a href="{{ $blogPage.RelPermalink }}">Blog »</a></h2>
+                    <div class="stream-content">
+                        {{ range first 2 (sort $blogPage.RegularPages "Date" "desc") }}
+                        <article class="blog-post-preview">
+                            <h3><a href="{{ .RelPermalink }}">{{ .Title }} »</a></h3>
+                            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+                            {{ with .Summary }}
+                            <div class="post-summary">{{ . }}</div>
+                            {{ end }}
+                            {{ if .Truncated }}
+                            <p class="read-more"><a href="{{ .RelPermalink }}">Read more »</a></p>
+                            {{ end }}
+                        </article>
+                        {{ end }}
+                        <div class="stream-footer">
+                            <a href="{{ $blogPage.RelPermalink }}" class="view-all-link">More posts →</a>
                         </div>
                     </div>
                 </div>
