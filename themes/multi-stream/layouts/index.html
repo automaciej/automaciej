@@ -34,70 +34,24 @@
                         {{- $releasesSection := .Site.GetPage "/music/releases" -}}
                         {{- $musicProductions := sort $releasesSection.RegularPages "Params.release_date" "desc" -}}
                         {{ range $index, $production := first 3 $musicProductions }}
-                        <article class="music-preview{{ if gt $index 2 }} music-preview-desktop-only{{ end }}">
+                        <article class="music-preview app-card-linked{{ if gt $index 2 }} music-preview-desktop-only{{ end }}">
+                            <a class="app-card-stretched-link" href="{{ $production.RelPermalink }}" aria-label="{{ $production.Title }}"></a>
                             {{ with $production.Params.image }}
                             {{ $img := resources.Get (printf "images/music/%s" .) }}
                             {{ if $img }}
                             {{ $resized := $img.Resize "300x webp" }}
                             <div class="music-preview-image">
-                                <a href="{{ $production.RelPermalink }}">
-                                    <img src="{{ $resized.RelPermalink }}" alt="{{ $production.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
-                                </a>
+                                <img src="{{ $resized.RelPermalink }}" alt="{{ $production.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
                             </div>
                             {{ end }}
                             {{ end }}
                             <div class="music-preview-content">
-                                <h3><a href="{{ $production.RelPermalink }}">{{ $production.Title }}</a></h3>
+                                <h3>{{ $production.Title }}</h3>
                                 <div class="music-preview-meta">
                                     <span class="artist">{{ $production.Params.artist }}</span>
                                     <span class="date">• {{ dateFormat "Jan 2006" $production.Params.release_date }}</span>
                                 </div>
                             </div>
-                            {{ with $production.Params.links }}
-                            <!--
-                                {{ if .youtube }}
-                                <div class="embed-preview youtube-preview">
-                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/{{ .youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                {{ else if .bandcamp_album }}
-                                <div class="embed-preview bandcamp-preview">
-                                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ .bandcamp_album }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless></iframe>
-                                </div>
-                                {{ else if .bandcamp_track }}
-                                <div class="embed-preview bandcamp-preview">
-                                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track={{ .bandcamp_track }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless></iframe>
-                                </div>
-                                {{ end }}
-                                {{- $listenURL := .streaming | default .bandcamp_url | default .spotify_url | default .apple_music_url -}}
-                                {{- $listenLabel := "Listen on streaming platforms" -}}
-                                {{- if not .streaming -}}
-                                  {{- if .bandcamp_url }}{{- $listenLabel = "Listen on Bandcamp" -}}
-                                  {{- else if .spotify_url }}{{- $listenLabel = "Listen on Spotify" -}}
-                                  {{- else if .apple_music_url }}{{- $listenLabel = "Listen on Apple Music" -}}
-                                  {{- end -}}
-                                {{- end -}}
-                                {{ with $listenURL }}
-                                <div class="music-listen-banner">
-                                    <a href="{{ . }}" target="_blank" rel="noopener">
-                                        {{ $listenLabel }}&nbsp;»
-                                    </a>
-                                </div>
-                                {{ end }}
-                            -->
-                            {{ end }}
-                            {{ with $production.Params.project }}
-                            {{ $proj := . }}
-                            {{ if gt (len (where $releasesSection.RegularPages "Params.project" $proj)) 1 }}
-                            {{ $projectPage := $.Site.GetPage (printf "/music/projects/%s" $proj) }}
-                            <!--
-                            {{ with $projectPage }}
-                            <div class="music-project-link">
-                                <a href="{{ .RelPermalink }}">More from this project&nbsp;&#xBB;</a>
-                            </div>
-                            {{ end }}
-                            -->
-                            {{ end }}
-                            {{ end }}
                         </article>
                         {{ end }}
                         <div class="stream-footer">
@@ -115,45 +69,37 @@
                     <div class="stream-content">
                         {{- $featuredApps := where (sort hugo.Data.apps "position") "featured" true -}}
                         {{ range $index, $app := $featuredApps }}
-                        <article class="app-preview{{ if gt $index 1 }} app-preview-desktop-only{{ end }}">
+                        {{ $appHref := "" }}
+                        {{ $appExternal := false }}
+                        {{ if $app.subsection }}
+                        {{ $appHref = printf "/%s/" $app.subsection }}
+                        {{ else if $app.app_site }}
+                        {{ $appHref = $app.app_site }}
+                        {{ $appExternal = true }}
+                        {{ end }}
+                        <article class="app-preview{{ if $appHref }} app-card-linked{{ end }}{{ if gt $index 1 }} app-preview-desktop-only{{ end }}">
+                            {{ with $appHref }}
+                            <a class="app-card-stretched-link" href="{{ . }}"{{ if $appExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $app.name }}"></a>
+                            {{ end }}
                             <div class="app-header">
-                              {{ if $app.subsection }}
-                                <h3><a href="/{{ $app.subsection }}/">{{ $app.name }}&nbsp;»</a></h3>
-                              {{ else if $app.app_site }}
-                                <h3><a href="{{ $app.app_site }}">{{ $app.name }}&nbsp;»</a></h3>
+                              {{ with $app.icon }}
+                              {{ $icon := resources.Get (printf "images/apps/%s" .) }}
+                              {{ if $icon }}
+                              {{ $resized := $icon.Resize "64x png" }}
+                              <img class="app-preview-icon" src="{{ $resized.RelPermalink }}" alt="" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
                               {{ end }}
+                              {{ end }}
+                              <div class="app-header-text">
+                                <h3>{{ $app.name }}&nbsp;»</h3>
                                 <p class="app-category">
                                     {{ $app.category }}
                                     {{ with $app.platforms }}
                                     • {{ delimit . ", " }}
                                     {{ end }}
                                 </p>
+                              </div>
                             </div>
                             <p class="app-description">{{ $app.description }}</p>
-                            <!--
-                            {{ if $app.testflight }}
-                            <div class="app-download-banner">
-                                <a href="{{ $app.testflight }}" target="_blank" rel="noopener">
-                                    <span class="download-text">Download {{ $app.name }}&nbsp;»</span>
-                                    <span class="download-caption">beta for {{ delimit $app.platforms " and " }}</span>
-                                </a>
-                            </div>
-                            {{ else if $app.app_store }}
-                            <div class="appstore-badge-banner">
-                                <a href="{{ $app.app_store }}" target="_blank" rel="noopener">
-                                    <img src="/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" class="app-store-badge"/>
-                                </a>
-                            </div>
-                            {{ end }}
-                            {{ with $app.play_store }}
-                            <div class="app-download-banner">
-                                <a href="{{ . }}" target="_blank" rel="noopener">
-                                    <span class="download-text">Join the Android beta&nbsp;»</span>
-                                    <span class="download-caption">on Google Play</span>
-                                </a>
-                            </div>
-                            {{ end }}
-                            -->
                         </article>
                         {{ end }}
 

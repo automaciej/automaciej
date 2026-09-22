@@ -1,17 +1,31 @@
-<article class="app-card">
+{{ $cardHref := "" }}
+{{ $cardExternal := false }}
+{{ if .subsection }}
+{{ $cardHref = printf "/%s/" .subsection }}
+{{ else if .app_site }}
+{{ $cardHref = .app_site }}
+{{ $cardExternal = true }}
+{{ end }}
+<article class="app-card{{ if $cardHref }} app-card-linked{{ end }}">
+    {{ with $cardHref }}
+    <a class="app-card-stretched-link" href="{{ . }}"{{ if $cardExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $.name }}"></a>
+    {{ end }}
     <div class="app-card-header">
-        {{ if .subsection }}
-        <h2><a href="/{{ .subsection }}/">{{ .name }}</a></h2>
-        {{ else if .app_site }}
-        <h2><a href="{{ .app_site }}" target="_blank" rel="noopener">{{ .name }}</a></h2>
-        {{ else }}
-        <h2>{{ .name }}</h2>
+        {{ with .icon }}
+        {{ $icon := resources.Get (printf "images/apps/%s" .) }}
+        {{ if $icon }}
+        {{ $resized := $icon.Resize "96x png" }}
+        <img class="app-card-icon" src="{{ $resized.RelPermalink }}" alt="" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         {{ end }}
+        {{ end }}
+        <div class="app-card-header-text">
+        <h2>{{ .name }}</h2>
         <p class="app-category">
             {{ with .author }}{{ . }} • {{ end }}{{ .category }}
             {{ with .platforms }}• {{ delimit . ", " }}{{ end }}
             {{ with .license }}• {{ . }}{{ end }}
         </p>
+        </div>
     </div>
     {{ with .description }}
     <p class="app-description">{{ . }}</p>

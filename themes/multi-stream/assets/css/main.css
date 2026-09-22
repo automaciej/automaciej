@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-preview h3,
 .post-card-content h3 {
     font-size: 1.25rem;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0 0;
 }
 
 /* Hero section */
@@ -301,6 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Apps preview on homepage */
 .app-preview {
+    position: relative;
     background: var(--bg-secondary);
     padding: 1.25rem;
     border-radius: 12px;
@@ -314,6 +315,19 @@ h1, h2, h3, h4, h5, h6 {
 .app-preview h3 a {
     color: var(--text-primary);
     text-decoration: none;
+}
+
+.app-preview .app-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.app-preview-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    flex-shrink: 0;
 }
 
 /* Blog preview on homepage */
@@ -369,21 +383,13 @@ h1, h2, h3, h4, h5, h6 {
         align-items: flex-start;
     }
 
-    .embed-preview {
-        flex-basis: 100%;
-        margin-top: 0;
-    }
-
     .music-preview-image {
         flex-shrink: 0;
         margin-right: 0.75rem;
     }
 
-    .music-preview-image a {
-        display: block;
-    }
-
     .music-preview-image img {
+        display: block;
         width: 80px;
         height: 80px;
         object-fit: cover;
@@ -408,11 +414,8 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 1rem;
     }
 
-    .music-preview-image a {
-        display: block;
-    }
-
     .music-preview-image img {
+        display: block;
         width: 100%;
         max-width: 300px;
         height: auto;
@@ -443,14 +446,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .music-preview-meta .artist {
     font-weight: 500;
-}
-
-.embed-preview {
-    margin-top: 0;
-}
-
-.embed-preview iframe {
-    border-radius: 8px;
 }
 
 .stream-footer {
@@ -797,17 +792,48 @@ main ol
 }
 
 .app-card {
+    position: relative;
     background: var(--bg-secondary);
     border-radius: 12px;
     padding: 1.5rem;
 }
 
+.app-card-linked {
+    transition: box-shadow 0.15s ease;
+}
+
+.app-card-linked:hover {
+    box-shadow: 0 0 0 2px var(--text-secondary);
+}
+
+.app-card-stretched-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.app-card .app-download-banner,
+.app-card .app-download-link {
+    position: relative;
+    z-index: 2;
+}
+
 .app-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 0.75rem;
 }
 
 .app-card-header h2 {
     margin: 0 0 0.25rem;
+}
+
+.app-card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    flex-shrink: 0;
 }
 
 .app-card .app-description {
@@ -846,37 +872,6 @@ main ol
 .app-download-banner .download-caption {
     font-size: 1rem;
     font-weight: 400;
-    opacity: 0.9;
-}
-
-.appstore-badge-banner {
-    margin-top: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.appstore-badge-banner a img {
-    transform: scale(2);
-    transform-origin: center;
-}
-
-.music-listen-banner {
-    background: #28A745;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.music-listen-banner a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    display: block;
-}
-
-.music-listen-banner a:hover {
     opacity: 0.9;
 }
 
@@ -1156,18 +1151,12 @@ main ol
         gap: 0.1rem;
         align-items: flex-start;
     }
-    .embed-preview {
-        flex-basis: 100%;
-        margin-top: 0;
-    }
     .music-preview-image {
         flex-shrink: 0;
         margin-right: 0.75rem;
     }
-    .music-preview-image a {
-        display: block;
-    }
     .music-preview-image img {
+        display: block;
         width: 80px;
         height: 80px;
         object-fit: cover;
@@ -1545,20 +1534,6 @@ main ol
 
 .music-project-link a:hover {
     text-decoration: underline;
-}
-
-/* Wide columns: pin to the card's bottom-right corner instead of inline */
-@media (min-width: 768px) {
-    .music-preview {
-        padding-bottom: 4rem;
-    }
-
-    .music-project-link {
-        position: absolute;
-        bottom: 1.25rem;
-        right: 1.25rem;
-        margin-top: 0;
-    }
 }
 
 /* Individual project page */

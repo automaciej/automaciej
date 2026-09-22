@@ -1,4 +1,5 @@
 name = "Task Compass"
+icon = "task_compass.png"
 author = "Maciej Bliziński"
 position = 1
 featured = true
