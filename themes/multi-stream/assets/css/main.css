@@ -602,7 +602,6 @@ h1, h2, h3, h4, h5, h6 {
 .post-card {
     background: var(--bg-secondary);
     border-radius: 12px;
-    transition: transform 0.2s, box-shadow 0.2s;
     margin-bottom: 1rem;
     overflow: hidden; /* To contain child elements with border-radius */
     display: flex;
@@ -613,9 +612,18 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
-.post-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+/* Card styling shared by every whole-card link (Jogger/blog post
+   cards, homepage music/app cards, apps list cards): shadow by
+   default, bordered highlight on hover */
+.post-card,
+.app-card-linked {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s;
+}
+
+.post-card:hover,
+.app-card-linked:hover {
+    box-shadow: 0 0 0 2px var(--text-secondary);
 }
 
 .post-card-image {
@@ -804,14 +812,6 @@ main ol
     background: var(--bg-secondary);
     border-radius: 12px;
     padding: 1.5rem;
-}
-
-.app-card-linked {
-    transition: box-shadow 0.15s ease;
-}
-
-.app-card-linked:hover {
-    box-shadow: 0 0 0 2px var(--text-secondary);
 }
 
 .app-card-stretched-link {
