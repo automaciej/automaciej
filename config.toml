@@ -92,5 +92,3 @@ copyright = "&copy;2026 Maciej Bliziński"
 [imaging.exif]
   includeFields = ".*"
 
-[markup.goldmark.renderer]
-  unsafe = true
