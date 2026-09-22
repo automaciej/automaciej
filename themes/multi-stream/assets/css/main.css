@@ -7,8 +7,8 @@
 
 /* Light mode (default) */
 :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f5f5f7;
+    --bg-primary: #f5f5f7;
+    --bg-secondary: #ffffff;
     --text-primary: #1d1d1f;
     --text-secondary: #6e6e73;
     --border-color: #d2d2d7;
