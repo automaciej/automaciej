@@ -89,11 +89,13 @@
                             {{ $proj := . }}
                             {{ if gt (len (where $releasesSection.RegularPages "Params.project" $proj)) 1 }}
                             {{ $projectPage := $.Site.GetPage (printf "/music/projects/%s" $proj) }}
+                            <!--
                             {{ with $projectPage }}
                             <div class="music-project-link">
                                 <a href="{{ .RelPermalink }}">More from this project&nbsp;&#xBB;</a>
                             </div>
                             {{ end }}
+                            -->
                             {{ end }}
                             {{ end }}
                         </article>
