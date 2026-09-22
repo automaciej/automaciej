@@ -12,7 +12,7 @@ at Google as a Site Reliability Engineer. Pursuing own music production and
 software development full-time since 2023.
 
 Maciej was raised in a musical family in Warsaw, Poland. As a child, Maciej
-explored his father's cassette and vinyl record collection.
+explored his [father's][marek] cassette and vinyl record collection.
 
 <!--more-->
 
@@ -42,9 +42,11 @@ most proud of his work with singer [Gaia Marenghi][gaia] and drummer
 [Riccardo Marenghi][ric].
 
 In 2023, Maciej was selected for a week-long intensive seminar with
-Grammy-winning mixing engineer Andrew Scheps at La Fabrique in France, a highly
-competitive programme run by Mix With The Masters, with roughly three applicants
-for every place.
+Grammy-winning mixing engineer [Andrew Scheps][ascheps] at La Fabrique in
+France, a highly competitive programme run by Mix With The Masters, with roughly
+three applicants for every place. Andrew Scheps is known for his work with Red
+Hot Chili Peppers, Black Sabbath, Adele, Beyonce, Hozier, Kaleo, The Smashing
+Pumpkins, Low Roar, and more.
 
 {{< figure src="Maciej_with_Andrew_Scheps.jpg" alt="Maciej with Andrew Scheps at La Fabrique" caption="With Andrew Scheps at La Fabrique, 2023" width="50%" >}}
 
@@ -59,8 +61,9 @@ work]({{< relref "music/_index.md" >}}). Ultimately, it's the act of creating
 something new that fuels his passion, making music the art form closest to his
 heart.
 
-[jam]: https://facebook.com/dublinjazzjam
-[marek]: https://en.wikipedia.org/wiki/Marek_Blizi%C5%84ski
-[ric]: https://www.instagram.com/riccardo_marenghi/
+[jam]: https://facebook.com/dublinjazzjam "Dublin Jazz Jam Session"
+[marek]: https://en.wikipedia.org/wiki/Marek_Blizi%C5%84ski "Marek Bliziński"
+[ric]: https://www.instagram.com/riccardo_marenghi/ "Riccardo Marenghi on Instagram"
 [mus]: {{< relref "music/_index.md" >}} "Music production showcase"
 [gaia]: https://www.instagram.com/gaiamarenghi/ "Gaia Marenghi on Instagram"
+[ascheps]: https://mixwiththemasters.com/masters/andrew-scheps
