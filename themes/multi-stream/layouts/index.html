@@ -13,7 +13,6 @@
                     {{ with .Params.tagline }}
                     <p class="tagline">{{ . }}</p>
                     {{ end }}
-                    {{ partial "social.html" . }}
                 </div>
                 {{ with .Content }}
                 <div class="hero-intro">
@@ -158,6 +157,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            {{ partial "social.html" . }}
         </div>
     </section>
 </div>

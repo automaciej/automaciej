@@ -228,14 +228,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
-.hero .social {
-    margin: 1rem 0 0 0;
-}
-
-.hero .social ul {
-    justify-content: flex-start;
-}
-
 /* Stream columns */
 .stream-columns {
     display: grid;
@@ -746,6 +738,22 @@ main ol
     height: 1em;
     position: relative;
     top: 0.25em;
+}
+
+/* Contact section on homepage */
+.contact {
+    margin-top: 2em;
+    padding: 1em 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact .social ul {
+    justify-content: center;
 }
 
 /* Music page */

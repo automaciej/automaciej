@@ -86,37 +86,6 @@ copyright = "&copy;2026 Maciej Bliziński"
     enable = true
     file = "images/background.jpg"
 
-[[params.links]]
-  [params.links.list1]
-    heading = "Projects"
-    [[params.links.list1.link]]
-      text = "Ego Destroyer"
-      title = "Interactive metronome for musicians passionate about timing"
-      ref = "ego-destroyer/_index.md"
-    [[params.links.list1.link]]
-      text = "Task Compass"
-      title = "Priority tool for managing competing tasks"
-      ref = "https://task-compass.app"
-    [[params.links.list1.link]]
-      text = "Music Production"
-      title = "Work produced for other artists"
-      ref = "music/_index.md"
-
-  [params.links.list2]
-    heading = "EPK"
-    [[params.links.list2.link]]
-      text = "Bio"
-      title = "Biography and background"
-      ref = "bio.md"
-    [[params.links.list2.link]]
-      text = "Photos"
-      title = "Press photos and images"
-      ref = "photos.md"
-    [[params.links.list2.link]]
-      text = "Press"
-      title = "Press coverage and media"
-      ref = "press.md"
-
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
   fractions = false
