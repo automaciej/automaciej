@@ -34,7 +34,7 @@
                         {{- $releasesSection := .Site.GetPage "/music/releases" -}}
                         {{- $musicProductions := sort $releasesSection.RegularPages "Params.release_date" "desc" -}}
                         {{ range $index, $production := first 3 $musicProductions }}
-                        <article class="music-preview{{ if gt $index 0 }} music-preview-desktop-only{{ end }}">
+                        <article class="music-preview{{ if gt $index 2 }} music-preview-desktop-only{{ end }}">
                             {{ with $production.Params.image }}
                             {{ $img := resources.Get (printf "images/music/%s" .) }}
                             {{ if $img }}
@@ -54,6 +54,7 @@
                                 </div>
                             </div>
                             {{ with $production.Params.links }}
+                            <!--
                                 {{ if .youtube }}
                                 <div class="embed-preview youtube-preview">
                                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/{{ .youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -82,6 +83,7 @@
                                     </a>
                                 </div>
                                 {{ end }}
+                            -->
                             {{ end }}
                             {{ with $production.Params.project }}
                             {{ $proj := . }}
@@ -98,8 +100,8 @@
                         {{ end }}
                         <div class="stream-footer">
                             <a href="{{ $musicPage.RelPermalink }}" class="view-all-link view-all-link-desktop">View all music productions →</a>
-                            {{ $second := index $musicProductions 1 }}
-                            {{ $third := index $musicProductions 2 }}
+                            {{ $second := index $musicProductions 3 }}
+                            {{ $third := index $musicProductions 4 }}
                             <a href="{{ $musicPage.RelPermalink }}#{{ $second.Title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
                         </div>
                     </div>
@@ -126,6 +128,7 @@
                                 </p>
                             </div>
                             <p class="app-description">{{ $app.description }}</p>
+                            <!--
                             {{ if $app.testflight }}
                             <div class="app-download-banner">
                                 <a href="{{ $app.testflight }}" target="_blank" rel="noopener">
@@ -148,6 +151,7 @@
                                 </a>
                             </div>
                             {{ end }}
+                            -->
                         </article>
                         {{ end }}
 
