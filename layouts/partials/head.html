@@ -12,7 +12,8 @@
     {{ .Title }} - {{ .Site.Title }}
 {{- end -}}
 </title>
-{{ $ogDescription := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
+{{ $genreDescription := partial "genre-description.html" . }}
+{{ $ogDescription := .Description | default $genreDescription | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
 <meta name="description" content="{{ $ogDescription }}">
 
 {{ if .Site.Params.favicon }}

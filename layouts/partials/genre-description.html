@@ -1,0 +1,18 @@
+{{- $desc := "" -}}
+{{- if eq .Kind "term" -}}
+  {{- $count := len .Pages -}}
+  {{- $latest := index (sort .Pages "Params.release_date" "desc") 0 -}}
+  {{- $desc = printf "%d %s production%s by Maciej Bliziński, most recently %q." $count .Title (cond (eq $count 1) "" "s") $latest.Title -}}
+{{- else if eq .Kind "taxonomy" -}}
+  {{- $items := slice -}}
+  {{- range .Pages -}}
+    {{- $items = $items | append (dict "title" .Title "count" (len .Pages)) -}}
+  {{- end -}}
+  {{- $items = sort $items "count" "desc" -}}
+  {{- $parts := slice -}}
+  {{- range first 3 $items -}}
+    {{- $parts = $parts | append (printf "%s (%d)" .title .count) -}}
+  {{- end -}}
+  {{- $desc = printf "A list of music genres in music productions by Maciej Bliziński. Most popular: %s." (delimit $parts ", ") -}}
+{{- end -}}
+{{- $desc -}}

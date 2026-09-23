@@ -1,4 +1,5 @@
-{{ $ogDescription := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
+{{ $genreDescription := partial "genre-description.html" . }}
+{{ $ogDescription := .Description | default $genreDescription | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
 
 {{ $ogImage := "" }}
 {{ with .Params.image }}
