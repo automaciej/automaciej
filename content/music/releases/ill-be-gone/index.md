@@ -1,6 +1,6 @@
 ---
 title: I'll Be Gone
-musicgenres:
+genres:
 - Pop
 date: '2026-02-27'
 release_date: '2026-02-27T00:00:00'

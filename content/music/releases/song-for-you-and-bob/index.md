@@ -1,6 +1,6 @@
 ---
 title: Song For You And Bob
-musicgenres:
+genres:
 - Alternative
 date: '2026-03-08'
 release_date: '2026-03-08T00:00:00'

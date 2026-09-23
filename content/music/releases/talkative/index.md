@@ -1,6 +1,6 @@
 ---
 title: Talkative
-musicgenres:
+genres:
 - Pop
 date: '2025-11-04'
 release_date: '2025-11-04T00:00:00'

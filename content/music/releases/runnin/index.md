@@ -1,6 +1,6 @@
 ---
 title: Runnin' (Lose It All)
-musicgenres:
+genres:
 - Pop
 date: '2026-08-25'
 release_date: '2026-08-25T00:00:00'

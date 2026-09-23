@@ -1,6 +1,6 @@
 ---
 title: Hope Is The One
-musicgenres:
+genres:
 - Alternative
 date: '2026-01-03'
 release_date: '2026-01-03T00:00:00'

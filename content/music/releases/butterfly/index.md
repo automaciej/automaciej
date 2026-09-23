@@ -1,6 +1,6 @@
 ---
 title: Butterfly
-musicgenres:
+genres:
 - Jazz
 date: '2014-06-01'
 release_date: '2014-06-01T00:00:00'

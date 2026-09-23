@@ -10,7 +10,7 @@
             {{ else if $p.Params.album }}
             <span class="album">• {{ $p.Params.album }}</span>
             {{ end }}
-            {{ with $p.Params.musicgenres }}
+            {{ with $p.Params.genres }}
             <span class="music-genre"><span class="music-genre-sep"> • </span>{{ partial "music-genre-links.html" $p }}</span>
             {{ end }}
             <span class="date">• {{ dateFormat "January 2006" $p.Params.release_date }}</span>

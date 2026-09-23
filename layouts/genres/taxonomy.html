@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="list-page">
+    <div class="container">
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+        </header>
+        <ul class="genres-grid">
+            {{ range .Pages.ByTitle }}
+            {{ $examples := sort .Pages "Params.release_date" "desc" | first 5 }}
+            <li>
+                <a class="genre-card" href="{{ .RelPermalink }}">
+                    <div class="genre-card-header">
+                        <span class="genre-card-name">{{ .Title }}</span>
+                        <span class="genre-card-count">{{ len .Pages }}</span>
+                    </div>
+                    {{ if $examples }}
+                    <ul class="genre-card-examples">
+                        {{ range $examples }}
+                        {{ $thumb := "" }}
+                        {{ with .Params.image }}
+                        {{ with resources.Get (printf "images/music/%s" .) }}
+                        {{ $thumb = .Resize "80x80 webp" }}
+                        {{ end }}
+                        {{ end }}
+                        <li>
+                            {{ if $thumb }}
+                            <img src="{{ $thumb.RelPermalink }}" alt="" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+                            {{ else }}
+                            {{ partial "waveform-placeholder.html" }}
+                            {{ end }}
+                            <span>{{ .Title }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

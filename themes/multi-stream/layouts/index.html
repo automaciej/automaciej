@@ -50,7 +50,7 @@
                                     <span class="artist">{{ $production.Params.artist }}</span>
                                     <span class="date">• {{ dateFormat "Jan 2006" $production.Params.release_date }}</span>
                                 </div>
-                                {{ with $production.Params.musicgenres }}
+                                {{ with $production.Params.genres }}
                                 <div class="music-preview-genre">{{ partial "music-genre-links.html" $production }}</div>
                                 {{ end }}
                             </div>

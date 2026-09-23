@@ -1,6 +1,6 @@
 ---
 title: Little Bird, Frost Is All Over, Cormac Murphy's Jig
-musicgenres:
+genres:
 - Irish Traditional
 date: '2026-01-31'
 release_date: '2026-01-31T00:00:00'

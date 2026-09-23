@@ -1,8 +1,7 @@
 ---
 title: Hidden Beach
-musicgenres:
+genres:
 - Dance
-- Electronic
 date: '2026-06-05'
 release_date: '2026-06-05T00:00:00'
 artist: Maciej Bliziński
