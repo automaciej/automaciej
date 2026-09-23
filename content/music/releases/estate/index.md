@@ -1,7 +1,7 @@
 ---
 title: Estate
 genres:
-- Jazz
+- Brazilian
 date: '2022-09-01'
 release_date: '2022-09-01T00:00:00'
 composition_origin: standard
