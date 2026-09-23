@@ -1,5 +1,6 @@
 {{ $genreDescription := partial "genre-description.html" . }}
 {{ $ogDescription := .Description | default $genreDescription | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
+{{ $ogTitle := partial "page-title.html" . }}
 
 {{ $ogImage := "" }}
 {{ with .Params.image }}
@@ -21,7 +22,7 @@
 {{ end }}
 
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+<meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDescription }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -29,6 +30,6 @@
 
 <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
 {{ with .Site.Params.social.twitterHandle }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
-<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+<meta name="twitter:title" content="{{ $ogTitle }}">
 <meta name="twitter:description" content="{{ $ogDescription }}">
 {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}

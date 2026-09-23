@@ -1,0 +1,10 @@
+{{- if .IsHome -}}
+    {{- .Site.Title -}}
+{{- else if and .IsPage (eq .Section "blog") -}}
+    {{- .Title -}}
+{{- else if .IsPage -}}
+    {{- .Title }} - {{ if .CurrentSection.IsHome }}{{ .Site.Title }}{{ else }}{{ .CurrentSection.Title }}{{ end -}}
+{{- else -}}
+    {{/* This covers sections, taxonomies, etc. */}}
+    {{- .Title }} - {{ .Site.Title -}}
+{{- end -}}
