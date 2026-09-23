@@ -1517,7 +1517,7 @@ main ol
     flex-direction: column;
     gap: 0.75rem;
     aspect-ratio: 1 / 1;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.25rem 20px;
     background: var(--bg-secondary);
     border-radius: 12px;
     overflow: hidden;
@@ -1581,6 +1581,16 @@ main ol
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .genres-grid {
+        grid-auto-rows: auto;
+    }
+
+    .genre-card {
+        aspect-ratio: auto;
+    }
 }
 
 .project-card {
