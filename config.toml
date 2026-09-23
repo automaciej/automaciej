@@ -24,6 +24,7 @@ copyright = "&copy;2026 Maciej Bliziński"
 
 [taxonomies]
   tag = "tags"
+  musicgenre = "musicgenres"
 
 [permalinks]
   jogger = "/jogger/:year/:contentbasename/"

@@ -1,5 +1,7 @@
 ---
 title: Jazz Piano Trio in 5/4
+musicgenres:
+- Jazz
 date: '2022-10-01'
 release_date: '2022-10-01T00:00:00'
 composition_origin: standard

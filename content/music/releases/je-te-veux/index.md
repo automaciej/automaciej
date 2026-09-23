@@ -1,5 +1,7 @@
 ---
 title: Je te veux
+musicgenres:
+- Jazz
 date: '2025-05-01'
 release_date: '2025-05-01T00:00:00'
 composition_origin: original

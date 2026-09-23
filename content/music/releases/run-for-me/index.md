@@ -1,5 +1,7 @@
 ---
 title: Run For Me
+musicgenres:
+- Jazz
 date: '2025-05-15'
 release_date: '2025-05-15T00:00:00'
 composition_origin: original

@@ -1,5 +1,7 @@
 ---
 title: André de sapato novo
+musicgenres:
+- Choro
 date: '2023-06-01'
 release_date: '2023-06-01T00:00:00'
 composition_origin: standard

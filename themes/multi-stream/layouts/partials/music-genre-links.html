@@ -1,0 +1,2 @@
+{{- $genres := .Params.musicgenres -}}
+{{- range $i, $g := $genres -}}{{ if $i }}, {{ end }}<a href="{{ "/musicgenres/" | relLangURL }}{{ $g | urlize }}/">{{ $g }}</a>{{- end -}}

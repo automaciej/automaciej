@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{- $releases := sort .Pages "Params.release_date" "desc" -}}
+<div class="music-project-page">
+    <div class="container">
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+        </header>
+        {{ if $releases }}
+        <div class="music-productions">
+            {{ range $releases }}
+            {{ partial "music-card.html" (dict "page" .) }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

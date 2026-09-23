@@ -1,5 +1,8 @@
 ---
 title: Tentativa
+musicgenres:
+- Choro
+- Samba
 date: '2025-12-12'
 release_date: '2025-12-12T00:00:00'
 composition_origin: original

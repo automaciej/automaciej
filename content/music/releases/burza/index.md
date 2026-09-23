@@ -1,5 +1,7 @@
 ---
 title: Burza
+musicgenres:
+- Funk
 date: '2000-11-01'
 release_date: '2000-11-01T00:00:00'
 composition_origin: original

@@ -1,5 +1,7 @@
 ---
 title: Libera
+musicgenres:
+- Jazz
 date: '2025-11-20'
 release_date: '2025-11-20T00:00:00'
 composition_origin: original

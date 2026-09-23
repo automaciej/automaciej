@@ -1,5 +1,7 @@
 ---
 title: Bolero de Satã
+musicgenres:
+- MPB
 date: '2024-03-01'
 release_date: '2024-03-01T00:00:00'
 composition_origin: standard
