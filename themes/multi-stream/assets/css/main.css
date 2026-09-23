@@ -662,6 +662,12 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
+/* Blog post cards aren't whole-card links (title/image/read-more are
+   separately clickable), so don't show the whole-card hover affordance */
+.blog-posts-list .post-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
 .blog-posts-list .read-more {
     margin-top: auto;
     padding-top: 0.5rem;
@@ -1307,8 +1313,7 @@ main ol
     }
 
     .blog-posts-list .post-card:hover {
-        transform: translateY(-5px); /* Restore hover effect */
-        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* no whole-card hover affordance; card isn't whole-card clickable */
     }
 
     .blog-posts-list .post-card .post-meta,
