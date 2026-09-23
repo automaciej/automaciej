@@ -1,0 +1,8 @@
+name = "icantstart"
+author = "Maciej Bliziński"
+position = 3
+featured = true
+category = "productivity"
+description = "A free-standing procrastination and task-initiation troubleshooter, also built into Task Compass."
+app_site = "https://icantstart.eu"
+platforms = ["Web"]

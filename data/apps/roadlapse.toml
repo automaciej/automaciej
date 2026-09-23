@@ -1,7 +1,6 @@
 name = "RoadLapse"
 author = "Maciej Bliziński"
-position = 4
-featured = true
+position = 5
 category = "video"
 description = "Transforms long driving or cycling videos into smooth, stabilized time-lapses. 8x speedup, vidstab stabilization, multi-file concatenation, H.265 encoding."
 app_site = "https://github.com/automaciej/roadlapse"

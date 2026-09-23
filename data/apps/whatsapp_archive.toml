@@ -1,6 +1,6 @@
 name = "whatsapp-archive"
 author = "Maciej Bliziński"
-position = 6
+position = 7
 category = "archival"
 description = "Converts exported WhatsApp chat history (.txt) into a readable HTML page."
 app_site = "https://github.com/automaciej/whatsapp-archive"
