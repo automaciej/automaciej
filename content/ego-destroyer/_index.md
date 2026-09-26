@@ -2,7 +2,6 @@
 title: "Ego Destroyer Metronome"
 description: "Do you think you've got good time? Use this and find out."
 date: "2025-09-21T15:30:00+01:00"
-lastmod: "2025-09-21T15:30:00+01:00"
 excludeFromRSS: true
 app: "ego_destroyer"
 aliases:

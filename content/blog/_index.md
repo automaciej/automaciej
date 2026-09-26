@@ -3,7 +3,6 @@ title: "Blog"
 tagline: "Blog"
 description: "Writing in English, on whatever's on my mind."
 date: "2026-08-11T00:30:00+01:00"
-lastmod: "2026-08-11T00:30:00+01:00"
 type: blog
 params:
   visual:

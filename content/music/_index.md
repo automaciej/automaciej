@@ -3,7 +3,6 @@ title: "Music Production"
 tagline: "Artist body of work"
 description: ""
 date: "2022-09-05T15:02:43+01:00"
-lastmod: "2025-10-14T10:30:45+02:00"
 
 aliases: [ "/bio/music" ]
 

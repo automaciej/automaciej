@@ -4,7 +4,6 @@ aliases:
 author: automaciej
 date: '2009-06-02'
 description: Awantura w internecie, po której już nie jestem taki sam jak kiedyś.
-lastmod: '2016-11-20'
 tags:
 - atopowe
 - opowieści
