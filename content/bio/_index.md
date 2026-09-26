@@ -25,10 +25,7 @@ as a producer.
 
 Maciej studied sound engineering at the Chopin University of Music, leading jazz
 and acid jazz bands before moving to Dublin in 2007. There, he taught himself
-electric bass and began co-organizing the Dublin Jazz Jam Sessions in 2013,
-where he often anchors the sessions as the main bass player, helping musicians
-gel and ensuring tight backing for vocalists. These sessions have honed his
-walking bass skills and deepened his repertoire of tunes.
+electric bass and began co-organizing the Dublin Jazz Jam Sessions in 2013.
 
 In his home studio in North Dublin, Maciej takes a natural, organic approach to
 recording and mixing. He is comfortable with live recordings as much as with
@@ -43,9 +40,9 @@ most proud of his work with singer [Gaia Marenghi][gaia] and drummer
 
 In 2023, Maciej was selected for a week-long intensive seminar with
 Grammy-winning mixing engineer [Andrew Scheps][ascheps] at La Fabrique in
-France, a highly competitive programme run by Mix With The Masters, with roughly
-three applicants for every place. Andrew Scheps is known for his work with Red
-Hot Chili Peppers, Black Sabbath, Adele, Beyonce, Hozier, Kaleo, The Smashing
+France, a competitive programme run by Mix With The Masters, with roughly three
+applicants for every place. Andrew Scheps is known for his work with Red Hot
+Chili Peppers, Black Sabbath, Adele, Beyonce, Hozier, Kaleo, The Smashing
 Pumpkins, Low Roar, and more.
 
 {{< figure src="Maciej_with_Andrew_Scheps.jpg" alt="Maciej with Andrew Scheps at La Fabrique" caption="With Andrew Scheps at La Fabrique, 2023" width="50%" >}}
@@ -57,7 +54,7 @@ Mary J. Blige, Bruno Mars, Anderson .Paak, and Bootsy Collins.
 Looking ahead, Maciej is focused on original music creation, whether for himself
 or in collaboration with others. His dream is to write and release songs,
 helping artists bring their creative visions to life through his [production
-work]({{< relref "music/_index.md" >}}). Ultimately, it's the act of creating
+work][prod]. Ultimately, it's the act of creating
 something new that fuels his passion, making music the art form closest to his
 heart.
 
@@ -67,3 +64,4 @@ heart.
 [mus]: {{< relref "music/_index.md" >}} "Music production showcase"
 [gaia]: https://www.instagram.com/gaiamarenghi/ "Gaia Marenghi on Instagram"
 [ascheps]: https://mixwiththemasters.com/masters/andrew-scheps
+[prod]: {{< relref "music/_index.md" >}} "Maciej's music production"
