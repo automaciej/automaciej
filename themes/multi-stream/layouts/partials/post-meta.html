@@ -1,0 +1,15 @@
+{{ if not .Date.IsZero }}
+<div class="post-meta">
+    <a class="post-date-link" href="{{ .Permalink }}">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format (or .Params.dateFormat "January 2, 2006") }}
+        </time>
+    </a>
+    {{ with .Params.readingTimeLabel }}
+    <span class="reading-time">&nbsp;· {{ $.ReadingTime }} {{ . }}</span>
+    {{ end }}
+    {{ if gt (.Lastmod.Unix) (.Date.Unix) }}
+    <span class="page-updated">&nbsp;· updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" }}</time></span>
+    {{ end }}
+</div>
+{{ end }}

@@ -43,13 +43,7 @@
                     {{ end }}
                     <div class="post-card-content">
                         <h3>{{ $post.LinkTitle }}</h3>
-                        <div class="post-meta">
-                            <a href="{{ $post.RelPermalink }}">
-                                <time datetime="{{ $post.Date.Format "2006-01-02" }}">
-                                    {{ $post.Date.Format (or $post.Params.dateFormat "January 2, 2006") }}
-                                </time>
-                            </a>
-                        </div>
+                        {{ partial "post-meta.html" $post }}
                         {{ with $post.Summary }}
                         <div class="post-summary">
                             {{ . }}

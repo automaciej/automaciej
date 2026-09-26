@@ -717,6 +717,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
+.page-updated {
+    color: var(--text-tertiary);
+}
+
+.post-date-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-date-link:hover {
+    text-decoration: underline;
+}
+
 .posts-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
