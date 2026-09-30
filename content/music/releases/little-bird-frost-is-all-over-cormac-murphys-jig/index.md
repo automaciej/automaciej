@@ -26,6 +26,7 @@ credits:
   - mixing engineer
 links:
   streaming: https://distrokid.com/hyperfollow/johnmahon/little-bird-frost-is-all-over-cormac-murphys-jig
+  youtube: jGMsKzuJ2dE
 ---
 
 An acoustic recording with John Mahon and Cormac Murphy.
