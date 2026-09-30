@@ -971,16 +971,27 @@ main ol
     break-inside: avoid;
 }
 
+.music-card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .music-image {
-    margin-bottom: 1.5rem;
+    flex-shrink: 0;
 }
 
 .music-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: auto;
+    height: 6em;
+    object-fit: cover;
     border-radius: 8px;
     display: block;
+}
+
+.music-header {
+    min-width: 0;
 }
 
 .music-header h2 {
@@ -1027,6 +1038,117 @@ main ol
     margin: 1rem 0;
 }
 
+.breadcrumb {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* Release page: dedicated layout, description/links/tracks reuse music-content styles */
+.music-release {
+    margin-bottom: 2rem;
+}
+
+.music-release-grid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "cover"
+        "body";
+    gap: 1.5rem;
+}
+
+.music-release-header {
+    grid-area: header;
+}
+
+.music-quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.music-quick-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.music-quick-links .play-icon {
+    font-size: 0.7em;
+}
+
+.music-quick-links a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.music-release-header h1 {
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.music-release-cover {
+    grid-area: cover;
+}
+
+.music-release-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.music-release-body {
+    grid-area: body;
+}
+
+.music-release .music-playback {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
+
+.music-release .music-playback .music-links:first-child {
+    margin-top: 0;
+}
+
+.music-playback-heading {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .music-release .music-playback-heading {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .music-release-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header cover"
+            "body cover";
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .music-release-cover img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 90vh;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
 .music-credits {
     margin: 1rem 0;
     font-size: 0.95rem;
@@ -1054,6 +1176,10 @@ main ol
 .embed iframe {
     max-width: 100%;
     border-radius: 8px;
+}
+
+.youtube-embed {
+    max-width: 560px;
 }
 
 .instagram-link a,

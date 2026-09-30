@@ -13,6 +13,7 @@ links:
   spotify: https://open.spotify.com/album/7EE7Bn9eiaXzKSmkJODc3d
   bandcamp_album: '1581590364'
   bandcamp_url: https://maciejblizinski.bandcamp.com/album/hidden-beach
+  apple_music: https://music.apple.com/us/album/hidden-beach-single/6777081885
 tracks:
   - title: Hidden Beach
     credits:
