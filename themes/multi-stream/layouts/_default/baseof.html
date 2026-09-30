@@ -42,6 +42,29 @@
                 });
             }
         });
+
+        // Share button: native share sheet, falling back to copy-link
+        document.querySelectorAll('.share-button').forEach(function (btn) {
+            if (navigator.share) {
+                btn.textContent = '📤 Share';
+            }
+            btn.addEventListener('click', function () {
+                var shareData = { title: document.title, url: window.location.href };
+                if (navigator.share) {
+                    navigator.share(shareData).catch(function () {});
+                } else if (navigator.clipboard) {
+                    navigator.clipboard.writeText(shareData.url).then(function () {
+                        var original = btn.textContent;
+                        btn.textContent = 'Copied!';
+                        btn.classList.add('copied');
+                        setTimeout(function () {
+                            btn.textContent = original;
+                            btn.classList.remove('copied');
+                        }, 1500);
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>

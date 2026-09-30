@@ -3,16 +3,17 @@
 <article class="music-release" id="{{ $p.Title | urlize }}">
     <div class="music-release-grid">
         <div class="music-release-header">
-            {{ with $p.Params.links }}
             <div class="music-quick-links">
+                {{ with $p.Params.links }}
                 {{ if .spotify }}<a href="{{ .spotify }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Spotify"><span class="play-icon" aria-hidden="true">▶</span>Spotify</a>{{ end }}
                 {{ if .apple_music }}<a href="{{ .apple_music }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Apple Music"><span class="play-icon" aria-hidden="true">▶</span>Apple Music</a>{{ end }}
                 {{ if .youtube }}<a href="https://www.youtube.com/watch?v={{ .youtube }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on YouTube"><span class="play-icon" aria-hidden="true">▶</span>YouTube</a>{{ end }}
                 {{ if .bandcamp_url }}<a href="{{ .bandcamp_url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Bandcamp"><span class="play-icon" aria-hidden="true">▶</span>Bandcamp</a>{{ end }}
                 {{ if .instagram }}<a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Instagram"><span class="play-icon" aria-hidden="true">▶</span>Instagram</a>{{ end }}
+                {{ end }}
+                <button type="button" class="share-button">🔗 Copy Link</button>
             </div>
-            {{ end }}
-            <h1><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h1>
+            <h1>{{ $p.Title }}</h1>
             <div class="music-meta">
                 <span class="artist">{{ $p.Params.artist }}</span>
                 {{ if $p.Params.single }}

@@ -1086,6 +1086,24 @@ main ol
     text-decoration: underline;
 }
 
+.music-quick-links .share-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font: inherit;
+    font-size: inherit;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.music-quick-links .share-button:hover,
+.music-quick-links .share-button.copied {
+    color: var(--accent);
+}
+
 .music-release-header h1 {
     font-size: 1.75rem;
     margin-top: 0;
