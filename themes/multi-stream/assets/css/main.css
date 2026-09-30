@@ -405,15 +405,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Full width image on wide screens */
 @media (min-width: 1024px) {
     .music-preview-image {
-        margin-bottom: 1rem;
+        margin: -1.25rem -1.25rem 1rem;
     }
 
     .music-preview-image img {
         display: block;
         width: 100%;
-        max-width: 300px;
         height: auto;
-        border-radius: 8px;
+        border-radius: 12px 12px 0 0;
         cursor: pointer;
         transition: opacity 0.2s;
     }
