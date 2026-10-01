@@ -6,9 +6,9 @@
 {{ $cardHref = .app_site }}
 {{ $cardExternal = true }}
 {{ end }}
-<article class="app-card{{ if $cardHref }} app-card-linked{{ end }}">
+<article class="app-card{{ if $cardHref }} card-shadow{{ end }}">
     {{ with $cardHref }}
-    <a class="app-card-stretched-link" href="{{ . }}"{{ if $cardExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $.name }}"></a>
+    <a class="stretched-link" href="{{ . }}"{{ if $cardExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $.name }}"></a>
     {{ end }}
     <div class="app-card-header">
         {{ with .icon }}

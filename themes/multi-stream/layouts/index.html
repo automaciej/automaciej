@@ -33,28 +33,9 @@
                         {{- $releasesSection := .Site.GetPage "/music/releases" -}}
                         {{- $musicProductions := sort $releasesSection.RegularPages "Params.release_date" "desc" -}}
                         {{ range $index, $production := first 3 $musicProductions }}
-                        <article class="music-preview app-card-linked{{ if gt $index 2 }} music-preview-desktop-only{{ end }}">
-                            <a class="app-card-stretched-link" href="{{ $production.RelPermalink }}" aria-label="{{ $production.Title }}"></a>
-                            {{ with $production.Params.image }}
-                            {{ $img := resources.Get (printf "images/music/%s" .) }}
-                            {{ if $img }}
-                            {{ $resized := $img.Resize "300x webp" }}
-                            <div class="music-preview-image">
-                                <img src="{{ $resized.RelPermalink }}" alt="{{ $production.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
-                            </div>
-                            {{ end }}
-                            {{ end }}
-                            <div class="music-preview-content">
-                                <h3>{{ $production.Title }}</h3>
-                                <div class="music-preview-meta">
-                                    <span class="artist">{{ $production.Params.artist }}</span>
-                                    <span class="date">• {{ dateFormat "Jan 2006" $production.Params.release_date }}</span>
-                                </div>
-                                {{ with $production.Params.genres }}
-                                <div class="music-preview-genre">{{ partial "music-genre-links.html" $production }}</div>
-                                {{ end }}
-                            </div>
-                        </article>
+                        {{ $extra := "" }}
+                        {{ if gt $index 2 }}{{ $extra = "music-preview-desktop-only" }}{{ end }}
+                        {{ partial "music-preview-card.html" (dict "page" $production "extra_class" $extra) }}
                         {{ end }}
                         <div class="stream-footer">
                             <a href="{{ $musicPage.RelPermalink }}" class="view-all-link view-all-link-desktop">View all music productions →</a>
@@ -79,9 +60,9 @@
                         {{ $appHref = $app.app_site }}
                         {{ $appExternal = true }}
                         {{ end }}
-                        <article class="app-preview{{ if $appHref }} app-card-linked{{ end }}{{ if gt $index 1 }} app-preview-desktop-only{{ end }}">
+                        <article class="app-preview{{ if $appHref }} card-shadow{{ end }}{{ if gt $index 1 }} app-preview-desktop-only{{ end }}">
                             {{ with $appHref }}
-                            <a class="app-card-stretched-link" href="{{ . }}"{{ if $appExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $app.name }}"></a>
+                            <a class="stretched-link" href="{{ . }}"{{ if $appExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $app.name }}"></a>
                             {{ end }}
                             <div class="app-header">
                               {{ with $app.icon }}

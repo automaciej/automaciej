@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Maciej Bliziński's personal website and music portfolio at [blizin.ski](https://blizin.ski), built with Hugo. The site has three main content streams: a music portfolio (data-driven), iOS app pages, and a Polish-language blog (Jogger) dating back to 2003.
+Maciej Bliziński's personal website and music portfolio at [blizin.ski](https://blizin.ski), built with Hugo. The site has several content streams: a music portfolio (releases, projects, performances), app pages (7 apps across iOS/macOS/Android/Web/Linux/Windows — not iOS-only), a Polish-language blog (Jogger) dating back to 2001, and a separate English blog.
 
 ## Commands
 
@@ -43,28 +43,32 @@ python3 util/jogger_to_pdf.py               # Export Jogger blog to PDF (needs p
 
 ### Content vs. Data separation
 
-- **Markdown posts** (`/content/`) — Jogger blog, app support pages, static EPK pages
-- **TOML data files** (`/data/`) — Music productions, performances, app definitions
+- **Markdown/content pages** (`/content/`) — Jogger (Polish blog), English blog (`/blog/`), music releases (`/music/releases/<slug>/`), app support/landing pages, genres taxonomy, static EPK pages (bio, photos, press, performances)
+- **TOML data files** (`/data/`) — App definitions (`/data/apps/`), performances (`/data/performances/`), collaborator projects (`/data/projects/`), and a couple of not-yet-migrated music releases (`/data/music/`)
 
-Music and performances are rendered from `/data/` files via templates, not as individual content pages. Adding a new music release means creating a TOML file in `/data/music/`, not a Markdown post.
+Music releases are primarily **content pages**, not data files: each lives at `content/music/releases/<slug>/index.md` (YAML front matter: title, artist, genres, release_date, project, image, credits, links), rendered via a dedicated single-page layout. `/data/music/*.toml` still exists but only for the newest release or two that hasn't been migrated to a content page yet — when adding a new release, follow the existing `content/music/releases/*` examples, not the TOML format.
+
+Apps, performances, and projects remain purely data-driven (`/data/*.toml`), rendered via templates/partials. There are 7 apps (`task_compass`, `ego_destroyer`, `roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`) spanning iOS, macOS, Android, Web, Linux, and Windows — not all iOS. Some apps (e.g. `ego-destroyer`) have their own content section for update posts.
 
 ### Theme
 
-The active theme is `themes/multi-stream/` (custom). The older `themes/hugo-split-theme/` is a git submodule but no longer active. Template precedence follows standard Hugo lookup order: project-level `layouts/` overrides theme templates.
+The active theme is `themes/multi-stream/` (custom), set via `theme = "multi-stream"` in `config.toml`. This is a plain directory, not a git submodule (no `.gitmodules` in the repo). `themes/musician/` is leftover cruft — an empty directory tree (`static/js/`, no files) not referenced by any config; safe to ignore or delete. The old `hugo-split-theme` has already been fully removed from the repo. Template precedence follows standard Hugo lookup order: project-level `layouts/` overrides theme templates.
 
 ### Jogger blog
 
-- 183+ posts in `/content/jogger/`, written in Polish
-- Uses **TOML** front matter (`+++...+++`), unlike other content which uses YAML (`---...---`)
+- 173 posts in `/content/jogger/`, written in Polish, dating back to 2001
+- Front matter is a **mix of TOML (`+++...+++`) and YAML (`---...---`)** — roughly 94 TOML / 79 YAML as of this writing. This is a migration in progress, not a settled convention; any script or tool touching Jogger front matter must handle both formats.
 - Permalink pattern: `/jogger/:year/:contentbasename/`
 - Explicitly excluded from the homepage (language separation); appears only on `/jogger/`
 
 ### Homepage layout
 
-Two-column desktop / stacked mobile layout:
-- Left/top: Latest 3 music productions (from `/data/music/`)
-- Right/bottom: App updates + bio snippet
-- Jogger posts do not appear here
+Three columns on desktop (`grid-template-columns: 1fr 1fr 1fr` at ≥1024px), stacked on mobile/tablet (order: Music, Apps, Bio on tablet):
+- **Music** — latest 3 releases, same preview-card component used on `/music/`
+- **Apps** — featured apps + latest update posts
+- **Bio** — bio summary, plus a nested "Blog" sub-list (latest 2 posts from `/blog/`, the English blog — distinct from Jogger)
+
+Jogger posts do not appear on the homepage (language separation); the English blog does.
 
 ### Deployment
 
@@ -72,8 +76,8 @@ Production target: `atemoia.blizinski.pl:www/blizin.ski` via rsync (755 dirs, 64
 
 ### URL preservation
 
-192 URL aliases are maintained via `aliases:` in front matter. Do not remove these when editing pages.
+~93 URL aliases are maintained via `aliases:`/`aliases =` in front matter across content files. Do not remove these when editing pages.
 
-### CSS dependency
+### CSS
 
-Styles use [Pico CSS](https://picocss.com/docs) as a base framework.
+No CSS framework — `themes/multi-stream/assets/css/main.css` is 100% hand-written, custom CSS (despite what earlier versions of this file claimed about Pico CSS). Mobile-first with three canonical breakpoints: narrow/phones (`max-width: 767px`), tablet (`768px`–`1023px`), desktop (`min-width: 1024px`); a few grids (`.projects-grid`, `.genres-grid`) intentionally use their own `640px` breakpoint tied to their own column math. See `Docs/2025-11-12-multi-stream-theme.md`'s "CSS Architecture" section for the full reasoning (fluid `.container`, gap-based list spacing instead of per-card margins, why rules for one selector must stay co-located rather than scattered across the file).

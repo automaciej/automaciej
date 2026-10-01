@@ -73,7 +73,7 @@
       <h2>Releases</h2>
       <div class="music-productions">
         {{ range $music }}
-        {{ partial "music-card.html" (dict "page" . "hide_project_link" true) }}
+        {{ partial "music-preview-card.html" (dict "page" .) }}
         {{ end }}
       </div>
     </section>
