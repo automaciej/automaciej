@@ -2,6 +2,9 @@
     Reverse-chronological list of music releases, grouped by year,
     excluding future-dated ones (release .Date in the future),
     regardless of the site's buildFuture/buildExpired dev-server flags.
+    Date (publish/build gate) is separate from Params.release_date
+    (the actual release date, shown to readers) — a page can be
+    published ahead of its release date to promote an upcoming single.
     Rendered as a self-contained card with its own heading and
     ItemList JSON-LD, each entry linking to its real release page.
 
