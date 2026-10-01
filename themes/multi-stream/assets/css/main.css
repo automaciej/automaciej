@@ -1237,9 +1237,6 @@ main ol
 }
 
 .music-release .music-playback {
-    background: var(--bg-secondary);
-    padding: 1.5rem;
-    border-radius: 12px;
     margin-top: 1.5rem;
 }
 
