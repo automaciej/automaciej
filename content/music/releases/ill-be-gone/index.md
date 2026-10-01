@@ -5,7 +5,9 @@ genres:
 date: '2026-02-27'
 release_date: '2026-02-27T00:00:00'
 composition_origin: original
-artist: Gaia Marenghi
+artist:
+- Gaia Marenghi
+- Maciej Bliziński
 single: true
 project: gaia_marenghi
 image: gaia-ibg.png

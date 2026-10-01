@@ -6,7 +6,8 @@ date: '2026-01-31'
 release_date: '2026-01-31T00:00:00'
 composition_origin: cover
 original_artist: Traditional
-artist: John Mahon
+artist:
+- John Mahon
 single: true
 album: John Mahon & Friends
 project: john_mahon

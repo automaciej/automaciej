@@ -28,8 +28,10 @@
   {{- end -}}
 {{- end -}}
 {{- $description := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) -}}
+{{- $artistNames := "" -}}
+{{- with .Params.artist -}}{{- $artistNames = delimit . " x " -}}{{- end -}}
 <meta property="og:type" content="music.song">
-<meta property="og:title" content="{{ .Title }}{{ with .Params.artist }} by {{ . }}{{ end }}">
+<meta property="og:title" content="{{ .Title }}{{ with $artistNames }} by {{ . }}{{ end }}">
 {{- with $description }}
 <meta property="og:description" content="{{ . }}">
 {{- end }}
@@ -42,7 +44,7 @@
 {{- with .Site.Params.social.twitterHandle }}
 <meta name="twitter:site" content="@{{ . }}">
 {{- end }}
-<meta name="twitter:title" content="{{ .Title }}{{ with .Params.artist }} by {{ . }}{{ end }}">
+<meta name="twitter:title" content="{{ .Title }}{{ with $artistNames }} by {{ . }}{{ end }}">
 {{- with $description }}
 <meta name="twitter:description" content="{{ . }}">
 {{- end }}
@@ -54,10 +56,11 @@
   "@context": "https://schema.org",
   "@type": "{{ $type }}",
   "name": "{{ .Title | safeJS }}",
-  "byArtist": {
-    "@type": "Person",
-    "name": "{{ .Params.artist | safeJS }}"
-  },
+  "byArtist": [
+    {{- range $i, $a := .Params.artist }}{{ if $i }},{{ end }}
+    {"@type": "Person", "name": "{{ $a | safeJS }}"}
+    {{- end }}
+  ],
   "datePublished": "{{ .Params.release_date | dateFormat "2006-01-02" }}"
   {{- with $imageURL }},
   "image": "{{ . | safeJS }}"

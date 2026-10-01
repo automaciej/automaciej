@@ -5,7 +5,8 @@ genres:
 date: '2026-03-08'
 release_date: '2026-03-08T00:00:00'
 composition_origin: original
-artist: Zoe Hayter
+artist:
+- Zoe Hayter
 single: true
 project: zoe_hayter
 image: zoe-sfyab.jpg

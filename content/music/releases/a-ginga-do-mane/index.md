@@ -5,7 +5,8 @@ genres:
 date: '2023-08-01'
 release_date: '2023-08-01T00:00:00'
 composition_origin: standard
-artist: Regional Massapê
+artist:
+- Regional Massapê
 credits:
 - name: Maciej Bliziński
   roles:

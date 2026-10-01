@@ -5,7 +5,8 @@ genres:
 date: '2025-06-01'
 release_date: '2025-06-01T00:00:00'
 composition_origin: original
-artist: emily jane
+artist:
+- emily jane
 album: To Promenade
 project: emily_jane_cooke
 image: to-promenade.jpg

@@ -19,7 +19,7 @@
             </div>
             <h1>{{ $p.Title }}</h1>
             <div class="music-meta">
-                <span class="artist">{{ $p.Params.artist }}</span>
+                <span class="artist">{{ with $p.Params.artist }}{{ delimit . " x " }}{{ end }}</span>
                 {{ if $p.Params.single }}
                 <span class="release-type">• {{ with $p.Params.links.streaming }}<a href="{{ . }}" target="_blank" rel="noopener">Single</a>{{ else }}Single{{ end }}</span>
                 {{ else if $p.Params.album }}

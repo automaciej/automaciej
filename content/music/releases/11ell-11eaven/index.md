@@ -5,7 +5,9 @@ genres:
 date: '2026-10-01'
 release_date: '2026-11-11T00:00:00'
 composition_origin: original
-artist: Gaia Marenghi x Maciej Bliziński
+artist:
+- Gaia Marenghi
+- Maciej Bliziński
 single: true
 project: gaia_marenghi
 image: 11ell-11eaven.jpg

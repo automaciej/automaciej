@@ -14,7 +14,7 @@
         <div class="music-header">
             <h2><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
             <div class="music-meta">
-                <span class="artist">{{ $p.Params.artist }}</span>
+                <span class="artist">{{ with $p.Params.artist }}{{ delimit . " x " }}{{ end }}</span>
                 {{ if $p.Params.single }}
                 <span class="release-type">• Single</span>
                 {{ else if $p.Params.album }}

@@ -6,7 +6,9 @@ date: '2026-06-06'
 release_date: '2026-06-23T00:00:00'
 composition_origin: cover
 original_artist: Bishop Briggs
-artist: Gaia Marenghi
+artist:
+- Gaia Marenghi
+- Maciej Bliziński
 single: true
 project: gaia_marenghi
 image: gaia-river.jpg

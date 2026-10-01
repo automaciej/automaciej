@@ -5,7 +5,8 @@ genres:
 date: '2025-11-20'
 release_date: '2025-11-20T00:00:00'
 composition_origin: original
-artist: Luisa Annibali
+artist:
+- Luisa Annibali
 project: luisa_annibali
 image: libera.jpg
 credits:

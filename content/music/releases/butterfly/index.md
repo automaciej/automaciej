@@ -6,7 +6,8 @@ date: '2014-06-01'
 release_date: '2014-06-01T00:00:00'
 composition_origin: cover
 original_artist: Herbie Hancock
-artist: Maciej Bliziński
+artist:
+- Maciej Bliziński
 credits:
 - name: Maciej Bliziński
   roles:

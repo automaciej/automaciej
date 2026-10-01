@@ -4,7 +4,8 @@ genres:
 - Dance
 date: '2026-06-05'
 release_date: '2026-06-05T00:00:00'
-artist: Maciej Bliziński
+artist:
+- Maciej Bliziński
 single: true
 project: maciej
 image: maciej-blizinski-hidden-beach.jpg

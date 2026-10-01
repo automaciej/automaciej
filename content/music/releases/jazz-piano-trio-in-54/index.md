@@ -5,7 +5,8 @@ genres:
 date: '2022-10-01'
 release_date: '2022-10-01T00:00:00'
 composition_origin: standard
-artist: Trio
+artist:
+- Trio
 project: karkauskas_trio
 credits:
 - name: Maciej Bliziński

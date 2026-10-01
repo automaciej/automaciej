@@ -31,7 +31,7 @@
                 {{ end }}
                 {{ end }}
                 <li>
-                    <a class="release-chip{{ if not $thumb }} no-thumb{{ end }}" href="{{ $r.RelPermalink }}" title="{{ $r.Title }}{{ with $r.Params.artist }} by {{ . }}{{ end }}">
+                    <a class="release-chip{{ if not $thumb }} no-thumb{{ end }}" href="{{ $r.RelPermalink }}" title="{{ $r.Title }}{{ with $r.Params.artist }} by {{ delimit . " x " }}{{ end }}">
                         {{ with $thumb }}
                         <img class="release-chip-thumb" src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
                         {{ end }}

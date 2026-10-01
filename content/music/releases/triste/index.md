@@ -6,7 +6,8 @@ date: '2022-08-01'
 release_date: '2022-08-01T00:00:00'
 composition_origin: standard
 original_artist: Antonio Carlos Jobim
-artist: Mayara Mitsuka
+artist:
+- Mayara Mitsuka
 credits:
 - name: Maciej Bliziński
   roles:

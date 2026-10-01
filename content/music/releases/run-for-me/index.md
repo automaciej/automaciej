@@ -5,7 +5,8 @@ genres:
 date: '2025-05-15'
 release_date: '2025-05-15T00:00:00'
 composition_origin: original
-artist: emily jane
+artist:
+- emily jane
 single: true
 project: emily_jane_cooke
 image: runforme.jpg
