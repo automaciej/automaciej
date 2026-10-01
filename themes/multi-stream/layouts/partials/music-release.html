@@ -17,20 +17,27 @@
             <div class="music-meta">
                 <span class="artist">{{ $p.Params.artist }}</span>
                 {{ if $p.Params.single }}
-                <span class="release-type">• Single</span>
+                <span class="release-type">• {{ with $p.Params.links.streaming }}<a href="{{ . }}" target="_blank" rel="noopener">Single</a>{{ else }}Single{{ end }}</span>
                 {{ else if $p.Params.album }}
-                <span class="album">• {{ $p.Params.album }}</span>
+                <span class="album">• {{ with $p.Params.links.streaming }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $p.Params.album }}</a>{{ else }}{{ $p.Params.album }}{{ end }}</span>
                 {{ end }}
                 {{ with $p.Params.genres }}
                 <span class="music-genre"><span class="music-genre-sep"> • </span>{{ partial "music-genre-links.html" $p }}</span>
                 {{ end }}
                 <span class="date">• {{ dateFormat "January 2006" $p.Params.release_date }}</span>
-                {{ if eq $p.Params.composition_origin "cover" }}{{ with $p.Params.original_artist }}
+                {{ if eq $p.Params.composition_origin "cover" }}{{ with $p.Params.original_artist -}}
                 <span class="composition-origin"> • cover of <span class="original-artist">{{ . }}</span></span>
-                {{ end }}{{ end }}
+                {{- end }}{{ end }}
             </div>
         </div>
 
+        {{ if $p.Params.links.youtube }}
+        <div class="music-release-cover music-release-youtube">
+            <div class="embed youtube-embed">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ $p.Params.links.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        {{ else }}
         {{ with $p.Params.image }}
         {{ $img := resources.Get (printf "images/music/%s" .) }}
         {{ if $img }}
@@ -38,6 +45,7 @@
         <div class="music-release-cover">
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>
+        {{ end }}
         {{ end }}
         {{ end }}
 

@@ -1125,6 +1125,10 @@ main ol
     margin-bottom: 1rem;
 }
 
+.music-meta > span {
+    display: inline;
+}
+
 .music-meta .artist {
     font-weight: 500;
 }
@@ -1133,24 +1137,6 @@ main ol
 .music-genre a {
     color: var(--text-tertiary);
     text-decoration: none;
-}
-
-@media (max-width: 1023px) {
-    .music-meta {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 0.4rem;
-        row-gap: 0.15rem;
-    }
-
-    .music-genre {
-        order: 999;
-        flex-basis: 100%;
-    }
-
-    .music-genre-sep {
-        display: none;
-    }
 }
 
 @media (max-width: 767px) {

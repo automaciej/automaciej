@@ -13,27 +13,6 @@
             </iframe>
         </div>
         {{ end }}
-        {{ if .streaming }}
-        <div class="embed streaming-link">
-            <a href="{{ .streaming }}" target="_blank" rel="noopener">
-                <i class="lni lni-music"></i> Listen on all streaming platforms
-            </a>
-        </div>
-        {{ end }}
-        {{ if .spotify }}
-        <div class="embed streaming-link">
-            <a href="{{ .spotify }}" target="_blank" rel="noopener">
-                <i class="lni lni-spotify"></i> Listen to all tracks on Spotify
-            </a>
-        </div>
-        {{ end }}
-        {{ if .apple_music }}
-        <div class="embed streaming-link">
-            <a href="{{ .apple_music }}" target="_blank" rel="noopener">
-                <i class="lni lni-apple-music"></i> Listen on Apple Music
-            </a>
-        </div>
-        {{ end }}
     </div>
     {{ end }}
 
@@ -58,11 +37,6 @@
                     <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track={{ .bandcamp_track }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
                         <a href="{{ .bandcamp_url }}">Listen on Bandcamp</a>
                     </iframe>
-                </div>
-                {{ end }}
-                {{ if .youtube }}
-                <div class="embed youtube-embed">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ .youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 {{ end }}
                 {{ if .soundcloud }}
@@ -110,12 +84,6 @@
         </div>
         {{ end }}
 
-        {{ if .youtube }}
-        <div class="embed youtube-embed">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ .youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        {{ end }}
-
         {{ if .instagram }}
         <div class="embed instagram-link">
             <a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener">
@@ -130,29 +98,6 @@
         </div>
         {{ end }}
 
-        {{ if .streaming }}
-        <div class="embed streaming-link">
-            <a href="{{ .streaming }}" target="_blank" rel="noopener">
-                <i class="lni lni-music"></i> Listen on all streaming platforms
-            </a>
-        </div>
-        {{ end }}
-
-        {{ if .spotify }}
-        <div class="embed streaming-link">
-            <a href="{{ .spotify }}" target="_blank" rel="noopener">
-                <i class="lni lni-spotify"></i> Listen to all tracks on Spotify
-            </a>
-        </div>
-        {{ end }}
-
-        {{ if .apple_music }}
-        <div class="embed streaming-link">
-            <a href="{{ .apple_music }}" target="_blank" rel="noopener">
-                <i class="lni lni-apple-music"></i> Listen on Apple Music
-            </a>
-        </div>
-        {{ end }}
     </div>
     {{ end }}
 
