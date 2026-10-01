@@ -3,14 +3,21 @@
 <article class="music-preview card-shadow{{ with $extraClass }} {{ . }}{{ end }}" id="{{ $p.Title | urlize }}">
     <a class="stretched-link" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}"></a>
     {{ $thumb := "" }}
+    {{ $srcset := "" }}
     {{ with $p.Params.image }}
     {{ with resources.Get (printf "images/music/%s" .) }}
-    {{ $thumb = .Resize "300x webp" }}
+    {{ $img := . }}
+    {{ $thumb = $img.Resize "800x webp" }}
+    {{ $w240 := $img.Resize "240x webp" }}
+    {{ $w480 := $img.Resize "480x webp" }}
+    {{ $w800 := $thumb }}
+    {{ $w1200 := $img.Resize "1200x webp" }}
+    {{ $srcset = printf "%s 240w, %s 480w, %s 800w, %s 1200w" $w240.RelPermalink $w480.RelPermalink $w800.RelPermalink $w1200.RelPermalink }}
     {{ end }}
     {{ end }}
     <div class="music-preview-image">
         {{ if $thumb }}
-        <img src="{{ $thumb.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+        <img src="{{ $thumb.RelPermalink }}" srcset="{{ $srcset }}" sizes="(max-width: 767px) 120px, (max-width: 1023px) 80px, 33vw" alt="{{ $p.Title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
         {{ else }}
         {{ partial "waveform-placeholder.html" }}
         {{ end }}
