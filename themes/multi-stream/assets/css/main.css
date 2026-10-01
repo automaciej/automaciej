@@ -1176,7 +1176,8 @@ main ol
 .music-quick-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    column-gap: 1.25rem;
+    row-gap: 0.3rem;
     font-size: 0.85rem;
     margin-bottom: 0.5rem;
 }

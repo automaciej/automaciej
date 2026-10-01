@@ -7,6 +7,10 @@
                 {{ with $p.Params.links }}
                 {{ if .spotify }}<a href="{{ .spotify }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Spotify"><span class="play-icon" aria-hidden="true">▶</span>Spotify</a>{{ end }}
                 {{ if .apple_music }}<a href="{{ .apple_music }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Apple Music"><span class="play-icon" aria-hidden="true">▶</span>Apple Music</a>{{ end }}
+                {{ if .itunes }}<a href="{{ .itunes }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on iTunes"><span class="play-icon" aria-hidden="true">▶</span>iTunes</a>{{ end }}
+                {{ if .amazon_music }}<a href="{{ .amazon_music }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Amazon Music"><span class="play-icon" aria-hidden="true">▶</span>Amazon Music</a>{{ end }}
+                {{ if .tidal }}<a href="{{ .tidal }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Tidal"><span class="play-icon" aria-hidden="true">▶</span>Tidal</a>{{ end }}
+                {{ if .deezer }}<a href="{{ .deezer }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Deezer"><span class="play-icon" aria-hidden="true">▶</span>Deezer</a>{{ end }}
                 {{ if .youtube }}<a href="https://www.youtube.com/watch?v={{ .youtube }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on YouTube"><span class="play-icon" aria-hidden="true">▶</span>YouTube</a>{{ end }}
                 {{ if .bandcamp_url }}<a href="{{ .bandcamp_url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Bandcamp"><span class="play-icon" aria-hidden="true">▶</span>Bandcamp</a>{{ end }}
                 {{ if .instagram }}<a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Instagram"><span class="play-icon" aria-hidden="true">▶</span>Instagram</a>{{ end }}
