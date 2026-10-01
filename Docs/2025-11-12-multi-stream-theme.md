@@ -1,8 +1,8 @@
 # Multi-Stream Hugo Theme Design
 
-**Date**: 2025-11-12
-**Status**: Approved - Ready for Implementation
-**Branch**: `multi-stream-theme`
+**Date**: 2025-11-12 (CSS architecture section added 2026-10-01)
+**Status**: Implemented and live at blizin.ski. Theme and content model below match the shipped site; see "CSS Architecture" for the current styling approach.
+**Branch**: `multi-stream-theme` (merged to `main`)
 
 ## Objective
 
@@ -402,3 +402,63 @@ diff old-urls.txt new-urls.txt
 - Taxonomies (tags) can work across all content types for cross-cutting themes
 - The `excludeFromRSS` front matter already in use can be extended to `excludeFromStream` for fine-grained control
 - Existing shortcodes (bandcamp, soundcloud, youtube) will work in new theme with proper CSS
+
+## Current State (2026-10-01)
+
+The sections above describe the original plan; a few things have since moved on:
+
+- **Music is content-based, not pure data files.** Each release now lives at `content/music/releases/<slug>/index.md` (YAML front matter: title, artist, genres, release_date, project, image, credits, links), with a dedicated single-page layout. `/data/music/*.toml` still exists but only holds the newest couple of not-yet-migrated releases — new releases should be added as content pages, following the existing `releases/*` examples, not TOML. (`CLAUDE.md` still describes the old TOML-only approach and should be corrected separately.)
+- **Projects are now their own content section**: `content/music/projects/<name>/`, cross-linked from release pages and surfaced as a "chips" strip on `/music/`.
+- **Apps have grown past the original two.** `data/apps/` now has 7 entries (task_compass, ego_destroyer, roadlapse, sunrise_watch, icantstart, whatsapp_archive, phpbb3_static), each with `featured`/`position` controlling homepage and `/apps/` visibility; some (e.g. `ego-destroyer`) have their own content section for update posts.
+- **A `/genres/` section** was added (`content/genres/_index.md` + per-genre pages), independent of the three original streams.
+- Jogger has grown to 173 posts.
+
+## CSS Architecture
+
+The stylesheet (`themes/multi-stream/assets/css/main.css`) grew organically and had accumulated a real problem: the same selector (e.g. `.music-preview`) was styled for the same viewport width in two different places — once near its component, once again in a catch-all "Mobile Styles" dump hundreds of lines away. Source order then silently decided which one won, so a fix applied in one spot could be invisibly overridden by a leftover rule in the other. That's what caused the homepage artwork-height bug fixed on 2026-10-01: a mobile `.music-preview` layout defined near the component kept losing to an identical-but-stale rule inside the dump block.
+
+**The fix is a rule, not just a patch: a selector's responsive behavior is declared once, immediately after (or inside) its own base rule — never re-declared in a separate "mobile styles" section elsewhere in the file.** If a component needs narrow/tablet/desktop variations, all three live together as a unit:
+
+```css
+.thing { /* base, mobile-first */ }
+
+@media (min-width: 768px) and (max-width: 1023px) { .thing { /* tablet */ } }
+@media (min-width: 1024px) { .thing { /* desktop */ } }
+```
+
+### Canonical breakpoints
+
+Three breakpoints cover the stream/card system (home, music, apps, jogger):
+
+| Range | Query | Matches |
+|---|---|---|
+| Narrow (phones) | `(max-width: 767px)` | single-column stream layout |
+| Mid (tablets) | `(min-width: 768px) and (max-width: 1023px)` | still single-column, but roomier |
+| Wide (desktop) | `(min-width: 1024px)` | 2-3 column layouts |
+
+767/768/1023/1024 are used consistently so ranges never overlap or leave a gap — a width is never matched by two rules that disagree, and never matched by zero.
+
+**Exception, by design, not oversight**: `.projects-grid` and its `.project-card` go 2-up at `min-width: 640px` (not 768px) because that grid's own column math calls for it; its phone-only padding tweak uses 640 too, so the grid and its cards always agree on where "narrow" ends.
+
+### `.container` is fluid, not padded-then-cancelled
+
+`.container` has **no side padding below 768px, and 20px of it from 768px up**:
+
+```css
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .container { padding: 0 20px; }
+}
+```
+
+The reasoning: on a phone, width is the scarce resource, so everything — cards, headings, body text — gets to use all of it. On a desktop, width is abundant, so a gutter is worth adding instead of letting a 1200px line of text run wall to wall.
+
+This replaced an earlier approach (briefly shipped, since removed) where `.container` kept its 20px padding at every width and individual cards (`.music-card`, `.app-card`, `.music-preview`, `.app-preview`, jogger's `.blog-posts-list .post-card`, `.project-card`) cancelled it with `margin-left/right: -20px` to bleed edge-to-edge on phones. That worked, but it was backwards — narrowing the container just to immediately re-widen each card inside it — and it meant remembering the bleed trick separately on every card type. Making `.container` itself fluid gets the same full-width result for every phone-width element for free, with nothing to cancel. **Don't reach for the negative-margin bleed trick again** — if something isn't going full width on a phone, the fix is almost always that it has its own hardcoded padding/margin that should instead come from (or default to) zero, matching `.container`.
+
+### Lesson for future edits
+
+Before adding a new `@media` block for an existing selector, grep for that selector first (`grep -n '\.your-class' main.css`). If it already has rules at a similar breakpoint elsewhere, extend those instead of adding a new block — that's the scattering this section exists to prevent.

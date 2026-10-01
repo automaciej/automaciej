@@ -42,10 +42,21 @@ body {
     background-color: var(--bg-primary);
 }
 
+/* Narrow screens: width is scarce, so content (cards, text, everything)
+   uses the full viewport — no side padding. Wide screens: width is
+   abundant, so a gutter is added instead of leaving content stretched
+   edge-to-edge. Cards never need to bleed/cancel this — there's
+   nothing to cancel on narrow screens in the first place. */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
 }
 
 /* Header */
@@ -152,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile: drop photo and big title, keep tagline + social icons */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero-photo {
         display: none;
     }
@@ -366,6 +377,67 @@ h1, h2, h3, h4, h5, h6 {
 
 .view-all-link-desktop {
     display: inline-block;
+}
+
+/* Mobile: row height is driven by the text column, not the artwork.
+   `.music-preview-image` is `display:contents` — it stops existing as
+   a box, so its child <img> becomes the actual flex item and sizes
+   using the IMG's own intrinsic ratio (no hardcoded aspect-ratio).
+   height:100% + width:auto lets it stretch to match the text column.
+
+   Two caps, same 120px value, working together:
+   - img max-height: source covers are huge (2000px+); unbounded, the
+     image would dominate the flex algorithm's pre-stretch size
+     measurement and inflate the whole card to its native resolution.
+   - content max-height + text-overflow ellipsis on the title: without
+     this, a long title wraps to more lines -> taller row -> (same
+     aspect ratio) wider image -> less width left for text -> more
+     wrapping -> taller row again. Capping the text side breaks that
+     feedback loop outright instead of just bounding one side of it. */
+@media (max-width: 767px) {
+    .music-preview {
+        display: flex;
+        align-items: stretch;
+        gap: 1rem;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .music-preview-image {
+        display: contents;
+    }
+
+    .music-preview-image img {
+        flex-shrink: 0;
+        width: auto;
+        height: 100%;
+        max-height: 120px;
+        display: block;
+        margin: -1rem 0 -1rem -1rem;
+        border-radius: 0 12px 12px 0;
+    }
+
+    .music-preview-content {
+        min-width: 0;
+        max-height: 120px;
+        overflow: hidden;
+    }
+
+    .music-preview h3 {
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .music-preview-meta,
+    .music-preview-genre {
+        font-size: 0.75rem;
+    }
+
+    .music-preview-genre {
+        margin-bottom: 0.75rem;
+    }
 }
 
 /* Tablet horizontal layout */
@@ -874,6 +946,12 @@ main ol
     margin-top: 1rem;
 }
 
+@media (max-width: 767px) {
+    .app-card {
+        padding: 1.25rem;
+    }
+}
+
 .app-download-banner {
     background: #28A745;
     border-radius: 8px;
@@ -1031,6 +1109,12 @@ main ol
 
     .music-genre-sep {
         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .music-card {
+        padding: 1.25rem 1rem;
     }
 }
 
@@ -1278,10 +1362,10 @@ main ol
 
 /*
    ==============================================
-   Mobile Styles (up to 768px)
+   Mobile Styles (narrow screens, <768px)
    ==============================================
 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     /*
        ----------------------------------------------
        General Mobile Styles
@@ -1342,33 +1426,9 @@ main ol
         display: none;
     }
 
-    /* Music preview on homepage */
-    .music-preview {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-        align-items: flex-start;
-    }
-    .music-preview-image {
-        flex-shrink: 0;
-        margin-right: 0.75rem;
-    }
-    .music-preview-image img {
-        display: block;
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: opacity 0.2s;
-    }
-    .music-preview-image img:hover {
-        opacity: 0.85;
-    }
-    .music-preview-content {
-        flex: 1;
-        min-width: 0;
-    }
+    /* Music preview layout on narrow screens lives with its base
+       rule near line 375 (.music-preview), not here, to avoid two
+       conflicting definitions fighting over the same breakpoint. */
     .music-preview-desktop-only {
         display: none;
     }
@@ -2111,6 +2171,12 @@ main ol
 
 .report-perf-details span:last-child::after {
     content: "";
+}
+
+@media (max-width: 640px) {
+    .project-card {
+        padding: 1.25rem;
+    }
 }
 
 /* Print styles */
