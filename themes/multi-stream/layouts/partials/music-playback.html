@@ -1,5 +1,8 @@
 {{- $p := .page -}}
-{{- if or $p.Params.tracks $p.Params.links -}}
+{{- $links := $p.Params.links -}}
+{{- $hasPlayback := $p.Params.tracks -}}
+{{- if and (not $hasPlayback) $links }}{{ if or $links.bandcamp_album $links.bandcamp_track $links.instagram $links.soundcloud }}{{ $hasPlayback = true }}{{ end }}{{ end -}}
+{{- if $hasPlayback -}}
 <div class="music-playback">
     <h3 class="music-playback-heading">Listen to {{ $p.Title }}{{ if not $p.Params.tracks }} (full track){{ end }}</h3>
     {{- if $p.Params.tracks }}
