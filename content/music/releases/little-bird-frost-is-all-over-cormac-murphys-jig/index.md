@@ -27,6 +27,9 @@ credits:
 links:
   streaming: https://distrokid.com/hyperfollow/johnmahon/little-bird-frost-is-all-over-cormac-murphys-jig
   youtube: jGMsKzuJ2dE
+  spotify: https://open.spotify.com/album/5UUbiw07oHu22Quhp3r2hw
+  apple_music: https://music.apple.com/us/album/little-bird-frost-is-all-over-cormac-murphys-jig-single/1872746169?uo=4
+  deezer: https://www.deezer.com/album/906532552
 ---
 
 An acoustic recording with John Mahon and Cormac Murphy.

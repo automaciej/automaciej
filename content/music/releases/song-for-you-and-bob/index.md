@@ -35,6 +35,9 @@ links:
   streaming: http://distrokid.com/hyperfollow/zoehayter/song-for-you-and-bob-2/
   bandcamp_track: '2609221841'
   bandcamp_url: https://zoehayter.bandcamp.com/track/song-for-you-and-bob
+  spotify: https://open.spotify.com/album/4wMI0axnff3CH9aamKGoCy
+  apple_music: https://music.apple.com/us/album/song-for-you-and-bob-single/1883483126?uo=4
+  deezer: https://www.deezer.com/album/935273531
 ---
 
 An original composition by Zoe Hayter and Maciej Bliziński, featuring Rafał Szydłowski on electric violin and Riccardo Marenghi on drums. Released March 2026.

@@ -34,6 +34,9 @@ links:
   bandcamp_track: '582427917'
   bandcamp_url: https://zoehayter.bandcamp.com/track/hope-is-the-one
   streaming: https://distrokid.com/hyperfollow/zoehayter/hope-is-the-one
+  spotify: https://open.spotify.com/album/0kNJwFya2kDH5NH65T2XVo
+  apple_music: https://music.apple.com/us/album/hope-is-the-one-single/1860299357?uo=4
+  deezer: https://www.deezer.com/album/874567042
 ---
 
 Inspired by the Czech proverb "Naděje umírá poslední" (hope dies last), this single production functions as a heartfelt praise to hope. The song demonstrates a maturation into a rich, ensemble-driven aesthetic that utilizes the full range of Zoe Hayter's theatrical background.
