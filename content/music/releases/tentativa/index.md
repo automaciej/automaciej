@@ -6,7 +6,9 @@ date: '2025-12-12'
 release_date: '2025-12-12T00:00:00'
 composition_origin: original
 artist:
-- Luisa Annibali, Julio Batista & William Alexandre
+- Luisa Annibali
+- Julio Batista
+- William Alexandre
 project: luisa_annibali
 image: tentativa.jpg
 credits:
