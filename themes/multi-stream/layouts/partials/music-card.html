@@ -3,7 +3,7 @@
 <article class="music-card" id="{{ $p.Title | urlize }}">
     <div class="music-card-top">
         {{ with $p.Params.image }}
-        {{ $img := resources.Get (printf "images/music/%s" .) }}
+        {{ $img := $p.Resources.GetMatch . }}
         {{ if $img }}
         {{ $resized := $img.Resize "400x webp" }}
         <div class="music-image">

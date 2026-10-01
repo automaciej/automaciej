@@ -16,9 +16,10 @@
                     {{ if $examples }}
                     <ul class="genre-card-examples">
                         {{ range $examples }}
+                        {{ $ex := . }}
                         {{ $thumb := "" }}
                         {{ with .Params.image }}
-                        {{ with resources.Get (printf "images/music/%s" .) }}
+                        {{ with $ex.Resources.GetMatch . }}
                         {{ $thumb = .Resize "80x80 webp" }}
                         {{ end }}
                         {{ end }}

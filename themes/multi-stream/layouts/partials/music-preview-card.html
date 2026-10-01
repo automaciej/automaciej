@@ -5,7 +5,7 @@
     {{ $thumb := "" }}
     {{ $srcset := "" }}
     {{ with $p.Params.image }}
-    {{ with resources.Get (printf "images/music/%s" .) }}
+    {{ with $p.Resources.GetMatch . }}
     {{ $img := . }}
     {{ $thumb = $img.Resize "800x webp" }}
     {{ $w240 := $img.Resize "240x webp" }}

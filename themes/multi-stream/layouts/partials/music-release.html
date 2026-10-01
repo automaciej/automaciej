@@ -43,7 +43,7 @@
         </div>
         {{ else }}
         {{ with $p.Params.image }}
-        {{ $img := resources.Get (printf "images/music/%s" .) }}
+        {{ $img := $p.Resources.GetMatch . }}
         {{ if $img }}
         {{ $resized := $img.Resize "1600x webp" }}
         <div class="music-release-cover">

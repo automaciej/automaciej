@@ -22,7 +22,7 @@
                 {{ $r := . }}
                 {{ $thumb := "" }}
                 {{ with $r.Params.image }}
-                {{ $img := resources.Get (printf "images/music/%s" .) }}
+                {{ $img := $r.Resources.GetMatch . }}
                 {{ if $img }}
                 {{ $thumb = $img.Resize "40x40 webp" }}
                 {{ end }}
