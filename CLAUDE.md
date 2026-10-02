@@ -44,13 +44,15 @@ python3 util/jogger_to_pdf.py               # Export Jogger blog to PDF (needs p
 ### Content vs. Data separation
 
 - **Markdown/content pages** (`/content/`) — Jogger (Polish blog), English blog (`/blog/`), music releases (`/music/releases/<slug>/`), app support/landing pages, genres taxonomy, static EPK pages (bio, photos, press, performances)
-- **TOML data files** (`/data/`) — App definitions (`/data/apps/`), performances (`/data/performances/`), collaborator projects (`/data/projects/`), and a couple of not-yet-migrated music releases (`/data/music/`)
+- **TOML data files** (`/data/`) — App definitions (`/data/apps/`), performances (`/data/performances/`), and a couple of not-yet-migrated music releases (`/data/music/`)
 
 Music releases are primarily **content pages**, not data files: each lives at `content/music/releases/<slug>/index.md` (YAML front matter: title, artist, genres, release_date, project, image, credits, links), rendered via a dedicated single-page layout. `/data/music/*.toml` still exists but only for the newest release or two that hasn't been migrated to a content page yet — when adding a new release, follow the existing `content/music/releases/*` examples, not the TOML format.
 
 `links.youtube` in release front matter is a **bare video ID**, not a full URL (e.g. `youtube: YlDtj9GgfdY`, not `https://www.youtube.com/watch?v=...`) — true at both album level and per-track level. Other `links.*` keys (spotify, bandcamp_url, apple_music, etc.) are full URLs. When adding any link field, grep existing `content/music/releases/*/index.md` for that key first to match its format rather than assuming a URL.
 
-Apps, performances, and projects remain purely data-driven (`/data/*.toml`), rendered via templates/partials. There are 7 apps (`task_compass`, `ego_destroyer`, `roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`) spanning iOS, macOS, Android, Web, Linux, and Windows — not all iOS. Some apps (e.g. `ego-destroyer`) have their own content section for update posts.
+Apps and performances remain purely data-driven (`/data/*.toml`), rendered via templates/partials. There are 7 apps (`task_compass`, `ego_destroyer`, `roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`) spanning iOS, macOS, Android, Web, Linux, and Windows — not all iOS. Some apps (e.g. `ego-destroyer`) have their own content section for update posts.
+
+Collaborator projects are **content pages**, not data files: each lives at `content/music/projects/<slug>/_index.md`. Front matter (`type: "music-project"`) carries `params.key` (the slug, used to match performances' and releases' `project` field) plus optional `params.country`, `params.start_year`, `params.end_year`, `params.url`, and `params.with` (a list of collaborator names). The page `title` is the project's display name — there is no separate `name` field. `params.roles` is intentionally not tracked here; it's inferable from release credits. The page body (Markdown) is the project description, rendered via `.Content`/`.Plain` — not a `description` field. `/data/projects/*.toml` no longer exists; templates read project metadata from these content pages' `Params`/`Title`/`Plain` directly (e.g. via `$.Site.GetPage (printf "/music/projects/%s" $key)`), not `hugo.Data.projects`.
 
 ### Theme
 
