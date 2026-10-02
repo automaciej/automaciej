@@ -19,12 +19,7 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- if $ogImage -}}
-<meta property="og:image" content="{{ $ogImage }}">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ $ogImage }}">
-{{- end -}}
-{{ partial "og-tags-default.html" . }}
+{{ partial "og-tags-default.html" (dict "page" . "image" $ogImage) }}
 {{ end }}
 
 {{ define "main" }}

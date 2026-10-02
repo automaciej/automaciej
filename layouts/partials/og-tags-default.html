@@ -1,35 +1,44 @@
-{{ $genreDescription := partial "genre-description.html" . }}
-{{ $ogDescription := .Description | default $genreDescription | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
-{{ $ogTitle := partial "page-title.html" . }}
+{{ $page := . }}
+{{ $imageOverride := "" }}
+{{ if reflect.IsMap . }}
+    {{ $page = .page }}
+    {{ $imageOverride = .image }}
+{{ end }}
 
-{{ $ogImage := "" }}
-{{ with .Params.image }}
-    {{ $imgRes := $.Resources.GetMatch . }}
-    {{ if $imgRes }}
-        {{ $ogImage = $imgRes.Permalink }}
+{{ $genreDescription := partial "genre-description.html" $page }}
+{{ $ogDescription := $page.Description | default $genreDescription | default ($page.Summary | plainify | strings.TrimSpace | safeHTML) | default $page.Site.Params.description }}
+{{ $ogTitle := partial "page-title.html" $page }}
+
+{{ $ogImage := $imageOverride }}
+{{ if not $ogImage }}
+    {{ with $page.Params.image }}
+        {{ $imgRes := $page.Resources.GetMatch . }}
+        {{ if $imgRes }}
+            {{ $ogImage = $imgRes.Permalink }}
+        {{ else }}
+            {{ $ogImage = . | absURL }}
+        {{ end }}
     {{ else }}
-        {{ $ogImage = . | absURL }}
-    {{ end }}
-{{ else }}
-    {{ with .Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
-        {{ $ogImage = .Permalink }}
+        {{ with $page.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+            {{ $ogImage = .Permalink }}
+        {{ end }}
     {{ end }}
 {{ end }}
 {{ if not $ogImage }}
-    {{ with .Site.Params.SiteLogo }}
+    {{ with $page.Site.Params.SiteLogo }}
         {{ $ogImage = . | absURL }}
     {{ end }}
 {{ end }}
 
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if $page.IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDescription }}">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:url" content="{{ $page.Permalink }}">
+<meta property="og:site_name" content="{{ $page.Site.Title }}">
 {{ with $ogImage }}<meta property="og:image" content="{{ . }}">{{ end }}
 
 <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
-{{ with .Site.Params.social.twitterHandle }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
+{{ with $page.Site.Params.social.twitterHandle }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
 <meta name="twitter:title" content="{{ $ogTitle }}">
 <meta name="twitter:description" content="{{ $ogDescription }}">
 {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}
