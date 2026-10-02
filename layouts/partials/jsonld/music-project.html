@@ -11,7 +11,7 @@
   "@type": "MusicGroup",
   "name": {{ .Title | jsonify | safeJS }},
   "url": {{ .Permalink | jsonify | safeJS }}
-  {{- with $proj.description }},
+  {{- with .Plain }},
   "description": {{ . | jsonify | safeJS }}{{ end }}
   {{- with $proj.start_year }},
   "foundingDate": {{ printf "%d" . | jsonify | safeJS }}{{ end }}

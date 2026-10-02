@@ -4,3 +4,7 @@ type: "music-project"
 params:
   key: "gaia_marenghi"
 ---
+
+Gaia Marenghi is an artist who views music as a profound medium for conversation. Her work is a "talkative" dialogue between the melodic elegance of her Italian roots and the intricate, rhythmic textures of modern ensemble play.
+
+In her partnership with producer Maciej Bliziński, Marenghi has developed a sound that transcends genre boundaries, weaving together elements of sophisticated pop and acoustic jazz. Backed by the global rhythmic sensibilities of drummer Riccardo Marenghi and the lyrical violin work of Oleg Bezuglov, Gaia’s performances are characterized by an articulate intimacy and a commitment to collaborative excellence.

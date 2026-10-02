@@ -4,3 +4,7 @@ type: "music-project"
 params:
   key: "brasilidades"
 ---
+
+An evening of Brazilian music at Lulu's Jazz Club (International Bar, Dublin), celebrating the traditions of Choro, Samba, and the music of artists like Djavan. Part of the grassroots Brazilian music scene in Dublin city centre, the Brasilidades ensemble features Luisa Annibali, Julio Batista, and William Alexandre.
+
+The project explores the intersection of Italian melodic tradition and Brazilian rhythmic excellence, featuring original music in both Portuguese and Italian. Maciej contributed to the project's studio debut "Tentativa," recording, mixing, and mastering all ten tracks.

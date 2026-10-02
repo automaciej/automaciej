@@ -4,3 +4,7 @@ type: "music-project"
 params:
   key: "dublin_jazz_jam"
 ---
+
+A weekly jazz jam session running since 2013. Maciej was the main bass player in years 2014-2019, filling the bass seat every week. To date, Maciej is managing the community's mailing list of 300 participants.
+
+A significant amount of the creative synergy between the artists in Maciej's production stable can be traced back to the Dublin Jazz Jam Sessions. These sessions, hosted at venues like the International Bar and The Grand Social, provided the inclusive and accessible environment where much of his collaborative journey began. The "collaborative stability" and "organic evolution" fostered in these jams are reflected in the democratic and organic feel of his later studio recordings.
