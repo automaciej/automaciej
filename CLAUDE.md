@@ -90,6 +90,13 @@ When closing a `<div>` (or other container tag) in template files, annotate the 
 
 No CSS framework — `themes/multi-stream/assets/css/main.css` is 100% hand-written, custom CSS (despite what earlier versions of this file claimed about Pico CSS). Mobile-first with three canonical breakpoints: narrow/phones (`max-width: 767px`), tablet (`768px`–`1023px`), desktop (`min-width: 1024px`); a few grids (`.projects-grid`, `.genres-grid`) intentionally use their own `640px` breakpoint tied to their own column math. See `Docs/2025-11-12-multi-stream-theme.md`'s "CSS Architecture" section for the full reasoning (fluid `.container`, gap-based list spacing instead of per-card margins, why rules for one selector must stay co-located rather than scattered across the file).
 
+### Before committing
+
+Before running `git commit`, run `git diff` (staged + unstaged) and read it against the
+instruction/intent that prompted the change. Confirm every hunk is explained by that intent —
+no stray edits, no leftover debug code, no unrelated files swept in. Do this each time, even for
+small changes.
+
 ### Change-landing checklist (CSS / responsive images / cross-content links)
 
 Learned from recurring same-day fix-up commits — check these before considering a change done, not after:

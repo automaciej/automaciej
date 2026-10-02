@@ -1,14 +1,16 @@
 #!/bin/bash
 #
 # Render two git commits as Hugo sites and diff the generated output.
+# Either commit may be the literal "WORKING" to mean the current working
+# tree, uncommitted changes and untracked files included.
 #
-# Usage: util/diff_commits.sh <commit1> <commit2> <diff_output_file>
+# Usage: util/diff_commits.sh <commit1|WORKING> <commit2|WORKING> <diff_output_file>
 
 set -e
 set -u
 
 helpmsg() {
-	echo "Usage: $0 <commit1> <commit2> <diff_output_file>"
+	echo "Usage: $0 <commit1|WORKING> <commit2|WORKING> <diff_output_file>"
 }
 
 if [[ $# -ne 3 ]]; then
@@ -39,11 +41,22 @@ cleanup() {
 }
 trap cleanup EXIT
 
-echo "Checking out ${COMMIT1} into ${WT1}…"
-git worktree add --detach --quiet "${WT1}" "${COMMIT1}"
+checkout_into() {
+	local ref="$1"
+	local dest="$2"
 
-echo "Checking out ${COMMIT2} into ${WT2}…"
-git worktree add --detach --quiet "${WT2}" "${COMMIT2}"
+	if [[ "${ref}" == "WORKING" ]]; then
+		echo "Copying working tree (incl. uncommitted/untracked) into ${dest}…"
+		mkdir -p "${dest}"
+		rsync -a "${REPO_ROOT}/" "${dest}/"
+	else
+		echo "Checking out ${ref} into ${dest}…"
+		git worktree add --detach --quiet "${dest}" "${ref}"
+	fi
+}
+
+checkout_into "${COMMIT1}" "${WT1}"
+checkout_into "${COMMIT2}" "${WT2}"
 
 echo "Building ${COMMIT1}…"
 ( cd "${WT1}" && hugo --cleanDestinationDir -D -d "${BUILD1}" )
