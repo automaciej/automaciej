@@ -12,7 +12,7 @@ credits:
 - name: Maciej Bliziński
   roles:
   - recording engineer
-  - mix engineer
+  - mixing engineer
 - name: John Mahon
   roles:
   - acoustic guitar

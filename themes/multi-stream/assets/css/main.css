@@ -1922,6 +1922,111 @@ main ol
 }
 
 /* ============================================================
+   Music Credits (/music/credits/)
+   ============================================================ */
+
+.credits-toc {
+    margin-bottom: 1.5rem;
+}
+
+.credits-toc ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.credits-toc li {
+    font-size: 0.9rem;
+}
+
+.credits-divider,
+.credits-person {
+    border-style: solid;
+    border-width: 0;
+    border-color: var(--text-tertiary);
+}
+
+.credits-divider {
+    border-top-width: 1px;
+    margin: 0 0 1.5rem;
+}
+
+.credits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .credits-roles {
+        column-width: 16rem;
+        column-gap: 2.5rem;
+    }
+
+    .credits-role {
+        break-inside: avoid;
+    }
+}
+
+.credits-person {
+    padding-bottom: 0.5rem;
+    border-bottom-width: 1px;
+    scroll-margin-top: 1rem;
+    break-inside: avoid;
+}
+
+.credits-person:last-child {
+    border-bottom: none;
+}
+
+.credits-person h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.credits-role {
+    margin-left: 1rem;
+}
+
+.credits-role-single {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+}
+
+.credits-role summary {
+    cursor: default;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin: 0.15em 0;
+    list-style: none;
+}
+
+.credits-role summary::-webkit-details-marker {
+    display: none;
+}
+
+.credits-toggle-link {
+    color: var(--accent);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.credits-toggle-link:hover {
+    text-decoration: none;
+}
+
+.credits-release-list {
+    margin: 0.2rem 0 0.4rem;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* ============================================================
    Music Activity Report (/music/report/)
    ============================================================ */
 

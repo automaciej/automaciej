@@ -15,7 +15,7 @@ credits:
   - guitar
   - bass
   - recording engineer
-  - mix engineer
+  - mixing engineer
 - name: Mayara Mitsuka
   roles:
   - vocals

@@ -1,5 +1,6 @@
 {{- $p := .page -}}
 {{- $links := $p.Params.links -}}
+{{- $creditsPage := $p.Site.GetPage "/music/credits" -}}
 {{- $hasPlayback := $p.Params.tracks -}}
 {{- if and (not $hasPlayback) $links }}{{ if or $links.bandcamp_album $links.bandcamp_track $links.instagram $links.soundcloud }}{{ $hasPlayback = true }}{{ end }}{{ end -}}
 {{- if $hasPlayback -}}
@@ -28,7 +29,7 @@
                 <strong>Credits:</strong>
                 <ul>
                     {{ range . }}
-                    <li><strong>{{ .name }}</strong> - {{ delimit .roles ", " }}</li>
+                    <li><strong>{{ if $creditsPage }}<a href="{{ $creditsPage.RelPermalink }}#{{ .name | anchorize }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</strong> - {{ delimit .roles ", " }}</li>
                     {{ end }}
                 </ul>
             </div>

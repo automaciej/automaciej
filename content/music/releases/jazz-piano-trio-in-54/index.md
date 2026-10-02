@@ -13,7 +13,7 @@ credits:
   roles:
   - bass
   - recording engineer
-  - mix engineer
+  - mixing engineer
 - name: Gediminas Karkauskas
   roles:
   - piano

@@ -23,17 +23,14 @@ credits:
 - name: Lucyna Pałzewicz
   roles:
   - piano
-- name: Marzena Finucane
+- name: Marzena Finucane-Rusak
   roles:
   - vocals
 - name: Sylwester Ochmański
   roles:
   - flute
-- name: Marzena Finucane-Rusak
-  roles:
-  - vocals
 links:
   soundcloud: '148905172'
 ---
 
-A cover of Herbie Hancock's "Butterfly" recorded in 2014, featuring Marzena Finucane on vocals, Lucyna Pałzewicz on piano, Sylwester Ochmański on flute and Chris Hokamp on drums, with Maciej Bliziński on bass and recording/mixing.
+A cover of Herbie Hancock's "Butterfly" recorded in 2014, featuring Marzena Finucane-Rusak on vocals, Lucyna Pałzewicz on piano, Sylwester Ochmański on flute and Chris Hokamp on drums, with Maciej Bliziński on bass and recording/mixing.

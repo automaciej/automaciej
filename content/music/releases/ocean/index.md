@@ -24,7 +24,7 @@ credits:
   - composer
   - guitar
   - recording engineer
-  - mix engineer
+  - mixing engineer
 - name: Paweł Nowacki
   roles:
   - keyboards

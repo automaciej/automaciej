@@ -80,6 +80,10 @@ Production target: `atemoia.blizinski.pl:www/blizin.ski` via rsync (755 dirs, 64
 
 ~93 URL aliases are maintained via `aliases:`/`aliases =` in front matter across content files. Do not remove these when editing pages.
 
+### HTML templates
+
+When closing a `<div>` (or other container tag) in template files, annotate the closing tag with its class: `<div class="foo">` ... `</div><!-- foo -->`. Helps track matching tags in templates with deep nesting.
+
 ### CSS
 
 No CSS framework — `themes/multi-stream/assets/css/main.css` is 100% hand-written, custom CSS (despite what earlier versions of this file claimed about Pico CSS). Mobile-first with three canonical breakpoints: narrow/phones (`max-width: 767px`), tablet (`768px`–`1023px`), desktop (`min-width: 1024px`); a few grids (`.projects-grid`, `.genres-grid`) intentionally use their own `640px` breakpoint tied to their own column math. See `Docs/2025-11-12-multi-stream-theme.md`'s "CSS Architecture" section for the full reasoning (fluid `.container`, gap-based list spacing instead of per-card margins, why rules for one selector must stay co-located rather than scattered across the file).

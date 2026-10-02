@@ -1,0 +1,94 @@
+{{ define "main" }}
+<div class="music-page music-credits-page">
+    <div class="container">
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.description }}
+            <p class="section-description">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        {{- $releasesSection := .Site.GetPage "/music/releases" -}}
+        {{- $entries := slice -}}
+        {{- range $releasesSection.RegularPages -}}
+            {{- $page := . -}}
+            {{- $seen := slice -}}
+            {{- range .Params.credits -}}
+                {{- $name := .name -}}
+                {{- range .roles -}}
+                    {{- $role := . -}}
+                    {{- $key := printf "%s|%s" $name $role -}}
+                    {{- if not (in $seen $key) -}}
+                        {{- $seen = $seen | append $key -}}
+                        {{- $entries = $entries | append (dict "name" $name "role" $role "page" $page) -}}
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            {{- range .Params.tracks -}}
+                {{- range .credits -}}
+                    {{- $name := .name -}}
+                    {{- range .roles -}}
+                        {{- $role := . -}}
+                        {{- $key := printf "%s|%s" $name $role -}}
+                        {{- if not (in $seen $key) -}}
+                            {{- $seen = $seen | append $key -}}
+                            {{- $entries = $entries | append (dict "name" $name "role" $role "page" $page) -}}
+                        {{- end -}}
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+
+        {{- $names := slice -}}
+        {{- range $entries -}}
+            {{- if not (in $names .name) -}}{{- $names = $names | append .name -}}{{- end -}}
+        {{- end -}}
+        {{- $names = sort $names -}}
+
+        <nav class="credits-toc">
+            <ul>
+                {{- range $names }}
+                <li><a href="#{{ . | anchorize }}">{{ . }}</a></li>
+                {{- end }}
+            </ul>
+        </nav>
+
+        <hr class="credits-divider">
+
+        <div class="credits-list">
+            {{- range $names }}
+            {{- $personName := . -}}
+            {{- $personEntries := slice -}}
+            {{- range $entries -}}{{- if eq .name $personName -}}{{- $personEntries = $personEntries | append . -}}{{- end -}}{{- end -}}
+            {{- $roles := slice -}}
+            {{- range $personEntries -}}{{- if not (in $roles .role) -}}{{- $roles = $roles | append .role -}}{{- end -}}{{- end -}}
+            {{- $roles = sort $roles -}}
+            <section class="credits-person" id="{{ $personName | anchorize }}">
+                <h2>{{ $personName }}</h2>
+                <div class="credits-roles">
+                {{- range $roles }}
+                {{- $role := . -}}
+                {{- $roleReleases := slice -}}
+                {{- range $personEntries -}}{{- if eq .role $role -}}{{- $roleReleases = $roleReleases | append .page -}}{{- end -}}{{- end -}}
+                {{- $roleReleases = sort $roleReleases "Params.release_date" "desc" -}}
+                {{- if eq (len $roleReleases) 1 -}}
+                {{- $release := index $roleReleases 0 -}}
+                <p class="credits-role credits-role-single">{{ (substr $role 0 1 | upper) }}{{ substr $role 1 }} (<a href="{{ $release.RelPermalink }}">{{ $release.Title }}</a>)</p>
+                {{- else -}}
+                <details class="credits-role">
+                    <summary>{{ (substr $role 0 1 | upper) }}{{ substr $role 1 }} (<span class="credits-toggle-link">{{ len $roleReleases }} releases</span>)</summary>
+                    <ul class="credits-release-list">
+                        {{- range $roleReleases }}
+                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                        {{- end }}
+                    </ul>
+                </details>
+                {{- end -}}
+                {{- end }}
+                </div><!-- credits-roles -->
+            </section>
+            {{- end }}
+        </div><!-- credits-list -->
+    </div><!-- container -->
+</div><!-- music-page music-credits-page -->
+{{ end }}

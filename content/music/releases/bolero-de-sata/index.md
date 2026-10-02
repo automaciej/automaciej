@@ -13,7 +13,7 @@ credits:
 - name: Maciej Bliziński
   roles:
   - recording engineer
-  - mix engineer
+  - mixing engineer
 - name: Gaudiê Otero
   roles:
   - guitar

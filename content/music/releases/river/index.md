@@ -19,14 +19,14 @@ credits:
   - backing vocals
 - name: Maciej Bliziński
   roles:
-  - production
-  - arrangement
+  - producer
+  - arranger
   - guitar
   - bass
   - percussion
-  - recording
-  - mixing
-  - mastering
+  - recording engineer
+  - mixing engineer
+  - mastering engineer
 - name: Riccardo Marenghi
   roles:
   - drums
