@@ -30,6 +30,28 @@
         <i class="lni lni-soundcloud"></i></a></li>
     {{ end }}
 
+    {{ with .deezer }}
+    <li>
+      <a href="https://www.deezer.com/us/artist/{{ . | safeURL }}"
+         rel="me"
+         title="Deezer: {{ . | safeHTMLAttr }}"
+         class="text-icon">
+        Deezer
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .amazonMusic }}
+    <li>
+      <a href="{{ . | safeURL }}"
+         rel="me"
+         title="Amazon Music"
+         class="text-icon">
+        Amazon Music
+      </a>
+    </li>
+    {{ end }}
+
     {{ with .tiktokName }}
     <li>
       <a href="https://tiktok.com/@{{ . | safeURL }}"

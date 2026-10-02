@@ -884,6 +884,11 @@ main ol
     top: 0.25em;
 }
 
+.social a.text-icon {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
 /* Contact section on homepage */
 .contact {
     margin-top: 2em;

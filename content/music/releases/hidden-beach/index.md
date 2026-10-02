@@ -16,6 +16,9 @@ links:
   bandcamp_album: '1581590364'
   bandcamp_url: https://maciejblizinski.bandcamp.com/album/hidden-beach
   apple_music: https://music.apple.com/us/album/hidden-beach-single/6777081885
+  deezer: https://www.deezer.com/us/album/993971821
+  tidal: https://tidal.com/album/528992638
+  amazon_music: https://music.amazon.com/albums/B0H3BVPK2Z
 tracks:
   - title: Hidden Beach
     credits:
