@@ -1,3 +1,32 @@
+{{ define "head_extra" }}
+{{- $key := .Params.key -}}
+{{- $ogImage := "" -}}
+{{- if $key -}}
+  {{- $releasesSection := $.Site.GetPage "/music/releases" -}}
+  {{- $music := slice -}}
+  {{- range $releasesSection.RegularPages -}}
+    {{- if eq .Params.project $key -}}
+      {{- $music = $music | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $music = sort $music "Params.release_date" "desc" -}}
+  {{- with $music -}}
+  {{- $latest := index . 0 -}}
+    {{- with $latest.Params.image -}}
+      {{- with $latest.Resources.GetMatch . -}}
+        {{- $ogImage = (.Resize "1200x webp").Permalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $ogImage -}}
+<meta property="og:image" content="{{ $ogImage }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ $ogImage }}">
+{{- end -}}
+{{ partial "og-tags-default.html" . }}
+{{ end }}
+
 {{ define "main" }}
 {{- $key := .Params.key -}}
 <div class="music-project-page">
@@ -99,8 +128,28 @@
       {{- end -}}
 
       {{- $musicCount := 0 -}}
+      {{- $projectReleases := slice -}}
       {{- range $releasesSection.RegularPages -}}
-        {{- if eq .Params.project $key -}}{{- $musicCount = add $musicCount 1 -}}{{- end -}}
+        {{- if eq .Params.project $key -}}
+          {{- $musicCount = add $musicCount 1 -}}
+          {{- $projectReleases = $projectReleases | append . -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $projectReleases = sort $projectReleases "Params.release_date" "desc" -}}
+
+      {{- $thumb := "" -}}
+      {{- $srcset := "" -}}
+      {{- with $projectReleases -}}
+        {{- $latest := index . 0 -}}
+        {{- with $latest.Params.image -}}
+        {{- with $latest.Resources.GetMatch . -}}
+        {{- $img := . -}}
+        {{- $thumb = $img.Resize "320x webp" -}}
+        {{- $w160 := $img.Resize "160x webp" -}}
+        {{- $w320 := $thumb -}}
+        {{- $srcset = printf "%s 160w, %s 320w" $w160.RelPermalink $w320.RelPermalink -}}
+        {{- end -}}
+        {{- end -}}
       {{- end -}}
 
       {{- $entry := dict
@@ -112,6 +161,8 @@
         "with" $proj.with
         "perfCount" $perfCount
         "musicCount" $musicCount
+        "thumb" $thumb
+        "srcset" $srcset
       -}}
       {{- if $proj.end_year -}}
         {{- $pastEntries = $pastEntries | append $entry -}}
@@ -149,14 +200,18 @@
 {{- define "project-card" -}}
 <a href="{{ .permalink }}" class="project-card">
   <div class="project-card-header">
-    <h2>{{ .title }}</h2>
-    <span class="project-years">
-      {{- .start_year -}}
-      {{- with .end_year -}}
-        {{- if ne . $.start_year -}}–{{ . }}{{- end -}}
-      {{- else -}}–{{- end -}}
-    </span>
-  </div>
+    {{- with .thumb -}}
+    <img class="project-card-thumb" src="{{ .RelPermalink }}" srcset="{{ $.srcset }}" sizes="56px" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+    {{- end -}}
+    <div class="project-card-titles">
+      <h2>{{ .title }}</h2>
+      <span class="project-years">
+        {{- with .end_year -}}
+          {{- $.start_year -}}{{- if ne . $.start_year -}}–{{ . }}{{- end -}}
+        {{- else -}}since {{ .start_year }}{{- end -}}
+      </span>
+    </div><!-- project-card-titles -->
+  </div><!-- project-card-header -->
   {{- with .description -}}
   <p class="project-description">{{ truncate 160 . }}</p>
   {{- end -}}
