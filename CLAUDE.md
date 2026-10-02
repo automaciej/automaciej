@@ -48,6 +48,8 @@ python3 util/jogger_to_pdf.py               # Export Jogger blog to PDF (needs p
 
 Music releases are primarily **content pages**, not data files: each lives at `content/music/releases/<slug>/index.md` (YAML front matter: title, artist, genres, release_date, project, image, credits, links), rendered via a dedicated single-page layout. `/data/music/*.toml` still exists but only for the newest release or two that hasn't been migrated to a content page yet — when adding a new release, follow the existing `content/music/releases/*` examples, not the TOML format.
 
+`links.youtube` in release front matter is a **bare video ID**, not a full URL (e.g. `youtube: YlDtj9GgfdY`, not `https://www.youtube.com/watch?v=...`) — true at both album level and per-track level. Other `links.*` keys (spotify, bandcamp_url, apple_music, etc.) are full URLs. When adding any link field, grep existing `content/music/releases/*/index.md` for that key first to match its format rather than assuming a URL.
+
 Apps, performances, and projects remain purely data-driven (`/data/*.toml`), rendered via templates/partials. There are 7 apps (`task_compass`, `ego_destroyer`, `roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`) spanning iOS, macOS, Android, Web, Linux, and Windows — not all iOS. Some apps (e.g. `ego-destroyer`) have their own content section for update posts.
 
 ### Theme
