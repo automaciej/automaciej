@@ -89,3 +89,28 @@ When closing a `<div>` (or other container tag) in template files, annotate the 
 ### CSS
 
 No CSS framework — `themes/multi-stream/assets/css/main.css` is 100% hand-written, custom CSS (despite what earlier versions of this file claimed about Pico CSS). Mobile-first with three canonical breakpoints: narrow/phones (`max-width: 767px`), tablet (`768px`–`1023px`), desktop (`min-width: 1024px`); a few grids (`.projects-grid`, `.genres-grid`) intentionally use their own `640px` breakpoint tied to their own column math. See `Docs/2025-11-12-multi-stream-theme.md`'s "CSS Architecture" section for the full reasoning (fluid `.container`, gap-based list spacing instead of per-card margins, why rules for one selector must stay co-located rather than scattered across the file).
+
+### Change-landing checklist (CSS / responsive images / cross-content links)
+
+Learned from recurring same-day fix-up commits — check these before considering a change done, not after:
+
+- **New or moved CSS selector near a media query**: verify the base (non-media-query) rule and
+  any breakpoint overrides for the same selector are co-located and in the right source order
+  (base rules first, breakpoint overrides after) — a base rule declared *after* a breakpoint
+  block silently wins at every width. See `Docs/2025-11-12-multi-stream-theme.md`'s CSS
+  Architecture section.
+- **`sizes`/`srcset` attributes on `<img>`**: the `sizes` value is a claim about the image's
+  *actual rendered width* at each breakpoint. Before adding or changing it, check the current
+  CSS for that selector at each breakpoint it mentions — don't write `sizes` against an assumed
+  layout.
+- **New partial that links content item A to content item B by matching on a field** (e.g. a
+  person's name, a slug): handle the "no match found" case explicitly (fall back to plain text/
+  no link) rather than assuming the match always exists. Test against at least one item that is
+  known *not* to match.
+- **New page layout / redesigned partial**: before considering it done, check it against the
+  full range of real content it will render — items with missing optional fields (no image, no
+  playback links, no credits), not just the item used while developing it.
+- **Removing a feature/block from a template**: prefer deleting the `{{ }}` logic outright (or
+  gating it behind a boolean/feature check) over wrapping it in an HTML comment — Hugo's
+  Go-template actions still execute inside an HTML comment, so "commented out" markup is not
+  actually inert.
