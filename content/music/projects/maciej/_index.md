@@ -6,3 +6,5 @@ params:
   country: "Republic of Ireland"
   start_year: 2026
 ---
+
+Maciej first single came out in 2026.

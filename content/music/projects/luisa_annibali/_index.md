@@ -10,6 +10,4 @@ params:
     - "Luisa Annibali"
 ---
 
-Luisa Annibali is a defining presence in the Irish jazz landscape, a performer whose music is a vibrant collision of Roman melodic elegance and the infectious warmth of Brazilian rhythms. Her journey from the courtrooms of Italy to the jazz stages of Dublin has imbued her work with a sense of purpose and a fearless commitment to genre-blending.
-
-Whether leading her Quintet through sophisticated modern jazz arrangements or exploring the traditional roots of Samba and Choro with the Brasilidades project, Luisa’s voice remains distinctly her own—deeply personal, boldly contemporary, and irresistibly uplifting. Her 2025 albums, Libera and Tentativa, recorded and mixed in collaboration with Maciej Bliziński, showcase an artist who weaves together empowering lyricism and feminist themes with the timeless elegance of the jazz tradition.
+<!-- TODO -->

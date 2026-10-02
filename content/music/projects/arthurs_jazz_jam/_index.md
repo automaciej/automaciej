@@ -11,4 +11,5 @@ params:
     - "Eric Doyle"
 ---
 
-A jazz jam session under the auspices of DCU jazz department, held at Arthur's Blues & Jazz Club. I am occasionally part of the house band.
+A jazz jam session under the auspices of DCU jazz department, held at Arthur's
+Blues & Jazz Club. I was occasionally part of the house band.
