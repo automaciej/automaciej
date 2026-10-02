@@ -1,8 +1,14 @@
 ---
-title: "Gaia Marenghi"
+title: "Gaia Marenghi & Maciej Bliziński"
 type: "music-project"
 params:
   key: "gaia_marenghi"
+  country: "Republic of Ireland"
+  start_year: 2024
+  with:
+    - "Gaia Marenghi"
+    - "Riccardo Marenghi"
+    - "Oleg Bezuglov"
 ---
 
 Gaia Marenghi is an artist who views music as a profound medium for conversation. Her work is a "talkative" dialogue between the melodic elegance of her Italian roots and the intricate, rhythmic textures of modern ensemble play.

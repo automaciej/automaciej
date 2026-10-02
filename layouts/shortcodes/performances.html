@@ -23,13 +23,21 @@
 <div id="past-events"></div>
 {{- end }}
 
+{{- $projectsList := dict -}}
+{{- $projectsPage := $.Site.GetPage "/music/projects" -}}
+{{- if $projectsPage -}}
+{{- range $projectsPage.Sections -}}
+  {{- $projectsList = merge $projectsList (dict .Params.key (dict "name" .Title)) -}}
+{{- end -}}
+{{- end -}}
+
 <!-- Create the JSON structure -->
 
 <script>
 // What a wonderful feature of Hugo to automatically serialize into
 // JSON!
 var performancesList = {{ hugo.Data.performances | jsonify (dict "indent" "  ") | safeJS }};
-var projectsList = {{ hugo.Data.projects | jsonify (dict "indent" "  ") | safeJS }};
+var projectsList = {{ $projectsList | jsonify (dict "indent" "  ") | safeJS }};
 var simplePast = {{ if .Get "simple_past" }}true{{ else }}false{{ end }};
 
 // TODO: Move this to a separate file.

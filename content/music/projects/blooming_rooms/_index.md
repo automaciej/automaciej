@@ -3,6 +3,13 @@ title: "Blooming Rooms"
 type: "music-project"
 params:
   key: "blooming_rooms"
+  country: "Republic of Ireland"
+  start_year: 2025
+  end_year: 2026
+  url: "https://www.iamdorota.com"
+  with:
+    - "Dorota Konchevska"
+    - "Chris Hokamp"
 ---
 
 Dorota Konchevska is an experimental powerhouse whose work transcends the boundaries of traditional music to become a visceral multimedia experience. A Polish-born producer and composer based in Ireland, Dorota uses her background in music technology and electronic manipulation to create soundscapes that are as haunting as they are beautiful.

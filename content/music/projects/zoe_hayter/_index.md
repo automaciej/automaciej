@@ -3,6 +3,13 @@ title: "Zoe Hayter"
 type: "music-project"
 params:
   key: "zoe_hayter"
+  country: "Republic of Ireland"
+  start_year: 2025
+  url: "https://zoehayter.com"
+  with:
+    - "Zoe Hayter"
+    - "Rafał Szydłowski"
+    - "Riccardo Marenghi"
 ---
 
 Zoe Hayter is a modern troubadour whose music is forged in the fires of European street theatre and physical storytelling. Born into the legacy of the Footsbarn Travelling Theatre, Zoe has spent her life performing in venues ranging from village squares to the world’s largest festival stages. Her voice, described as rustic and angelic in the same breath, carries the weight of her English-Czech heritage and the technical precision of her Parisian theatre training.

@@ -1,5 +1,5 @@
 {{- $key := .Params.key -}}
-{{- $proj := index hugo.Data.projects $key -}}
+{{- $proj := .Params -}}
 {{- $baseURL := .Site.BaseURL -}}
 {{- $music := slice -}}
 {{- range hugo.Data.music -}}

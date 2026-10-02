@@ -35,10 +35,10 @@
         },
         "performer": [
           {{- if $p.project }}
-          {{- $proj := index hugo.Data.projects $p.project }}
+          {{- $proj := $.Site.GetPage (printf "/music/projects/%s" $p.project) }}
           {
             "@type": "MusicGroup",
-            "name": {{ ($proj.name | default $p.name) | jsonify | safeJS }},
+            "name": {{ ($proj.Title | default $p.name) | jsonify | safeJS }},
             "url": {{ printf "%smusic/projects/%s/" $baseURL $p.project | jsonify | safeJS }}
           },
           {{- end }}

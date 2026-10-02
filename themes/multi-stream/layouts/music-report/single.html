@@ -6,9 +6,10 @@
 {{- end -}}
 {{- $perfs = sort $perfs "start_time" "asc" -}}
 
+{{- $projectsPage := $.Site.GetPage "/music/projects" -}}
 {{- $projs := slice -}}
-{{- range $k, $v := hugo.Data.projects -}}
-  {{- $projs = $projs | append (merge $v (dict "key" $k)) -}}
+{{- range $projectsPage.Sections -}}
+  {{- $projs = $projs | append (merge .Params (dict "key" .Params.key "name" .Title "description" .Plain)) -}}
 {{- end -}}
 {{- $projs = sort $projs "start_year" "asc" -}}
 
@@ -32,10 +33,10 @@
 {{- $releasesSection := $.Site.GetPage "/music/releases" -}}
 {{- range $releasesSection.RegularPages -}}
   {{- if .Params.project -}}
-    {{- $proj := index $.Site.Data.projects .Params.project -}}
+    {{- $proj := $.Site.GetPage (printf "/music/projects/%s" .Params.project) -}}
     {{- if $proj -}}
       {{- $year := dateFormat "2006" .Params.release_date -}}
-      {{- $c    := $proj.country | default "Unknown" -}}
+      {{- $c    := $proj.Params.country | default "Unknown" -}}
       {{- $sc.Add (printf "yc|%s|%s|releases" $year $c) 1 -}}
       {{- $sc.Add (printf "c|%s|releases" $c) 1 -}}
       {{- $pair := printf "%s|%s" $year $c -}}
@@ -46,8 +47,8 @@
 {{- end -}}
 
 {{- /* Projects: count by country */ -}}
-{{- range $k, $v := hugo.Data.projects -}}
-  {{- $c := $v.country | default "Unknown" -}}
+{{- range $projs -}}
+  {{- $c := .country | default "Unknown" -}}
   {{- $sc.Add (printf "c|%s|projects" $c) 1 -}}
   {{- if not (in $summCountries $c) -}}{{- $summCountries = $summCountries | append $c -}}{{- end -}}
 {{- end -}}
@@ -154,12 +155,6 @@
             {{- end -}}</small></td>
           <td>{{ with .country }}{{ . }}{{ end }}</td>
           <td class="report-details-cell">
-            {{- with .roles -}}
-            <div class="report-detail-section">
-              <span class="report-detail-label">Roles</span>
-              <span class="report-detail-value">{{ delimit . ", " }}</span>
-            </div>
-            {{- end -}}
             {{- with .with -}}
             <div class="report-detail-section">
               <span class="report-detail-label">With</span>
@@ -205,9 +200,9 @@
     <ol class="report-perf-list">
       {{- range $perfs }}
       {{- $proj := false -}}
-      {{- if .project }}{{- $proj = index hugo.Data.projects .project -}}{{- end }}
+      {{- if .project }}{{- $proj = $.Site.GetPage (printf "/music/projects/%s" .project) -}}{{- end }}
       {{- $displayName := .name -}}
-      {{- if and (not .name) $proj }}{{- $displayName = $proj.name -}}{{- end }}
+      {{- if and (not .name) $proj }}{{- $displayName = $proj.Title -}}{{- end }}
       <li class="report-perf-item">
         <div class="report-perf-header">
           {{- with $displayName }}<span class="report-perf-name">{{ . }}</span>{{ end -}}
@@ -219,7 +214,7 @@
           {{- with .country }}<span>Country: {{ . }}</span>{{ end -}}
           {{- with .instrument }}<span>Role: {{ . }}</span>{{ end -}}
           {{- with .with }}<span>With: {{ delimit . ", " " and " }}</span>{{ end -}}
-          {{- if and $proj .name }}<span>Project: {{ $proj.name }}</span>{{ end -}}
+          {{- if and $proj .name }}<span>Project: {{ $proj.Title }}</span>{{ end -}}
           {{- with .description }}<span>Notes: {{ . }}</span>{{ end -}}
           {{- with .url }}<span>Link: <a href="{{ . }}">{{ . }}</a></span>{{ end -}}
         </div>

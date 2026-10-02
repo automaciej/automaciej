@@ -3,6 +3,11 @@ title: "Luisa Annibali"
 type: "music-project"
 params:
   key: "luisa_annibali"
+  country: "Republic of Ireland"
+  start_year: 2024
+  end_year: 2025
+  with:
+    - "Luisa Annibali"
 ---
 
 Luisa Annibali is a defining presence in the Irish jazz landscape, a performer whose music is a vibrant collision of Roman melodic elegance and the infectious warmth of Brazilian rhythms. Her journey from the courtrooms of Italy to the jazz stages of Dublin has imbued her work with a sense of purpose and a fearless commitment to genre-blending.

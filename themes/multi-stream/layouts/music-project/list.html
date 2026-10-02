@@ -3,7 +3,7 @@
 <div class="music-project-page">
   <div class="container">
     {{- if $key -}}
-    {{- $proj := index hugo.Data.projects $key -}}
+    {{- $proj := .Params -}}
 
     {{- $performances := slice -}}
     {{- range hugo.Data.performances -}}
@@ -91,7 +91,7 @@
     {{- $pastEntries := slice -}}
     {{- range .Sections -}}
       {{- $key := .Params.key -}}
-      {{- $proj := index hugo.Data.projects $key -}}
+      {{- $proj := .Params -}}
 
       {{- $perfCount := 0 -}}
       {{- range hugo.Data.performances -}}

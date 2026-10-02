@@ -1,8 +1,0 @@
-name = "DCU Jazz Department"
-country = "Republic of Ireland"
-roles = [
-	"double bass",
-]
-start_year = 2022
-end_year = 2024
-with = ["Cormac O'Brien"]

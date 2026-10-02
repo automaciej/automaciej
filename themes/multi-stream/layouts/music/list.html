@@ -12,9 +12,7 @@
         {{- if and $projectsPage $projectsPage.Sections -}}
         {{- $names := slice -}}
         {{- range $projectsPage.Sections -}}
-            {{- $key := .Params.key -}}
-            {{- $proj := index hugo.Data.projects $key -}}
-            {{- if not $proj.end_year -}}
+            {{- if not .Params.end_year -}}
                 {{- $names = $names | append (printf `<a href="%s">%s</a>` .RelPermalink .Title) -}}
             {{- end -}}
         {{- end -}}
