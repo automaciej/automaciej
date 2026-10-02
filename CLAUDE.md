@@ -114,3 +114,12 @@ Learned from recurring same-day fix-up commits — check these before considerin
   gating it behind a boolean/feature check) over wrapping it in an HTML comment — Hugo's
   Go-template actions still execute inside an HTML comment, so "commented out" markup is not
   actually inert.
+- **Adding script/markup to a shared template** (`baseof.html` or any partial included on every
+  page): check which pages the feature actually applies to. If it's one page type, scope the
+  addition to that page's own template (e.g. a `define`d block baseof only renders a default
+  for), not the shared wrapper every page pays for.
+- **Commit messages**: before writing "Remove X," confirm the diff actually removes X's
+  execution path, not just its visible markup — "commented out" is not "removed."
+- **Naming a new taxonomy/field/key**: decide the final name before wiring it into front matter
+  or config across multiple files. A same-day rename after the fact means touching every
+  reference twice for no functional reason.
