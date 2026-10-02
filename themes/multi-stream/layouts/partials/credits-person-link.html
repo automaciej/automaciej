@@ -1,7 +1,23 @@
 {{- $page := .page -}}
 {{- $name := .name -}}
 {{- $creditsPage := $page.Site.GetPage "/music/credits" -}}
+{{- $hasCredit := false -}}
 {{- if $creditsPage -}}
+  {{- $releasesSection := $page.Site.GetPage "/music/releases" -}}
+  {{- range $releasesSection.RegularPages -}}
+    {{- if not $hasCredit -}}
+      {{- range .Params.credits -}}
+        {{- if eq .name $name -}}{{- $hasCredit = true -}}{{- end -}}
+      {{- end -}}
+      {{- range .Params.tracks -}}
+        {{- range .credits -}}
+          {{- if eq .name $name -}}{{- $hasCredit = true -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $hasCredit -}}
 <a href="{{ $creditsPage.RelPermalink }}#{{ $name | anchorize }}">{{ $name }}</a>
 {{- else -}}
 {{ $name }}
