@@ -8,13 +8,12 @@
 
 {{- if not $p.Params.tracks }}
 {{ with $p.Params.credits }}
-{{- $creditsPage := $p.Site.GetPage "/music/credits" -}}
 <div class="music-credits">
     <strong>Credits:</strong>
     <ul>
         {{ range . }}
         <li>
-            <strong>{{ if $creditsPage }}<a href="{{ $creditsPage.RelPermalink }}#{{ .name | anchorize }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</strong> - {{ delimit .roles ", " }}
+            <strong>{{ partial "credits-person-link.html" (dict "page" $p "name" .name) }}</strong> - {{ delimit .roles ", " }}
         </li>
         {{ end }}
     </ul>

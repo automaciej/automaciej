@@ -1,0 +1,8 @@
+{{- $page := .page -}}
+{{- $name := .name -}}
+{{- $creditsPage := $page.Site.GetPage "/music/credits" -}}
+{{- if $creditsPage -}}
+<a href="{{ $creditsPage.RelPermalink }}#{{ $name | anchorize }}">{{ $name }}</a>
+{{- else -}}
+{{ $name }}
+{{- end -}}

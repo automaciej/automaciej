@@ -39,8 +39,12 @@
         <dd>{{ $proj.start_year }}{{ with $proj.end_year }}{{ if ne . $proj.start_year }}–{{ . }}{{ end }}{{ end }}</dd>
         {{ end }}
         {{ with $proj.with }}
+        {{- $withLinks := slice -}}
+        {{- range . -}}
+          {{- $withLinks = $withLinks | append (partial "credits-person-link.html" (dict "page" $ "name" .)) -}}
+        {{- end -}}
         <dt>With</dt>
-        <dd>{{ delimit . ", " " and " }}</dd>
+        <dd>{{ delimit $withLinks ", " " and " | safeHTML }}</dd>
         {{ end }}
         {{ with $proj.url }}
         <dt>Web</dt>
