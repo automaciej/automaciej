@@ -1,0 +1,30 @@
+{{- $personName := .name -}}
+{{- $personEntries := .personEntries -}}
+{{- $prominent := .prominent -}}
+{{- $roles := slice -}}
+{{- range $personEntries -}}{{- if not (in $roles .role) -}}{{- $roles = $roles | append .role -}}{{- end -}}{{- end -}}
+{{- $roles = sort $roles -}}
+<section class="credits-person{{ if $prominent }} credits-person-primary{{ end }}" id="{{ $personName | anchorize }}">
+    <h2>{{ $personName }} <span class="credits-count">{{ len $personEntries }} credit{{ if ne (len $personEntries) 1 }}s{{ end }}</span></h2>
+    <div class="credits-roles">
+    {{- range $roles }}
+    {{- $role := . -}}
+    {{- $roleReleases := slice -}}
+    {{- range $personEntries -}}{{- if eq .role $role -}}{{- $roleReleases = $roleReleases | append .page -}}{{- end -}}{{- end -}}
+    {{- $roleReleases = sort $roleReleases "Params.release_date" "desc" -}}
+    {{- if eq (len $roleReleases) 1 -}}
+    {{- $release := index $roleReleases 0 -}}
+    <p class="credits-role credits-role-single">{{ (substr $role 0 1 | upper) }}{{ substr $role 1 }} (<a href="{{ $release.RelPermalink }}">{{ $release.Title }}</a>)</p>
+    {{- else -}}
+    <details class="credits-role">
+        <summary>{{ (substr $role 0 1 | upper) }}{{ substr $role 1 }} (<span class="credits-toggle-link">{{ len $roleReleases }} releases</span>)</summary>
+        <ul class="credits-release-list">
+            {{- range $roleReleases }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{- end }}
+        </ul>
+    </details>
+    {{- end -}}
+    {{- end }}
+    </div><!-- credits-roles -->
+</section>

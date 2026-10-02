@@ -45,6 +45,21 @@
         {{- end -}}
         {{- $names = sort $names -}}
 
+        {{- /* One credit = one (person, role) pairing, already deduplicated per release above */ -}}
+        {{- $people := slice -}}
+        {{- range $names -}}
+            {{- $personName := . -}}
+            {{- $personEntries := slice -}}
+            {{- range $entries -}}{{- if eq .name $personName -}}{{- $personEntries = $personEntries | append . -}}{{- end -}}{{- end -}}
+            {{- $people = $people | append (dict "name" $personName "entries" $personEntries "count" (len $personEntries)) -}}
+        {{- end -}}
+
+        {{- $peopleByCount := sort $people "count" "desc" -}}
+        {{- $primaryCount := math.Ceil (mul (len $people) 0.2) | int -}}
+        {{- if and (gt (len $people) 0) (lt $primaryCount 1) -}}{{- $primaryCount = 1 -}}{{- end -}}
+        {{- $primaryPeople := first $primaryCount $peopleByCount -}}
+        {{- $minorPeople := sort (after $primaryCount $peopleByCount) "name" "asc" -}}
+
         <nav class="credits-toc">
             <ul>
                 {{- range $names }}
@@ -55,40 +70,19 @@
 
         <hr class="credits-divider">
 
-        <div class="credits-list">
-            {{- range $names }}
-            {{- $personName := . -}}
-            {{- $personEntries := slice -}}
-            {{- range $entries -}}{{- if eq .name $personName -}}{{- $personEntries = $personEntries | append . -}}{{- end -}}{{- end -}}
-            {{- $roles := slice -}}
-            {{- range $personEntries -}}{{- if not (in $roles .role) -}}{{- $roles = $roles | append .role -}}{{- end -}}{{- end -}}
-            {{- $roles = sort $roles -}}
-            <section class="credits-person" id="{{ $personName | anchorize }}">
-                <h2>{{ $personName }}</h2>
-                <div class="credits-roles">
-                {{- range $roles }}
-                {{- $role := . -}}
-                {{- $roleReleases := slice -}}
-                {{- range $personEntries -}}{{- if eq .role $role -}}{{- $roleReleases = $roleReleases | append .page -}}{{- end -}}{{- end -}}
-                {{- $roleReleases = sort $roleReleases "Params.release_date" "desc" -}}
-                {{- if eq (len $roleReleases) 1 -}}
-                {{- $release := index $roleReleases 0 -}}
-                <p class="credits-role credits-role-single">{{ (substr $role 0 1 | upper) }}{{ substr $role 1 }} (<a href="{{ $release.RelPermalink }}">{{ $release.Title }}</a>)</p>
-                {{- else -}}
-                <details class="credits-role">
-                    <summary>{{ (substr $role 0 1 | upper) }}{{ substr $role 1 }} (<span class="credits-toggle-link">{{ len $roleReleases }} releases</span>)</summary>
-                    <ul class="credits-release-list">
-                        {{- range $roleReleases }}
-                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                        {{- end }}
-                    </ul>
-                </details>
-                {{- end -}}
-                {{- end }}
-                </div><!-- credits-roles -->
-            </section>
+        <div class="credits-list credits-list-primary">
+            {{- range $primaryPeople }}
+            {{ partial "credits-person.html" (dict "name" .name "personEntries" .entries "prominent" true) }}
             {{- end }}
-        </div><!-- credits-list -->
+        </div><!-- credits-list credits-list-primary -->
+
+        <hr class="credits-divider">
+
+        <div class="credits-list credits-list-minor">
+            {{- range $minorPeople }}
+            {{ partial "credits-person.html" (dict "name" .name "personEntries" .entries "prominent" false) }}
+            {{- end }}
+        </div><!-- credits-list credits-list-minor -->
     </div><!-- container -->
 </div><!-- music-page music-credits-page -->
 {{ end }}
