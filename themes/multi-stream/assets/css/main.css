@@ -163,35 +163,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 60px 0 40px 0;
 }
 
-/* Mobile: drop photo and big title, keep tagline + social icons */
-@media (max-width: 767px) {
-    .hero-photo {
-        display: none;
-    }
-
-    .hero h1 {
-        display: none;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        gap: 0;
-        width: 100%;
-    }
-
-    .hero-text {
-        text-align: center;
-    }
-
-    .hero-intro {
-        text-align: center;
-    }
-
-    .hero .tagline {
-        color: var(--text-secondary);
-    }
-}
-
 .hero-content {
     display: flex;
     flex-wrap: wrap;
@@ -240,6 +211,35 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
+}
+
+/* Mobile: drop photo and big title, keep tagline + social icons */
+@media (max-width: 767px) {
+    .hero-photo {
+        display: none;
+    }
+
+    .hero h1 {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-intro {
+        text-align: center;
+    }
+
+    .hero .tagline {
+        color: var(--text-secondary);
+    }
 }
 
 /* Stream columns */
@@ -1485,11 +1485,9 @@ main ol
         aspect-ratio: 16 / 9;
     }
 
-    .music-releases-year {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
+    /* .music-releases-year mobile override lives with its base rule
+       near line 1587, not here, to avoid a stale cascade (base rule
+       declared after this shared breakpoint block would silently win). */
 
     /* Figure-shortcode images cap height instead of stretching to width on mobile */
     .post-content figure img,
@@ -1594,6 +1592,14 @@ main ol
 
 .music-releases-year:last-child {
     border-bottom: none;
+}
+
+@media (max-width: 767px) {
+    .music-releases-year {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }
 
 .music-releases-year-label {
