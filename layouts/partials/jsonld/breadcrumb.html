@@ -1,12 +1,5 @@
 {{- if not .IsHome -}}
-{{- $ancestors := .Ancestors -}}
-{{- $n := len $ancestors -}}
-{{- $pages := slice -}}
-{{- range $i, $_ := $ancestors -}}
-  {{- $page := index $ancestors (sub (sub $n 1) $i) -}}
-  {{- $pages = $pages | append $page -}}
-{{- end -}}
-{{- $pages = $pages | append . -}}
+{{- $pages := partial "breadcrumb-pages.html" . -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

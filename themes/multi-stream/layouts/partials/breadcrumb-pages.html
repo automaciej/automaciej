@@ -1,0 +1,12 @@
+{{/*
+    Trail of pages from the home page down to the current page, as a slice
+    (home first, current page last; just the home page on the home page). Used by the header breadcrumb and the
+    BreadcrumbList JSON-LD. Ancestors are sections only, so a regular page's
+    trail is Home > Section(s) > Page.
+*/}}
+{{- $pages := slice -}}
+{{- range .Ancestors.Reverse -}}
+  {{- $pages = $pages | append . -}}
+{{- end -}}
+{{- $pages = $pages | append . -}}
+{{- return $pages -}}

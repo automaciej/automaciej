@@ -1,5 +1,6 @@
 ---
 title: "Music Production"
+linkTitle: "Music"
 tagline: "Artist body of work"
 description: ""
 date: "2022-09-05T15:02:43+01:00"

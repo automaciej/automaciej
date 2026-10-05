@@ -82,6 +82,41 @@ body {
     text-decoration: none;
 }
 
+/* Breadcrumb trail in the header: Site > Section > Page */
+.site-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+.site-breadcrumb li + li::before {
+    content: "›";
+    margin-right: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.site-crumb {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.site-crumb:hover {
+    color: var(--accent);
+}
+
+.site-crumb-current {
+    color: var(--text-primary);
+    max-width: 24ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 /* Hamburger toggle button */
 .nav-toggle {
     display: none;
