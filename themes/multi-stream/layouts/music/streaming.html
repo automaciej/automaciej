@@ -23,13 +23,6 @@
 {{- end -}}
 <div class="music-page">
     <div class="container">
-        <nav class="breadcrumb">
-            <a href="/music/">← Music</a>
-        </nav>
-        <header class="section-header">
-            <h1>{{ .Title }}</h1>
-            {{ with .Params.description }}<p class="section-description">{{ . }}</p>{{ end }}
-        </header>
         <ul class="streaming-list">
             {{- range $items -}}
             <li class="streaming-item">

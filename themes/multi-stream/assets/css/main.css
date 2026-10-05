@@ -1169,11 +1169,6 @@ main ol
     margin: 1rem 0;
 }
 
-.breadcrumb {
-    display: block;
-    margin-bottom: 1.5rem;
-}
-
 /* Release page: dedicated layout, description/links/tracks reuse music-content styles */
 .music-release {
     margin-bottom: 2rem;
