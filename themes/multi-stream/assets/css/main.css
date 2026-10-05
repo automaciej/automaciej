@@ -2314,3 +2314,58 @@ main ol
     a { color: #000; text-decoration: none; }
     a[href]::after { content: " (" attr(href) ")"; font-size: 8pt; }
 }
+
+/* Per-streaming-service song lists (/music/spotify, /music/apple) */
+.streaming-list {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.streaming-item {
+    margin-bottom: 2rem;
+}
+
+.streaming-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 660px;
+    margin-bottom: 0.5rem;
+}
+
+.streaming-item-title {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.streaming-item-title small {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: var(--text-secondary);
+}
+
+.streaming-item iframe {
+    border: 0;
+    border-radius: 12px;
+    max-width: 660px;
+}
+
+.streaming-item-link {
+    font-size: 0.85rem;
+}
+
+.streaming-item-badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.streaming-item-badge img {
+    display: block;
+    object-fit: contain;
+}
+
+.streaming-embed {
+    margin: 1rem 0;
+}

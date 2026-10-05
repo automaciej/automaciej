@@ -39,8 +39,9 @@ links:
   streaming: https://snd.click/6nct
   bandcamp_track: '258544418'
   bandcamp_url: https://gaiamarenghi.bandcamp.com/track/i-ll-be-gone
-  spotify: https://open.spotify.com/intl-it/album/44L5V3qa6OlA4baxbaMycw
-  apple_music: https://geo.music.apple.com/album/ill-be-gone-single/1873524631?app=music&at=11lPP6
+  spotify_track: 6iQI2uhOymg7Jr1gXKQXfe
+  spotify_album: 44L5V3qa6OlA4baxbaMycw
+  apple_music_album: '1873524631'
   amazon_music: https://music.amazon.it/albums/B0GKVL4J3B?tag=sp0f88-20
   tidal: https://tidal.com/album/494755726
   deezer: https://www.deezer.com/it/album/908984192

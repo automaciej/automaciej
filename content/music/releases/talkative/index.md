@@ -39,8 +39,9 @@ links:
   streaming: https://ampl.ink/OvMZk
   bandcamp_track: '1237125898'
   bandcamp_url: https://gaiamarenghi.bandcamp.com/track/talkative
-  spotify: https://open.spotify.com/intl-it/album/2V23E5D05Jp8jFhYqN1Tex
-  apple_music: https://music.apple.com/us/album/talkative-single/1848283681
+  spotify_track: 23TCf500cThNtfs5XybGKq
+  spotify_album: 2V23E5D05Jp8jFhYqN1Tex
+  apple_music_album: '1848283681'
   amazon_music: https://music.amazon.it/playlists/PP0F52105B11034FA2B84C48F6E4D89CE3
   tidal: https://tidal.com/album/468267504/track/468267506
   deezer: https://www.deezer.com/album/841514522

@@ -40,8 +40,9 @@ credits:
 links:
   bandcamp_album: '2074281446'
   bandcamp_url: https://emilyjane1999.bandcamp.com/album/to-promenade
-  spotify: https://open.spotify.com/artist/03O62Zr8kTEdrK1u4DMqq3
-  apple_music: https://music.apple.com/ie/album/to-promenade-ep/1821993018
+  spotify_artist: 03O62Zr8kTEdrK1u4DMqq3
+  spotify_album: 6WzZIe07dpa3fVop3SZuSh
+  apple_music_album: '1821993018'
 ---
 
 EP production for Emily Jane's debut album.

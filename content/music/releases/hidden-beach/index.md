@@ -11,11 +11,11 @@ project: maciej
 image: maciej-blizinski-hidden-beach.jpg
 links:
   streaming: https://distrokid.com/hyperfollow/maciejbliziski/hidden-beach-2
-  spotify: https://open.spotify.com/album/7EE7Bn9eiaXzKSmkJODc3d
+  spotify_album: 7EE7Bn9eiaXzKSmkJODc3d
+  apple_music_album: '6777081885'
   youtube: YlDtj9GgfdY
   bandcamp_album: '1581590364'
   bandcamp_url: https://maciejblizinski.bandcamp.com/album/hidden-beach
-  apple_music: https://music.apple.com/us/album/hidden-beach-single/6777081885
   deezer: https://www.deezer.com/us/album/993971821
   tidal: https://tidal.com/album/528992638
   amazon_music: https://music.amazon.com/albums/B0H3BVPK2Z
@@ -30,7 +30,8 @@ tracks:
           - synthesizers
     links:
       youtube: YlDtj9GgfdY
-      spotify: https://open.spotify.com/track/28M0QR8JUXcWeNv19n0Ano
+      spotify_track: 28M0QR8JUXcWeNv19n0Ano
+      apple_music_track: '6777081886'
   - title: Hidden Beach (Extended)
     credits:
       - name: Maciej Bliziński
@@ -44,7 +45,8 @@ tracks:
           - water bottle
     links:
       youtube: frp5Jy5ebDs
-      spotify: https://open.spotify.com/track/64TCbx2wfdz4Rz3i2fk7PI
+      spotify_track: 64TCbx2wfdz4Rz3i2fk7PI
+      apple_music_track: '6777082009'
 ---
 
 When crowds overran Dublin beaches on the hottest day in Ireland since 2022,

@@ -28,8 +28,9 @@ credits:
 links:
   streaming: https://distrokid.com/hyperfollow/johnmahon/little-bird-frost-is-all-over-cormac-murphys-jig
   youtube: jGMsKzuJ2dE
-  spotify: https://open.spotify.com/album/5UUbiw07oHu22Quhp3r2hw
-  apple_music: https://music.apple.com/us/album/little-bird-frost-is-all-over-cormac-murphys-jig-single/1872746169?uo=4
+  spotify_track: 5l2vGEUs8fnBt6Fijqtdyj
+  spotify_album: 5UUbiw07oHu22Quhp3r2hw
+  apple_music_album: '1872746169'
   deezer: https://www.deezer.com/album/906532552
 ---
 

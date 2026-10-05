@@ -37,6 +37,8 @@ credits:
 links:
   bandcamp_track: '2667761784'
   bandcamp_url: https://emilyjane1999.bandcamp.com/track/run-for-me
+  spotify_track: 0RyNeO4QFVlKU6E2AJ3zuI
+  spotify_album: 480le08Xen4hWITGJcjCcz
 ---
 
 Single production for emily jane.

@@ -1,0 +1,8 @@
+{{/* {{< spotify track="ID" >}}  or  album="ID" / artist="ID"; optional title="", height="" */}}
+{{- $links := dict "spotify_track" (.Get "track") "spotify_album" (.Get "album") "spotify_artist" (.Get "artist") -}}
+{{- $u := (partial "music-service-urls.html" (dict "links" $links)).spotify -}}
+{{- if $u -}}
+{{- partial "streaming-embed.html" (dict "service" "spotify" "urls" $u "title" (.Get "title" | default "Music") "height" (int (.Get "height"))) -}}
+{{- else -}}
+{{- errorf "spotify shortcode needs track, album or artist: %s" .Position -}}
+{{- end -}}

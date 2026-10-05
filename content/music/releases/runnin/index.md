@@ -1,5 +1,6 @@
 ---
 title: Runnin' (Lose It All)
+draft: true
 genres:
 - Pop
 date: '2026-08-25'
@@ -32,8 +33,8 @@ credits:
 links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghi/runnin
   youtube: Xvz7e4BsYD8
-  spotify: https://open.spotify.com/album/1D8fb56ytQY3OrVUTgYV3v
-  apple_music: https://music.apple.com/us/album/runnin-single/1895553274?uo=4
+  spotify_album: 1D8fb56ytQY3OrVUTgYV3v
+  apple_music_album: '1895553274'
   deezer: https://www.deezer.com/us/album/967708591
   amazon_music: https://music.amazon.com/albums/B0GY76846M
 ---

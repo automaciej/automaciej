@@ -23,9 +23,11 @@
 {{- with .Params.links -}}
   {{- if .streaming -}}{{- $streamingURL = .streaming -}}
   {{- else if .bandcamp_url -}}{{- $streamingURL = .bandcamp_url -}}
-  {{- else if .spotify -}}{{- $streamingURL = .spotify -}}
-  {{- else if .apple_music -}}{{- $streamingURL = .apple_music -}}
   {{- end -}}
+{{- end -}}
+{{- if not $streamingURL -}}
+  {{- $svc := partial "music-service-urls.html" (dict "links" .Params.links) -}}
+  {{- with $svc.spotify }}{{ $streamingURL = .url }}{{ else with $svc.apple_music }}{{ $streamingURL = .url }}{{ end -}}
 {{- end -}}
 {{- $description := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) -}}
 {{- $artistNames := "" -}}

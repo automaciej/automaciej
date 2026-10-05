@@ -1,0 +1,40 @@
+{{/*
+    Builds listen/embed URLs for Spotify and Apple Music from the IDs stored
+    in `links` front matter. Most specific ID wins: track > album > artist.
+
+    Front matter keys: spotify_track, spotify_album, spotify_artist,
+                       apple_music_track, apple_music_album
+
+    Input:  dict "links" <links map> [ "release_links" <release-level links map> ]
+            release_links supplies apple_music_album for a track that only
+            stores its apple_music_track.
+    Output: dict with optional keys "spotify" and "apple_music", each a dict of
+            kind ("track"/"album"/"artist"), url, embed.
+*/}}
+{{- $links := .links | default dict -}}
+{{- $release := .release_links | default dict -}}
+{{- $out := dict -}}
+
+{{- $kind := "" -}}{{- $id := "" -}}
+{{- with $links.spotify_track }}{{ $kind = "track" }}{{ $id = . }}
+{{- else with $links.spotify_album }}{{ $kind = "album" }}{{ $id = . }}
+{{- else with $links.spotify_artist }}{{ $kind = "artist" }}{{ $id = . }}{{ end -}}
+{{- if $id -}}
+  {{- $out = merge $out (dict "spotify" (dict
+      "kind" $kind
+      "url" (printf "https://open.spotify.com/%s/%s" $kind $id)
+      "embed" (printf "https://open.spotify.com/embed/%s/%s" $kind $id))) -}}
+{{- end -}}
+
+{{- $album := $links.apple_music_album | default $release.apple_music_album | default "" -}}
+{{- $track := $links.apple_music_track | default "" -}}
+{{- if $album -}}
+  {{- $path := printf "us/album/%v" $album -}}
+  {{- $kind := "album" -}}
+  {{- if $track }}{{ $path = printf "%s?i=%v" $path $track }}{{ $kind = "track" }}{{ end -}}
+  {{- $out = merge $out (dict "apple_music" (dict
+      "kind" $kind
+      "url" (printf "https://music.apple.com/%s" $path)
+      "embed" (printf "https://embed.music.apple.com/%s%stheme=auto" $path (cond (eq $kind "track") "&" "?")))) -}}
+{{- end -}}
+{{- return $out -}}

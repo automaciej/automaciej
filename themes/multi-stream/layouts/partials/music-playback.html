@@ -33,6 +33,7 @@
                 </ul>
             </div>
             {{ end }}
+            {{ $svc := partial "music-service-urls.html" (dict "links" .links "release_links" $p.Params.links) }}
             {{ with .links }}
             <div class="track-links">
                 {{ if .bandcamp_track }}
@@ -54,10 +55,17 @@
                     </a>
                 </div>
                 {{ end }}
-                {{ if .spotify }}
+                {{ with $svc.spotify }}
                 <div class="embed streaming-link">
-                    <a href="{{ .spotify }}" target="_blank" rel="noopener">
+                    <a href="{{ .url }}" target="_blank" rel="noopener">
                         <i class="lni lni-spotify"></i> Listen on Spotify
+                    </a>
+                </div>
+                {{ end }}
+                {{ with $svc.apple_music }}
+                <div class="embed streaming-link">
+                    <a href="{{ .url }}" target="_blank" rel="noopener">
+                        <i class="lni lni-apple-music"></i> Listen on Apple Music
                     </a>
                 </div>
                 {{ end }}

@@ -36,8 +36,9 @@ links:
   streaming: http://distrokid.com/hyperfollow/zoehayter/song-for-you-and-bob-2/
   bandcamp_track: '2609221841'
   bandcamp_url: https://zoehayter.bandcamp.com/track/song-for-you-and-bob
-  spotify: https://open.spotify.com/album/4wMI0axnff3CH9aamKGoCy
-  apple_music: https://music.apple.com/us/album/song-for-you-and-bob-single/1883483126?uo=4
+  apple_music_album: '1883483126'
+  spotify_track: 1R46yFT3ns6qHYJPP5hJec
+  spotify_album: 4wMI0axnff3CH9aamKGoCy
   deezer: https://www.deezer.com/album/935273531
 ---
 
