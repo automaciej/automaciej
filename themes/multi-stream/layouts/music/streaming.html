@@ -36,7 +36,7 @@
                 <div class="streaming-item-header">
                     <h2 class="streaming-item-title">
                         {{ .title }}
-                        {{ with .release }}<small>by {{ .Params.artist }} · <a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2006" }}</a></small>{{ end }}
+                        {{ with .release }}<small>by {{ delimit .Params.artist " x " }} · <a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2006" }}</a></small>{{ end }}
                     </h2>
                     {{ partial "streaming-link.html" (dict "service" $key "urls" .urls) }}
                 </div>
