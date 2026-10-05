@@ -6,7 +6,11 @@
                 {{ range $i, $p := $trail }}
                 {{ $label := cond $p.IsHome $p.Site.Title $p.LinkTitle }}
                 {{ if eq $i 0 }}
+                {{ if $.IsHome }}
                 <li><a href="{{ $p.RelPermalink }}" class="site-title">{{ $label }}</a></li>
+                {{ else }}
+                <li><a href="{{ $p.RelPermalink }}" class="site-title" title="{{ $label }}" aria-label="{{ $label }}">MB</a></li>
+                {{ end }}
                 {{ else if eq $p $ }}
                 <li class="site-crumb-current" aria-current="page">{{ $label }}</li>
                 {{ else }}
