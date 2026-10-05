@@ -1,0 +1,8 @@
+{{/* {{< ytmusic track="VIDEO_ID" >}}  or  album="PLAYLIST_ID" (OLAK5uy_…); optional title="", height="" */}}
+{{- $links := dict "youtube_music_track" (.Get "track") "youtube_music_album" (.Get "album") -}}
+{{- $u := (partial "music-service-urls.html" (dict "links" $links)).youtube_music -}}
+{{- if $u -}}
+{{- partial "streaming-embed.html" (dict "service" "youtube_music" "urls" $u "title" (.Get "title" | default "Music") "height" (int (.Get "height"))) -}}
+{{- else -}}
+{{- errorf "ytmusic shortcode needs track or album: %s" .Position -}}
+{{- end -}}

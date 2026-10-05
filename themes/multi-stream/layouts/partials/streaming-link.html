@@ -1,11 +1,13 @@
 {{/*
     "Open in <service>" link (Spotify) or Listen on Apple Music badge.
-    Input: dict with service ("spotify" | "apple_music") and urls (entry from music-service-urls.html)
+    Input: dict with service ("spotify" | "apple_music" | "youtube_music") and urls (entry from music-service-urls.html)
 */}}
 {{- if eq .service "apple_music" -}}
 <a class="streaming-item-badge" href="{{ .urls.url }}" target="_blank" rel="noopener">
     <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/listen-on-apple-music/badge/en-us" alt="Listen on Apple Music" width="140" height="41" loading="lazy">
 </a>
+{{- else if eq .service "youtube_music" -}}
+<a class="streaming-item-link" href="{{ .urls.url }}" target="_blank" rel="noopener">Open in YouTube Music</a>
 {{- else -}}
 <a class="streaming-item-link" href="{{ .urls.url }}" target="_blank" rel="noopener">Open in Spotify</a>
 {{- end -}}

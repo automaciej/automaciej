@@ -1,8 +1,8 @@
 {{/*
-    Player iframe plus "open in service" link/badge for Spotify or Apple Music.
+    Player iframe plus "open in service" link/badge for Spotify, Apple Music or YouTube Music.
 
     Input: dict
-      service  "spotify" | "apple_music"
+      service  "spotify" | "apple_music" | "youtube_music"
       urls     one service entry from music-service-urls.html (kind, url, embed)
       title    accessible title of the player
       single   optional bool: album that is a single gets the compact track height
@@ -11,15 +11,22 @@
 */}}
 {{- $u := .urls -}}
 {{- $apple := eq .service "apple_music" -}}
+{{- $youtube := eq .service "youtube_music" -}}
 {{- $compact := or (eq $u.kind "track") (.single | default false) -}}
 {{- $height := .height | default (cond $apple (cond $compact 175 450) (cond $compact 152 352)) -}}
 {{- $showLink := true -}}
 {{- if isset . "link" }}{{ $showLink = .link }}{{ end -}}
-{{- $name := cond $apple "Apple Music" "Spotify" -}}
+{{- $name := cond $apple "Apple Music" (cond $youtube "YouTube Music" "Spotify") -}}
 <div class="streaming-embed">
+    {{ if $youtube -}}
+    <iframe src="{{ $u.embed }}" width="100%"{{ with .height }} height="{{ . }}"{{ end }} style="aspect-ratio: 16 / 9;" frameborder="0" loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        title="{{ .title }} on {{ $name }}"></iframe>
+    {{- else -}}
     <iframe src="{{ $u.embed }}" width="100%" height="{{ $height }}" frameborder="0" loading="lazy"
         allow="autoplay *; clipboard-write; encrypted-media *; fullscreen *; picture-in-picture"
         title="{{ .title }} on {{ $name }}"
         {{ if $apple }}sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"{{ end }}></iframe>
+    {{- end }}
     {{ if $showLink }}{{ partial "streaming-link.html" . }}{{ end }}
 </div>

@@ -3,12 +3,13 @@
     in `links` front matter. Most specific ID wins: track > album > artist.
 
     Front matter keys: spotify_track, spotify_album, spotify_artist,
-                       apple_music_track, apple_music_album
+                       apple_music_track, apple_music_album,
+                       youtube_music_track (video ID; defaults to the existing `youtube` ID), youtube_music_album (playlist ID, OLAK5uy_…)
 
     Input:  dict "links" <links map> [ "release_links" <release-level links map> ]
             release_links supplies apple_music_album for a track that only
             stores its apple_music_track.
-    Output: dict with optional keys "spotify" and "apple_music", each a dict of
+    Output: dict with optional keys "spotify", "apple_music" and "youtube_music", each a dict of
             kind ("track"/"album"/"artist"), url, embed.
 */}}
 {{- $links := .links | default dict -}}
@@ -36,5 +37,16 @@
       "kind" $kind
       "url" (printf "https://music.apple.com/%s" $path)
       "embed" (printf "https://embed.music.apple.com/%s%stheme=auto" $path (cond (eq $kind "track") "&" "?")))) -}}
+{{- end -}}
+
+{{- /* YouTube Music has no embed of its own: the same video / album-playlist IDs play in the regular YouTube player. */ -}}
+{{- $ytKind := "" -}}{{- $ytID := "" -}}
+{{- with $links.youtube_music_track | default $links.youtube }}{{ $ytKind = "track" }}{{ $ytID = . }}
+{{- else with $links.youtube_music_album }}{{ $ytKind = "album" }}{{ $ytID = . }}{{ end -}}
+{{- if $ytID -}}
+  {{- $out = merge $out (dict "youtube_music" (dict
+      "kind" $ytKind
+      "url" (cond (eq $ytKind "track") (printf "https://music.youtube.com/watch?v=%s" $ytID) (printf "https://music.youtube.com/playlist?list=%s" $ytID))
+      "embed" (cond (eq $ytKind "track") (printf "https://www.youtube.com/embed/%s" $ytID) (printf "https://www.youtube.com/embed/videoseries?list=%s" $ytID)))) -}}
 {{- end -}}
 {{- return $out -}}
