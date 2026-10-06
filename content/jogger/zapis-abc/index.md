@@ -36,7 +36,7 @@ Przykładowo, „Wlazł kotek na płotek” wygląda tak:
 
 Na tej podstawie możemy wyświetlić wersję graficzną:
 
-![„Wlazł kotek na płotek” w zapisie nutowym](/2014/09/zapis-abc/wlazl-kotek-na-plotek.png)
+![„Wlazł kotek na płotek” w zapisie nutowym](wlazl-kotek-na-plotek.png)
 
 Do zamiany pliku `.abc` na grafikę używamy narzędzia [abcm2ps][], albo robimy to
 online na stronie [drawthedots.com](http://www.drawthedots.com). Jest wiele

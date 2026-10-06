@@ -19,7 +19,7 @@
   "email": {{ .Site.Params.authorEmail | jsonify | safeJS }},
   "sameAs": [{{ range $i, $url := $sameAs }}{{ if $i }},{{ end }}{{ $url | jsonify | safeJS }}{{ end }}]
   {{- with .Params.image }},
-  "image": {{ printf "%sbio/images/%s" $.Site.BaseURL . | jsonify | safeJS }}
+  "image": {{ . | absURL | jsonify | safeJS }}
   {{- end }}
 }
 </script>

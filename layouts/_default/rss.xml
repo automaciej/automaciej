@@ -22,7 +22,8 @@
 {{- if .IsHome }}{{ $pctx = .Site }}{{ end }}
 {{- $pages := slice }}
 {{- if or $.IsHome $.IsSection }}
-{{- $pages = $pctx.RegularPages }}
+{{- /* Site.RegularPages is already site-wide; a section needs the recursive variant to include sub-folders. */}}
+{{- if $.IsHome }}{{ $pages = $pctx.RegularPages }}{{ else }}{{ $pages = $pctx.RegularPagesRecursive }}{{ end }}
 {{- /* Jogger is Polish and stays off the homepage; it has its own feed. */}}
 {{- if $.IsHome }}{{ $pages = where $pages "Section" "ne" "jogger" }}{{ end }}
 {{- else }}

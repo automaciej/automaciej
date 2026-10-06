@@ -49,7 +49,7 @@ które łatwiej jest (za przeproszeniem) zinternalizować. Na przykład1:
   * to utter: wyrzec, wypowiedzieć coś na głos, np.: „He hesitated for one more
     moment and finally uttered it.” (często odnosi się do pojedynczego słowa)
 
-Z [definicjami](spotkaj-dyskutanta/index.md) są
+Z [definicjami]({{% relref "spotkaj-dyskutanta" %}}) są
 niestety problemy. Po pierwsze, nie widziałem tego typu definicji np. w
 podręcznikach angielskiego, więc adeptom angielskiego wcale nie byłoby łatwo
 ich znaleźć. Po drugie, w przypadku języka naturalnego, ciężko jest cokolwiek

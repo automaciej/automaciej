@@ -26,9 +26,9 @@ natomiast sprawdzi się niezależnie od tego, czy jest prosty czy skomplikowany.
 Na przykład, węzeł ratowniczy tworzy pętlę, która się nie zaciska.
 
 
-[ratowniczy]: /2018/08/wezly-zeglarskie/wezel-ratowniczy-wiazanie.gif
+[ratowniczy]: wezel-ratowniczy-wiazanie.gif
 
-[ratowniczy-webm]: /2018/08/wezly-zeglarskie/wezel-ratowniczy-wiazanie.webm
+[ratowniczy-webm]: wezel-ratowniczy-wiazanie.webm
 
 ![Węzeł ratowniczy - wiązanie][ratowniczy]
 

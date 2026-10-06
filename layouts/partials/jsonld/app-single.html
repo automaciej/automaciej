@@ -3,6 +3,6 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  {{ partial "jsonld/app-fields.html" $app }}
+  {{ partial "jsonld/app-fields.html" $app | safeJS }}
 }
 </script>

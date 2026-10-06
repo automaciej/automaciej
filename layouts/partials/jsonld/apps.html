@@ -12,7 +12,7 @@
       "position": {{ add $i 1 }},
       "item": {
         "@type": "SoftwareApplication",
-        {{ partial "jsonld/app-fields.html" $app }}
+        {{ partial "jsonld/app-fields.html" $app | safeJS }}
       }
     }
     {{- end }}

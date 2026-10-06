@@ -189,7 +189,7 @@ przed chwilą chwalił jaki to z niego nie jest sprintsman, dostaje w zadku
 zakwasów jak ta lala.
 
 {{< figure src="../../../images/2017/sloneczniki-we-francji-small.jpg"
-link="../../../images/2017/sloneczniki-we-francji.jpg" >}}
+link="sloneczniki-we-francji.jpg" >}}
 
 Suma sumarum te nasze ~500km przejechaliśmy w pięć z sześciu dostępnych dni.
 Miało to swoją dobrą stronę: spędziliśmy jeden więcej dzień w uroczej, otoczonej

@@ -5,7 +5,7 @@
             <div class="hero-content">
                 {{ with .Params.image }}
                 <div class="hero-photo">
-                    <img src="{{ printf "/bio/images/%s" . | relURL }}" alt="{{ $.Site.Title }}">
+                    <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}">
                 </div>
                 {{ end }}
                 <div class="hero-text">
