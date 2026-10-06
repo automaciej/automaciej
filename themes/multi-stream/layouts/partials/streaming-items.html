@@ -1,0 +1,31 @@
+{{/*
+    Items for a per-service song list page (layout: streaming), newest first.
+    Input: the list page (needs Params.service_key). Output: slice of dicts
+    with title, release, urls (see music-service-urls.html) and single.
+    Per release: tracks with an ID for the service are listed individually,
+    otherwise the release-level ID is used. Artist-only links, future-dated
+    and draft releases are skipped.
+*/}}
+{{- $key := .Params.service_key -}}
+{{- $items := slice -}}
+{{- $releasesSection := site.GetPage "/music/releases" -}}
+{{- $releases := sort (where $releasesSection.RegularPages "Date" "le" now) "Date" "desc" -}}
+{{- range $releases -}}
+  {{- $r := . -}}
+  {{- $trackItems := slice -}}
+  {{- range $r.Params.tracks -}}
+    {{- $u := index (partial "music-service-urls.html" (dict "links" .links "release_links" $r.Params.links)) $key -}}
+    {{- if and $u (ne $u.kind "artist") -}}
+      {{- $trackItems = $trackItems | append (dict "title" .title "release" $r "urls" $u "single" true) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $trackItems -}}
+    {{- $items = $items | append $trackItems -}}
+  {{- else -}}
+    {{- $u := index (partial "music-service-urls.html" (dict "links" $r.Params.links)) $key -}}
+    {{- if and $u (ne $u.kind "artist") -}}
+      {{- $items = $items | append (dict "title" $r.Title "release" $r "urls" $u "single" ($r.Params.single | default false)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $items -}}

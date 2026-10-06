@@ -1,8 +1,6 @@
 ---
-title: "Songs on Spotify"
-linkTitle: "Spotify"
+title: "Spotify"
 layout: streaming
 service_key: spotify
-service_name: Spotify
 description: "Productions available on Spotify, newest first."
 ---
