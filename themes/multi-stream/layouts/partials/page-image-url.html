@@ -1,0 +1,22 @@
+{{/*
+    URL of the page's illustration: front matter `image` (page resource or
+    site path), else the first image in the page bundle, else empty.
+
+    Usage: {{ $imageURL := partial "page-image-url.html" . }}
+*/}}
+{{- $imageURL := "" -}}
+{{ if .Params.image }}
+    {{ $imagePath := .Params.image }}
+    {{ $imageResource := .Resources.GetMatch $imagePath }}
+    {{ if $imageResource }}
+        {{ $imageURL = $imageResource.RelPermalink }}
+    {{ else }}
+        {{ $imageURL = $imagePath | relURL }}
+    {{ end }}
+{{ else }}
+    {{ $imageResource := .Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+    {{ if $imageResource }}
+        {{ $imageURL = $imageResource.RelPermalink }}
+    {{ end }}
+{{ end }}
+{{ return $imageURL }}

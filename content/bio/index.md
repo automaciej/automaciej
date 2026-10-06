@@ -3,6 +3,7 @@ title: "Bio"
 date: "2022-09-05T15:02:43+01:00"
 tagline: "Bio"
 aliases: [ "/bio/about" ]
+layout: bio
 image: "/images/background.jpg"
 ---
 

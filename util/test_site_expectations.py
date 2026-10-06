@@ -446,6 +446,54 @@ class TestLinks(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+class TestBioReleasesList(unittest.TestCase):
+    """/bio/ ends with every published release, grouped by year (8f094bd)."""
+
+    def bio_html(self):
+        path = SITE.root / "bio" / "index.html"
+        self.assertTrue(path.is_file(), "no /bio/ page")
+        return path.read_text(encoding="utf-8")
+
+    def test_bio_lists_every_published_release_grouped_by_year_newest_first(self):
+        """8f094bd: turning /bio from a section into a leaf page dropped the list."""
+        html = self.bio_html()
+        self.assertIn("<h2>Music Releases</h2>", html)
+        published = {u for u in SITE.pages if re.match(r"^/music/releases/[^/]+/$", u)}
+        self.assertTrue(published, "no release pages were built")
+        chips = set(re.findall(r'<a class="release-chip[^"]*" href="([^"]+)"', html))
+        self.assertEqual(sorted(published - chips), [], "releases missing from /bio/")
+        self.assertEqual(sorted(chips - published), [], "/bio/ links to non-releases")
+        years = re.findall(r'class="music-releases-year-label">(\d{4})<', html)
+        self.assertTrue(years)
+        self.assertEqual(years, sorted(set(years), reverse=True))
+
+    def test_bio_releases_list_comes_after_the_bio_text(self):
+        html = self.bio_html()
+        self.assertLess(html.index('class="post-content"'), html.index("<h2>Music Releases</h2>"))
+
+    def test_bio_releases_list_has_itemlist_jsonld(self):
+        lists = [b for b in jsonld_blocks(SITE.pages["/bio/"]) if b.get("@type") == "ItemList"]
+        self.assertEqual(len(lists), 1)
+        self.assertTrue(lists[0]["itemListElement"])
+
+
+class TestBioProfilePage(unittest.TestCase):
+    def test_bio_has_profilepage_jsonld(self):
+        """8f094bd: head.html checked Kind == section, so the leaf /bio/ lost it."""
+        profiles = [b for b in jsonld_blocks(SITE.pages["/bio/"]) if b.get("@type") == "ProfilePage"]
+        self.assertEqual(len(profiles), 1, "want exactly one ProfilePage block on /bio/")
+        profile = profiles[0]
+        self.assertEqual(profile.get("url"), BASE_URL + "/bio/")
+        person = profile.get("mainEntity", {})
+        self.assertEqual(person.get("@type"), "Person")
+        self.assertTrue(person.get("name"))
+        self.assertTrue(person.get("sameAs"), "Person has no sameAs profile links")
+
+    def test_profilepage_only_on_bio(self):
+        bad = [u for u, p in SITE.pages.items() if u != "/bio/" and "ProfilePage" in types_in(p)]
+        self.assertEqual(bad, [])
+
+
 class TestCrawlerBasics(unittest.TestCase):
     def test_sitemap_lists_every_page_and_robots_points_to_it(self):
         sitemap = SITE.root / "sitemap.xml"

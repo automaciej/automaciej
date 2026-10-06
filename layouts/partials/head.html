@@ -38,7 +38,5 @@
   {{ partial "jsonld/app-single.html" . }}
 {{ else if and .IsPage (in (slice "jogger" "blog") .Section) }}
   {{ partial "rich-data-single.html" . }}
-{{ else if and (eq .Kind "section") (eq .Section "bio") }}
-  {{ partial "jsonld/profilepage.html" . }}
 {{ end }}
 {{ partial "jsonld/breadcrumb.html" . }}

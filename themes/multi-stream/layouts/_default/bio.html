@@ -1,3 +1,9 @@
+{{/* Selected by `layout: bio` in content/bio/index.md. */}}
+{{ define "head_extra" }}
+{{ partial "og-tags-default.html" . }}
+{{ partial "jsonld/profilepage.html" . }}
+{{ end }}
+
 {{ define "main" }}
 {{ $imageURL := partial "page-image-url.html" . }}
 <article class="single-post">
@@ -15,7 +21,9 @@
 
         <div class="post-content">
             {{ .Content }}
-        </div>
-    </div>
+        </div><!-- post-content -->
+
+        {{ partial "music-releases.html" . }}
+    </div><!-- container -->
 </article>
 {{ end }}
