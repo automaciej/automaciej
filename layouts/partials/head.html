@@ -11,6 +11,12 @@
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
 {{ end }}
 
+{{ range .AlternativeOutputFormats }}
+{{ if and (eq .Name "rss") (ne $.Kind "taxonomy") }}
+<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ if $.IsHome }}{{ $.Site.Title }}{{ else }}{{ $.Title }} - {{ $.Site.Title }}{{ end }} (RSS)">
+{{ end }}
+{{ end }}
+
 <link rel="stylesheet" href="{{ "css/lineicons.css" | relURL }}">
 
 {{ $styles := resources.Get "css/main.css" }}

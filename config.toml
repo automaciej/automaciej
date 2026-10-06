@@ -14,7 +14,6 @@ locale = "en"
 title = "Maciej Bliziński"
 baseurl = "https://blizin.ski"
 theme = "multi-stream"
-rssLimit = 50
 enableGitInfo = true
 copyright = "&copy;2026 Maciej Bliziński"
 [author]

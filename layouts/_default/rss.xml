@@ -23,13 +23,13 @@
 {{- $pages := slice }}
 {{- if or $.IsHome $.IsSection }}
 {{- $pages = $pctx.RegularPages }}
+{{- /* Jogger is Polish and stays off the homepage; it has its own feed. */}}
+{{- if $.IsHome }}{{ $pages = where $pages "Section" "ne" "jogger" }}{{ end }}
 {{- else }}
 {{- $pages = $pctx.Pages }}
 {{- end }}
-{{- $limit := .Site.Config.Services.RSS.Limit }}
-{{- if ge $limit 1 }}
-{{- $pages = $pages | first $limit }}
-{{- end }}
+{{- /* Every entry is listed; only the newest $fullItems carry full text, the rest carry summaries. */}}
+{{- $fullItems := site.Params.rssFullItems | default 10 }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -45,14 +45,19 @@
     {{- with .OutputFormats.Get "RSS" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end }}
-    {{- range where $pages "Params.excludeFromRSS" "ne" true }}
+    {{- range $i, $p := where $pages "Params.excludeFromRSS" "ne" true }}
+    {{- with $p }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
+      {{- if lt $i $fullItems }}
       <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
+      {{- else }}
+      <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      {{- end }}
       {{ $original_image := .Resources.GetMatch "**.jpg" }}
       {{ if isset .Params "image" }}
       <image>
@@ -70,6 +75,7 @@
       </image>
       {{ end }}
     </item>
+    {{- end }}
     {{- end }}
   </channel>
 </rss>
