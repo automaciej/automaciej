@@ -1,0 +1,71 @@
+{{ with .Site.Params.music }}
+<div class="social music-presence">
+  <ul class="social">
+    {{ with .spotifyArtistId }}
+    <li>
+      <a href="https://open.spotify.com/artist/{{ . | safeURL }}"
+         rel="me"
+         title="Spotify"
+         class="text-icon">
+        Spotify
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .appleMusicArtistId }}
+    <li>
+      <a href="https://music.apple.com/artist/{{ . | safeURL }}"
+         rel="me"
+         title="Apple Music"
+         class="text-icon">
+        Apple Music
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .soundcloud }}
+    <li>
+      <a href="https://soundcloud.com/{{ . | safeURL }}"
+         rel="me"
+         title="SoundCloud: {{ . | safeHTMLAttr }}"
+         class="text-icon">
+        SoundCloud
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .deezerArtistId }}
+    <li>
+      <a href="https://www.deezer.com/us/artist/{{ . | safeURL }}"
+         rel="me"
+         title="Deezer: {{ . | safeHTMLAttr }}"
+         class="text-icon">
+        Deezer
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .amazonMusicArtistId }}
+    <li>
+      <a href="https://music.amazon.com/artists/{{ . | safeURL }}"
+         rel="me"
+         title="Amazon Music"
+         class="text-icon">
+        Amazon Music
+      </a>
+    </li>
+    {{ end }}
+
+    {{ with .qobuzArtistUrl }}
+    <li>
+      <a href="{{ . | safeURL }}"
+         rel="me"
+         title="Qobuz"
+         class="text-icon">
+        Qobuz
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div><!-- social music-presence -->
+{{ end }}

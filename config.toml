@@ -77,11 +77,16 @@ copyright = "&copy;2026 Maciej Bliziński"
   tiktokName = "automaciej"
   facebookUrlPath = "maciej.blizinski"
   twitterHandle = "automaciej"
-  soundcloud = "maciej-blizinski"
-  deezer = "322834661"
-  amazonMusic = "https://music.amazon.com/artists/B0F8JG16VQ/maciej-blizi%C5%84ski"
   linkedIn = "automaciej"
   bluesky = "https://bsky.app/profile/blizin.ski"
+
+[params.music]
+  spotifyArtistId = "7bysgQmr7FTnse7DrW4D4s"
+  appleMusicArtistId = "1896752712"
+  soundcloud = "maciej-blizinski"
+  deezerArtistId = "322834661"
+  amazonMusicArtistId = "B0F8JG16VQ"
+  qobuzArtistUrl = "https://www.qobuz.com/se-en/interpreter/maciej-bliziski/26931859"
 
 [params.visual]
   [params.visual.image]

@@ -953,6 +953,10 @@ main ol
     justify-content: center;
 }
 
+.contact .contact-subheading {
+    margin-top: 1.5rem;
+}
+
 /* Music page */
 .music-page {
     padding: 2rem 0;
