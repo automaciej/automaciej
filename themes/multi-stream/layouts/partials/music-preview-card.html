@@ -28,7 +28,7 @@
         <div class="music-preview-artist">{{ with $p.Params.artist }}{{ delimit . " x " }}{{ end }}</div>
         <div class="music-preview-details">
             {{- with $p.Params.genres }}{{ partial "music-genre-links.html" $p }} • {{ end -}}
-            {{ dateFormat "Jan 2006" $p.Params.release_date }}
+            <span class="music-preview-date">{{ dateFormat "Jan 2006" $p.Params.release_date }}</span>
         </div>
     </div>
 </article>

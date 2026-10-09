@@ -9,6 +9,10 @@
             return;
         }
         el.classList.add('is-unreleased');
+        var days = Math.ceil((release - now) / 86400000);
+        el.querySelectorAll('.music-preview-date').forEach(function (date) {
+            date.textContent += ' (' + days + (days === 1 ? ' day' : ' days') + ' left)';
+        });
         el.querySelectorAll('[data-presave]').forEach(function (presave) {
             presave.hidden = false;
         });
