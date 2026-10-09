@@ -101,6 +101,7 @@
 
 {{ define "scripts_extra" }}
 {{- if hasPrefix .Path "/music/releases/" }}
+{{ partial "unreleased-script.html" . }}
 <script>
     // Share button: native share sheet, falling back to copy-link
     document.querySelectorAll('.share-button').forEach(function (btn) {

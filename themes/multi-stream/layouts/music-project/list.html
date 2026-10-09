@@ -192,6 +192,10 @@
 </div>
 {{ end }}
 
+{{ define "scripts_extra" }}
+{{ partial "unreleased-script.html" . }}
+{{ end }}
+
 {{- define "project-card" -}}
 <a href="{{ .permalink }}" class="project-card">
   <div class="project-card-header">

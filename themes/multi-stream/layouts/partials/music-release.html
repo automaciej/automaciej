@@ -1,6 +1,6 @@
 {{- $p := .page -}}
 {{- $hideProjectLink := .hide_project_link -}}
-<article class="music-release" id="{{ $p.Title | urlize }}">
+<article class="music-release" data-release-date="{{ $p.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" }}" id="{{ $p.Title | urlize }}">
     <div class="music-release-grid">
         <div class="music-release-header">
             <div class="music-quick-links">
@@ -34,6 +34,9 @@
                 <span class="composition-origin"> • cover of <span class="original-artist">{{ . }}</span></span>
                 {{- end }}{{ end }}
             </div>
+            {{ with $p.Params.links.streaming }}
+            <a class="presave-button" href="{{ . }}" target="_blank" rel="noopener" data-presave hidden>Pre-save</a>
+            {{ end }}
         </div>
 
         {{ if $p.Params.links.youtube }}
