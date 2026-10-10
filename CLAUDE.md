@@ -101,6 +101,18 @@ instruction/intent that prompted the change. Confirm every hunk is explained by 
 no stray edits, no leftover debug code, no unrelated files swept in. Do this each time, even for
 small changes.
 
+### Before committing
+
+Run the site expectations test; it builds the site and checks head tags,
+structured data, feeds, links, and the /bio/ releases list:
+
+```bash
+python3 util/test_site_expectations.py
+```
+
+All tests must pass before `git commit`. When a feature once went missing and
+had to be restored, add a test for it in `util/test_site_expectations.py`.
+
 ### Change-landing checklist (CSS / responsive images / cross-content links)
 
 Learned from recurring same-day fix-up commits — check these before considering a change done, not after:
