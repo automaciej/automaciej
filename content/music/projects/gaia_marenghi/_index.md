@@ -1,8 +1,9 @@
 ---
-title: "Gaia Marenghi & Maciej Bliziński"
+title: "Gaia Marenghi"
 type: "music-project"
 params:
   key: "gaia_marenghi"
+  url: https://linktr.ee/gaiamarenghi
   country: "Republic of Ireland"
   start_year: 2024
   with:
@@ -11,6 +12,9 @@ params:
     - "Oleg Bezuglov"
 ---
 
-Collaboration between Gaia and Maciej startd in 2024 with two covers, River
-(Lose It All) and Runnin' (both released in 2026). Duo followed up with original
-music in 2025: Talkative and I'll Be Gone.
+Collaboration between Gaia and Maciej started in 2024 with two covers, [River][river] and
+[Runnin' (Lose It All)][runnin]. The duo followed up with original music in 2025:
+Talkative and I'll Be Gone.
+
+[river]: /music/releases/river/
+[runnin]: /music/releases/runnin/
