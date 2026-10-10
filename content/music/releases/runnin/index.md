@@ -1,6 +1,6 @@
 ---
 title: Runnin' (Lose It All)
-draft: true
+draft: false
 genres:
 - Pop
 date: '2026-08-25'
