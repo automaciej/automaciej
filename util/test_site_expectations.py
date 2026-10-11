@@ -215,15 +215,22 @@ class TestSocialTags(unittest.TestCase):
                     bad.append(f"{url}: {key} is empty")
         self.assertEqual(bad, [])
 
-    def test_every_page_has_social_image(self):
-        """086f62b: release pages lacked og:image; a751fe5: project cards."""
+    def test_social_image_is_absolute_and_never_a_generic_fallback(self):
+        """086f62b: release pages lacked og:image; pages without their own image get none."""
         bad = []
         for url, p in SITE.pages.items():
             for key in ("og:image", "twitter:image"):
                 vals = p.meta_values(key)
-                if len(vals) != 1 or not vals[0].startswith("https://"):
+                if len(vals) > 1 or any(not v.startswith("https://") for v in vals):
                     bad.append(f"{url}: {key}={vals}")
+            if "/images/logo" in (p.meta_one("og:image") or "") or bool(p.meta_values("og:image")) != bool(p.meta_values("twitter:image")):
+                bad.append(f"{url}: generic or mismatched social image")
         self.assertEqual(bad, [])
+
+    def test_homepage_social_image_is_latest_release_cover(self):
+        img = SITE.pages["/"].meta_one("og:image")
+        self.assertTrue(img, "homepage has no og:image")
+        self.assertEqual(SITE.pages["/"].meta_one("twitter:image"), img)
 
     def test_local_social_images_exist_in_output(self):
         bad = []
@@ -259,11 +266,10 @@ class TestSocialTags(unittest.TestCase):
 
     def test_per_service_lists_use_a_release_cover_not_the_default(self):
         """7e81648: /music/spotify etc. share the latest release's artwork."""
-        default_image = SITE.pages["/"].meta_one("og:image")
         for url in ("/music/spotify/", "/music/apple/", "/music/youtube/"):
             with self.subTest(url=url):
                 self.assertIn(url, SITE.pages)
-                self.assertNotEqual(SITE.pages[url].meta_one("og:image"), default_image)
+                self.assertTrue(SITE.pages[url].meta_one("og:image"))
                 self.assertRegex(SITE.pages[url].title, r"on (Spotify|Apple Music|YouTube Music)")
 
 

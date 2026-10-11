@@ -24,11 +24,6 @@
         {{ end }}
     {{ end }}
 {{ end }}
-{{ if not $ogImage }}
-    {{ with $page.Site.Params.SiteLogo }}
-        {{ $ogImage = . | absURL }}
-    {{ end }}
-{{ end }}
 
 <meta property="og:type" content="{{ if $page.IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $ogTitle }}">
