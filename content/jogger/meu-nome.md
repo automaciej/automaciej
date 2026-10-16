@@ -3,6 +3,7 @@ date: "2016-07-12T18:35:36+01:00"
 description: 'O nome Maciej tem duas versões: formal e informal.'
 tags:
 - języki
+- portugalski
 title: "Meu nome"
 aliases:
 - /meu-nome/

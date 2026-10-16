@@ -7,6 +7,7 @@ draft: false
 tags:
 - że jak?
 - języki
+- portugalski
 title: Portugalski, lekcja 1
 
 ---

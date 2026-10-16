@@ -5,6 +5,7 @@ date: 2015-12-24 16:02:24
 permalink: /2015/12/jak-sie-ucze-portugalskiego/komentarze/
 tags:
 - języki
+- portugalski
 title: Jak się uczę portugalskiego - Komentarze
 
 ---

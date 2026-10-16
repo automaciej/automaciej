@@ -5,6 +5,7 @@ date: '2016-10-23T14:27:12+01:00'
 description: Widzisz, jakie to podobne, o!
 tags:
 - języki
+- portugalski
 title: Portugalski, lekcja trzecia
 
 ---

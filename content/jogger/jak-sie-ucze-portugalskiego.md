@@ -4,6 +4,7 @@ aliases:
 date: 2015-12-24 16:02:23
 tags:
 - języki
+- portugalski
 title: Jak się uczę portugalskiego
 
 ---
