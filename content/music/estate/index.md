@@ -21,6 +21,7 @@ credits:
 - name: Mayara Mitsuka
   roles:
   - vocals
+image: estate.jpg
 links:
   youtube: BvqKqjoZG8c
 ---

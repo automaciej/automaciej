@@ -22,6 +22,7 @@ credits:
 - name: Riccardo Marenghi
   roles:
   - drums
+image: jazz-piano-trio-in-5-4.jpg
 links:
   youtube: eL9UXUTQHD0
 ---

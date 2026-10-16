@@ -22,6 +22,7 @@ credits:
 - name: Sara Yamit
   roles:
   - vocals
+image: bolero-de-sata.jpg
 links:
   youtube: 4WHzSyDdsLk
 ---

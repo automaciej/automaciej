@@ -24,6 +24,7 @@ credits:
 - name: Ivan Vučica
   roles:
   - videography
+image: triste.jpg
 links:
   youtube: t4omYtBjZwA
 ---
