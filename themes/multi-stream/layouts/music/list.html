@@ -37,9 +37,11 @@
             {{ end }}
         </div>
 
+        {{ with .Content }}
         <footer class="music-footer">
-            <p><strong>Note:</strong> I occasionally collaborate on projects that align artistically. I'm not taking general production work. If you have something unusual in mind, <a href="mailto:maciej.blizinski@gmail.com">reach out</a>.</p>
-        </footer>
+            {{ . }}
+        </footer><!-- music-footer -->
+        {{ end }}
     </div>
 </div>
 {{ end }}
