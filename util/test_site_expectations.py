@@ -347,6 +347,11 @@ class TestMusicSocialTags(unittest.TestCase):
             with self.subTest(url=url):
                 self.assertTrue(SITE.pages[url].title.strip().endswith("- Music Production"))
 
+    def test_release_titles_have_no_section_suffix(self):
+        for url, p in SITE.pages.items():
+            if RELEASE_URL.match(url):
+                self.assertNotIn("Music Production", p.title, url)
+
     def test_index_style_pages_are_not_articles(self):
         for url in ("/music/credits/", "/music/performances/", "/music/spotify/"):
             self.assertEqual(SITE.pages[url].meta_one("og:type"), "website", url)

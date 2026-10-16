@@ -2,6 +2,9 @@
     {{- .Site.Title -}}
 {{- else if and .IsPage (eq .Section "blog") -}}
     {{- .Title -}}
+{{- else if and .IsPage .Params.release_date -}}
+    {{- /* Release pages: just the release title */ -}}
+    {{- .Title -}}
 {{- else if and .IsPage (eq .Layout "streaming") -}}
     {{- /* Per-service song lists: "Site: on Service" */ -}}
     {{- .Site.Title }}: on {{ .Title -}}

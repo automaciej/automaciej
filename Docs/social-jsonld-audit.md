@@ -185,6 +185,8 @@ section-specific image.
    with their parent section ("Projects - Music Production",
    "Arthur's Jazz Jam - Projects"), matching what pages already did.
    `/music/` itself keeps "- Maciej Bliziński".
+   Follow-up (2026-10-16): release pages (anything with `release_date`) render
+   just the release title, with no suffix, like blog posts.
 4. **og:type music.album**: release pages use `music.album`/`MusicAlbum` only
    when front matter has `single: false`. First attempt used
    `cond .Params.single`, which tagged the 10 old single recordings (no
