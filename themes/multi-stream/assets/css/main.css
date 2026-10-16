@@ -1415,7 +1415,8 @@ main ol
 }
 
 .instagram-link a,
-.streaming-link a {
+.streaming-link a,
+.listen-links a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -1423,14 +1424,22 @@ main ol
     background: var(--accent);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
+    border-radius: 999px;
+    font-weight: 600;
     transition: opacity 0.2s;
 }
 
 .instagram-link a:hover,
-.streaming-link a:hover {
+.streaming-link a:hover,
+.listen-links a:hover {
     opacity: 0.9;
+}
+
+.listen-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
 }
 
 .music-footer {
@@ -2411,13 +2420,20 @@ main ol
     margin-bottom: 2rem;
 }
 
-.streaming-item-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    max-width: 660px;
-    margin-bottom: 0.5rem;
+/* Spotify entries are bulleted with the Spotify logo; the bullet is part of the title link, so it is tappable too. */
+.streaming-list-spotify .streaming-item {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.streaming-list-spotify .streaming-item-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: url("/images/services/spotify.png") center / contain no-repeat;
 }
 
 .streaming-item-title {
@@ -2426,31 +2442,32 @@ main ol
 }
 
 .streaming-item-title small {
+    display: block;
+    margin-top: 0.15rem;
     font-size: 0.8rem;
     font-weight: normal;
     color: var(--text-secondary);
 }
 
-.streaming-item iframe {
-    border: 0;
-    border-radius: 12px;
-    max-width: 660px;
-}
-
 .streaming-item-link {
-    font-size: 0.85rem;
+    color: var(--accent);
+    text-decoration: none;
 }
 
-.streaming-item-badge {
-    display: inline-block;
-    margin-top: 0.5rem;
+.streaming-item-link:hover {
+    text-decoration: underline;
 }
 
-.streaming-item-badge img {
-    display: block;
-    object-fit: contain;
+.streaming-item-link .external-icon {
+    margin-left: 0.3em;
+    vertical-align: -0.05em;
 }
 
-.streaming-embed {
-    margin: 1rem 0;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }

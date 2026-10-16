@@ -19,19 +19,19 @@ aliases: [ "/bio/music" ]
 
 ### To Promenade by emily jane (June 2025)
 
-{{< bandcampalbum 2074281446 "https://emilyjane1999.bandcamp.com/album/to-promenade" "To Promenade by emily jane" >}}
+{{< listen bandcamp_url="https://emilyjane1999.bandcamp.com/album/to-promenade" title="To Promenade by emily jane" >}}
 
 ### Je te veux by Zoe Hayter (May 2025)
 
-{{< bandcamp 2840110792 "https://zoehayter.bandcamp.com/track/je-te-veux" "Je te veux by Zoe Hayter" >}}
+{{< listen bandcamp_url="https://zoehayter.bandcamp.com/track/je-te-veux" title="Je te veux by Zoe Hayter" >}}
 
 ### Run For Me by emily jane (May 2025)
 
-{{< bandcamp 2667761784 "https://emilyjane1999.bandcamp.com/track/run-for-me" "Run For Me by emily jane" >}}
+{{< listen bandcamp_url="https://emilyjane1999.bandcamp.com/track/run-for-me" title="Run For Me by emily jane" >}}
 
 ### Chris Comhaill and John Mahon (2024)
 
-{{< instagram-reel C8jvuVBMMnQ "Guitar duo, Chris Comhaill and John Mahon" >}}
+{{< listen instagram="C8jvuVBMMnQ" title="Guitar duo, Chris Comhaill and John Mahon" >}}
 
 &nbsp;
 
@@ -47,13 +47,13 @@ With Gaudiê Otero on guitar and Sara Yamit on vocals.
 
 ### André de sapato novo, Regional Massapê (2023)
 
-{{< instagram-reel Cy0YKUdqZB6 "Andre de sapato novo – Regional Massapê" >}}
+{{< listen instagram="Cy0YKUdqZB6" title="Andre de sapato novo – Regional Massapê" >}}
 
 &nbsp;
 
 ### A ginga do Mané, Regional Massapê (2023)
 
-{{< instagram-reel CzmXMQpsznl "A ginga do Mané – Regional Massapê" >}}
+{{< listen instagram="CzmXMQpsznl" title="A ginga do Mané – Regional Massapê" >}}
 
 &nbsp;
 
@@ -82,19 +82,19 @@ With Gaudiê Otero on guitar and Sara Yamit on vocals.
 
 ### Cover: Butterfly by Herbie Hancock (2014)
 
-{{< soundcloud-track 148905172 >}}
+{{< listen soundcloud_url="https://soundcloud.com/mistible/butterfly" >}}
 
 &nbsp;
 
 ### Original: Ocean (2000)
 
-{{< soundcloud-track 211181460 >}}
+{{< listen soundcloud_url="https://soundcloud.com/maciej-blizinski/ocean" >}}
 
 &nbsp;
 
 ### Original: Burza (2000)
 
-{{< soundcloud-track 211181370 >}}
+{{< listen soundcloud_url="https://soundcloud.com/maciej-blizinski/burza" >}}
 
 &nbsp;
 

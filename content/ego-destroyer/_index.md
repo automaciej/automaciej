@@ -34,4 +34,4 @@ you play.
 
 &nbsp;
 
-{{< instagram-reel DPttqZ-DFIa "Ego Destroyer Metronome in action" >}}
+{{< listen instagram="DPttqZ-DFIa" title="Ego Destroyer Metronome in action" >}}

@@ -1,7 +1,7 @@
 {{- $p := .page -}}
 {{- $links := $p.Params.links -}}
 {{- $hasPlayback := $p.Params.tracks -}}
-{{- if and (not $hasPlayback) $links }}{{ if or $links.bandcamp_album $links.bandcamp_track $links.instagram $links.soundcloud }}{{ $hasPlayback = true }}{{ end }}{{ end -}}
+{{- if and (not $hasPlayback) $links }}{{ if or $links.bandcamp_album $links.bandcamp_track $links.instagram $links.soundcloud_url }}{{ $hasPlayback = true }}{{ end }}{{ end -}}
 {{- if $hasPlayback -}}
 <div class="music-playback">
     <h3 class="music-playback-heading">Listen to {{ $p.Title }}{{ if not $p.Params.tracks }} (full track){{ end }}</h3>
@@ -10,11 +10,11 @@
     {{ with $p.Params.links }}
     <div class="music-links">
         {{ if .bandcamp_album }}
-        <div class="embed bandcamp-embed">
-            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ .bandcamp_album }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
-                <a href="{{ .bandcamp_url }}">Listen on Bandcamp</a>
-            </iframe>
+        {{ with .bandcamp_url }}
+        <div class="embed streaming-link">
+            <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
         </div>
+        {{ end }}
         {{ end }}
     </div>
     {{ end }}
@@ -37,15 +37,15 @@
             {{ with .links }}
             <div class="track-links">
                 {{ if .bandcamp_track }}
-                <div class="embed bandcamp-embed">
-                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track={{ .bandcamp_track }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
-                        <a href="{{ .bandcamp_url }}">Listen on Bandcamp</a>
-                    </iframe>
+                {{ with .bandcamp_url }}
+                <div class="embed streaming-link">
+                    <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
                 </div>
                 {{ end }}
-                {{ if .soundcloud }}
-                <div class="embed soundcloud-embed">
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .soundcloud }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                {{ end }}
+                {{ with .soundcloud_url }}
+                <div class="embed streaming-link">
+                    <a href="{{ . }}" target="_blank" rel="noopener">Listen on SoundCloud</a>
                 </div>
                 {{ end }}
                 {{ if .instagram }}
@@ -80,19 +80,19 @@
     {{ with $p.Params.links }}
     <div class="music-links">
         {{ if .bandcamp_album }}
-        <div class="embed bandcamp-embed">
-            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ .bandcamp_album }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
-                <a href="{{ .bandcamp_url }}">Listen on Bandcamp</a>
-            </iframe>
+        {{ with .bandcamp_url }}
+        <div class="embed streaming-link">
+            <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
         </div>
+        {{ end }}
         {{ end }}
 
         {{ if .bandcamp_track }}
-        <div class="embed bandcamp-embed">
-            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track={{ .bandcamp_track }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
-                <a href="{{ .bandcamp_url }}">Listen on Bandcamp</a>
-            </iframe>
+        {{ with .bandcamp_url }}
+        <div class="embed streaming-link">
+            <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
         </div>
+        {{ end }}
         {{ end }}
 
         {{ if .instagram }}
@@ -103,9 +103,9 @@
         </div>
         {{ end }}
 
-        {{ if .soundcloud }}
-        <div class="embed soundcloud-embed">
-            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .soundcloud }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        {{ with .soundcloud_url }}
+        <div class="embed streaming-link">
+            <a href="{{ . }}" target="_blank" rel="noopener">Listen on SoundCloud</a>
         </div>
         {{ end }}
 

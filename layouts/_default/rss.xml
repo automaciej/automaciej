@@ -61,10 +61,27 @@
         {{- if eq .Data.Plural "genres" }}{{ $desc = printf "Releases in the %s genre from %s" .Title site.Title }}{{ else }}{{ $desc = printf "Posts tagged %s from %s" .Title site.Title }}{{ end }}
       {{- end }}
       <description>{{ $desc | transform.XMLEscape | safeHTML }}</description>
-      {{- else if lt $i $fullItems }}
-      <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
       {{- else }}
-      <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      {{- /* A release carries direct listen links (release-level, then per track) so readers can play it from the feed. */}}
+      {{- $listen := "" }}
+      {{- if hasPrefix .RelPermalink "/music/releases/" }}
+        {{- $groups := slice (dict "label" "" "links" .Params.links) }}
+        {{- range .Params.tracks }}{{ $groups = $groups | append (dict "label" .title "links" .links) }}{{ end }}
+        {{- range $groups }}
+          {{- $label := .label }}
+          {{- $items := partial "listen-links.html" (dict "links" .links "release_links" $p.Params.links) }}
+          {{- if $items }}
+            {{- $parts := slice }}
+            {{- range $items }}{{ $parts = $parts | append (printf "<a href=\"%s\">%s</a>" .url .name) }}{{ end }}
+            {{- $listen = printf "%s<p>%s%s</p>" $listen (cond (ne $label "") (printf "%s: " $label) "Listen on ") (delimit $parts " · ") }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+      {{- if lt $i $fullItems }}
+      <description>{{ printf "%s%s" .Content $listen | transform.XMLEscape | safeHTML }}</description>
+      {{- else }}
+      <description>{{ printf "%s%s" .Summary $listen | transform.XMLEscape | safeHTML }}</description>
+      {{- end }}
       {{- end }}
       {{- /* Image: page resource named by `image`, else the first jpg resource, else a static path. */}}
       {{- $img := "" }}

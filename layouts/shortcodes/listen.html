@@ -1,0 +1,17 @@
+{{/*
+    {{< listen spotify_track="ID" >}} — links to where a piece can be heard, instead of embedding a player
+    (third-party players set cookies). Takes the same keys as a release's `links` front matter:
+    spotify_track / spotify_album / spotify_artist, apple_music_album (+ apple_music_track),
+    youtube_music_track / youtube_music_album, bandcamp_url, soundcloud_url, instagram (reel ID).
+    Optional title="" names the piece in the link text.
+*/}}
+{{- $links := dict -}}
+{{- range $k, $v := .Params }}{{ if ne $k "title" }}{{ $links = merge $links (dict $k $v) }}{{ end }}{{ end -}}
+{{- $items := partial "listen-links.html" (dict "links" $links) -}}
+{{- if not $items -}}
+{{- errorf "listen shortcode needs a link key such as spotify_track or bandcamp_url: %s" .Position -}}
+{{- end -}}
+{{- $title := .Get "title" -}}
+<p class="listen-links">
+{{- range $it := $items }}<a href="{{ $it.url }}" target="_blank" rel="noopener">{{ with $title }}{{ . }} on {{ end }}{{ $it.name }}</a>{{ end -}}
+</p>

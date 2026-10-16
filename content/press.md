@@ -8,7 +8,7 @@ excludeFromRSS: true
 
 **Sligo Jazz Festival**
 
-{{< instagram-reel "DItF_ktxY_z" >}}
+{{< listen instagram="DItF_ktxY_z" >}}
 
 **Dublin Jazz Jam Session**
 

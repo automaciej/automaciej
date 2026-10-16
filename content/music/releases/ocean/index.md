@@ -35,7 +35,7 @@ credits:
   roles:
   - drums
 links:
-  soundcloud: '211181460'
+  soundcloud_url: https://soundcloud.com/maciej-blizinski/ocean
 ---
 
 Original composition recorded with Funksters in Denmark at Backyard Studio in Aarhus, November 2000.

@@ -351,6 +351,14 @@ class TestFeeds(unittest.TestCase):
                     self.assertIn(host, i.findtext("description"))
                     self.assertTrue(i.findtext("link").startswith(BASE_URL + "/music/releases/"))
 
+    def test_release_feed_items_link_to_listen_services(self):
+        """Release feed items carry direct links to the services (2026-10-16)."""
+        items = self.parse_feed("/music/releases/").findall("item")
+        self.assertTrue(items)
+        with_links = [i for i in items if "Listen on" in i.findtext("description")]
+        self.assertTrue(with_links)
+        self.assertTrue(any("open.spotify.com" in i.findtext("description") for i in with_links))
+
     def test_feed_copyright_is_not_double_escaped(self):
         for section in FEED_SECTIONS:
             with self.subTest(section=section):
@@ -421,6 +429,18 @@ def jsonld_blocks(page):
 
 def types_in(page):
     return {b.get("@type") for b in jsonld_blocks(page)}
+
+
+class TestNoCookieEmbeds(unittest.TestCase):
+    """Third-party players are links; the only iframes left are youtube-nocookie (2026-10-16)."""
+
+    def test_only_nocookie_youtube_iframes(self):
+        bad = {}
+        for f in SITE.root.rglob("*.html"):
+            for src in re.findall(r'<iframe[^>]*\ssrc="([^"]+)"', f.read_text(encoding="utf-8")):
+                if not src.startswith("https://www.youtube-nocookie.com/"):
+                    bad.setdefault(str(f.relative_to(SITE.root)), []).append(src)
+        self.assertEqual(bad, {})
 
 
 class TestStructuredData(unittest.TestCase):

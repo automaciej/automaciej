@@ -173,7 +173,7 @@
                   {{- else if .youtube -}}{{- $url = printf "https://www.youtube.com/watch?v=%s" .youtube -}}
                   {{- else if .apple_music_url -}}{{- $url = .apple_music_url -}}
                   {{- else if .spotify_url -}}{{- $url = .spotify_url -}}
-                  {{- else if .soundcloud -}}{{- $url = printf "https://soundcloud.com/tracks/%s" .soundcloud -}}
+                  {{- else if .soundcloud_url -}}{{- $url = .soundcloud_url -}}
                   {{- end -}}
                 {{- end -}}
                 <li>"{{ .Title }}"{{ with $url }} — <a href="{{ . }}">{{ . }}</a>{{ end }}</li>

@@ -30,7 +30,7 @@ credits:
   roles:
   - flute
 links:
-  soundcloud: '148905172'
+  soundcloud_url: https://soundcloud.com/mistible/butterfly
 ---
 
 A cover of Herbie Hancock's "Butterfly" recorded in 2014, featuring Marzena Finucane-Rusak on vocals, Lucyna Pałzewicz on piano, Sylwester Ochmański on flute and Chris Hokamp on drums, with Maciej Bliziński on bass and recording/mixing.

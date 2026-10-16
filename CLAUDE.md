@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Maciej Bliziński's personal website and music portfolio at [blizin.ski](https://blizin.ski), built with Hugo. The site has several content streams: a music portfolio (releases, projects, performances), app pages (7 apps across iOS/macOS/Android/Web/Linux/Windows — not iOS-only), a Polish-language blog (Jogger) dating back to 2001, and a separate English blog.
+Maciej Bliziński's personal website and music portfolio at [blizin.ski](https://blizin.ski), built with Hugo. The site has several content streams: a music portfolio (releases, projects, performances), app pages (across several platforms, not iOS-only), a Polish-language blog (Jogger) dating back to 2001, and a separate English blog.
 
 ## Commands
 
@@ -41,60 +41,33 @@ python3 util/jogger_to_pdf.py               # Export Jogger blog to PDF (needs p
 
 ## Architecture
 
-### Content vs. Data separation
+Detailed, dated descriptions live in `Docs/`; start with `Docs/2026-10-16-site-architecture.md`
+(content vs. data, release link formats, collaborator projects, per-service song lists, theme,
+Jogger, homepage, deployment, CSS). Read the relevant doc before changing that area, and update or
+add a dated doc there rather than expanding this file.
 
-- **Markdown/content pages** (`/content/`) — Jogger (Polish blog), English blog (`/blog/`), music releases (`/music/releases/<slug>/`), app support/landing pages, genres taxonomy, static EPK pages (bio, photos, press, performances)
-- **TOML data files** (`/data/`) — App definitions (`/data/apps/`), performances (`/data/performances/`), and a couple of not-yet-migrated music releases (`/data/music/`)
+Principles that hold across the repo:
 
-Music releases are primarily **content pages**, not data files: each lives at `content/music/releases/<slug>/index.md` (YAML front matter: title, artist, genres, release_date, project, image, credits, links), rendered via a dedicated single-page layout. `/data/music/*.toml` still exists but only for the newest release or two that hasn't been migrated to a content page yet — when adding a new release, follow the existing `content/music/releases/*` examples, not the TOML format.
-
-`links.youtube` in release front matter is a **bare video ID**, not a full URL (e.g. `youtube: YlDtj9GgfdY`, not `https://www.youtube.com/watch?v=...`) — true at both album level and per-track level. Spotify and Apple Music are bare IDs too, one key per kind: `spotify_track`, `spotify_album`, `spotify_artist`, `apple_music_track`, `apple_music_album` (also valid per track under `tracks[].links`; a track that only has `apple_music_track` takes the album ID from the release's `apple_music_album`). URLs and embed URLs are built from them in `partials/music-service-urls.html`; the `{{< spotify >}}` / `{{< apple >}}` shortcodes and the `/music/spotify`, `/music/apple` and `/music/youtube` lists use the same IDs. YouTube Music reuses the existing `youtube` video ID (a `music.youtube.com/watch?v=` link plays the same video); set `youtube_music_track` only when the YouTube Music ID differs, or `youtube_music_album` (an `OLAK5uy_…` playlist ID) for an album. Other `links.*` keys (bandcamp_url, streaming, deezer, tidal, amazon_music, etc.) are full URLs. When adding any link field, grep existing `content/music/releases/*/index.md` for that key first to match its format rather than assuming a URL.
-
-Apps and performances remain purely data-driven (`/data/*.toml`), rendered via templates/partials. There are 7 apps (`task_compass`, `ego_destroyer`, `roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`) spanning iOS, macOS, Android, Web, Linux, and Windows — not all iOS. Some apps (e.g. `ego-destroyer`) have their own content section for update posts.
-
-Collaborator projects are **content pages**, not data files: each lives at `content/music/projects/<slug>/_index.md`. Front matter (`type: "music-project"`) carries `params.key` (the slug, used to match performances' and releases' `project` field) plus optional `params.country`, `params.start_year`, `params.end_year`, `params.url`, and `params.with` (a list of collaborator names). The page `title` is the project's display name — there is no separate `name` field. `params.roles` is intentionally not tracked here; it's inferable from release credits. The page body (Markdown) is the project description, rendered via `.Content`/`.Plain` — not a `description` field. `/data/projects/*.toml` no longer exists; templates read project metadata from these content pages' `Params`/`Title`/`Plain` directly (e.g. via `$.Site.GetPage (printf "/music/projects/%s" $key)`), not `hugo.Data.projects`.
-
-### Per-service song lists
-
-`/music/spotify/`, `/music/apple/` and `/music/youtube/` are reverse-chronological lists of releases that have a direct link on that service, rendered as embeds. They are content pages (`content/music/spotify.md`, `apple.md`, `youtube.md`) using `layout: streaming` (`themes/multi-stream/layouts/music/streaming.html`); the front matter `service_key` (`spotify` / `apple_music` / `youtube_music`) picks the service and `title` is the service name ("Spotify", "Apple Music", "YouTube Music"), from which the page title ("Maciej Bliziński: Music on Spotify"), breadcrumb and embed titles are composed. Per release: if any `tracks[]` has an ID for the service, each such track is listed; otherwise the release-level ID is used. Artist-only Spotify links (`spotify_artist`) are skipped, future-dated and draft releases are skipped. The player markup lives in `partials/streaming-embed.html` (iframe) and `partials/streaming-link.html` (Spotify text link / Apple "Listen on Apple Music" badge), shared with the `{{< spotify >}}` / `{{< apple >}}` shortcodes (`layouts/shortcodes/`). Adding another service means a new content page plus a branch in `music-service-urls.html` and `streaming-embed.html`.
-
-Each per-service page also has its own RSS feed (`/music/<service>/index.xml`): front matter `outputs: [html, rss]` plus `themes/multi-stream/layouts/music/streaming.rss.xml`, which reuses `streaming-items.html` so the feed lists exactly the page's songs. Item `<link>` is the release page, the description holds the "Listen on <service>" link, and the head autodiscovery link appears automatically. A new service page needs the `outputs` line to get a feed.
-
-### Theme
-
-The active theme is `themes/multi-stream/` (custom), set via `theme = "multi-stream"` in `config.toml`. This is a plain directory, not a git submodule (no `.gitmodules` in the repo). `themes/musician/` is leftover cruft — an empty directory tree (`static/js/`, no files) not referenced by any config; safe to ignore or delete. The old `hugo-split-theme` has already been fully removed from the repo. Template precedence follows standard Hugo lookup order: project-level `layouts/` overrides theme templates.
-
-### Jogger blog
-
-- 173 posts in `/content/jogger/`, written in Polish, dating back to 2001
-- Front matter is a **mix of TOML (`+++...+++`) and YAML (`---...---`)** — roughly 94 TOML / 79 YAML as of this writing. This is a migration in progress, not a settled convention; any script or tool touching Jogger front matter must handle both formats.
-- Permalink pattern: `/jogger/:year/:contentbasename/`
-- Explicitly excluded from the homepage (language separation); appears only on `/jogger/`
-
-### Homepage layout
-
-Three columns on desktop (`grid-template-columns: 1fr 1fr 1fr` at ≥1024px), stacked on mobile/tablet (order: Music, Apps, Bio on tablet):
-- **Music** — latest 3 releases, same preview-card component used on `/music/`
-- **Apps** — featured apps + latest update posts
-- **Bio** — bio summary, plus a nested "Blog" sub-list (latest 2 posts from `/blog/`, the English blog — distinct from Jogger)
-
-Jogger posts do not appear on the homepage (language separation); the English blog does.
-
-### Deployment
-
-Production target: `atemoia.blizinski.pl:www/blizin.ski` via rsync (755 dirs, 644 files). Preview deployment configuration lives in `private_cfg.sh` (gitignored).
-
-### URL preservation
-
-~93 URL aliases are maintained via `aliases:`/`aliases =` in front matter across content files. Do not remove these when editing pages.
+- **Content vs. data.** Releases, collaborator projects, the blogs and static pages are Markdown
+  content pages; apps and performances are TOML in `data/`. Follow the newest existing examples
+  when adding an item, and grep existing front matter for a key's format before adding it.
+- **Theme.** The active theme is the custom `themes/multi-stream/`; project-level `layouts/`
+  overrides it. Shortcodes live in `layouts/shortcodes/`.
+- **No cookie-setting embeds.** Music services and social posts are links, not iframes; the only
+  embeds are `youtube-nocookie.com` players. `util/test_site_expectations.py` enforces this.
+- **Jogger** is Polish, stays off the homepage, and its front matter is a mix of TOML and YAML, so
+  tools touching it must handle both.
+- **CSS** is hand-written with no framework, mobile-first, with canonical breakpoints (phones
+  `max-width: 767px`, tablet `768px`–`1023px`, desktop `min-width: 1024px`). See "CSS Architecture"
+  in `Docs/2025-11-12-multi-stream-theme.md`.
+- **Deployment** goes through `./util/deploy.sh`; preview settings live in the gitignored
+  `private_cfg.sh`.
+- **URL preservation.** Many URL aliases are kept in front matter (`aliases:` / `aliases =`). Do not
+  remove them when editing pages.
 
 ### HTML templates
 
 When closing a `<div>` (or other container tag) in template files, annotate the closing tag with its class: `<div class="foo">` ... `</div><!-- foo -->`. Helps track matching tags in templates with deep nesting.
-
-### CSS
-
-No CSS framework — `themes/multi-stream/assets/css/main.css` is 100% hand-written, custom CSS (despite what earlier versions of this file claimed about Pico CSS). Mobile-first with three canonical breakpoints: narrow/phones (`max-width: 767px`), tablet (`768px`–`1023px`), desktop (`min-width: 1024px`); a few grids (`.projects-grid`, `.genres-grid`) intentionally use their own `640px` breakpoint tied to their own column math. See `Docs/2025-11-12-multi-stream-theme.md`'s "CSS Architecture" section for the full reasoning (fluid `.container`, gap-based list spacing instead of per-card margins, why rules for one selector must stay co-located rather than scattered across the file).
 
 ### Before committing
 
@@ -102,8 +75,6 @@ Before running `git commit`, run `git diff` (staged + unstaged) and read it agai
 instruction/intent that prompted the change. Confirm every hunk is explained by that intent —
 no stray edits, no leftover debug code, no unrelated files swept in. Do this each time, even for
 small changes.
-
-### Before committing
 
 Run the site expectations test; it builds the site and checks head tags,
 structured data, feeds, links, and the /bio/ releases list:

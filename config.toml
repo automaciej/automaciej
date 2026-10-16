@@ -96,6 +96,9 @@ copyright = "&copy;2026 Maciej Bliziński"
 [blackfriday]
   # W przypisach mamy rzeczy typu "2010/4" które są formami dat.
   fractions = false
+[privacy.youtube]
+  # The youtube shortcode embeds from youtube-nocookie.com.
+  privacyEnhanced = true
 [imaging.exif]
   includeFields = ".*"
 

@@ -35,7 +35,7 @@ credits:
   roles:
   - drums
 links:
-  soundcloud: '211181370'
+  soundcloud_url: https://soundcloud.com/maciej-blizinski/burza
 ---
 
 Original composition recorded with Funksters in Denmark at Backyard Studio in Aarhus, November 2000. Completed in just 11 hours of studio time.
