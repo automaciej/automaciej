@@ -238,6 +238,19 @@ class TestSocialTags(unittest.TestCase):
         self.assertTrue(img, "homepage has no og:image")
         self.assertEqual(SITE.pages["/"].meta_one("twitter:image"), img)
 
+    def test_release_list_pages_use_latest_release_cover(self):
+        """/music/ lost its og:image when the site-logo fallback was dropped."""
+        for url in ("/", "/music/", "/music/spotify/", "/music/apple/", "/music/youtube/",
+                    "/music/projects/gaia_marenghi/", "/genres/", "/genres/jazz/"):
+            with self.subTest(url=url):
+                self.assertIn(url, SITE.pages)
+                self.assertTrue(SITE.pages[url].meta_one("og:image"), f"{url} has no og:image")
+                self.assertEqual(SITE.pages[url].meta_one("twitter:image"), SITE.pages[url].meta_one("og:image"))
+
+    def test_music_page_social_image_is_newest_cover_like_homepage(self):
+        """/music/ and / list the same releases, so they share one cover."""
+        self.assertEqual(SITE.pages["/music/"].meta_one("og:image"), SITE.pages["/"].meta_one("og:image"))
+
     def test_local_social_images_exist_in_output(self):
         bad = []
         for url, p in SITE.pages.items():

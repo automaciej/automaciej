@@ -1,24 +1,10 @@
 {{ define "head_extra" }}
 {{- $key := .Params.key -}}
-{{- $ogImage := "" -}}
+{{ $img := "" }}
 {{- if $key -}}
-  {{- $music := slice -}}
-  {{- range (partial "release-pages.html" .) -}}
-    {{- if eq .Params.project $key -}}
-      {{- $music = $music | append . -}}
-    {{- end -}}
-  {{- end -}}
-  {{- $music = sort $music "Params.release_date" "desc" -}}
-  {{- with $music -}}
-  {{- $latest := index . 0 -}}
-    {{- with $latest.Params.image -}}
-      {{- with $latest.Resources.GetMatch . -}}
-        {{- $ogImage = (.Resize "1200x webp").Permalink -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
+  {{- $img = partial "release-og-image.html" (where (partial "release-pages.html" .) "Params.project" $key) -}}
 {{- end -}}
-{{ partial "og-tags-default.html" (dict "page" . "image" $ogImage) }}
+{{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
 {{ end }}
 
 {{ define "main" }}

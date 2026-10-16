@@ -1,3 +1,8 @@
+{{ define "head_extra" }}
+{{ $img := partial "release-og-image.html" .Pages }}
+{{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
+{{ end }}
+
 {{ define "main" }}
 {{- $releases := sort .Pages "Params.release_date" "desc" -}}
 <div class="music-project-page">

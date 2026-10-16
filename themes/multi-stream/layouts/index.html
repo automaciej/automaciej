@@ -1,17 +1,6 @@
 {{ define "head_extra" }}
-{{- /* Social image: artwork of the most recent release that has one */ -}}
-{{- $ogImage := "" -}}
-{{- range sort (partial "release-pages.html" .) "Params.release_date" "desc" -}}
-  {{- if not $ogImage -}}
-    {{- $r := . -}}
-    {{- with $r.Params.image -}}
-      {{- with $r.Resources.GetMatch . -}}
-        {{- $ogImage = (.Resize "1200x webp").Permalink -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-{{ partial "og-tags-default.html" (dict "page" . "image" $ogImage) }}
+{{ $img := partial "release-og-image.html" (partial "release-pages.html" .) }}
+{{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
 {{ end }}
 
 {{ define "main" }}

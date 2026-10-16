@@ -1,0 +1,19 @@
+{{- /*
+    Social image for a page that lists releases: the cover of the most recent
+    release (by Params.release_date) that has an image file, resized to 1200px
+    wide. Returns "" when none has one, so the page emits no og:image.
+    Usage: {{ $img := partial "release-og-image.html" $releases }}
+           {{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
+*/ -}}
+{{- $ogImage := "" -}}
+{{- range sort . "Params.release_date" "desc" -}}
+  {{- if not $ogImage -}}
+    {{- $r := . -}}
+    {{- with $r.Params.image -}}
+      {{- with $r.Resources.GetMatch . -}}
+        {{- $ogImage = (.Resize "1200x webp").Permalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $ogImage -}}

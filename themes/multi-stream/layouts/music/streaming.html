@@ -1,17 +1,8 @@
 {{ define "head_extra" }}
-{{- /* Social image: artwork of the most recent listed release that has one */ -}}
-{{- $ogImage := "" -}}
-{{- range partial "streaming-items.html" . -}}
-  {{- if not $ogImage -}}
-    {{- $r := .release -}}
-    {{- with $r.Params.image -}}
-      {{- with $r.Resources.GetMatch . -}}
-        {{- $ogImage = (.Resize "1200x webp").Permalink -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-{{ partial "og-tags-default.html" (dict "page" . "image" $ogImage) }}
+{{- $releases := slice -}}
+{{- range partial "streaming-items.html" . }}{{ $releases = $releases | append .release }}{{ end -}}
+{{ $img := partial "release-og-image.html" $releases }}
+{{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
 {{ end }}
 
 {{ define "main" }}
