@@ -1,5 +1,13 @@
 {{- $p := .page -}}
 {{- $extraClass := .extra_class -}}
+{{- /* Small logos linking straight to the services the release is on (only those with a logo in /music/'s service_icons). */ -}}
+{{- $icons := (site.GetPage "/music").Params.service_icons | default dict -}}
+{{- $svc := partial "music-service-urls.html" (dict "links" $p.Params.links) -}}
+{{- $services := slice -}}
+{{- with $svc.spotify }}{{ $services = $services | append (dict "key" "spotify" "name" "Spotify" "url" .url) }}{{ end -}}
+{{- with $svc.youtube_music }}{{ $services = $services | append (dict "key" "youtube_music" "name" "YouTube" "url" .url) }}{{ end -}}
+{{- with $svc.apple_music }}{{ $services = $services | append (dict "key" "apple_music" "name" "Apple Music" "url" .url) }}{{ end -}}
+{{- with $p.Params.links.bandcamp_url }}{{ $services = $services | append (dict "key" "bandcamp" "name" "Bandcamp" "url" .) }}{{ end -}}
 <article class="music-preview card-shadow{{ with $extraClass }} {{ . }}{{ end }}" data-release-date="{{ $p.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" }}" id="{{ $p.Title | urlize }}">
     <a class="stretched-link" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}"></a>
     {{ $thumb := "" }}
@@ -30,5 +38,14 @@
             {{- with $p.Params.genres }}{{ partial "music-genre-links.html" $p }} • {{ end -}}
             <span class="music-preview-date">{{ dateFormat "Jan 2006" $p.Params.release_date }}</span>
         </div>
+        {{- $shown := slice }}
+        {{- range $services }}{{ if index $icons .key }}{{ $shown = $shown | append . }}{{ end }}{{ end }}
+        {{- with $shown }}
+        <div class="music-preview-services">
+            {{- range . }}
+            <a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on {{ .name }}"><img src="{{ index $icons .key }}" alt="{{ .name }}" width="20" height="20" loading="lazy"></a>
+            {{- end }}
+        </div>
+        {{- end }}
     </div>
 </article>

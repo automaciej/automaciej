@@ -13,6 +13,7 @@ service_icons:
   spotify: /images/services/spotify.png
   apple_music: /images/services/apple_music.svg
   youtube_music: /images/services/youtube_music.svg
+  bandcamp: /images/services/bandcamp.png
 
 ---
 

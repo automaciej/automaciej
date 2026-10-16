@@ -389,6 +389,27 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+/* Service logos at the foot of a card; above the card's stretched link so
+   they open the service directly. */
+.music-preview-services {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.music-preview-services a {
+    position: relative;
+    z-index: 2;
+    display: block;
+    line-height: 0;
+}
+
+.music-preview-services img {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
 /* Apps preview on homepage */
 .app-preview {
     position: relative;
