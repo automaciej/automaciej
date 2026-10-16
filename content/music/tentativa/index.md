@@ -32,6 +32,7 @@ credits:
 links:
   bandcamp_album: '898668530'
   bandcamp_url: https://luisaannibali.bandcamp.com/album/tentativa
+single: false
 ---
 
 "Tentativa" is the studio album debut for the Brasilidades ensemble—Luisa Annibali, Julio Batista, and William Alexandre—exploring the traditions of Choro and Samba. The ten-track album features original music in both Portuguese and Italian.

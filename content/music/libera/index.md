@@ -23,6 +23,7 @@ credits:
 links:
   bandcamp_album: '3135436538'
   bandcamp_url: https://luisaannibali.bandcamp.com/album/libera
+single: false
 ---
 
 "Libera" is a landmark solo album from Luisa Annibali, representing the culmination of five years of songwriting. It blends jazz with Italian lyrics and Latin rhythms, drawing comparisons to artists like Esperanza Spalding and Gretchen Parlato.

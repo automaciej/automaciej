@@ -1,12 +1,16 @@
 {{ define "head_extra" }}
 {{- /* This layout also serves non-release pages (e.g. performances); only releases get music.song tags. */ -}}
 {{- if .Params.release_date -}}
-{{- $type := cond .Params.single "MusicRecording" "MusicAlbum" -}}
+{{- /* An album only when front matter says `single: false`; releases without the key are single recordings. */ -}}
+{{- $isAlbum := and (isset .Params "single") (not .Params.single) -}}
+{{- $type := cond $isAlbum "MusicAlbum" "MusicRecording" -}}
 {{- $imageURL := "" -}}
+{{- $imageRes := false -}}
 {{- with .Params.image -}}
   {{- $img := $.Resources.GetMatch . -}}
   {{- with $img -}}
-    {{- $imageURL = (.Resize "1200x webp").Permalink -}}
+    {{- $imageRes = .Resize "1200x webp" -}}
+    {{- $imageURL = $imageRes.Permalink -}}
   {{- end -}}
 {{- end -}}
 {{- if not $imageURL -}}
@@ -16,6 +20,8 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+{{- /* Social tags never use a generic image; only the JSON-LD image falls back to the site one. */ -}}
+{{- $socialImageURL := $imageURL -}}
 {{- if not $imageURL -}}
   {{- with .Site.Params.shareImage -}}
     {{- $imageURL = printf "%s%s" $.Site.BaseURL . -}}
@@ -34,17 +40,22 @@
 {{- $description := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) -}}
 {{- $artistNames := "" -}}
 {{- with .Params.artist -}}{{- $artistNames = delimit . " x " -}}{{- end -}}
-<meta property="og:type" content="music.song">
+<meta property="og:type" content="{{ cond $isAlbum "music.album" "music.song" }}">
 <meta property="og:title" content="{{ .Title }}{{ with $artistNames }} by {{ . }}{{ end }}">
 {{- with $description }}
 <meta property="og:description" content="{{ . }}">
 {{- end }}
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-{{- with $imageURL }}
+{{- with $socialImageURL }}
 <meta property="og:image" content="{{ . }}">
+{{- with $imageRes }}
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
 {{- end }}
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image:alt" content="Cover art for {{ $.Title }}{{ with $artistNames }} by {{ . }}{{ end }}">
+{{- end }}
+<meta name="twitter:card" content="{{ if $socialImageURL }}summary_large_image{{ else }}summary{{ end }}">
 {{- with .Site.Params.social.twitterHandle }}
 <meta name="twitter:site" content="@{{ . }}">
 {{- end }}
@@ -52,7 +63,7 @@
 {{- with $description }}
 <meta name="twitter:description" content="{{ . }}">
 {{- end }}
-{{- with $imageURL }}
+{{- with $socialImageURL }}
 <meta name="twitter:image" content="{{ . }}">
 {{- end }}
 <script type="application/ld+json">

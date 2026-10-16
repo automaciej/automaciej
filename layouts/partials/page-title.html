@@ -7,6 +7,9 @@
     {{- .Site.Title }}: on {{ .Title -}}
 {{- else if .IsPage -}}
     {{- .Title }} - {{ if .CurrentSection.IsHome }}{{ .Site.Title }}{{ else }}{{ .CurrentSection.Title }}{{ end -}}
+{{- else if and (eq .Section "music") .Parent (not .Parent.IsHome) -}}
+    {{- /* Sections below /music/: same "Title - Music Production" suffix as the pages */ -}}
+    {{- .Title }} - {{ .Parent.Title -}}
 {{- else -}}
     {{/* This covers sections, taxonomies, etc. */}}
     {{- .Title }} - {{ .Site.Title -}}

@@ -45,6 +45,7 @@ links:
   spotify_artist: 03O62Zr8kTEdrK1u4DMqq3
   spotify_album: 6WzZIe07dpa3fVop3SZuSh
   apple_music_album: '1821993018'
+single: false
 ---
 
 EP production for Emily Jane's debut album.

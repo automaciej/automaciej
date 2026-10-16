@@ -313,6 +313,51 @@ class TestSocialTags(unittest.TestCase):
                 self.assertRegex(SITE.pages[url].title, r"on (Spotify|Apple Music|YouTube Music)")
 
 
+class TestMusicSocialTags(unittest.TestCase):
+    """Social tags in /music (2026-10-15 audit, Docs/social-jsonld-audit.md)."""
+
+    SECTION_PAGES = ["/music/", "/music/projects/",
+                     "/music/performances/", "/music/credits/"]
+
+    def test_only_the_homepage_may_use_a_non_specific_image(self):
+        """Release pages without a cover must not fall back to the site share image."""
+        for url, p in SITE.pages.items():
+            if RELEASE_URL.match(url):
+                img = p.meta_one("og:image") or ""
+                self.assertNotIn("maciej_on_bass", img, url)
+                card = p.meta_one("twitter:card")
+                self.assertEqual(card, "summary_large_image" if img else "summary", url)
+
+    def test_albums_are_music_album_and_singles_music_song(self):
+        self.assertEqual(SITE.pages["/music/libera/"].meta_one("og:type"), "music.album")
+        self.assertEqual(SITE.pages["/music/river/"].meta_one("og:type"), "music.song")
+        # no `single:` key = a single recording (old releases)
+        self.assertEqual(SITE.pages["/music/burza/"].meta_one("og:type"), "music.song")
+
+    def test_music_sections_have_their_own_description(self):
+        site_default = SITE.pages["/"].meta_one("description")
+        for url in self.SECTION_PAGES:
+            with self.subTest(url=url):
+                d = SITE.pages[url].meta_one("description")
+                self.assertNotEqual(d, site_default)
+                self.assertLess(len(d), 200, "description looks like a body dump")
+
+    def test_music_titles_share_one_suffix(self):
+        for url in self.SECTION_PAGES[1:]:
+            with self.subTest(url=url):
+                self.assertTrue(SITE.pages[url].title.strip().endswith("- Music Production"))
+
+    def test_index_style_pages_are_not_articles(self):
+        for url in ("/music/credits/", "/music/performances/", "/music/spotify/"):
+            self.assertEqual(SITE.pages[url].meta_one("og:type"), "website", url)
+
+    def test_local_cover_images_declare_size_and_alt(self):
+        p = SITE.pages["/music/libera/"]
+        self.assertTrue(p.meta_one("og:image:width"))
+        self.assertTrue(p.meta_one("og:image:height"))
+        self.assertIn("Libera", p.meta_one("og:image:alt"))
+
+
 class TestFeeds(unittest.TestCase):
     """RSS feeds and autodiscovery (60f8eb0)."""
 

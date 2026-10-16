@@ -126,3 +126,83 @@ All items from "Other findings" above, fixed:
 
 All fixes verified with a full `hugo --cleanDestinationDir` rebuild (293
 pages, zero errors) plus targeted greps against `public/` for each item.
+
+---
+
+# Audit: social tags in the /music section
+
+Date: 2026-10-15
+
+Scope: OpenGraph/Twitter tags on `/music/` and everything below it, read from a
+fresh `hugo` build.
+
+## Findings
+
+1. **`/music/` has a junk description.** Front matter has `description: ""`,
+   so the tags fall back to `.Summary`, which is a run-on dump of the body
+   ("Music Production Selected Productions To Promenade by emily jane (June
+   2025) Je te veux by Zoe Hayter ...").
+   - Correction to the first read of this: the body of `content/music/_index.md`
+     is stale (stops at 2025, 13 productions vs 26 releases) but is **not
+     rendered**: `music/list.html` draws live release cards. It only leaks into
+     the description via `.Summary`, so the fix is a real description, not a
+     body rewrite.
+2. **`/music/releases/`, `/music/projects/`, `/music/performances/` use the
+   site-wide tagline** ("Dublin-based musician and software engineer.") as
+   description. No `description` in their front matter.
+3. **Inconsistent title suffixes.** `/music/releases/` and `/music/projects/`
+   end in "- Maciej Bliziński"; `/music/credits/` and `/music/performances/`
+   end in "- Music Production".
+4. **Album releases are tagged `og:type=music.song`** (Libera, Tentativa),
+   although the JSON-LD already switches between `MusicAlbum` and
+   `MusicRecording` on `single`.
+5. **Generic image on release pages.** Releases without a cover or YouTube
+   video (Burza, Ocean, Butterfly, the Regional Massapê tracks, the guitar
+   duo session) fall back to the site `shareImage` portrait and are tagged
+   `summary_large_image`.
+   - Already handled before this entry: the site-logo fallback in
+     `og-tags-default.html` was removed in `d504d99`, so the index-style pages
+     emit no image and `twitter:card=summary`.
+6. **`og:type=article` on non-article pages** (`/music/credits/`,
+   `/music/performances/`, `/music/spotify|apple|youtube/`).
+7. **No `og:image:width`/`height`/`alt`** on pages whose image is a local
+   resource.
+
+Policy decided with this entry: the site-wide image is served only on the
+homepage. Every other page emits `og:image` only for an entry-specific or
+section-specific image.
+
+## Implementation log
+
+1. **`/music/` description**: set a real `description` in
+   `content/music/_index.md`. The stale body was left alone (not rendered).
+2. **Section descriptions**: added `description` to `music/projects/_index.md`
+   and `music/performances.md` (a `music/releases/_index.md` description was
+   dropped when upstream moved releases to `/music/<slug>/` and deleted that
+   page). `music/list.html` also prints `description` under the heading, so
+   `/music/` now shows that line too.
+3. **Titles**: `partials/page-title.html` now suffixes sections below `/music/`
+   with their parent section ("Projects - Music Production",
+   "Arthur's Jazz Jam - Projects"), matching what pages already did.
+   `/music/` itself keeps "- Maciej Bliziński".
+4. **og:type music.album**: release pages use `music.album`/`MusicAlbum` only
+   when front matter has `single: false`. First attempt used
+   `cond .Params.single`, which tagged the 10 old single recordings (no
+   `single` key) as albums too. Added `single: false` to Libera, Tentativa and
+   To Promenade, the only real albums, and made the JSON-LD `@type` use the
+   same rule (old recordings are now `MusicRecording` there as well).
+5. **Generic image**: release pages no longer use `params.shareImage` for
+   `og:image`/`twitter:image` and send `twitter:card=summary` when they have no
+   cover or YouTube thumbnail. The JSON-LD `image` keeps the fallback, since
+   `test_release_pages_have_jsonld_image` requires it.
+6. **og:type article**: `og-tags-default.html` uses `article` only for dated
+   pages; credits, performances and the per-service lists are `website`.
+7. **Image size/alt**: `og:image:width`/`height` for local images (default
+   partial and release pages), `og:image:alt` ("Cover art for ...") on releases.
+
+Tests: new `TestMusicSocialTags` in `util/test_site_expectations.py`. Rebased
+onto upstream's `/music/<slug>/` move (release tests use the new URLs). Full
+suite passes.
+
+Not done: `/music/` and the other section pages have no section-specific
+image, so they emit none, per the policy above.

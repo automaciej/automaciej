@@ -10,27 +10,32 @@
 {{ $ogTitle := partial "page-title.html" $page }}
 
 {{ $ogImage := $imageOverride }}
+{{ $ogImageRes := false }}
 {{ if not $ogImage }}
     {{ with $page.Params.image }}
         {{ $imgRes := $page.Resources.GetMatch . }}
         {{ if $imgRes }}
             {{ $ogImage = $imgRes.Permalink }}
+            {{ $ogImageRes = $imgRes }}
         {{ else }}
             {{ $ogImage = . | absURL }}
         {{ end }}
     {{ else }}
         {{ with $page.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
             {{ $ogImage = .Permalink }}
+            {{ $ogImageRes = . }}
         {{ end }}
     {{ end }}
 {{ end }}
 
-<meta property="og:type" content="{{ if $page.IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if and $page.IsPage (not $page.Date.IsZero) }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDescription }}">
 <meta property="og:url" content="{{ $page.Permalink }}">
 <meta property="og:site_name" content="{{ $page.Site.Title }}">
 {{ with $ogImage }}<meta property="og:image" content="{{ . }}">{{ end }}
+{{ with $ogImageRes }}<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">{{ end }}
 
 <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
 {{ with $page.Site.Params.social.twitterHandle }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
