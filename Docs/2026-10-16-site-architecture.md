@@ -64,7 +64,9 @@ have their own content section for update posts.
 Content pages at `content/music/projects/<slug>/_index.md`, `type: "music-project"`.
 `params.key` is the slug, matched against performances' and releases' `project`
 field. Optional: `params.country`, `start_year`, `end_year`, `url`, `with` (list
-of collaborator names). The page `title` is the display name (no separate `name`);
+of collaborator names), `image` (a file in the project's folder). The project card thumbnail on
+`/music/projects/` is that `image`, else the cover of the newest release with one, else the waveform
+placeholder. The page `title` is the display name (no separate `name`);
 the Markdown body is the description (not a `description` field). `params.roles`
 is deliberately not tracked; it is inferable from release credits. Templates read
 these pages via `$.Site.GetPage (printf "/music/projects/%s" $key)`. There is no

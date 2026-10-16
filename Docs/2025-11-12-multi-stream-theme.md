@@ -436,7 +436,7 @@ narrow (`max-width: 767px`) → tablet → wide. There is no separate "mobile st
 `TestCssStructure` in `util/test_site_expectations.py` enforces it: no media block with many
 unrelated rules, no selector overridden in two blocks of one query, no override before its base.
 
-Shared pieces, so that pages stay consistent: the **card row** (`.card-row`, section 9 of `main.css`) is the phone layout of every artwork card (`.music-preview`, `.project-card`): 120px square artwork flush to the card's left/top/bottom, then a text column with one-line `.card-row-title` / `.card-row-meta` lines. Cards opt in with `class="… card-row"`, `.card-row-art > img` and `.card-row-body`; don't re-implement it per card. Also: `.section-header` (page title), `.section-label`
+Shared pieces, so that pages stay consistent: the **card row** (`.card-row`, section 3 of `main.css`) is the row layout of every artwork card: 120px square artwork flush to the card's left/top/bottom, then a text column with one-line `.card-row-title` / `.card-row-meta` lines. It is unconditional: `.project-card` uses it at every width, and `.music-preview` uses it below 768px, then undoes it in one "From 768px up" block in the music preview rules (which must stay after the card-row block in the file). Cards opt in with `class="… card-row"`, `.card-row-art > img` and `.card-row-body`; don't re-implement it per card. Also: `.section-header` (page title), `.section-label`
 (small uppercase group heading: Active/Past, Performances/Releases), the card chrome shared by
 `.post-card`, `.card-shadow`, `.genre-card` and `.project-card` (shadow, ring on hover), and one
 page wrapper for `/music/` and project pages (`.music-page, .music-project-page`). Don't use

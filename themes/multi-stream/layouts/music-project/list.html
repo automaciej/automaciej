@@ -99,6 +99,7 @@
     {{- range .Sections -}}
       {{- $key := .Params.key -}}
       {{- $proj := .Params -}}
+      {{- $projPage := . -}}
 
       {{- $perfCount := 0 -}}
       {{- range hugo.Data.performances -}}
@@ -115,19 +116,27 @@
       {{- end -}}
       {{- $projectReleases = sort $projectReleases "Params.release_date" "desc" -}}
 
+      {{- /* Thumbnail: the project's own image, else the newest release that has a cover,
+             else none (the card shows the waveform placeholder). */ -}}
+      {{- $imgRes := "" -}}
+      {{- with $proj.image -}}
+        {{- with $projPage.Resources.GetMatch . -}}{{- $imgRes = . -}}{{- end -}}
+      {{- end -}}
+      {{- if not $imgRes -}}
+        {{- range $projectReleases -}}
+          {{- if not $imgRes -}}
+            {{- $rel := . -}}
+            {{- with .Params.image -}}
+              {{- with $rel.Resources.GetMatch . -}}{{- $imgRes = . -}}{{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
       {{- $thumb := "" -}}
       {{- $srcset := "" -}}
-      {{- with $projectReleases -}}
-        {{- $latest := index . 0 -}}
-        {{- with $latest.Params.image -}}
-        {{- with $latest.Resources.GetMatch . -}}
-        {{- $img := . -}}
-        {{- $thumb = $img.Resize "320x webp" -}}
-        {{- $w160 := $img.Resize "160x webp" -}}
-        {{- $w320 := $thumb -}}
-        {{- $srcset = printf "%s 160w, %s 320w" $w160.RelPermalink $w320.RelPermalink -}}
-        {{- end -}}
-        {{- end -}}
+      {{- with $imgRes -}}
+        {{- $thumb = .Resize "320x webp" -}}
+        {{- $srcset = printf "%s 160w, %s 320w" (.Resize "160x webp").RelPermalink $thumb.RelPermalink -}}
       {{- end -}}
 
       {{- $entry := dict
@@ -179,20 +188,20 @@
 
 {{- define "project-card" -}}
 <a href="{{ .permalink }}" class="project-card card-row">
-  {{- with .thumb -}}
   <div class="card-row-art">
-    <img class="project-card-thumb" src="{{ .RelPermalink }}" srcset="{{ $.srcset }}" sizes="(max-width: 767px) 120px, 56px" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+    {{- with .thumb -}}
+    <img src="{{ .RelPermalink }}" srcset="{{ $.srcset }}" sizes="120px" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+    {{- else -}}
+    {{ partial "waveform-placeholder.html" }}
+    {{- end -}}
   </div><!-- card-row-art -->
-  {{- end -}}
   <div class="card-row-body">
-    <div class="project-card-titles">
-      <h2 class="card-row-title">{{ .title }}</h2>
-      <span class="project-years card-row-meta">
-        {{- with .end_year -}}
-          {{- $.start_year -}}{{- if ne . $.start_year -}}–{{ . }}{{- end -}}
-        {{- else -}}since {{ .start_year }}{{- end -}}
-      </span>
-    </div><!-- project-card-titles -->
+    <h2 class="card-row-title">{{ .title }}</h2>
+    <span class="project-years card-row-meta">
+      {{- with .end_year -}}
+        {{- $.start_year -}}{{- if ne . $.start_year -}}–{{ . }}{{- end -}}
+      {{- else -}}since {{ .start_year }}{{- end -}}
+    </span>
     <div class="project-stats">
       {{- if .perfCount -}}<span>{{ .perfCount }} performance{{ if gt .perfCount 1 }}s{{ end }}</span>{{- end -}}
       {{- if .musicCount -}}<span>{{ .musicCount }} release{{ if gt .musicCount 1 }}s{{ end }}</span>{{- end -}}
