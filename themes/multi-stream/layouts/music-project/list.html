@@ -30,6 +30,15 @@
     {{- end -}}
     {{- $music = sort $music "Params.release_date" "desc" -}}
 
+    {{- /* The project's own image, shown beside the text like a release cover. Without one the
+           page is a plain column (no .cover-layout, so no empty right-hand column). */ -}}
+    {{- $cover := "" -}}
+    {{- with $proj.image -}}
+      {{- with $.Resources.GetMatch . -}}{{- $cover = .Resize "1600x webp" -}}{{- end -}}
+    {{- end -}}
+
+    <div{{ if $cover }} class="cover-layout"{{ end }}>
+    <div class="cover-layout-header">
     <header class="section-header">
       <h1>{{ .Title }}</h1>
       <dl>
@@ -57,7 +66,15 @@
         {{ end }}
       </dl>
     </header>
+    </div><!-- cover-layout-header -->
 
+    {{ with $cover }}
+    <div class="cover-layout-cover">
+      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" width="{{ .Width }}" height="{{ .Height }}">
+    </div><!-- cover-layout-cover -->
+    {{ end }}
+
+    <div class="cover-layout-body">
     {{ with .Content }}
     <div class="project-content">{{ . }}</div>
     {{ end }}
@@ -87,6 +104,8 @@
       </div>
     </section>
     {{ end }}
+    </div><!-- cover-layout-body -->
+    </div><!-- cover-layout -->
 
     {{- else -}}
 

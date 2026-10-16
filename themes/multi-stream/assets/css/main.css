@@ -1667,13 +1667,12 @@ main ol
     margin: 1rem 0;
 }
 
-/* Release page: dedicated layout, description/links/tracks reuse music-content styles */
+/* Cover layout (release and project pages): header, cover image and body. Stacked in that
+   order on narrow screens; from 1024px the cover sits in a right-hand column beside the
+   header and body. Markup: .cover-layout > .cover-layout-header + .cover-layout-cover +
+   .cover-layout-body. A page without a cover omits the .cover-layout class (no empty column). */
 
-.music-release {
-    margin-bottom: 2rem;
-}
-
-.music-release-grid {
+.cover-layout {
     display: grid;
     grid-template-areas:
         "header"
@@ -1682,8 +1681,14 @@ main ol
     gap: 1.5rem;
 }
 
-.music-release-header {
+.cover-layout-header {
     grid-area: header;
+}
+
+/* Release page: dedicated layout, description/links/tracks reuse music-content styles */
+
+.music-release {
+    margin-bottom: 2rem;
 }
 
 .music-quick-links {
@@ -1761,18 +1766,18 @@ main ol
     display: none;
 }
 
-.music-release-cover {
+.cover-layout-cover {
     grid-area: cover;
 }
 
-.music-release-cover img {
+.cover-layout-cover img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.music-release-body {
+.cover-layout-body {
     grid-area: body;
 }
 
@@ -1796,7 +1801,7 @@ main ol
 }
 
 @media (min-width: 1024px) {
-    .music-release-grid {
+    .cover-layout {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "header cover"
@@ -1805,7 +1810,7 @@ main ol
         gap: 2rem;
     }
 
-    .music-release-cover img {
+    .cover-layout-cover img {
         width: auto;
         max-width: 100%;
         height: auto;

@@ -1,8 +1,8 @@
 {{- $p := .page -}}
 {{- $hideProjectLink := .hide_project_link -}}
 <article class="music-release" data-release-date="{{ $p.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" }}" id="{{ $p.Title | urlize }}">
-    <div class="music-release-grid">
-        <div class="music-release-header">
+    <div class="cover-layout">
+        <div class="cover-layout-header music-release-header">
             <div class="music-quick-links">
                 {{ $svc := partial "music-service-urls.html" (dict "links" $p.Params.links) }}
                 {{- /* Services with a logo in /music/'s service_icons show it instead of the generic play triangle. */ -}}
@@ -46,7 +46,7 @@
         </div>
 
         {{ if $p.Params.links.youtube }}
-        <div class="music-release-cover music-release-youtube">
+        <div class="cover-layout-cover music-release-youtube">
             <div class="embed youtube-embed">
                 <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/{{ $p.Params.links.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -56,14 +56,14 @@
         {{ $img := $p.Resources.GetMatch . }}
         {{ if $img }}
         {{ $resized := $img.Resize "1600x webp" }}
-        <div class="music-release-cover">
+        <div class="cover-layout-cover">
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>
         {{ end }}
         {{ end }}
         {{ end }}
 
-        <div class="music-release-body">
+        <div class="cover-layout-body">
             {{ partial "music-content.html" (dict "page" $p "hide_project_link" $hideProjectLink) }}
             {{ partial "music-playback.html" (dict "page" $p) }}
         </div>
