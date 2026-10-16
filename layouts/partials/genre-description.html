@@ -13,6 +13,6 @@
   {{- range first 3 $items -}}
     {{- $parts = $parts | append (printf "%s (%d)" .title .count) -}}
   {{- end -}}
-  {{- $desc = printf "A list of music genres in music productions by Maciej Bliziński. Most popular: %s." (delimit $parts ", ") -}}
+  {{- $desc = printf "A list of music genres in music releases by Maciej Bliziński. Most popular: %s." (delimit $parts ", ") -}}
 {{- end -}}
 {{- $desc -}}

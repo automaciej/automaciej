@@ -42,7 +42,8 @@
                         {{ partial "music-preview-card.html" (dict "page" $production "extra_class" $extra) }}
                         {{ end }}
                         <div class="stream-footer">
-                            <a href="{{ $musicPage.RelPermalink }}" class="view-all-link view-all-link-desktop">View all music productions →</a>
+                            <a href="{{ $musicPage.RelPermalink }}"
+                              class="view-all-link view-all-link-desktop">View all music releases →</a>
                             {{ $second := index $musicProductions 3 }}
                             {{ $third := index $musicProductions 4 }}
                             <a href="{{ $musicPage.RelPermalink }}#{{ $second.Title | urlize }}" class="view-all-link view-all-link-mobile">See {{ $second.Title }}, {{ $third.Title }}, and more »</a>
