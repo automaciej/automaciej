@@ -9,6 +9,7 @@ image: /images/2017/porta-dos-fundos-opcoes.jpg
 tags:
 - raptularz
 - że jak?
+- portugalski
 title: 'Porta dos Fundos: OPCJE'
 
 ---

@@ -57,3 +57,4 @@ Entries are added at the end; earlier entries are never edited.
 - 2026-10-16: Step 4: added 3 tests to TestFeeds in util/test_site_expectations.py.
 - 2026-10-16: Step 5: full test suite passes (36 tests); diff reviewed; committed.
 - 2026-10-16: Added tag `portugalski` (alongside `języki`) to meu-nome, jak-sie-ucze-portugalskiego(+komentarze), portugalski-lekcja-1, portugalski-lekcja-trzecia. Porta dos Fundos series left untouched.
+- 2026-10-16: Added tag `portugalski` (no `języki`) to the Porta dos Fundos series: _index.md and 8 posts.

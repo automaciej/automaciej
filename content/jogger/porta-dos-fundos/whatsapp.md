@@ -10,6 +10,7 @@ image: /images/2017/porta-dos-fundos-whatsapp.jpg
 tags:
 - raptularz
 - że jak?
+- portugalski
 title: 'Porta dos Fundos: WhatsApp'
 
 ---

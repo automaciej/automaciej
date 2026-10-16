@@ -7,6 +7,7 @@ image: /images/2017/porta-dos-fundos-inferno.jpg
 tags:
 - raptularz
 - że jak?
+- portugalski
 title: 'Porta dos Fundos: PIEKŁO'
 
 ---

@@ -6,6 +6,7 @@ description: Efektywność firmy. Przerażenie klienta.
 image: /images/2017/porta-dos-fundos-spoleto.jpg
 tags:
 - że jak?
+- portugalski
 title: 'Porta dos Fundos: SPOLETO'
 
 ---

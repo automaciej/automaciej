@@ -8,6 +8,7 @@ image: /images/2017/porta-dos-fundos-internet.jpg
 tags:
 - raptularz
 - że jak?
+- portugalski
 title: 'Porta dos Fundos: INTERNET'
 
 ---

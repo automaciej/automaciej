@@ -8,6 +8,7 @@ image: /images/2017/porta-dos-fundos-deus.jpg
 tags:
 - raptularz
 - że jak?
+- portugalski
 title: 'Porta dos Fundos: Nie opierać się o Boga!'
 
 ---

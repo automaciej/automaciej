@@ -5,6 +5,7 @@ date: "2017-10-02T01:12:18-04:00"
 draft: false
 tags:
  - "że jak?"
+ - "portugalski"
 
 ---
 
