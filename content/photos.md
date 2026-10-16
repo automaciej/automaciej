@@ -3,6 +3,7 @@ title: "Photos"
 date: "2022-09-05T15:02:43+01:00"
 aliases: [ "/bio/photos" ]
 
+excludeFromRSS: true
 ---
 
 {{< figure src="/bio/images/MWTM_1.jpg" title="Mixing seminar in France (1), with Andrew Scheps" link="/bio/images/MWTM_1.jpg" width="50%" >}}

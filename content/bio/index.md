@@ -5,6 +5,7 @@ tagline: "Bio"
 aliases: [ "/bio/about" ]
 layout: bio
 image: "/images/background.jpg"
+excludeFromRSS: true
 ---
 
 Music producer and software developer based in Dublin, Ireland. Spent 16 years

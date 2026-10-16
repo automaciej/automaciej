@@ -340,6 +340,32 @@ class TestFeeds(unittest.TestCase):
         self.assertTrue(jog)
         self.assertFalse([l for l in jog if "/jogger/" not in l])
 
+    def test_home_feed_has_no_static_pages_or_undated_items(self):
+        """Performances/Photos/Press/Bio leaked into the home feed (2026-10-16)."""
+        items = self.parse_feed("/").findall("item")
+        links = [i.findtext("link") for i in items]
+        for page in ("/music/performances/", "/photos/", "/press/", "/bio/", "/meu-nome/"):
+            self.assertNotIn(BASE_URL + page, links)
+        undated = [i.findtext("link") for i in items if " 0001 " in i.findtext("pubDate", "")]
+        self.assertEqual(undated, [])
+
+    def test_feed_images_resolve_and_are_not_item_images(self):
+        """Item images were `<image>` with a 404ing URL; now `media:content`."""
+        media = "{http://search.yahoo.com/mrss/}content"
+        bad = []
+        for section in FEED_SECTIONS:
+            for item in self.parse_feed(section).findall("item"):
+                self.assertIsNone(item.find("image"), item.findtext("link"))
+                m = item.find(media)
+                if m is not None and not SITE.exists(urlparse(m.get("url")).path):
+                    bad.append(f"{section}: {m.get('url')}")
+        self.assertEqual(bad, [])
+
+    def test_meu_nome_moved_to_jogger_and_old_url_redirects(self):
+        self.assertIn("/jogger/2016/meu-nome/", SITE.pages)
+        self.assertIn("/meu-nome/", SITE.aliases)
+        self.assertIn("/jogger/2016/meu-nome/", SITE.aliases["/meu-nome/"])
+
 
 def jsonld_blocks(page):
     out = []

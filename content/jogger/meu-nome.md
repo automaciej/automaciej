@@ -4,6 +4,8 @@ description: 'O nome Maciej tem duas versões: formal e informal.'
 tags:
 - języki
 title: "Meu nome"
+aliases:
+- /meu-nome/
 ---
 
 A versão formal escrita, por exemplo em documentos, é _"Maciej"_. A pronúncia

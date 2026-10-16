@@ -32,7 +32,7 @@
 {{- /* Every entry is listed; only the newest $fullItems carry full text, the rest carry summaries. */}}
 {{- $fullItems := site.Params.rssFullItems | default 10 }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
@@ -59,22 +59,16 @@
       {{- else }}
       <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
       {{- end }}
-      {{ $original_image := .Resources.GetMatch "**.jpg" }}
-      {{ if isset .Params "image" }}
-      <image>
-        <title>{{ .Title }}</title>
-        <url>
-          {{- .Site.BaseURL }}{{ .Params.image -}}
-        </url>
-      </image>
-      {{ else if $original_image }}
-      <image>
-        <title>{{ .Title }}</title>
-        <url>
-          {{- $original_image.Permalink -}}
-        </url>
-      </image>
-      {{ end }}
+      {{- /* Image: page resource named by `image`, else the first jpg resource, else a static path. */}}
+      {{- $img := "" }}
+      {{- with .Params.image }}
+        {{- with $p.Resources.GetMatch . }}{{ $img = .Permalink }}{{ else }}{{ with $p.Resources.GetMatch "**.jpg" }}{{ $img = .Permalink }}{{ else }}{{ if strings.HasPrefix . "/" }}{{ $img = . | absURL }}{{ end }}{{ end }}{{ end }}
+      {{- else }}
+        {{- with $p.Resources.GetMatch "**.jpg" }}{{ $img = .Permalink }}{{ end }}
+      {{- end }}
+      {{- with $img }}
+      <media:content url="{{ . }}" medium="image" />
+      {{- end }}
     </item>
     {{- end }}
     {{- end }}
