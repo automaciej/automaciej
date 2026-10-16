@@ -395,6 +395,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     gap: 0.5rem;
     margin-top: 0.6rem;
+    align-items: center;
 }
 
 .music-preview-services a {
@@ -408,6 +409,29 @@ h1, h2, h3, h4, h5, h6 {
     width: 20px;
     height: 20px;
     border-radius: 4px;
+}
+
+/* "Presave" chip: a release whose only link is the pre-save page. */
+.presave-chip {
+    display: inline-block;
+    padding: 0.05rem 0.6rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.music-quick-links a.presave-chip,
+.music-quick-links a.presave-chip:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.music-preview-services a.presave-chip {
+    line-height: 1.5;
 }
 
 /* Apps preview on homepage */
@@ -547,7 +571,10 @@ h1, h2, h3, h4, h5, h6 {
         object-fit: cover;
         display: block;
         margin: -1rem 0 -1rem -1rem;
-        border-radius: 0 12px 12px 0;
+        /* All four corners: the image is flush with the card's top-left (the card's
+           overflow clip matches), but when the text column is taller than the
+           image (e.g. the service-logo row) its bottom-left corner is exposed. */
+        border-radius: 12px;
     }
 
     /* Wrapper is display:contents, so the overlay is positioned against
@@ -557,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
         inset: 0 auto 0 0;
         width: 120px;
         max-height: 120px;
-        border-radius: 0 12px 12px 0;
+        border-radius: 12px;
     }
 
     .music-preview-content {
@@ -583,6 +610,24 @@ h1, h2, h3, h4, h5, h6 {
        the text needs. */
     .music-preview-details {
         margin-bottom: 0;
+    }
+
+    /* Half the desktop gap between the last text line and the service logos.
+       Nothing below the logos may make the card taller than the 120px artwork:
+       three text lines (~72px) + 0.3rem + the 20px row come to ~97px, but only 88px
+       fit between the card's paddings, so the column's bottom margin is pulled into
+       the card's bottom padding (the column's own box, and so the row, stay whole). */
+    .music-preview-services {
+        margin-top: 0.3rem;
+    }
+
+    .music-preview-content:has(.music-preview-services) {
+        margin-bottom: -0.55rem;
+    }
+
+    .music-preview-services a.presave-chip {
+        padding: 0 0.6rem;
+        line-height: 18px;
     }
 }
 

@@ -564,6 +564,19 @@ class TestMusicUrls(unittest.TestCase):
                 self.assertIn(f"{BASE_URL}/music/{slug}/", old.read_text(encoding="utf-8"))
         self.assertTrue((SITE.root / "music" / "releases" / "index.html").is_file())
 
+    def test_every_service_icon_has_light_and_dark_files(self):
+        """service_icons maps each service to {light, dark}; both files must exist."""
+        text = (REPO / "content/music/_index.md").read_text(encoding="utf-8")
+        block = text.split("service_icons:\n", 1)[1].split("\n---", 1)[0]
+        entries = re.findall(r"^  (\w+):\n    light: (\S+)\n    dark: (\S+)$", block, re.M)
+        self.assertTrue(entries)
+        self.assertEqual(len(entries), len(re.findall(r"^  \w+:", block, re.M)),
+                         "a service_icons entry is not a {light, dark} pair")
+        for key, light, dark in entries:
+            for path in (light, dark):
+                with self.subTest(service=key, path=path):
+                    self.assertTrue((REPO / "static" / path.lstrip("/")).is_file())
+
     def test_music_page_lists_every_release(self):
         html = (SITE.root / "music" / "index.html").read_text(encoding="utf-8")
         for slug in RELEASE_SLUGS:

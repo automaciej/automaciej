@@ -105,8 +105,12 @@ lists of releases with a direct link on that service.
   the service (external-link icon after it) with "by artist · Mon Year" beneath
   (the date links to the release page). Artwork and title both open the service.
 - Service logos come from `service_icons` in `content/music/_index.md` front matter,
-  keyed by `service_key` (e.g. `spotify: /images/services/spotify.png`, file in
-  `static/images/services/`). A service without an entry gets the generic icon.
+  keyed by `service_key`; each service has `light` and `dark` paths (same file when one
+  works on both; SoundCloud has two) under `static/images/services/`. They are rendered by
+  `partials/service-icon.html` (`<picture>` when the two differ), which the per-service
+  lists, release-page link buttons and homepage/`/music/` preview cards all use. A service
+  without an entry gets the generic icon (a play triangle on release pages, none on cards).
+  Preview cards also show a "Presave" chip for a release whose only link is `streaming`.
 - Per release: if any `tracks[]` has an ID for the service, each such track is
   listed; otherwise the release-level ID is used. Artist-only Spotify links,
   future-dated and draft releases are skipped. Logic lives in

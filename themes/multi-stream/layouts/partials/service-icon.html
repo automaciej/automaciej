@@ -1,0 +1,19 @@
+{{- /*
+    A streaming service's logo from /music/'s `service_icons` front matter, or
+    nothing when the service has none (callers fall back to a generic icon).
+    Every service maps to `{light: <path>, dark: <path>}`; the same path twice gives a
+    plain <img>, different paths a <picture> that switches on prefers-color-scheme.
+
+    Input: dict "key" <service key> [ "class" ] [ "width" ] [ "height" ] [ "alt" ]
+*/ -}}
+{{- $icons := (site.GetPage "/music").Params.service_icons | default dict -}}
+{{- $icon := index $icons .key -}}
+{{- $attrs := printf `alt="%s" width="%v" height="%v"` (.alt | default "") (.width | default 16) (.height | default 16) -}}
+{{- with .class }}{{ $attrs = printf `class="%s" %s` . $attrs }}{{ end -}}
+{{- with $icon -}}
+{{- if eq .light .dark -}}
+<img src="{{ .light }}" {{ $attrs | safeHTMLAttr }}>
+{{- else -}}
+<picture><source srcset="{{ .dark }}" media="(prefers-color-scheme: dark)"><img src="{{ .light }}" {{ $attrs | safeHTMLAttr }}></picture>
+{{- end -}}
+{{- end -}}
