@@ -36,7 +36,9 @@ BASE_URL = "https://blizin.ski"
 
 # Sections with their own RSS feed. Jogger is Polish and has a separate feed;
 # the home feed must not contain it (60f8eb0).
-FEED_SECTIONS = ["/", "/blog/", "/jogger/", "/music/"]
+SERVICE_FEEDS = {"/music/spotify/": "open.spotify.com", "/music/apple/": "music.apple.com",
+                "/music/youtube/": "music.youtube.com"}
+FEED_SECTIONS = ["/", "/blog/", "/jogger/", "/music/"] + list(SERVICE_FEEDS)
 
 
 class PageParser(HTMLParser):
@@ -334,6 +336,26 @@ class TestFeeds(unittest.TestCase):
         self.assertTrue(tags)
         for tag in tags:
             self.assertIn('type="application/rss+xml"', tag)
+
+    def test_service_feeds_mirror_their_pages(self):
+        """/music/<service>/index.xml lists the same songs as the page (2026-10-16)."""
+        for section, host in SERVICE_FEEDS.items():
+            with self.subTest(section=section):
+                raw = (SITE.root / section.strip("/") / "index.html").read_text(encoding="utf-8")
+                items = self.parse_feed(section).findall("item")
+                self.assertTrue(items)
+                self.assertEqual(len(items), raw.count('<li class="streaming-item">'))
+                guids = [i.findtext("guid") for i in items]
+                self.assertEqual(len(guids), len(set(guids)))
+                for i in items:
+                    self.assertIn(host, i.findtext("description"))
+                    self.assertTrue(i.findtext("link").startswith(BASE_URL + "/music/releases/"))
+
+    def test_feed_copyright_is_not_double_escaped(self):
+        for section in FEED_SECTIONS:
+            with self.subTest(section=section):
+                text = self.parse_feed(section).findtext("copyright", "")
+                self.assertNotIn("&", text)
 
     def test_feeds_are_not_truncated(self):
         """60f8eb0: rssLimit removed, every entry is listed."""

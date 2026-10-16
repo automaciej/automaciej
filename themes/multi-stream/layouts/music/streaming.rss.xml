@@ -1,0 +1,45 @@
+{{- /*
+    Feed for a per-service song list page (layout: streaming): the same items as
+    the HTML page, newest first. Items link to the release page on this site; the
+    description carries the "Listen on <service>" link.
+*/ -}}
+{{- $key := .Params.service_key -}}
+{{- $service := .Title -}}
+{{- $items := partial "streaming-items.html" . -}}
+{{- $authorEmail := "" }}
+{{- $authorName := "" }}
+{{- with site.Params.author }}
+  {{- if reflect.IsMap . }}{{ $authorEmail = .email | default "" }}{{ $authorName = .name | default "" }}{{ else }}{{ $authorName = . }}{{ end }}
+{{- end }}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>{{ printf "%s: Music on %s" site.Title $service }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ with .Description }}{{ . }}{{ else }}Productions available on {{ $service }}, newest first.{{ end }}</description>
+    <generator>Hugo</generator>
+    <language>{{ site.Language.Locale }}</language>{{ with $authorEmail }}
+    <managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>
+    <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
+    <copyright>{{ . | htmlUnescape }}</copyright>{{ end }}{{ with $items }}
+    <lastBuildDate>{{ (index . 0).release.Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{- with .OutputFormats.Get "RSS" }}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- range $i, $it := $items }}
+    {{- $r := $it.release }}
+    <item>
+      <title>{{ $it.title }}</title>
+      <link>{{ $r.Permalink }}</link>
+      <pubDate>{{ $r.PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
+      <guid isPermaLink="false">{{ printf "%s#%s-%s" $r.Permalink $key ($it.title | urlize) }}</guid>
+      {{- $html := printf "<p>%s by %s (%s)</p><p><a href=\"%s\">Listen on %s</a></p>" $it.title (delimit $r.Params.artist " x ") ($r.Date.Format "Jan 2006") $it.urls.url $service }}
+      <description>{{ $html | transform.XMLEscape | safeHTML }}</description>
+      {{- with $r.Params.image }}{{ with $r.Resources.GetMatch . }}
+      <media:content url="{{ .Permalink }}" medium="image" />
+      {{- end }}{{ end }}
+    </item>
+    {{- end }}
+  </channel>
+</rss>
