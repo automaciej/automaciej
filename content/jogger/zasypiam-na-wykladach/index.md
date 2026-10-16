@@ -10,8 +10,6 @@ title: Zasypiam na wykładach
 
 ---
 
-<!--more-->
-
 Zasypiam na wykładach. Przychodzę, siadam, wszystko w porządku. Wykładowca
 zaczyna coś opowiadać. Po pewnym czasie czuję, że moje oczy zaczynają się
 zamykać. Z całej siły staram się utrzymać je otwarte, przekrzywiam głowę na

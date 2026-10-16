@@ -58,3 +58,4 @@ Entries are added at the end; earlier entries are never edited.
 - 2026-10-16: Step 5: full test suite passes (36 tests); diff reviewed; committed.
 - 2026-10-16: Added tag `portugalski` (alongside `języki`) to meu-nome, jak-sie-ucze-portugalskiego(+komentarze), portugalski-lekcja-1, portugalski-lekcja-trzecia. Porta dos Fundos series left untouched.
 - 2026-10-16: Added tag `portugalski` (no `języki`) to the Porta dos Fundos series: _index.md and 8 posts.
+- 2026-10-16: Found while re-checking other feeds: Jogger post zasypiam-na-wykladach had an empty feed description (leading <!--more--> made the summary empty). Removed the marker; added /jogger/ to the empty-description feed test. Taxonomy feeds (/genres/index.xml, /tags/index.xml) still open.
