@@ -135,8 +135,6 @@
         "title" .Title
         "start_year" ($proj.start_year | default 0)
         "end_year" $proj.end_year
-        "description" (.Plain | htmlUnescape)
-        "with" $proj.with
         "perfCount" $perfCount
         "musicCount" $musicCount
         "thumb" $thumb
@@ -180,29 +178,25 @@
 {{ end }}
 
 {{- define "project-card" -}}
-<a href="{{ .permalink }}" class="project-card">
-  <div class="project-card-header">
-    {{- with .thumb -}}
-    <img class="project-card-thumb" src="{{ .RelPermalink }}" srcset="{{ $.srcset }}" sizes="56px" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
-    {{- end -}}
+<a href="{{ .permalink }}" class="project-card card-row">
+  {{- with .thumb -}}
+  <div class="card-row-art">
+    <img class="project-card-thumb" src="{{ .RelPermalink }}" srcset="{{ $.srcset }}" sizes="(max-width: 767px) 120px, 56px" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+  </div><!-- card-row-art -->
+  {{- end -}}
+  <div class="card-row-body">
     <div class="project-card-titles">
-      <h2>{{ .title }}</h2>
-      <span class="project-years">
+      <h2 class="card-row-title">{{ .title }}</h2>
+      <span class="project-years card-row-meta">
         {{- with .end_year -}}
           {{- $.start_year -}}{{- if ne . $.start_year -}}–{{ . }}{{- end -}}
         {{- else -}}since {{ .start_year }}{{- end -}}
       </span>
     </div><!-- project-card-titles -->
-  </div><!-- project-card-header -->
-  {{- with .description -}}
-  <p class="project-description">{{ truncate 160 . }}</p>
-  {{- end -}}
-  <div class="project-stats">
-    {{- if .perfCount -}}<span>{{ .perfCount }} performance{{ if gt .perfCount 1 }}s{{ end }}</span>{{- end -}}
-    {{- if .musicCount -}}<span>{{ .musicCount }} release{{ if gt .musicCount 1 }}s{{ end }}</span>{{- end -}}
-  </div>
-  {{- with .with -}}
-  <div class="project-people">With {{ delimit . ", " " and " }}</div>
-  {{- end -}}
+    <div class="project-stats">
+      {{- if .perfCount -}}<span>{{ .perfCount }} performance{{ if gt .perfCount 1 }}s{{ end }}</span>{{- end -}}
+      {{- if .musicCount -}}<span>{{ .musicCount }} release{{ if gt .musicCount 1 }}s{{ end }}</span>{{- end -}}
+    </div><!-- project-stats -->
+  </div><!-- card-row-body -->
 </a>
 {{- end -}}

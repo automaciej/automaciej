@@ -10,7 +10,7 @@
 {{- with $p.Params.links.bandcamp_url }}{{ $services = $services | append (dict "key" "bandcamp" "name" "Bandcamp" "url" .) }}{{ end -}}
 {{- with $p.Params.links.soundcloud_url }}{{ $services = $services | append (dict "key" "soundcloud" "name" "SoundCloud" "url" .) }}{{ end -}}
 {{- with $p.Params.links.instagram }}{{ $services = $services | append (dict "key" "instagram" "name" "Instagram" "url" (printf "https://www.instagram.com/reel/%s/" .)) }}{{ end -}}
-<article class="music-preview card-shadow{{ with $extraClass }} {{ . }}{{ end }}" data-release-date="{{ $p.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" }}" id="{{ $p.Title | urlize }}">
+<article class="music-preview card-row card-shadow{{ with $extraClass }} {{ . }}{{ end }}" data-release-date="{{ $p.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" }}" id="{{ $p.Title | urlize }}">
     <a class="stretched-link" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}"></a>
     {{ $thumb := "" }}
     {{ $srcset := "" }}
@@ -25,7 +25,7 @@
     {{ $srcset = printf "%s 240w, %s 480w, %s 800w, %s 1200w" $w240.RelPermalink $w480.RelPermalink $w800.RelPermalink $w1200.RelPermalink }}
     {{ end }}
     {{ end }}
-    <div class="music-preview-image">
+    <div class="music-preview-image card-row-art">
         {{ if $thumb }}
         <img src="{{ $thumb.RelPermalink }}" srcset="{{ $srcset }}" sizes="(max-width: 767px) 120px, (max-width: 1023px) 80px, 33vw" alt="{{ $p.Title }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
         {{ else }}
@@ -33,10 +33,10 @@
         {{ end }}
         <span class="unreleased-overlay" aria-hidden="true"></span>
     </div>
-    <div class="music-preview-content">
-        <h3>{{ $p.Title }}</h3>
-        <div class="music-preview-artist">{{ with $p.Params.artist }}{{ delimit . " x " }}{{ end }}</div>
-        <div class="music-preview-details">
+    <div class="music-preview-content card-row-body">
+        <h3 class="card-row-title">{{ $p.Title }}</h3>
+        <div class="music-preview-artist card-row-meta">{{ with $p.Params.artist }}{{ delimit . " x " }}{{ end }}</div>
+        <div class="music-preview-details card-row-meta">
             {{- with $p.Params.genres }}{{ partial "music-genre-links.html" $p }} • {{ end -}}
             <span class="music-preview-date">{{ dateFormat "Jan 2006" $p.Params.release_date }}</span>
         </div>

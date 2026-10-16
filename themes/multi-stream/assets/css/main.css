@@ -569,62 +569,11 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-/* Mobile: row height is driven by the text column, not the artwork.
-   `.music-preview-image` is `display:contents` — it stops existing as
-   a box, so its child <img> becomes the actual flex item and sizes
-   using the IMG's own intrinsic ratio (no hardcoded aspect-ratio).
-   height:100% + width:auto lets it stretch to match the text column.
-
-   The row's actual height comes from .music-preview-content's
-   natural (now-bounded) size, not a fixed number:
-   - Every line inside .music-preview-content is individually clamped
-     — nowrap+ellipsis on the title and genre, -webkit-line-clamp:2
-     on the meta (artist credits can be long, e.g. multiple
-     collaborators). That bounds content's natural height tightly and
-     predictably on its own; it does NOT carry a max-height — giving
-     it one that's bigger than what the clamped text needs would just
-     pad the content box out to that number via align-items:stretch,
-     leaving blank card background below the real last line (which is
-     exactly what unclamped wrapping used to do, and a stray
-     max-height:120 here did again even after clamping landed).
-   - img max-height:120px still exists, but for a different reason:
-     source covers are huge (2000px+), so without a cap the image
-     would dominate the flex algorithm's pre-stretch size measurement
-     and inflate the row to its native resolution regardless of how
-     short the text is. 120px is just "comfortably more than the
-     clamped text ever needs" — content's natural height is what
-     actually wins the stretch in normal cases; this cap only matters
-     if the image would otherwise be the bigger one. */
+/* Narrow screens: see "Card row" in section 9 for the shared row layout. */
 
 @media (max-width: 767px) {
-    .music-preview {
-        display: flex;
-        align-items: stretch;
-        gap: 1rem;
-        overflow: hidden;
-        padding: 1rem;
-    }
-
-    .music-preview-image {
-        display: contents;
-    }
-
-    .music-preview-image img,
-    .music-preview-image .waveform-placeholder {
-        flex-shrink: 0;
-        width: 120px;
-        height: 100%;
-        max-height: 120px;
-        object-fit: cover;
-        display: block;
-        margin: -1rem 0 -1rem -1rem;
-        /* All four corners: the image is flush with the card's top-left (the card's
-           overflow clip matches), but when the text column is taller than the
-           image (e.g. the service-logo row) its bottom-left corner is exposed. */
-        border-radius: 12px;
-    }
-
-    /* Wrapper is display:contents, so the overlay is positioned against
+    /* Row layout, artwork and text column come from the shared .card-row component. The
+       artwork wrapper is display:contents, so the overlay is positioned against
        the card: same box as the image (120px wide, up to 120px tall,
        flush with the card's top/left edges). */
     .unreleased-overlay {
@@ -632,31 +581,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 120px;
         max-height: 120px;
         border-radius: 12px;
-    }
-
-    .music-preview-content {
-        min-width: 0;
-        overflow: hidden;
-    }
-
-    .music-preview h3 {
-        font-size: 1.1rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .music-preview-artist,
-    .music-preview-details {
-        font-size: 0.85rem;
-    }
-
-    /* No margin-bottom: this is the last element in the card, and the
-       card's own padding already makes the gap to its bottom edge — a
-       trailing margin here would only pad the content box out past what
-       the text needs. */
-    .music-preview-details {
-        margin-bottom: 0;
     }
 
     /* Half the desktop gap between the last text line and the service logos.
@@ -1534,6 +1458,71 @@ main ol
     margin-top: 1rem;
 }
 
+/* Card row: on narrow screens a card is a row with the artwork flush to its left, top and
+   bottom edges and the text column beside it. Shared by every artwork card (.music-preview,
+   .project-card) so they look the same; markup is
+   .card-row > .card-row-art > img  +  .card-row-body. Wider layouts are per card.
+
+   Artwork is always a 120px square (covers are 1:1; anything else is centre-cropped by
+   object-fit). `.card-row-art` is `display:contents` — it stops existing as a box, so its
+   child <img> is the actual flex item. The negative margins pull the image out over the
+   card's padding so it is flush with the card edges; the card is therefore at least 120px
+   tall, and taller when the text column needs more. Every line in the body is individually
+   clamped (nowrap + ellipsis), which bounds the body's height predictably. */
+
+@media (max-width: 767px) {
+    .card-row {
+        display: flex;
+        align-items: stretch;
+        gap: 1rem;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .card-row-art {
+        display: contents;
+    }
+
+    .card-row-art img,
+    .card-row-art .waveform-placeholder {
+        flex-shrink: 0;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        display: block;
+        margin: -1rem 0 -1rem -1rem;
+        /* All four corners: the image is flush with the card's top-left (the card's
+           overflow clip matches), but when the text column is taller than the
+           image (e.g. the service-logo row) its bottom-left corner is exposed. */
+        border-radius: 12px;
+    }
+
+    .card-row-body {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    /* Title and secondary lines: one line each, same size and spacing in every card. */
+    .card-row .card-row-title,
+    .card-row .card-row-meta {
+        display: block;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card-row .card-row-title {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+
+    .card-row .card-row-meta {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+}
+
 /* ==========================================================================
    10. MUSIC
    ========================================================================== */
@@ -1988,17 +1977,17 @@ main ol
     margin-bottom: 2rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
+/* Project card: title, years and counts. On narrow screens the shared .card-row layout
+   (section 9) puts the artwork flush left like the /music/ cards; wider screens show a
+   small thumbnail beside the title. */
+
 .project-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.5rem;
     background: var(--bg-secondary);
     border-radius: 12px;
     text-decoration: none;
@@ -2009,16 +1998,26 @@ main ol
     text-decoration: none;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 768px) {
     .project-card {
-        padding: 1.25rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1.5rem;
     }
 }
 
-.project-card-header {
+.project-card .card-row-body {
     display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    .project-card .card-row-body {
+        gap: 0;
+    }
 }
 
 .project-card-thumb {
@@ -2031,13 +2030,12 @@ main ol
 
 .project-card-titles {
     display: flex;
-    flex: 1;
     justify-content: space-between;
     align-items: baseline;
     gap: 0.75rem;
 }
 
-.project-card-header h2 {
+.project-card-titles h2 {
     font-size: 1.2rem;
     margin: 0;
     line-height: 1.3;
@@ -2050,11 +2048,12 @@ main ol
     flex-shrink: 0;
 }
 
-.project-description {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    line-height: 1.55;
-    margin: 0;
+@media (max-width: 767px) {
+    .project-card-titles {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
 }
 
 .project-stats {
@@ -2062,7 +2061,13 @@ main ol
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: auto;
-    padding-top: 0.25rem;
+}
+
+/* Same gap under the text as the music cards' logo row. */
+@media (max-width: 767px) {
+    .project-stats {
+        margin-top: 0.3rem;
+    }
 }
 
 .project-stats span {
@@ -2072,11 +2077,6 @@ main ol
     background: color-mix(in srgb, var(--accent) 10%, transparent);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
-}
-
-.project-people {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
 }
 
 /* "More from this project" link on music cards and previews */
