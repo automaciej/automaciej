@@ -34,7 +34,8 @@ credits:
   - drums
 links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghi/runnin
-  youtube: Xvz7e4BsYD8
+  # It's not back on YouTube yet, let's not display a broken link.
+  # youtube: Xvz7e4BsYD8
   spotify_album: 1D8fb56ytQY3OrVUTgYV3v
   apple_music_album: '1895553274'
   deezer: https://www.deezer.com/us/album/967708591
