@@ -9,16 +9,18 @@
                 {{ $icons := (site.GetPage "/music").Params.service_icons | default dict }}
                 {{ with $p.Params.links }}
                 {{ with $svc.spotify }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Spotify">{{ with index $icons "spotify" }}<img class="service-icon" src="{{ . }}" alt="" width="16" height="16">{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Spotify</a>{{ end }}
-                {{ with $svc.apple_music }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Apple Music">{{ with index $icons "apple_music" }}<img class="service-icon" src="{{ . }}" alt="" width="16" height="16">{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Apple Music</a>{{ end }}
+                {{- /* One "YouTube" button: the YouTube Music link when there is one, else the plain video. */ -}}
+                {{ $yt := "" }}{{ with $svc.youtube_music }}{{ $yt = .url }}{{ else }}{{ with .youtube }}{{ $yt = printf "https://www.youtube.com/watch?v=%s" . }}{{ end }}{{ end }}
+                {{ with $yt }}<a href="{{ . }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on YouTube">{{ with index $icons "youtube_music" }}<img class="service-icon" src="{{ . }}" alt="" width="16" height="16">{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}YouTube</a>{{ end }}
+                {{ with $svc.apple_music }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Apple Music">{{ with index $icons "apple_music" }}<img class="service-icon" src="{{ . }}" alt="" width="16" height="16">{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Apple</a>{{ end }}
                 {{ if .itunes }}<a href="{{ .itunes }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on iTunes"><span class="play-icon" aria-hidden="true">▶</span>iTunes</a>{{ end }}
-                {{ if .amazon_music }}<a href="{{ .amazon_music }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Amazon Music"><span class="play-icon" aria-hidden="true">▶</span>Amazon Music</a>{{ end }}
+                {{ if .amazon_music }}<a href="{{ .amazon_music }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Amazon Music"><span class="play-icon" aria-hidden="true">▶</span>Amazon</a>{{ end }}
                 {{ if .tidal }}<a href="{{ .tidal }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Tidal"><span class="play-icon" aria-hidden="true">▶</span>Tidal</a>{{ end }}
                 {{ if .deezer }}<a href="{{ .deezer }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Deezer"><span class="play-icon" aria-hidden="true">▶</span>Deezer</a>{{ end }}
-                {{ if .youtube }}<a href="https://www.youtube.com/watch?v={{ .youtube }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on YouTube"><span class="play-icon" aria-hidden="true">▶</span>YouTube</a>{{ end }}
                 {{ if .bandcamp_url }}<a href="{{ .bandcamp_url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Bandcamp"><span class="play-icon" aria-hidden="true">▶</span>Bandcamp</a>{{ end }}
                 {{ if .instagram }}<a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Instagram"><span class="play-icon" aria-hidden="true">▶</span>Instagram</a>{{ end }}
                 {{ end }}
-                <button type="button" class="share-button">🔗 Copy Link</button>
+                <button type="button" class="share-button"><svg class="share-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="share-label">Copy Link</span></button>
             </div>
             <h1>{{ $p.Title }}</h1>
             <div class="music-meta">
