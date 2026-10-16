@@ -3,6 +3,7 @@ title: "Blooming Rooms"
 type: "music-project"
 params:
   key: "blooming_rooms"
+  image: "blooming_rooms.jpg"
   country: "Republic of Ireland"
   start_year: 2025
   end_year: 2026

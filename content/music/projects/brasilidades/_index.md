@@ -3,6 +3,7 @@ title: "Brasilidades"
 type: "music-project"
 params:
   key: "brasilidades"
+  image: "brasilidades.jpg"
   country: "Republic of Ireland"
   start_year: 2023
   end_year: 2025

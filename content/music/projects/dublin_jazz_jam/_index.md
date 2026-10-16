@@ -3,6 +3,7 @@ title: "Dublin Jazz Jam"
 type: "music-project"
 params:
   key: "dublin_jazz_jam"
+  image: "dublin_jazz_jam.jpg"
   country: "Republic of Ireland"
   start_year: 2013
   end_year: 2025

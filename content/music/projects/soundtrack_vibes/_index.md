@@ -3,6 +3,7 @@ title: "Soundtrack Vibes"
 type: "music-project"
 params:
   key: "soundtrack_vibes"
+  image: "soundtrack_vibes.jpg"
   country: "Republic of Ireland"
   start_year: 2024
   end_year: 2025
