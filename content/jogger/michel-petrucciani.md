@@ -37,6 +37,6 @@ romantyczna.](http://www.jazzpages.com/txtext/petrucciani_voce.htm)
   powala z nóg&#8230; Byłbym wdzięczny za podanie jakichś pozycji, które byłyby
   w tym klimacie:  
 
-  http://pl.youtube.com/watch?v=p6Z5ll568M0&amp;feature=related  
+  http://pl.youtube.com/watch?v=p6Z5ll568M0&feature=related  
 
   pozdrawiam

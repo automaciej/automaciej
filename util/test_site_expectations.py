@@ -167,17 +167,19 @@ def non_home(pages):
 class TestEscaping(unittest.TestCase):
     """Text must not show raw entities like &rsquo; (double-escaped HTML)."""
 
+    # The post about a mangled "&amp;" in a password quotes the literal text "&amp;amp;"
+    # (its summary is repeated on the Jogger index), so those pages legitimately contain it.
+    INTENTIONAL = {"/jogger/": {"&amp;amp;"},
+                   "/jogger/2015/co-trzeba-potrafic-zeby-byc-klientem-rwe/": {"&amp;amp;"}}
     DOUBLE_ESCAPED = re.compile(r"&amp;(?:#\d+|#x[0-9a-fA-F]+|[a-zA-Z][a-zA-Z0-9]*);")
 
     def test_no_double_escaped_entities(self):
         """/music/projects/ showed "Maciej&rsquo;s" and "&ldquo;Little Bird&rdquo;" (2026-10-16)."""
         bad = {}
         for url in SITE.pages:
-            if url.startswith("/jogger/"):
-                continue  # legacy archive: some posts keep "&amp;amp;" in imported URLs, one quotes it on purpose
             html = (SITE.root / url.strip("/") / "index.html").read_text(encoding="utf-8")
             html = re.sub(r"<(pre|code|script|style)\b.*?</\1>", "", html, flags=re.S)
-            found = sorted(set(self.DOUBLE_ESCAPED.findall(html)))
+            found = sorted(set(self.DOUBLE_ESCAPED.findall(html)) - self.INTENTIONAL.get(url, set()))
             if found:
                 bad[url] = found[:5]
         self.assertEqual(bad, {})

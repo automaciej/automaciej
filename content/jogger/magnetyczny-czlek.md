@@ -53,7 +53,7 @@ Jedynie się
   http://www.randi.org/joom/swift/swift/swift-march-14-2008.html).  About
   my abilities: Details of these can be found in my interviews with Mysteries
   magazine ( http://www.mysteries-
-  magazin.com/index.php?menu=journal&amp;op=journal&amp;func=covers&amp;id=2008
+  magazin.com/index.php?menu=journal&op=journal&func=covers&id=2008
   ) and Mind-energy.net (http://www.mind-energy.net/archives/281-Interview-with-
   Miroslaw-Magola-the-magnetic-man.html). Just to give you a few examples I am
   able to lift various items of different materials (metal, wood, plastic,
@@ -69,7 +69,7 @@ Jedynie się
   . All demonstrations can be viewed on the internet and I’m inviting anyone
   whoever is interested to do so. (http://www.magola.com/English/welcome.html
   http://www.magneticman.org
-  http://www.youtube.com/watch?v=Vk7-8ckQtpY&amp;watch_response).  These
+  http://www.youtube.com/watch?v=Vk7-8ckQtpY&watch_response).  These
   are the things that I can do. How do you choose to call them, is up to you. I
   call it „human bio-magnetism“ Several reputable scientists have conducted
   research in this area. To name few: Prof. Dr. Ruhenstroth-Bauer and Dr.
@@ -87,8 +87,8 @@ Jedynie się
   to talcum powder“ I can put your mind to ease – I won’t need medical
   assistance any time soon. If you look closely at the photos and videos you
   will see that in these demonstrations I use talcum powder and even rubber
-  gloves (http://www.youtube.com/watch?v=ZJaJWA5o_t4&amp;feature=related¸
-  http://www.youtube.com/watch?v=GTMekYqvbVA&amp;feature=related).  To
+  gloves (http://www.youtube.com/watch?v=ZJaJWA5o_t4&feature=related¸
+  http://www.youtube.com/watch?v=GTMekYqvbVA&feature=related).  To
   precisely define the terms:  My abilities are not about „drawing
   physical force“, but instead about bio-magnetic power producing movement of
   objects wchich stick to a part of my body even when dusted with talcum
@@ -152,13 +152,13 @@ Jedynie się
   interesujące dla niego, że w dwóch dalszych tekstach swego autorstwa (2 razy w
   roku 2004 (patrz: http://www.randi.org/jr/032604why.html) jak również
   http://www.randi.org/jr/082704gluton.html) oraz ostatnio w marcu 2008 (patrz:
-  http://www.randi.org/joom/swift/swif&#8230;h-14-2008.html) zajął się moim
+  http://www.randi.org/joom/swift/swif…h-14-2008.html) zajął się moim
   przypadkiem.  Kilka kontaktów pisemnych w roku 1996 i ostatnio w 2003
   rozpłynęło się bez śladu, tak więc osobiste spotkanie, z jakich powodów by to
   nie było (czasowych, terminowych, geograficznych), nigdy nie doszło do
   skutku.  Co do moich właściwości: szczegóły znaleźć można w moim
   wywiadzie udzielonym dla czasopisma ”Mystery Magazin” (patrz:
-  http://www.mysteries-magazin.com/ind&#8230;covers&amp;id=2008) oraz dla Mind-
+  http://www.mysteries-magazin.com/ind…covers&id=2008) oraz dla Mind-
   Energy.net, (patrz: http://www.mind-
   energy.net/archives/...etic-,man.html).  Kilka przykładów: zdolny
   jestem podnieść różne obiekty z różnych materiałów (metal, drewno, plastyk,
@@ -201,7 +201,7 @@ Jedynie się
   posypane talkiem.  
  Ponadto czuję się zaatakowany przez stwierdzenia Pana
   Randiego w jego artykule „The Pot Head Man”(patrz:
-  http://www.randi.org/joom/swift/swif&#8230;h-14-2008.html),  gdzie skarży się
+  http://www.randi.org/joom/swift/swif…h-14-2008.html),  gdzie skarży się
   na moje braki w higienie osobistej; uważam to za osobistą  agresję najniższego
   lotu. Rozumiem, że Pan Randi, „has no urge whatsoever to travel across the
   world to see yet another `sticky skin` demo“ ( „A sticky person“, patrz:

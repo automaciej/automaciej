@@ -117,7 +117,7 @@ watches/).
 * (s)zymon (2008-07-12 10:56:18): z tego co widzę większość modeli ma 36
   miesięcy gwarancji, nazwy bardzo pocieszne np &#8222;czekista&#8221; O_o  
 
-  http://www.smirs.com/product_info.php?products_id=645&amp;section=text#text
+  http://www.smirs.com/product_info.php?products_id=645&section=text#text
 * chlopslaski (2010-11-27 22:09:54): Miałem kiedyś rosyjskiego Poljota - lata
   80 , kosztował dwie wypłaty. Kupiłem go , był bardzo dokładny to co
   zapamiętałem ; +_ 2sekundy na rok , był na baterię,wodoszczelny. Pewnego razu
