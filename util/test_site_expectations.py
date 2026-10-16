@@ -344,7 +344,7 @@ class TestFeeds(unittest.TestCase):
         self.assertEqual(jogger, posts - excluded)
 
     def test_newest_items_have_full_text_and_all_have_descriptions(self):
-        for section in ("/blog/", "/music/", "/", "/jogger/"):
+        for section in ("/blog/", "/music/", "/", "/jogger/", "/genres/", "/tags/"):
             with self.subTest(section=section):
                 items = self.parse_feed(section).findall("item")
                 self.assertTrue(items)

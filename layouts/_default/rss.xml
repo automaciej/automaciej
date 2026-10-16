@@ -54,7 +54,14 @@
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
-      {{- if lt $i $fullItems }}
+      {{- if eq .Kind "term" }}
+      {{- /* Taxonomy overview feeds list term pages, which have no body of their own. */}}
+      {{- $desc := .Description }}
+      {{- if not $desc }}
+        {{- if eq .Data.Plural "genres" }}{{ $desc = printf "Releases in the %s genre from %s" .Title site.Title }}{{ else }}{{ $desc = printf "Posts tagged %s from %s" .Title site.Title }}{{ end }}
+      {{- end }}
+      <description>{{ $desc | transform.XMLEscape | safeHTML }}</description>
+      {{- else if lt $i $fullItems }}
       <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
       {{- else }}
       <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
