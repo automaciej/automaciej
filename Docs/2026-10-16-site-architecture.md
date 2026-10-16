@@ -87,9 +87,14 @@ lists of releases with a direct link on that service.
 - Front matter `service_key` (`spotify` / `apple_music` / `youtube_music`) picks
   the service; `title` is the service name, from which the page title
   ("Maciej Bliziński: Music on Spotify") and breadcrumb are composed.
-- The page `<h1>` is "On <Service>"; each song title links to the service
-  with an external-link icon, with "by artist · Mon Year" beneath (date links to
-  the release page).
+- The page `<h1>` is "On <Service>". Each entry is a row: release artwork thumbnail
+  (same Hugo-resized cover as the homepage preview cards) with the service logo, or
+  a generic external-link icon, in its top right corner (3px inset); then the song title linking to
+  the service (external-link icon after it) with "by artist · Mon Year" beneath
+  (the date links to the release page). Artwork and title both open the service.
+- Service logos come from `service_icons` in `content/music/_index.md` front matter,
+  keyed by `service_key` (e.g. `spotify: /images/services/spotify.png`, file in
+  `static/images/services/`). A service without an entry gets the generic icon.
 - Per release: if any `tracks[]` has an ID for the service, each such track is
   listed; otherwise the release-level ID is used. Artist-only Spotify links,
   future-dated and draft releases are skipped. Logic lives in

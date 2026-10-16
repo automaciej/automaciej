@@ -17,15 +17,35 @@
 {{ define "main" }}
 {{- $key := .Params.service_key -}}
 {{- $items := partial "streaming-items.html" . -}}
+{{- $icon := index (site.GetPage "/music").Params.service_icons $key -}}
 <div class="music-page">
     <div class="container">
         <h1>On {{ .Title }}</h1>
-        <ul class="streaming-list streaming-list-{{ $key }}">
+        <ul class="streaming-list">
             {{- range $items -}}
             <li class="streaming-item">
+                {{- $r := .release -}}
+                <a class="streaming-item-art" href="{{ .urls.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+                    {{- $img := "" -}}
+                    {{- with $r.Params.image }}{{ with $r.Resources.GetMatch . }}{{ $img = . }}{{ end }}{{ end -}}
+                    {{- if $img -}}
+                    {{- $w96 := $img.Resize "96x webp" -}}
+                    {{- $w192 := $img.Resize "192x webp" -}}
+                    <img src="{{ $w192.RelPermalink }}" srcset="{{ $w96.RelPermalink }} 96w, {{ $w192.RelPermalink }} 192w" sizes="96px" alt="" width="96" height="96" loading="lazy">
+                    {{- else -}}
+                    {{ partial "waveform-placeholder.html" }}
+                    {{- end -}}
+                    <span class="streaming-item-art-icon{{ if not $icon }} streaming-item-art-icon-generic{{ end }}">
+                        {{- if $icon -}}
+                        <img src="{{ $icon }}" alt="" width="40" height="40">
+                        {{- else -}}
+                        <svg viewBox="0 0 16 16" width="22" height="22" focusable="false"><path d="M6 3H3.5A1.5 1.5 0 0 0 2 4.5v8A1.5 1.5 0 0 0 3.5 14h8a1.5 1.5 0 0 0 1.5-1.5V10M9 2h5v5M14 2 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        {{- end -}}
+                    </span><!-- streaming-item-art-icon -->
+                </a><!-- streaming-item-art -->
                 <h2 class="streaming-item-title">
                     <a class="streaming-item-link" href="{{ .urls.url }}" target="_blank" rel="noopener">{{ .title }}<svg class="external-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M6 3H3.5A1.5 1.5 0 0 0 2 4.5v8A1.5 1.5 0 0 0 3.5 14h8a1.5 1.5 0 0 0 1.5-1.5V10M9 2h5v5M14 2 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="visually-hidden"> (opens {{ $.Title }})</span></a>
-                    {{ with .release }}<small>by {{ delimit .Params.artist " x " }} · <a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2006" }}</a></small>{{ end }}
+                    <small>by {{ delimit $r.Params.artist " x " }} · <a href="{{ $r.RelPermalink }}">{{ $r.Date.Format "Jan 2006" }}</a></small>
                 </h2>
             </li>
             {{- end }}

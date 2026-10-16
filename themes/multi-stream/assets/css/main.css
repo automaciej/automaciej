@@ -2417,23 +2417,53 @@ main ol
 }
 
 .streaming-item {
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Spotify entries are bulleted with the Spotify logo; the bullet is part of the title link, so it is tappable too. */
-.streaming-list-spotify .streaming-item {
+.streaming-item-art {
     position: relative;
-    padding-left: 2rem;
+    flex: 0 0 96px;
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.streaming-list-spotify .streaming-item-link::before {
-    content: "";
+.streaming-item-art > img,
+.streaming-item-art .waveform-placeholder {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Service logo (or the generic external-link icon) in the artwork's top right corner. */
+.streaming-item-art-icon {
     position: absolute;
-    left: 0;
-    top: 0.2em;
-    width: 1.25rem;
-    height: 1.25rem;
-    background: url("/images/services/spotify.png") center / contain no-repeat;
+    top: 3px;
+    right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.streaming-item-art-icon img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
+}
+
+.streaming-item-art-icon-generic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
 }
 
 .streaming-item-title {

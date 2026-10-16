@@ -7,6 +7,11 @@ date: "2022-09-05T15:02:43+01:00"
 
 aliases: [ "/bio/music" ]
 
+# Logos overlaid on the artwork in the /music/<service>/ lists, keyed by service_key.
+# Services without an entry get the generic external-link icon.
+service_icons:
+  spotify: /images/services/spotify.png
+
 ---
 
 # Music Production
