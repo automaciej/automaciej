@@ -31,6 +31,7 @@ credits:
 - name: Sylwester Ochmański
   roles:
   - flute
+image: butterfly.jpg
 links:
   soundcloud_url: https://soundcloud.com/mistible/butterfly
 ---

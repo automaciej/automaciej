@@ -21,6 +21,7 @@ credits:
 - name: Chris Comhaill
   roles:
   - acoustic guitar
+image: guitar-duo-session.jpg
 links:
   instagram: C8jvuVBMMnQ
 ---

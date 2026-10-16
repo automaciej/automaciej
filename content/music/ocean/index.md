@@ -36,6 +36,7 @@ credits:
 - name: Artur Lipiński
   roles:
   - drums
+image: ocean.jpg
 links:
   soundcloud_url: https://soundcloud.com/maciej-blizinski/ocean
 ---

@@ -17,6 +17,7 @@ credits:
 - name: Regional Massapê
   roles:
   - performance
+image: a-ginga-do-mane.jpg
 links:
   instagram: CzmXMQpsznl
 ---

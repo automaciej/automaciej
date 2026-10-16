@@ -18,6 +18,7 @@ credits:
 - name: Regional Massapê
   roles:
   - performance
+image: andre-de-sapato-novo.jpg
 links:
   instagram: Cy0YKUdqZB6
 ---
