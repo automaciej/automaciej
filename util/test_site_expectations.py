@@ -33,6 +33,10 @@ from urllib.parse import unquote, urldefrag, urlparse
 
 REPO = Path(__file__).resolve().parent.parent
 BASE_URL = "https://blizin.ski"
+# Releases are the leaf bundles directly under content/music/ (/music/<slug>/);
+# other /music/ pages (spotify, credits, performances, projects) are not releases.
+RELEASE_SLUGS = sorted(d.parent.name for d in (REPO / "content/music").glob("*/index.md"))
+RELEASE_URL = re.compile(r"^/music/(%s)/$" % "|".join(map(re.escape, RELEASE_SLUGS)))
 
 # Sections with their own RSS feed. Jogger is Polish and has a separate feed;
 # the home feed must not contain it (60f8eb0).
@@ -261,7 +265,7 @@ class TestSocialTags(unittest.TestCase):
     def test_content_pages_do_not_fall_back_to_site_description(self):
         """92b48e5, 8ffe04c: releases, genres, posts need their own description."""
         site_default = SITE.pages["/"].meta_one("description")
-        per_page = re.compile(r"^/(music/releases/[^/]+|genres/[^/]+|blog/\d{4}/[^/]+)/$")
+        per_page = re.compile(r"^/(music/(?:%s)|genres/[^/]+|blog/\d{4}/[^/]+)/$" % "|".join(map(re.escape, RELEASE_SLUGS)))
         bad = [u for u, p in SITE.pages.items()
                if per_page.match(u) and p.meta_one("description") == site_default]
         self.assertEqual(bad, [])
@@ -349,11 +353,11 @@ class TestFeeds(unittest.TestCase):
                 self.assertEqual(len(guids), len(set(guids)))
                 for i in items:
                     self.assertIn(host, i.findtext("description"))
-                    self.assertTrue(i.findtext("link").startswith(BASE_URL + "/music/releases/"))
+                    self.assertTrue(i.findtext("link").startswith(BASE_URL + "/music/"))
 
     def test_release_feed_items_link_to_listen_services(self):
         """Release feed items carry direct links to the services (2026-10-16)."""
-        items = self.parse_feed("/music/releases/").findall("item")
+        items = self.parse_feed("/music/").findall("item")
         self.assertTrue(items)
         with_links = [i for i in items if "Listen on" in i.findtext("description")]
         self.assertTrue(with_links)
@@ -497,12 +501,74 @@ class TestStructuredData(unittest.TestCase):
         """086f62b: release JSON-LD had no image."""
         bad = []
         for url, p in SITE.pages.items():
-            if not re.match(r"^/music/releases/[^/]+/$", url):
+            if not RELEASE_URL.match(url):
                 continue
             blocks = jsonld_blocks(p)
             if not any(b.get("image") for b in blocks):
                 bad.append(url)
         self.assertEqual(bad, [])
+
+
+# Releases that existed when /music/releases/<slug>/ became /music/<slug>/ (2026-10-16).
+# Only these keep an old-style alias; newer releases must not get one.
+LEGACY_RELEASE_SLUGS = {
+    "11ell-11eaven",
+    "a-ginga-do-mane",
+    "andre-de-sapato-novo",
+    "bolero-de-sata",
+    "burza",
+    "butterfly",
+    "estate",
+    "guitar-duo-session",
+    "hidden-beach",
+    "hope-is-the-one",
+    "ill-be-gone",
+    "jazz-piano-trio-in-54",
+    "je-te-veux",
+    "libera",
+    "little-bird-frost-is-all-over-cormac-murphys-jig",
+    "loser",
+    "ocean",
+    "river",
+    "run-for-me",
+    "runnin",
+    "song-for-you-and-bob",
+    "talkative",
+    "tentativa",
+    "to-promenade",
+    "triste",
+}
+
+
+class TestMusicUrls(unittest.TestCase):
+    """Releases live at /music/<slug>/ (2026-10-16); the old /music/releases/ URLs redirect."""
+
+    def test_release_slugs_do_not_collide_with_other_music_pages(self):
+        others = {p.stem for p in (REPO / "content/music").glob("*.md") if p.name != "_index.md"}
+        others |= {d.name for d in (REPO / "content/music").iterdir() if d.is_dir()} - set(RELEASE_SLUGS)
+        self.assertEqual(sorted(set(RELEASE_SLUGS) & others), [])
+
+    def test_only_legacy_releases_have_old_style_aliases(self):
+        """New releases must not carry a /music/releases/ alias (copied front matter)."""
+        for slug in RELEASE_SLUGS:
+            text = (REPO / "content/music" / slug / "index.md").read_text(encoding="utf-8")
+            has = f"/music/releases/{slug}/" in text
+            with self.subTest(slug=slug):
+                self.assertEqual(has, slug in LEGACY_RELEASE_SLUGS)
+
+    def test_old_releases_urls_redirect_to_new_ones(self):
+        for slug in LEGACY_RELEASE_SLUGS:
+            with self.subTest(slug=slug):
+                old = SITE.root / "music" / "releases" / slug / "index.html"
+                self.assertTrue(old.is_file())
+                self.assertIn(f"{BASE_URL}/music/{slug}/", old.read_text(encoding="utf-8"))
+        self.assertTrue((SITE.root / "music" / "releases" / "index.html").is_file())
+
+    def test_music_page_lists_every_release(self):
+        html = (SITE.root / "music" / "index.html").read_text(encoding="utf-8")
+        for slug in RELEASE_SLUGS:
+            with self.subTest(slug=slug):
+                self.assertIn(f'href="/music/{slug}/"', html)
 
 
 class TestLinks(unittest.TestCase):
@@ -552,7 +618,7 @@ class TestBioReleasesList(unittest.TestCase):
         """8f094bd: turning /bio from a section into a leaf page dropped the list."""
         html = self.bio_html()
         self.assertIn("<h2>Music Releases</h2>", html)
-        published = {u for u in SITE.pages if re.match(r"^/music/releases/[^/]+/$", u)}
+        published = {u for u in SITE.pages if RELEASE_URL.match(u)}
         self.assertTrue(published, "no release pages were built")
         chips = set(re.findall(r'<a class="release-chip[^"]*" href="([^"]+)"', html))
         self.assertEqual(sorted(published - chips), [], "releases missing from /bio/")
@@ -605,7 +671,7 @@ class TestCrawlerBasics(unittest.TestCase):
         bad = []
         for url, p in SITE.pages.items():
             has = any("navigator.share" in s for s in p.scripts)
-            is_release = bool(re.match(r"^/music/releases/[^/]+/$", url))
+            is_release = bool(RELEASE_URL.match(url))
             if has != is_release:
                 bad.append(f"{url}: share script present={has}")
         self.assertEqual(bad, [])

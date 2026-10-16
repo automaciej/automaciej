@@ -8,9 +8,8 @@
             {{ end }}
         </header>
 
-        {{- $releasesSection := .Site.GetPage "/music/releases" -}}
         {{- $entries := slice -}}
-        {{- range $releasesSection.RegularPages -}}
+        {{- range (partial "release-pages.html" .) -}}
             {{- $page := . -}}
             {{- $seen := slice -}}
             {{- range .Params.credits -}}

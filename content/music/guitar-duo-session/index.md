@@ -1,0 +1,28 @@
+---
+aliases:
+- /music/releases/guitar-duo-session/
+title: Guitar duo session
+genres:
+- Irish Traditional
+date: '2024-06-01'
+release_date: '2024-06-01T00:00:00'
+composition_origin: original
+artist:
+- Chris Comhaill
+- John Mahon
+credits:
+- name: Maciej Bliziński
+  roles:
+  - recording engineer
+  - mixing engineer
+- name: John Mahon
+  roles:
+  - acoustic guitar
+- name: Chris Comhaill
+  roles:
+  - acoustic guitar
+links:
+  instagram: C8jvuVBMMnQ
+---
+
+Recording session for guitar duo Chris Comhaill and John Mahon.

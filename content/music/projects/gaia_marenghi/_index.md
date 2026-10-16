@@ -16,5 +16,5 @@ Collaboration between Gaia and Maciej started in 2024 with two covers, [River][r
 [Runnin' (Lose It All)][runnin]. The duo followed up with original music in 2025:
 Talkative and I'll Be Gone.
 
-[river]: /music/releases/river/
-[runnin]: /music/releases/runnin/
+[river]: /music/river/
+[runnin]: /music/runnin/

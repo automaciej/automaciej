@@ -8,8 +8,7 @@
 */}}
 {{- $key := .Params.service_key -}}
 {{- $items := slice -}}
-{{- $releasesSection := site.GetPage "/music/releases" -}}
-{{- $releases := sort (where $releasesSection.RegularPages "Date" "le" now) "Date" "desc" -}}
+{{- $releases := sort (where (partial "release-pages.html" .) "Date" "le" now) "Date" "desc" -}}
 {{- range $releases -}}
   {{- $r := . -}}
   {{- $trackItems := slice -}}

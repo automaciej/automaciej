@@ -141,4 +141,4 @@ Our case was a mild one, but the incident shows worrying patterns. Release taken
 down with no notification or information on really what happened. If we wanted
 to submit a DMCA counterclaim, we wouldn't know against whom to submit it.
 
-[runnin]: /music/releases/runnin/
+[runnin]: /music/runnin/

@@ -10,8 +10,7 @@
 
     Usage: {{ partial "music-releases.html" . }}
 */}}
-{{- $releasesSection := site.GetPage "/music/releases" -}}
-{{- $releases := where $releasesSection.RegularPages "Date" "le" now -}}
+{{- $releases := where (partial "release-pages.html" .) "Date" "le" now -}}
 {{- $releases = sort $releases "Date" "desc" -}}
 {{- if $releases -}}
 <h2>Music Releases</h2>

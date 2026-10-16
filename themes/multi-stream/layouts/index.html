@@ -1,7 +1,7 @@
 {{ define "head_extra" }}
 {{- /* Social image: artwork of the most recent release that has one */ -}}
 {{- $ogImage := "" -}}
-{{- range sort (.Site.GetPage "/music/releases").RegularPages "Params.release_date" "desc" -}}
+{{- range sort (partial "release-pages.html" .) "Params.release_date" "desc" -}}
   {{- if not $ogImage -}}
     {{- $r := . -}}
     {{- with $r.Params.image -}}
@@ -46,8 +46,7 @@
                     {{- $musicPage := .Site.GetPage "/music" -}}
                     <h2><a href="{{ $musicPage.RelPermalink }}">Music »</a></h2>
                     <div class="stream-content">
-                        {{- $releasesSection := .Site.GetPage "/music/releases" -}}
-                        {{- $musicProductions := sort $releasesSection.RegularPages "Params.release_date" "desc" -}}
+                        {{- $musicProductions := sort (partial "release-pages.html" .) "Params.release_date" "desc" -}}
                         {{ range $index, $production := first 3 $musicProductions }}
                         {{ $extra := "" }}
                         {{ if gt $index 2 }}{{ $extra = "music-preview-desktop-only" }}{{ end }}

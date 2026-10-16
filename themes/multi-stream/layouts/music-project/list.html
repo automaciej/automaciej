@@ -2,9 +2,8 @@
 {{- $key := .Params.key -}}
 {{- $ogImage := "" -}}
 {{- if $key -}}
-  {{- $releasesSection := $.Site.GetPage "/music/releases" -}}
   {{- $music := slice -}}
-  {{- range $releasesSection.RegularPages -}}
+  {{- range (partial "release-pages.html" .) -}}
     {{- if eq .Params.project $key -}}
       {{- $music = $music | append . -}}
     {{- end -}}
@@ -37,9 +36,8 @@
     {{- end -}}
     {{- $performances = sort $performances "start_time" -}}
 
-    {{- $releasesSection := $.Site.GetPage "/music/releases" -}}
     {{- $music := slice -}}
-    {{- range $releasesSection.RegularPages -}}
+    {{- range (partial "release-pages.html" .) -}}
       {{- if eq .Params.project $key -}}
         {{- $music = $music | append . -}}
       {{- end -}}
@@ -110,7 +108,6 @@
       <h1>{{ .Title }}</h1>
     </header>
 
-    {{- $releasesSection := $.Site.GetPage "/music/releases" -}}
     {{- $activeEntries := slice -}}
     {{- $pastEntries := slice -}}
     {{- range .Sections -}}
@@ -124,7 +121,7 @@
 
       {{- $musicCount := 0 -}}
       {{- $projectReleases := slice -}}
-      {{- range $releasesSection.RegularPages -}}
+      {{- range (partial "release-pages.html" .) -}}
         {{- if eq .Params.project $key -}}
           {{- $musicCount = add $musicCount 1 -}}
           {{- $projectReleases = $projectReleases | append . -}}

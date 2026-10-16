@@ -5,7 +5,7 @@ Add release_date param and reset date to page-publish date in all release pages.
 import re
 from pathlib import Path
 
-RELEASES_DIR = Path(__file__).parent.parent / "content" / "music" / "releases"
+RELEASES_DIR = Path(__file__).parent.parent / "content" / "music"
 PAGE_DATE = "2026-05-18"
 
 for md_file in sorted(RELEASES_DIR.rglob("index.md")):

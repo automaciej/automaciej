@@ -1,6 +1,6 @@
 {{ define "head_extra" }}
 {{- /* This layout also serves non-release pages (e.g. performances); only releases get music.song tags. */ -}}
-{{- if hasPrefix .Path "/music/releases/" -}}
+{{- if .Params.release_date -}}
 {{- $type := cond .Params.single "MusicRecording" "MusicAlbum" -}}
 {{- $imageURL := "" -}}
 {{- with .Params.image -}}
@@ -100,7 +100,7 @@
 {{ end }}
 
 {{ define "scripts_extra" }}
-{{- if hasPrefix .Path "/music/releases/" }}
+{{- if .Params.release_date }}
 {{ partial "unreleased-script.html" . }}
 <script>
     // Share button: native share sheet, falling back to copy-link

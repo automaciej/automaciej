@@ -1,0 +1,6 @@
+{{- /*
+    All release pages: the regular pages directly under /music/ that carry a
+    release_date (the per-service lists, credits, performances etc. do not).
+    Usage: {{ partial "release-pages.html" . }}
+*/ -}}
+{{- return where (site.GetPage "/music").RegularPages "Params.release_date" "!=" nil -}}

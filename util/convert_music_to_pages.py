@@ -11,7 +11,7 @@ from pathlib import Path
 
 REPO = Path(__file__).parent.parent
 DATA_DIR = REPO / "data" / "music"
-OUT_DIR = REPO / "content" / "music" / "releases"
+OUT_DIR = REPO / "content" / "music"
 
 
 def slugify(text):

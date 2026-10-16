@@ -9,7 +9,7 @@ date; check the repo for current numbers.
 ## Content vs. data
 
 - **Content pages** (`content/`): Jogger (Polish blog), English blog (`/blog/`),
-  music releases (`/music/releases/<slug>/`), app support/landing pages, genres
+  music releases (`/music/<slug>/`), app support/landing pages, genres
   taxonomy, static EPK pages (bio, photos, press, performances).
 - **TOML data files** (`data/`): app definitions (`data/apps/`), performances
   (`data/performances/`), and a couple of not-yet-migrated music releases
@@ -17,11 +17,23 @@ date; check the repo for current numbers.
 
 ### Music releases
 
-Releases are content pages: `content/music/releases/<slug>/index.md` (YAML front
+Releases are content pages: `content/music/<slug>/index.md` (YAML front
 matter: title, artist, genres, release_date, project, image, credits, links),
 rendered by a dedicated single-page layout. `data/music/*.toml` only holds the
 newest release or two that have not been migrated; new releases follow the
-`content/music/releases/*` examples, not the TOML format.
+`content/music/<slug>/` examples, not the TOML format.
+
+Releases sit directly under `/music/`, beside other kinds of `/music/<thing>/` pages
+(performances, credits, the per-service lists, projects). `/music/` itself is the
+release list; there is no `/music/releases/` section any more. A page counts as a
+release when it has `Params.release_date`; templates get them from
+`partials/release-pages.html` and never from a section lookup. A release slug must not
+equal another `/music/` page name (tested).
+
+Redirects: releases that existed on 2026-10-16 carry `aliases: [/music/releases/<slug>/]`,
+and `/music/` aliases `/music/releases`. New releases must not get an old-style alias;
+the frozen list is `LEGACY_RELEASE_SLUGS` in the tests, so a copied alias fails the
+build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` replaces it.
 
 ### Release `links` front matter
 

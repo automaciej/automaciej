@@ -27,8 +27,7 @@
         {{- end -}}
 
         <div class="music-productions">
-            {{- $releases := .Site.GetPage "/music/releases" -}}
-            {{ range sort $releases.RegularPages "Params.release_date" "desc" }}
+            {{ range sort (partial "release-pages.html" .) "Params.release_date" "desc" }}
             {{ partial "music-preview-card.html" (dict "page" .) }}
             {{ end }}
         </div>

@@ -30,8 +30,7 @@
 {{- end -}}
 
 {{- /* Releases: country derived from linked project */ -}}
-{{- $releasesSection := $.Site.GetPage "/music/releases" -}}
-{{- range $releasesSection.RegularPages -}}
+{{- range (partial "release-pages.html" .) -}}
   {{- if .Params.project -}}
     {{- $proj := $.Site.GetPage (printf "/music/projects/%s" .Params.project) -}}
     {{- if $proj -}}
@@ -140,7 +139,7 @@
         {{- range $projs }}
         {{- $projKey := .key -}}
         {{- $releases := slice -}}
-        {{- range $releasesSection.RegularPages -}}
+        {{- range (partial "release-pages.html" .) -}}
           {{- if eq .Params.project $projKey -}}
             {{- $releases = $releases | append . -}}
           {{- end -}}

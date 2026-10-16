@@ -64,7 +64,7 @@
       {{- else }}
       {{- /* A release carries direct listen links (release-level, then per track) so readers can play it from the feed. */}}
       {{- $listen := "" }}
-      {{- if hasPrefix .RelPermalink "/music/releases/" }}
+      {{- if .Params.release_date }}
         {{- $groups := slice (dict "label" "" "links" .Params.links) }}
         {{- range .Params.tracks }}{{ $groups = $groups | append (dict "label" .title "links" .links) }}{{ end }}
         {{- range $groups }}
