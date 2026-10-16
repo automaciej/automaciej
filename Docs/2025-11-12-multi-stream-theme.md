@@ -426,6 +426,22 @@ The stylesheet (`themes/multi-stream/assets/css/main.css`) grew organically and 
 @media (min-width: 1024px) { .thing { /* desktop */ } }
 ```
 
+### File organisation (2026-10-16)
+
+`main.css` is grouped by component, in the order listed in its header comment: tokens,
+base, site chrome, home page, bio/social/contact, blog and Jogger, shortcodes, apps, shared
+page furniture, music, genres, print, utilities. Inside a component the order is base →
+narrow (`max-width: 767px`) → tablet → wide. There is no separate "mobile styles" section
+(the old 28-rule catch-all was dissolved into its components).
+`TestCssStructure` in `util/test_site_expectations.py` enforces it: no media block with many
+unrelated rules, no selector overridden in two blocks of one query, no override before its base.
+
+Shared pieces, so that pages stay consistent: `.section-header` (page title), `.section-label`
+(small uppercase group heading: Active/Past, Performances/Releases), the card chrome shared by
+`.post-card`, `.card-shadow`, `.genre-card` and `.project-card` (shadow, ring on hover), and one
+page wrapper for `/music/` and project pages (`.music-page, .music-project-page`). Don't use
+`<hr>` for visual separation; use spacing or a border on the item.
+
 ### Canonical breakpoints
 
 Three breakpoints cover the stream/card system (home, music, apps, jogger):

@@ -64,7 +64,7 @@
 
     {{ if $performances }}
     <section>
-      <h2>Performances</h2>
+      <h2 class="section-label">Performances</h2>
       <ul>
         {{ range $performances }}
         <li>
@@ -79,7 +79,7 @@
 
     {{ if $music }}
     <section>
-      <h2>Releases</h2>
+      <h2 class="section-label">Releases</h2>
       <div class="music-productions">
         {{ range $music }}
         {{ partial "music-preview-card.html" (dict "page" .) }}
@@ -135,7 +135,7 @@
         "title" .Title
         "start_year" ($proj.start_year | default 0)
         "end_year" $proj.end_year
-        "description" .Plain
+        "description" (.Plain | htmlUnescape)
         "with" $proj.with
         "perfCount" $perfCount
         "musicCount" $musicCount
@@ -153,7 +153,7 @@
     {{- $pastEntries = sort $pastEntries "start_year" "desc" -}}
 
     {{- if $activeEntries -}}
-    <h2 class="projects-section-label">Active</h2>
+    <h2 class="section-label">Active</h2>
     <div class="projects-grid">
       {{- range $activeEntries -}}
       {{- template "project-card" . -}}
@@ -162,7 +162,7 @@
     {{- end -}}
 
     {{- if $pastEntries -}}
-    <h2 class="projects-section-label">Past</h2>
+    <h2 class="section-label">Past</h2>
     <div class="projects-grid">
       {{- range $pastEntries -}}
       {{- template "project-card" . -}}

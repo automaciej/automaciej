@@ -1,4 +1,21 @@
-/* Multi-Stream Theme - Minimal Base Styles */
+/* Multi-Stream Theme - Minimal Base Styles
+
+   ORGANISATION. The file is grouped by component, in this order:
+      1. Tokens and themes            8. Apps
+      2. Base and layout              9. Shared page furniture
+      3. Site chrome                 10. Music (cards, release page, projects,
+      4. Home page                       performances, credits, report, lists)
+      5. Bio, social and contact     11. Genres
+      6. Blog and Jogger             12. Print
+      7. Shortcodes                  13. Utilities
+   A component's responsive behaviour lives directly under its base rules, in
+   this order: narrow (max-width: 767px), tablet (768-1023px), wide (min-width:
+   1024px). There is no separate "mobile styles" section; see "CSS Architecture"
+   in Docs/2025-11-12-multi-stream-theme.md. */
+
+/* ==========================================================================
+   1. TOKENS AND THEMES
+   ========================================================================== */
 
 :root {
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -6,6 +23,7 @@
 }
 
 /* Light mode (default) */
+
 :root {
     --bg-primary: #f5f5f7;
     --bg-secondary: #ffffff;
@@ -17,6 +35,7 @@
 }
 
 /* Dark mode */
+
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-primary: #000000;
@@ -28,6 +47,10 @@
         --accent: #2997ff;
     }
 }
+
+/* ==========================================================================
+   2. BASE AND LAYOUT
+   ========================================================================== */
 
 * {
     margin: 0;
@@ -48,6 +71,7 @@ body {
    abundant, so a gutter is added instead of leaving content stretched
    edge-to-edge. Cards never need to bleed/cancel this — there's
    nothing to cancel on narrow screens in the first place. */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -60,7 +84,12 @@ body {
     }
 }
 
+/* ==========================================================================
+   3. SITE CHROME AND GLOBAL ELEMENTS
+   ========================================================================== */
+
 /* Header */
+
 .site-header {
     border-bottom: 1px solid var(--border-color);
     padding: 20px 0;
@@ -83,6 +112,7 @@ body {
 }
 
 /* Breadcrumb trail in the header: Site > Section > Page */
+
 .site-breadcrumb {
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +148,7 @@ body {
 }
 
 /* Hamburger toggle button */
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -151,13 +182,69 @@ body {
     color: var(--accent);
 }
 
+/* Narrow screens: shorter header, and the nav collapses into the hamburger menu. */
+@media (max-width: 767px) {
+    .site-header {
+        padding: 10px 0;
+    }
+
+    /* Mobile navigation */
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
 /* Main content */
+
 main {
     min-height: 60vh;
     padding: 0 0 40px 0;
 }
 
 /* Footer */
+
 .site-footer {
     border-top: 1px solid var(--border-color);
     padding: 40px 0;
@@ -166,6 +253,7 @@ main {
 }
 
 /* Links */
+
 a {
     color: var(--accent);
     text-decoration: none;
@@ -176,6 +264,7 @@ a:hover {
 }
 
 /* Headings */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-sans);
     line-height: 1.2;
@@ -185,6 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Card title: one heading level below a stream's h2, used by every
    preview card (music, app, blog, post-card) */
+
 .music-preview h3,
 .app-preview h3,
 .blog-post-preview h3,
@@ -193,7 +283,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 0 0;
 }
 
+/* ==========================================================================
+   4. HOME PAGE
+   ========================================================================== */
+
 /* Hero section */
+
 .hero {
     padding: 60px 0 40px 0;
 }
@@ -275,9 +370,14 @@ h1, h2, h3, h4, h5, h6 {
     .hero .tagline {
         color: var(--text-secondary);
     }
+
+    .hero {
+        padding: 15px 0 10px 0;
+    }
 }
 
 /* Stream columns */
+
 .stream-columns {
     display: grid;
     grid-template-columns: 1fr;
@@ -285,6 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Increase gap on wider screens */
+
 @media (min-width: 768px) {
     .stream-columns {
         gap: 2rem;
@@ -292,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile: Stack Music on top, then Apps, then Bio */
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .stream-columns {
         grid-template-columns: 1fr;
@@ -304,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Desktop: Three columns */
+
 @media (min-width: 1024px) {
     .stream-columns {
         grid-template-columns: 1fr 1fr 1fr;
@@ -323,6 +426,13 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent);
 }
 
+@media (max-width: 767px) {
+    .music-stream h2,
+    .apps-stream h2 {
+        display: none;
+    }
+}
+
 .stream-content {
     /* Removed background - individual items will have their own containers */
 }
@@ -335,6 +445,7 @@ h1, h2, h3, h4, h5, h6 {
    Scoped to music/apps only: bio-stream's .stream-content holds
    prose and .blog-post-preview, which have their own spacing and
    would double up if this applied there too. */
+
 .music-stream .stream-content,
 .apps-stream .stream-content {
     display: flex;
@@ -343,6 +454,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Music preview on homepage */
+
 .music-preview {
     position: relative;
     background: var(--bg-secondary);
@@ -362,6 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Card text is three lines at every width: title / artist / genres •
    month. Each line stays on one line (ellipsis) so long collaborator
    lists can't grow the card. */
+
 .music-preview-artist,
 .music-preview-details {
     white-space: nowrap;
@@ -391,6 +504,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Service logos at the foot of a card; above the card's stretched link so
    they open the service directly. */
+
 .music-preview-services {
     display: flex;
     gap: 0.5rem;
@@ -412,6 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* "Presave" chip: a release whose only link is the pre-save page. */
+
 .presave-chip {
     display: inline-block;
     padding: 0.05rem 0.6rem;
@@ -434,79 +549,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
-/* Apps preview on homepage */
-.app-preview {
-    position: relative;
-    background: var(--bg-secondary);
-    padding: 1.25rem;
-    border-radius: 12px;
-}
-
-.app-preview h3 a {
-    color: var(--text-primary);
-    text-decoration: none;
-}
-
-.app-preview .app-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.app-preview-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 9px;
-    flex-shrink: 0;
-}
-
-/* Blog preview on homepage */
-.blog-post-preview {
-    background: var(--bg-secondary);
-    padding: 1.25rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-}
-
-.blog-post-preview:last-of-type {
-    margin-bottom: 1rem;
-}
-
-.blog-post-preview h3 a {
-    color: var(--text-primary);
-    text-decoration: none;
-}
-
-.app-preview h3 a:hover {
-    color: var(--text-primary);
-    text-decoration: underline;
-}
-
-.app-preview .app-type {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin: 0 0 0.75rem 0;
-}
-
-.app-preview .app-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 0 0 0.75rem 0;
-    color: var(--text-primary);
-}
-
-/* Default: hide mobile link, show desktop link */
-.view-all-link-mobile {
-    display: none;
-}
-
-.view-all-link-desktop {
-    display: inline-block;
-}
-
 /* Unreleased music: unreleased.js adds .is-unreleased to the card. The
    overlay is hidden by default so no-JS visitors see a normal card. Its
    geometry (and radius) mirror the image's at each breakpoint below. */
+
 .music-preview-image {
     position: relative;
 }
@@ -549,6 +595,7 @@ h1, h2, h3, h4, h5, h6 {
      clamped text ever needs" — content's natural height is what
      actually wins the stretch in normal cases; this cap only matters
      if the image would otherwise be the bigger one. */
+
 @media (max-width: 767px) {
     .music-preview {
         display: flex;
@@ -632,6 +679,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Tablet horizontal layout */
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .music-preview {
         display: flex;
@@ -672,6 +720,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Full width image on wide screens */
+
 @media (min-width: 1024px) {
     .music-preview-image {
         margin: -1.25rem -1.25rem 1rem;
@@ -697,6 +746,101 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media (max-width: 767px) {
+    .music-preview-desktop-only {
+        display: none;
+    }
+}
+
+/* Apps preview on homepage */
+
+.app-preview {
+    position: relative;
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.app-preview h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.app-preview .app-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.app-preview-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    flex-shrink: 0;
+}
+
+/* Blog preview on homepage */
+
+.blog-post-preview {
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.blog-post-preview:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.blog-post-preview h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.app-preview h3 a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.app-preview .app-type {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.75rem 0;
+}
+
+.app-preview .app-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 0.75rem 0;
+    color: var(--text-primary);
+}
+
+@media (max-width: 767px) {
+    .app-preview-desktop-only {
+        display: none;
+    }
+}
+
+/* Default: hide mobile link, show desktop link */
+
+.view-all-link-mobile {
+    display: none;
+}
+
+.view-all-link-desktop {
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .view-all-link-mobile {
+        display: inline-block !important;
+    }
+
+    .view-all-link-desktop {
+        display: none !important;
+    }
+}
+
 .stream-footer {
     margin-top: 0;
     text-align: center;
@@ -712,9 +856,123 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
-/* Show all 3 music previews on all screen sizes */
+/* ==========================================================================
+   5. BIO, SOCIAL AND CONTACT
+   ========================================================================== */
+
+/* Bio stream content */
+
+.bio-stream .bio-summary {
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.bio-stream .bio-summary h2 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.bio-stream .bio-summary h2:first-child {
+    margin-top: 0;
+}
+
+.bio-stream .bio-summary p {
+    margin-bottom: 1rem;
+}
+
+.stream-content ul,
+.stream-content ol,
+main ul,
+main ol
+{
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.stream-content li {
+    margin-bottom: 0;
+}
+
+.bio-stream .bio-summary hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+    opacity: 0.5;
+}
+
+/* Social links */
+
+.social {
+    margin: 1.5rem 0;
+}
+
+.social ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.social li {
+    margin: 0;
+}
+
+.social a {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social a:hover {
+    color: var(--accent);
+}
+
+.social a.bluesky-icon svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.25em;
+}
+
+.social a.text-icon {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Contact section on homepage */
+
+.contact {
+    margin-top: 2em;
+    padding: 1em 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact .social ul {
+    justify-content: center;
+}
+
+.contact .contact-subheading {
+    margin-top: 1.5rem;
+}
+
+/* ==========================================================================
+   6. BLOG AND JOGGER
+   ========================================================================== */
 
 /* Post content */
+
 .post-content {
     max-width: 720px;
     margin: 0 auto;
@@ -723,6 +981,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Ensure all embedded media within post content are responsive */
+
 .post-content img,
 .post-content video,
 .post-content iframe {
@@ -824,6 +1083,23 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--bg-secondary);
 }
 
+@media (max-width: 767px) {
+    .post-content img {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Figure-shortcode images cap height instead of stretching to width on mobile */
+    .post-content figure img,
+    .stream-content figure img {
+        width: auto;
+        max-height: 300px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 .post-header {
     margin-bottom: 2rem;
 }
@@ -842,6 +1118,13 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     display: block;
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+@media (max-width: 767px) {
+    /* Banner image: taller ratio on narrow screens so subjects aren't over-cropped */
+    .post-illustration {
+        aspect-ratio: 16 / 9;
+    }
 }
 
 .post-meta {
@@ -868,7 +1151,14 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
 }
 
+@media (max-width: 767px) {
+    .posts-list {
+        gap: 0.25rem;
+    }
+}
+
 /* Post cards */
+
 .post-card {
     background: var(--bg-secondary);
     border-radius: 12px;
@@ -888,16 +1178,19 @@ h1, h2, h3, h4, h5, h6 {
    (drop a shadow, ring on hover), not for which card first used it —
    .card-shadow is applied directly by music/app preview cards; post
    and genre cards bake the same rule in under their own name. */
+
 .post-card,
 .card-shadow,
-.genre-card {
+.genre-card,
+.project-card {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: box-shadow 0.2s;
 }
 
 .post-card:hover,
 .card-shadow:hover,
-.genre-card:hover {
+.genre-card:hover,
+.project-card:hover {
     box-shadow: 0 0 0 2px var(--text-secondary);
 }
 
@@ -922,6 +1215,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Blog post cards aren't whole-card links (title/image/read-more are
    separately clickable), so don't show the whole-card hover affordance */
+
 .blog-posts-list .post-card:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -949,121 +1243,128 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: auto; /* Push description to bottom to ensure consistent card height */
 }
 
-/* Bio stream content */
-.bio-stream .bio-summary {
-    background: var(--bg-secondary);
-    padding: 1.25rem;
-    border-radius: 12px;
+@media (max-width: 767px) {
+    .post-card {
+        background: none;
+        margin-bottom: 0; /* no margins on narrow screens */
+        padding: 0;
+    }
+
+    .post-card .post-meta {
+        margin-bottom: 0;
+    }
+
+    /* Narrow screens drop the description. */
+    .post-card-content .post-description {
+        /* Don't display the description on narrow screens. */
+        display: none;
+    }
+
+    /* Blog list cards keep the full card look (not whole-card links). */
+    .blog-posts-list .post-card-image {
+        width: 100%;
+        max-height: 200px; /* Adjust as needed */
+    }
+
+    .blog-posts-list img {
+    }
+
+    .blog-posts-list .post-card {
+        flex-direction: column;
+        padding: 1.25rem; /* Restore padding for jogger cards */
+        background: var(--bg-secondary); /* Restore background for jogger cards */
+        border-radius: 12px; /* Restore border-radius for jogger cards */
+        margin-bottom: 1rem; /* Restore margin for jogger cards */
+        border-bottom: none; /* Remove the generic border */
+    }
+
+    .blog-posts-list .post-card:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* no whole-card hover affordance; card isn't whole-card clickable */
+    }
+
+    .blog-posts-list .post-card .post-meta,
+    .blog-posts-list .post-card .post-description {
+        display: block; /* Restore meta and description for jogger cards */
+    }
 }
 
-.bio-stream .bio-summary h2 {
-    font-size: 1.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
+/* ==========================================================================
+   7. SHORTCODES
+   ========================================================================== */
 
-.bio-stream .bio-summary h2:first-child {
-    margin-top: 0;
-}
+/* Reminders shortcode */
 
-.bio-stream .bio-summary p {
-    margin-bottom: 1rem;
-}
-
-
-.stream-content ul,
-.stream-content ol,
-main ul,
-main ol
-{
-    margin: 0;
-    padding-left: 1.5rem;
-}
-
-.stream-content li {
-    margin-bottom: 0;
-}
-
-.bio-stream .bio-summary hr {
-    border: none;
-    border-top: 1px solid var(--border-color);
-    margin: 1.5rem 0;
-    opacity: 0.5;
-}
-
-/* Social links */
-.social {
-    margin: 1.5rem 0;
-}
-
-.social ul {
+.reminders-container {
     display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.social li {
-    margin: 0;
-}
-
-.social a {
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.social a:hover {
-    color: var(--accent);
-}
-
-.social a.bluesky-icon svg {
-    display: block;
-    width: 1em;
-    height: 1em;
-    position: relative;
-    top: 0.25em;
-}
-
-.social a.text-icon {
-    font-size: 0.95rem;
-    font-weight: 600;
-}
-
-/* Contact section on homepage */
-.contact {
-    margin-top: 2em;
-    padding: 1em 0;
-    border-top: 1px solid var(--border-color);
-    text-align: center;
-}
-
-.contact h2 {
-    margin-bottom: 1rem;
-}
-
-.contact .social ul {
     justify-content: center;
-}
-
-.contact .contact-subheading {
-    margin-top: 1.5rem;
-}
-
-/* Music page */
-.music-page {
-    padding: 2rem 0;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
 @media (max-width: 767px) {
-    .music-page {
-        padding: 0;
+    .reminders-container {
+        flex-direction: column;
     }
 }
+
+.reminder-card {
+    flex: 1;
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.reminder-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.reminder-body {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.reminder-body p {
+    text-indent: 0;
+    margin-bottom: 0;
+}
+
+/* Priority Task shortcode */
+
+.priority-task-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reminder-card.priority-task {
+    max-width: 300px; /* Or adjust as needed */
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
+}
+
+/* Separators that used to be <hr> elements: a border on the item, not a rule element. */
+
+.toc-block {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.events-group {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ==========================================================================
+   8. APPS
+   ========================================================================== */
 
 .testflight-banner {
     background: #28A745;
@@ -1185,6 +1486,10 @@ main ol
     opacity: 0.9;
 }
 
+/* ==========================================================================
+   9. SHARED PAGE FURNITURE
+   ========================================================================== */
+
 .section-header {
     margin-bottom: 2rem;
 }
@@ -1229,10 +1534,29 @@ main ol
     margin-top: 1rem;
 }
 
+/* ==========================================================================
+   10. MUSIC
+   ========================================================================== */
+
+/* Music page */
+
+.music-page,
+.music-project-page {
+    padding: 2rem 0;
+}
+
+@media (max-width: 767px) {
+    .music-page,
+    .music-project-page {
+        padding: 0;
+    }
+}
+
 /* Shared by /music/, /music/projects/<name>/, and /genres/<term>/ —
    whichever of .music-preview or .music-card the page uses. Spacing
    is gap, not each card's own margin-bottom, so it's correct at any
    list length and any width without a per-breakpoint reset. */
+
 .music-productions {
     display: flex;
     flex-direction: column;
@@ -1242,6 +1566,7 @@ main ol
 }
 
 /* Two-column grid on wide screens */
+
 @media (min-width: 1024px) {
     .music-productions {
         max-width: 1200px;
@@ -1318,6 +1643,7 @@ main ol
 }
 
 /* Release page: dedicated layout, description/links/tracks reuse music-content styles */
+
 .music-release {
     margin-bottom: 2rem;
 }
@@ -1533,223 +1859,12 @@ main ol
     color: var(--text-secondary);
 }
 
-/* Reminders shortcode */
-.reminders-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-}
-
-.reminder-card {
-    flex: 1;
-    background-color: var(--bg-secondary);
-    border-radius: 12px;
-    padding: 1rem;
-    border: 1px solid var(--border-color);
-}
-
-.reminder-title {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-}
-
-.reminder-body {
-    font-size: 1rem;
-    color: var(--text-secondary);
-}
-
-.reminder-body p {
-    text-indent: 0;
-    margin-bottom: 0;
-}
-
-/* Priority Task shortcode */
-.priority-task-container {
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.reminder-card.priority-task {
-    max-width: 300px; /* Or adjust as needed */
-    border: 2px solid var(--accent);
-    box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
-}
-
-
-
-/*
-   ==============================================
-   Mobile Styles (narrow screens, <768px)
-   ==============================================
-*/
-@media (max-width: 767px) {
-    /*
-       ----------------------------------------------
-       General Mobile Styles
-       ----------------------------------------------
-    */
-    /* Header */
-    .site-header {
-        padding: 10px 0;
-    }
-
-    /* Mobile navigation */
-    .nav-toggle {
-        display: flex;
-    }
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 1rem;
-        margin-top: 0.5rem;
-        flex-direction: column;
-        gap: 1rem;
-        min-width: 200px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    .nav-menu.active {
-        display: flex;
-    }
-    .nav-menu li {
-        margin: 0;
-    }
-    .nav-menu a {
-        display: block;
-        padding: 0.5rem;
-    }
-    .nav-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .nav-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-    .nav-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-    }
-
-    /* Hero section */
-    .hero {
-        padding: 15px 0 10px 0;
-    }
-
-    /* Stream columns */
-    .music-stream h2,
-    .apps-stream h2 {
-        display: none;
-    }
-
-    /* Music preview layout on narrow screens lives with its base
-       rule near line 375 (.music-preview), not here, to avoid two
-       conflicting definitions fighting over the same breakpoint. */
-    .music-preview-desktop-only {
-        display: none;
-    }
-    .app-preview-desktop-only {
-        display: none;
-    }
-    .view-all-link-mobile {
-        display: inline-block !important;
-    }
-    .view-all-link-desktop {
-        display: none !important;
-    }
-
-    /* Post content */
-    .post-content img {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    /* Banner image: taller ratio on narrow screens so subjects aren't over-cropped */
-    .post-illustration {
-        aspect-ratio: 16 / 9;
-    }
-
-    /* .music-releases-year mobile override lives with its base rule
-       near line 1587, not here, to avoid a stale cascade (base rule
-       declared after this shared breakpoint block would silently win). */
-
-    /* Figure-shortcode images cap height instead of stretching to width on mobile */
-    .post-content figure img,
-    .stream-content figure img {
-        width: auto;
-        max-height: 300px;
-        max-width: 100%;
-        margin: 0 auto;
-        display: block;
-    }
-
-    /* Reminders shortcode */
-    .reminders-container {
-        flex-direction: column;
-    }
-
-    .posts-list {
-	gap: 0.25rem;
-    }
-
-    .post-card {
-	background: none;
-	margin-bottom: 0; /* no margins on narrow screens */
-	padding: 0;
-    }
-
-    .post-card .post-meta {
-	margin-bottom: 0;
-    }
-
-    .post-card-content .post-description {
-	/* Don't display the description on narrow screens. */
-        display: none;
-    }
-
-    /*
-       ----------------------------------------------
-       Blog Mobile Styles
-       ----------------------------------------------
-    */
-    .blog-posts-list .post-card-image {
-        width: 100%;
-        max-height: 200px; /* Adjust as needed */
-    }
-
-    .blog-posts-list img {
-    }
-
-    .blog-posts-list .post-card {
-        flex-direction: column;
-        padding: 1.25rem; /* Restore padding for jogger cards */
-        background: var(--bg-secondary); /* Restore background for jogger cards */
-        border-radius: 12px; /* Restore border-radius for jogger cards */
-        margin-bottom: 1rem; /* Restore margin for jogger cards */
-        border-bottom: none; /* Remove the generic border */
-    }
-
-    .blog-posts-list .post-card:hover {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* no whole-card hover affordance; card isn't whole-card clickable */
-    }
-
-    .blog-posts-list .post-card .post-meta,
-    .blog-posts-list .post-card .post-description {
-        display: block; /* Restore meta and description for jogger cards */
-    }
-}
-
 /* ================================================
    Projects feature
    ================================================ */
 
 /* Current-projects summary line on /music/ */
+
 .music-projects-summary {
     margin-bottom: 2.5rem;
     color: var(--text-secondary);
@@ -1848,8 +1963,10 @@ main ol
     color: #fff;
 }
 
-/* Active / Past section headings on projects list */
-.projects-section-label {
+/* Small uppercase heading that introduces a group on a page: Active / Past on the
+   projects list, Performances / Releases on a project page. */
+
+.section-label {
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -1858,15 +1975,16 @@ main ol
     margin: 2rem 0 1rem;
 }
 
-.projects-section-label:first-of-type {
+.section-label:first-of-type {
     margin-top: 0;
 }
 
 /* Project cards grid on /music/projects/ */
+
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -1876,114 +1994,25 @@ main ol
     }
 }
 
-.genres-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-auto-rows: 1fr;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.genre-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    aspect-ratio: 1 / 1;
-    padding: 1rem 1.25rem 20px;
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    overflow: hidden;
-    text-decoration: none;
-    color: var(--text-primary);
-}
-
-.genre-card:hover {
-    text-decoration: none;
-}
-
-.genre-card-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.genre-card-name {
-    font-weight: 400;
-    font-size: 1.75rem;
-    line-height: 1;
-}
-
-.genre-card-count {
-    color: var(--text-secondary);
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1;
-}
-
-.genre-card-examples {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.genre-card-examples li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-}
-
-.genre-card-examples img,
-.genre-card-examples .waveform-placeholder {
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.genre-card-examples span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-@media (max-width: 640px) {
-    .genres-grid {
-        grid-auto-rows: auto;
-    }
-
-    .genre-card {
-        aspect-ratio: auto;
-    }
-}
-
 .project-card {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     padding: 1.5rem;
     background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
     border-radius: 12px;
     text-decoration: none;
     color: var(--text-primary);
-    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .project-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
     text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .project-card {
+        padding: 1.25rem;
+    }
 }
 
 .project-card-header {
@@ -2051,6 +2080,7 @@ main ol
 }
 
 /* "More from this project" link on music cards and previews */
+
 .music-project-link {
     margin-top: 2rem;
 }
@@ -2066,9 +2096,6 @@ main ol
 }
 
 /* Individual project page */
-.music-project-page {
-    padding: 2rem 0;
-}
 
 .music-project-page .section-header dl {
     display: grid;
@@ -2089,13 +2116,6 @@ main ol
 
 .music-project-page section {
     margin-top: 2.5rem;
-}
-
-.music-project-page section h2 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .music-project-page section ul {
@@ -2182,17 +2202,6 @@ main ol
     gap: 1rem;
 }
 
-@media (min-width: 1024px) {
-    .credits-roles {
-        column-width: 16rem;
-        column-gap: 2.5rem;
-    }
-
-    .credits-role {
-        break-inside: avoid;
-    }
-}
-
 .credits-person {
     padding-bottom: 0.5rem;
     border-bottom-width: 1px;
@@ -2215,6 +2224,17 @@ main ol
 
 .credits-role {
     margin-left: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .credits-roles {
+        column-width: 16rem;
+        column-gap: 2.5rem;
+    }
+
+    .credits-role {
+        break-inside: avoid;
+    }
 }
 
 .credits-role-single {
@@ -2324,6 +2344,7 @@ main ol
 }
 
 /* Summary tables */
+
 .report-summary-table {
     width: 100%;
     border-collapse: collapse;
@@ -2354,6 +2375,7 @@ main ol
 }
 
 /* Projects table */
+
 .report-projects-table {
     width: 100%;
     border-collapse: collapse;
@@ -2415,6 +2437,7 @@ main ol
 }
 
 /* Performances list */
+
 .report-perf-list {
     list-style: decimal;
     padding-left: 2.2em;
@@ -2463,42 +2486,8 @@ main ol
     content: "";
 }
 
-@media (max-width: 640px) {
-    .project-card {
-        padding: 1.25rem;
-    }
-}
-
-/* Print styles */
-@media print {
-    nav, .site-header, .site-footer, .report-print-link, .no-print {
-        display: none !important;
-    }
-
-    .music-report {
-        max-width: 100%;
-        padding: 0;
-        font-size: 10pt;
-        line-height: 1.5;
-        color: #000;
-    }
-
-    .report-header h1 { font-size: 16pt; }
-    .report-section h2 { font-size: 12pt; }
-
-    .report-perf-item {
-        break-inside: avoid;
-    }
-
-    .report-section {
-        break-before: auto;
-    }
-
-    a { color: #000; text-decoration: none; }
-    a[href]::after { content: " (" attr(href) ")"; font-size: 8pt; }
-}
-
 /* Per-streaming-service song lists (/music/spotify, /music/apple) */
+
 .streaming-list {
     list-style: none;
     margin: 2rem 0;
@@ -2530,6 +2519,7 @@ main ol
 }
 
 /* Service logo (or the generic external-link icon) in the artwork's top right corner. */
+
 .streaming-item-art-icon {
     position: absolute;
     top: 3px;
@@ -2581,6 +2571,139 @@ main ol
     margin-left: 0.3em;
     vertical-align: -0.05em;
 }
+
+/* ==========================================================================
+   11. GENRES
+   ========================================================================== */
+
+.genres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.genre-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    aspect-ratio: 1 / 1;
+    padding: 1rem 1.25rem 20px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.genre-card:hover {
+    text-decoration: none;
+}
+
+.genre-card-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.genre-card-name {
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.genre-card-count {
+    color: var(--text-secondary);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.genre-card-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.genre-card-examples li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.genre-card-examples img,
+.genre-card-examples .waveform-placeholder {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.genre-card-examples span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .genres-grid {
+        grid-auto-rows: auto;
+    }
+
+    .genre-card {
+        aspect-ratio: auto;
+    }
+}
+
+/* ==========================================================================
+   12. PRINT
+   ========================================================================== */
+
+/* Print styles */
+
+@media print {
+    nav, .site-header, .site-footer, .report-print-link, .no-print {
+        display: none !important;
+    }
+
+    .music-report {
+        max-width: 100%;
+        padding: 0;
+        font-size: 10pt;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .report-header h1 { font-size: 16pt; }
+    .report-section h2 { font-size: 12pt; }
+
+    .report-perf-item {
+        break-inside: avoid;
+    }
+
+    .report-section {
+        break-before: auto;
+    }
+
+    a { color: #000; text-decoration: none; }
+    a[href]::after { content: " (" attr(href) ")"; font-size: 8pt; }
+}
+
+/* ==========================================================================
+   13. UTILITIES
+   ========================================================================== */
 
 .visually-hidden {
     position: absolute;

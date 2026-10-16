@@ -15,12 +15,10 @@
 {{- end -}}
 
 {{- if $future -}}
-<hr />
-<div id="future-events"></div>
+<div id="future-events" class="events-group"></div>
 {{- end }}
 {{ if $past -}}
-<hr />
-<div id="past-events"></div>
+<div id="past-events" class="events-group"></div>
 {{- end }}
 
 {{- $projectsList := dict -}}

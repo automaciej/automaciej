@@ -164,6 +164,25 @@ def non_home(pages):
     return {u: p for u, p in pages.items() if u != "/"}
 
 
+class TestEscaping(unittest.TestCase):
+    """Text must not show raw entities like &rsquo; (double-escaped HTML)."""
+
+    DOUBLE_ESCAPED = re.compile(r"&amp;(?:#\d+|#x[0-9a-fA-F]+|[a-zA-Z][a-zA-Z0-9]*);")
+
+    def test_no_double_escaped_entities(self):
+        """/music/projects/ showed "Maciej&rsquo;s" and "&ldquo;Little Bird&rdquo;" (2026-10-16)."""
+        bad = {}
+        for url in SITE.pages:
+            if url.startswith("/jogger/"):
+                continue  # legacy archive: some posts keep "&amp;amp;" in imported URLs, one quotes it on purpose
+            html = (SITE.root / url.strip("/") / "index.html").read_text(encoding="utf-8")
+            html = re.sub(r"<(pre|code|script|style)\b.*?</\1>", "", html, flags=re.S)
+            found = sorted(set(self.DOUBLE_ESCAPED.findall(html)))
+            if found:
+                bad[url] = found[:5]
+        self.assertEqual(bad, {})
+
+
 class TestBasicHead(unittest.TestCase):
     """Title, description, language: the minimum every page needs."""
 
@@ -551,6 +570,89 @@ LEGACY_RELEASE_SLUGS = {
     "to-promenade",
     "triste",
 }
+
+
+def css_rules(text):
+    """Yield (media query or None, selector, position) for every rule in a stylesheet."""
+    text = re.sub(r"/\*.*?\*/", lambda m: " " * len(m.group(0)), text, flags=re.S)
+    out, i, n = [], 0, len(text)
+
+    def block_end(start):
+        depth, j = 0, start
+        while True:
+            depth += (text[j] == "{") - (text[j] == "}")
+            j += 1
+            if depth == 0:
+                return j
+
+    def walk(lo, hi, query):
+        i = lo
+        while i < hi:
+            if text[i].isspace():
+                i += 1
+                continue
+            brace = text.index("{", i)
+            head = " ".join(text[i:brace].split())
+            end = block_end(brace)
+            if head.startswith("@media"):
+                walk(brace + 1, end - 1, head)
+            elif not head.startswith("@"):
+                for sel in head.split(","):
+                    out.append((query, " ".join(sel.split()), i))
+            i = end
+
+    walk(0, n, None)
+    return out
+
+
+class TestCssStructure(unittest.TestCase):
+    """The stylesheet is grouped by component; responsive rules sit under their base (2026-10-16)."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.text = (REPO / "themes/multi-stream/assets/css/main.css").read_text(encoding="utf-8")
+        cls.rules = css_rules(cls.text)
+
+    def test_templates_do_not_emit_hr(self):
+        """No <hr> as a separator: use spacing or a border on the item (2026-10-16)."""
+        bad = [str(f.relative_to(REPO)) for root in ("layouts", "themes/multi-stream/layouts")
+               for f in (REPO / root).rglob("*.html")
+               if re.search(r"<hr\b", f.read_text(encoding="utf-8")) and f.name != "book.html"]
+        self.assertEqual(bad, [])
+
+    def test_no_catch_all_media_blocks(self):
+        """A 28-rule "General Mobile Styles" block once hid stale overrides (2026-10-01 bug)."""
+        per_block = {}
+        for query, sel, pos in self.rules:
+            if query and query != "print":
+                per_block.setdefault((query, self.block_start(pos)), set()).add(sel)
+        big = {k[0]: len(v) for k, v in per_block.items() if len(v) > 12}
+        self.assertEqual(big, {}, "a media block holds many unrelated rules; move them under their components")
+
+    def block_start(self, pos):
+        # Rules of one @media block share the nearest preceding "@media" that is still open.
+        before = self.text[:pos]
+        return before.rfind("@media")
+
+    def test_no_selector_overridden_in_two_blocks_of_the_same_query(self):
+        seen, dup = {}, []
+        for query, sel, pos in self.rules:
+            if not query:
+                continue
+            block = self.block_start(pos)
+            if seen.setdefault((query, sel), block) != block:
+                dup.append(f"{query}: {sel}")
+        self.assertEqual(dup, [])
+
+    def test_responsive_overrides_come_after_their_base_rule(self):
+        base_first, bad = {}, []
+        for query, sel, pos in self.rules:
+            if not query:
+                base_first.setdefault(sel, pos)
+        for query, sel, pos in self.rules:
+            if query and query != "print" and sel in base_first and base_first[sel] > pos:
+                bad.append(f"{query}: {sel}")
+        self.assertEqual(bad, [], "a breakpoint override is declared before its base rule and would lose to it")
 
 
 class TestMusicUrls(unittest.TestCase):
