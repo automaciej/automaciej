@@ -1278,6 +1278,11 @@ main ol
     font-size: 0.7em;
 }
 
+.music-quick-links .service-icon {
+    width: 1.1em;
+    height: 1.1em;
+}
+
 .music-quick-links a:hover {
     color: var(--accent);
     text-decoration: underline;
