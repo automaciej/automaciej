@@ -11,6 +11,7 @@ aliases: [ "/bio/music", "/music/releases" ]
 # Services without an entry get the generic external-link icon.
 service_icons:
   spotify: /images/services/spotify.png
+  apple_music: /images/services/apple_music.svg
 
 ---
 
