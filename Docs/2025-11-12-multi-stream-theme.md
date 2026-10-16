@@ -454,7 +454,7 @@ Three breakpoints cover the stream/card system (home, music, apps, jogger):
 
 767/768/1023/1024 are used consistently so ranges never overlap or leave a gap — a width is never matched by two rules that disagree, and never matched by zero.
 
-**Exception, by design, not oversight**: `.genres-grid` and `.genre-card` use `640px` for their own column math. (`.projects-grid` used to as well; it now goes 2-up at 768px so its cards share the phone layout below.)
+**Exception, by design, not oversight**: `.genres-grid` and `.genre-card` use `640px` for their own column math. (`.projects-grid` used to as well; from 768px it now fits as many columns as have cards of at least 360px, up to 3, so it has no breakpoint of its own.)
 
 ### `.container` is fluid, not padded-then-cancelled
 

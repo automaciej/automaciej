@@ -2018,9 +2018,11 @@ main ol
     margin-bottom: 2rem;
 }
 
+/* From 768px: as many columns as fit with cards at least 360px wide, but never more than 3
+   (the max() makes each column at least a third of the width, minus the gaps). */
 @media (min-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(max(360px, (100% - 4rem) / 3), 1fr));
     }
 }
 

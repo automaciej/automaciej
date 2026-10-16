@@ -192,8 +192,8 @@ content files.
 
 `themes/multi-stream/assets/css/main.css` is hand-written, no framework.
 Mobile-first with three canonical breakpoints: phones (`max-width: 767px`),
-tablet (`768px`–`1023px`), desktop (`min-width: 1024px`). A few grids
-(`.projects-grid`, `.genres-grid`) use their own `640px` breakpoint tied to their
-column math. See `Docs/2025-11-12-multi-stream-theme.md` ("CSS Architecture")
+tablet (`768px`–`1023px`), desktop (`min-width: 1024px`). The genres grid
+(`.genres-grid`) uses its own `640px` breakpoint tied to its column math; the projects grid
+fits up to 3 columns of cards at least 360px wide, with no breakpoint. See `Docs/2025-11-12-multi-stream-theme.md` ("CSS Architecture")
 for the reasoning: fluid `.container`, gap-based list spacing, and why rules for
 one selector stay co-located.
