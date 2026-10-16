@@ -307,13 +307,33 @@ class TestFeeds(unittest.TestCase):
                         bad.append(f"{url}: {l['href']} invalid XML: {e}")
         self.assertEqual(bad, [])
 
-    def test_genres_index_has_no_feed_but_genre_pages_do(self):
-        idx = SITE.pages["/genres/"]
-        self.assertEqual([l for l in idx.links if l.get("type") == "application/rss+xml"], [])
-        terms = [u for u in SITE.pages if re.match(r"^/genres/[^/]+/$", u)]
-        self.assertTrue(terms)
-        for u in terms:
+    def test_genre_pages_and_overview_advertise_a_feed(self):
+        for u in ["/genres/"] + [u for u in SITE.pages if re.match(r"^/genres/[^/]+/$", u)]:
             self.assertTrue([l for l in SITE.pages[u].links if l.get("type") == "application/rss+xml"], u)
+
+    def test_every_index_xml_is_advertised_by_its_html_page(self):
+        """Every generated feed is linked from the matching index.html (2026-10-16)."""
+        bad = []
+        for xml in sorted(SITE.root.rglob("index.xml")):
+            url = "/" + xml.parent.relative_to(SITE.root).as_posix().strip(".") + "/"
+            url = url.replace("//", "/")
+            page = SITE.pages.get(url)
+            if page is None:
+                bad.append(f"{url}: no html page")
+                continue
+            hrefs = [unquote(l["href"]) for l in page.links
+                     if l.get("rel") == "alternate" and l.get("type") == "application/rss+xml"]
+            if BASE_URL + unquote(url) + "index.xml" not in hrefs:
+                bad.append(f"{url}: no alternate link to its index.xml")
+        self.assertEqual(bad, [])
+
+    def test_feed_link_type_is_not_html_escaped(self):
+        """The raw tag must read type="application/rss+xml", not rss&#43;xml."""
+        raw = (SITE.root / "index.html").read_text(encoding="utf-8")
+        tags = re.findall(r'<link[^>]*rel="alternate"[^>]*>', raw)
+        self.assertTrue(tags)
+        for tag in tags:
+            self.assertIn('type="application/rss+xml"', tag)
 
     def test_feeds_are_not_truncated(self):
         """60f8eb0: rssLimit removed, every entry is listed."""

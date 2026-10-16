@@ -12,8 +12,8 @@
 {{ end }}
 
 {{ range .AlternativeOutputFormats }}
-{{ if and (eq .Name "rss") (ne $.Kind "taxonomy") }}
-<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ if $.IsHome }}{{ $.Site.Title }}{{ else }}{{ $.Title }} - {{ $.Site.Title }}{{ end }} (RSS)">
+{{ if eq .Name "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ if $.IsHome }}{{ $.Site.Title }}{{ else }}{{ $.Title }} - {{ $.Site.Title }}{{ end }} (RSS)">
 {{ end }}
 {{ end }}
 
