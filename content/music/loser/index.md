@@ -16,10 +16,13 @@ image: loser.jpg
 credits:
 - name: Gaia Marenghi
   roles:
+  - music
+  - lyrics
   - vocals
   - backing vocals
 - name: Maciej Bliziński
   roles:
+  - music
   - producer
   - arranger
   - guitar
