@@ -37,4 +37,4 @@ links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/11ell-11eaven
 ---
 
-A single by Gaia Marenghi x Maciej Bliziński, "11ell 11eaven". Released November 2026.
+A single by Gaia Marenghi and Maciej Bliziński, "11ell 11eaven". Released November 2026.

@@ -37,4 +37,4 @@ links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/loser
 ---
 
-A single by Gaia Marenghi x Maciej Bliziński, "Loser". Released October 2026.
+A single by Gaia Marenghi and Maciej Bliziński, "Loser". Released October 2026.
