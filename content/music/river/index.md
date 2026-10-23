@@ -32,6 +32,8 @@ credits:
 - name: Riccardo Marenghi
   roles:
   - drums
+upc: '825373815545'
+isrc: QZWFN2656257
 links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghi/river-special-version
   youtube: Dd5hyESR2zE

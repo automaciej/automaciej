@@ -34,6 +34,8 @@ credits:
 - name: Liam Larkin
   roles:
   - mastering engineer
+upc: '821311459741'
+isrc: QZMEN2613703
 links:
   streaming: http://distrokid.com/hyperfollow/zoehayter/song-for-you-and-bob-2/
   bandcamp_track: '2609221841'

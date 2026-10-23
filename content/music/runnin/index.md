@@ -32,6 +32,8 @@ credits:
 - name: Riccardo Marenghi
   roles:
   - drums
+upc: '825373805058'
+isrc: QZWFN2656366
 links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghi/runnin
   # It's not back on YouTube yet, let's not display a broken link.

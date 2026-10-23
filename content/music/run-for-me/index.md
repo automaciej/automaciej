@@ -36,6 +36,8 @@ credits:
 - name: Seán Mac Erlaine
   roles:
   - mastering engineer
+upc: '199330380774'
+isrc: QZNWZ2538149
 links:
   bandcamp_track: '2667761784'
   bandcamp_url: https://emilyjane1999.bandcamp.com/track/run-for-me

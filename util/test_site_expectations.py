@@ -592,6 +592,19 @@ class TestStructuredData(unittest.TestCase):
                 bad.append(url)
         self.assertEqual(bad, [])
 
+    def test_release_jsonld_declares_service_links_upc_and_isrc(self):
+        """Loser's JSON-LD lists each service (sameAs + ListenAction) plus its UPC and ISRC."""
+        rec = next(b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording")
+        hosts = ("open.spotify.com", "music.apple.com", "music.youtube.com", "www.qobuz.com",
+                 "www.deezer.com", "tidal.com", "music.amazon.com", "gaiamarenghi.bandcamp.com")
+        targets = [t["urlTemplate"] for t in rec["potentialAction"]["target"]]
+        for host in hosts:
+            with self.subTest(host=host):
+                self.assertTrue(any(host in u for u in rec["sameAs"]), rec["sameAs"])
+                self.assertTrue(any(host in u for u in targets), targets)
+        self.assertEqual(rec["isrcCode"], "QTA7T2691650")
+        self.assertEqual(rec["identifier"], {"@type": "PropertyValue", "propertyID": "UPC", "value": "700536369090"})
+
 
 # Releases that existed when /music/releases/<slug>/ became /music/<slug>/ (2026-10-16).
 # Only these keep an old-style alias; newer releases must not get one.

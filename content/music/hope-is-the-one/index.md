@@ -33,6 +33,8 @@ credits:
 - name: Liam Larkin
   roles:
   - mastering engineer
+upc: '199944440802'
+isrc: QT6FK2562750
 links:
   bandcamp_track: '582427917'
   bandcamp_url: https://zoehayter.bandcamp.com/track/hope-is-the-one

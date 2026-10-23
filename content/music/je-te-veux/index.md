@@ -33,6 +33,8 @@ credits:
 - name: Liam Larkin
   roles:
   - mastering engineer
+upc: '5037300542171'
+isrc: UKW3Z2501739
 links:
   bandcamp_track: '2840110792'
   bandcamp_url: https://zoehayter.bandcamp.com/track/je-te-veux

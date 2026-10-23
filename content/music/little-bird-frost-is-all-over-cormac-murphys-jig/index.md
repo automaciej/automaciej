@@ -27,6 +27,8 @@ credits:
   - producer
   - recording engineer
   - mixing engineer
+upc: '821500789178'
+isrc: QZHN42689675
 links:
   streaming: https://distrokid.com/hyperfollow/johnmahon/little-bird-frost-is-all-over-cormac-murphys-jig
   youtube: jGMsKzuJ2dE

@@ -11,6 +11,8 @@ artist:
 single: true
 project: maciej
 image: maciej-blizinski-hidden-beach.jpg
+upc: '883086855166'
+isrc: QT3F22655064
 links:
   streaming: https://distrokid.com/hyperfollow/maciejbliziski/hidden-beach-2
   spotify_album: 7EE7Bn9eiaXzKSmkJODc3d
@@ -24,6 +26,7 @@ links:
   qobuz: https://www.qobuz.com/us-en/album/hidden-beach-maciej-blizinski/jmxgtuthz6fck
 tracks:
   - title: Hidden Beach
+    isrc: QT3F22655064
     credits:
       - name: Maciej Bliziński
         roles:
@@ -36,6 +39,7 @@ tracks:
       spotify_track: 28M0QR8JUXcWeNv19n0Ano
       apple_music_track: '6777081886'
   - title: Hidden Beach (Extended)
+    isrc: QT3F22655065
     credits:
       - name: Maciej Bliziński
         roles:

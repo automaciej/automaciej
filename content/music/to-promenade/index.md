@@ -39,6 +39,7 @@ credits:
 - name: Seán Mac Erlaine
   roles:
   - mastering engineer
+upc: '199518640188'
 links:
   bandcamp_album: '2074281446'
   bandcamp_url: https://emilyjane1999.bandcamp.com/album/to-promenade

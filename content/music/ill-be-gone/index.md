@@ -37,6 +37,8 @@ credits:
 - name: Oleg Bezuglov
   roles:
   - violin
+upc: '859730308180'
+isrc: QT65X2673768
 links:
   streaming: https://snd.click/6nct
   bandcamp_track: '258544418'

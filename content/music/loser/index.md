@@ -33,6 +33,8 @@ credits:
 - name: Riccardo Marenghi
   roles:
   - drums
+upc: '700536369090'
+isrc: QTA7T2691650
 links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/loser
   spotify_album: 6tS0olBZitg9hXmh1FgR54

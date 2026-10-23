@@ -1,0 +1,20 @@
+{{/*
+    Every per-service listen link of one release, for structured data.
+
+    Input:  the release page
+    Output: slice of dicts with name and url, in a fixed order. The pre-save/HyperFollow
+            `streaming` link is not a service and is left out.
+*/}}
+{{- $links := .Params.links | default dict -}}
+{{- $svc := partial "music-service-urls.html" (dict "links" $links) -}}
+{{- $out := slice -}}
+{{- with $svc.spotify }}{{ $out = $out | append (dict "name" "Spotify" "url" .url) }}{{ end -}}
+{{- with $svc.apple_music }}{{ $out = $out | append (dict "name" "Apple Music" "url" .url) }}{{ end -}}
+{{- with $svc.youtube_music }}{{ $out = $out | append (dict "name" "YouTube Music" "url" .url) }}{{ end -}}
+{{- with $svc.qobuz }}{{ $out = $out | append (dict "name" "Qobuz" "url" .url) }}{{ end -}}
+{{- with $links.deezer }}{{ $out = $out | append (dict "name" "Deezer" "url" .) }}{{ end -}}
+{{- with $links.tidal }}{{ $out = $out | append (dict "name" "Tidal" "url" .) }}{{ end -}}
+{{- with $links.amazon_music }}{{ $out = $out | append (dict "name" "Amazon Music" "url" .) }}{{ end -}}
+{{- with $links.bandcamp_url }}{{ $out = $out | append (dict "name" "Bandcamp" "url" .) }}{{ end -}}
+{{- with $links.soundcloud_url }}{{ $out = $out | append (dict "name" "SoundCloud" "url" .) }}{{ end -}}
+{{- return $out -}}

@@ -50,6 +50,15 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
   `https://www.qobuz.com/us-en/album/<slug>/<id>`, and feeds `/music/qobuz/` through
   `music-service-urls.html`; Qobuz has no logo yet, so it gets the generic icon.
 - URLs are built from the IDs in `partials/music-service-urls.html`.
+- `upc` (release, quoted string) and `isrc` (a single-track release, or `tracks[].isrc`)
+  are identifiers, not links. Find them without distributor access: Deezer's public API
+  (`api.deezer.com/album/<id>` has `upc`; `/track/<id>` has `isrc`). A Deezer *search*
+  can return the wrong artist's release; check the contributors. ISRCs from TuneCore
+  and DistroKid start with `QT`/`QZ`. TuneCore's dashboard shows the ISRC as the code
+  next to the track; its "Release ID" is internal, not the UPC.
+- Release-page JSON-LD (`music/single.html`) emits `identifier` (UPC), `isrcCode`, and
+  `sameAs` plus a `ListenAction` with one `EntryPoint` per service, from
+  `partials/release-service-links.html`. Adding a service to that partial adds it to both.
 - Before adding any link field, grep existing releases for that key to match its
   format.
 - **Filling links from a DistroKid HyperFollow page** (`links.streaming`): fetch the page

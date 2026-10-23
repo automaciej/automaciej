@@ -83,6 +83,30 @@
   {{- with $streamingURL }},
   "url": "{{ . | safeJS }}"
   {{- end -}}
+  {{- with .Params.upc }},
+  "identifier": {"@type": "PropertyValue", "propertyID": "UPC", "value": {{ . | jsonify | safeJS }}}
+  {{- end -}}
+  {{- if not $isAlbum }}{{ with .Params.isrc }},
+  "isrcCode": {{ . | jsonify | safeJS }}
+  {{- end }}{{ end -}}
+  {{- if and $isAlbum .Params.tracks }},
+  "track": [
+    {{- range $i, $t := .Params.tracks }}{{ if $i }},{{ end }}
+    {"@type": "MusicRecording", "name": {{ $t.title | jsonify | safeJS }}{{ with $t.isrc }}, "isrcCode": {{ . | jsonify | safeJS }}{{ end }}}
+    {{- end }}
+  ]
+  {{- end -}}
+  {{- $services := partial "release-service-links.html" . -}}
+  {{- if $services }},
+  "sameAs": [
+    {{- range $i, $x := $services }}{{ if $i }},{{ end }}{{ $x.url | jsonify | safeJS }}{{ end }}
+  ],
+  "potentialAction": {"@type": "ListenAction", "target": [
+    {{- range $i, $x := $services }}{{ if $i }},{{ end }}
+    {"@type": "EntryPoint", "name": {{ $x.name | jsonify | safeJS }}, "urlTemplate": {{ $x.url | jsonify | safeJS }}}
+    {{- end }}
+  ]}
+  {{- end -}}
   {{- with .Params.credits }},
   "recordingOf": {
     "@type": "MusicComposition",
