@@ -63,6 +63,6 @@ heart.
 [marek]: https://en.wikipedia.org/wiki/Marek_Blizi%C5%84ski "Marek Bliziński"
 [ric]: https://www.instagram.com/riccardo_marenghi/ "Riccardo Marenghi on Instagram"
 [mus]: {{< relref "music/_index.md" >}} "Music production showcase"
-[gaia]: https://www.instagram.com/gaiamarenghi/ "Gaia Marenghi on Instagram"
+[gaia]: https://linktr.ee/gaiamarenghi "Gaia Marenghi on Linktree"
 [ascheps]: https://mixwiththemasters.com/masters/andrew-scheps
 [prod]: {{< relref "music/_index.md" >}} "Maciej's music production"
