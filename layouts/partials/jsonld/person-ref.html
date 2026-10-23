@@ -2,18 +2,20 @@
     A person as a schema.org node, for use inside other nodes.
 
     Input:  dict with page (any page) and name
-    Output: dict. The site owner is {"@id": "<home>#maciej"}, declared in full on the home page.
-            Anyone with a section on the credits page gets that section's URL as @id and url
+    Output: dict. The site owner is {"@id": "<site>person/#maciej"}, declared in full on the home page.
+            Anyone with a section on the credits page gets the @id "<site>person/#<anchor>" (a
+            name, not an address: nothing is served at /person) and that section's URL as url
             (the credits page declares the node in full). Anyone else is a plain named Person.
 */ -}}
 {{- $site := .page.Site -}}
 {{- $name := .name -}}
 {{- $credits := $site.GetPage "/music/credits" -}}
 {{- if eq $name $site.Params.authorName -}}
-  {{- return (dict "@type" "Person" "@id" (printf "%s#maciej" $site.BaseURL) "name" $name) -}}
+  {{- return (dict "@type" "Person" "@id" (printf "%sperson/#maciej" $site.BaseURL) "name" $name) -}}
 {{- else if and $credits (in (partialCached "credited-names.html" .page "all") $name) -}}
   {{- $url := printf "%s#%s" $credits.Permalink ($name | anchorize) -}}
-  {{- return (dict "@type" "Person" "@id" $url "url" $url "name" $name) -}}
+  {{- $id := printf "%sperson/#%s" $site.BaseURL ($name | anchorize) -}}
+  {{- return (dict "@type" "Person" "@id" $id "url" $url "name" $name) -}}
 {{- else -}}
   {{- return (dict "@type" "Person" "name" $name) -}}
 {{- end -}}

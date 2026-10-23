@@ -817,7 +817,7 @@ class TestLinks(unittest.TestCase):
 class TestMusicReleaseJsonLd(unittest.TestCase):
     """One jsonld/music-release.html partial describes a release everywhere it appears."""
 
-    PERSON_ID = BASE_URL + "/#maciej"
+    PERSON_ID = BASE_URL + "/person/#maciej"
     WEBSITE_ID = BASE_URL + "/#website"
     # Pages that show releases and the ItemList each must carry.
     LIST_PAGES = ["/", "/music/", "/music/spotify/", "/music/apple/", "/music/youtube/",
@@ -901,7 +901,7 @@ class TestMusicReleaseJsonLd(unittest.TestCase):
         group = next(b for b in jsonld_blocks(SITE.pages["/music/projects/gaia_marenghi/"]) if b.get("@type") == "MusicGroup")
         refs = [t["@id"] for t in group.get("track", []) + group.get("album", [])]
         self.assertIn(BASE_URL + "/music/loser/#release", refs)
-        self.assertTrue(any(m.get("@id") == BASE_URL + "/music/credits/#gaia-marenghi" for m in group.get("member", [])), group.get("member"))
+        self.assertTrue(any(m.get("@id") == BASE_URL + "/person/#gaia-marenghi" for m in group.get("member", [])), group.get("member"))
 
     def test_owner_links_to_the_releases_he_produced(self):
         person = next(b for b in jsonld_blocks(SITE.pages["/"]) if b.get("@type") == "Person")
@@ -916,7 +916,8 @@ class TestMusicReleaseJsonLd(unittest.TestCase):
         people = {e["item"]["name"]: e["item"] for e in lists[0]["itemListElement"]}
         self.assertEqual(len(people), len(lists[0]["itemListElement"]), "a person appears twice")
         riccardo = people["Riccardo Marenghi"]
-        self.assertEqual(riccardo["@id"], BASE_URL + "/music/credits/#riccardo-marenghi")
+        self.assertEqual(riccardo["@id"], BASE_URL + "/person/#riccardo-marenghi")
+        self.assertEqual(riccardo["url"], BASE_URL + "/music/credits/#riccardo-marenghi")
         self.assertIn("drums", [o["name"] for o in riccardo["hasOccupation"]])
         self.assertIn(BASE_URL + "/music/loser/#release", [r["@id"] for r in riccardo["@reverse"]["contributor"]])
         self.assertEqual(people["Maciej Bliziński"]["@id"], self.PERSON_ID)
@@ -924,7 +925,7 @@ class TestMusicReleaseJsonLd(unittest.TestCase):
     def test_release_contributors_point_at_credits_page_people(self):
         rec = next(b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording")
         drummer = next(c for c in rec["contributor"] if c["name"] == "Riccardo Marenghi")
-        self.assertEqual(drummer["@id"], BASE_URL + "/music/credits/#riccardo-marenghi")
+        self.assertEqual(drummer["@id"], BASE_URL + "/person/#riccardo-marenghi")
         self.assertEqual(drummer["roleName"], ["drums"])
         credits_html = (SITE.root / "music/credits/index.html").read_text(encoding="utf-8")
         self.assertIn('id="riccardo-marenghi"', credits_html)

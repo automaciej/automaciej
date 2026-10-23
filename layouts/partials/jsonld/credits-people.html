@@ -9,7 +9,7 @@
 {{- range $i, $name := partialCached "credited-names.html" . "all" -}}
   {{- $ref := partial "jsonld/person-ref.html" (dict "page" $page "name" $name) -}}
   {{- $node := $ref -}}
-  {{- if ne (index $ref "@id") (printf "%s#maciej" $page.Site.BaseURL) -}}
+  {{- if ne (index $ref "@id") (printf "%sperson/#maciej" $page.Site.BaseURL) -}}
     {{- $links := partial "jsonld/person-links.html" (dict "page" $page "name" $name) -}}
     {{- $roles := slice -}}
     {{- range $links.roles }}{{ $roles = $roles | append (dict "@type" "Occupation" "name" .) }}{{ end -}}

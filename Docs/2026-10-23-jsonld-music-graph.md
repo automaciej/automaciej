@@ -7,13 +7,15 @@ stable `@id`s instead of re-declaring nodes on every page.
 
 | Node | `@id` | Declared in full on |
 | --- | --- | --- |
-| Site owner (`Person`) | `<base>#maciej` | home page (`jsonld/person.html`), `/bio/` (`ProfilePage`) |
+| Site owner (`Person`) | `<base>person/#maciej` | home page (`jsonld/person.html`), `/bio/` (`ProfilePage`) |
 | `WebSite` | `<base>#website` | home page |
 | Release (`MusicRecording` / `MusicAlbum`) | `<release URL>#release` | the release page |
-| Other musician (`Person`) | `<base>music/credits/#<anchor>` | `/music/credits/` |
+| Other musician (`Person`) | `<base>person/#<anchor>` | `/music/credits/` |
 
-A musician's `@id` is also the anchor of their section on the credits page, so the id is a real
-link. Only people credited on a release have one; anyone else (for example a project member who
+People ids live in one namespace, `<base>person/#<slug>`. Nothing is served at `/person/`: an
+`@id` is a name, not an address. Each person's `url` is their section on the credits page
+(`/music/credits/#<slug>`), which is where to read about them; if person pages ever exist, only
+`url` changes. Only people credited on a release have one; anyone else (for example a project member who
 was never credited) is a plain named `Person`.
 
 ## Partials (`layouts/partials/jsonld/`)
