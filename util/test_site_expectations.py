@@ -929,6 +929,32 @@ class TestReleaseServiceIcons(unittest.TestCase):
         script = next(s for s in SITE.pages["/music/loser/"].scripts if "navigator.share" in s)
         self.assertRegex(script, r"classList\.add\('copied'\)(?s:.*)1500")
 
+    def test_share_button_icons_have_a_black_outline_and_the_glow_on_the_dark_theme(self):
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        btn = re.search(r'<button type="button" class="share-button".*?</button>', raw, re.S).group(0)
+        for state in ("link", "share", "copied"):
+            with self.subTest(icon=state):
+                svg = re.search(r'<svg class="share-icon share-icon-%s".*?</svg>' % state, btn, re.S).group(0)
+                paths = re.findall(r"<path [^>]*>", svg)
+                self.assertEqual(len(paths), 2, "an outline path under the icon path")
+                self.assertIn('class="share-icon-outline"', paths[0])
+                self.assertEqual(re.search(r' d="([^"]+)"', paths[0]).group(1), re.search(r' d="([^"]+)"', paths[1]).group(1))
+                wide = float(re.search(r'stroke-width="([\d.]+)"', paths[0]).group(1))
+                thin = float(re.search(r'stroke-width="([\d.]+)"', paths[1]).group(1))
+                self.assertGreater(wide, thin)
+        css = next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
+        dark = dark_theme_css(css)
+        self.assertRegex(dark, r"\.share-icon\s*\{[^}]*drop-shadow", "the share icons get the glow on the dark theme")
+        self.assertRegex(dark, r"\.share-icon-outline\s*\{[^}]*stroke:\s*#000")
+        self.assertRegex(dark_theme_css(css, strip=True), r"\.share-icon-outline\s*\{[^}]*stroke:\s*transparent")
+
+    def test_icon_row_has_a_top_margin_on_narrow_screens_below_its_base_rule(self):
+        css = next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
+        base = css.index(".music-quick-links{") if ".music-quick-links{" in css else css.index(".music-quick-links {")
+        narrow = re.search(r"@media \(max-width:\s*767px\)\s*\{[^@]*?\.music-quick-links\s*\{[^}]*margin-top:\s*0\.5em\b", css)
+        self.assertTrue(narrow, "no narrow-screen margin-top: 0.5em for .music-quick-links")
+        self.assertGreater(narrow.start(), base, "the override must come after the base rule")
+
     def test_amazon_music_and_tidal_have_logos(self):
         links = " ".join(self.quick_links("loser"))
         for name, icon in (("Amazon Music", "amazon_music"), ("Tidal", "tidal")):
@@ -1075,6 +1101,60 @@ class TestServiceData(unittest.TestCase):
         self.assertRegex(dark, r"\.service-icon-glow\s*\{[^}]*drop-shadow")
         self.assertRegex(dark, r"\.service-icon-outline\s*\{[^}]*drop-shadow")
         self.assertNotRegex(dark_theme_css(css, strip=True), r"\.service-icon-(glow|outline)\s*\{")
+
+
+class TestCoverBackdrop(unittest.TestCase):
+    """On the dark theme the cover sits on a faint, blurred, grainy copy of itself."""
+
+    def css(self):
+        return next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
+
+    def cover(self):
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        return raw, re.search(r'<div class="cover-layout-cover">(.*?)<div class="cover-layout-body">', raw, re.S).group(1)
+
+    def test_release_cover_has_a_decorative_backdrop_that_reuses_the_cover_file(self):
+        _, cover = self.cover()
+        wrapper = re.search(r'<div class="cover-backdrop" aria-hidden="true">\s*<img ([^>]*)>\s*</div>', cover)
+        self.assertTrue(wrapper, "no .cover-backdrop wrapper with an image")
+        self.assertIn('alt=""', wrapper.group(1))
+        imgs = re.findall(r"<img [^>]*>", cover)
+        self.assertEqual(len(imgs), 2)
+        src = lambda tag: re.search(r'src="([^"]+)"', tag).group(1)
+        self.assertEqual(src(imgs[0]), src(imgs[1]), "the backdrop must reuse the cover file (one download)")
+
+    def test_grain_filter_adds_noise_inside_the_blurred_shape(self):
+        raw, _ = self.cover()
+        svg = re.search(r'<filter id="cover-grain"[^>]*>(.*?)</filter>', raw, re.S)
+        self.assertTrue(svg, "no #cover-grain filter in the page")
+        self.assertIn("feTurbulence", svg.group(1))
+        self.assertRegex(svg.group(1), r'<feComposite[^>]*operator="arithmetic"')
+        self.assertRegex(svg.group(1), r'<feComposite[^>]*operator="in"', "noise must be clipped to the blurred shape")
+
+    def test_backdrop_never_makes_the_page_wider_than_the_screen(self):
+        """A scale() transform (or a negative horizontal inset) on the backdrop made it overshoot the
+        cover on both sides; on a phone that is horizontal overflow, so the page scrolled sideways and
+        the cover looked off-centre. Only the blur may spread the halo sideways."""
+        rule = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", dark_theme_css(self.css())).group(1)
+        self.assertNotIn("transform", rule)
+        inset = re.search(r"inset:\s*([^;]+);", rule).group(1).split()
+        horizontal = inset[1] if len(inset) > 1 else inset[0]
+        self.assertEqual(float(horizontal.rstrip("%px")), 0.0, f"inset: {' '.join(inset)}")
+
+    def test_backdrop_is_blurred_then_grained_then_faint_and_only_on_the_dark_theme(self):
+        css = self.css()
+        light = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", css)
+        self.assertTrue(light and "display:none" in light.group(1).replace(" ", ""), "hidden by default (light theme)")
+        dark_css = dark_theme_css(css)
+        dark = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", dark_css)
+        self.assertTrue(dark, "no dark-theme .cover-backdrop rule")
+        # The wrapper's filter runs after its child's blur and before its own opacity (CSS order).
+        self.assertIn("filter:url(#cover-grain)", dark.group(1).replace(" ", ""))
+        opacity = float(re.search(r"opacity:\s*([\d.]+)", dark.group(1)).group(1))
+        self.assertTrue(0 < opacity <= 0.35, opacity)
+        img = re.search(r"\.cover-backdrop img\s*\{([^}]*)\}", dark_css)
+        self.assertTrue(img, "the blur belongs on the inner image")
+        self.assertGreaterEqual(int(re.search(r"blur\((\d+)px\)", img.group(1)).group(1)), 88)
 
 
 class TestMusicUrls(unittest.TestCase):

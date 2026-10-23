@@ -1751,6 +1751,12 @@ main ol
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 767px) {
+    .music-quick-links {
+        margin-top: 0.5em;
+    }
+}
+
 .music-quick-links a {
     display: inline-flex;
     align-items: center;
@@ -1793,6 +1799,22 @@ main ol
 .music-quick-links .share-icon {
     width: 1.6rem;
     height: 1.6rem;
+}
+
+/* Dark theme: the same glow as the dark logos, and a black outline around the icon's own shape
+   (a wider stroke drawn under the icon's: .share-icon-outline in the markup). */
+.share-icon-outline {
+    stroke: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+    .music-quick-links .share-icon {
+        filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.25));
+    }
+
+    .share-icon-outline {
+        stroke: #000;
+    }
 }
 
 .music-quick-links .share-icon-share,
@@ -1848,6 +1870,50 @@ main ol
 
 .cover-layout-cover {
     grid-area: cover;
+    position: relative;
+    isolation: isolate;
+}
+
+/* A blurred, grainy copy of the cover behind it, like the faint wash behind a page hero.
+   Decorative and dark theme only: hidden by default, so the light theme and the no-CSS page show
+   just the cover. The wrapper's filter (grain, see partials/cover-grain-filter.html) runs after
+   the image's blur and before the wrapper's own opacity, which is what keeps the grain subtle.
+   No transform and no sideways inset: either would make the box wider than the cover, and on a
+   narrow screen that is horizontal overflow (a sideways-scrolling, off-centre page). The blur
+   alone spreads the halo sideways; filters do not add to a page's scrollable width. */
+.cover-layout-cover .cover-backdrop {
+    display: none;
+}
+
+.svg-defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .cover-layout-cover .cover-backdrop {
+        display: block;
+        position: absolute;
+        inset: -5% 0;
+        z-index: -1;
+        filter: url(#cover-grain);
+        opacity: 0.22;
+        pointer-events: none;
+    }
+
+    /* The image rules below (.cover-layout-cover img) are less specific than this on purpose. */
+    .cover-layout-cover .cover-backdrop img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        margin: 0;
+        object-fit: cover;
+        border-radius: 0;
+        filter: blur(88px) saturate(1.4);
+    }
 }
 
 .cover-layout-cover img {

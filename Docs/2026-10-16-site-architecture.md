@@ -157,6 +157,10 @@ dark = "/images/services/qobuz.svg"
 - `partials/service-registry.html` reads the directory, sorted by `order`. To add a service: add
   its file, give its links a URL in `release-services.html`, and add a test key. A test checks that
   every file has a name, a unique order, a known effect and existing icon files.
+- The release page also gives its cover a blurred, grainy backdrop on the dark theme
+  (`.cover-backdrop`; the grain is the SVG filter in `partials/cover-grain-filter.html`, applied after
+  the image's blur and before the wrapper's opacity), and the share button the same glow plus a black
+  outline around its icon.
 
 ### Partials
 

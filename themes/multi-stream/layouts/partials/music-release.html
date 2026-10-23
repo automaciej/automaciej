@@ -12,7 +12,7 @@
                 {{- range $services }}
                 {{ partial "service-link.html" (dict "service" . "title" $p.Title) }}
                 {{- end }}
-                <button type="button" class="share-button" title="Copy link"><svg class="share-icon share-icon-copied" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-link" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-share" viewBox="0 0 16 16" width="25" height="25" aria-hidden="true" focusable="false"><path d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="share-label visually-hidden">Copy link</span></button>
+                <button type="button" class="share-button" title="Copy link"><svg class="share-icon share-icon-copied" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path class="share-icon-outline" d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-link" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path class="share-icon-outline" d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="4.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-share" viewBox="0 0 16 16" width="25" height="25" aria-hidden="true" focusable="false"><path class="share-icon-outline" d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="share-label visually-hidden">Copy link</span></button>
             </div>
             <h1>{{ $p.Title }}</h1>
             <div class="music-meta">
@@ -47,6 +47,10 @@
         {{- if $img }}
         {{- $resized := $img.Resize "1600x webp" }}
         <div class="cover-layout-cover">
+            {{ partial "cover-grain-filter.html" . }}
+            <div class="cover-backdrop" aria-hidden="true">
+                <img src="{{ $resized.RelPermalink }}" alt="">
+            </div>
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>
         {{- end }}
