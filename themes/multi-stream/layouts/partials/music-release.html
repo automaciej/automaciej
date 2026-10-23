@@ -5,25 +5,29 @@
         <div class="cover-layout-header music-release-header">
             <div class="music-quick-links">
                 {{- $svc := partial "music-service-urls.html" (dict "links" $p.Params.links) }}
-                {{- /* Services with a logo in /music/'s service_icons show it instead of the generic play triangle. */ -}}
                 {{- with $p.Params.links }}
                 {{- /* A pre-save page stands in for the big platforms; smaller services (Qobuz, iTunes) can already be linked beside it. */ -}}
                 {{ if and .streaming (not (or $svc.spotify $svc.apple_music $svc.youtube_music)) }}<a class="presave-chip" href="{{ .streaming }}" target="_blank" rel="noopener" title="Pre-save {{ $p.Title }}">Presave</a>{{ end }}
-                {{ with $svc.spotify }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Spotify">{{ with partial "service-icon.html" (dict "key" "spotify" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Spotify</a>{{ end }}
-                {{- /* One "YouTube" button: the YouTube Music link when there is one, else the plain video. */ -}}
+                {{- /* One "YouTube" link: the YouTube Music link when there is one, else the plain video. */ -}}
                 {{- $yt := "" }}{{ with $svc.youtube_music }}{{ $yt = .url }}{{ else }}{{ with .youtube }}{{ $yt = printf "https://www.youtube.com/watch?v=%s" . }}{{ end }}{{ end }}
-                {{ with $yt }}<a href="{{ . }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on YouTube">{{ with partial "service-icon.html" (dict "key" "youtube_music" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}YouTube</a>{{ end }}
-                {{ with $svc.apple_music }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Apple Music">{{ with partial "service-icon.html" (dict "key" "apple_music" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Apple</a>{{ end }}
-                {{ with $svc.itunes }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on iTunes">{{ with partial "service-icon.html" (dict "key" "itunes" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}iTunes</a>{{ end }}
-                {{ if .amazon_music }}<a href="{{ .amazon_music }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Amazon Music"><span class="play-icon" aria-hidden="true">▶</span>Amazon</a>{{ end }}
-                {{ if .tidal }}<a href="{{ .tidal }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Tidal"><span class="play-icon" aria-hidden="true">▶</span>Tidal</a>{{ end }}
-                {{ with $svc.qobuz }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Qobuz">{{ with partial "service-icon.html" (dict "key" "qobuz" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Qobuz</a>{{ end }}
-                {{ if .deezer }}<a href="{{ .deezer }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Deezer">{{ with partial "service-icon.html" (dict "key" "deezer" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Deezer</a>{{ end }}
-                {{ if .bandcamp_url }}<a href="{{ .bandcamp_url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Bandcamp">{{ with partial "service-icon.html" (dict "key" "bandcamp" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Bandcamp</a>{{ end }}
-                {{ if .soundcloud_url }}<a href="{{ .soundcloud_url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on SoundCloud">{{ with partial "service-icon.html" (dict "key" "soundcloud" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}SoundCloud</a>{{ end }}
-                {{ if .instagram }}<a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Instagram">{{ with partial "service-icon.html" (dict "key" "instagram" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Instagram</a>{{ end }}
+                {{- $items := slice }}
+                {{- with $svc.spotify }}{{ $items = $items | append (dict "key" "spotify" "name" "Spotify" "url" .url) }}{{ end }}
+                {{- with $yt }}{{ $items = $items | append (dict "key" "youtube_music" "name" "YouTube" "url" .) }}{{ end }}
+                {{- with $svc.apple_music }}{{ $items = $items | append (dict "key" "apple_music" "name" "Apple Music" "url" .url) }}{{ end }}
+                {{- with $svc.itunes }}{{ $items = $items | append (dict "key" "itunes" "name" "iTunes" "url" .url) }}{{ end }}
+                {{- with .amazon_music }}{{ $items = $items | append (dict "key" "amazon_music" "name" "Amazon Music" "url" .) }}{{ end }}
+                {{- with .tidal }}{{ $items = $items | append (dict "key" "tidal" "name" "Tidal" "url" .) }}{{ end }}
+                {{- with $svc.qobuz }}{{ $items = $items | append (dict "key" "qobuz" "name" "Qobuz" "url" .url) }}{{ end }}
+                {{- with .deezer }}{{ $items = $items | append (dict "key" "deezer" "name" "Deezer" "url" .) }}{{ end }}
+                {{- with .bandcamp_url }}{{ $items = $items | append (dict "key" "bandcamp" "name" "Bandcamp" "url" .) }}{{ end }}
+                {{- with .soundcloud_url }}{{ $items = $items | append (dict "key" "soundcloud" "name" "SoundCloud" "url" .) }}{{ end }}
+                {{- with .instagram }}{{ $items = $items | append (dict "key" "instagram" "name" "Instagram" "url" (printf "https://www.instagram.com/reel/%s/" .)) }}{{ end }}
+                {{- /* Icons only: the name is the hover title and the image's alt. A service without a logo shows its name instead, so no link is empty. */ -}}
+                {{- range $items }}
+                <a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on {{ .name }}">{{ with partial "service-icon.html" (dict "key" .key "alt" .name "class" "service-icon") }}{{ . }}{{ else }}{{ .name }}{{ end }}</a>
                 {{- end }}
-                <button type="button" class="share-button"><svg class="share-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="share-label">Copy Link</span></button>
+                {{- end }}
+                <button type="button" class="share-button" title="Copy link"><svg class="share-icon share-icon-copied" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-link" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-share" viewBox="0 0 16 16" width="25" height="25" aria-hidden="true" focusable="false"><path d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="share-label visually-hidden">Copy link</span></button>
             </div>
             <h1>{{ $p.Title }}</h1>
             <div class="music-meta">

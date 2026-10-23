@@ -77,9 +77,15 @@
 <script>
     // Share button: native share sheet, falling back to copy-link
     document.querySelectorAll('.share-button').forEach(function (btn) {
+        // The word is for screen readers only; the icon shows the state through .can-share, .copied (a check mark for 1.5 s) and the title.
         var label = btn.querySelector('.share-label');
+        function say(text) {
+            label.textContent = text;
+            btn.title = text;
+        }
         if (navigator.share) {
-            label.textContent = 'Share';
+            btn.classList.add('can-share');
+            say('Share');
         }
         btn.addEventListener('click', function () {
             var shareData = { title: document.title, url: window.location.href };
@@ -88,13 +94,16 @@
             } else if (navigator.clipboard) {
                 navigator.clipboard.writeText(shareData.url).then(function () {
                     var original = label.textContent;
-                    label.textContent = 'Copied!';
+                    say('Copied!');
                     btn.classList.add('copied');
                     setTimeout(function () {
-                        label.textContent = original;
+                        say(original);
                         btn.classList.remove('copied');
                     }, 1500);
                 });
+            }
+        });
+    });
             }
         });
     });

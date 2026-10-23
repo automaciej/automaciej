@@ -1694,8 +1694,9 @@ main ol
 .music-quick-links {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 1.25rem;
-    row-gap: 0.3rem;
+    align-items: center;
+    column-gap: 0.75rem;
+    row-gap: 0.5rem;
     font-size: 0.85rem;
     margin-bottom: 0.5rem;
 }
@@ -1708,13 +1709,14 @@ main ol
     text-decoration: none;
 }
 
-.music-quick-links .play-icon {
-    font-size: 0.7em;
+/* Services are icons only (name in the title attribute), so they get a tap-sized logo. */
+.music-quick-links .service-icon {
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
-.music-quick-links .service-icon {
-    width: 1.1em;
-    height: 1.1em;
+.music-quick-links a:hover .service-icon {
+    opacity: 0.8;
 }
 
 .music-quick-links a:hover {
@@ -1733,6 +1735,34 @@ main ol
     border: 0;
     padding: 0;
     cursor: pointer;
+}
+
+/* Same size as the service icons beside it. The chain link (copy the link) is the default;
+   the script adds .can-share where the device has a native share sheet, which swaps in the
+   share icon. */
+.music-quick-links .share-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.music-quick-links .share-icon-share,
+.music-quick-links .share-icon-copied,
+.music-quick-links .can-share .share-icon-link {
+    display: none;
+}
+
+.music-quick-links .can-share .share-icon-share {
+    display: inline;
+}
+
+/* For the 1.5 s after the link was copied: a check mark replaces whichever icon was showing. */
+.music-quick-links .copied .share-icon-link,
+.music-quick-links .copied .share-icon-share {
+    display: none;
+}
+
+.music-quick-links .copied .share-icon-copied {
+    display: inline;
 }
 
 .music-quick-links .share-button:hover,

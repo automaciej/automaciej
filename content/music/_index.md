@@ -30,6 +30,12 @@ service_icons:
   instagram:
     light: /images/services/instagram.svg
     dark: /images/services/instagram.svg
+  amazon_music:
+    light: /images/services/amazon_music.png
+    dark: /images/services/amazon_music.png
+  tidal:
+    light: /images/services/tidal.png
+    dark: /images/services/tidal.png
   itunes:
     light: /images/services/itunes.png
     dark: /images/services/itunes.png

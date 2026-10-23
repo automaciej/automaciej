@@ -842,6 +842,68 @@ class TestItunes(unittest.TestCase):
         self.assertIn("app=itunes", raw)
 
 
+class TestReleaseServiceIcons(unittest.TestCase):
+    """Release pages list the services as icons only; the name is in title (hover) and the image alt."""
+
+    SERVICES = ["Spotify", "YouTube", "Apple Music", "iTunes", "Amazon Music", "Tidal", "Qobuz", "Deezer", "Bandcamp"]
+
+    def quick_links(self, slug):
+        raw = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
+        block = re.search(r'<div class="music-quick-links">(.*?)<button', raw, re.S).group(1)
+        return [a for a in re.findall(r"<a [^>]*>.*?</a>", block, re.S) if "presave-chip" not in a]
+
+    def test_every_service_link_is_an_icon_with_the_name_in_title_and_alt(self):
+        bad = []
+        for slug in RELEASE_SLUGS:
+            for a in self.quick_links(slug):
+                title = re.search(r'title="Listen to .+? on ([^"]+)"', a)
+                alt = re.search(r'<img [^>]*alt="([^"]+)"', a)
+                text = re.sub(r"<[^>]+>", "", a).strip()
+                if not (title and alt and alt.group(1) == title.group(1) and not text):
+                    bad.append(f"{slug}: {a[:140]}")
+        self.assertEqual(bad, [])
+
+    def test_loser_lists_every_service_in_order(self):
+        names = [re.search(r'on ([^"]+)"', a).group(1) for a in self.quick_links("loser")]
+        self.assertEqual(names, self.SERVICES)
+
+    def test_share_button_is_an_icon_without_a_visible_word(self):
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        btn = re.search(r'<button type="button" class="share-button"([^>]*)>(.*?)</button>', raw, re.S)
+        self.assertTrue(btn, "no share button")
+        self.assertIn('title="', btn.group(1))
+        # Any text is for screen readers only.
+        visible = re.sub(r'<span class="share-label visually-hidden">.*?</span>', "", btn.group(2), flags=re.S)
+        self.assertEqual(re.sub(r"<[^>]+>", "", visible).strip(), "")
+
+    def test_share_button_has_a_share_icon_and_a_link_icon_chosen_by_the_script(self):
+        """A device with a native share sheet shows the share icon; copy-link-only devices a chain link."""
+        page = SITE.pages["/music/loser/"]
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        btn = re.search(r'<button type="button" class="share-button".*?</button>', raw, re.S).group(0)
+        self.assertEqual(len(re.findall(r'<svg class="share-icon share-icon-share"', btn)), 1)
+        self.assertEqual(len(re.findall(r'<svg class="share-icon share-icon-link"', btn)), 1)
+        self.assertTrue(any("navigator.share" in s and "can-share" in s for s in page.scripts))
+
+    def test_copying_the_link_swaps_in_a_check_icon_for_a_moment(self):
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        btn = re.search(r'<button type="button" class="share-button".*?</button>', raw, re.S).group(0)
+        self.assertEqual(len(re.findall(r'<svg class="share-icon share-icon-copied"', btn)), 1)
+        css = next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
+        self.assertRegex(css, r"\.copied \.share-icon-copied\s*\{[^}]*display:\s*inline")
+        self.assertRegex(css, r"\.copied \.share-icon-link")
+        script = next(s for s in SITE.pages["/music/loser/"].scripts if "navigator.share" in s)
+        self.assertRegex(script, r"classList\.add\('copied'\)(?s:.*)1500")
+
+    def test_amazon_music_and_tidal_have_logos(self):
+        links = " ".join(self.quick_links("loser"))
+        for name, icon in (("Amazon Music", "amazon_music"), ("Tidal", "tidal")):
+            with self.subTest(service=name):
+                m = re.search(r'title="Listen to Loser on %s">\s*(?:<picture>.*?)?<img src="(/images/services/%s[^"]*)"' % (name, icon), links, re.S)
+                self.assertTrue(m, f"no {name} logo")
+                self.assertTrue(SITE.exists(m.group(1)))
+
+
 class TestMusicUrls(unittest.TestCase):
     """Releases live at /music/<slug>/ (2026-10-16); the old /music/releases/ URLs redirect."""
 
