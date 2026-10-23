@@ -48,6 +48,7 @@ links:
   tidal: https://tidal.com/album/468267504/track/468267506
   deezer: https://www.deezer.com/album/841514522
   youtube: qbb60Xtmllc
+  qobuz: https://www.qobuz.com/us-en/album/talkative-gaia-marenghi-amp-maciej-blizinski/rjhxgrv0dsleb
 ---
 
 An original song written and sung by Gaia Marenghi, produced and arranged by Maciej Bliziński, with Riccardo Marenghi on drums and Oleg Bezuglov on violin. Released November 2025.

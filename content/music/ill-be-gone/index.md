@@ -48,6 +48,7 @@ links:
   tidal: https://tidal.com/album/494755726
   deezer: https://www.deezer.com/it/album/908984192
   youtube: Sjhs2uMj0_E
+  qobuz: https://www.qobuz.com/us-en/album/ill-be-gone-gaia-marenghi/bwk4daz6j27t9
 ---
 
 An original song written and sung by Gaia Marenghi, produced and arranged by Maciej Bliziński, with Riccardo Marenghi on drums and Oleg Bezuglov on violin. Released February 2026.

@@ -41,7 +41,7 @@ RELEASE_URL = re.compile(r"^/music/(%s)/$" % "|".join(map(re.escape, RELEASE_SLU
 # Sections with their own RSS feed. Jogger is Polish and has a separate feed;
 # the home feed must not contain it (60f8eb0).
 SERVICE_FEEDS = {"/music/spotify/": "open.spotify.com", "/music/apple/": "music.apple.com",
-                "/music/youtube/": "music.youtube.com"}
+                "/music/youtube/": "music.youtube.com", "/music/qobuz/": "www.qobuz.com"}
 FEED_SECTIONS = ["/", "/blog/", "/jogger/", "/music/"] + list(SERVICE_FEEDS)
 
 
@@ -261,7 +261,7 @@ class TestSocialTags(unittest.TestCase):
 
     def test_release_list_pages_use_latest_release_cover(self):
         """/music/ lost its og:image when the site-logo fallback was dropped."""
-        for url in ("/", "/music/", "/music/spotify/", "/music/apple/", "/music/youtube/",
+        for url in ("/", "/music/", "/music/spotify/", "/music/apple/", "/music/youtube/", "/music/qobuz/",
                     "/music/projects/gaia_marenghi/", "/genres/", "/genres/jazz/"):
             with self.subTest(url=url):
                 self.assertIn(url, SITE.pages)
@@ -306,11 +306,11 @@ class TestSocialTags(unittest.TestCase):
 
     def test_per_service_lists_use_a_release_cover_not_the_default(self):
         """7e81648: /music/spotify etc. share the latest release's artwork."""
-        for url in ("/music/spotify/", "/music/apple/", "/music/youtube/"):
+        for url in ("/music/spotify/", "/music/apple/", "/music/youtube/", "/music/qobuz/"):
             with self.subTest(url=url):
                 self.assertIn(url, SITE.pages)
                 self.assertTrue(SITE.pages[url].meta_one("og:image"))
-                self.assertRegex(SITE.pages[url].title, r"on (Spotify|Apple Music|YouTube Music)")
+                self.assertRegex(SITE.pages[url].title, r"on (Spotify|Apple Music|YouTube Music|Qobuz)")
 
 
 class TestMusicSocialTags(unittest.TestCase):

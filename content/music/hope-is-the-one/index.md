@@ -41,6 +41,7 @@ links:
   spotify_track: 4ZdqEHi4HS9DSqKSnjDSWJ
   spotify_album: 0kNJwFya2kDH5NH65T2XVo
   deezer: https://www.deezer.com/album/874567042
+  qobuz: https://www.qobuz.com/us-en/album/hope-is-the-one-zoe-hayter/pjb0e25ii7ejf
 ---
 
 Inspired by the Czech proverb "Naděje umírá poslední" (hope dies last), this single production functions as a heartfelt praise to hope. The song demonstrates a maturation into a rich, ensemble-driven aesthetic that utilizes the full range of Zoe Hayter's theatrical background.

@@ -40,6 +40,9 @@ links:
   youtube_music_track: g0R5xOcTpVU
   tidal: https://tidal.com/album/568567582/track/568567583
   amazon_music: https://music.amazon.com/albums/B0HMJ9TW2J
+  deezer: https://www.deezer.com/album/1117753662
+  bandcamp_url: https://gaiamarenghi.bandcamp.com/track/loser
+  qobuz: https://www.qobuz.com/us-en/album/loser-gaia-marenghi-amp-maciej-blizinski/vbc5qqf13o597
 ---
 
 A single by Gaia Marenghi and Maciej Bliziński, "Loser". Released October 2026.

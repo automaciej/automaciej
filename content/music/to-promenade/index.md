@@ -45,6 +45,7 @@ links:
   spotify_artist: 03O62Zr8kTEdrK1u4DMqq3
   spotify_album: 6WzZIe07dpa3fVop3SZuSh
   apple_music_album: '1821993018'
+  qobuz: https://www.qobuz.com/us-en/album/to-promenade-emily-jane/xu61e41zzkpsb
 single: false
 ---
 

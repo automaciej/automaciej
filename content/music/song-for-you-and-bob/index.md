@@ -42,6 +42,7 @@ links:
   spotify_track: 1R46yFT3ns6qHYJPP5hJec
   spotify_album: 4wMI0axnff3CH9aamKGoCy
   deezer: https://www.deezer.com/album/935273531
+  qobuz: https://www.qobuz.com/us-en/album/song-for-you-and-bob-zoe-hayter/zo3tq843j59dl
 ---
 
 An original composition by Zoe Hayter and Maciej Bliziński, featuring Rafał Szydłowski on electric violin and Riccardo Marenghi on drums. Released March 2026.

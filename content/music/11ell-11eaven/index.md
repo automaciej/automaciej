@@ -35,6 +35,7 @@ credits:
   - drums
 links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/11ell-11eaven
+  qobuz: https://www.qobuz.com/us-en/album/11ell-11eaven-gaia-marenghi-x-maciej-blizinski/xwhg4gjlc762f
 ---
 
 A single by Gaia Marenghi and Maciej Bliziński, "11ell 11eaven". Released November 2026.

@@ -46,7 +46,9 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
   it differs, or `youtube_music_album` (an `OLAK5uy_…` playlist ID) for an album.
 - `instagram` is a bare reel ID.
 - `bandcamp_url`, `soundcloud_url`, `streaming`, `deezer`, `tidal`,
-  `amazon_music` and similar are full URLs.
+  `qobuz`, `amazon_music` and similar are full URLs. `qobuz` is the album page,
+  `https://www.qobuz.com/us-en/album/<slug>/<id>`, and feeds `/music/qobuz/` through
+  `music-service-urls.html`; Qobuz has no logo yet, so it gets the generic icon.
 - URLs are built from the IDs in `partials/music-service-urls.html`.
 - Before adding any link field, grep existing releases for that key to match its
   format.
@@ -102,12 +104,12 @@ No third-party player sets cookies on the site.
 
 ## Per-service song lists
 
-`/music/spotify/`, `/music/apple/` and `/music/youtube/` are reverse-chronological
+`/music/spotify/`, `/music/apple/`, `/music/youtube/` and `/music/qobuz/` are reverse-chronological
 lists of releases with a direct link on that service.
 
-- Content pages (`content/music/{spotify,apple,youtube}.md`) with
+- Content pages (`content/music/{spotify,apple,youtube,qobuz}.md`) with
   `layout: streaming` (`themes/multi-stream/layouts/music/streaming.html`).
-- Front matter `service_key` (`spotify` / `apple_music` / `youtube_music`) picks
+- Front matter `service_key` (`spotify` / `apple_music` / `youtube_music` / `qobuz`) picks
   the service; `title` is the service name, from which the page title
   ("Maciej Bliziński: Music on Spotify") and breadcrumb are composed.
 - The page `<h1>` is "On <Service>". Each entry is a row: release artwork thumbnail

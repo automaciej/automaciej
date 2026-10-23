@@ -34,6 +34,7 @@ links:
   spotify_album: 5UUbiw07oHu22Quhp3r2hw
   apple_music_album: '1872746169'
   deezer: https://www.deezer.com/album/906532552
+  qobuz: https://www.qobuz.com/us-en/album/little-bird-frost-is-all-over-cormac-murphys-jig-john-mahon/j6z8qqf1fep6q
 ---
 
 An acoustic recording with John Mahon and Cormac Murphy.

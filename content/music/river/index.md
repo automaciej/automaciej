@@ -40,6 +40,7 @@ links:
   apple_music_track: '6763224556'
   deezer: https://www.deezer.com/us/album/967703361
   amazon_music: https://music.amazon.com/albums/B0GY6KN3XM
+  qobuz: https://www.qobuz.com/us-en/album/river-gaia-marenghi-amp-maciej-blizinski/lxglrce3p1enh
 ---
 
 A bold, minimalist reimagining of Bishop Briggs' 'River.' Stripped of the original's synths, this Dublin-recorded version features the Marenghi siblings (Gaia on vocals, Riccardo on drums) in a raw, 'certified organic' arrangement. It opens with bass and Gaia's powerhouse voice, building into a high-intensity chorus. It captures the tension of the original with a muscular, live-band energy.

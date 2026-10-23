@@ -21,6 +21,7 @@ links:
   deezer: https://www.deezer.com/us/album/993971821
   tidal: https://tidal.com/album/528992638
   amazon_music: https://music.amazon.com/albums/B0H3BVPK2Z
+  qobuz: https://www.qobuz.com/us-en/album/hidden-beach-maciej-blizinski/jmxgtuthz6fck
 tracks:
   - title: Hidden Beach
     credits:
