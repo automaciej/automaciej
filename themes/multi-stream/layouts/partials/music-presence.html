@@ -1,12 +1,12 @@
 {{- /* The artist's own profile on each service, as logo + name (same renderer as the release links). */ -}}
 {{- with .Site.Params.music }}
 {{- $profiles := slice }}
-{{- with .spotifyArtistId }}{{ $profiles = $profiles | append (dict "key" "spotify" "name" "Spotify" "url" (printf "https://open.spotify.com/artist/%s" .)) }}{{ end }}
-{{- with .appleMusicArtistId }}{{ $profiles = $profiles | append (dict "key" "apple_music" "name" "Apple Music" "url" (printf "https://music.apple.com/artist/%s" .)) }}{{ end }}
-{{- with .soundcloud }}{{ $profiles = $profiles | append (dict "key" "soundcloud" "name" "SoundCloud" "url" (printf "https://soundcloud.com/%s" .)) }}{{ end }}
-{{- with .deezerArtistId }}{{ $profiles = $profiles | append (dict "key" "deezer" "name" "Deezer" "url" (printf "https://www.deezer.com/us/artist/%s" .)) }}{{ end }}
-{{- with .amazonMusicArtistId }}{{ $profiles = $profiles | append (dict "key" "amazon_music" "name" "Amazon Music" "url" (printf "https://music.amazon.com/artists/%s" .)) }}{{ end }}
-{{- with .qobuzArtistUrl }}{{ $profiles = $profiles | append (dict "key" "qobuz" "name" "Qobuz" "url" .) }}{{ end }}
+{{- with .spotifyArtistId }}{{ $profiles = $profiles | append (dict "key" "spotify" "name" (index site.Data.services "spotify").name "url" (printf "https://open.spotify.com/artist/%s" .)) }}{{ end }}
+{{- with .appleMusicArtistId }}{{ $profiles = $profiles | append (dict "key" "apple_music" "name" (index site.Data.services "apple_music").name "url" (printf "https://music.apple.com/artist/%s" .)) }}{{ end }}
+{{- with .soundcloud }}{{ $profiles = $profiles | append (dict "key" "soundcloud" "name" (index site.Data.services "soundcloud").name "url" (printf "https://soundcloud.com/%s" .)) }}{{ end }}
+{{- with .deezerArtistId }}{{ $profiles = $profiles | append (dict "key" "deezer" "name" (index site.Data.services "deezer").name "url" (printf "https://www.deezer.com/us/artist/%s" .)) }}{{ end }}
+{{- with .amazonMusicArtistId }}{{ $profiles = $profiles | append (dict "key" "amazon_music" "name" (index site.Data.services "amazon_music").name "url" (printf "https://music.amazon.com/artists/%s" .)) }}{{ end }}
+{{- with .qobuzArtistUrl }}{{ $profiles = $profiles | append (dict "key" "qobuz" "name" (index site.Data.services "qobuz").name "url" .) }}{{ end }}
 <div class="social music-presence">
   <ul class="social">
     {{- range $profiles }}

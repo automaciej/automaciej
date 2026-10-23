@@ -1,0 +1,7 @@
+name = "Bandcamp"
+order = 90
+effect = "aura"
+
+[icon]
+light = "/images/services/bandcamp.png"
+dark = "/images/services/bandcamp.png"

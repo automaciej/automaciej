@@ -1,0 +1,7 @@
+name = "Amazon Music"
+order = 50
+effect = "aura"
+
+[icon]
+light = "/images/services/amazon_music.png"
+dark = "/images/services/amazon_music.png"

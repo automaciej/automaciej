@@ -1,19 +1,30 @@
 {{- /*
-    A streaming service's logo from /music/'s `service_icons` front matter, or
-    nothing when the service has none (callers fall back to a generic icon).
-    Every service maps to `{light: <path>, dark: <path>}`; the same path twice gives a
-    plain <img>, different paths a <picture> that switches on prefers-color-scheme.
+    A streaming service's logo from data/services/<key>.toml (`icon.light` / `icon.dark`), or
+    nothing when the service has none (callers fall back to a generic icon or the name).
+    The same path twice gives a plain <img>, different paths a <picture> that switches on
+    prefers-color-scheme. The service's `effect` (data/services) adds a dark-theme light:
+      outline | glow  a class, `service-icon-<effect>`, a white edge or halo for logos that are
+                      dark against the page;
+      aura            the logo sits in a `.service-aura` span carrying its own image
+                      (`--aura: url(...)`), which the CSS blurs into a faint halo behind it, so a
+                      bright logo glows in its own colours.
 
     Input: dict "key" <service key> [ "class" ] [ "width" ] [ "height" ] [ "alt" ]
 */ -}}
-{{- $icons := (site.GetPage "/music").Params.service_icons | default dict -}}
-{{- $icon := index $icons .key -}}
+{{- $svc := index site.Data.services .key | default dict -}}
+{{- $icon := $svc.icon -}}
+{{- $classes := slice -}}
+{{- with .class }}{{ $classes = $classes | append . }}{{ end -}}
+{{- $effect := $svc.effect | default "none" -}}
+{{- if in (slice "outline" "glow") $effect }}{{ $classes = $classes | append (printf "service-icon-%s" $effect) }}{{ end -}}
 {{- $attrs := printf `alt="%s" width="%v" height="%v"` (.alt | default "") (.width | default 16) (.height | default 16) -}}
-{{- with .class }}{{ $attrs = printf `class="%s" %s` . $attrs }}{{ end -}}
+{{- if $classes }}{{ $attrs = printf `class="%s" %s` (delimit $classes " ") $attrs }}{{ end -}}
 {{- with $icon -}}
+{{- if eq $effect "aura" }}<span class="service-aura" style="{{ printf "--aura: url(%s)" .dark | safeCSS }}">{{ end -}}
 {{- if eq .light .dark -}}
 <img src="{{ .light }}" {{ $attrs | safeHTMLAttr }}>
 {{- else -}}
 <picture><source srcset="{{ .dark }}" media="(prefers-color-scheme: dark)"><img src="{{ .light }}" {{ $attrs | safeHTMLAttr }}></picture>
 {{- end -}}
+{{- if eq $effect "aura" }}</span>{{ end -}}
 {{- end -}}

@@ -517,6 +517,40 @@ def jsonld_blocks(page):
     return out
 
 
+SERVICE_KEYS = ["spotify", "youtube_music", "apple_music", "itunes", "amazon_music", "tidal", "qobuz",
+                "deezer", "bandcamp", "soundcloud", "instagram"]
+
+
+def service_data():
+    """data/services/<key>.toml -> {key: {name, order, effect, light, dark}} (tiny reader: no TOML module here)."""
+    out = {}
+    for f in sorted((REPO / "data/services").glob("*.toml")):
+        text = f.read_text(encoding="utf-8")
+        head, _, icon = text.partition("[icon]")
+        get = lambda src, k: (re.search(r'^%s\s*=\s*"?([^"\n]+?)"?\s*$' % k, src, re.M) or [None, None])[1]
+        out[f.stem] = {"name": get(head, "name"), "order": get(head, "order"), "effect": get(head, "effect") or "none",
+                       "light": get(icon, "light"), "dark": get(icon, "dark")}
+    return out
+
+
+def dark_theme_css(css, strip=False):
+    """The text inside every `@media (prefers-color-scheme: dark) { ... }` block of a stylesheet
+    (joined), or with strip=True the stylesheet without those blocks."""
+    inner, rest, pos = [], [], 0
+    for m in re.finditer(r"@media \(prefers-color-scheme:\s*dark\)\s*\{", css):
+        if m.start() < pos:
+            continue
+        depth, i = 1, m.end()
+        while depth and i < len(css):
+            depth += {"{": 1, "}": -1}.get(css[i], 0)
+            i += 1
+        inner.append(css[m.end():i - 1])
+        rest.append(css[pos:m.start()])
+        pos = i
+    rest.append(css[pos:])
+    return "".join(rest) if strip else "\n".join(inner)
+
+
 def types_in(page):
     return {b.get("@type") for b in jsonld_blocks(page)}
 
@@ -785,7 +819,7 @@ class TestQobuzChip(unittest.TestCase):
             with self.subTest(release=slug):
                 card = re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/%s/"(?:(?!</article>).)*</article>' % re.escape(slug), html, re.S)
                 self.assertTrue(card, "no card on /music/")
-                chip = re.search(r'<a href="https://www\.qobuz\.com/[^"]+"[^>]*title="Listen to [^"]+ on Qobuz">\s*(?:<picture>.*?)?<img src="(/images/services/qobuz[^"]*)"', card.group(0), re.S)
+                chip = re.search(r'<a href="https://www\.qobuz\.com/[^"]+"[^>]*title="Listen to [^"]+ on Qobuz">\s*(?:<span class="service-aura"[^>]*>)?(?:<picture>.*?)?<img src="(/images/services/qobuz[^"]*)"', card.group(0), re.S)
                 self.assertTrue(chip, "no Qobuz logo chip in the card")
                 self.assertTrue(SITE.exists(chip.group(1)), chip.group(1))
 
@@ -814,13 +848,13 @@ class TestItunes(unittest.TestCase):
 
     def test_release_page_has_an_itunes_button_with_the_logo(self):
         raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
-        m = re.search(r'<a href="(https://music\.apple\.com/us/album/6821245905\?app=itunes)"[^>]*title="Listen to Loser on iTunes">\s*(?:<picture>.*?)?<img src="(/images/services/itunes[^"]*)"', raw, re.S)
+        m = re.search(r'<a href="(https://music\.apple\.com/us/album/6821245905\?app=itunes)"[^>]*title="Listen to Loser on iTunes">\s*(?:<span class="service-aura"[^>]*>)?(?:<picture>.*?)?<img src="(/images/services/itunes[^"]*)"', raw, re.S)
         self.assertTrue(m, "no iTunes button with the logo on /music/loser/")
         self.assertTrue(SITE.exists(m.group(2)))
 
     def test_release_page_qobuz_button_has_the_logo(self):
         raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
-        self.assertRegex(raw, r'title="Listen to Loser on Qobuz">\s*(?:<picture>.*?)?<img src="/images/services/qobuz')
+        self.assertRegex(raw, r'title="Listen to Loser on Qobuz">\s*(?:<span class="service-aura"[^>]*>)?(?:<picture>.*?)?<img src="/images/services/qobuz')
 
     def test_cards_show_an_itunes_chip(self):
         html = (SITE.root / "music/index.html").read_text(encoding="utf-8")
@@ -899,7 +933,7 @@ class TestReleaseServiceIcons(unittest.TestCase):
         links = " ".join(self.quick_links("loser"))
         for name, icon in (("Amazon Music", "amazon_music"), ("Tidal", "tidal")):
             with self.subTest(service=name):
-                m = re.search(r'title="Listen to Loser on %s">\s*(?:<picture>.*?)?<img src="(/images/services/%s[^"]*)"' % (name, icon), links, re.S)
+                m = re.search(r'title="Listen to Loser on %s">\s*(?:<span class="service-aura"[^>]*>)?(?:<picture>.*?)?<img src="(/images/services/%s[^"]*)"' % (name, icon), links, re.S)
                 self.assertTrue(m, f"no {name} logo")
                 self.assertTrue(SITE.exists(m.group(1)))
 
@@ -914,9 +948,8 @@ class TestServiceLinksEverywhere(unittest.TestCase):
         return re.findall(r'<a [^>]*title="Listen to [^"]+? on ([^"]+)"', html)
 
     def test_every_service_has_a_logo_configured(self):
-        front = (REPO / "content/music/_index.md").read_text(encoding="utf-8").split("---")[1]
-        missing = [k for k in self.KEYS if not re.search(r"^  %s:\n    light: " % k, front, re.M)]
-        self.assertEqual(missing, [])
+        services = service_data()
+        self.assertEqual([k for k in self.KEYS if not (services.get(k) or {}).get("light")], [])
 
     def test_a_card_lists_the_same_services_in_the_same_order_as_its_release_page(self):
         music = (SITE.root / "music/index.html").read_text(encoding="utf-8")
@@ -964,6 +997,86 @@ class TestServiceLinksEverywhere(unittest.TestCase):
                 self.assertIn('rel="me"', a)
 
 
+class TestServiceData(unittest.TestCase):
+    """data/services/*.toml: which services exist, in what order, with which icon and effect."""
+
+    def test_the_directory_defines_exactly_the_services_we_link_to(self):
+        self.assertEqual(sorted(service_data()), sorted(SERVICE_KEYS))
+
+    def test_every_service_has_a_name_a_unique_integer_order_and_a_known_effect(self):
+        services = service_data()
+        orders = []
+        for key, s in services.items():
+            with self.subTest(service=key):
+                self.assertTrue(s["name"])
+                self.assertRegex(s["order"] or "", r"^\d+$")
+                self.assertIn(s["effect"], ("none", "outline", "glow", "aura"))
+            orders.append(s["order"])
+        self.assertEqual(len(orders), len(set(orders)), "two services share an order")
+
+    def test_service_icons_front_matter_is_gone(self):
+        self.assertNotIn("service_icons", (REPO / "content/music/_index.md").read_text(encoding="utf-8"))
+
+    def test_release_page_lists_services_in_the_order_field_sequence(self):
+        services = service_data()
+        by_order = [s["name"] for s in sorted(services.values(), key=lambda s: int(s["order"]))]
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        shown = re.findall(r'title="Listen to Loser on ([^"]+)"', raw)
+        self.assertEqual(shown, [n for n in by_order if n in shown])
+        self.assertGreaterEqual(len(shown), 9)
+
+    def quick_link_anchors(self):
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        quick = re.search(r'<div class="music-quick-links">(.*?)<button', raw, re.S).group(1)
+        return {re.search(r'on ([^"]+)"', a).group(1): a for a in re.findall(r"<a [^>]*>.*?</a>", quick, re.S)}
+
+    def test_dark_logos_carry_their_effect_class(self):
+        services = service_data()
+        want = {s["name"]: s["effect"] for s in services.values() if s["effect"] in ("outline", "glow")}
+        self.assertEqual(sorted(want), ["Qobuz", "Tidal"])
+        for name, a in self.quick_link_anchors().items():
+            with self.subTest(service=name):
+                cls = " ".join(re.findall(r'<img [^>]*class="([^"]*)"', a))
+                if name in want:
+                    self.assertIn(f"service-icon-{want[name]}", cls)
+                else:
+                    self.assertNotRegex(cls, r"service-icon-(glow|outline)")
+
+    def test_bright_logos_sit_in_an_aura_wrapper_that_carries_their_own_image(self):
+        services = service_data()
+        aura = {s["name"]: s for s in services.values() if s["effect"] == "aura"}
+        self.assertGreaterEqual(len(aura), 8)
+        anchors = self.quick_link_anchors()
+        on_the_page = {n: s for n, s in aura.items() if n in anchors}
+        self.assertGreaterEqual(len(on_the_page), 6)
+        for name, s in on_the_page.items():
+            with self.subTest(service=name):
+                a = anchors[name]
+                m = re.search(r'<span class="service-aura" style="--aura:\s*url\(([^)]+)\)">', a)
+                self.assertTrue(m, "no aura wrapper")
+                self.assertEqual(m.group(1).strip("'\""), s["dark"], "the aura is the dark-theme icon file")
+        for name in ("Tidal", "Qobuz"):
+            self.assertNotIn("service-aura", anchors[name])
+
+    def test_aura_is_a_faint_blurred_copy_on_the_dark_theme_only(self):
+        css = next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
+        dark = dark_theme_css(css)
+        rule = re.search(r"\.service-aura::before\s*\{([^}]*)\}", dark)
+        self.assertTrue(rule, "no dark-theme .service-aura::before")
+        self.assertIn("var(--aura)", rule.group(1))
+        self.assertRegex(rule.group(1), r"blur\(")
+        opacity = float(re.search(r"opacity:\s*([\d.]+)", rule.group(1)).group(1))
+        self.assertTrue(0 < opacity <= 0.45, opacity)
+        self.assertNotIn("service-aura::before", dark_theme_css(css, strip=True))
+
+    def test_effects_are_dark_theme_only_and_follow_the_icon_shape(self):
+        css = next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
+        dark = dark_theme_css(css)
+        self.assertRegex(dark, r"\.service-icon-glow\s*\{[^}]*drop-shadow")
+        self.assertRegex(dark, r"\.service-icon-outline\s*\{[^}]*drop-shadow")
+        self.assertNotRegex(dark_theme_css(css, strip=True), r"\.service-icon-(glow|outline)\s*\{")
+
+
 class TestMusicUrls(unittest.TestCase):
     """Releases live at /music/<slug>/ (2026-10-16); the old /music/releases/ URLs redirect."""
 
@@ -989,15 +1102,11 @@ class TestMusicUrls(unittest.TestCase):
         self.assertTrue((SITE.root / "music" / "releases" / "index.html").is_file())
 
     def test_every_service_icon_has_light_and_dark_files(self):
-        """service_icons maps each service to {light, dark}; both files must exist."""
-        text = (REPO / "content/music/_index.md").read_text(encoding="utf-8")
-        block = text.split("service_icons:\n", 1)[1].split("\n---", 1)[0]
-        entries = re.findall(r"^  (\w+):\n    light: (\S+)\n    dark: (\S+)$", block, re.M)
-        self.assertTrue(entries)
-        self.assertEqual(len(entries), len(re.findall(r"^  \w+:", block, re.M)),
-                         "a service_icons entry is not a {light, dark} pair")
-        for key, light, dark in entries:
-            for path in (light, dark):
+        """data/services/<key>.toml names the service's icon files; both must exist."""
+        services = service_data()
+        self.assertTrue(services)
+        for key, s in services.items():
+            for path in (s["light"], s["dark"]):
                 with self.subTest(service=key, path=path):
                     self.assertTrue((REPO / "static" / path.lstrip("/")).is_file())
 

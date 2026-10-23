@@ -1,0 +1,15 @@
+{{- /*
+    The services in data/services/, in display order.
+
+    Each data/services/<key>.toml holds: name, order (an integer: lower shows first), effect
+    (optional: "outline" or "glow", a light edge for logos that are dark against a dark page)
+    and [icon] light / dark (paths under static/).
+
+    Output: slice of dicts: key (the file name), name, order, effect, icon.
+    Usage: {{ range partialCached "service-registry.html" . "all" }}
+*/ -}}
+{{- $out := slice -}}
+{{- range $key, $s := site.Data.services -}}
+  {{- $out = $out | append (merge (dict "key" $key) $s) -}}
+{{- end -}}
+{{- return (sort $out "order") -}}

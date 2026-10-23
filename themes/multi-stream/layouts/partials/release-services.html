@@ -4,22 +4,26 @@
 
     Input:  dict "links" <links map> [ "release_links" <release-level links map> ]
             release_links supplies the album IDs for a track that only stores its track ID.
-    Output: slice of dicts: key (the service_icons key), name and url. The pre-save/HyperFollow
+    Output: slice of dicts: key (the data/services file name), name and url, in the services'
+            `order` (data/services/<key>.toml). The pre-save/HyperFollow
             `streaming` link is not a service and is left out (see presave-url.html).
-    Names: what a reader calls the service; also the hover title and the image alt.
+    Names, order and logos live in data/services; this partial only maps links to URLs.
 */ -}}
 {{- $links := .links | default dict -}}
 {{- $svc := partial "music-service-urls.html" (dict "links" $links "release_links" .release_links) -}}
+{{- /* The URL of each service this `links` map reaches, by service key. */ -}}
+{{- $urls := dict -}}
+{{- range $k := slice "spotify" "youtube_music" "apple_music" "itunes" "qobuz" -}}
+  {{- with index $svc $k }}{{ $urls = merge $urls (dict $k .url) }}{{ end -}}
+{{- end -}}
+{{- range $k, $field := dict "amazon_music" "amazon_music" "tidal" "tidal" "deezer" "deezer" "bandcamp" "bandcamp_url" "soundcloud" "soundcloud_url" -}}
+  {{- with index $links $field }}{{ $urls = merge $urls (dict $k .) }}{{ end -}}
+{{- end -}}
+{{- with $links.instagram }}{{ $urls = merge $urls (dict "instagram" (printf "https://www.instagram.com/reel/%s/" .)) }}{{ end -}}
+{{- /* Name and display order come from data/services; a service with a URL but no data file is skipped. */ -}}
 {{- $out := slice -}}
-{{- with $svc.spotify }}{{ $out = $out | append (dict "key" "spotify" "name" "Spotify" "url" .url) }}{{ end -}}
-{{- with $svc.youtube_music }}{{ $out = $out | append (dict "key" "youtube_music" "name" "YouTube Music" "url" .url) }}{{ end -}}
-{{- with $svc.apple_music }}{{ $out = $out | append (dict "key" "apple_music" "name" "Apple Music" "url" .url) }}{{ end -}}
-{{- with $svc.itunes }}{{ $out = $out | append (dict "key" "itunes" "name" "iTunes" "url" .url) }}{{ end -}}
-{{- with $links.amazon_music }}{{ $out = $out | append (dict "key" "amazon_music" "name" "Amazon Music" "url" .) }}{{ end -}}
-{{- with $links.tidal }}{{ $out = $out | append (dict "key" "tidal" "name" "Tidal" "url" .) }}{{ end -}}
-{{- with $svc.qobuz }}{{ $out = $out | append (dict "key" "qobuz" "name" "Qobuz" "url" .url) }}{{ end -}}
-{{- with $links.deezer }}{{ $out = $out | append (dict "key" "deezer" "name" "Deezer" "url" .) }}{{ end -}}
-{{- with $links.bandcamp_url }}{{ $out = $out | append (dict "key" "bandcamp" "name" "Bandcamp" "url" .) }}{{ end -}}
-{{- with $links.soundcloud_url }}{{ $out = $out | append (dict "key" "soundcloud" "name" "SoundCloud" "url" .) }}{{ end -}}
-{{- with $links.instagram }}{{ $out = $out | append (dict "key" "instagram" "name" "Instagram" "url" (printf "https://www.instagram.com/reel/%s/" .)) }}{{ end -}}
+{{- range partialCached "service-registry.html" . "all" -}}
+  {{- $s := . -}}
+  {{- with index $urls $s.key }}{{ $out = $out | append (dict "key" $s.key "name" $s.name "url" .) }}{{ end -}}
+{{- end -}}
 {{- return $out -}}

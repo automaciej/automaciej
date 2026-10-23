@@ -1,0 +1,7 @@
+name = "SoundCloud"
+order = 100
+effect = "aura"
+
+[icon]
+light = "/images/services/soundcloud-light.webp"
+dark = "/images/services/soundcloud-dark.webp"

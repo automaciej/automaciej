@@ -583,6 +583,46 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
 }
 
+/* Logos that are dark against a dark page (data/services/<key>.toml `effect`) get a light edge
+   (outline) or a soft halo (glow). A drop-shadow follows the logo's own outline, rounded corners
+   included, where a box-shadow would draw its square box. Dark theme only: on the light theme
+   those logos are visible as they are. */
+/* Bright logos (effect "aura"): the logo sits in a span that carries its own image as --aura; on
+   the dark theme a blurred, faint copy of it behind the logo is a halo in the logo's own colours,
+   the counterpart of the white glow of the dark logos. Light theme: no halo. */
+.service-aura {
+    position: relative;
+    display: inline-block;
+    isolation: isolate;
+    line-height: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .service-aura::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        z-index: -1;
+        background: var(--aura) center / contain no-repeat;
+        filter: blur(5px) saturate(1.3);
+        opacity: 0.3;
+        pointer-events: none;
+    }
+
+    /* The "Listen on ..." pills are solid accent-colour buttons; no halo there. */
+    .streaming-link .service-aura::before {
+        display: none;
+    }
+
+    .service-icon-outline {
+        filter: drop-shadow(0 0 0.5px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 0.5px rgba(255, 255, 255, 0.6));
+    }
+
+    .service-icon-glow {
+        filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.25));
+    }
+}
+
 /* "Presave" chip: a release whose only link is the pre-save page. */
 
 .presave-chip {

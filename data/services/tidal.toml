@@ -1,0 +1,7 @@
+name = "Tidal"
+order = 60
+effect = "glow"
+
+[icon]
+light = "/images/services/tidal.png"
+dark = "/images/services/tidal.png"

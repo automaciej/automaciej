@@ -1,0 +1,7 @@
+name = "Instagram"
+order = 110
+effect = "aura"
+
+[icon]
+light = "/images/services/instagram.svg"
+dark = "/images/services/instagram.svg"

@@ -1,0 +1,7 @@
+name = "Spotify"
+order = 10
+effect = "aura"
+
+[icon]
+light = "/images/services/spotify.png"
+dark = "/images/services/spotify.png"

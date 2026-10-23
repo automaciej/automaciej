@@ -1,0 +1,7 @@
+name = "YouTube Music"
+order = 20
+effect = "aura"
+
+[icon]
+light = "/images/services/youtube_music.svg"
+dark = "/images/services/youtube_music.svg"

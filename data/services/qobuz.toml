@@ -1,0 +1,7 @@
+name = "Qobuz"
+order = 70
+effect = "glow"
+
+[icon]
+light = "/images/services/qobuz.svg"
+dark = "/images/services/qobuz.svg"

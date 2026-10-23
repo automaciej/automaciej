@@ -1,0 +1,7 @@
+name = "Apple Music"
+order = 30
+effect = "aura"
+
+[icon]
+light = "/images/services/apple_music.svg"
+dark = "/images/services/apple_music.svg"

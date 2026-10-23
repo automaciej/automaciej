@@ -1,0 +1,7 @@
+name = "iTunes"
+order = 40
+effect = "aura"
+
+[icon]
+light = "/images/services/itunes.png"
+dark = "/images/services/itunes.png"

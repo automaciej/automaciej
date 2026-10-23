@@ -1,0 +1,7 @@
+name = "Deezer"
+order = 80
+effect = "aura"
+
+[icon]
+light = "/images/services/deezer.png"
+dark = "/images/services/deezer.png"

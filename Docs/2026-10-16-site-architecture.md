@@ -131,15 +131,41 @@ No third-party player sets cookies on the site.
 Every place that shows a release's services builds them from the same data and renders them
 with the same HTML; each place sizes the logos with its own CSS.
 
-- `partials/release-services.html` turns a `links` map into the canonical ordered list of
-  `{key, name, url}` (Spotify, YouTube Music, Apple Music, iTunes, Amazon Music, Tidal, Qobuz,
-  Deezer, Bandcamp, SoundCloud, Instagram). Add a service here and it appears everywhere.
-  `release-service-links.html` (JSON-LD, without Instagram) and `listen-links.html` (the `listen`
-  shortcode and the feeds) are filters over it.
-- `partials/service-link.html` renders one link: the logo from `service_icons` (name as the
-  hover title and the image alt), optionally with a visible label (`"Listen on %s"`, `"%s"`).
-  A service without a logo shows its name as text. Every service key needs a `service_icons`
-  entry in `content/music/_index.md` (a test checks).
+### `data/services/<key>.toml`: the services and how each looks
+
+One file per service (the key is the file name, and the `service_key` of its `/music/<service>/` list):
+
+```toml
+name = "Qobuz"          # what readers call it: hover title, image alt, labels
+order = 70              # display order everywhere; lower first, unique integers (gaps of 10)
+effect = "glow"         # "glow", "outline", "aura" or "none" (see below)
+
+[icon]
+light = "/images/services/qobuz.svg"   # under static/; the same file twice when one works on both
+dark = "/images/services/qobuz.svg"
+```
+
+- `effect` is a dark-theme light around the logo (the light theme shows none):
+  - `glow`: a soft white halo, for logos that are dark against the page (Tidal, Qobuz).
+  - `outline`: a thin white edge instead of a halo.
+  - `aura`: for bright logos; a faint, blurred copy of the logo behind it, so it glows in its own
+    colours. `service-icon.html` wraps the image in `<span class="service-aura" style="--aura:
+    url(<dark icon>)">` and the CSS blurs that into a `::before`. The "Listen on" pills skip it.
+  - `none`: no effect.
+  `glow` and `outline` are drawn with `drop-shadow` (class `service-icon-<effect>` on the `<img>`),
+  which follows the logo's own rounded outline where a `box-shadow` would draw its square box.
+- `partials/service-registry.html` reads the directory, sorted by `order`. To add a service: add
+  its file, give its links a URL in `release-services.html`, and add a test key. A test checks that
+  every file has a name, a unique order, a known effect and existing icon files.
+
+### Partials
+
+- `partials/release-services.html` turns a `links` map into the list of `{key, name, url}` for the
+  services it reaches, in `order`. `release-service-links.html` (JSON-LD, without Instagram) and
+  `listen-links.html` (the `listen` shortcode and the feeds) are filters over it.
+- `partials/service-link.html` renders one link: the logo (name as the hover title and the image
+  alt), optionally with a visible label (`"Listen on %s"`, `"%s"`). A service without a logo shows
+  its name as text. `partials/service-icon.html` looks up the logo and effect class in the data.
 - `partials/presave-url.html` and `presave-chip.html`: the Presave chip appears for a release with
   a `streaming` link and no Spotify, Apple Music or YouTube Music link yet.
 - Users: the release page (`.music-quick-links`, icons only), cards (`.music-preview-services`),
@@ -164,13 +190,11 @@ On desktop (`min-width: 1024px`) the list is a two-column grid, filled left to r
   a generic external-link icon, in its top right corner (3px inset); then the song title linking to
   the service (external-link icon after it) with "by artist · Mon Year" beneath
   (the date links to the release page). Artwork and title both open the service.
-- Service logos come from `service_icons` in `content/music/_index.md` front matter,
-  keyed by `service_key`; each service has `light` and `dark` paths (same file when one
-  works on both; SoundCloud has two) under `static/images/services/`. They are rendered by
-  `partials/service-icon.html` (`<picture>` when the two differ), which the per-service
-  lists, release-page link buttons and homepage/`/music/` preview cards all use. A service
-  without an entry gets the generic icon (a play triangle on release pages, none on cards).
-  Preview cards also show a "Presave" chip for a release whose only link is `streaming`.
+- Service logos come from `data/services/<key>.toml` (see "Service links"), keyed by `service_key`.
+  They are rendered by `partials/service-icon.html` (`<picture>` when `light` and `dark` differ,
+  as for SoundCloud), which the per-service lists, release-page link buttons and homepage/`/music/`
+  preview cards all use. A service without a logo gets the generic icon (the name on release
+  pages, none on cards).
 - Per release: if any `tracks[]` has an ID for the service, each such track is
   listed; otherwise the release-level ID is used. Artist-only Spotify links,
   future-dated and draft releases are skipped. Logic lives in
@@ -179,8 +203,9 @@ On desktop (`min-width: 1024px`) the list is a two-column grid, filled left to r
   `outputs: [html, rss]` plus `layouts/music/streaming.rss.xml`, which reuses
   `streaming-items.html`. Item `<link>` is the release page; the description holds
   the "Listen on <service>" link. A new service page needs the `outputs` line.
-- Adding a service means a new content page plus a branch in
-  `music-service-urls.html` (and in `listen-links.html` for the shortcode/RSS).
+- Adding a service means: a `data/services/<key>.toml` file (name, order, icon), a new content
+  page, and its URL in `release-services.html` (derived from an ID in `music-service-urls.html`
+  when the service has IDs rather than full URLs).
 
 ## Theme
 
