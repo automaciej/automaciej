@@ -1,28 +1,28 @@
 {{- $p := .page -}}
 {{- $hideProjectLink := .hide_project_link -}}
-{{ with $p.Content }}
+{{- with $p.Content }}
 <div class="music-description">
     {{ . }}
 </div>
-{{ end }}
+{{- end }}
 
 {{- if not $p.Params.tracks }}
-{{ with $p.Params.credits }}
+{{- with $p.Params.credits }}
 <div class="music-credits">
     <strong>Credits:</strong>
     <ul>
-        {{ range . }}
+        {{- range . }}
         <li>
             <strong>{{ partial "credits-person-link.html" (dict "page" $p "name" .name) }}</strong> - {{ delimit .roles ", " }}
         </li>
-        {{ end }}
+        {{- end }}
     </ul>
 </div>
-{{ end }}
+{{- end }}
 {{- end }}
 
-{{ if and $p.Params.project (not $hideProjectLink) }}
+{{- if and $p.Params.project (not $hideProjectLink) }}
 <div class="music-project-link">
     <a href="/music/projects/{{ $p.Params.project }}/">More from this project&nbsp;&#xBB;</a>
 </div>
-{{ end }}
+{{- end }}

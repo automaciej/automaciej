@@ -1,20 +1,20 @@
-{{ define "main" }}
+{{- define "main" }}
 <div class="list-page">
     <div class="container">
         <header class="section-header">
             <h1>{{ .Title }}</h1>
-            {{ with .Content }}
+            {{- with .Content }}
             <div class="section-intro">
                 {{ . }}
             </div>
-            {{ end }}
+            {{- end }}
         </header>
 
         <div class="apps-list">
-            {{ range sort hugo.Data.apps "position" }}
+            {{- range sort hugo.Data.apps "position" }}
             {{ partial "app-card.html" . }}
-            {{ end }}
+            {{- end }}
         </div>
     </div>
 </div>
-{{ end }}
+{{- end }}

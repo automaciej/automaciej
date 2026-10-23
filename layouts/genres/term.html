@@ -1,22 +1,22 @@
-{{ define "head_extra" }}
-{{ $img := partial "release-og-image.html" .Pages }}
+{{- define "head_extra" }}
+{{- $img := partial "release-og-image.html" .Pages }}
 {{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
-{{ end }}
+{{- end }}
 
-{{ define "main" }}
+{{- define "main" }}
 {{- $releases := sort .Pages "Params.release_date" "desc" -}}
 <div class="music-project-page">
     <div class="container">
         <header class="section-header">
             <h1>{{ .Title }}</h1>
         </header>
-        {{ if $releases }}
+        {{- if $releases }}
         <div class="music-productions">
-            {{ range $releases }}
+            {{- range $releases }}
             {{ partial "music-card.html" (dict "page" .) }}
-            {{ end }}
+            {{- end }}
         </div>
-        {{ end }}
+        {{- end }}
     </div>
 </div>
-{{ end }}
+{{- end }}

@@ -1,23 +1,23 @@
-{{ $cardHref := "" }}
-{{ $cardExternal := false }}
-{{ if .subsection }}
-{{ $cardHref = printf "/%s/" .subsection }}
-{{ else if .app_site }}
-{{ $cardHref = .app_site }}
-{{ $cardExternal = true }}
-{{ end }}
+{{- $cardHref := "" }}
+{{- $cardExternal := false }}
+{{- if .subsection }}
+{{- $cardHref = printf "/%s/" .subsection }}
+{{- else if .app_site }}
+{{- $cardHref = .app_site }}
+{{- $cardExternal = true }}
+{{- end }}
 <article class="app-card{{ if $cardHref }} card-shadow{{ end }}">
-    {{ with $cardHref }}
+    {{- with $cardHref }}
     <a class="stretched-link" href="{{ . }}"{{ if $cardExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $.name }}"></a>
-    {{ end }}
+    {{- end }}
     <div class="app-card-header">
-        {{ with .icon }}
-        {{ $icon := resources.Get (printf "images/apps/%s" .) }}
-        {{ if $icon }}
-        {{ $resized := $icon.Resize "96x png" }}
+        {{- with .icon }}
+        {{- $icon := resources.Get (printf "images/apps/%s" .) }}
+        {{- if $icon }}
+        {{- $resized := $icon.Resize "96x png" }}
         <img class="app-card-icon" src="{{ $resized.RelPermalink }}" alt="" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
-        {{ end }}
-        {{ end }}
+        {{- end }}
+        {{- end }}
         <div class="app-card-header-text">
         <h2>{{ .name }}</h2>
         <p class="app-category">
@@ -27,7 +27,7 @@
         </p>
         </div>
     </div>
-    {{ with .description }}
+    {{- with .description }}
     <p class="app-description">{{ . }}</p>
-    {{ end }}
+    {{- end }}
 </article>

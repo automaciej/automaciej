@@ -1,11 +1,11 @@
-{{ define "main" }}
+{{- define "main" }}
 <div class="music-page music-credits-page">
     <div class="container">
         <header class="section-header">
             <h1>{{ .Title }}</h1>
-            {{ with .Params.description }}
+            {{- with .Params.description }}
             <p class="section-description">{{ . }}</p>
-            {{ end }}
+            {{- end }}
         </header>
 
         {{- $entries := slice -}}
@@ -84,4 +84,4 @@
         </div><!-- credits-list credits-list-minor -->
     </div><!-- container -->
 </div><!-- music-page music-credits-page -->
-{{ end }}
+{{- end }}

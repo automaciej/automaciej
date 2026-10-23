@@ -2,31 +2,31 @@
 {{- $hideProjectLink := .hide_project_link -}}
 <article class="music-card" id="{{ $p.Title | urlize }}">
     <div class="music-card-top">
-        {{ with $p.Params.image }}
-        {{ $img := $p.Resources.GetMatch . }}
-        {{ if $img }}
-        {{ $resized := $img.Resize "400x webp" }}
+        {{- with $p.Params.image }}
+        {{- $img := $p.Resources.GetMatch . }}
+        {{- if $img }}
+        {{- $resized := $img.Resize "400x webp" }}
         <div class="music-image">
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>
-        {{ end }}
-        {{ end }}
+        {{- end }}
+        {{- end }}
         <div class="music-header">
             <h2><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
             <div class="music-meta">
                 <span class="artist">{{ with $p.Params.artist }}{{ partial "join-names.html" . }}{{ end }}</span>
-                {{ if $p.Params.single }}
+                {{- if $p.Params.single }}
                 <span class="release-type">• Single</span>
-                {{ else if $p.Params.album }}
+                {{- else if $p.Params.album }}
                 <span class="album">• {{ $p.Params.album }}</span>
-                {{ end }}
-                {{ with $p.Params.genres }}
+                {{- end }}
+                {{- with $p.Params.genres }}
                 <span class="music-genre"><span class="music-genre-sep"> • </span>{{ partial "music-genre-links.html" $p }}</span>
-                {{ end }}
+                {{- end }}
                 <span class="date">• {{ dateFormat "January 2006" $p.Params.release_date }}</span>
-                {{ if eq $p.Params.composition_origin "cover" }}{{ with $p.Params.original_artist }}
+                {{- if eq $p.Params.composition_origin "cover" }}{{ with $p.Params.original_artist }}
                 <span class="composition-origin"> • cover of <span class="original-artist">{{ . }}</span></span>
-                {{ end }}{{ end }}
+                {{- end }}{{ end }}
             </div>
         </div>
     </div>

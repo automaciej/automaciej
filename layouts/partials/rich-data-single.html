@@ -1,4 +1,4 @@
-{{ $original_image := .Page.Resources.GetMatch "**.jpg" }}
+{{- $original_image := .Page.Resources.GetMatch "**.jpg" }}
 <!-- https://developers.google.com/search/docs/guides/ -->
 <script type="application/ld+json">
 {
@@ -9,11 +9,11 @@
     "@id": "{{ .Permalink }}"
   },
   "headline": "{{ .Title }}",
-  {{ if .Params.image }}
+  {{- if .Params.image }}
   "image": [
     "{{ .Site.BaseURL }}{{ .Params.image }}"
   ],
-  {{ else if $original_image }}
+  {{- else if $original_image }}
   "image": [
     {{- range $index, $img := .Page.Resources.ByType "image" -}}
     {{- if $index -}}
@@ -22,11 +22,11 @@
     "{{- $img.Permalink }}"
     {{- end }}
   ],
-  {{ else }}
+  {{- else }}
   "image": [
     "{{ .Site.BaseURL }}{{ .Site.Params.SiteLogo }}"
   ],
-  {{ end }}
+  {{- end }}
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   "author": {
@@ -46,18 +46,18 @@
   "description": "{{ if .Description }}{{ .Description | plainify | safeJS }}{{ else if eq .Section "jogger" }}Wpis na blogu Automacieja{{ else }}Post on Automaciej's blog{{ end }}",
   "articleBody": "{{ .Plain | safeJS }}",
   "wordCount": "{{ .WordCount }}",
-  {{ if eq .Section "jogger" }}
+  {{- if eq .Section "jogger" }}
   "inLanguage": {
     "@type": "Language",
     "name": "Polish",
     "alternateName": "pl"
   }
-  {{ else }}
+  {{- else }}
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   }
-  {{ end }}
+  {{- end }}
 }
 </script>

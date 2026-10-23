@@ -1,13 +1,13 @@
-{{ define "head_extra" }}
+{{- define "head_extra" }}
 {{- $key := .Params.key -}}
-{{ $img := "" }}
+{{- $img := "" }}
 {{- if $key -}}
   {{- $img = partial "release-og-image.html" (where (partial "release-pages.html" .) "Params.project" $key) -}}
 {{- end -}}
 {{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
-{{ end }}
+{{- end }}
 
-{{ define "main" }}
+{{- define "main" }}
 {{- $key := .Params.key -}}
 <div class="music-project-page">
   <div class="container">
@@ -42,68 +42,68 @@
     <header class="section-header">
       <h1>{{ .Title }}</h1>
       <dl>
-        {{ if $proj.start_year }}
+        {{- if $proj.start_year }}
         <dt>
-        {{ if not $proj.end_year }}
+        {{- if not $proj.end_year }}
         Active
-        {{ else }}
+        {{- else }}
         Concluded
-        {{ end }}
+        {{- end }}
         </dt>
         <dd>{{ $proj.start_year }}{{ with $proj.end_year }}{{ if ne . $proj.start_year }}–{{ . }}{{ end }}{{ end }}</dd>
-        {{ end }}
-        {{ with $proj.with }}
+        {{- end }}
+        {{- with $proj.with }}
         {{- $withLinks := slice -}}
         {{- range . -}}
           {{- $withLinks = $withLinks | append (partial "credits-person-link.html" (dict "page" $ "name" .)) -}}
         {{- end -}}
         <dt>With</dt>
         <dd>{{ partial "join-names.html" $withLinks | safeHTML }}</dd>
-        {{ end }}
-        {{ with $proj.url }}
+        {{- end }}
+        {{- with $proj.url }}
         <dt>Web</dt>
         <dd><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></dd>
-        {{ end }}
+        {{- end }}
       </dl>
     </header>
     </div><!-- cover-layout-header -->
 
-    {{ with $cover }}
+    {{- with $cover }}
     <div class="cover-layout-cover">
       <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" width="{{ .Width }}" height="{{ .Height }}">
     </div><!-- cover-layout-cover -->
-    {{ end }}
+    {{- end }}
 
     <div class="cover-layout-body">
-    {{ with .Content }}
+    {{- with .Content }}
     <div class="project-content">{{ . }}</div>
-    {{ end }}
+    {{- end }}
 
-    {{ if $performances }}
+    {{- if $performances }}
     <section>
       <h2 class="section-label">Performances</h2>
       <ul>
-        {{ range $performances }}
+        {{- range $performances }}
         <li>
           {{ dateFormat "2 January 2006" .start_time }} –
           {{ with .name }}{{ . }}{{ end }}
           {{ with .venue }}, {{ . }}{{ end }}
         </li>
-        {{ end }}
+        {{- end }}
       </ul>
     </section>
-    {{ end }}
+    {{- end }}
 
-    {{ if $music }}
+    {{- if $music }}
     <section>
       <h2 class="section-label">Releases</h2>
       <div class="music-productions">
-        {{ range $music }}
+        {{- range $music }}
         {{ partial "music-preview-card.html" (dict "page" .) }}
-        {{ end }}
+        {{- end }}
       </div>
     </section>
-    {{ end }}
+    {{- end }}
     </div><!-- cover-layout-body -->
     </div><!-- cover-layout -->
 
@@ -199,11 +199,11 @@
     {{- end -}}
   </div>
 </div>
-{{ end }}
+{{- end }}
 
-{{ define "scripts_extra" }}
+{{- define "scripts_extra" }}
 {{ partial "unreleased-script.html" . }}
-{{ end }}
+{{- end }}
 
 {{- define "project-card" -}}
 <a href="{{ .permalink }}" class="project-card card-row">

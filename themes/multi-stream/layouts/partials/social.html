@@ -1,18 +1,18 @@
-{{ with .Site.Params.social }}
+{{- with .Site.Params.social }}
 <div class="social">
   <ul class="social">
     <!--
-    {{ with .linktree }}
+    {{- with .linktree }}
     <li>
       <a href="https://linktr.ee/{{ . | safeURL }}"
         title="Linktree: {{ . | safeHTMLAttr }}">
         <i class="lni lni-link"></i></a>
         linktree
     </li>
-    {{ end }}
+    {{- end }}
     -->
 
-    {{ with .instagramHandle }}
+    {{- with .instagramHandle }}
     <li>
       <a href="https://instagram.com/{{ . | safeURL }}"
          rel="me"
@@ -20,17 +20,17 @@
         <i class="lni lni-instagram"></i>
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .tiktokName }}
+    {{- with .tiktokName }}
     <li>
       <a href="https://tiktok.com/@{{ . | safeURL }}"
          rel="me"
          title="TikTok: @{{ . | safeHTMLAttr }}">
         <i class="lni lni-tiktok"></i></a></li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .githubName }}
+    {{- with .githubName }}
     <li>
       <a href="https://github.com/{{ . | safeURL }}"
          rel="me"
@@ -38,9 +38,9 @@
         <i class="lni lni-github"></i>
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .linkedIn }}
+    {{- with .linkedIn }}
     <li>
       <a href="https://linkedin.com/in/{{ . | safeURL }}"
          rel="me"
@@ -48,9 +48,9 @@
         <i class="lni lni-linkedin"></i>
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .bluesky }}
+    {{- with .bluesky }}
     <li>
       <a href="{{ . | safeURL }}"
          rel="me"
@@ -61,9 +61,9 @@
         </svg>
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .mastodonLink }}
+    {{- with .mastodonLink }}
     <li>
       <a href="{{ . | safeURL }}"
          rel="me"
@@ -71,16 +71,16 @@
         ⁂
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .facebookUrlPath }}
+    {{- with .facebookUrlPath }}
     <li>
       <a href="https://facebook.com/{{ . | safeURL }}"
         title="Facebook: {{ . | safeHTMLAttr }}">
         <i class="lni lni-facebook"></i>
       </a>
     </li>
-    {{ end }}
+    {{- end }}
   </ul>
 </div><!-- social -->
-{{ end }}
+{{- end }}

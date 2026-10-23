@@ -1,48 +1,48 @@
-{{ define "head_extra" }}
-{{ $img := partial "release-og-image.html" (partial "release-pages.html" .) }}
+{{- define "head_extra" }}
+{{- $img := partial "release-og-image.html" (partial "release-pages.html" .) }}
 {{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
-{{ end }}
+{{- end }}
 
-{{ define "main" }}
+{{- define "main" }}
 <div class="list-page">
     <div class="container">
         <header class="section-header">
             <h1>{{ .Title }}</h1>
         </header>
         <ul class="genres-grid">
-            {{ range .Pages.ByTitle }}
-            {{ $examples := sort .Pages "Params.release_date" "desc" | first 5 }}
+            {{- range .Pages.ByTitle }}
+            {{- $examples := sort .Pages "Params.release_date" "desc" | first 5 }}
             <li>
                 <a class="genre-card" href="{{ .RelPermalink }}">
                     <div class="genre-card-header">
                         <span class="genre-card-name">{{ .Title }}</span>
                         <span class="genre-card-count">{{ len .Pages }}</span>
                     </div>
-                    {{ if $examples }}
+                    {{- if $examples }}
                     <ul class="genre-card-examples">
-                        {{ range $examples }}
-                        {{ $ex := . }}
-                        {{ $thumb := "" }}
-                        {{ with .Params.image }}
-                        {{ with $ex.Resources.GetMatch . }}
-                        {{ $thumb = .Resize "80x80 webp" }}
-                        {{ end }}
-                        {{ end }}
+                        {{- range $examples }}
+                        {{- $ex := . }}
+                        {{- $thumb := "" }}
+                        {{- with .Params.image }}
+                        {{- with $ex.Resources.GetMatch . }}
+                        {{- $thumb = .Resize "80x80 webp" }}
+                        {{- end }}
+                        {{- end }}
                         <li>
-                            {{ if $thumb }}
+                            {{- if $thumb }}
                             <img src="{{ $thumb.RelPermalink }}" alt="" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
-                            {{ else }}
+                            {{- else }}
                             {{ partial "waveform-placeholder.html" }}
-                            {{ end }}
+                            {{- end }}
                             <span>{{ .Title }}</span>
                         </li>
-                        {{ end }}
+                        {{- end }}
                     </ul>
-                    {{ end }}
+                    {{- end }}
                 </a>
             </li>
-            {{ end }}
+            {{- end }}
         </ul>
     </div>
 </div>
-{{ end }}
+{{- end }}

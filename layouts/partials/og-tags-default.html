@@ -1,32 +1,32 @@
-{{ $page := . }}
-{{ $imageOverride := "" }}
-{{ if reflect.IsMap . }}
-    {{ $page = .page }}
-    {{ $imageOverride = .image }}
-{{ end }}
+{{- $page := . }}
+{{- $imageOverride := "" }}
+{{- if reflect.IsMap . }}
+    {{- $page = .page }}
+    {{- $imageOverride = .image }}
+{{- end }}
 
-{{ $genreDescription := partial "genre-description.html" $page }}
-{{ $ogDescription := $page.Description | default $genreDescription | default ($page.Summary | plainify | strings.TrimSpace | safeHTML) | default $page.Site.Params.description }}
-{{ $ogTitle := partial "page-title.html" $page }}
+{{- $genreDescription := partial "genre-description.html" $page }}
+{{- $ogDescription := $page.Description | default $genreDescription | default ($page.Summary | plainify | strings.TrimSpace | safeHTML) | default $page.Site.Params.description }}
+{{- $ogTitle := partial "page-title.html" $page }}
 
-{{ $ogImage := $imageOverride }}
-{{ $ogImageRes := false }}
-{{ if not $ogImage }}
-    {{ with $page.Params.image }}
-        {{ $imgRes := $page.Resources.GetMatch . }}
-        {{ if $imgRes }}
-            {{ $ogImage = $imgRes.Permalink }}
-            {{ $ogImageRes = $imgRes }}
-        {{ else }}
-            {{ $ogImage = . | absURL }}
-        {{ end }}
-    {{ else }}
-        {{ with $page.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
-            {{ $ogImage = .Permalink }}
-            {{ $ogImageRes = . }}
-        {{ end }}
-    {{ end }}
-{{ end }}
+{{- $ogImage := $imageOverride }}
+{{- $ogImageRes := false }}
+{{- if not $ogImage }}
+    {{- with $page.Params.image }}
+        {{- $imgRes := $page.Resources.GetMatch . }}
+        {{- if $imgRes }}
+            {{- $ogImage = $imgRes.Permalink }}
+            {{- $ogImageRes = $imgRes }}
+        {{- else }}
+            {{- $ogImage = . | absURL }}
+        {{- end }}
+    {{- else }}
+        {{- with $page.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+            {{- $ogImage = .Permalink }}
+            {{- $ogImageRes = . }}
+        {{- end }}
+    {{- end }}
+{{- end }}
 
 <meta property="og:type" content="{{ if and $page.IsPage (not $page.Date.IsZero) }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $ogTitle }}">

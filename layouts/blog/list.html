@@ -1,66 +1,66 @@
-{{ define "main" }}
+{{- define "main" }}
 <div class="list-page">
     <div class="container">
         <header class="section-header">
             <h1>{{ .Title }}</h1>
-            {{ with .Content }}
+            {{- with .Content }}
             <div class="section-intro">
                 {{ . }}
             </div>
-            {{ end }}
+            {{- end }}
         </header>
 
-        {{ if .Pages }}
+        {{- if .Pages }}
         <div class="blog-posts-list">
-            {{ range .Pages.GroupByDate "2006" "desc" }}
+            {{- range .Pages.GroupByDate "2006" "desc" }}
             <div class="year-group">
                 <h2 class="year-title">{{ .Key }}</h2>
-                {{ range .Pages }}
-                {{ $post := . }}
-                {{ $imageURL := "" }}
-                {{ if $post.Params.image }}
-                    {{ $imagePath := $post.Params.image }}
-                    {{ $imageResource := $post.Resources.GetMatch $imagePath }}
-                    {{ if $imageResource }}
-                        {{ $imageURL = $imageResource.RelPermalink }}
-                    {{ else }}
-                        {{ $imageURL = $imagePath | relURL }}
-                    {{ end }}
-                {{ else }}
-                    {{ $imageResource := $post.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
-                    {{ if $imageResource }}
-			{{ $thumbnail := $imageResource.Resize "400x" }}
-                        {{ $imageURL = $thumbnail.RelPermalink }}
-                    {{ end }}
-                {{ end }}
+                {{- range .Pages }}
+                {{- $post := . }}
+                {{- $imageURL := "" }}
+                {{- if $post.Params.image }}
+                    {{- $imagePath := $post.Params.image }}
+                    {{- $imageResource := $post.Resources.GetMatch $imagePath }}
+                    {{- if $imageResource }}
+                        {{- $imageURL = $imageResource.RelPermalink }}
+                    {{- else }}
+                        {{- $imageURL = $imagePath | relURL }}
+                    {{- end }}
+                {{- else }}
+                    {{- $imageResource := $post.Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+                    {{- if $imageResource }}
+			{{- $thumbnail := $imageResource.Resize "400x" }}
+                        {{- $imageURL = $thumbnail.RelPermalink }}
+                    {{- end }}
+                {{- end }}
                 <article class="post-card">
-                    {{ if $imageURL }}
+                    {{- if $imageURL }}
                     <div class="post-card-image">
                         <a href="{{ $post.RelPermalink }}">
                             <img src="{{ $imageURL }}" alt="{{ $post.LinkTitle }}">
                         </a>
                     </div>
-                    {{ end }}
+                    {{- end }}
                     <div class="post-card-content">
                         <h3>{{ $post.LinkTitle }}</h3>
                         {{ partial "post-meta.html" $post }}
-                        {{ with $post.Summary }}
+                        {{- with $post.Summary }}
                         <div class="post-summary">
                             {{ . }}
                         </div>
-                        {{ end }}
-                        {{ if $post.Truncated }}
+                        {{- end }}
+                        {{- if $post.Truncated }}
                         <div class="read-more">
                             <a href="{{ $post.RelPermalink }}">{{ or $post.Params.readMoreText "Read more »" | safeHTML }}</a>
                         </div>
-                        {{ end }}
+                        {{- end }}
                     </div>
                 </article>
-                {{ end }}
+                {{- end }}
             </div>
-            {{ end }}
+            {{- end }}
         </div>
-        {{ end }}
+        {{- end }}
     </div>
 </div>
-{{ end }}
+{{- end }}

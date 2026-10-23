@@ -1,5 +1,5 @@
-{{ define "main" }}
-{{ $imageURL := partial "page-image-url.html" . }}
+{{- define "main" }}
+{{- $imageURL := partial "page-image-url.html" . }}
 <article class="single-post">
     <div class="container">
         <header class="post-header">
@@ -7,15 +7,15 @@
             {{ partial "post-meta.html" . }}
         </header>
 
-        {{ if $imageURL }}
+        {{- if $imageURL }}
         <div class="post-illustration">
             <img src="{{ $imageURL }}" alt="{{ .Title }}">
         </div>
-        {{ end }}
+        {{- end }}
 
         <div class="post-content">
             {{ .Content }}
         </div>
     </div>
 </article>
-{{ end }}
+{{- end }}

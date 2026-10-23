@@ -1,16 +1,16 @@
-{{ define "head_extra" }}
-{{ $img := partial "release-og-image.html" (partial "release-pages.html" .) }}
+{{- define "head_extra" }}
+{{- $img := partial "release-og-image.html" (partial "release-pages.html" .) }}
 {{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
-{{ end }}
+{{- end }}
 
-{{ define "main" }}
+{{- define "main" }}
 <div class="music-page">
     <div class="container">
         <header class="section-header">
             <h1>{{ .Title }}</h1>
-            {{ with .Params.description }}
+            {{- with .Params.description }}
             <p class="section-description">{{ . }}</p>
-            {{ end }}
+            {{- end }}
         </header>
 
         {{- $projectsPage := $.Site.GetPage "/music/projects" -}}
@@ -30,20 +30,20 @@
         {{- end -}}
 
         <div class="music-productions">
-            {{ range sort (partial "release-pages.html" .) "Params.release_date" "desc" }}
+            {{- range sort (partial "release-pages.html" .) "Params.release_date" "desc" }}
             {{ partial "music-preview-card.html" (dict "page" .) }}
-            {{ end }}
+            {{- end }}
         </div>
 
-        {{ with .Content }}
+        {{- with .Content }}
         <footer class="music-footer">
             {{ . }}
         </footer><!-- music-footer -->
-        {{ end }}
+        {{- end }}
     </div>
 </div>
-{{ end }}
+{{- end }}
 
-{{ define "scripts_extra" }}
+{{- define "scripts_extra" }}
 {{ partial "unreleased-script.html" . }}
-{{ end }}
+{{- end }}

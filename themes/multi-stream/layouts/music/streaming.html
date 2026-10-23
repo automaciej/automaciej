@@ -1,11 +1,11 @@
-{{ define "head_extra" }}
+{{- define "head_extra" }}
 {{- $releases := slice -}}
 {{- range partial "streaming-items.html" . }}{{ $releases = $releases | append .release }}{{ end -}}
-{{ $img := partial "release-og-image.html" $releases }}
+{{- $img := partial "release-og-image.html" $releases }}
 {{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
-{{ end }}
+{{- end }}
 
-{{ define "main" }}
+{{- define "main" }}
 {{- $key := .Params.service_key -}}
 {{- $items := partial "streaming-items.html" . -}}
 {{- $icon := partial "service-icon.html" (dict "key" $key "width" 40 "height" 40) -}}
@@ -43,4 +43,4 @@
         </ul><!-- streaming-list -->
     </div><!-- container -->
 </div><!-- music-page -->
-{{ end }}
+{{- end }}

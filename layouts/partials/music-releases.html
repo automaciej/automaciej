@@ -1,4 +1,4 @@
-{{/*
+{{- /*
     Reverse-chronological list of music releases, grouped by year,
     excluding future-dated ones (release .Date in the future),
     regardless of the site's buildFuture/buildExpired dev-server flags.
@@ -16,31 +16,31 @@
 <h2>Music Releases</h2>
 <section class="music-releases-card">
     <ul class="music-releases-years">
-        {{ range $releases.GroupByDate "2006" }}
+        {{- range $releases.GroupByDate "2006" }}
         <li class="music-releases-year">
             <span class="music-releases-year-label">{{ .Key }}</span>
             <ul class="music-releases-chips">
-                {{ range .Pages }}
-                {{ $r := . }}
-                {{ $thumb := "" }}
-                {{ with $r.Params.image }}
-                {{ $img := $r.Resources.GetMatch . }}
-                {{ if $img }}
-                {{ $thumb = $img.Resize "40x40 webp" }}
-                {{ end }}
-                {{ end }}
+                {{- range .Pages }}
+                {{- $r := . }}
+                {{- $thumb := "" }}
+                {{- with $r.Params.image }}
+                {{- $img := $r.Resources.GetMatch . }}
+                {{- if $img }}
+                {{- $thumb = $img.Resize "40x40 webp" }}
+                {{- end }}
+                {{- end }}
                 <li>
                     <a class="release-chip{{ if not $thumb }} no-thumb{{ end }}" href="{{ $r.RelPermalink }}" title="{{ $r.Title }}{{ with $r.Params.artist }} by {{ partial "join-names.html" . }}{{ end }}">
-                        {{ with $thumb }}
+                        {{- with $thumb }}
                         <img class="release-chip-thumb" src="{{ .RelPermalink }}" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
-                        {{ end }}
+                        {{- end }}
                         <span class="release-chip-title">{{ $r.Title | truncate 20 "…" }}</span>
                     </a>
                 </li>
-                {{ end }}
+                {{- end }}
             </ul>
         </li>
-        {{ end }}
+        {{- end }}
     </ul>
 </section>
 <script type="application/ld+json">

@@ -7,110 +7,110 @@
     <h3 class="music-playback-heading">Listen to {{ $p.Title }}{{ if not $p.Params.tracks }} (full track){{ end }}</h3>
     {{- if $p.Params.tracks }}
 
-    {{ with $p.Params.links }}
+    {{- with $p.Params.links }}
     <div class="music-links">
-        {{ if .bandcamp_album }}
-        {{ with .bandcamp_url }}
+        {{- if .bandcamp_album }}
+        {{- with .bandcamp_url }}
         <div class="embed streaming-link">
             <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
         </div>
-        {{ end }}
-        {{ end }}
+        {{- end }}
+        {{- end }}
     </div>
-    {{ end }}
+    {{- end }}
 
     <div class="music-tracks">
-        {{ range $p.Params.tracks }}
+        {{- range $p.Params.tracks }}
         <div class="track">
             <h3 class="track-title">{{ .title }}</h3>
-            {{ with .credits }}
+            {{- with .credits }}
             <div class="track-credits">
                 <strong>Credits:</strong>
                 <ul>
-                    {{ range . }}
+                    {{- range . }}
                     <li><strong>{{ partial "credits-person-link.html" (dict "page" $p "name" .name) }}</strong> - {{ delimit .roles ", " }}</li>
-                    {{ end }}
+                    {{- end }}
                 </ul>
             </div>
-            {{ end }}
-            {{ $svc := partial "music-service-urls.html" (dict "links" .links "release_links" $p.Params.links) }}
-            {{ with .links }}
+            {{- end }}
+            {{- $svc := partial "music-service-urls.html" (dict "links" .links "release_links" $p.Params.links) }}
+            {{- with .links }}
             <div class="track-links">
-                {{ if .bandcamp_track }}
-                {{ with .bandcamp_url }}
+                {{- if .bandcamp_track }}
+                {{- with .bandcamp_url }}
                 <div class="embed streaming-link">
                     <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
                 </div>
-                {{ end }}
-                {{ end }}
-                {{ with .soundcloud_url }}
+                {{- end }}
+                {{- end }}
+                {{- with .soundcloud_url }}
                 <div class="embed streaming-link">
                     <a href="{{ . }}" target="_blank" rel="noopener">Listen on SoundCloud</a>
                 </div>
-                {{ end }}
-                {{ if .instagram }}
+                {{- end }}
+                {{- if .instagram }}
                 <div class="embed instagram-link">
                     <a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener">
                         <i class="lni lni-instagram"></i> View on Instagram
                     </a>
                 </div>
-                {{ end }}
-                {{ with $svc.spotify }}
+                {{- end }}
+                {{- with $svc.spotify }}
                 <div class="embed streaming-link">
                     <a href="{{ .url }}" target="_blank" rel="noopener">
                         <i class="lni lni-spotify"></i> Listen on Spotify
                     </a>
                 </div>
-                {{ end }}
-                {{ with $svc.apple_music }}
+                {{- end }}
+                {{- with $svc.apple_music }}
                 <div class="embed streaming-link">
                     <a href="{{ .url }}" target="_blank" rel="noopener">
                         <i class="lni lni-apple-music"></i> Listen on Apple Music
                     </a>
                 </div>
-                {{ end }}
+                {{- end }}
             </div>
-            {{ end }}
+            {{- end }}
         </div>
-        {{ end }}
+        {{- end }}
     </div>
 
     {{- else }}
 
-    {{ with $p.Params.links }}
+    {{- with $p.Params.links }}
     <div class="music-links">
-        {{ if .bandcamp_album }}
-        {{ with .bandcamp_url }}
+        {{- if .bandcamp_album }}
+        {{- with .bandcamp_url }}
         <div class="embed streaming-link">
             <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
         </div>
-        {{ end }}
-        {{ end }}
+        {{- end }}
+        {{- end }}
 
-        {{ if .bandcamp_track }}
-        {{ with .bandcamp_url }}
+        {{- if .bandcamp_track }}
+        {{- with .bandcamp_url }}
         <div class="embed streaming-link">
             <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
         </div>
-        {{ end }}
-        {{ end }}
+        {{- end }}
+        {{- end }}
 
-        {{ if .instagram }}
+        {{- if .instagram }}
         <div class="embed instagram-link">
             <a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener">
                 <i class="lni lni-instagram"></i> View on Instagram
             </a>
         </div>
-        {{ end }}
+        {{- end }}
 
-        {{ with .soundcloud_url }}
+        {{- with .soundcloud_url }}
         <div class="embed streaming-link">
             <a href="{{ . }}" target="_blank" rel="noopener">Listen on SoundCloud</a>
         </div>
-        {{ end }}
+        {{- end }}
 
     </div>
-    {{ end }}
+    {{- end }}
 
     {{- end }}
 </div>

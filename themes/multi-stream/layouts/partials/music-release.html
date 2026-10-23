@@ -4,14 +4,14 @@
     <div class="cover-layout">
         <div class="cover-layout-header music-release-header">
             <div class="music-quick-links">
-                {{ $svc := partial "music-service-urls.html" (dict "links" $p.Params.links) }}
+                {{- $svc := partial "music-service-urls.html" (dict "links" $p.Params.links) }}
                 {{- /* Services with a logo in /music/'s service_icons show it instead of the generic play triangle. */ -}}
-                {{ with $p.Params.links }}
+                {{- with $p.Params.links }}
                 {{- /* Only a pre-save link so far: show it as a chip. */ -}}
                 {{ if and .streaming (eq (len .) 1) }}<a class="presave-chip" href="{{ .streaming }}" target="_blank" rel="noopener" title="Pre-save {{ $p.Title }}">Presave</a>{{ end }}
                 {{ with $svc.spotify }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Spotify">{{ with partial "service-icon.html" (dict "key" "spotify" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Spotify</a>{{ end }}
                 {{- /* One "YouTube" button: the YouTube Music link when there is one, else the plain video. */ -}}
-                {{ $yt := "" }}{{ with $svc.youtube_music }}{{ $yt = .url }}{{ else }}{{ with .youtube }}{{ $yt = printf "https://www.youtube.com/watch?v=%s" . }}{{ end }}{{ end }}
+                {{- $yt := "" }}{{ with $svc.youtube_music }}{{ $yt = .url }}{{ else }}{{ with .youtube }}{{ $yt = printf "https://www.youtube.com/watch?v=%s" . }}{{ end }}{{ end }}
                 {{ with $yt }}<a href="{{ . }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on YouTube">{{ with partial "service-icon.html" (dict "key" "youtube_music" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}YouTube</a>{{ end }}
                 {{ with $svc.apple_music }}<a href="{{ .url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Apple Music">{{ with partial "service-icon.html" (dict "key" "apple_music" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Apple</a>{{ end }}
                 {{ if .itunes }}<a href="{{ .itunes }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on iTunes"><span class="play-icon" aria-hidden="true">▶</span>iTunes</a>{{ end }}
@@ -22,47 +22,47 @@
                 {{ if .bandcamp_url }}<a href="{{ .bandcamp_url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Bandcamp">{{ with partial "service-icon.html" (dict "key" "bandcamp" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Bandcamp</a>{{ end }}
                 {{ if .soundcloud_url }}<a href="{{ .soundcloud_url }}" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on SoundCloud">{{ with partial "service-icon.html" (dict "key" "soundcloud" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}SoundCloud</a>{{ end }}
                 {{ if .instagram }}<a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener" title="Listen to {{ $p.Title }} on Instagram">{{ with partial "service-icon.html" (dict "key" "instagram" "class" "service-icon") }}{{ . }}{{ else }}<span class="play-icon" aria-hidden="true">▶</span>{{ end }}Instagram</a>{{ end }}
-                {{ end }}
+                {{- end }}
                 <button type="button" class="share-button"><svg class="share-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="share-label">Copy Link</span></button>
             </div>
             <h1>{{ $p.Title }}</h1>
             <div class="music-meta">
                 <span class="artist">{{ with $p.Params.artist }}{{ partial "join-names.html" . }}{{ end }}</span>
-                {{ if $p.Params.single }}
+                {{- if $p.Params.single }}
                 <span class="release-type">• {{ with $p.Params.links.streaming }}<a href="{{ . }}" target="_blank" rel="noopener">Single</a>{{ else }}Single{{ end }}</span>
-                {{ else if $p.Params.album }}
+                {{- else if $p.Params.album }}
                 <span class="album">• {{ with $p.Params.links.streaming }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $p.Params.album }}</a>{{ else }}{{ $p.Params.album }}{{ end }}</span>
-                {{ end }}
-                {{ with $p.Params.genres }}
+                {{- end }}
+                {{- with $p.Params.genres }}
                 <span class="music-genre"><span class="music-genre-sep"> • </span>{{ partial "music-genre-links.html" $p }}</span>
-                {{ end }}
+                {{- end }}
                 <span class="date">• {{ dateFormat "January 2006" $p.Params.release_date }}</span>
-                {{ if eq $p.Params.composition_origin "cover" }}{{ with $p.Params.original_artist -}}
+                {{- if eq $p.Params.composition_origin "cover" }}{{ with $p.Params.original_artist -}}
                 <span class="composition-origin"> • cover of <span class="original-artist">{{ . }}</span></span>
                 {{- end }}{{ end }}
             </div>
-            {{ with $p.Params.links.streaming }}
+            {{- with $p.Params.links.streaming }}
             <a class="presave-button" href="{{ . }}" target="_blank" rel="noopener" data-presave hidden>Pre-save</a>
-            {{ end }}
+            {{- end }}
         </div>
 
-        {{ if $p.Params.links.youtube }}
+        {{- if $p.Params.links.youtube }}
         <div class="cover-layout-cover music-release-youtube">
             <div class="embed youtube-embed">
                 <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/{{ $p.Params.links.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        {{ else }}
-        {{ with $p.Params.image }}
-        {{ $img := $p.Resources.GetMatch . }}
-        {{ if $img }}
-        {{ $resized := $img.Resize "1600x webp" }}
+        {{- else }}
+        {{- with $p.Params.image }}
+        {{- $img := $p.Resources.GetMatch . }}
+        {{- if $img }}
+        {{- $resized := $img.Resize "1600x webp" }}
         <div class="cover-layout-cover">
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>
-        {{ end }}
-        {{ end }}
-        {{ end }}
+        {{- end }}
+        {{- end }}
+        {{- end }}
 
         <div class="cover-layout-body">
             {{ partial "music-content.html" (dict "page" $p "hide_project_link" $hideProjectLink) }}

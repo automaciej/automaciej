@@ -1,22 +1,22 @@
 <header class="site-header">
     <div class="container">
         <nav class="site-nav">
-            {{ $trail := partial "breadcrumb-pages.html" . }}
+            {{- $trail := partial "breadcrumb-pages.html" . }}
             <ol class="site-breadcrumb" aria-label="Breadcrumb">
-                {{ range $i, $p := $trail }}
-                {{ $label := cond $p.IsHome $p.Site.Title $p.LinkTitle }}
-                {{ if eq $i 0 }}
-                {{ if $.IsHome }}
+                {{- range $i, $p := $trail }}
+                {{- $label := cond $p.IsHome $p.Site.Title $p.LinkTitle }}
+                {{- if eq $i 0 }}
+                {{- if $.IsHome }}
                 <li><a href="{{ $p.RelPermalink }}" class="site-title">{{ $label }}</a></li>
-                {{ else }}
+                {{- else }}
                 <li><a href="{{ $p.RelPermalink }}" class="site-title" title="{{ $label }}" aria-label="{{ $label }}">MB</a></li>
-                {{ end }}
-                {{ else if eq $p $ }}
+                {{- end }}
+                {{- else if eq $p $ }}
                 <li class="site-crumb-current" aria-current="page">{{ $label }}</li>
-                {{ else }}
+                {{- else }}
                 <li><a href="{{ $p.RelPermalink }}" class="site-crumb">{{ $label }}</a></li>
-                {{ end }}
-                {{ end }}
+                {{- end }}
+                {{- end }}
             </ol>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
@@ -24,9 +24,9 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                {{ range .Site.Menus.main }}
+                {{- range .Site.Menus.main }}
                 <li><a href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a></li>
-                {{ end }}
+                {{- end }}
             </ul>
         </nav>
     </div>

@@ -3,40 +3,40 @@
 <title>
 {{- partial "page-title.html" . -}}
 </title>
-{{ $genreDescription := partial "genre-description.html" . }}
-{{ $ogDescription := .Description | default $genreDescription | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
+{{- $genreDescription := partial "genre-description.html" . }}
+{{- $ogDescription := .Description | default $genreDescription | default (.Summary | plainify | strings.TrimSpace | safeHTML) | default .Site.Params.description }}
 <meta name="description" content="{{ $ogDescription }}">
 
-{{ if .Site.Params.favicon }}
+{{- if .Site.Params.favicon }}
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
-{{ end }}
+{{- end }}
 
-{{ range .AlternativeOutputFormats }}
-{{ if eq .Name "rss" }}
+{{- range .AlternativeOutputFormats }}
+{{- if eq .Name "rss" }}
 <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ if $.IsHome }}{{ $.Site.Title }}{{ else }}{{ $.Title }} - {{ $.Site.Title }}{{ end }} (RSS)">
-{{ end }}
-{{ end }}
+{{- end }}
+{{- end }}
 
 <link rel="stylesheet" href="{{ "css/lineicons.css" | relURL }}">
 
-{{ $styles := resources.Get "css/main.css" }}
-{{ if $styles }}
-{{ $styles = $styles | fingerprint }}
+{{- $styles := resources.Get "css/main.css" }}
+{{- if $styles }}
+{{- $styles = $styles | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
-{{ end }}
+{{- end }}
 
-{{ if .IsHome }}
+{{- if .IsHome }}
   {{ partial "jsonld/person.html" . }}
   {{ partial "jsonld/website.html" . }}
-{{ else if and (eq .Type "music-project") .Params.key }}
+{{- else if and (eq .Type "music-project") .Params.key }}
   {{ partial "jsonld/music-project.html" . }}
-{{ else if eq .Params.jsonld "performances" }}
+{{- else if eq .Params.jsonld "performances" }}
   {{ partial "jsonld/performances.html" . }}
-{{ else if eq .Layout "apps" }}
+{{- else if eq .Layout "apps" }}
   {{ partial "jsonld/apps.html" . }}
-{{ else if .Params.app }}
+{{- else if .Params.app }}
   {{ partial "jsonld/app-single.html" . }}
-{{ else if and .IsPage (in (slice "jogger" "blog") .Section) }}
+{{- else if and .IsPage (in (slice "jogger" "blog") .Section) }}
   {{ partial "rich-data-single.html" . }}
-{{ end }}
+{{- end }}
 {{ partial "jsonld/breadcrumb.html" . }}

@@ -1,7 +1,7 @@
-{{ with .Site.Params.music }}
+{{- with .Site.Params.music }}
 <div class="social music-presence">
   <ul class="social">
-    {{ with .spotifyArtistId }}
+    {{- with .spotifyArtistId }}
     <li>
       <a href="https://open.spotify.com/artist/{{ . | safeURL }}"
          rel="me"
@@ -10,9 +10,9 @@
         Spotify
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .appleMusicArtistId }}
+    {{- with .appleMusicArtistId }}
     <li>
       <a href="https://music.apple.com/artist/{{ . | safeURL }}"
          rel="me"
@@ -21,9 +21,9 @@
         Apple Music
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .soundcloud }}
+    {{- with .soundcloud }}
     <li>
       <a href="https://soundcloud.com/{{ . | safeURL }}"
          rel="me"
@@ -32,9 +32,9 @@
         SoundCloud
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .deezerArtistId }}
+    {{- with .deezerArtistId }}
     <li>
       <a href="https://www.deezer.com/us/artist/{{ . | safeURL }}"
          rel="me"
@@ -43,9 +43,9 @@
         Deezer
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .amazonMusicArtistId }}
+    {{- with .amazonMusicArtistId }}
     <li>
       <a href="https://music.amazon.com/artists/{{ . | safeURL }}"
          rel="me"
@@ -54,9 +54,9 @@
         Amazon Music
       </a>
     </li>
-    {{ end }}
+    {{- end }}
 
-    {{ with .qobuzArtistUrl }}
+    {{- with .qobuzArtistUrl }}
     <li>
       <a href="{{ . | safeURL }}"
          rel="me"
@@ -65,7 +65,7 @@
         Qobuz
       </a>
     </li>
-    {{ end }}
+    {{- end }}
   </ul>
 </div><!-- social music-presence -->
-{{ end }}
+{{- end }}

@@ -8,7 +8,7 @@
     {{ partial "header.html" . }}
 
     <main>
-        {{ block "main" . }}{{ end }}
+        {{- block "main" . }}{{ end }}
     </main>
 
     {{ partial "footer.html" . }}
@@ -44,6 +44,6 @@
         });
 
     </script>
-    {{ block "scripts_extra" . }}{{ end }}
+    {{- block "scripts_extra" . }}{{ end }}
 </body>
 </html>

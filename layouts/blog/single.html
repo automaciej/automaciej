@@ -1,19 +1,19 @@
-{{ define "main" }}
-{{ $imageURL := "" }}
-{{ if .Params.image }}
-    {{ $imagePath := .Params.image }}
-    {{ $imageResource := .Resources.GetMatch $imagePath }}
-    {{ if $imageResource }}
-        {{ $imageURL = $imageResource.RelPermalink }}
-    {{ else }}
-        {{ $imageURL = $imagePath | relURL }}
-    {{ end }}
-{{ else }}
-    {{ $imageResource := .Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
-    {{ if $imageResource }}
-        {{ $imageURL = $imageResource.RelPermalink }}
-    {{ end }}
-{{ end }}
+{{- define "main" }}
+{{- $imageURL := "" }}
+{{- if .Params.image }}
+    {{- $imagePath := .Params.image }}
+    {{- $imageResource := .Resources.GetMatch $imagePath }}
+    {{- if $imageResource }}
+        {{- $imageURL = $imageResource.RelPermalink }}
+    {{- else }}
+        {{- $imageURL = $imagePath | relURL }}
+    {{- end }}
+{{- else }}
+    {{- $imageResource := .Resources.GetMatch "**.{jpg,jpeg,png,gif}" }}
+    {{- if $imageResource }}
+        {{- $imageURL = $imageResource.RelPermalink }}
+    {{- end }}
+{{- end }}
 <article class="single-post">
     <div class="container">
         <header class="post-header">
@@ -21,15 +21,15 @@
             {{ partial "post-meta.html" . }}
         </header>
 
-        {{ if $imageURL }}
+        {{- if $imageURL }}
         <div class="post-illustration">
             <img src="{{ $imageURL }}" alt="{{ .Title }}">
         </div>
-        {{ end }}
+        {{- end }}
 
         <div class="post-content">
             {{ .Content }}
         </div>
     </div>
 </article>
-{{ end }}
+{{- end }}

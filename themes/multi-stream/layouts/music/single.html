@@ -1,4 +1,4 @@
-{{ define "head_extra" }}
+{{- define "head_extra" }}
 {{- /* This layout also serves non-release pages (e.g. performances); only releases get music.song tags. */ -}}
 {{- if .Params.release_date -}}
 {{- /* An album only when front matter says `single: false`; releases without the key are single recordings. */ -}}
@@ -124,17 +124,17 @@
 {{- else -}}
 {{ partial "og-tags-default.html" . }}
 {{- end -}}
-{{ end }}
+{{- end }}
 
-{{ define "main" }}
+{{- define "main" }}
 <div class="music-page">
     <div class="container">
         {{ partial "music-release.html" (dict "page" . "hide_project_link" false) }}
     </div>
 </div>
-{{ end }}
+{{- end }}
 
-{{ define "scripts_extra" }}
+{{- define "scripts_extra" }}
 {{- if .Params.release_date }}
 {{ partial "unreleased-script.html" . }}
 <script>
@@ -162,5 +162,5 @@
         });
     });
 </script>
-{{ end -}}
-{{ end }}
+{{- end -}}
+{{- end }}
