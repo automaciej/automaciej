@@ -50,6 +50,14 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
 - URLs are built from the IDs in `partials/music-service-urls.html`.
 - Before adding any link field, grep existing releases for that key to match its
   format.
+- **Filling links from a DistroKid HyperFollow page** (`links.streaming`): fetch the page
+  with a browser User-Agent and read the `data-hyperfollow-store` anchors. Spotify
+  `/album/<id>` -> `spotify_album`; Apple Music `/album/<slug>/<id>` -> `apple_music_album`
+  (quoted string; the "iTunes" button is the same link); Tidal and Amazon -> full URLs
+  (`tidal`, `amazon_music`; write Amazon as `https://music.amazon.com/albums/<ASIN>`, not
+  the `gp/product` form); YouTube Music `watch?v=<id>` -> `youtube_music_track` (not
+  `youtube`, which would add a YouTube link). Only services the page lists are set.
+  Example: `content/music/loser/index.md`.
 
 ### Apps
 
