@@ -1,0 +1,37 @@
+{{- /*
+    The edges that lead from a person back to the releases they worked on.
+
+    Input:  dict with page (any page) and name
+    Output: dict with
+              roles    sorted unique credit roles, across all releases and tracks
+              reverse  JSON-LD @reverse map: byArtist / producer / contributor -> [{"@id": release}],
+                       only the keys that have releases. Reading it as "release producer person"
+                       gives the same triples the release nodes state, so the graph can be walked
+                       from either side.
+*/ -}}
+{{- $name := .name -}}
+{{- $roles := slice -}}
+{{- $byArtist := slice -}}
+{{- $producer := slice -}}
+{{- $contributor := slice -}}
+{{- range sort (partial "release-pages.html" .page) "Params.release_date" "desc" -}}
+  {{- $ref := dict "@id" (printf "%s#release" .Permalink) -}}
+  {{- if in .Params.artist $name }}{{ $byArtist = $byArtist | append $ref }}{{ end -}}
+  {{- $credited := false -}}
+  {{- $produced := false -}}
+  {{- range .Params.credits -}}
+    {{- if eq .name $name -}}
+      {{- $credited = true -}}
+      {{- $roles = $roles | append .roles -}}
+      {{- if or (in .roles "producer") (in .roles "co-producer") }}{{ $produced = true }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range .Params.tracks }}{{ range .credits }}{{ if eq .name $name }}{{ $credited = true }}{{ $roles = $roles | append .roles }}{{ end }}{{ end }}{{ end -}}
+  {{- if $credited }}{{ $contributor = $contributor | append $ref }}{{ end -}}
+  {{- if $produced }}{{ $producer = $producer | append $ref }}{{ end -}}
+{{- end -}}
+{{- $reverse := dict -}}
+{{- with $byArtist }}{{ $reverse = merge $reverse (dict "byArtist" .) }}{{ end -}}
+{{- with $producer }}{{ $reverse = merge $reverse (dict "producer" .) }}{{ end -}}
+{{- with $contributor }}{{ $reverse = merge $reverse (dict "contributor" .) }}{{ end -}}
+{{- return (dict "roles" (sort ($roles | uniq)) "reverse" $reverse) -}}

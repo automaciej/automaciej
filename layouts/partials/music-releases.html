@@ -43,25 +43,5 @@
         {{- end }}
     </ul>
 </section>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "itemListOrder": "https://schema.org/ItemListOrderDescending",
-  "itemListElement": [
-    {{- range $i, $r := $releases }}{{ if $i }},{{ end }}
-    {
-      "@type": "ListItem",
-      "position": {{ add $i 1 }},
-      "item": {
-        "@type": "MusicRecording",
-        "name": {{ $r.Title | jsonify | safeJS }},
-        "url": {{ $r.Permalink | jsonify | safeJS }},
-        "datePublished": {{ $r.Date.Format "2006-01-02" | jsonify | safeJS }}
-      }
-    }
-    {{- end }}
-  ]
-}
-</script>
+{{ partial "jsonld/release-list.html" (dict "releases" $releases "name" "Music releases" "order" "desc") }}
 {{- end -}}

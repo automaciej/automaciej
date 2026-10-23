@@ -1,0 +1,103 @@
+{{- /*
+    One music release as a schema.org node (a dict; callers jsonify it).
+
+    Input:  dict with
+              page  the release page
+              full  true for the release's own page (tracks, credits, service links, UPC/ISRC),
+                    false for the compact form used in lists
+    Output: dict without @context. @id is "<release URL>#release", so every page that lists the
+            release points at the node the release page defines in full. People and the site
+            that exist once site-wide are referenced by @id (see jsonld/person.html, website.html).
+*/ -}}
+{{- $p := .page -}}
+{{- $full := .full | default false -}}
+{{- $site := $p.Site -}}
+{{- $isAlbum := and (isset $p.Params "single") (not $p.Params.single) -}}
+
+{{- $artists := slice -}}
+{{- range $p.Params.artist -}}
+  {{- $artists = $artists | append (partial "jsonld/person-ref.html" (dict "page" $p "name" .)) -}}
+{{- end -}}
+
+{{- $d := dict
+    "@type" (cond $isAlbum "MusicAlbum" "MusicRecording")
+    "@id" (printf "%s#release" $p.Permalink)
+    "name" $p.Title
+    "url" $p.Permalink
+    "byArtist" $artists
+    "datePublished" ($p.Params.release_date | dateFormat "2006-01-02") -}}
+
+{{- with $p.Params.genres }}{{ $d = merge $d (dict "genre" .) }}{{ end -}}
+
+{{- /* Image: the cover, else the YouTube thumbnail, else (full only) the site image. */ -}}
+{{- $image := "" -}}
+{{- with $p.Params.image -}}
+  {{- with $p.Resources.GetMatch . }}{{ $image = (.Resize "1200x webp").Permalink }}{{ end -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- with $p.Params.links }}{{ with .youtube }}{{ $image = printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" . }}{{ end }}{{ end -}}
+{{- end -}}
+{{- if and (not $image) $full -}}
+  {{- with $site.Params.shareImage }}{{ $image = printf "%s%s" $site.BaseURL . }}{{ end -}}
+{{- end -}}
+{{- with $image }}{{ $d = merge $d (dict "image" .) }}{{ end -}}
+
+{{- if $full -}}
+  {{- $d = merge $d (dict "isPartOf" (dict "@id" (printf "%s#website" $site.BaseURL))) -}}
+  {{- $desc := $p.Description | default ($p.Summary | plainify | htmlUnescape | strings.TrimSpace) -}}
+  {{- with $desc }}{{ $d = merge $d (dict "description" .) }}{{ end -}}
+  {{- with $p.Params.upc }}{{ $d = merge $d (dict "identifier" (dict "@type" "PropertyValue" "propertyID" "UPC" "value" .)) }}{{ end -}}
+  {{- if not $isAlbum -}}
+    {{- with $p.Params.isrc }}{{ $d = merge $d (dict "isrcCode" .) }}{{ end -}}
+  {{- end -}}
+  {{- if and $isAlbum $p.Params.tracks -}}
+    {{- $tracks := slice -}}
+    {{- range $p.Params.tracks -}}
+      {{- $t := dict "@type" "MusicRecording" "name" .title -}}
+      {{- with .isrc }}{{ $t = merge $t (dict "isrcCode" .) }}{{ end -}}
+      {{- if .credits -}}
+        {{- $tc := slice -}}
+        {{- range .credits }}{{ $tc = $tc | append (merge (dict "roleName" .roles) (partial "jsonld/person-ref.html" (dict "page" $p "name" .name))) }}{{ end -}}
+        {{- $t = merge $t (dict "contributor" $tc) -}}
+      {{- end -}}
+      {{- $tracks = $tracks | append $t -}}
+    {{- end -}}
+    {{- $d = merge $d (dict "track" $tracks) -}}
+  {{- end -}}
+
+  {{- $services := partial "release-service-links.html" $p -}}
+  {{- if $services -}}
+    {{- $urls := slice -}}
+    {{- $targets := slice -}}
+    {{- range $services -}}
+      {{- $urls = $urls | append .url -}}
+      {{- $targets = $targets | append (dict "@type" "EntryPoint" "name" .name "urlTemplate" .url) -}}
+    {{- end -}}
+    {{- $d = merge $d (dict "sameAs" $urls "potentialAction" (dict "@type" "ListenAction" "target" $targets)) -}}
+  {{- end -}}
+
+  {{- /* Credits: roles map to schema.org properties; every credited person also appears
+         as a contributor with the roles they had. */ -}}
+  {{- $producers := slice -}}
+  {{- $composers := slice -}}
+  {{- $lyricists := slice -}}
+  {{- $contributors := slice -}}
+  {{- range $p.Params.credits -}}
+    {{- $node := partial "jsonld/person-ref.html" (dict "page" $p "name" .name) -}}
+    {{- range .roles -}}
+      {{- if in (slice "producer" "co-producer") . }}{{ $producers = $producers | append $node }}{{ end -}}
+      {{- if in (slice "music" "composer" "songwriter") . }}{{ $composers = $composers | append $node }}{{ end -}}
+      {{- if in (slice "lyrics" "songwriter") . }}{{ $lyricists = $lyricists | append $node }}{{ end -}}
+    {{- end -}}
+    {{- $contributors = $contributors | append (merge (dict "roleName" .roles) $node) -}}
+  {{- end -}}
+  {{- with $contributors }}{{ $d = merge $d (dict "contributor" .) }}{{ end -}}
+  {{- with $producers | uniq }}{{ $d = merge $d (dict "producer" .) }}{{ end -}}
+  {{- if or $composers $lyricists -}}
+    {{- $comp := dict "@type" "MusicComposition" "name" $p.Title -}}
+    {{- with $composers | uniq }}{{ $comp = merge $comp (dict "composer" .) }}{{ end -}}
+    {{- with $lyricists | uniq }}{{ $comp = merge $comp (dict "lyricist" .) }}{{ end -}}
+    {{- $d = merge $d (dict "recordingOf" $comp) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $d -}}

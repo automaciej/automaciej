@@ -1,0 +1,24 @@
+{{- /*
+    Everyone credited on a release, as an ItemList of Person nodes. Each is declared in full
+    under the @id that release nodes use to point at them (<credits URL>#<anchor>), with the
+    roles they have had and, via @reverse, the releases they worked on. The site owner is
+    declared on the home page, so here is only a reference to it.
+*/ -}}
+{{- $page := . -}}
+{{- $items := slice -}}
+{{- range $i, $name := partialCached "credited-names.html" . "all" -}}
+  {{- $ref := partial "jsonld/person-ref.html" (dict "page" $page "name" $name) -}}
+  {{- $node := $ref -}}
+  {{- if ne (index $ref "@id") (printf "%s#maciej" $page.Site.BaseURL) -}}
+    {{- $links := partial "jsonld/person-links.html" (dict "page" $page "name" $name) -}}
+    {{- $roles := slice -}}
+    {{- range $links.roles }}{{ $roles = $roles | append (dict "@type" "Occupation" "name" .) }}{{ end -}}
+    {{- $node = merge $ref (dict "hasOccupation" $roles) -}}
+    {{- with $links.reverse }}{{ $node = merge $node (dict "@reverse" .) }}{{ end -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "item" $node) -}}
+{{- end -}}
+{{- $list := dict "@context" "https://schema.org" "@type" "ItemList" "name" "People credited on releases" "numberOfItems" (len $items) "itemListElement" $items }}
+<script type="application/ld+json">
+{{ $list | jsonify (dict "indent" "  ") | safeJS }}
+</script>

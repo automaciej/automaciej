@@ -1,0 +1,11 @@
+{{- /*
+    Every person credited on a release or one of its tracks, sorted, without duplicates: the
+    people who have a section on the credits page.
+    Usage: {{ $names := partialCached "credited-names.html" . "all" }}
+*/ -}}
+{{- $names := slice -}}
+{{- range (partial "release-pages.html" .) -}}
+  {{- range .Params.credits }}{{ $names = $names | append .name }}{{ end -}}
+  {{- range .Params.tracks }}{{ range .credits }}{{ $names = $names | append .name }}{{ end }}{{ end -}}
+{{- end -}}
+{{- return (sort ($names | uniq)) -}}

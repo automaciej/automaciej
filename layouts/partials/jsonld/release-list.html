@@ -1,0 +1,24 @@
+{{- /*
+    ItemList script of music releases, for any page that shows them.
+
+    Input:  dict with
+              releases  release pages, in display order
+              name      what the list is, e.g. "Productions on YouTube Music" (optional)
+              order     "desc" | "asc" | "" (itemListOrder; optional)
+    Each item is the compact form of jsonld/music-release.html; the release's own page defines
+    the full node under the same @id.
+*/ -}}
+{{- if .releases -}}
+{{- $list := dict "@context" "https://schema.org" "@type" "ItemList" -}}
+{{- with .name }}{{ $list = merge $list (dict "name" .) }}{{ end -}}
+{{- if eq .order "desc" }}{{ $list = merge $list (dict "itemListOrder" "https://schema.org/ItemListOrderDescending") }}{{ end -}}
+{{- if eq .order "asc" }}{{ $list = merge $list (dict "itemListOrder" "https://schema.org/ItemListOrderAscending") }}{{ end -}}
+{{- $items := slice -}}
+{{- range $i, $r := .releases -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "item" (partial "jsonld/music-release.html" (dict "page" $r "full" false))) -}}
+{{- end -}}
+{{- $list = merge $list (dict "numberOfItems" (len $items) "itemListElement" $items) }}
+<script type="application/ld+json">
+{{ $list | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end -}}

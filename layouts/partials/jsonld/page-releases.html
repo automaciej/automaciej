@@ -1,0 +1,40 @@
+{{- /*
+    Release ItemList for the pages whose body shows releases: the home page, /music/, the
+    per-service lists, the credits page, project pages and the genre pages. Releases themselves
+    and /bio/ emit their own. Emits nothing on any other page. Each list holds the releases
+    the page shows, in the order it shows them.
+    Usage: {{ partial "jsonld/page-releases.html" . }}
+*/ -}}
+{{- $all := sort (partial "release-pages.html" .) "Params.release_date" "desc" -}}
+{{- $published := where $all "Date" "le" now -}}
+{{- if .IsHome -}}
+  {{ partial "jsonld/release-list.html" (dict "releases" (first 3 $all) "name" "Latest music" "order" "desc") }}
+{{- else if eq .Layout "streaming" -}}
+  {{- $seen := slice -}}
+  {{- $releases := slice -}}
+  {{- range partial "streaming-items.html" . -}}
+    {{- if not (in $seen .release.Permalink) -}}
+      {{- $seen = $seen | append .release.Permalink -}}
+      {{- $releases = $releases | append .release -}}
+    {{- end -}}
+  {{- end -}}
+  {{ partial "jsonld/release-list.html" (dict "releases" $releases "name" (printf "Productions on %s" .Title) "order" "desc") }}
+{{- else if eq .Type "music-credits" -}}
+  {{ partial "jsonld/release-list.html" (dict "releases" $all "name" "Releases with credits" "order" "desc") }}
+  {{ partial "jsonld/credits-people.html" . }}
+{{- else if and (eq .Section "genres") (eq .Kind "term") -}}
+  {{ partial "jsonld/release-list.html" (dict "releases" (sort .Pages "Params.release_date" "desc") "name" (printf "%s music" .Title) "order" "desc") }}
+{{- else if and (eq .Section "genres") (eq .Kind "taxonomy") -}}
+  {{- $shown := slice -}}
+  {{- $seen := slice -}}
+  {{- range .Pages.ByTitle -}}
+    {{- range first 5 (sort .Pages "Params.release_date" "desc") -}}
+      {{- if not (in $seen .Permalink) }}{{ $seen = $seen | append .Permalink }}{{ $shown = $shown | append . }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+  {{ partial "jsonld/release-list.html" (dict "releases" (sort $shown "Params.release_date" "desc") "name" .Title "order" "desc") }}
+{{- else if and (eq .Type "music-project") .Params.key -}}
+  {{ partial "jsonld/release-list.html" (dict "releases" (sort (where $all "Params.project" .Params.key) "Params.release_date" "desc") "name" (printf "Music by %s" .Title) "order" "desc") }}
+{{- else if and (eq .Type "music") .IsSection -}}
+  {{ partial "jsonld/release-list.html" (dict "releases" $all "name" "Music releases" "order" "desc") }}
+{{- end -}}

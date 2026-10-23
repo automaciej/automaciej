@@ -39,4 +39,5 @@
 {{- else if and .IsPage (in (slice "jogger" "blog") .Section) }}
   {{ partial "rich-data-single.html" . }}
 {{- end }}
+{{ partial "jsonld/page-releases.html" . }}
 {{ partial "jsonld/breadcrumb.html" . }}

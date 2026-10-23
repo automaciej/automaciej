@@ -1,9 +1,13 @@
 {{- $key := .Params.key -}}
 {{- $proj := .Params -}}
 {{- $baseURL := .Site.BaseURL -}}
-{{- $music := slice -}}
-{{- range hugo.Data.music -}}
-  {{- if eq .project $key -}}{{- $music = $music | append . -}}{{- end -}}
+{{- $music := sort (where (partial "release-pages.html" .) "Params.project" $key) "Params.release_date" "desc" -}}
+{{- $albums := slice -}}
+{{- $tracks := slice -}}
+{{- range $music -}}
+  {{- /* References only: the release list on this page carries the nodes. */ -}}
+  {{- $node := dict "@id" (printf "%s#release" .Permalink) -}}
+  {{- if and (isset .Params "single") (not .Params.single) }}{{ $albums = $albums | append $node }}{{ else }}{{ $tracks = $tracks | append $node }}{{ end -}}
 {{- end -}}
 <script type="application/ld+json">
 {
@@ -22,60 +26,18 @@
   {{- with $proj.with }},
   "member": [
     {{- range $i, $name := . }}{{ if $i }},{{ end }}
-    { "@type": "Person", "name": {{ $name | jsonify | safeJS }} }
+    {{ partial "jsonld/person-ref.html" (dict "page" $ "name" $name) | jsonify | safeJS }}
     {{- end }}
   ]{{ end }}
-  {{- if $music }},
-  "track": [
-    {{- range $i, $m := $music }}{{ if $i }},{{ end }}
-    {
-      "@type": {{ if $m.album }}"MusicAlbum"{{ else }}"MusicRecording"{{ end }},
-      "name": {{ $m.title | jsonify | safeJS }},
-      "datePublished": {{ dateFormat "2006-01-02" $m.date | jsonify | safeJS }},
-      "url": {{ printf "%smusic/#%s" $baseURL ($m.title | urlize) | jsonify | safeJS }}
-      {{- if or (eq $m.composition_origin "cover") (eq $m.composition_origin "standard") }},
-      "recordingOf": {
-        "@type": "MusicComposition",
-        "name": {{ $m.title | jsonify | safeJS }}
-        {{- with $m.original_artist }},
-        "composer": { "@type": "MusicGroup", "name": {{ . | jsonify | safeJS }} }{{ end }}
-      }{{ end }}
-      {{- with $m.credits }},
-      "creditedTo": [
-        {{- $first := true }}
-        {{- range . }}
-          {{- $person := .name }}
-          {{- range .roles }}{{ if not $first }},{{ end }}{{ $first = false }}
-        { "@type": "Role", "roleName": {{ . | jsonify | safeJS }}, "creditedTo": { "@type": "Person", "name": {{ $person | jsonify | safeJS }} } }
-          {{- end }}
-        {{- end }}
-      ]{{ end }}
-      {{- with $m.links }}
-        {{- $first := true }}
-        {{- $hasBandcamp := .bandcamp_url }}{{- $hasStreaming := .streaming }}
-        {{- $hasSpotify := .spotify }}{{- $hasApple := .apple_music }}{{- $hasYoutube := .youtube }}
-        {{- if or $hasBandcamp $hasStreaming $hasSpotify $hasApple $hasYoutube }},
-      "potentialAction": { "@type": "ListenAction", "target": [
-        {{- with .bandcamp_url }}{{ if not $first }},{{ end }}{{ $first = false }}
-        { "@type": "EntryPoint", "name": "Bandcamp", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
-        {{- with .spotify }}{{ if not $first }},{{ end }}{{ $first = false }}
-        { "@type": "EntryPoint", "name": "Spotify", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
-        {{- with .apple_music }}{{ if not $first }},{{ end }}{{ $first = false }}
-        { "@type": "EntryPoint", "name": "Apple Music", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
-        {{- with .youtube }}{{ if not $first }},{{ end }}{{ $first = false }}
-        { "@type": "EntryPoint", "name": "YouTube", "urlTemplate": {{ printf "https://youtube.com/watch?v=%s" . | jsonify | safeJS }} }{{ end }}
-        {{- with .streaming }}{{ if not $first }},{{ end }}{{ $first = false }}
-        { "@type": "EntryPoint", "name": "Streaming", "urlTemplate": {{ . | jsonify | safeJS }} }{{ end }}
-      ] }{{ end }}
-      {{- end }}
-    }
-    {{- end }}
-  ]{{ end }}
+  {{- with $tracks }},
+  "track": {{ . | jsonify | safeJS }}{{ end }}
+  {{- with $albums }},
+  "album": {{ . | jsonify | safeJS }}{{ end }}
 }
 </script>
 {{- $videos := slice -}}
 {{- range $music -}}
-  {{- if and .links .links.youtube -}}
+  {{- if .Params.links.youtube -}}
     {{- $videos = $videos | append . -}}
   {{- end -}}
 {{- end -}}
@@ -86,12 +48,13 @@
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": {{ $v.title | jsonify | safeJS }},
-    "description": {{ ($v.description | default $v.title) | jsonify | safeJS }},
-    "thumbnailUrl": {{ printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" $v.links.youtube | jsonify | safeJS }},
-    "embedUrl": {{ printf "https://www.youtube.com/embed/%s" $v.links.youtube | jsonify | safeJS }},
-    "uploadDate": {{ dateFormat "2006-01-02" $v.date | jsonify | safeJS }},
-    "url": {{ printf "https://www.youtube.com/watch?v=%s" $v.links.youtube | jsonify | safeJS }}
+    "name": {{ $v.Title | jsonify | safeJS }},
+    "description": {{ ($v.Description | default $v.Title) | jsonify | safeJS }},
+    "thumbnailUrl": {{ printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" $v.Params.links.youtube | jsonify | safeJS }},
+    "embedUrl": {{ printf "https://www.youtube.com/embed/%s" $v.Params.links.youtube | jsonify | safeJS }},
+    "uploadDate": {{ dateFormat "2006-01-02" $v.Params.release_date | jsonify | safeJS }},
+    "url": {{ printf "https://www.youtube.com/watch?v=%s" $v.Params.links.youtube | jsonify | safeJS }},
+    "about": {"@id": {{ printf "%s#release" $v.Permalink | jsonify | safeJS }}}
   }
   {{- end }}
 ]

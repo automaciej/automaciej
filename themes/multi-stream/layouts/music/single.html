@@ -3,7 +3,6 @@
 {{- if .Params.release_date -}}
 {{- /* An album only when front matter says `single: false`; releases without the key are single recordings. */ -}}
 {{- $isAlbum := and (isset .Params "single") (not .Params.single) -}}
-{{- $type := cond $isAlbum "MusicAlbum" "MusicRecording" -}}
 {{- $imageURL := "" -}}
 {{- $imageRes := false -}}
 {{- with .Params.image -}}
@@ -26,16 +25,6 @@
   {{- with .Site.Params.shareImage -}}
     {{- $imageURL = printf "%s%s" $.Site.BaseURL . -}}
   {{- end -}}
-{{- end -}}
-{{- $streamingURL := "" -}}
-{{- with .Params.links -}}
-  {{- if .streaming -}}{{- $streamingURL = .streaming -}}
-  {{- else if .bandcamp_url -}}{{- $streamingURL = .bandcamp_url -}}
-  {{- end -}}
-{{- end -}}
-{{- if not $streamingURL -}}
-  {{- $svc := partial "music-service-urls.html" (dict "links" .Params.links) -}}
-  {{- with $svc.spotify }}{{ $streamingURL = .url }}{{ else with $svc.apple_music }}{{ $streamingURL = .url }}{{ end -}}
 {{- end -}}
 {{- $description := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) -}}
 {{- $artistNames := "" -}}
@@ -67,59 +56,7 @@
 <meta name="twitter:image" content="{{ . }}">
 {{- end }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{{ $type }}",
-  "name": "{{ .Title | safeJS }}",
-  "byArtist": [
-    {{- range $i, $a := .Params.artist }}{{ if $i }},{{ end }}
-    {"@type": "Person", "name": "{{ $a | safeJS }}"}
-    {{- end }}
-  ],
-  "datePublished": "{{ .Params.release_date | dateFormat "2006-01-02" }}"
-  {{- with $imageURL }},
-  "image": "{{ . | safeJS }}"
-  {{- end -}}
-  {{- with $streamingURL }},
-  "url": "{{ . | safeJS }}"
-  {{- end -}}
-  {{- with .Params.upc }},
-  "identifier": {"@type": "PropertyValue", "propertyID": "UPC", "value": {{ . | jsonify | safeJS }}}
-  {{- end -}}
-  {{- if not $isAlbum }}{{ with .Params.isrc }},
-  "isrcCode": {{ . | jsonify | safeJS }}
-  {{- end }}{{ end -}}
-  {{- if and $isAlbum .Params.tracks }},
-  "track": [
-    {{- range $i, $t := .Params.tracks }}{{ if $i }},{{ end }}
-    {"@type": "MusicRecording", "name": {{ $t.title | jsonify | safeJS }}{{ with $t.isrc }}, "isrcCode": {{ . | jsonify | safeJS }}{{ end }}}
-    {{- end }}
-  ]
-  {{- end -}}
-  {{- $services := partial "release-service-links.html" . -}}
-  {{- if $services }},
-  "sameAs": [
-    {{- range $i, $x := $services }}{{ if $i }},{{ end }}{{ $x.url | jsonify | safeJS }}{{ end }}
-  ],
-  "potentialAction": {"@type": "ListenAction", "target": [
-    {{- range $i, $x := $services }}{{ if $i }},{{ end }}
-    {"@type": "EntryPoint", "name": {{ $x.name | jsonify | safeJS }}, "urlTemplate": {{ $x.url | jsonify | safeJS }}}
-    {{- end }}
-  ]}
-  {{- end -}}
-  {{- with .Params.credits }},
-  "recordingOf": {
-    "@type": "MusicComposition",
-    "name": "{{ $.Title | safeJS }}",
-    "lyricist": [
-      {{- range $i, $c := . -}}
-        {{- if $i }},{{ end -}}
-        {"@type": "Person", "name": "{{ $c.name | safeJS }}"}
-      {{- end -}}
-    ]
-  }
-  {{- end }}
-}
+{{ merge (dict "@context" "https://schema.org") (partial "jsonld/music-release.html" (dict "page" . "full" true)) | jsonify (dict "indent" "  ") | safeJS }}
 </script>
 {{- else -}}
 {{ partial "og-tags-default.html" . }}

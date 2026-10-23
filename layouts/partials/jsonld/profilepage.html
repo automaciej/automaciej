@@ -18,6 +18,7 @@
   "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify | safeJS }},
   "mainEntity": {
     "@type": "Person",
+    "@id": {{ printf "%s#maciej" .Site.BaseURL | jsonify | safeJS }},
     "name": {{ .Site.Params.authorName | jsonify | safeJS }},
     "description": {{ .Site.Params.description | jsonify | safeJS }},
     "email": {{ .Site.Params.authorEmail | jsonify | safeJS }},

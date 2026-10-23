@@ -509,9 +509,10 @@ def jsonld_blocks(page):
     out = []
     for raw in page.jsonld:
         try:
-            out.append(json.loads(raw))
+            data = json.loads(raw)
         except ValueError:
-            pass  # reported by test_all_jsonld_is_valid_json
+            continue  # reported by test_all_jsonld_is_valid_json
+        out.extend(data if isinstance(data, list) else [data])  # a script may hold an array
     return out
 
 
@@ -811,6 +812,122 @@ class TestLinks(unittest.TestCase):
             if not target or not SITE.exists(target):
                 bad.append(f"{url} -> {content}")
         self.assertEqual(bad, [])
+
+
+class TestMusicReleaseJsonLd(unittest.TestCase):
+    """One jsonld/music-release.html partial describes a release everywhere it appears."""
+
+    PERSON_ID = BASE_URL + "/#maciej"
+    WEBSITE_ID = BASE_URL + "/#website"
+    # Pages that show releases and the ItemList each must carry.
+    LIST_PAGES = ["/", "/music/", "/music/spotify/", "/music/apple/", "/music/youtube/",
+                  "/music/qobuz/", "/music/credits/", "/genres/", "/genres/jazz/",
+                  "/music/projects/gaia_marenghi/", "/bio/"]
+
+    def release_item_list(self, url):
+        lists = [b for b in jsonld_blocks(SITE.pages[url]) if b.get("@type") == "ItemList"
+                 and any(e.get("item", {}).get("@id", "").endswith("#release")
+                         for e in b.get("itemListElement", []))]
+        return lists
+
+    def test_person_and_website_have_ids_other_nodes_can_reference(self):
+        blocks = {b["@type"]: b for b in jsonld_blocks(SITE.pages["/"]) if b.get("@type") in ("Person", "WebSite")}
+        self.assertEqual(blocks["Person"].get("@id"), self.PERSON_ID)
+        self.assertEqual(blocks["WebSite"].get("@id"), self.WEBSITE_ID)
+
+    def test_release_page_describes_the_release_once(self):
+        recs = [b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording"]
+        self.assertEqual(len(recs), 1)
+        rec = recs[0]
+        self.assertEqual(rec["@id"], BASE_URL + "/music/loser/#release")
+        self.assertEqual(rec["url"], BASE_URL + "/music/loser/")
+        self.assertEqual(rec["genre"], ["Pop"])
+        self.assertEqual([a["name"] for a in rec["byArtist"]], ["Gaia Marenghi", "Maciej Bliziński"])
+        self.assertTrue(rec.get("description"))
+        self.assertNotRegex(rec["description"], r"&\w+;", "HTML entities leaked into the description")
+        self.assertEqual([x.get("@id") for x in rec["producer"]], [self.PERSON_ID])
+        self.assertEqual(rec["isPartOf"], {"@id": self.WEBSITE_ID})
+
+    def test_credit_roles_map_to_schema_properties(self):
+        rec = next(b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording")
+        comp = rec["recordingOf"]
+        self.assertEqual([c["name"] for c in comp["lyricist"]], ["Gaia Marenghi"])
+        self.assertEqual([c["name"] for c in comp["composer"]], ["Gaia Marenghi", "Maciej Bliziński"])
+
+    def test_album_is_a_music_album_with_its_upc(self):
+        alb = next(b for b in jsonld_blocks(SITE.pages["/music/to-promenade/"]) if b.get("@type") == "MusicAlbum")
+        self.assertEqual(alb["@id"], BASE_URL + "/music/to-promenade/#release")
+        self.assertEqual(alb["identifier"]["value"], "199518640188")
+
+    def test_every_release_page_has_exactly_one_release_node(self):
+        bad = []
+        for url, p in SITE.pages.items():
+            if RELEASE_URL.match(url):
+                n = [b for b in jsonld_blocks(p) if b.get("@type") in ("MusicRecording", "MusicAlbum")]
+                if len(n) != 1:
+                    bad.append(f"{url}: {len(n)}")
+        self.assertEqual(bad, [])
+
+    def test_pages_that_show_releases_carry_an_itemlist_of_them(self):
+        for url in self.LIST_PAGES:
+            with self.subTest(page=url):
+                lists = self.release_item_list(url)
+                self.assertEqual(len(lists), 1, f"{url} wants exactly one release ItemList")
+                items = lists[0]["itemListElement"]
+                self.assertTrue(items)
+                for e in items:
+                    it = e["item"]
+                    self.assertIn(it["@type"], ("MusicRecording", "MusicAlbum"))
+                    self.assertTrue(RELEASE_URL.match(it["url"].replace(BASE_URL, "")), it["url"])
+                    self.assertTrue(it["name"] and it["byArtist"] and it["datePublished"], it)
+
+    def test_music_page_itemlist_has_every_release(self):
+        want = {BASE_URL + u for u in SITE.pages if RELEASE_URL.match(u)}
+        got = {e["item"]["url"] for e in self.release_item_list("/music/")[0]["itemListElement"]}
+        self.assertEqual(sorted(want - got), [])
+        self.assertEqual(sorted(got - want), [])
+
+    def test_list_items_use_the_same_id_as_the_release_page(self):
+        for e in self.release_item_list("/music/")[0]["itemListElement"]:
+            self.assertEqual(e["item"]["@id"], e["item"]["url"] + "#release")
+
+    def test_service_pages_only_list_releases_on_that_service(self):
+        everything = {e["item"]["url"] for e in self.release_item_list("/music/")[0]["itemListElement"]}
+        qobuz = {e["item"]["url"] for e in self.release_item_list("/music/qobuz/")[0]["itemListElement"]}
+        self.assertLess(qobuz, everything)
+        self.assertIn(BASE_URL + "/music/loser/", qobuz)
+
+    def test_project_group_references_its_releases_and_members(self):
+        group = next(b for b in jsonld_blocks(SITE.pages["/music/projects/gaia_marenghi/"]) if b.get("@type") == "MusicGroup")
+        refs = [t["@id"] for t in group.get("track", []) + group.get("album", [])]
+        self.assertIn(BASE_URL + "/music/loser/#release", refs)
+        self.assertTrue(any(m.get("@id") == BASE_URL + "/music/credits/#gaia-marenghi" for m in group.get("member", [])), group.get("member"))
+
+    def test_owner_links_to_the_releases_he_produced(self):
+        person = next(b for b in jsonld_blocks(SITE.pages["/"]) if b.get("@type") == "Person")
+        produced = [r["@id"] for r in person["@reverse"]["producer"]]
+        self.assertIn(BASE_URL + "/music/loser/#release", produced)
+        self.assertLessEqual(set(produced), {r["@id"] for r in person["@reverse"]["contributor"]})
+
+    def test_credits_page_declares_every_credited_musician_once(self):
+        lists = [b for b in jsonld_blocks(SITE.pages["/music/credits/"])
+                 if b.get("@type") == "ItemList" and b.get("name") == "People credited on releases"]
+        self.assertEqual(len(lists), 1)
+        people = {e["item"]["name"]: e["item"] for e in lists[0]["itemListElement"]}
+        self.assertEqual(len(people), len(lists[0]["itemListElement"]), "a person appears twice")
+        riccardo = people["Riccardo Marenghi"]
+        self.assertEqual(riccardo["@id"], BASE_URL + "/music/credits/#riccardo-marenghi")
+        self.assertIn("drums", [o["name"] for o in riccardo["hasOccupation"]])
+        self.assertIn(BASE_URL + "/music/loser/#release", [r["@id"] for r in riccardo["@reverse"]["contributor"]])
+        self.assertEqual(people["Maciej Bliziński"]["@id"], self.PERSON_ID)
+
+    def test_release_contributors_point_at_credits_page_people(self):
+        rec = next(b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording")
+        drummer = next(c for c in rec["contributor"] if c["name"] == "Riccardo Marenghi")
+        self.assertEqual(drummer["@id"], BASE_URL + "/music/credits/#riccardo-marenghi")
+        self.assertEqual(drummer["roleName"], ["drums"])
+        credits_html = (SITE.root / "music/credits/index.html").read_text(encoding="utf-8")
+        self.assertIn('id="riccardo-marenghi"', credits_html)
 
 
 class TestBioReleasesList(unittest.TestCase):

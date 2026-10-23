@@ -2,6 +2,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": {{ printf "%s#website" .Site.BaseURL | jsonify | safeJS }},
   "name": {{ .Site.Title | jsonify | safeJS }},
   "url": {{ .Site.BaseURL | jsonify | safeJS }}
 }
