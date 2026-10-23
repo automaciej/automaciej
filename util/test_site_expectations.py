@@ -735,6 +735,54 @@ class TestCssStructure(unittest.TestCase):
         self.assertEqual(bad, [], "a breakpoint override is declared before its base rule and would lose to it")
 
 
+class TestPresaveChip(unittest.TestCase):
+    """A release with a pre-save link and not yet on a major platform gets a Presave chip on its card."""
+
+    # Links that replace the pre-save chip on the card (music-preview-card.html); smaller
+    # services such as Qobuz or Deezer show their logo next to it.
+    LOGO_KEYS = ("spotify", "apple_music", "youtube")
+
+    def presave_only_slugs(self):
+        out = []
+        for slug in RELEASE_SLUGS:
+            text = (REPO / "content/music" / slug / "index.md").read_text(encoding="utf-8")
+            front = text.split("---")[1]
+            links = front.split("\nlinks:", 1)[-1] if "\nlinks:" in front else ""
+            keys = re.findall(r"^  (\w+):", links, re.M)
+            if "streaming" in keys and not any(k.startswith(self.LOGO_KEYS) for k in keys):
+                out.append(slug)
+        return out
+
+    def test_cards_of_presave_only_releases_show_the_chip(self):
+        slugs = self.presave_only_slugs()
+        self.assertTrue(slugs, "no release has a pre-save link without a major platform; retire this test or pick another case")
+        for url in ("/", "/music/"):
+            html = (SITE.root / url.lstrip("/") / "index.html").read_text(encoding="utf-8")
+            for slug in slugs:
+                with self.subTest(page=url, release=slug):
+                    card = re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/%s/"(?:(?!</article>).)*</article>' % re.escape(slug), html, re.S)
+                    if card is None:
+                        continue  # the home page shows only the newest releases
+                    self.assertIn("presave-chip", card.group(0))
+
+
+class TestQobuzChip(unittest.TestCase):
+    """Cards show a Qobuz logo chip, like the other services, for releases found on Qobuz."""
+
+    def test_cards_of_qobuz_releases_link_to_qobuz_with_a_logo(self):
+        slugs = [s for s in RELEASE_SLUGS
+                 if re.search(r"^  qobuz: ", (REPO / "content/music" / s / "index.md").read_text(encoding="utf-8"), re.M)]
+        self.assertTrue(slugs, "no release has a qobuz link")
+        html = (SITE.root / "music/index.html").read_text(encoding="utf-8")
+        for slug in slugs:
+            with self.subTest(release=slug):
+                card = re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/%s/"(?:(?!</article>).)*</article>' % re.escape(slug), html, re.S)
+                self.assertTrue(card, "no card on /music/")
+                chip = re.search(r'<a href="https://www\.qobuz\.com/[^"]+"[^>]*title="Listen to [^"]+ on Qobuz">\s*(?:<picture>.*?)?<img src="(/images/services/qobuz[^"]*)"', card.group(0), re.S)
+                self.assertTrue(chip, "no Qobuz logo chip in the card")
+                self.assertTrue(SITE.exists(chip.group(1)), chip.group(1))
+
+
 class TestMusicUrls(unittest.TestCase):
     """Releases live at /music/<slug>/ (2026-10-16); the old /music/releases/ URLs redirect."""
 

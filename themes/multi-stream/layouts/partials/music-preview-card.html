@@ -6,6 +6,7 @@
 {{- with $svc.spotify }}{{ $services = $services | append (dict "key" "spotify" "name" "Spotify" "url" .url) }}{{ end -}}
 {{- with $svc.youtube_music }}{{ $services = $services | append (dict "key" "youtube_music" "name" "YouTube" "url" .url) }}{{ end -}}
 {{- with $svc.apple_music }}{{ $services = $services | append (dict "key" "apple_music" "name" "Apple Music" "url" .url) }}{{ end -}}
+{{- with $svc.qobuz }}{{ $services = $services | append (dict "key" "qobuz" "name" "Qobuz" "url" .url) }}{{ end -}}
 {{- with $p.Params.links.deezer }}{{ $services = $services | append (dict "key" "deezer" "name" "Deezer" "url" .) }}{{ end -}}
 {{- with $p.Params.links.bandcamp_url }}{{ $services = $services | append (dict "key" "bandcamp" "name" "Bandcamp" "url" .) }}{{ end -}}
 {{- with $p.Params.links.soundcloud_url }}{{ $services = $services | append (dict "key" "soundcloud" "name" "SoundCloud" "url" .) }}{{ end -}}
@@ -42,9 +43,11 @@
         </div>
         {{- $shown := slice }}
         {{- range $services }}{{ if partial "service-icon.html" (dict "key" .key) }}{{ $shown = $shown | append . }}{{ end }}{{ end }}
-        {{- /* A release whose only link is the pre-save page gets a "Presave" chip instead of logos. */}}
+        {{- /* A pre-save page stands in for the big platforms: a release not yet on Spotify, Apple Music or YouTube Music gets a "Presave" chip (next to the logos of any smaller service it is already on, such as Qobuz). */}}
+        {{- $major := false }}
+        {{- range $shown }}{{ if in (slice "spotify" "apple_music" "youtube_music") .key }}{{ $major = true }}{{ end }}{{ end }}
         {{- $presave := "" }}
-        {{- with $p.Params.links }}{{ if and .streaming (eq (len .) 1) }}{{ $presave = .streaming }}{{ end }}{{ end }}
+        {{- with $p.Params.links }}{{ if and .streaming (not $major) }}{{ $presave = .streaming }}{{ end }}{{ end }}
         {{- if or $shown $presave }}
         <div class="music-preview-services">
             {{- range $shown }}

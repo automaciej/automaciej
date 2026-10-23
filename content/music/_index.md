@@ -30,6 +30,9 @@ service_icons:
   instagram:
     light: /images/services/instagram.svg
     dark: /images/services/instagram.svg
+  qobuz:
+    light: /images/services/qobuz.svg
+    dark: /images/services/qobuz.svg
   soundcloud:
     light: /images/services/soundcloud-light.webp
     dark: /images/services/soundcloud-dark.webp
