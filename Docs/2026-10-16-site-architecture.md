@@ -126,6 +126,28 @@ No third-party player sets cookies on the site.
 - Link buttons (`.listen-links a`, `.streaming-link a`, `.instagram-link a`) are
   accent-blue pills in `main.css`.
 
+## Service links: one list, one renderer
+
+Every place that shows a release's services builds them from the same data and renders them
+with the same HTML; each place sizes the logos with its own CSS.
+
+- `partials/release-services.html` turns a `links` map into the canonical ordered list of
+  `{key, name, url}` (Spotify, YouTube Music, Apple Music, iTunes, Amazon Music, Tidal, Qobuz,
+  Deezer, Bandcamp, SoundCloud, Instagram). Add a service here and it appears everywhere.
+  `release-service-links.html` (JSON-LD, without Instagram) and `listen-links.html` (the `listen`
+  shortcode and the feeds) are filters over it.
+- `partials/service-link.html` renders one link: the logo from `service_icons` (name as the
+  hover title and the image alt), optionally with a visible label (`"Listen on %s"`, `"%s"`).
+  A service without a logo shows its name as text. Every service key needs a `service_icons`
+  entry in `content/music/_index.md` (a test checks).
+- `partials/presave-url.html` and `presave-chip.html`: the Presave chip appears for a release with
+  a `streaming` link and no Spotify, Apple Music or YouTube Music link yet.
+- Users: the release page (`.music-quick-links`, icons only), cards (`.music-preview-services`),
+  per-track and "Listen" pills (`.streaming-link`, logo + "Listen on X"), and the homepage artist
+  profiles (`music-presence.html`, `.social a.text-icon`, logo + name).
+- The share button on release pages shows a chain link (copy), the share icon where the device has
+  `navigator.share` (`.can-share`), and a check mark for 1.5 s after copying (`.copied`).
+
 ## Per-service song lists
 
 `/music/spotify/`, `/music/apple/`, `/music/youtube/`, `/music/qobuz/` and `/music/itunes/` are reverse-chronological

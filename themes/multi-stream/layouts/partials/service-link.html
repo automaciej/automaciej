@@ -1,0 +1,24 @@
+{{- /*
+    One link to a service: its logo (from /music/'s service_icons), the name as hover title.
+    The same HTML everywhere; each place sizes it with its own CSS (.service-icon).
+
+    Input:  dict with
+              service  dict with key, name, url (release-services.html items)
+              title    release title: hover title "Listen to <title> on <name>"; without it just the name
+              label    "" for the logo only (the name is then the image's alt), else a printf format
+                       for the visible text, such as "%s" or "Listen on %s"
+              external true (default): opens in a new tab; false: same tab (for rel="me" profiles)
+              rel      extra rel value (default "noopener" for external links)
+              class    class of the <a>
+    A service without a logo shows its name as text, so no link is ever empty.
+*/ -}}
+{{- $s := .service -}}
+{{- $label := .label | default "" -}}
+{{- $external := cond (isset . "external") .external true -}}
+{{- $rel := .rel | default (cond $external "noopener" "") -}}
+{{- $title := cond (ne (.title | default "") "") (printf "Listen to %s on %s" .title $s.name) $s.name -}}
+{{- $icon := partial "service-icon.html" (dict "key" $s.key "alt" (cond (ne $label "") "" $s.name) "class" "service-icon") -}}
+<a{{ with .class }} class="{{ . }}"{{ end }} href="{{ $s.url }}"{{ if $external }} target="_blank"{{ end }}{{ with $rel }} rel="{{ . }}"{{ end }} title="{{ $title }}">
+{{- with $icon }}{{ . }}{{ end -}}
+{{- if ne $label "" }}{{ if $icon }} {{ end }}{{ printf $label $s.name }}{{ else if not $icon }}{{ $s.name }}{{ end -}}
+</a>

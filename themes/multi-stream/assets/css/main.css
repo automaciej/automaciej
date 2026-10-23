@@ -967,8 +967,18 @@ main ol
 }
 
 .social a.text-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     font-size: 0.95rem;
     font-weight: 600;
+}
+
+/* A service's logo beside its name (service-link.html). */
+.social a.text-icon .service-icon {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 4px;
 }
 
 /* Contact section on homepage */
@@ -1883,7 +1893,6 @@ main ol
     max-width: 560px;
 }
 
-.instagram-link a,
 .streaming-link a,
 .listen-links a {
     display: inline-flex;
@@ -1898,10 +1907,16 @@ main ol
     transition: opacity 0.2s;
 }
 
-.instagram-link a:hover,
 .streaming-link a:hover,
 .listen-links a:hover {
     opacity: 0.9;
+}
+
+/* The service's logo inside a "Listen on ..." pill. */
+.streaming-link .service-icon {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 4px;
 }
 
 .listen-links {

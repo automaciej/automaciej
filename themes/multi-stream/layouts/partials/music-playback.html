@@ -8,15 +8,17 @@
     {{- if $p.Params.tracks }}
 
     {{- with $p.Params.links }}
+    {{- if .bandcamp_album }}
     <div class="music-links">
-        {{- if .bandcamp_album }}
-        {{- with .bandcamp_url }}
+        {{- range partial "release-services.html" (dict "links" .) }}
+        {{- if eq .key "bandcamp" }}
         <div class="embed streaming-link">
-            <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
+            {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
         </div>
         {{- end }}
         {{- end }}
     </div>
+    {{- end }}
     {{- end }}
 
     <div class="music-tracks">
@@ -33,45 +35,16 @@
                 </ul>
             </div>
             {{- end }}
-            {{- $svc := partial "music-service-urls.html" (dict "links" .links "release_links" $p.Params.links) }}
-            {{- with .links }}
+            {{- $services := partial "release-services.html" (dict "links" .links "release_links" $p.Params.links) }}
+            {{- if $services }}
             <div class="track-links">
-                {{- if .bandcamp_track }}
-                {{- with .bandcamp_url }}
+                {{- range $services }}
                 <div class="embed streaming-link">
-                    <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
-                </div>
-                {{- end }}
-                {{- end }}
-                {{- with .soundcloud_url }}
-                <div class="embed streaming-link">
-                    <a href="{{ . }}" target="_blank" rel="noopener">Listen on SoundCloud</a>
-                </div>
-                {{- end }}
-                {{- if .instagram }}
-                <div class="embed instagram-link">
-                    <a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener">
-                        <i class="lni lni-instagram"></i> View on Instagram
-                    </a>
-                </div>
-                {{- end }}
-                {{- with $svc.spotify }}
-                <div class="embed streaming-link">
-                    <a href="{{ .url }}" target="_blank" rel="noopener">
-                        <i class="lni lni-spotify"></i> Listen on Spotify
-                    </a>
-                </div>
-                {{- end }}
-                {{- with $svc.apple_music }}
-                <div class="embed streaming-link">
-                    <a href="{{ .url }}" target="_blank" rel="noopener">
-                        <i class="lni lni-apple-music"></i> Listen on Apple Music
-                    </a>
+                    {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
                 </div>
                 {{- end }}
             </div>
             {{- end }}
-        </div>
         {{- end }}
     </div>
 
@@ -79,36 +52,15 @@
 
     {{- with $p.Params.links }}
     <div class="music-links">
-        {{- if .bandcamp_album }}
-        {{- with .bandcamp_url }}
+        {{- /* The other services are the icons at the top of the page; these are the places to hear the piece itself. */ -}}
+        {{- $bandcampId := or .bandcamp_album .bandcamp_track }}
+        {{- range partial "release-services.html" (dict "links" .) }}
+        {{- if or (in (slice "soundcloud" "instagram") .key) (and (eq .key "bandcamp") $bandcampId) }}
         <div class="embed streaming-link">
-            <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
+            {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
         </div>
         {{- end }}
         {{- end }}
-
-        {{- if .bandcamp_track }}
-        {{- with .bandcamp_url }}
-        <div class="embed streaming-link">
-            <a href="{{ . }}" target="_blank" rel="noopener">Listen on Bandcamp</a>
-        </div>
-        {{- end }}
-        {{- end }}
-
-        {{- if .instagram }}
-        <div class="embed instagram-link">
-            <a href="https://www.instagram.com/reel/{{ .instagram }}/" target="_blank" rel="noopener">
-                <i class="lni lni-instagram"></i> View on Instagram
-            </a>
-        </div>
-        {{- end }}
-
-        {{- with .soundcloud_url }}
-        <div class="embed streaming-link">
-            <a href="{{ . }}" target="_blank" rel="noopener">Listen on SoundCloud</a>
-        </div>
-        {{- end }}
-
     </div>
     {{- end }}
 

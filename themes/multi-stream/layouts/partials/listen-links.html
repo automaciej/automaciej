@@ -1,17 +1,13 @@
 {{- /*
-    Listen links for one `links` front matter map: Spotify, Apple Music, YouTube Music,
-    Bandcamp, SoundCloud and Instagram (reel ID), in that order. Each service that has a link is included.
+    Listen links for one `links` front matter map, for the listen shortcode and the feeds:
+    Spotify, YouTube Music, Apple Music, Bandcamp, SoundCloud and Instagram (reel ID) out of the
+    release-services.html list, in its order. Each service that has a link is included.
 
     Input:  dict "links" <links map> [ "release_links" <release-level links map> ]
-    Output: slice of dicts with name and url.
+    Output: slice of dicts with key, name and url.
 */}}
-{{- $links := .links | default dict -}}
 {{- $out := slice -}}
-{{- $svc := partial "music-service-urls.html" (dict "links" $links "release_links" .release_links) -}}
-{{- with $svc.spotify }}{{ $out = $out | append (dict "name" "Spotify" "url" .url) }}{{ end -}}
-{{- with $svc.apple_music }}{{ $out = $out | append (dict "name" "Apple Music" "url" .url) }}{{ end -}}
-{{- with $svc.youtube_music }}{{ $out = $out | append (dict "name" "YouTube Music" "url" .url) }}{{ end -}}
-{{- with $links.bandcamp_url }}{{ $out = $out | append (dict "name" "Bandcamp" "url" .) }}{{ end -}}
-{{- with $links.soundcloud_url }}{{ $out = $out | append (dict "name" "SoundCloud" "url" .) }}{{ end -}}
-{{- with $links.instagram }}{{ $out = $out | append (dict "name" "Instagram" "url" (printf "https://www.instagram.com/reel/%s/" .)) }}{{ end -}}
+{{- range partial "release-services.html" (dict "links" .links "release_links" .release_links) -}}
+  {{- if in (slice "spotify" "youtube_music" "apple_music" "bandcamp" "soundcloud" "instagram") .key }}{{ $out = $out | append . }}{{ end -}}
+{{- end -}}
 {{- return $out -}}

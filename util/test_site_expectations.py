@@ -845,7 +845,7 @@ class TestItunes(unittest.TestCase):
 class TestReleaseServiceIcons(unittest.TestCase):
     """Release pages list the services as icons only; the name is in title (hover) and the image alt."""
 
-    SERVICES = ["Spotify", "YouTube", "Apple Music", "iTunes", "Amazon Music", "Tidal", "Qobuz", "Deezer", "Bandcamp"]
+    SERVICES = ["Spotify", "YouTube Music", "Apple Music", "iTunes", "Amazon Music", "Tidal", "Qobuz", "Deezer", "Bandcamp"]
 
     def quick_links(self, slug):
         raw = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
@@ -902,6 +902,66 @@ class TestReleaseServiceIcons(unittest.TestCase):
                 m = re.search(r'title="Listen to Loser on %s">\s*(?:<picture>.*?)?<img src="(/images/services/%s[^"]*)"' % (name, icon), links, re.S)
                 self.assertTrue(m, f"no {name} logo")
                 self.assertTrue(SITE.exists(m.group(1)))
+
+
+class TestServiceLinksEverywhere(unittest.TestCase):
+    """One list of services per release, one renderer: release page, cards, tracks and the artist links agree."""
+
+    KEYS = ["spotify", "youtube_music", "apple_music", "itunes", "amazon_music", "tidal", "qobuz",
+            "deezer", "bandcamp", "soundcloud", "instagram"]
+
+    def names_in(self, html):
+        return re.findall(r'<a [^>]*title="Listen to [^"]+? on ([^"]+)"', html)
+
+    def test_every_service_has_a_logo_configured(self):
+        front = (REPO / "content/music/_index.md").read_text(encoding="utf-8").split("---")[1]
+        missing = [k for k in self.KEYS if not re.search(r"^  %s:\n    light: " % k, front, re.M)]
+        self.assertEqual(missing, [])
+
+    def test_a_card_lists_the_same_services_in_the_same_order_as_its_release_page(self):
+        music = (SITE.root / "music/index.html").read_text(encoding="utf-8")
+        bad = []
+        for slug in RELEASE_SLUGS:
+            page = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
+            quick = re.search(r'<div class="music-quick-links">(.*?)<button', page, re.S).group(1)
+            card = re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/%s/"(?:(?!</article>).)*</article>' % re.escape(slug), music, re.S)
+            if card is None:
+                bad.append(f"{slug}: no card")
+                continue
+            if self.names_in(quick) != self.names_in(card.group(0)):
+                bad.append(f"{slug}: page {self.names_in(quick)} card {self.names_in(card.group(0))}")
+        self.assertEqual(bad, [])
+
+    def test_loser_card_shows_amazon_and_tidal(self):
+        music = (SITE.root / "music/index.html").read_text(encoding="utf-8")
+        card = re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/loser/"(?:(?!</article>).)*</article>', music, re.S).group(0)
+        self.assertEqual(self.names_in(card), ["Spotify", "YouTube Music", "Apple Music", "iTunes", "Amazon Music", "Tidal", "Qobuz", "Deezer", "Bandcamp"])
+
+    def test_track_links_use_the_service_logos(self):
+        raw = (SITE.root / "music/hidden-beach/index.html").read_text(encoding="utf-8")
+        blocks = re.findall(r'<div class="track-links">(.*?)</div>\s*</div>\s*(?:<div class="track">|</div>)', raw, re.S) or re.findall(r'<div class="track-links">.*?</div>\s*</div>', raw, re.S)
+        self.assertTrue(blocks)
+        for b in blocks:
+            self.assertIn('<img src="/images/services/', b)
+            self.assertNotIn("lni-", b)
+
+    def test_track_level_itunes_links_point_at_the_track(self):
+        raw = (SITE.root / "music/hidden-beach/index.html").read_text(encoding="utf-8")
+        hrefs = re.findall(r'<a [^>]*href="(https://music\.apple\.com/[^"]*app=itunes)"', raw)
+        track_links = [h.replace("&amp;", "&") for h in hrefs if "i=" in h]
+        self.assertEqual(track_links, ["https://music.apple.com/us/album/6777081885?i=6777081886&app=itunes",
+                                       "https://music.apple.com/us/album/6777081885?i=6777082009&app=itunes"])
+
+    def test_homepage_artist_links_have_the_service_logos(self):
+        raw = (SITE.root / "index.html").read_text(encoding="utf-8")
+        block = re.search(r'<div class="social music-presence">(.*?)</ul>', raw, re.S).group(1)
+        anchors = re.findall(r"<a [^>]*>.*?</a>", block, re.S)
+        self.assertGreaterEqual(len(anchors), 5)
+        for a in anchors:
+            with self.subTest(link=a[:80]):
+                self.assertRegex(a, r'<img src="/images/services/')
+                self.assertTrue(re.sub(r"<[^>]+>", "", a).strip(), "the name stays visible beside the logo")
+                self.assertIn('rel="me"', a)
 
 
 class TestMusicUrls(unittest.TestCase):

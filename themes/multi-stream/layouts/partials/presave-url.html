@@ -1,0 +1,13 @@
+{{- /*
+    The pre-save page, when it should be offered as a "Presave" chip: a release with a
+    `streaming` link that is not yet on a major platform (Spotify, Apple Music or YouTube Music).
+    Smaller services (Qobuz, iTunes ...) may already be linked beside it.
+
+    Input:  dict "links" <links map> "services" <the release-services.html list>
+    Output: the URL, or "" when there is none or the release is out.
+*/ -}}
+{{- $major := false -}}
+{{- range .services }}{{ if in (slice "spotify" "apple_music" "youtube_music") .key }}{{ $major = true }}{{ end }}{{ end -}}
+{{- $url := "" -}}
+{{- with .links }}{{ if and .streaming (not $major) }}{{ $url = .streaming }}{{ end }}{{ end -}}
+{{- return $url -}}

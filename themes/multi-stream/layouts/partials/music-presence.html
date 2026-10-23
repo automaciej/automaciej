@@ -1,70 +1,16 @@
+{{- /* The artist's own profile on each service, as logo + name (same renderer as the release links). */ -}}
 {{- with .Site.Params.music }}
+{{- $profiles := slice }}
+{{- with .spotifyArtistId }}{{ $profiles = $profiles | append (dict "key" "spotify" "name" "Spotify" "url" (printf "https://open.spotify.com/artist/%s" .)) }}{{ end }}
+{{- with .appleMusicArtistId }}{{ $profiles = $profiles | append (dict "key" "apple_music" "name" "Apple Music" "url" (printf "https://music.apple.com/artist/%s" .)) }}{{ end }}
+{{- with .soundcloud }}{{ $profiles = $profiles | append (dict "key" "soundcloud" "name" "SoundCloud" "url" (printf "https://soundcloud.com/%s" .)) }}{{ end }}
+{{- with .deezerArtistId }}{{ $profiles = $profiles | append (dict "key" "deezer" "name" "Deezer" "url" (printf "https://www.deezer.com/us/artist/%s" .)) }}{{ end }}
+{{- with .amazonMusicArtistId }}{{ $profiles = $profiles | append (dict "key" "amazon_music" "name" "Amazon Music" "url" (printf "https://music.amazon.com/artists/%s" .)) }}{{ end }}
+{{- with .qobuzArtistUrl }}{{ $profiles = $profiles | append (dict "key" "qobuz" "name" "Qobuz" "url" .) }}{{ end }}
 <div class="social music-presence">
   <ul class="social">
-    {{- with .spotifyArtistId }}
-    <li>
-      <a href="https://open.spotify.com/artist/{{ . | safeURL }}"
-         rel="me"
-         title="Spotify"
-         class="text-icon">
-        Spotify
-      </a>
-    </li>
-    {{- end }}
-
-    {{- with .appleMusicArtistId }}
-    <li>
-      <a href="https://music.apple.com/artist/{{ . | safeURL }}"
-         rel="me"
-         title="Apple Music"
-         class="text-icon">
-        Apple Music
-      </a>
-    </li>
-    {{- end }}
-
-    {{- with .soundcloud }}
-    <li>
-      <a href="https://soundcloud.com/{{ . | safeURL }}"
-         rel="me"
-         title="SoundCloud: {{ . | safeHTMLAttr }}"
-         class="text-icon">
-        SoundCloud
-      </a>
-    </li>
-    {{- end }}
-
-    {{- with .deezerArtistId }}
-    <li>
-      <a href="https://www.deezer.com/us/artist/{{ . | safeURL }}"
-         rel="me"
-         title="Deezer: {{ . | safeHTMLAttr }}"
-         class="text-icon">
-        Deezer
-      </a>
-    </li>
-    {{- end }}
-
-    {{- with .amazonMusicArtistId }}
-    <li>
-      <a href="https://music.amazon.com/artists/{{ . | safeURL }}"
-         rel="me"
-         title="Amazon Music"
-         class="text-icon">
-        Amazon Music
-      </a>
-    </li>
-    {{- end }}
-
-    {{- with .qobuzArtistUrl }}
-    <li>
-      <a href="{{ . | safeURL }}"
-         rel="me"
-         title="Qobuz"
-         class="text-icon">
-        Qobuz
-      </a>
-    </li>
+    {{- range $profiles }}
+    <li>{{ partial "service-link.html" (dict "service" . "label" "%s" "external" false "rel" "me" "class" "text-icon") }}</li>
     {{- end }}
   </ul>
 </div><!-- social music-presence -->

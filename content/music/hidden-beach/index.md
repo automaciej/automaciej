@@ -39,6 +39,7 @@ tracks:
       youtube: YlDtj9GgfdY
       spotify_track: 28M0QR8JUXcWeNv19n0Ano
       apple_music_track: '6777081886'
+      itunes_track: '6777081886'
   - title: Hidden Beach (Extended)
     isrc: QT3F22655065
     credits:
@@ -55,6 +56,7 @@ tracks:
       youtube: frp5Jy5ebDs
       spotify_track: 64TCbx2wfdz4Rz3i2fk7PI
       apple_music_track: '6777082009'
+      itunes_track: '6777082009'
 ---
 
 When crowds overran Dublin beaches on the hottest day in Ireland since 2022,

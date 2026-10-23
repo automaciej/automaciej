@@ -1,0 +1,25 @@
+{{- /*
+    Every service a `links` front matter map links to, in the one canonical order used everywhere
+    (release page, cards, per-track links, JSON-LD, feeds).
+
+    Input:  dict "links" <links map> [ "release_links" <release-level links map> ]
+            release_links supplies the album IDs for a track that only stores its track ID.
+    Output: slice of dicts: key (the service_icons key), name and url. The pre-save/HyperFollow
+            `streaming` link is not a service and is left out (see presave-url.html).
+    Names: what a reader calls the service; also the hover title and the image alt.
+*/ -}}
+{{- $links := .links | default dict -}}
+{{- $svc := partial "music-service-urls.html" (dict "links" $links "release_links" .release_links) -}}
+{{- $out := slice -}}
+{{- with $svc.spotify }}{{ $out = $out | append (dict "key" "spotify" "name" "Spotify" "url" .url) }}{{ end -}}
+{{- with $svc.youtube_music }}{{ $out = $out | append (dict "key" "youtube_music" "name" "YouTube Music" "url" .url) }}{{ end -}}
+{{- with $svc.apple_music }}{{ $out = $out | append (dict "key" "apple_music" "name" "Apple Music" "url" .url) }}{{ end -}}
+{{- with $svc.itunes }}{{ $out = $out | append (dict "key" "itunes" "name" "iTunes" "url" .url) }}{{ end -}}
+{{- with $links.amazon_music }}{{ $out = $out | append (dict "key" "amazon_music" "name" "Amazon Music" "url" .) }}{{ end -}}
+{{- with $links.tidal }}{{ $out = $out | append (dict "key" "tidal" "name" "Tidal" "url" .) }}{{ end -}}
+{{- with $svc.qobuz }}{{ $out = $out | append (dict "key" "qobuz" "name" "Qobuz" "url" .url) }}{{ end -}}
+{{- with $links.deezer }}{{ $out = $out | append (dict "key" "deezer" "name" "Deezer" "url" .) }}{{ end -}}
+{{- with $links.bandcamp_url }}{{ $out = $out | append (dict "key" "bandcamp" "name" "Bandcamp" "url" .) }}{{ end -}}
+{{- with $links.soundcloud_url }}{{ $out = $out | append (dict "key" "soundcloud" "name" "SoundCloud" "url" .) }}{{ end -}}
+{{- with $links.instagram }}{{ $out = $out | append (dict "key" "instagram" "name" "Instagram" "url" (printf "https://www.instagram.com/reel/%s/" .)) }}{{ end -}}
+{{- return $out -}}
