@@ -2556,6 +2556,19 @@ main ol
     vertical-align: -0.05em;
 }
 
+/* Desktop: two columns (newest first, left to right, then down). */
+@media (min-width: 1024px) {
+    .streaming-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem 2rem;
+    }
+
+    .streaming-item {
+        margin-bottom: 0;
+    }
+}
+
 /* ==========================================================================
    11. GENRES
    ========================================================================== */

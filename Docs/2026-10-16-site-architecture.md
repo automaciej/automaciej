@@ -106,6 +106,7 @@ No third-party player sets cookies on the site.
 
 `/music/spotify/`, `/music/apple/`, `/music/youtube/` and `/music/qobuz/` are reverse-chronological
 lists of releases with a direct link on that service.
+On desktop (`min-width: 1024px`) the list is a two-column grid, filled left to right.
 
 - Content pages (`content/music/{spotify,apple,youtube,qobuz}.md`) with
   `layout: streaming` (`themes/multi-stream/layouts/music/streaming.html`).
