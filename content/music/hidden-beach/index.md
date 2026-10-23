@@ -17,6 +17,7 @@ links:
   streaming: https://distrokid.com/hyperfollow/maciejbliziski/hidden-beach-2
   spotify_album: 7EE7Bn9eiaXzKSmkJODc3d
   apple_music_album: '6777081885'
+  itunes_album: '6777081885'
   youtube: YlDtj9GgfdY
   bandcamp_album: '1581590364'
   bandcamp_url: https://maciejblizinski.bandcamp.com/album/hidden-beach

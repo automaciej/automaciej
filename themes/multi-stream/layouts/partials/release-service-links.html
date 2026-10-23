@@ -10,6 +10,7 @@
 {{- $out := slice -}}
 {{- with $svc.spotify }}{{ $out = $out | append (dict "name" "Spotify" "url" .url) }}{{ end -}}
 {{- with $svc.apple_music }}{{ $out = $out | append (dict "name" "Apple Music" "url" .url) }}{{ end -}}
+{{- with $svc.itunes }}{{ $out = $out | append (dict "name" "iTunes" "url" .url) }}{{ end -}}
 {{- with $svc.youtube_music }}{{ $out = $out | append (dict "name" "YouTube Music" "url" .url) }}{{ end -}}
 {{- with $svc.qobuz }}{{ $out = $out | append (dict "name" "Qobuz" "url" .url) }}{{ end -}}
 {{- with $links.deezer }}{{ $out = $out | append (dict "name" "Deezer" "url" .) }}{{ end -}}

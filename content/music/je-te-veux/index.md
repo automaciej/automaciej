@@ -39,6 +39,7 @@ links:
   bandcamp_track: '2840110792'
   bandcamp_url: https://zoehayter.bandcamp.com/track/je-te-veux
   apple_music_album: '1815245128'
+  itunes_album: '1815245128'
   spotify_track: 23630g6eBkq5VqJJYIaL00
   spotify_album: 3UgLSmHokrbDxLoJJqMc6F
   qobuz: https://www.qobuz.com/us-en/album/je-te-veux-zoe-hayter/fqbmvntv6smub

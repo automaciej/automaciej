@@ -1,16 +1,18 @@
 {{- /*
-    Builds listen URLs for Spotify, Apple Music, YouTube Music and Qobuz from the IDs/URLs stored
+    Builds listen URLs for Spotify, Apple Music, iTunes, YouTube Music and Qobuz from the IDs/URLs stored
     in `links` front matter. Most specific ID wins: track > album > artist.
 
     Front matter keys: spotify_track, spotify_album, spotify_artist,
                        apple_music_track, apple_music_album,
+                       itunes_track, itunes_album (iTunes Store; its own keys because presence on
+                       Apple Music does not imply presence on iTunes, though the IDs are shared),
                        youtube_music_track (video ID; defaults to the existing `youtube` ID), youtube_music_album (playlist ID, OLAK5uy_…),
                        qobuz (full album URL)
 
     Input:  dict "links" <links map> [ "release_links" <release-level links map> ]
-            release_links supplies apple_music_album for a track that only
-            stores its apple_music_track.
-    Output: dict with optional keys "spotify", "apple_music", "youtube_music" and "qobuz", each a dict of
+            release_links supplies apple_music_album / itunes_album for a track that only
+            stores its apple_music_track / itunes_track.
+    Output: dict with optional keys "spotify", "apple_music", "itunes", "youtube_music" and "qobuz", each a dict of
             kind ("track"/"album"/"artist"), url.
 */}}
 {{- $links := .links | default dict -}}
@@ -36,6 +38,16 @@
   {{- $out = merge $out (dict "apple_music" (dict
       "kind" $kind
       "url" (printf "https://music.apple.com/%s" $path))) -}}
+{{- end -}}
+
+{{- /* iTunes Store: the Apple Music URL with app=itunes, which opens the store page (and works for pre-orders). */ -}}
+{{- $itAlbum := $links.itunes_album | default $release.itunes_album | default "" -}}
+{{- $itTrack := $links.itunes_track | default "" -}}
+{{- if $itAlbum -}}
+  {{- $url := printf "https://music.apple.com/us/album/%v?app=itunes" $itAlbum -}}
+  {{- $kind := "album" -}}
+  {{- if $itTrack }}{{ $url = printf "https://music.apple.com/us/album/%v?i=%v&app=itunes" $itAlbum $itTrack }}{{ $kind = "track" }}{{ end -}}
+  {{- $out = merge $out (dict "itunes" (dict "kind" $kind "url" $url)) -}}
 {{- end -}}
 
 {{- $ytKind := "" -}}{{- $ytID := "" -}}

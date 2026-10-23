@@ -39,6 +39,7 @@ links:
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/loser
   spotify_album: 6tS0olBZitg9hXmh1FgR54
   apple_music_album: '6821245905'
+  itunes_album: '6821245905'
   youtube_music_track: g0R5xOcTpVU
   tidal: https://tidal.com/album/568567582/track/568567583
   amazon_music: https://music.amazon.com/albums/B0HMJ9TW2J

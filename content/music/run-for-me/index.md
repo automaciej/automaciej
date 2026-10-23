@@ -44,6 +44,8 @@ links:
   spotify_track: 0RyNeO4QFVlKU6E2AJ3zuI
   spotify_album: 480le08Xen4hWITGJcjCcz
   qobuz: https://www.qobuz.com/us-en/album/run-for-me-emily-jane/qicqvneq6x8pa
+  apple_music_album: '1814234851'
+  itunes_album: '1814234851'
 ---
 
 Single production for emily jane.

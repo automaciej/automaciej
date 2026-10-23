@@ -40,6 +40,7 @@ links:
   # youtube: Xvz7e4BsYD8
   spotify_album: 1D8fb56ytQY3OrVUTgYV3v
   apple_music_album: '1895553274'
+  itunes_album: '1895553274'
   deezer: https://www.deezer.com/us/album/967708591
   amazon_music: https://music.amazon.com/albums/B0GY76846M
   qobuz: https://www.qobuz.com/us-en/album/runnin-gaia-marenghi-amp-maciej-blizinski/nv119zwrawhm4

@@ -6,6 +6,7 @@
 {{- with $svc.spotify }}{{ $services = $services | append (dict "key" "spotify" "name" "Spotify" "url" .url) }}{{ end -}}
 {{- with $svc.youtube_music }}{{ $services = $services | append (dict "key" "youtube_music" "name" "YouTube" "url" .url) }}{{ end -}}
 {{- with $svc.apple_music }}{{ $services = $services | append (dict "key" "apple_music" "name" "Apple Music" "url" .url) }}{{ end -}}
+{{- with $svc.itunes }}{{ $services = $services | append (dict "key" "itunes" "name" "iTunes" "url" .url) }}{{ end -}}
 {{- with $svc.qobuz }}{{ $services = $services | append (dict "key" "qobuz" "name" "Qobuz" "url" .url) }}{{ end -}}
 {{- with $p.Params.links.deezer }}{{ $services = $services | append (dict "key" "deezer" "name" "Deezer" "url" .) }}{{ end -}}
 {{- with $p.Params.links.bandcamp_url }}{{ $services = $services | append (dict "key" "bandcamp" "name" "Bandcamp" "url" .) }}{{ end -}}

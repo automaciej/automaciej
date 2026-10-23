@@ -30,6 +30,9 @@ service_icons:
   instagram:
     light: /images/services/instagram.svg
     dark: /images/services/instagram.svg
+  itunes:
+    light: /images/services/itunes.png
+    dark: /images/services/itunes.png
   qobuz:
     light: /images/services/qobuz.svg
     dark: /images/services/qobuz.svg

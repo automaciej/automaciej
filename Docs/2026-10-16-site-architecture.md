@@ -48,7 +48,13 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
 - `bandcamp_url`, `soundcloud_url`, `streaming`, `deezer`, `tidal`,
   `qobuz`, `amazon_music` and similar are full URLs. `qobuz` is the album page,
   `https://www.qobuz.com/us-en/album/<slug>/<id>`, and feeds `/music/qobuz/` through
-  `music-service-urls.html`; Qobuz has no logo yet, so it gets the generic icon.
+  `music-service-urls.html`. Qobuz uses its favicon SVG as the logo.
+- `itunes_album` / `itunes_track` are Apple IDs (quoted strings) for the iTunes Store, a service of
+  its own: presence on Apple Music does not imply presence on iTunes, so set the key only for
+  releases the store lists (check with `https://itunes.apple.com/lookup?id=<id>&country=us`, which
+  returns a `collectionPrice` for items on sale; pre-orders work the same way). The URL is the Apple
+  Music one with `?app=itunes`, built in `music-service-urls.html`; the logo is Apple's iTunes
+  Store app icon (`static/images/services/itunes.png`).
 - URLs are built from the IDs in `partials/music-service-urls.html`.
 - `upc` (release, quoted string) and `isrc` (a single-track release, or `tracks[].isrc`)
   are identifiers, not links. Find them without distributor access: Deezer's public API
@@ -64,7 +70,8 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
 - **Filling links from a DistroKid HyperFollow page** (`links.streaming`): fetch the page
   with a browser User-Agent and read the `data-hyperfollow-store` anchors. Spotify
   `/album/<id>` -> `spotify_album`; Apple Music `/album/<slug>/<id>` -> `apple_music_album`
-  (quoted string; the "iTunes" button is the same link); Tidal and Amazon -> full URLs
+  (quoted string). The HyperFollow "iTunes" button is the same link; it sets `itunes_album`
+  too, the same ID; Tidal and Amazon -> full URLs
   (`tidal`, `amazon_music`; write Amazon as `https://music.amazon.com/albums/<ASIN>`, not
   the `gp/product` form); YouTube Music `watch?v=<id>` -> `youtube_music_track` (not
   `youtube`, which would add a YouTube link). Only services the page lists are set.
@@ -121,13 +128,13 @@ No third-party player sets cookies on the site.
 
 ## Per-service song lists
 
-`/music/spotify/`, `/music/apple/`, `/music/youtube/` and `/music/qobuz/` are reverse-chronological
+`/music/spotify/`, `/music/apple/`, `/music/youtube/`, `/music/qobuz/` and `/music/itunes/` are reverse-chronological
 lists of releases with a direct link on that service.
 On desktop (`min-width: 1024px`) the list is a two-column grid, filled left to right.
 
-- Content pages (`content/music/{spotify,apple,youtube,qobuz}.md`) with
+- Content pages (`content/music/{spotify,apple,youtube,qobuz,itunes}.md`) with
   `layout: streaming` (`themes/multi-stream/layouts/music/streaming.html`).
-- Front matter `service_key` (`spotify` / `apple_music` / `youtube_music` / `qobuz`) picks
+- Front matter `service_key` (`spotify` / `apple_music` / `youtube_music` / `qobuz` / `itunes`) picks
   the service; `title` is the service name, from which the page title
   ("Maciej Bliziński: Music on Spotify") and breadcrumb are composed.
 - The page `<h1>` is "On <Service>". Each entry is a row: release artwork thumbnail

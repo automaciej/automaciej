@@ -41,7 +41,8 @@ RELEASE_URL = re.compile(r"^/music/(%s)/$" % "|".join(map(re.escape, RELEASE_SLU
 # Sections with their own RSS feed. Jogger is Polish and has a separate feed;
 # the home feed must not contain it (60f8eb0).
 SERVICE_FEEDS = {"/music/spotify/": "open.spotify.com", "/music/apple/": "music.apple.com",
-                "/music/youtube/": "music.youtube.com", "/music/qobuz/": "www.qobuz.com"}
+                "/music/youtube/": "music.youtube.com", "/music/qobuz/": "www.qobuz.com",
+                "/music/itunes/": "music.apple.com"}
 FEED_SECTIONS = ["/", "/blog/", "/jogger/", "/music/"] + list(SERVICE_FEEDS)
 
 
@@ -753,6 +754,12 @@ class TestPresaveChip(unittest.TestCase):
                 out.append(slug)
         return out
 
+    def test_release_pages_of_presave_only_releases_show_the_chip(self):
+        for slug in self.presave_only_slugs():
+            with self.subTest(release=slug):
+                raw = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
+                self.assertIn('class="presave-chip"', raw)
+
     def test_cards_of_presave_only_releases_show_the_chip(self):
         slugs = self.presave_only_slugs()
         self.assertTrue(slugs, "no release has a pre-save link without a major platform; retire this test or pick another case")
@@ -781,6 +788,58 @@ class TestQobuzChip(unittest.TestCase):
                 chip = re.search(r'<a href="https://www\.qobuz\.com/[^"]+"[^>]*title="Listen to [^"]+ on Qobuz">\s*(?:<picture>.*?)?<img src="(/images/services/qobuz[^"]*)"', card.group(0), re.S)
                 self.assertTrue(chip, "no Qobuz logo chip in the card")
                 self.assertTrue(SITE.exists(chip.group(1)), chip.group(1))
+
+
+class TestItunes(unittest.TestCase):
+    """iTunes is its own service: presence on Apple Music does not imply presence on the iTunes Store."""
+
+    def itunes_slugs(self):
+        return [s for s in RELEASE_SLUGS
+                if re.search(r"^  itunes_(album|track): ", (REPO / "content/music" / s / "index.md").read_text(encoding="utf-8"), re.M)]
+
+    def card(self, html, slug):
+        return re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/%s/"(?:(?!</article>).)*</article>' % re.escape(slug), html, re.S)
+
+    def test_some_releases_are_marked_as_on_itunes(self):
+        self.assertGreaterEqual(len(self.itunes_slugs()), 12)
+
+    def test_itunes_service_page_lists_the_releases_marked_as_on_itunes(self):
+        page = SITE.pages["/music/itunes/"]
+        self.assertRegex(page.title, r"on iTunes")
+        raw = (SITE.root / "music/itunes/index.html").read_text(encoding="utf-8")
+        # Rows are songs (a release with per-track IDs has several), so compare the releases they belong to.
+        listed = set(re.findall(r'<small>by [^<]*· <a href="/music/([^/"]+)/">', raw))
+        self.assertEqual(sorted(listed), sorted(self.itunes_slugs()))
+        self.assertIn("?app=itunes", raw)
+
+    def test_release_page_has_an_itunes_button_with_the_logo(self):
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        m = re.search(r'<a href="(https://music\.apple\.com/us/album/6821245905\?app=itunes)"[^>]*title="Listen to Loser on iTunes">\s*(?:<picture>.*?)?<img src="(/images/services/itunes[^"]*)"', raw, re.S)
+        self.assertTrue(m, "no iTunes button with the logo on /music/loser/")
+        self.assertTrue(SITE.exists(m.group(2)))
+
+    def test_release_page_qobuz_button_has_the_logo(self):
+        raw = (SITE.root / "music/loser/index.html").read_text(encoding="utf-8")
+        self.assertRegex(raw, r'title="Listen to Loser on Qobuz">\s*(?:<picture>.*?)?<img src="/images/services/qobuz')
+
+    def test_cards_show_an_itunes_chip(self):
+        html = (SITE.root / "music/index.html").read_text(encoding="utf-8")
+        for slug in self.itunes_slugs():
+            with self.subTest(release=slug):
+                card = self.card(html, slug)
+                self.assertTrue(card)
+                self.assertRegex(card.group(0), r'title="Listen to [^"]+ on iTunes"')
+
+    def test_release_jsonld_lists_itunes_separately_from_apple_music(self):
+        rec = next(b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording")
+        itunes = [t for t in rec["potentialAction"]["target"] if t["name"] == "iTunes"]
+        self.assertEqual([t["urlTemplate"] for t in itunes], ["https://music.apple.com/us/album/6821245905?app=itunes"])
+        self.assertIn("https://music.apple.com/us/album/6821245905?app=itunes", rec["sameAs"])
+
+    def test_run_for_me_has_its_apple_links(self):
+        raw = (SITE.root / "music/run-for-me/index.html").read_text(encoding="utf-8")
+        self.assertIn("music.apple.com/us/album/1814234851", raw)
+        self.assertIn("app=itunes", raw)
 
 
 class TestMusicUrls(unittest.TestCase):

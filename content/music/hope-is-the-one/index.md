@@ -40,6 +40,7 @@ links:
   bandcamp_url: https://zoehayter.bandcamp.com/track/hope-is-the-one
   streaming: https://distrokid.com/hyperfollow/zoehayter/hope-is-the-one
   apple_music_album: '1860299357'
+  itunes_album: '1860299357'
   spotify_track: 4ZdqEHi4HS9DSqKSnjDSWJ
   spotify_album: 0kNJwFya2kDH5NH65T2XVo
   deezer: https://www.deezer.com/album/874567042

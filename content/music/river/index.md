@@ -39,6 +39,7 @@ links:
   youtube: Dd5hyESR2zE
   spotify_album: 18fd7EbberYiMzBw9rVBy2
   apple_music_album: '1895221644'
+  itunes_album: '1895221644'
   apple_music_track: '6763224556'
   deezer: https://www.deezer.com/us/album/967703361
   amazon_music: https://music.amazon.com/albums/B0GY6KN3XM

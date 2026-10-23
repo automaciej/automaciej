@@ -46,6 +46,7 @@ links:
   spotify_track: 23TCf500cThNtfs5XybGKq
   spotify_album: 2V23E5D05Jp8jFhYqN1Tex
   apple_music_album: '1848283681'
+  itunes_album: '1848283681'
   amazon_music: https://music.amazon.it/playlists/PP0F52105B11034FA2B84C48F6E4D89CE3
   tidal: https://tidal.com/album/468267504/track/468267506
   deezer: https://www.deezer.com/album/841514522
