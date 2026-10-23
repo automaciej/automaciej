@@ -23,9 +23,7 @@
         {{- end -}}
         <p class="music-projects-summary">
             {{- if $names -}}
-            {{- $last := " and " -}}
-            {{- if gt (len $names) 2 -}}{{- $last = ", and " -}}{{- end -}}
-            Current projects: {{ delimit $names ", " $last | safeHTML }}.
+            Current projects: {{ partial "join-names.html" $names | safeHTML }}.
             {{- end }}
             <a href="{{ $projectsPage.RelPermalink }}">See all projects.</a>
         </p>

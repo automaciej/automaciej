@@ -70,6 +70,14 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
   `youtube`, which would add a YouTube link). Only services the page lists are set.
   Example: `content/music/loser/index.md`.
 
+### Joining names
+
+Any list of people or projects shown as prose (a release's `artist`, a performance's or
+project's `with`, the current-projects summary) goes through `partials/join-names.html`:
+"A and B", and "A, B, and C" for three or more (no comma before "and" with two). Never
+`delimit … " x "` or a hand-rolled " and "; the test in `util/test_site_expectations.py`
+fails on an "x" join. Lists of non-names (roles, platforms, genres) stay plain `delimit`.
+
 ### Apps
 
 Apps and performances are purely data-driven (`data/*.toml`) and rendered by

@@ -39,7 +39,7 @@
 {{- end -}}
 {{- $description := .Description | default (.Summary | plainify | strings.TrimSpace | safeHTML) -}}
 {{- $artistNames := "" -}}
-{{- with .Params.artist -}}{{- $artistNames = delimit . " x " -}}{{- end -}}
+{{- with .Params.artist -}}{{- $artistNames = partial "join-names.html" . -}}{{- end -}}
 <meta property="og:type" content="{{ cond $isAlbum "music.album" "music.song" }}">
 <meta property="og:title" content="{{ .Title }}{{ with $artistNames }} by {{ . }}{{ end }}">
 {{- with $description }}

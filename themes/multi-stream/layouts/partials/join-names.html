@@ -1,0 +1,12 @@
+{{/*
+    A list of people or projects as prose: "A", "A and B", "A, B, and C" (no comma before
+    "and" with two names).
+
+    Input:  a list of names (an `artist` list, `with`, project links), may be empty
+    Output: string
+*/}}
+{{- $names := . | default slice -}}
+{{- $out := "" -}}
+{{- if eq (len $names) 2 }}{{ $out = delimit $names " and " }}
+{{- else }}{{ $out = delimit $names ", " ", and " }}{{ end -}}
+{{- return $out -}}

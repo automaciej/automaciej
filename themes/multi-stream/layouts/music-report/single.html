@@ -157,7 +157,7 @@
             {{- with .with -}}
             <div class="report-detail-section">
               <span class="report-detail-label">With</span>
-              <span class="report-detail-value">{{ delimit . ", " }}</span>
+              <span class="report-detail-value">{{ partial "join-names.html" . }}</span>
             </div>
             {{- end -}}
             {{- if $releases -}}
@@ -212,7 +212,7 @@
         <div class="report-perf-details">
           {{- with .country }}<span>Country: {{ . }}</span>{{ end -}}
           {{- with .instrument }}<span>Role: {{ . }}</span>{{ end -}}
-          {{- with .with }}<span>With: {{ delimit . ", " " and " }}</span>{{ end -}}
+          {{- with .with }}<span>With: {{ partial "join-names.html" . }}</span>{{ end -}}
           {{- if and $proj .name }}<span>Project: {{ $proj.Title }}</span>{{ end -}}
           {{- with .description }}<span>Notes: {{ . }}</span>{{ end -}}
           {{- with .url }}<span>Link: <a href="{{ . }}">{{ . }}</a></span>{{ end -}}

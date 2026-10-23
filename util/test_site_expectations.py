@@ -605,6 +605,20 @@ class TestStructuredData(unittest.TestCase):
         self.assertEqual(rec["isrcCode"], "QTA7T2691650")
         self.assertEqual(rec["identifier"], {"@type": "PropertyValue", "propertyID": "UPC", "value": "700536369090"})
 
+    def test_collaborating_artists_are_joined_with_and(self):
+        """One join-names partial: "A and B", "A, B, and C", never "A x B"."""
+        def html(url):
+            return (SITE.root / url.strip("/") / "index.html").read_text(encoding="utf-8")
+        cases = {"/music/loser/": "Gaia Marenghi and Maciej Bliziński",
+                 "/music/tentativa/": "Luisa Annibali, Julio Batista, and William Alexandre"}
+        for url, expected in cases.items():
+            with self.subTest(url=url):
+                self.assertIn(f'class="artist">{expected}<', html(url))
+        for url in SITE.pages:
+            if RELEASE_URL.match(url):
+                with self.subTest(url=url):
+                    self.assertNotRegex(html(url), r'class="artist">[^<]* x ')
+
 
 # Releases that existed when /music/releases/<slug>/ became /music/<slug>/ (2026-10-16).
 # Only these keep an old-style alias; newer releases must not get one.

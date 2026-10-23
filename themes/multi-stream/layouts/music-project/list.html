@@ -58,7 +58,7 @@
           {{- $withLinks = $withLinks | append (partial "credits-person-link.html" (dict "page" $ "name" .)) -}}
         {{- end -}}
         <dt>With</dt>
-        <dd>{{ delimit $withLinks ", " " and " | safeHTML }}</dd>
+        <dd>{{ partial "join-names.html" $withLinks | safeHTML }}</dd>
         {{ end }}
         {{ with $proj.url }}
         <dt>Web</dt>

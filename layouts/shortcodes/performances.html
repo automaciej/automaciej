@@ -91,7 +91,7 @@ class PrettyEvents {
     }
     if (ev['with'].length) {
       evP.appendChild(document.createTextNode(" with "));
-      evP.appendChild(document.createTextNode(joinList(ev['with'], ", ", " and ")));
+      evP.appendChild(document.createTextNode(joinList(ev['with'])));
     }
     if (ev['venue']) {
       evP.appendChild(document.createTextNode(" in "));
@@ -192,7 +192,7 @@ class CompactEvents {
 
     // With
     if (ev['with'] && ev['with'].length) {
-      ul.appendChild(labelItem("With: ", document.createTextNode(joinList(ev['with'], ", ", " and "))));
+      ul.appendChild(labelItem("With: ", document.createTextNode(joinList(ev['with']))));
     }
 
     // Description
@@ -259,25 +259,12 @@ class SimpleEvents {
   }
 }
 
-function joinList(lst, first_delim, second_delim) {
-  if (lst.length == 0) {
-    return "";
-  } else if (lst.length == 1) {
-    return lst[0];
+function joinList(lst) {
+  // Same rule as partials/join-names.html: "A and B", "A, B, and C".
+  if (lst.length < 3) {
+    return lst.join(" and ");
   }
-  var result = "";
-  for (i = 0; i < lst.length; i++) {
-    if (i == (lst.length - 1)) {
-      // Last element
-      result = result + second_delim + lst[i];
-    } else {
-      result = result + lst[i];
-      if (i != (lst.length - 2) || lst.length > 2) {
-        result = result + first_delim;
-      }
-    }
-  }
-  return result;
+  return lst.slice(0, -1).join(", ") + ", and " + lst[lst.length - 1];
 }
 
 function A(elem, url) {

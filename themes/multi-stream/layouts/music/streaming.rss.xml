@@ -34,7 +34,7 @@
       <pubDate>{{ $r.PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid isPermaLink="false">{{ printf "%s#%s-%s" $r.Permalink $key ($it.title | urlize) }}</guid>
-      {{- $html := printf "<p>%s by %s (%s)</p><p><a href=\"%s\">Listen on %s</a></p>" $it.title (delimit $r.Params.artist " x ") ($r.Date.Format "Jan 2006") $it.urls.url $service }}
+      {{- $html := printf "<p>%s by %s (%s)</p><p><a href=\"%s\">Listen on %s</a></p>" $it.title (partial "join-names.html" $r.Params.artist) ($r.Date.Format "Jan 2006") $it.urls.url $service }}
       <description>{{ $html | transform.XMLEscape | safeHTML }}</description>
       {{- with $r.Params.image }}{{ with $r.Resources.GetMatch . }}
       <media:content url="{{ .Permalink }}" medium="image" />

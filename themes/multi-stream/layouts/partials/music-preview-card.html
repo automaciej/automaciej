@@ -35,7 +35,7 @@
     </div>
     <div class="music-preview-content card-row-body">
         <h3 class="card-row-title">{{ $p.Title }}</h3>
-        <div class="music-preview-artist card-row-meta">{{ with $p.Params.artist }}{{ delimit . " x " }}{{ end }}</div>
+        <div class="music-preview-artist card-row-meta">{{ with $p.Params.artist }}{{ partial "join-names.html" . }}{{ end }}</div>
         <div class="music-preview-details card-row-meta">
             {{- with $p.Params.genres }}{{ partial "music-genre-links.html" $p }} • {{ end -}}
             <span class="music-preview-date">{{ dateFormat "Jan 2006" $p.Params.release_date }}</span>
