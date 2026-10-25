@@ -1995,10 +1995,6 @@ main ol
     border-radius: 8px;
 }
 
-.youtube-embed {
-    max-width: 560px;
-}
-
 .streaming-link a,
 .listen-links a {
     display: inline-flex;

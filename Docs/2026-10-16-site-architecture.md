@@ -113,9 +113,9 @@ No third-party player sets cookies on the site.
 
 - Spotify, Apple Music, YouTube Music, Bandcamp, SoundCloud and Instagram are
   plain links, never iframes.
-- The only embeds are YouTube players from `youtube-nocookie.com`:
-  `partials/music-release.html`, and the built-in `{{< youtube >}}` shortcode used
-  in Jogger via `privacy.youtube.privacyEnhanced` in `config.toml`.
+- The only embeds are YouTube players from `youtube-nocookie.com`: the built-in
+  `{{< youtube >}}` shortcode used in Jogger via `privacy.youtube.privacyEnhanced` in `config.toml`. Release pages no longer embed
+  a player (2026-10-24); they always show the album artwork, and YouTube is a service link.
 - `util/test_site_expectations.py` fails on any other iframe.
 - The `{{< listen >}}` shortcode (`layouts/shortcodes/listen.html`) renders link
   buttons using the same keys as release `links` front matter

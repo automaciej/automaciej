@@ -35,13 +35,6 @@
             {{- end }}
         </div>
 
-        {{- if $p.Params.links.youtube }}
-        <div class="cover-layout-cover music-release-youtube">
-            <div class="embed youtube-embed">
-                <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/{{ $p.Params.links.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        {{- else }}
         {{- with $p.Params.image }}
         {{- $img := $p.Resources.GetMatch . }}
         {{- if $img }}
@@ -53,7 +46,6 @@
             </div>
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>
-        {{- end }}
         {{- end }}
         {{- end }}
 
