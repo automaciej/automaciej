@@ -9,7 +9,7 @@
     Usage: {{ range partialCached "service-registry.html" . "all" }}
 */ -}}
 {{- $out := slice -}}
-{{- range $key, $s := site.Data.services -}}
+{{- range $key, $s := hugo.Data.services -}}
   {{- $out = $out | append (merge (dict "key" $key) $s) -}}
 {{- end -}}
 {{- return (sort $out "order") -}}

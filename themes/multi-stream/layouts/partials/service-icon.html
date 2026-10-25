@@ -11,7 +11,7 @@
 
     Input: dict "key" <service key> [ "class" ] [ "width" ] [ "height" ] [ "alt" ]
 */ -}}
-{{- $svc := index site.Data.services .key | default dict -}}
+{{- $svc := index hugo.Data.services .key | default dict -}}
 {{- $icon := $svc.icon -}}
 {{- $classes := slice -}}
 {{- with .class }}{{ $classes = $classes | append . }}{{ end -}}
