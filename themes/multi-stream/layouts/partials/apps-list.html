@@ -1,0 +1,6 @@
+{{- /* All apps as flattened dicts (see app-data.html), ordered by position. */ -}}
+{{- $apps := slice -}}
+{{- range (site.GetPage "/apps").Pages.ByWeight -}}
+{{- $apps = $apps | append (partial "app-data.html" .) -}}
+{{- end -}}
+{{- return $apps -}}

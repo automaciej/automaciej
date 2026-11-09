@@ -1,7 +1,0 @@
-name = "Task Sync Kotlin"
-author = "Maciej Bliziński"
-position = 9
-category = "libraries"
-description = "A family of Kotlin libraries giving an app one offline-first interface to Google Tasks, Microsoft To Do, Todoist and GitHub Issues. The libraries behind Task Compass on Android."
-subsection = "task-sync-kotlin"
-platforms = ["Android"]

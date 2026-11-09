@@ -11,7 +11,7 @@
         </header>
 
         <div class="apps-list">
-            {{- range sort hugo.Data.apps "position" }}
+            {{- range partial "apps-list.html" . }}
             {{ partial "app-card.html" . }}
             {{- end }}
         </div>

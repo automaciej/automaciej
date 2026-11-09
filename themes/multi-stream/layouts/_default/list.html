@@ -1,8 +1,4 @@
 {{- define "main" }}
-{{- $appData := "" }}
-{{- if .Params.app }}
-    {{- $appData = index hugo.Data.apps .Params.app }}
-{{- end }}
 {{- $imageURL := "" }}
 {{- if .Params.image }}
     {{- $imagePath := .Params.image }}
@@ -15,9 +11,6 @@
 {{- end }}
 <div class="list-page">
     <div class="container">
-        {{- if and $appData $appData.testflight }}
-            {{ partial "testflight-banner.html" $appData }}
-        {{- end }}
         <header class="section-header">
             <h1>{{ .Title }}</h1>
             {{- if $imageURL }}

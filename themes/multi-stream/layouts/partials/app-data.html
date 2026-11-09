@@ -1,0 +1,12 @@
+{{- /* Flatten an app page (content/apps/<slug>/) into the dict shape the app
+     templates use: name, description, position, plus every front matter param.
+     page_url is set only for apps with free text of their own: their cards link
+     to the app page; the others link straight to app_site. */ -}}
+{{- $d := dict "name" .Title "description" .Description "position" .Weight -}}
+{{- range $k, $v := .Params -}}
+{{- $d = merge $d (dict $k $v) -}}
+{{- end -}}
+{{- if strings.TrimSpace .RawContent -}}
+{{- $d = merge $d (dict "page_url" .RelPermalink) -}}
+{{- end -}}
+{{- return $d -}}

@@ -5,4 +5,7 @@ date: "2024-10-14T12:00:00+01:00"
 layout: apps
 outputs:
 - html
+cascade:
+  outputs:
+  - html
 ---

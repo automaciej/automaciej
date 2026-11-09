@@ -3,10 +3,17 @@ title: "Ego Destroyer Metronome"
 description: "Do you think you've got good time? Use this and find out."
 date: "2025-09-21T15:30:00+01:00"
 excludeFromRSS: true
-app: "ego_destroyer"
+layout: app
+weight: 2
 aliases:
   - /time-feel/
-
+  - /ego-destroyer/
+params:
+  author: "Maciej Bliziński"
+  featured: true
+  category: "music"
+  platforms: ["iOS"]
+  testflight: "https://testflight.apple.com/join/sPfDFZuV"
 ---
 
 _"Am I actually playing in time?"_

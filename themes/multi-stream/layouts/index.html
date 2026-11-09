@@ -35,12 +35,12 @@
                     <h2><a href="{{ $appsPage.RelPermalink }}">Apps »</a></h2>
                     <div class="stream-content">
                         {{- /* Wide screens: up to 10 entries, apps first (by position), then update posts filling what is left. Narrow screens: the first 3 of them (the rest are .app-preview-desktop-only). */ -}}
-                        {{- $homeApps := first 10 (sort hugo.Data.apps "position") -}}
+                        {{- $homeApps := first 10 (partial "apps-list.html" .) -}}
                         {{- range $index, $app := $homeApps }}
                         {{- $appHref := "" }}
                         {{- $appExternal := false }}
-                        {{- if $app.subsection }}
-                        {{- $appHref = printf "/%s/" $app.subsection }}
+                        {{- if $app.page_url }}
+                        {{- $appHref = $app.page_url }}
                         {{- else if $app.app_site }}
                         {{- $appHref = $app.app_site }}
                         {{- $appExternal = true }}
@@ -71,8 +71,7 @@
                         </article>
                         {{- end }}
 
-                        {{- $appPosts := where .Site.RegularPages "Section" "in" (slice "ego-destroyer") }}
-                        {{- $appPosts = where $appPosts "Type" "in" (slice "ego-destroyer") }}
+                        {{- $appPosts := where .Site.RegularPages "Section" "apps" }}
                         {{- $appPosts = where $appPosts "Params.excludeFromRSS" "!=" true }}
                         {{- $appCount := len $homeApps -}}
                         {{- range $index, $post := first (sub 10 $appCount) (sort $appPosts "Date" "desc") }}

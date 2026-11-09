@@ -1,0 +1,74 @@
+{{- define "main" }}
+{{- $app := partial "app-data.html" . }}
+{{- $imageURL := "" }}
+{{- if .Params.image }}
+    {{- $imagePath := .Params.image }}
+    {{- $imageResource := .Resources.GetMatch $imagePath }}
+    {{- if $imageResource }}
+        {{- $imageURL = $imageResource.RelPermalink }}
+    {{- else }}
+        {{- $imageURL = $imagePath | relURL }}
+    {{- end }}
+{{- end }}
+<div class="list-page">
+    <div class="container">
+        {{- if $app.testflight }}
+            {{ partial "testflight-banner.html" $app }}
+        {{- end }}
+        <header class="section-header">
+            <h1>{{ .Title }}</h1>
+            {{- if $imageURL }}
+            <div class="post-illustration">
+                <img src="{{ $imageURL }}" alt="{{ .Title }}">
+            </div>
+            {{- end }}
+            {{- if $app.page_url }}
+            <div class="section-intro">
+                {{ .Content }}
+            </div>
+            {{- else }}
+            <div class="section-intro">
+                <p>{{ .Description }}</p>
+            </div>
+            {{- end }}
+        </header>
+
+        {{- $links := slice }}
+        {{- with $app.app_site }}{{ $links = $links | append (dict "label" "Website" "url" .) }}{{ end }}
+        {{- with $app.app_store }}{{ $links = $links | append (dict "label" "App Store" "url" .) }}{{ end }}
+        {{- with $app.play_store }}{{ $links = $links | append (dict "label" "Google Play" "url" .) }}{{ end }}
+        {{- if $links }}
+        <p class="app-links">
+            {{- range $i, $l := $links }}{{ if $i }} • {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.label }}</a>{{ end }}
+        </p>
+        {{- end }}
+
+        {{- with .Pages }}
+        <div class="list-container">
+            <div class="posts-list">
+            {{- range . }}
+            <article class="post-card">
+                <a href="{{ .RelPermalink }}" class="post-card-link">
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <time datetime="{{ .Date.Format "2006-01-02" }}">
+                                {{ .Date.Format "January 2, 2006" }}
+                            </time>
+                        </div>
+                        <h3>{{ .Title }}</h3>
+                        {{- with .Description }}
+                        <div class="post-description">
+                            {{ . }}
+                        </div>
+                        {{- end }}
+                    </div>
+                </a>
+            </article>
+            {{- end }}
+            </div><!-- posts-list -->
+        </div><!-- list-container -->
+        {{- end }}
+
+    </div><!-- container -->
+</div><!-- list-page -->
+{{- end }}

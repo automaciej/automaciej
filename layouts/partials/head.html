@@ -34,7 +34,7 @@
   {{ partial "jsonld/performances.html" . }}
 {{- else if eq .Layout "apps" }}
   {{ partial "jsonld/apps.html" . }}
-{{- else if .Params.app }}
+{{- else if eq .Layout "app" }}
   {{ partial "jsonld/app-single.html" . }}
 {{- else if and .IsPage (in (slice "jogger" "blog") .Section) }}
   {{ partial "rich-data-single.html" . }}

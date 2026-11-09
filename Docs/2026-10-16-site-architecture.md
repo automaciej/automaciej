@@ -11,7 +11,7 @@ date; check the repo for current numbers.
 - **Content pages** (`content/`): Jogger (Polish blog), English blog (`/blog/`),
   music releases (`/music/<slug>/`), app support/landing pages, genres
   taxonomy, static EPK pages (bio, photos, press, performances).
-- **TOML data files** (`data/`): app definitions (`data/apps/`), performances
+- **TOML data files** (`data/`): performances
   (`data/performances/`), and a couple of not-yet-migrated music releases
   (`data/music/`).
 
@@ -87,14 +87,23 @@ fails on an "x" join. Lists of non-names (roles, platforms, genres) stay plain `
 
 ### Apps
 
-Apps and performances are purely data-driven (`data/*.toml`) and rendered by
-templates/partials. There are 9 apps (`task_compass`, `ego_destroyer`,
-`roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`, `podcast_gen`,
-`task_sync_kotlin`) across iOS, macOS, Android, Web, Linux and Windows. Some (e.g. `ego-destroyer`)
-have their own content section for update posts. An entry with `subsection` links to
-`content/<subsection>/_index.md` (front matter `app` names the data file); `task_sync_kotlin` is
-not an app but a suite of five Kotlin libraries, so its page (`content/task-sync-kotlin/`) just
-describes it and lists the repositories.
+Performances are purely data-driven (`data/*.toml`). Each app is a page bundle at
+`content/apps/<slug>/` (URL `/apps/<slug>/`). The page is always `_index.md` (a branch bundle),
+because any app may grow child pages (`ego-destroyer` has support, privacy policy, update posts);
+with `index.md` those would be mere resources. `content/apps/_index.md` cascades `outputs: [html]`,
+so apps get no RSS feeds. The former TOML metadata is front
+matter (`title` = name, `description`, `weight` = position; everything else under `params`:
+`author`, `category`, `platforms`, `featured`, `icon`, `app_site`, `app_store`, `play_store`,
+`testflight`, `license`) and the Markdown body is the app's own text. All use `layout: app`
+(`_default/app.html`: testflight banner, text or description, store links, child pages) and
+`excludeFromRSS: true`. `/apps/`, the homepage and the JSON-LD read them through
+`partials/apps-list.html` / `app-data.html`, which flatten a page into a dict and add `page_url`
+when the body is non-empty. A card links to `page_url` if set, else straight to `app_site`.
+There are 9 apps (`task-compass`, `ego-destroyer`, `roadlapse`, `sunrise-watch`, `icantstart`,
+`whatsapp-archive`, `phpbb3-static`, `podcast-gen`, `task-sync-kotlin`) across iOS, macOS,
+Android, Web, Linux and Windows. `task-sync-kotlin` is not an app but a suite of five Kotlin
+libraries; its page just describes it and lists the repositories. The old top-level URLs
+(`/ego-destroyer/…`, `/time-feel/…`, `/task-sync-kotlin/`) are kept as `aliases`; do not remove them.
 
 ### Collaborator projects
 

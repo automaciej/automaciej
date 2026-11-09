@@ -610,12 +610,22 @@ class TestStructuredData(unittest.TestCase):
 
     def test_app_pages_have_softwareapplication(self):
         """f6454f2: only the /apps/ list had app schema."""
-        app_dirs = [d.parent.name for d in (REPO / "content").glob("*/_index.md")
-                    if re.search(r"^app\s*[:=]", d.read_text(encoding="utf-8"), re.M)]
-        self.assertTrue(app_dirs, "no content/*/_index.md declares an `app` param")
+        app_dirs = [d.name for d in (REPO / "content" / "apps").iterdir() if d.is_dir()]
+        self.assertTrue(app_dirs, "no app bundles in content/apps/")
         for name in app_dirs:
             with self.subTest(app=name):
-                self.assertIn("SoftwareApplication", types_in(SITE.pages[f"/{name}/"]))
+                self.assertIn("SoftwareApplication", types_in(SITE.pages[f"/apps/{name}/"]))
+
+    def test_old_app_urls_redirect(self):
+        """Apps moved from /ego-destroyer/ and /task-sync-kotlin/ to /apps/<slug>/; the old URLs must still resolve."""
+        for old, new in (("/ego-destroyer/", "/apps/ego-destroyer/"),
+                         ("/ego-destroyer/support/", "/apps/ego-destroyer/support/"),
+                         ("/ego-destroyer/privacy-policy/", "/apps/ego-destroyer/privacy-policy/"),
+                         ("/time-feel/", "/apps/ego-destroyer/"),
+                         ("/task-sync-kotlin/", "/apps/task-sync-kotlin/")):
+            with self.subTest(old=old):
+                self.assertIn(old, SITE.aliases)
+                self.assertTrue(SITE.aliases[old].endswith(new), SITE.aliases[old])
 
     def test_release_pages_have_jsonld_image(self):
         """086f62b: release JSON-LD had no image."""

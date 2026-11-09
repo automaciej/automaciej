@@ -1,7 +1,7 @@
 {{- $cardHref := "" }}
 {{- $cardExternal := false }}
-{{- if .subsection }}
-{{- $cardHref = printf "/%s/" .subsection }}
+{{- if .page_url }}
+{{- $cardHref = .page_url }}
 {{- else if .app_site }}
 {{- $cardHref = .app_site }}
 {{- $cardExternal = true }}

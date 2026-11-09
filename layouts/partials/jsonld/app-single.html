@@ -1,4 +1,4 @@
-{{- $app := index hugo.Data.apps .Params.app -}}
+{{- $app := partial "app-data.html" . -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

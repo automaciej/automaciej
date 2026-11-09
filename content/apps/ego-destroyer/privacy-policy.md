@@ -6,6 +6,7 @@ date: "2025-09-21T15:30:00+01:00"
 excludeFromRSS: true
 aliases:
   - /time-feel/privacy-policy/
+  - /ego-destroyer/privacy-policy/
 
 ---
 ## Privacy Policy for Ego Destroyer
