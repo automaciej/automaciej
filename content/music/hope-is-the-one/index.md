@@ -6,7 +6,6 @@ genres:
 - Alternative
 date: '2026-01-03'
 release_date: '2026-01-03T00:00:00'
-primary_role: original
 composition_origin: original
 artist:
 - Zoe Hayter
@@ -24,6 +23,7 @@ credits:
   - electric violin
 - name: Maciej Bliziński
   roles:
+  - composer
   - piano
   - electric bass
   - producer

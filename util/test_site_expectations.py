@@ -1163,7 +1163,8 @@ class TestPrimaryRole(unittest.TestCase):
     are also listed on /music/engineering/ with its own feed."""
 
     ORIGINALS = ["talkative", "ill-be-gone", "11ell-11eaven", "loser", "ocean", "burza",
-                 "hope-is-the-one", "song-for-you-and-bob", "hidden-beach"]
+                 "hope-is-the-one", "song-for-you-and-bob", "hidden-beach",
+                 "shes-a-rolling-stone"]
     ENGINEERING = ["libera", "tentativa", "little-bird-frost-is-all-over-cormac-murphys-jig",
                    "run-for-me", "to-promenade", "level-design"]
 
@@ -1176,7 +1177,7 @@ class TestPrimaryRole(unittest.TestCase):
         self.assertNotIn("section-header", html)
 
     def test_originals_page_and_feed_list_exactly_the_originals(self):
-        """Originals are computed from Maciej's writing credits (Hope Is the One sets it by hand)."""
+        """Originals are computed from Maciej's writing credits."""
         html = self.read("music/originals/index.html")
         linked = set(re.findall(r'class="stretched-link" href="/music/([^/"]+)/"', html))
         self.assertEqual(linked, set(self.ORIGINALS))

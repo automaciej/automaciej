@@ -12,8 +12,8 @@ Each release has a primary role, one of:
 - `engineering`: mainly recorded or mixed. Only ever set by hand, because mixing and recording
   credits also appear on productions.
 
-Front matter `primary_role` overrides the computed value (Hope Is the One sets `original` by hand;
-the engineering releases set `engineering`). This is not `composition_origin`, which says whether the
+Front matter `primary_role` overrides the computed value (the engineering releases set `engineering`; an original
+whose credits don't yet list Maciej as a writer can set `original` by hand). This is not `composition_origin`, which says whether the
 piece is an original, a cover or a standard, whoever wrote it.
 
 - `partials/release-primary-role.html` resolves the role; `partials/release-role-pages.html`
