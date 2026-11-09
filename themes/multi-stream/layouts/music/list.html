@@ -8,22 +8,6 @@
     <div class="container">
         <h1 class="visually-hidden">{{ .Title }}</h1>
 
-        {{- $projectsPage := $.Site.GetPage "/music/projects" -}}
-        {{- if and $projectsPage $projectsPage.Sections -}}
-        {{- $names := slice -}}
-        {{- range $projectsPage.Sections -}}
-            {{- if not .Params.end_year -}}
-                {{- $names = $names | append (printf `<a href="%s">%s</a>` .RelPermalink .Title) -}}
-            {{- end -}}
-        {{- end -}}
-        <p class="music-projects-summary">
-            {{- if $names -}}
-            Current projects: {{ partial "join-names.html" $names | safeHTML }}.
-            {{- end }}
-            <a href="{{ $projectsPage.RelPermalink }}">See all projects.</a>
-        </p>
-        {{- end -}}
-
         <div class="music-productions">
             {{- range sort (partial "release-pages.html" .) "Params.release_date" "desc" }}
             {{ partial "music-preview-card.html" (dict "page" .) }}

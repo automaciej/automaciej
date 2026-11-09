@@ -1653,10 +1653,13 @@ main ol
     padding: 2rem 0;
 }
 
+/* Phones: no bottom padding, and --gutter under the navbar's line (the same as to the screen
+   edge) so the first card does not touch it. */
+
 @media (max-width: 767px) {
     .music-page,
     .music-project-page {
-        padding: 0;
+        padding: var(--gutter) 0 0;
     }
 }
 
@@ -2076,23 +2079,6 @@ main ol
 /* ================================================
    Projects feature
    ================================================ */
-
-/* Current-projects summary line on /music/ */
-
-.music-projects-summary {
-    margin-bottom: 2.5rem;
-    color: var(--text-secondary);
-}
-
-@media (max-width: 767px) {
-    .music-projects-summary {
-        margin-bottom: 1rem;
-    }
-}
-
-.music-projects-summary a {
-    color: var(--text-primary);
-}
 
 .music-releases-card {
     background: var(--bg-secondary);
