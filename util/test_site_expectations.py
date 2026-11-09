@@ -1115,21 +1115,30 @@ class TestCoverBackdrop(unittest.TestCase):
 
     def test_release_cover_has_a_decorative_backdrop_that_reuses_the_cover_file(self):
         _, cover = self.cover()
-        wrapper = re.search(r'<div class="cover-backdrop" aria-hidden="true">\s*<img ([^>]*)>\s*</div>', cover)
-        self.assertTrue(wrapper, "no .cover-backdrop wrapper with an image")
-        self.assertIn('alt=""', wrapper.group(1))
+        glow = re.search(r'<svg class="cover-backdrop" aria-hidden="true"[^>]*>(.*?)</svg>', cover, re.S)
+        self.assertTrue(glow, "no .cover-backdrop SVG")
+        image = re.search(r'<image href="([^"]+)"[^>]*filter="url\(#cover-glow\)"', glow.group(1))
+        self.assertTrue(image, "the SVG must hold the cover as an <image> filtered by #cover-glow")
         imgs = re.findall(r"<img [^>]*>", cover)
-        self.assertEqual(len(imgs), 2)
-        src = lambda tag: re.search(r'src="([^"]+)"', tag).group(1)
-        self.assertEqual(src(imgs[0]), src(imgs[1]), "the backdrop must reuse the cover file (one download)")
+        self.assertEqual(len(imgs), 1, "the glow is not an <img>; the cover is the only one")
+        src = re.search(r'src="([^"]+)"', imgs[0]).group(1)
+        self.assertEqual(image.group(1), src, "the backdrop must reuse the cover file (one download)")
 
-    def test_grain_filter_adds_noise_inside_the_blurred_shape(self):
+    def test_glow_filter_blurs_then_adds_grain_without_eating_the_edges(self):
+        """The filter lives inside the same SVG as the image: a CSS `filter: url(#id)` reaching into a
+        separate SVG did not render in Safari or Chrome. The grain is laid on with feBlend and clipped
+        to the blur; the old feComposite arithmetic with a negative constant (k4) erased the faint
+        outer edge of the blur, which made the glow small and dim."""
         raw, _ = self.cover()
-        svg = re.search(r'<filter id="cover-grain"[^>]*>(.*?)</filter>', raw, re.S)
-        self.assertTrue(svg, "no #cover-grain filter in the page")
-        self.assertIn("feTurbulence", svg.group(1))
-        self.assertRegex(svg.group(1), r'<feComposite[^>]*operator="arithmetic"')
-        self.assertRegex(svg.group(1), r'<feComposite[^>]*operator="in"', "noise must be clipped to the blurred shape")
+        svg = re.search(r'<filter id="cover-glow"[^>]*>(.*?)</filter>', raw, re.S)
+        self.assertTrue(svg, "no #cover-glow filter in the page")
+        body = svg.group(1)
+        self.assertIn("feGaussianBlur", body)
+        self.assertIn("feTurbulence", body)
+        self.assertRegex(body, r'<feComposite[^>]*operator="in"', "noise must be clipped to the blurred shape")
+        self.assertRegex(body, r'<feBlend[^>]*mode="overlay"')
+        self.assertNotRegex(body, r'k4="-', "a negative constant erases the faint edge of the blur")
+        self.assertGreaterEqual(float(re.search(r'stdDeviation="([\d.]+)"', body).group(1)), 60)
 
     def test_backdrop_never_makes_the_page_wider_than_the_screen(self):
         """A scale() transform (or a negative horizontal inset) on the backdrop made it overshoot the
@@ -1137,24 +1146,41 @@ class TestCoverBackdrop(unittest.TestCase):
         the cover looked off-centre. Only the blur may spread the halo sideways."""
         rule = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", dark_theme_css(self.css())).group(1)
         self.assertNotIn("transform", rule)
-        inset = re.search(r"inset:\s*([^;]+);", rule).group(1).split()
-        horizontal = inset[1] if len(inset) > 1 else inset[0]
-        self.assertEqual(float(horizontal.rstrip("%px")), 0.0, f"inset: {' '.join(inset)}")
+        flat = rule.replace(" ", "")
+        self.assertIn("left:0;", flat)
+        self.assertIn("width:100%;", flat)
+        self.assertNotRegex(flat, r"(left|right):-")
 
-    def test_backdrop_is_blurred_then_grained_then_faint_and_only_on_the_dark_theme(self):
+    def test_backdrop_is_exactly_the_covers_box_so_the_halo_is_even_all_round(self):
+        """A box taller than the cover (it was inset -5% 0) made the halo reach further above and
+        below than to the sides."""
+        rule = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", dark_theme_css(self.css())).group(1).replace(" ", "")
+        self.assertIn("top:0;", rule)
+        self.assertIn("height:100%;", rule)
+
+    def test_backdrop_is_a_dark_theme_only_svg_with_its_filter_inside(self):
         css = self.css()
         light = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", css)
         self.assertTrue(light and "display:none" in light.group(1).replace(" ", ""), "hidden by default (light theme)")
-        dark_css = dark_theme_css(css)
-        dark = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", dark_css)
+        dark = re.search(r"\.cover-backdrop\s*\{([^}]*)\}", dark_theme_css(css))
         self.assertTrue(dark, "no dark-theme .cover-backdrop rule")
-        # The wrapper's filter runs after its child's blur and before its own opacity (CSS order).
-        self.assertIn("filter:url(#cover-grain)", dark.group(1).replace(" ", ""))
-        opacity = float(re.search(r"opacity:\s*([\d.]+)", dark.group(1)).group(1))
-        self.assertTrue(0 < opacity <= 0.35, opacity)
-        img = re.search(r"\.cover-backdrop img\s*\{([^}]*)\}", dark_css)
-        self.assertTrue(img, "the blur belongs on the inner image")
-        self.assertGreaterEqual(int(re.search(r"blur\((\d+)px\)", img.group(1)).group(1)), 88)
+        flat = dark.group(1).replace(" ", "")
+        self.assertIn("display:block", flat)
+        self.assertIn("overflow:visible", flat, "the blur must be able to draw outside the SVG's box")
+        # The filter is referenced inside the SVG; a CSS filter: url(#...) on it did not render.
+        self.assertNotIn("filter:url(", flat)
+        self.assertTrue(0 < float(re.search(r"opacity:\s*([\d.]+)", dark.group(1)).group(1)) <= 1)
+
+    def test_cover_casts_a_shadow_onto_the_glow_on_the_dark_theme(self):
+        css = self.css()
+        self.assertNotRegex(css.replace(" ", ""), r"\}\.cover-layout-cover>img\{box-shadow", "light theme: no shadow")
+        rule = re.search(r"\.cover-layout-cover\s*>\s*img\s*\{([^}]*)\}", dark_theme_css(css))
+        self.assertTrue(rule, "no dark-theme shadow rule for the cover image")
+        self.assertIn("box-shadow", rule.group(1))
+
+    def test_navbar_is_translucent_so_the_glow_shows_through(self):
+        rule = re.search(r"\.site-header\s*\{([^}]*)\}", self.css()).group(1)
+        self.assertRegex(rule, r"background:\s*color-mix\([^;]*transparent\)")
 
 
 class TestPrimaryRole(unittest.TestCase):

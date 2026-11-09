@@ -160,10 +160,18 @@ dark = "/images/services/qobuz.svg"
 - `partials/service-registry.html` reads the directory, sorted by `order`. To add a service: add
   its file, give its links a URL in `release-services.html`, and add a test key. A test checks that
   every file has a name, a unique order, a known effect and existing icon files.
-- The release page also gives its cover a blurred, grainy backdrop on the dark theme
-  (`.cover-backdrop`; the grain is the SVG filter in `partials/cover-grain-filter.html`, applied after
-  the image's blur and before the wrapper's opacity), and the share button the same glow plus a black
-  outline around its icon.
+- The release page also gives its cover a glow on the dark theme, and the share button the same
+  glow plus a black outline around its icon. The cover glow (`.cover-backdrop`) is one self-contained
+  inline SVG, `partials/cover-glow.html`: the cover file as an `<image>` with a filter defined in the
+  same SVG (blur sigma 90, saturation, brightness, then grain laid on with `feBlend overlay` and clipped
+  to the blur); the CSS (dark theme only) just places it at exactly the cover's box with
+  `overflow: visible`, at 0.5 opacity, behind the cover, and the cover image casts a `box-shadow` onto it
+  (dark theme only). Lessons (2026-11-09): a CSS `filter: url(#id)`
+  pointing into a separate SVG rendered nothing in Safari and Chrome; and a constant subtracted per
+  pixel (`feComposite` arithmetic `k4`) erased the soft outer edge of the blur, so the glow was tiny
+  and dim. A box taller than the cover makes the halo uneven. The header is 50% transparent so the glow
+  shows through it. To test dark-theme CSS without an OS switch, take a copy of the page and CSS with
+  `prefers-color-scheme: dark` replaced by `all` and screenshot it in headless Chrome.
 
 ### Partials
 

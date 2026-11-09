@@ -42,10 +42,7 @@
         {{- if $img }}
         {{- $resized := $img.Resize "1600x webp" }}
         <div class="cover-layout-cover">
-            {{ partial "cover-grain-filter.html" . }}
-            <div class="cover-backdrop" aria-hidden="true">
-                <img src="{{ $resized.RelPermalink }}" alt="">
-            </div>
+            {{ partial "cover-glow.html" $resized.RelPermalink }}
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>
         {{- end }}
