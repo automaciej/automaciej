@@ -14,6 +14,8 @@ We sat down holding our takeaway coffee cups in gentle autumn sunshine.
 the update count it's around a hundred. \
 -- Why don't you kill it?
 
+<!--more-->
+
 An honest question, not mean, not criticizing, just down to earth business
 thinking. I paused for a second.
 
@@ -21,8 +23,6 @@ thinking. I paused for a second.
 build it again.
 
 He nodded.
-
-<!--more-->
 
 Later that day I thought, would there really be a reason to build it again? Maybe a
 similar thing already exists? What are the specific things I'm looking for?
