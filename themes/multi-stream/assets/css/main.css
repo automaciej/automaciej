@@ -451,33 +451,25 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
 }
 
-/* Increase gap on wider screens */
+/* From 768px (the phone/wider cutoff) the streams sit in a grid that fits as many equal-width
+   columns as have room, 2 or 3: a column is at least 300px, and the max() keeps the count from
+   going past three however wide the page gets (auto-fill keeps the tracks equal). Music, Apps,
+   Bio fill it in that order, so with two columns Bio wraps under Music. Below 768px it is the
+   single-column phone stack. */
 
 @media (min-width: 768px) {
     .stream-columns {
+        grid-template-columns: repeat(auto-fill, minmax(max(300px, (100% - 2 * 2rem) / 3), 1fr));
         gap: 2rem;
+        align-items: start;
     }
 }
 
-/* Mobile: Stack Music on top, then Apps, then Bio */
+/* The homepage streams are not capped at the container's 1200px either: the grid takes the
+   whole width (and stays at three columns on ultrawide screens). */
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .stream-columns {
-        grid-template-columns: 1fr;
-    }
-
-    /* Order on tablet: Music, Apps, Bio */
-    .music-stream { order: 1; }
-    .apps-stream { order: 2; }
-    .bio-stream { order: 3; }
-}
-
-/* Desktop: Three columns */
-
-@media (min-width: 1024px) {
-    .stream-columns {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.streams > .container {
+    max-width: none;
 }
 
 .stream-column h2 {
@@ -781,57 +773,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Homepage, tablet: thumbnail beside the text (the music grid never uses this: it stacks from 768px) */
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .stream-columns .music-preview {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem;
-        align-items: flex-start;
-    }
-
-    .stream-columns .music-preview-image {
-        flex-shrink: 0;
-        margin-right: 0.75rem;
-    }
-
-    .stream-columns .music-preview-image img,
-    .stream-columns .music-preview-image .waveform-placeholder {
-        display: block;
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: opacity 0.2s;
-    }
-
-    .stream-columns .music-preview-image img:hover,
-    .stream-columns .music-preview-image .waveform-placeholder:hover {
-        opacity: 0.85;
-    }
-
-    .stream-columns .unreleased-overlay {
-        border-radius: 6px;
-    }
-
-    .stream-columns .music-preview-content {
-        flex: 1;
-        min-width: 0;
-    }
-}
-
-/* Stacked card (image on top, role strip at the bottom): in the music grid from 768px, on the
-   homepage (three columns) from 1024px. */
+/* Stacked card (image on top, role strip at the bottom) from 768px, in the music grids and on
+   the homepage. */
 
 @media (min-width: 768px) {
-    .music-productions .music-preview-image {
+    :is(.music-productions, .stream-columns) .music-preview-image {
         margin: -1.25rem -1.25rem 1rem;
     }
 
-    .music-productions .music-preview-image img,
-    .music-productions .music-preview-image .waveform-placeholder {
+    :is(.music-productions, .stream-columns) .music-preview-image img,
+    :is(.music-productions, .stream-columns) .music-preview-image .waveform-placeholder {
         display: block;
         width: 100%;
         height: auto;
@@ -840,50 +791,17 @@ h1, h2, h3, h4, h5, h6 {
         transition: opacity 0.2s;
     }
 
-    .music-productions .music-preview-image img:hover,
-    .music-productions .music-preview-image .waveform-placeholder:hover {
+    :is(.music-productions, .stream-columns) .music-preview-image img:hover,
+    :is(.music-productions, .stream-columns) .music-preview-image .waveform-placeholder:hover {
         opacity: 0.85;
     }
 
-    .music-productions .unreleased-overlay {
+    :is(.music-productions, .stream-columns) .unreleased-overlay {
         border-radius: 12px 12px 0 0;
     }
 
     /* Desktop: a strip flush with the card's bottom edge. */
-    .music-productions .music-preview-role {
-        display: block;
-        margin: 1rem -1.25rem -1.25rem;
-        padding: 0.45rem 1.25rem;
-        border-radius: 0 0 12px 12px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .stream-columns .music-preview-image {
-        margin: -1.25rem -1.25rem 1rem;
-    }
-
-    .stream-columns .music-preview-image img,
-    .stream-columns .music-preview-image .waveform-placeholder {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 12px 12px 0 0;
-        cursor: pointer;
-        transition: opacity 0.2s;
-    }
-
-    .stream-columns .music-preview-image img:hover,
-    .stream-columns .music-preview-image .waveform-placeholder:hover {
-        opacity: 0.85;
-    }
-
-    .stream-columns .unreleased-overlay {
-        border-radius: 12px 12px 0 0;
-    }
-
-    /* Desktop: a strip flush with the card's bottom edge. */
-    .stream-columns .music-preview-role {
+    :is(.music-productions, .stream-columns) .music-preview-role {
         display: block;
         margin: 1rem -1.25rem -1.25rem;
         padding: 0.45rem 1.25rem;

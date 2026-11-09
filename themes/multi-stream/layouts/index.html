@@ -39,7 +39,7 @@
                         {{- range $index, $production := first 3 $musicProductions }}
                         {{- $extra := "" }}
                         {{- if gt $index 2 }}{{ $extra = "music-preview-desktop-only" }}{{ end }}
-                        {{ partial "music-preview-card.html" (dict "page" $production "extra_class" $extra "sizes" "(max-width: 767px) 120px, (max-width: 1023px) 80px, 33vw") }}
+                        {{ partial "music-preview-card.html" (dict "page" $production "extra_class" $extra "sizes" "(max-width: 767px) 120px, (max-width: 1003px) 45vw, 33vw") }}
                         {{- end }}
                         <div class="stream-footer">
                             <a href="{{ $musicPage.RelPermalink }}"
