@@ -1423,10 +1423,19 @@ main ol
     margin-top: 2rem;
 }
 
+/* From 768px (the phone/wider cutoff) as many equal-width columns as fit, with cards at least
+   340px wide (two columns at 768px, as before) and no maximum number of columns: the page is
+   not capped at the container's 1200px either (auto-fill keeps the tracks equal when there are
+   few cards). Below 768px it is the single-column list. */
+
 @media (min-width: 768px) {
     .apps-list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     }
+}
+
+.list-page-wide > .container {
+    max-width: none;
 }
 
 .app-card {
