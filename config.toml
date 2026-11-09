@@ -31,27 +31,27 @@ copyright = "&copy;2026 Maciej Bliziński"
   page = "/:contentbasename/"
 
 [[menu.main]]
-  name = "Bio"
-  url = "/bio/"
-  weight = 10
-  title = "Maciej's Bio"
-[[menu.main]]
   name = "Music"
   url = "/music/"
-  weight = 20
+  weight = 10
   title = "Music"
 [[menu.main]]
   name = "Apps"
   url = "/apps/"
-  weight = 30
+  weight = 20
   title = "Maciej's apps"
 [[menu.main]]
   name = "Blog"
   url = "/blog/"
-  weight = 40
+  weight = 30
   title = "English blog"
 [[menu.main]]
-  name = "Live"
+  name = "Bio"
+  url = "/bio/"
+  weight = 40
+  title = "Maciej's Bio"
+[[menu.main]]
+  name = "Shows"
   url = "/music/performances/"
   weight = 50
   title = "Live performances"
