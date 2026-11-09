@@ -255,6 +255,14 @@ main {
     color: var(--text-secondary);
 }
 
+/* The header and footer are not capped at the container's 1200px: the navigation sits at the
+   window's edges and the footer spans the whole width, on any screen. */
+
+.site-header > .container,
+.site-footer > .container {
+    max-width: none;
+}
+
 /* Links */
 
 a {
