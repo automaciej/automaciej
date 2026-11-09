@@ -12,11 +12,11 @@
     {{- with $p.Params.image }}
     {{- with $p.Resources.GetMatch . }}
     {{- $img := . }}
-    {{- $thumb = $img.Resize "800x webp" }}
-    {{- $w240 := $img.Resize "240x webp" }}
-    {{- $w480 := $img.Resize "480x webp" }}
-    {{- $w800 := $thumb }}
-    {{- $w1200 := $img.Resize "1200x webp" }}
+    {{- $w240 := partial "release-art.html" (dict "img" $img "width" 240) }}
+    {{- $w480 := partial "release-art.html" (dict "img" $img "width" 480) }}
+    {{- $w800 := partial "release-art.html" (dict "img" $img "width" 800) }}
+    {{- $w1200 := partial "release-art.html" (dict "img" $img "width" 1200) }}
+    {{- $thumb = $w800 }}
     {{- $srcset = printf "%s 240w, %s 480w, %s 800w, %s 1200w" $w240.RelPermalink $w480.RelPermalink $w800.RelPermalink $w1200.RelPermalink }}
     {{- end }}
     {{- end }}

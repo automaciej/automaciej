@@ -5,7 +5,7 @@
         {{- with $p.Params.image }}
         {{- $img := $p.Resources.GetMatch . }}
         {{- if $img }}
-        {{- $resized := $img.Resize "400x webp" }}
+        {{- $resized := partial "release-art.html" (dict "img" $img "width" 400) }}
         <div class="music-image">
             <img src="{{ $resized.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
         </div>

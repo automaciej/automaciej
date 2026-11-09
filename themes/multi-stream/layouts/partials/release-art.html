@@ -1,0 +1,15 @@
+{{- /*
+  A release's artwork at a given width, for the cards: the height is never more than the width.
+  An image taller than square is cropped to a square from the centre (equal amounts off the top
+  and bottom); a square or landscape image is only scaled, so it keeps its proportions.
+  Takes (dict "img" <image resource> "width" <pixels>); returns the processed webp resource.
+*/ -}}
+{{- $img := .img -}}
+{{- $w := .width -}}
+{{- $out := "" -}}
+{{- if gt $img.Height $img.Width -}}
+{{- $out = $img.Fill (printf "%dx%d center webp" $w $w) -}}
+{{- else -}}
+{{- $out = $img.Resize (printf "%dx webp" $w) -}}
+{{- end -}}
+{{- return $out -}}
