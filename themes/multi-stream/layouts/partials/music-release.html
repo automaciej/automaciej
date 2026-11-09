@@ -30,8 +30,10 @@
                 <span class="composition-origin"> • cover of <span class="original-artist">{{ . }}</span></span>
                 {{- end }}{{ end }}
             </div>
+            {{- /* One button, one place: "Pre-save" until the release date, "Listen now" after it (CSS, driven by
+                   the .is-unreleased class unreleased.js puts on the article; without JS it reads "Listen now"). */}}
             {{- with $p.Params.links.streaming }}
-            <a class="presave-button" href="{{ . }}" target="_blank" rel="noopener" data-presave hidden>Pre-save</a>
+            <a class="release-button" href="{{ . }}" target="_blank" rel="noopener"><span class="release-button-listen">Listen now</span><span class="release-button-presave">Pre-save</span></a>
             {{- end }}
         </div>
 

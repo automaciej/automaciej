@@ -1,0 +1,24 @@
+{{- define "head_extra" }}
+{{- $img := partial "release-og-image.html" (partial "release-role-pages.html" (dict "page" . "role" .Params.role)) }}
+{{ partial "og-tags-default.html" (dict "page" . "image" $img) }}
+{{- end }}
+
+{{- define "main" }}
+<div class="music-page">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{- with .Params.description }}
+        <p class="section-description">{{ . }}</p>
+        {{- end }}
+        <div class="music-productions">
+            {{- range sort (partial "release-role-pages.html" (dict "page" . "role" .Params.role)) "Params.release_date" "desc" }}
+            {{ partial "music-preview-card.html" (dict "page" .) }}
+            {{- end }}
+        </div><!-- music-productions -->
+    </div><!-- container -->
+</div><!-- music-page -->
+{{- end }}
+
+{{- define "scripts_extra" }}
+{{ partial "unreleased-script.html" . }}
+{{- end }}

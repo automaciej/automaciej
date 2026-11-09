@@ -1,0 +1,15 @@
+{{- /*
+    A track's credits list. Input: dict "page" <release page> "credits" <the track's credits>.
+    Renders nothing when there are no credits.
+*/ -}}
+{{- $p := .page -}}
+{{- with .credits }}
+<div class="track-credits">
+    <strong>Credits:</strong>
+    <ul>
+        {{- range . }}
+        <li><strong>{{ partial "credits-person-link.html" (dict "page" $p "name" .name) }}</strong> - {{ delimit .roles ", " }}</li>
+        {{- end }}
+    </ul>
+</div><!-- track-credits -->
+{{- end }}

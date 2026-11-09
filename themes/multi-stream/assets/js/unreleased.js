@@ -13,8 +13,5 @@
         el.querySelectorAll('.music-preview-date').forEach(function (date) {
             date.textContent += ' (' + days + (days === 1 ? ' day' : ' days') + ' left)';
         });
-        el.querySelectorAll('[data-presave]').forEach(function (presave) {
-            presave.hidden = false;
-        });
     });
 })();

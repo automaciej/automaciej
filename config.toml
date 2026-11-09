@@ -39,7 +39,7 @@ copyright = "&copy;2026 Maciej Bliziński"
   name = "Music"
   url = "/music/"
   weight = 20
-  title = "Music production"
+  title = "Music"
 [[menu.main]]
   name = "Apps"
   url = "/apps/"

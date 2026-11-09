@@ -6,6 +6,7 @@ genres:
 - Jazz
 date: '2025-05-15'
 release_date: '2025-05-15T00:00:00'
+primary_role: engineering
 composition_origin: original
 artist:
 - emily jane

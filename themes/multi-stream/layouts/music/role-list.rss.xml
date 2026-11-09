@@ -1,0 +1,42 @@
+{{- /*
+    Feed for a role list page (layout: role-list, front matter `role`): releases with that primary role, newest first.
+    Items link to the release page on this site.
+*/ -}}
+{{- $items := sort (where (partial "release-role-pages.html" (dict "page" . "role" .Params.role)) "Date" "le" now) "Date" "desc" -}}
+{{- $authorEmail := "" }}
+{{- $authorName := "" }}
+{{- with site.Params.author }}
+  {{- if reflect.IsMap . }}{{ $authorEmail = .email | default "" }}{{ $authorName = .name | default "" }}{{ else }}{{ $authorName = . }}{{ end }}
+{{- end }}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>{{ printf "%s: %s" site.Title .Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ with .Description }}{{ . }}{{ else }}Releases, newest first.{{ end }}</description>
+    <generator>Hugo</generator>
+    <language>{{ site.Language.Locale }}</language>{{ with $authorEmail }}
+    <managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>
+    <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
+    <copyright>{{ . | htmlUnescape }}</copyright>{{ end }}{{ with $items }}
+    <lastBuildDate>{{ (index . 0).Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{- with .OutputFormats.Get "RSS" }}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- range $items }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
+      <guid>{{ .Permalink }}</guid>
+      {{- $html := printf "<p>%s by %s (%s)</p>" .Title (partial "join-names.html" .Params.artist) (.Date.Format "Jan 2006") }}
+      <description>{{ $html | transform.XMLEscape | safeHTML }}</description>
+      {{- $r := . }}
+      {{- with .Params.image }}{{ with $r.Resources.GetMatch . }}
+      <media:content url="{{ .Permalink }}" medium="image" />
+      {{- end }}{{ end }}
+    </item>
+    {{- end }}
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+{{- /*
+    The role Maciej mainly had on a release: "original" (he wrote or co-wrote the music),
+    "production" or "engineering". Resolved in this order:
+      1. front matter `primary_role`, when set (the only way to say "engineering": mixing and
+         recording credits appear on productions too, so credits cannot tell them apart);
+      2. "original" when his own credits (release or track level) include a writing role;
+      3. otherwise "production".
+    Usage: {{ partial "release-primary-role.html" $release }}
+*/ -}}
+{{- $role := .Params.primary_role -}}
+{{- if not $role -}}
+    {{- $writing := slice "songwriter" "composer" "music" "lyrics" -}}
+    {{- $entries := slice -}}
+    {{- range .Params.credits }}{{ $entries = $entries | append (slice .) }}{{ end -}}
+    {{- range .Params.tracks }}{{ range .credits }}{{ $entries = $entries | append (slice .) }}{{ end }}{{ end -}}
+    {{- range $entries }}
+        {{- if and (eq .name site.Params.authorName) (intersect .roles $writing) }}{{ $role = "original" }}{{ end }}
+    {{- end }}
+{{- end -}}
+{{- return ($role | default "production") -}}

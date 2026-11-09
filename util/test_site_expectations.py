@@ -43,7 +43,7 @@ RELEASE_URL = re.compile(r"^/music/(%s)/$" % "|".join(map(re.escape, RELEASE_SLU
 SERVICE_FEEDS = {"/music/spotify/": "open.spotify.com", "/music/apple/": "music.apple.com",
                 "/music/youtube/": "music.youtube.com", "/music/qobuz/": "www.qobuz.com",
                 "/music/itunes/": "music.apple.com"}
-FEED_SECTIONS = ["/", "/blog/", "/jogger/", "/music/"] + list(SERVICE_FEEDS)
+FEED_SECTIONS = ["/", "/blog/", "/jogger/", "/music/", "/music/engineering/", "/music/originals/"] + list(SERVICE_FEEDS)
 
 
 class PageParser(HTMLParser):
@@ -318,7 +318,7 @@ class TestMusicSocialTags(unittest.TestCase):
     """Social tags in /music (2026-10-15 audit, Docs/social-jsonld-audit.md)."""
 
     SECTION_PAGES = ["/music/", "/music/projects/",
-                     "/music/performances/", "/music/credits/"]
+                     "/music/performances/", "/music/credits/", "/music/engineering/", "/music/originals/"]
 
     def test_only_the_homepage_may_use_a_non_specific_image(self):
         """Release pages without a cover must not fall back to the site share image."""
@@ -346,12 +346,12 @@ class TestMusicSocialTags(unittest.TestCase):
     def test_music_titles_share_one_suffix(self):
         for url in self.SECTION_PAGES[1:]:
             with self.subTest(url=url):
-                self.assertTrue(SITE.pages[url].title.strip().endswith("- Music Production"))
+                self.assertTrue(SITE.pages[url].title.strip().endswith("- Music"))
 
     def test_release_titles_have_no_section_suffix(self):
         for url, p in SITE.pages.items():
             if RELEASE_URL.match(url):
-                self.assertNotIn("Music Production", p.title, url)
+                self.assertNotIn("- Music", p.title, url)
 
     def test_index_style_pages_are_not_articles(self):
         for url in ("/music/credits/", "/music/performances/", "/music/spotify/"):
@@ -1155,6 +1155,95 @@ class TestCoverBackdrop(unittest.TestCase):
         img = re.search(r"\.cover-backdrop img\s*\{([^}]*)\}", dark_css)
         self.assertTrue(img, "the blur belongs on the inner image")
         self.assertGreaterEqual(int(re.search(r"blur\((\d+)px\)", img.group(1)).group(1)), 88)
+
+
+class TestPrimaryRole(unittest.TestCase):
+    """Releases declare `primary_role: engineering` when Maciej mainly recorded/mixed them.
+    They stay in the main /music/ list and feed, get an "Engineering" card footer, and
+    are also listed on /music/engineering/ with its own feed."""
+
+    ORIGINALS = ["talkative", "ill-be-gone", "11ell-11eaven", "loser", "ocean", "burza",
+                 "hope-is-the-one", "song-for-you-and-bob", "hidden-beach"]
+    ENGINEERING = ["libera", "tentativa", "little-bird-frost-is-all-over-cormac-murphys-jig",
+                   "run-for-me", "to-promenade", "level-design"]
+
+    def read(self, rel):
+        return (SITE.root / rel).read_text(encoding="utf-8")
+
+    def test_music_page_has_a_hidden_heading_not_a_production_header(self):
+        html = self.read("music/index.html")
+        self.assertIn('<h1 class="visually-hidden">Music</h1>', html)
+        self.assertNotIn("section-header", html)
+
+    def test_originals_page_and_feed_list_exactly_the_originals(self):
+        """Originals are computed from Maciej's writing credits (Hope Is the One sets it by hand)."""
+        html = self.read("music/originals/index.html")
+        linked = set(re.findall(r'class="stretched-link" href="/music/([^/"]+)/"', html))
+        self.assertEqual(linked, set(self.ORIGINALS))
+        root = ET.parse(SITE.root / "music/originals/index.xml").getroot()
+        links = {i.findtext("link") for i in root.find("channel").findall("item")}
+        self.assertEqual(links, {f"{BASE_URL}/music/{s}/" for s in self.ORIGINALS})
+
+    def test_engineering_page_lists_exactly_the_engineering_releases(self):
+        html = self.read("music/engineering/index.html")
+        linked = set(re.findall(r'class="stretched-link" href="/music/([^/"]+)/"', html))
+        self.assertEqual(linked, set(self.ENGINEERING))
+
+    def test_engineering_feed_lists_exactly_the_engineering_releases(self):
+        root = ET.parse(SITE.root / "music/engineering/index.xml").getroot()
+        links = {i.findtext("link") for i in root.find("channel").findall("item")}
+        self.assertEqual(links, {f"{BASE_URL}/music/{s}/" for s in self.ENGINEERING})
+
+    def test_main_music_list_and_feed_keep_engineering_releases(self):
+        html = self.read("music/index.html")
+        root = ET.parse(SITE.root / "music/index.xml").getroot()
+        feed = {i.findtext("link") for i in root.find("channel").findall("item")}
+        for slug in self.ENGINEERING:
+            with self.subTest(slug=slug):
+                self.assertIn(f'href="/music/{slug}/"', html)
+                self.assertIn(f"{BASE_URL}/music/{slug}/", feed)
+
+    def test_card_footer_names_the_role(self):
+        html = self.read("music/index.html")
+        self.assertEqual(html.count("music-preview-role-engineering"), len(self.ENGINEERING))
+        self.assertEqual(html.count("music-preview-role-original"), len(self.ORIGINALS))
+        self.assertIn("music-preview-role-production", html)
+
+    def test_album_page_lists_tracks_plainly_without_per_track_links(self):
+        """An album (single: false) shows a plain track list; a single with versions keeps per-track links."""
+        album = self.read("music/level-design/index.html")
+        self.assertNotIn("track-links", album)
+        self.assertIn('<ol class="track-list">', album)
+        self.assertNotIn("track-title", album)  # tracks are list items, not headings
+        single = self.read("music/hidden-beach/index.html")
+        self.assertIn("track-links", single)
+
+    def test_release_button_is_in_the_header_and_nothing_repeats_it_below(self):
+        """One Listen now / Pre-save button, in the header, for every release with a `streaming` link
+        (Loser had none). The block below the description holds only tracks: no second set of
+        listen buttons, no "Listen to ..." heading."""
+        for slug, url in (("loser", "https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/loser"),
+                          ("level-design", "https://distrokid.com/hyperfollow/8bitfunk/level-design"),
+                          ("hidden-beach", "https://distrokid.com/hyperfollow/maciejbliziski/hidden-beach-2")):
+            with self.subTest(release=slug):
+                html = self.read(f"music/{slug}/index.html")
+                self.assertEqual(html.count('class="release-button"'), 1)
+                self.assertIn(f'class="release-button" href="{url}"', html)
+                self.assertIn(">Listen now</span>", html)
+                self.assertIn(">Pre-save</span>", html)
+                self.assertLess(html.index("release-button"), html.index("music-description"))
+                self.assertNotIn("music-playback-heading", html)
+        for slug in RELEASE_SLUGS:  # "Listen on <service>" buttons exist only as per-track links
+            with self.subTest(release=slug, what="no release-level listen buttons below"):
+                html = self.read(f"music/{slug}/index.html")
+                if "track-links" not in html:
+                    self.assertNotIn("embed streaming-link", html)
+        libera = self.read("music/libera/index.html")  # no streaming link: no button, icons only
+        self.assertNotIn("release-button", libera)
+        self.assertNotIn("music-playback", libera)
+
+    def test_engineering_release_without_streaming_links_has_a_page(self):
+        self.assertIn("/music/level-design/", SITE.pages)
 
 
 class TestMusicUrls(unittest.TestCase):

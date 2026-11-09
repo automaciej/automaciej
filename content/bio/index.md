@@ -62,7 +62,7 @@ heart.
 [jam]: https://facebook.com/dublinjazzjam "Dublin Jazz Jam Session"
 [marek]: https://en.wikipedia.org/wiki/Marek_Blizi%C5%84ski "Marek Bliziński"
 [ric]: https://www.instagram.com/riccardo_marenghi/ "Riccardo Marenghi on Instagram"
-[mus]: {{< relref "music/_index.md" >}} "Music production showcase"
+[mus]: {{< relref "music/_index.md" >}} "Music showcase"
 [gaia]: https://linktr.ee/gaiamarenghi "Gaia Marenghi on Linktree"
 [ascheps]: https://mixwiththemasters.com/masters/andrew-scheps
-[prod]: {{< relref "music/_index.md" >}} "Maciej's music production"
+[prod]: {{< relref "music/_index.md" >}} "Maciej's music"

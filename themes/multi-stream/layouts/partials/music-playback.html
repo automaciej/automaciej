@@ -1,69 +1,19 @@
+{{- /*
+    The track section of a release page; renders nothing for a release without tracks. Every
+    service link, and the Listen now / Pre-save button, is in the header (music-release.html), so
+    this only holds what the header cannot show:
+      album  - `single: false`: the tracks as a plain numbered list
+      tracks - any other release with tracks (e.g. a single with several versions): each track with
+               its credits and its own listen links
+    Input: dict "page" <release page>.
+*/ -}}
 {{- $p := .page -}}
-{{- $links := $p.Params.links -}}
-{{- $hasPlayback := $p.Params.tracks -}}
-{{- if and (not $hasPlayback) $links }}{{ if or $links.bandcamp_album $links.bandcamp_track $links.instagram $links.soundcloud_url }}{{ $hasPlayback = true }}{{ end }}{{ end -}}
-{{- if $hasPlayback -}}
+{{- if $p.Params.tracks -}}
 <div class="music-playback">
-    <h3 class="music-playback-heading">Listen to {{ $p.Title }}{{ if not $p.Params.tracks }} (full track){{ end }}</h3>
-    {{- if $p.Params.tracks }}
-
-    {{- with $p.Params.links }}
-    {{- if .bandcamp_album }}
-    <div class="music-links">
-        {{- range partial "release-services.html" (dict "links" .) }}
-        {{- if eq .key "bandcamp" }}
-        <div class="embed streaming-link">
-            {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
-        </div>
-        {{- end }}
-        {{- end }}
-    </div>
-    {{- end }}
-    {{- end }}
-
-    <div class="music-tracks">
-        {{- range $p.Params.tracks }}
-        <div class="track">
-            <h3 class="track-title">{{ .title }}</h3>
-            {{- with .credits }}
-            <div class="track-credits">
-                <strong>Credits:</strong>
-                <ul>
-                    {{- range . }}
-                    <li><strong>{{ partial "credits-person-link.html" (dict "page" $p "name" .name) }}</strong> - {{ delimit .roles ", " }}</li>
-                    {{- end }}
-                </ul>
-            </div>
-            {{- end }}
-            {{- $services := partial "release-services.html" (dict "links" .links "release_links" $p.Params.links) }}
-            {{- if $services }}
-            <div class="track-links">
-                {{- range $services }}
-                <div class="embed streaming-link">
-                    {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
-                </div>
-                {{- end }}
-            </div>
-            {{- end }}
-        {{- end }}
-    </div>
-
+    {{- if and (isset $p.Params "single") (not $p.Params.single) }}
+    {{ partial "music-playback-album.html" (dict "page" $p) }}
     {{- else }}
-
-    {{- with $p.Params.links }}
-    <div class="music-links">
-        {{- /* The other services are the icons at the top of the page; these are the places to hear the piece itself. */ -}}
-        {{- $bandcampId := or .bandcamp_album .bandcamp_track }}
-        {{- range partial "release-services.html" (dict "links" .) }}
-        {{- if or (in (slice "soundcloud" "instagram") .key) (and (eq .key "bandcamp") $bandcampId) }}
-        <div class="embed streaming-link">
-            {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
-        </div>
-        {{- end }}
-        {{- end }}
-    </div>
+    {{ partial "music-playback-tracks.html" (dict "page" $p) }}
     {{- end }}
-
-    {{- end }}
-</div>
-{{- end }}
+</div><!-- music-playback -->
+{{- end -}}

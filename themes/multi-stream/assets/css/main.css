@@ -27,6 +27,7 @@
 :root {
     --bg-primary: #f5f5f7;
     --bg-secondary: #ffffff;
+    --bg-nav: #fcfcfd; /* the navbar: almost white, brighter than the page */
     --text-primary: #1d1d1f;
     --text-secondary: #6e6e73;
     --text-tertiary: #a1a1a6;
@@ -40,6 +41,7 @@
     :root {
         --bg-primary: #000000;
         --bg-secondary: #1d1d1f;
+        --bg-nav: #0e0e10; /* a tinge brighter than the page */
         --text-primary: #f5f5f7;
         --text-secondary: #a1a1a6;
         --text-tertiary: #6e6e73;
@@ -91,6 +93,7 @@ body {
 /* Header */
 
 .site-header {
+    background: var(--bg-nav);
     border-bottom: 1px solid var(--border-color);
     padding: 20px 0;
     position: relative;
@@ -199,7 +202,7 @@ body {
         position: absolute;
         top: 100%;
         right: 0;
-        background: var(--bg-primary);
+        background: var(--bg-nav);
         border: 1px solid var(--border-color);
         border-radius: 8px;
         padding: 1rem;
@@ -784,6 +787,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Category footer ("Production" / "Engineering"): wide screens only. The base rule hides it;
+   the min-width: 1024px block below turns it into a coloured strip flush with the card's
+   bottom edge. */
+
+.music-preview-role {
+    display: none;
+}
+
 /* Full width image on wide screens */
 
 @media (min-width: 1024px) {
@@ -808,6 +819,24 @@ h1, h2, h3, h4, h5, h6 {
 
     .unreleased-overlay {
         border-radius: 12px 12px 0 0;
+    }
+
+    .music-preview-role {
+        display: block;
+        margin: 1rem -1.25rem -1.25rem;
+        padding: 0.45rem 1.25rem;
+        border-radius: 0 0 12px 12px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--accent);
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+    }
+
+    .music-preview-role-original {
+        color: #fff;
+        background: var(--accent);
     }
 }
 
@@ -1848,7 +1877,10 @@ main ol
     margin-bottom: 0.5rem;
 }
 
-.presave-button {
+/* The one release button in the header: "Listen now", or "Pre-save" while .is-unreleased is on the
+   article (see unreleased.js). */
+
+.release-button {
     display: inline-block;
     margin: 0.25rem 0 0.5rem;
     padding: 0.7rem 1.75rem;
@@ -1860,12 +1892,17 @@ main ol
     border-radius: 999px;
 }
 
-.presave-button:hover {
+.release-button:hover {
     filter: brightness(1.1);
 }
 
-.presave-button[hidden] {
+.release-button-presave,
+.is-unreleased .release-button-listen {
     display: none;
+}
+
+.is-unreleased .release-button-presave {
+    display: inline;
 }
 
 .cover-layout-cover {
@@ -1931,19 +1968,12 @@ main ol
     margin-top: 1.5rem;
 }
 
-.music-release .music-playback .music-links:first-child {
-    margin-top: 0;
-}
-
-.music-playback-heading {
-    display: none;
-}
-
-@media (min-width: 1024px) {
-    .music-release .music-playback-heading {
-        display: block;
-        margin-top: 0;
-    }
+/* An album's track listing: a plain numbered list in the body font and colour. */
+.track-list {
+    margin: 0 0 1rem;
+    padding-left: 1.5rem;
+    font-weight: normal;
+    color: inherit;
 }
 
 @media (min-width: 1024px) {
@@ -1980,10 +2010,6 @@ main ol
 .music-credits li {
     margin: 0.25rem 0;
     color: var(--text-secondary);
-}
-
-.music-links {
-    margin-top: 1.5rem;
 }
 
 .embed {

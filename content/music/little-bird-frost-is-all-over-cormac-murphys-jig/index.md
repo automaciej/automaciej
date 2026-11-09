@@ -6,6 +6,7 @@ genres:
 - Irish Traditional
 date: '2026-01-31'
 release_date: '2026-01-31T00:00:00'
+primary_role: engineering
 composition_origin: cover
 original_artist: Traditional
 artist:

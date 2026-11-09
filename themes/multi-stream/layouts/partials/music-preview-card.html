@@ -44,4 +44,6 @@
         </div>
         {{- end }}
     </div>
+    {{- $role := partial "release-primary-role.html" $p }}
+    <div class="music-preview-role music-preview-role-{{ $role }}">{{ $role | humanize }}</div><!-- music-preview-role -->
 </article>

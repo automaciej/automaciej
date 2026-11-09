@@ -6,12 +6,7 @@
 {{- define "main" }}
 <div class="music-page">
     <div class="container">
-        <header class="section-header">
-            <h1>{{ .Title }}</h1>
-            {{- with .Params.description }}
-            <p class="section-description">{{ . }}</p>
-            {{- end }}
-        </header>
+        <h1 class="visually-hidden">{{ .Title }}</h1>
 
         {{- $projectsPage := $.Site.GetPage "/music/projects" -}}
         {{- if and $projectsPage $projectsPage.Sections -}}

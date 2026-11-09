@@ -1,0 +1,10 @@
+{{- /*
+    Releases whose primary role (see release-primary-role.html) is the given one.
+    Usage: {{ partial "release-role-pages.html" (dict "page" . "role" "engineering") }}
+*/ -}}
+{{- $out := slice -}}
+{{- $role := .role -}}
+{{- range partial "release-pages.html" .page }}
+    {{- if eq (partial "release-primary-role.html" .) $role }}{{ $out = $out | append . }}{{ end }}
+{{- end -}}
+{{- return $out -}}

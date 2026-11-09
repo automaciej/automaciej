@@ -1,0 +1,23 @@
+{{- /*
+    A release with tracks that is not an album (e.g. a single with several versions): each track
+    with its credits and its own listen links (track-level links, so not the ones in the header).
+    Input: dict "page" <release page>.
+*/ -}}
+{{- $p := .page -}}
+<div class="music-tracks">
+    {{- range $p.Params.tracks }}
+    <div class="track">
+        <h3 class="track-title">{{ .title }}</h3>
+        {{- partial "music-track-credits.html" (dict "page" $p "credits" .credits) }}
+        {{- with partial "release-services.html" (dict "links" .links "release_links" $p.Params.links) }}
+        <div class="track-links">
+            {{- range . }}
+            <div class="embed streaming-link">
+                {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
+            </div>
+            {{- end }}
+        </div><!-- track-links -->
+        {{- end }}
+    </div><!-- track -->
+    {{- end }}
+</div><!-- music-tracks -->

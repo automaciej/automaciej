@@ -1,0 +1,13 @@
+{{- /*
+    The tracks of an album as a plain numbered list (the release button is in music-playback.html;
+    there are no per-track link buttons).
+    Input: dict "page" <release page>.
+*/ -}}
+{{- $p := .page -}}
+<ol class="track-list">
+    {{- range $p.Params.tracks }}
+    <li>{{ .title }}
+        {{- partial "music-track-credits.html" (dict "page" $p "credits" .credits) }}
+    </li>
+    {{- end }}
+</ol><!-- track-list -->
