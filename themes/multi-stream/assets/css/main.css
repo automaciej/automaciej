@@ -426,6 +426,12 @@ h1, h2, h3, h4, h5, h6 {
     .stream-column h2 {
         margin-top: 0;
     }
+
+    /* A second heading in the same column (Blog under Bio) is set off from the content above it
+       by the grid's own gap; only the first heading of a column sits flush at the top. */
+    .stream-column .stream-content + h2 {
+        margin-top: 2rem;
+    }
 }
 
 .stream-column h2 a {

@@ -34,8 +34,9 @@
                     {{- $appsPage := .Site.GetPage "/apps" -}}
                     <h2><a href="{{ $appsPage.RelPermalink }}">Apps »</a></h2>
                     <div class="stream-content">
-                        {{- $featuredApps := where (sort hugo.Data.apps "position") "featured" true -}}
-                        {{- range $index, $app := $featuredApps }}
+                        {{- /* Wide screens: up to 10 entries, apps first (by position), then update posts filling what is left. Narrow screens: the first 3 of them (the rest are .app-preview-desktop-only). */ -}}
+                        {{- $homeApps := first 10 (sort hugo.Data.apps "position") -}}
+                        {{- range $index, $app := $homeApps }}
                         {{- $appHref := "" }}
                         {{- $appExternal := false }}
                         {{- if $app.subsection }}
@@ -44,7 +45,7 @@
                         {{- $appHref = $app.app_site }}
                         {{- $appExternal = true }}
                         {{- end }}
-                        <article class="app-preview{{ if $appHref }} card-shadow{{ end }}{{ if gt $index 1 }} app-preview-desktop-only{{ end }}">
+                        <article class="app-preview{{ if $appHref }} card-shadow{{ end }}{{ if gt $index 2 }} app-preview-desktop-only{{ end }}">
                             {{- with $appHref }}
                             <a class="stretched-link" href="{{ . }}"{{ if $appExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $app.name }}"></a>
                             {{- end }}
@@ -73,9 +74,9 @@
                         {{- $appPosts := where .Site.RegularPages "Section" "in" (slice "ego-destroyer") }}
                         {{- $appPosts = where $appPosts "Type" "in" (slice "ego-destroyer") }}
                         {{- $appPosts = where $appPosts "Params.excludeFromRSS" "!=" true }}
-                        {{- $featuredCount := len $featuredApps -}}
-                        {{- range $index, $post := first 3 (sort $appPosts "Date" "desc") }}
-                        <article class="app-post-preview{{ if gt (add $index $featuredCount) 1 }} app-preview-desktop-only{{ end }}">
+                        {{- $appCount := len $homeApps -}}
+                        {{- range $index, $post := first (sub 10 $appCount) (sort $appPosts "Date" "desc") }}
+                        <article class="app-post-preview{{ if gt (add $index $appCount) 2 }} app-preview-desktop-only{{ end }}">
                             <h3><a href="{{ $post.RelPermalink }}">{{ $post.Title }} »</a></h3>
                             <p class="post-meta">{{ $post.Date.Format "Jan 2, 2006" }}</p>
                             {{- with $post.Summary }}
