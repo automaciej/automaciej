@@ -8,12 +8,12 @@
     <h1 class="visually-hidden">{{ .Site.Title }}</h1>
 
     <section class="streams">
-        <div class="container">
+        <div class="container container-wide">
             <div class="stream-columns">
                 <div class="stream-column music-stream">
                     {{- $musicPage := .Site.GetPage "/music" -}}
-                    <h2><a href="{{ $musicPage.RelPermalink }}">Music »</a></h2>
-                    <div class="stream-content">
+                    <h2><a class="link-plain link-plain-accent" href="{{ $musicPage.RelPermalink }}">Music »</a></h2>
+                    <div class="stream-content stream-cards">
                         {{- $musicProductions := sort (partial "release-pages.html" .) "Params.release_date" "desc" -}}
                         {{- range $index, $production := first 3 $musicProductions }}
                         {{- $extra := "" }}
@@ -32,8 +32,8 @@
 
                 <div class="stream-column apps-stream">
                     {{- $appsPage := .Site.GetPage "/apps" -}}
-                    <h2><a href="{{ $appsPage.RelPermalink }}">Apps »</a></h2>
-                    <div class="stream-content">
+                    <h2><a class="link-plain link-plain-accent" href="{{ $appsPage.RelPermalink }}">Apps »</a></h2>
+                    <div class="stream-content stream-cards">
                         {{- /* Wide screens: up to 10 entries, apps first (by position), then update posts filling what is left. Narrow screens: the first 3 of them (the rest are .app-preview-desktop-only). */ -}}
                         {{- $homeApps := first 10 (partial "apps-list.html" .) -}}
                         {{- range $index, $app := $homeApps }}
@@ -45,7 +45,7 @@
                         {{- $appHref = $app.app_site }}
                         {{- $appExternal = true }}
                         {{- end }}
-                        <article class="app-preview{{ if $appHref }} card-shadow{{ end }}{{ if gt $index 2 }} app-preview-desktop-only{{ end }}">
+                        <article class="app-preview card{{ if $appHref }} card-shadow{{ end }}{{ if gt $index 2 }} app-preview-desktop-only{{ end }}">
                             {{- with $appHref }}
                             <a class="stretched-link" href="{{ . }}"{{ if $appExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $app.name }}"></a>
                             {{- end }}
@@ -75,8 +75,8 @@
                         {{- $appPosts = where $appPosts "Params.excludeFromRSS" "!=" true }}
                         {{- $appCount := len $homeApps -}}
                         {{- range $index, $post := first (sub 10 $appCount) (sort $appPosts "Date" "desc") }}
-                        <article class="app-post-preview{{ if gt (add $index $appCount) 2 }} app-preview-desktop-only{{ end }}">
-                            <h3><a href="{{ $post.RelPermalink }}">{{ $post.Title }} »</a></h3>
+                        <article class="app-post-preview card{{ if gt (add $index $appCount) 2 }} app-preview-desktop-only{{ end }}">
+                            <h3><a class="link-plain link-plain-accent" href="{{ $post.RelPermalink }}">{{ $post.Title }} »</a></h3>
                             <p class="post-meta">{{ $post.Date.Format "Jan 2, 2006" }}</p>
                             {{- with $post.Summary }}
                             <div class="post-summary">{{ . }}</div>
@@ -94,8 +94,8 @@
 
                 <div class="stream-column bio-stream">
                     {{- $bioPage := .Site.GetPage "/bio" -}}
-                    <h2><a href="{{ $bioPage.RelPermalink }}">Bio »</a></h2>
-                    <div class="stream-content bio-summary">
+                    <h2><a class="link-plain link-plain-accent" href="{{ $bioPage.RelPermalink }}">Bio »</a></h2>
+                    <div class="stream-content bio-summary card">
                         {{- with $bioPage.Summary }}
                         {{ . }}
                         {{- end }}
@@ -105,11 +105,11 @@
                     </div>
 
                     {{- $blogPage := .Site.GetPage "/blog" -}}
-                    <h2><a href="{{ $blogPage.RelPermalink }}">Blog »</a></h2>
-                    <div class="stream-content">
+                    <h2><a class="link-plain link-plain-accent" href="{{ $blogPage.RelPermalink }}">Blog »</a></h2>
+                    <div class="stream-content stream-cards">
                         {{- range first 2 (sort $blogPage.RegularPages "Date" "desc") }}
-                        <article class="blog-post-preview">
-                            <h3><a href="{{ .RelPermalink }}">{{ .Title }}&nbsp;»</a></h3>
+                        <article class="blog-post-preview card">
+                            <h3><a class="link-plain link-plain-accent" href="{{ .RelPermalink }}">{{ .Title }}&nbsp;»</a></h3>
                             <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
                             {{- with .Summary }}
                             <div class="post-summary">{{ . }}</div>

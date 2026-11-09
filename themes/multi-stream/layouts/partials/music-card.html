@@ -1,6 +1,6 @@
 {{- $p := .page -}}
 {{- $hideProjectLink := .hide_project_link -}}
-<article class="music-card" id="{{ $p.Title | urlize }}">
+<article class="music-card card" id="{{ $p.Title | urlize }}">
     <div class="music-card-top">
         {{- with $p.Params.image }}
         {{- $img := $p.Resources.GetMatch . }}

@@ -82,7 +82,7 @@
     {{- if $performances }}
     <section>
       <h2 class="section-label">Performances</h2>
-      <ul>
+      <ul class="rule-list">
         {{- range $performances }}
         <li>
           {{ dateFormat "2 January 2006" .start_time }} –
@@ -206,7 +206,7 @@
 {{- end }}
 
 {{- define "project-card" -}}
-<a href="{{ .permalink }}" class="project-card card-row">
+<a href="{{ .permalink }}" class="project-card card card-row card-shadow link-plain">
   <div class="card-row-art">
     {{- with .thumb -}}
     <img src="{{ .RelPermalink }}" srcset="{{ $.srcset }}" sizes="120px" alt="" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">

@@ -23,11 +23,11 @@
             </div>
             {{- end }}
             {{- if $app.page_url }}
-            <div class="section-intro">
+            <div class="section-intro card">
                 {{ .Content }}
             </div>
             {{- else }}
-            <div class="section-intro">
+            <div class="section-intro card">
                 <p>{{ .Description }}</p>
             </div>
             {{- end }}
@@ -47,7 +47,7 @@
         <div class="list-container">
             <div class="posts-list">
             {{- range . }}
-            <article class="post-card">
+            <article class="post-card card-shadow">
                 <a href="{{ .RelPermalink }}" class="post-card-link">
                     <div class="post-card-content">
                         <div class="post-meta">

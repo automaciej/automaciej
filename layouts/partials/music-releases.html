@@ -14,8 +14,8 @@
 {{- $releases = sort $releases "Date" "desc" -}}
 {{- if $releases -}}
 <h2>Music Releases</h2>
-<section class="music-releases-card">
-    <ul class="music-releases-years">
+<section class="music-releases-card card">
+    <ul class="music-releases-years rule-list">
         {{- range $releases.GroupByDate "2006" }}
         <li class="music-releases-year">
             <span class="music-releases-year-label">{{ .Key }}</span>

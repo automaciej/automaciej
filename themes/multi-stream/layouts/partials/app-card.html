@@ -6,7 +6,7 @@
 {{- $cardHref = .app_site }}
 {{- $cardExternal = true }}
 {{- end }}
-<article class="app-card{{ if $cardHref }} card-shadow{{ end }}">
+<article class="app-card card{{ if $cardHref }} card-shadow{{ end }}">
     {{- with $cardHref }}
     <a class="stretched-link" href="{{ . }}"{{ if $cardExternal }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $.name }}"></a>
     {{- end }}

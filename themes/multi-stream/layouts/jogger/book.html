@@ -36,6 +36,17 @@
             page-break-after: always;
         }
 
+        .book-subtitle {
+            font-size: 0.6em;
+            color: #666;
+        }
+
+        .book-end {
+            text-align: center;
+            margin-top: 3em;
+            color: #666;
+        }
+
         .post-date {
             color: #666;
             font-style: italic;
@@ -134,7 +145,7 @@
     <div class="book-title">
         <h1>Jogger</h1>
         <p>{{ .Site.Title }}</p>
-        <p style="font-size: 0.6em; color: #666;">
+        <p class="book-subtitle">
             {{ .Site.Params.tagline }}<br>
             Generated {{ now.Format "January 2, 2006" }}
         </p>
@@ -153,7 +164,7 @@
     <hr>
     {{- end }}
 
-    <div style="text-align: center; margin-top: 3em; color: #666;">
+    <div class="book-end">
         <p>End of Jogger</p>
         <p>Total posts: {{ len $posts }}</p>
     </div>

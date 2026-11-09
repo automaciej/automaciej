@@ -779,6 +779,19 @@ class TestCssStructure(unittest.TestCase):
                 bad.append(f"{query}: {sel}")
         self.assertEqual(bad, [], "a breakpoint override is declared before its base rule and would lose to it")
 
+    def test_every_variable_used_is_defined(self):
+        """var(--secondary) and var(--muted-border-color) were never defined (Pico leftovers, 2026-11-09)."""
+        text = re.sub(r"/\*.*?\*/", "", self.text, flags=re.S)
+        defined = set(re.findall(r"(--[\w-]+)\s*:", text))
+        # --aura is set inline by service-aura markup (style="--aura: url(...)").
+        used = set(re.findall(r"var\((--[\w-]+)", text)) - {"--aura"}
+        self.assertEqual(sorted(used - defined), [], "var(--x) with no definition computes to nothing")
+
+    def test_only_the_canonical_breakpoints_are_used(self):
+        """Phones max-width: 767px, wider min-width: 768px; nothing else."""
+        widths = set(re.findall(r"\((?:min|max)-width:\s*([\w.]+)\)", self.text))
+        self.assertLessEqual(widths, {"767px", "768px"})
+
 
 class TestPresaveChip(unittest.TestCase):
     """A release with a pre-save link and not yet on a major platform gets a Presave chip on its card."""
@@ -954,7 +967,7 @@ class TestReleaseServiceIcons(unittest.TestCase):
                 self.assertGreater(wide, thin)
         css = next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
         dark = dark_theme_css(css)
-        self.assertRegex(dark, r"\.share-icon\s*\{[^}]*drop-shadow", "the share icons get the glow on the dark theme")
+        self.assertRegex(dark, r"\.share-icon\s*\{[^}]*(drop-shadow|var\(--glow\))", "the share icons get the glow on the dark theme")
         self.assertRegex(dark, r"\.share-icon-outline\s*\{[^}]*stroke:\s*#000")
         self.assertRegex(dark_theme_css(css, strip=True), r"\.share-icon-outline\s*\{[^}]*stroke:\s*transparent")
 
@@ -1108,7 +1121,7 @@ class TestServiceData(unittest.TestCase):
     def test_effects_are_dark_theme_only_and_follow_the_icon_shape(self):
         css = next((SITE.root / "css").glob("main.*.css")).read_text(encoding="utf-8")
         dark = dark_theme_css(css)
-        self.assertRegex(dark, r"\.service-icon-glow\s*\{[^}]*drop-shadow")
+        self.assertRegex(dark, r"\.service-icon-glow\s*\{[^}]*(drop-shadow|var\(--glow\))")
         self.assertRegex(dark, r"\.service-icon-outline\s*\{[^}]*drop-shadow")
         self.assertNotRegex(dark_theme_css(css, strip=True), r"\.service-icon-(glow|outline)\s*\{")
 

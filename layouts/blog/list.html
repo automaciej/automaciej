@@ -4,7 +4,7 @@
         <header class="section-header">
             <h1>{{ .Title }}</h1>
             {{- with .Content }}
-            <div class="section-intro">
+            <div class="section-intro card">
                 {{ . }}
             </div>
             {{- end }}
@@ -33,7 +33,7 @@
                         {{- $imageURL = $thumbnail.RelPermalink }}
                     {{- end }}
                 {{- end }}
-                <article class="post-card">
+                <article class="post-card card card-shadow-static">
                     {{- if $imageURL }}
                     <div class="post-card-image">
                         <a href="{{ $post.RelPermalink }}">

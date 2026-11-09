@@ -13,7 +13,7 @@
             {{- range .Pages.ByTitle }}
             {{- $examples := sort .Pages "Params.release_date" "desc" | first 5 }}
             <li>
-                <a class="genre-card" href="{{ .RelPermalink }}">
+                <a class="genre-card card card-shadow link-plain" href="{{ .RelPermalink }}">
                     <div class="genre-card-header">
                         <span class="genre-card-name">{{ .Title }}</span>
                         <span class="genre-card-count">{{ len .Pages }}</span>

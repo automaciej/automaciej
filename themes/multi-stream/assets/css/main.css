@@ -8,9 +8,11 @@
       5. Bio, social and contact     11. Genres
       6. Blog and Jogger             12. Print
       7. Shortcodes                  13. Utilities
-   A component's responsive behaviour lives directly under its base rules, in
-   this order: narrow (max-width: 767px), tablet (768-1023px), wide (min-width:
-   1024px). There is no separate "mobile styles" section; see "CSS Architecture"
+   A component's responsive behaviour lives directly under its base rules: the
+   base is the phone layout, then min-width: 768px for wider screens; a few
+   components still declare the desktop look first and patch phones in a
+   max-width: 767px block. The only widths used are 767px / 768px (enforced by
+   the site expectations test). There is no separate "mobile styles" section; see "CSS Architecture"
    in Docs/2025-11-12-multi-stream-theme.md. */
 
 /* ==========================================================================
@@ -18,8 +20,43 @@
    ========================================================================== */
 
 :root {
+    color-scheme: light dark; /* form controls, scrollbars and the canvas follow the theme */
+
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-serif: Charter, "Sitka Text", Georgia, "Palatino Linotype", "Book Antiqua", serif;
+
+    /* Type scale. Anything else in the file is a one-off (icons, headings with their own role). */
+    --text-xs: 0.8rem;
+    --text-sm: 0.9rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.75rem;
+
+    /* Shape. */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-card: 12px;
+    --radius-pill: 999px;
+
+    /* Spacing. --gutter is the space between content and the screen edge, and between cards on
+       phones. The values below flip at 768px (see the media block under this one). */
+    --gutter: 0.25rem;
+    --card-pad: 1.25rem;
+    --card-pad-lg: 1.5rem;
+    --card-gap: var(--gutter);    /* between cards in a list: --gutter on phones, 1rem from 768px */
+    --card-gap-lg: var(--gutter); /* between cards in a roomy list: --gutter on phones, 2rem from 768px */
+    --page-pad: 0;                /* the container's side padding: none on phones, 20px from 768px */
+
+    --ease: 0.2s;
+    --tracking-caps: 0.05em; /* letter-spacing of every small uppercase label */
+}
+
+@media (min-width: 768px) {
+    :root {
+        --card-gap: 1rem;
+        --card-gap-lg: 2rem;
+        --page-pad: 20px;
+    }
 }
 
 /* Light mode (default) */
@@ -33,10 +70,14 @@
     --text-tertiary: #a1a1a6;
     --border-color: #d2d2d7;
     --accent: #0071e3;
-    --gutter: 0.25rem; /* the space between content and the screen edge, and between cards on phones */
+    --on-accent: #ffffff; /* text on an accent or success background */
+    --success: #28a745;
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --tint-hover: color-mix(in srgb, var(--text-primary) 8%, transparent);
+    --tint-accent: color-mix(in srgb, var(--accent) 12%, transparent);
 }
 
-/* Dark mode */
+/* Dark mode (the dark-only effects elsewhere in the file are marked "Dark theme:") */
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -48,6 +89,7 @@
         --text-tertiary: #6e6e73;
         --border-color: #424245;
         --accent: #2997ff;
+        --glow: drop-shadow(0 0 1px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.25)); /* the light halo of dark logos; only used in dark blocks */
     }
 }
 
@@ -78,13 +120,14 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 var(--page-pad);
 }
 
-@media (min-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
+/* Pages (and the header, footer and home streams) that run the full width of the window
+   instead of the 1200px cap. */
+
+.container-wide {
+    max-width: none;
 }
 
 /* ==========================================================================
@@ -110,7 +153,7 @@ body {
 }
 
 .site-title {
-    font-size: 1.25rem;
+    font-size: var(--text-xl);
     font-weight: 600;
     color: var(--text-primary);
     text-decoration: none;
@@ -169,7 +212,7 @@ body {
     width: 24px;
     height: 2px;
     background: var(--text-primary);
-    transition: all 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 /* Each entry gets a background tint on hover, over the header's whole height (from the top of
@@ -190,13 +233,13 @@ body {
     display: block;
     margin: calc(-1 * var(--header-pad)) 0;
     padding: var(--header-pad) 1rem;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     color: var(--text-secondary);
     text-decoration: none;
 }
 
 .nav-menu a:hover {
-    background: color-mix(in srgb, var(--text-primary) 8%, transparent);
+    background: var(--tint-hover);
 }
 
 /* Narrow screens: shorter header, and the nav collapses into the hamburger menu. */
@@ -218,7 +261,7 @@ body {
         right: 0;
         background: var(--bg-nav);
         border: 1px solid var(--border-color);
-        border-radius: 8px;
+        border-radius: var(--radius-md);
         padding: 1rem;
         margin-top: 0.5rem;
         flex-direction: column;
@@ -272,7 +315,8 @@ main {
     color: var(--text-secondary);
 }
 
-/* The header and footer are not capped at the container's 1200px: the navigation sits at the
+/* The header and footer are not capped at the container's 1200px (.container-wide in their
+   templates): the navigation sits at the
    window's edges and the footer spans the whole width, on any screen. They also cancel the body's
    --gutter side padding (negative margins), so the bars, with their lines and highlights, run
    edge to edge; the header's content is then padded by the gutter again, so its text stays where
@@ -283,19 +327,8 @@ main {
     margin: 0 calc(-1 * var(--gutter));
 }
 
-.site-header > .container,
-.site-footer > .container {
-    max-width: none;
-}
-
 .site-header > .container {
-    padding: 0 var(--gutter);
-}
-
-@media (min-width: 768px) {
-    .site-header > .container {
-        padding: 0 calc(20px + var(--gutter));
-    }
+    padding: 0 calc(var(--page-pad) + var(--gutter));
 }
 
 /* Links */
@@ -309,24 +342,75 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Headings */
+/* A link that looks like text: primary colour, never underlined. Add .link-plain-accent to
+   turn accent-coloured on hover. */
+
+.link-plain,
+.link-plain:hover {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.link-plain-accent:hover {
+    color: var(--accent);
+}
+
+/* Headings. Every heading carries a top margin of 1rem; a component that starts with a heading
+   (a card, a column) zeroes it on its own rule. */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-sans);
     line-height: 1.2;
-    margin-bottom: 0.5rem; /* Reduced by half */
+    margin-bottom: 0.5rem;
     margin-top: 1rem;
 }
 
-/* Card title: one heading level below a stream's h2, used by every
-   preview card (music, app, blog, post-card) */
+/* Card title: one heading level below a stream's h2, used by the app, blog and post cards
+   (the music and project cards use .card-row-title instead). */
 
-.music-preview h3,
 .app-preview h3,
+.app-post-preview h3,
 .blog-post-preview h3,
 .post-card-content h3 {
-    font-size: 1.25rem;
-    margin: 0 0 0 0;
+    font-size: var(--text-xl);
+    margin: 0;
+}
+
+/* The card primitive: the surface every card shares. A component adds only what is specific to
+   it (layout, a different padding, a shadow with .card-shadow). */
+
+.card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-card);
+    padding: var(--card-pad);
+}
+
+/* A shadow, for cards that are not whole-card links; .card-shadow adds the hover ring of the
+   whole-card links (see "Card chrome" below). */
+
+.card-shadow,
+.card-shadow-static {
+    box-shadow: var(--shadow-card);
+    transition: box-shadow var(--ease);
+}
+
+/* The ring only exists on wide screens whose pointer can hover. On phones (and on touch devices
+   generally, where a tap leaves :hover stuck on) a card gets no hover affordance at all. */
+
+@media (min-width: 768px) and (hover: hover) {
+    .card-shadow:hover {
+        box-shadow: 0 0 0 2px var(--text-secondary);
+    }
+}
+
+/* A list whose items are separated by a line (not after the last one). */
+
+.rule-list > * {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rule-list > :last-child {
+    border-bottom: none;
 }
 
 /* Card row: a card laid out as a row, with the artwork flush to its left, top and bottom
@@ -365,7 +449,7 @@ h1, h2, h3, h4, h5, h6 {
     /* All four corners: the image is flush with the card's top-left (the card's
        overflow clip matches), but when the text column is taller than the
        image (e.g. the service-logo row) its bottom-left corner is exposed. */
-    border-radius: 12px;
+    border-radius: var(--radius-card);
 }
 
 .card-row-body {
@@ -384,12 +468,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-row .card-row-title {
-    font-size: 1.1rem;
+    font-size: var(--text-lg);
     line-height: 1.2;
 }
 
 .card-row .card-row-meta {
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     line-height: 1.6;
 }
 
@@ -403,13 +487,7 @@ h1, h2, h3, h4, h5, h6 {
    Phones: the space under the header's line is --gutter, the same as to the screen edge. */
 
 .streams {
-    padding-top: var(--gutter);
-}
-
-@media (min-width: 768px) {
-    .streams {
-        padding-top: 20px;
-    }
+    padding-top: max(var(--page-pad), var(--gutter)); /* --gutter on phones (--page-pad is 0 there), 20px from 768px */
 }
 
 /* Stream columns */
@@ -417,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
 .stream-columns {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--gutter); /* phones: the streams stack with the same space as to the screen edge; wider screens set their own gap below */
+    gap: var(--card-gap-lg);
 }
 
 /* From 768px (the phone/wider cutoff) the streams sit in a grid that fits as many equal-width
@@ -429,17 +507,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
     .stream-columns {
         grid-template-columns: repeat(auto-fill, minmax(max(300px, (100% - 2 * 2rem) / 3), 1fr));
-        gap: 2rem;
         align-items: start;
     }
 }
 
-/* The homepage streams are not capped at the container's 1200px either: the grid takes the
-   whole width (and stays at three columns on ultrawide screens). */
-
-.streams > .container {
-    max-width: none;
-}
+/* The homepage streams are not capped at the container's 1200px either (the .container-wide in
+   index.html): the grid takes the whole width and stays at three columns on ultrawide screens. */
 
 .stream-column h2 {
     margin-bottom: 1.5rem;
@@ -457,15 +530,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.stream-column h2 a {
-    color: var(--text-primary);
-    text-decoration: none;
-}
-
-.stream-column h2 a:hover {
-    color: var(--accent);
-}
-
 @media (max-width: 767px) {
     .music-stream h2,
     .apps-stream h2 {
@@ -473,62 +537,29 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.stream-content {
-    /* Removed background - individual items will have their own containers */
-}
-
 /* Spacing between cards lives on the list container (gap), not on
    each card (margin-bottom). A card's own margin can't tell whether
-   it's followed by a sibling, so reusing .music-preview/.app-preview
-   in a longer list (e.g. /music/) needs a separate reset for every
-   width the list can appear at — gap doesn't have that problem.
-   Scoped to music/apps only: bio-stream's .stream-content holds
-   prose and .blog-post-preview, which have their own spacing and
-   would double up if this applied there too. */
+   it's followed by a sibling, so reusing a card in a longer list
+   (e.g. /music/) would need a separate reset for every width the list
+   can appear at — gap doesn't have that problem. .stream-cards is a
+   column of cards (music, apps, blog); the Bio column's .stream-content
+   holds prose and is not one. */
 
-.music-stream .stream-content,
-.apps-stream .stream-content {
+.stream-cards {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-
-/* Phones: the same space between cards as to the screen edge (--gutter). */
-
-@media (max-width: 767px) {
-    .music-stream .stream-content,
-    .apps-stream .stream-content {
-        gap: var(--gutter);
-    }
+    gap: var(--card-gap);
 }
 
 /* Music preview on homepage */
 
 .music-preview {
     position: relative;
-    background: var(--bg-secondary);
-    border-radius: 12px;
-}
-
-.music-preview h3 a {
-    color: var(--text-primary);
-    text-decoration: none;
-}
-
-.music-preview h3 a:hover {
-    color: var(--accent);
 }
 
 /* Card text is three lines at every width: title / artist / genres •
    month. Each line stays on one line (ellipsis) so long collaborator
-   lists can't grow the card. */
-
-.music-preview-artist,
-.music-preview-details {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+   lists can't grow the card; .card-row-meta (section 3) does the clipping. */
 
 .music-preview-artist {
     font-weight: 500;
@@ -565,7 +596,7 @@ h1, h2, h3, h4, h5, h6 {
 .music-preview-services img {
     width: 20px;
     height: 20px;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
 }
 
 /* Logos that are dark against a dark page (data/services/<key>.toml `effect`) get a light edge
@@ -604,7 +635,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .service-icon-glow {
-        filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.25));
+        filter: var(--glow);
     }
 }
 
@@ -614,9 +645,9 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     padding: 0.05rem 0.6rem;
     border: 1px solid var(--accent);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     color: var(--accent);
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     font-weight: 600;
     line-height: 1.5;
     text-decoration: none;
@@ -653,21 +684,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* The role label on a card ("Original" / "Production" / "Engineering"): a coloured strip on the
-   card's edge. Hidden by default (tablets); phones put it, rotated, at the right edge and desktop
-   at the bottom, in the blocks below. Original is solid, the other two share one tint. */
+   card's edge. Hidden by default; phones put it, rotated, at the right edge and wider screens
+   at the bottom of the stacked card (music grids and homepage), in the blocks below. Original is
+   solid, the other two share one tint. */
 
 .music-preview-role {
     display: none;
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     font-weight: 600;
-    letter-spacing: 0.04em;
+    letter-spacing: var(--tracking-caps);
     text-transform: uppercase;
     color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    background: var(--tint-accent);
 }
 
 .music-preview-role-original {
-    color: #fff;
+    color: var(--on-accent);
     background: var(--accent);
 }
 
@@ -682,7 +714,7 @@ h1, h2, h3, h4, h5, h6 {
         inset: 0 auto 0 0;
         width: 120px;
         max-height: 120px;
-        border-radius: 12px;
+        border-radius: var(--radius-card);
     }
 
     /* Half the desktop gap between the last text line and the service logos.
@@ -720,15 +752,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* From 768px up the card is not a row any more (tablet: thumbnail beside the text; desktop:
-   image on top): undo what the shared .card-row sets, then the two blocks below lay it out. */
+/* From 768px up the card is stacked, not a row (image on top, text below, role strip at the
+   bottom): the card is the row layout of .card-row on phones only, so what that sets is undone
+   here (and only what it sets: the card's flex alignment and gap do nothing once it is a block).
+   Keeping one set of row rules for both this card and .project-card (a row at every width) costs
+   this one block; a phone-only copy of the row rules would cost as many lines. */
 
 @media (min-width: 768px) {
     .music-preview {
         display: block;
-        align-items: normal;
-        gap: normal;
-        padding: 1.25rem;
+        padding: var(--card-pad);
         overflow: visible;
     }
 
@@ -738,7 +771,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .music-preview-image img,
     .music-preview-image .waveform-placeholder {
-        flex-shrink: 1;
         margin: 0;
         object-fit: fill;
     }
@@ -748,14 +780,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .music-preview .card-row-title {
-        font-size: 1.25rem;
+        font-size: var(--text-xl);
         white-space: normal;
         overflow: visible;
         text-overflow: clip;
-    }
-
-    .music-preview .card-row-meta {
-        font-size: 0.9rem;
     }
 
     .music-preview .music-preview-details {
@@ -768,7 +796,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
     :is(.music-productions, .stream-columns) .music-preview-image {
-        margin: -1.25rem -1.25rem 1rem;
+        margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 1rem;
     }
 
     :is(.music-productions, .stream-columns) .music-preview-image img,
@@ -776,9 +804,9 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
         width: 100%;
         height: auto;
-        border-radius: 12px 12px 0 0;
+        border-radius: var(--radius-card) var(--radius-card) 0 0;
         cursor: pointer;
-        transition: opacity 0.2s;
+        transition: opacity var(--ease);
     }
 
     :is(.music-productions, .stream-columns) .music-preview-image img:hover,
@@ -787,15 +815,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     :is(.music-productions, .stream-columns) .unreleased-overlay {
-        border-radius: 12px 12px 0 0;
+        border-radius: var(--radius-card) var(--radius-card) 0 0;
     }
 
     /* Desktop: a strip flush with the card's bottom edge. */
     :is(.music-productions, .stream-columns) .music-preview-role {
         display: block;
-        margin: 1rem -1.25rem -1.25rem;
-        padding: 0.45rem 1.25rem;
-        border-radius: 0 0 12px 12px;
+        margin: 1rem calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad));
+        padding: 0.45rem var(--card-pad);
+        border-radius: 0 0 var(--radius-card) var(--radius-card);
     }
 }
 
@@ -805,18 +833,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Apps preview on homepage */
+/* Apps preview on homepage (the .app-preview app cards and the .app-post-preview update posts
+   beside them; both are .card in the markup). */
 
 .app-preview {
     position: relative;
-    background: var(--bg-secondary);
-    padding: 1.25rem;
-    border-radius: 12px;
-}
-
-.app-preview h3 a {
-    color: var(--text-primary);
-    text-decoration: none;
 }
 
 .app-preview .app-header {
@@ -832,46 +853,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
-/* Blog preview on homepage */
-
-.blog-post-preview {
-    background: var(--bg-secondary);
-    padding: 1.25rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-}
-
-.blog-post-preview:last-of-type {
-    margin-bottom: 1rem;
-}
-
-/* Phones: the same space between blog cards as to the screen edge (--gutter). */
-
-@media (max-width: 767px) {
-    .blog-post-preview,
-    .blog-post-preview:last-of-type {
-        margin-bottom: var(--gutter);
-    }
-}
-
-.blog-post-preview h3 a {
-    color: var(--text-primary);
-    text-decoration: none;
-}
-
-.app-preview h3 a:hover {
-    color: var(--text-primary);
-    text-decoration: underline;
-}
-
-.app-preview .app-type {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin: 0 0 0.75rem 0;
-}
+/* Blog preview on homepage: a .card in a .stream-cards column, so it needs no rule of its own
+   beyond its title (see "Card title"). */
 
 .app-preview .app-description {
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
     line-height: 1.5;
     margin: 0 0 0.75rem 0;
     color: var(--text-primary);
@@ -883,7 +869,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Default: hide mobile link, show desktop link */
+/* Default: hide mobile link, show desktop link. The phone block comes later with the same
+   specificity, so source order alone makes it win. */
 
 .view-all-link-mobile {
     display: none;
@@ -895,11 +882,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767px) {
     .view-all-link-mobile {
-        display: inline-block !important;
+        display: inline-block;
     }
 
     .view-all-link-desktop {
-        display: none !important;
+        display: none;
     }
 }
 
@@ -924,14 +911,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Bio stream content */
 
-.bio-stream .bio-summary {
-    background: var(--bg-secondary);
-    padding: 1.25rem;
-    border-radius: 12px;
-}
-
 .bio-stream .bio-summary h2 {
-    font-size: 1.25rem;
+    font-size: var(--text-xl);
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
 }
@@ -944,17 +925,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
-.stream-content ul,
-.stream-content ol,
-main ul,
-main ol
-{
-    margin: 0;
-    padding-left: 1.5rem;
-}
+/* Lists in running text get an indent; every other list (navigation, grids, chips) is a plain
+   element with the reset's zero padding. :where() keeps the container out of the specificity,
+   so a component's own list rule always wins. */
 
-.stream-content li {
-    margin-bottom: 0;
+:where(.post-content, .section-intro, .stream-content, .music-description, .project-content,
+       .music-footer, .track-credits, .reminder-body) :is(ul, ol) {
+    padding-left: 1.5rem;
 }
 
 .bio-stream .bio-summary hr {
@@ -975,20 +952,14 @@ main ol
     justify-content: flex-start;
     gap: 1rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
     flex-wrap: wrap;
-}
-
-.social li {
-    margin: 0;
 }
 
 .social a {
     font-size: 1.5rem;
     color: var(--text-secondary);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color var(--ease);
 }
 
 .social a:hover {
@@ -1007,7 +978,7 @@ main ol
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
     font-weight: 600;
 }
 
@@ -1015,7 +986,7 @@ main ol
 .social a.text-icon .service-icon {
     width: 1.4em;
     height: 1.4em;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
 }
 
 /* Contact section on homepage */
@@ -1049,7 +1020,7 @@ main ol
     max-width: 720px;
     margin: 0 auto;
     font-family: var(--font-serif);
-    font-size: large;
+    font-size: var(--text-lg);
 }
 
 /* Ensure all embedded media within post content are responsive */
@@ -1064,7 +1035,7 @@ main ol
 }
 
 .post-content img {
-    border-radius: 12px;
+    border-radius: var(--radius-card);
     margin: 2rem 0;
 }
 
@@ -1079,8 +1050,8 @@ main ol
 .post-summary blockquote {
     position: relative;
     background-color: var(--bg-secondary);
-    border-radius: 8px;
-    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    padding: var(--card-pad-lg);
     margin: 1.5rem 0;
     font-style: italic;
 }
@@ -1104,16 +1075,6 @@ main ol
 .section-intro blockquote p,
 .post-summary blockquote p {
     text-indent: 0;
-    margin-bottom: 0;
-}
-
-.post-content ul,
-.post-content ol {
-    margin: 0;
-    padding-left: 1.5rem;
-}
-
-.post-content li {
     margin-bottom: 0;
 }
 
@@ -1181,7 +1142,7 @@ main ol
     aspect-ratio: 3 / 1;
     margin: 0 auto 2rem auto;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: var(--radius-card);
 }
 
 .post-illustration img {
@@ -1201,7 +1162,7 @@ main ol
 
 .post-meta {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
 }
 
 .page-updated {
@@ -1220,75 +1181,36 @@ main ol
 .posts-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: var(--card-gap); /* the grid's gap is the whole spacing: the cards have no margin of their own */
 }
 
-/* Phones: the space between cards is --gutter, the same as to the screen edge. The grid's gap is
-   the whole of it, so the card's own bottom margin is dropped here. */
-
-@media (max-width: 767px) {
-    .posts-list {
-        gap: var(--gutter);
-    }
-
-    .posts-list .post-card {
-        margin-bottom: 0;
-    }
-}
-
-/* Post cards */
+/* Post cards: .post-card is the layout (artwork or text, side by side). The list pages
+   (.posts-list: sections, app updates) show a card only from 768px up and a plain row on phones;
+   the blog list (.blog-posts-list) is .card at every width. Both are rules of their own, so
+   neither undoes the other. The surface comes from .card / .card-shadow / .card-shadow-static in
+   the markup. */
 
 .post-card {
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    margin-bottom: 1rem;
+    border-radius: var(--radius-card);
     overflow: hidden; /* To contain child elements with border-radius */
     display: flex;
-    gap: 1.25rem;
-    padding: 1.25rem;
+    gap: var(--card-pad);
     text-decoration: none;
     color: inherit;
     height: 100%;
 }
 
-/* Card styling shared by every whole-card link (Jogger/blog post
-   cards, homepage music/app cards, apps list cards): shadow by
-   default, bordered highlight on hover. Named for what it does
-   (drop a shadow, ring on hover), not for which card first used it —
-   .card-shadow is applied directly by music/app preview cards; post
-   and genre cards bake the same rule in under their own name. */
-
-.post-card,
-.card-shadow,
-.genre-card,
-.project-card {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: box-shadow 0.2s;
-}
-
-/* Whole-card links never underline their text on hover. */
-
-.genre-card:hover,
-.project-card:hover {
-    text-decoration: none;
-}
-
-/* The ring only exists on wide screens whose pointer can hover. On phones (and on touch devices
-   generally, where a tap leaves :hover stuck on) a card gets no hover affordance at all. */
-
-@media (min-width: 768px) and (hover: hover) {
-    .post-card:hover,
-    .card-shadow:hover,
-    .genre-card:hover,
-    .project-card:hover {
-        box-shadow: 0 0 0 2px var(--text-secondary);
+@media (min-width: 768px) {
+    .posts-list .post-card {
+        background: var(--bg-secondary);
+        padding: var(--card-pad);
     }
 }
 
 .post-card-image {
     flex-shrink: 0;
-    width: 200px; /* Adjust as needed */
-    border-radius: 8px;
+    width: 200px;
+    border-radius: var(--radius-md);
     overflow: hidden;
 }
 
@@ -1299,16 +1221,18 @@ main ol
     display: block;
 }
 
+/* Blog post cards aren't whole-card links (title/image/read-more are separately clickable), so
+   they use .card-shadow-static, which has no hover ring. The list's rhythm is the card's bottom
+   margin: the year headings share the list with the cards, so a gap on the list would also
+   separate a heading from its first card. */
+
+.blog-posts-list .post-card {
+    margin-bottom: var(--card-gap);
+}
+
 .blog-posts-list .post-card-content {
     display: flex;
     flex-direction: column;
-}
-
-/* Blog post cards aren't whole-card links (title/image/read-more are
-   separately clickable), so don't show the whole-card hover affordance */
-
-.blog-posts-list .post-card:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .blog-posts-list .read-more {
@@ -1325,7 +1249,7 @@ main ol
 }
 
 .post-card-content .post-meta {
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     color: var(--text-secondary);
     margin-bottom: 0.2rem;
 }
@@ -1335,47 +1259,22 @@ main ol
 }
 
 @media (max-width: 767px) {
-    .post-card {
-        background: none;
-        margin-bottom: 0; /* no margins on narrow screens */
-        padding: 0;
-    }
-
     .post-card .post-meta {
         margin-bottom: 0;
     }
 
     /* Narrow screens drop the description. */
     .post-card-content .post-description {
-        /* Don't display the description on narrow screens. */
         display: none;
     }
 
-    /* Blog list cards keep the full card look (not whole-card links). */
     .blog-posts-list .post-card-image {
         width: 100%;
-        max-height: 200px; /* Adjust as needed */
-    }
-
-    .blog-posts-list img {
+        max-height: 200px;
     }
 
     .blog-posts-list .post-card {
         flex-direction: column;
-        padding: 1.25rem; /* Restore padding for jogger cards */
-        background: var(--bg-secondary); /* Restore background for jogger cards */
-        border-radius: 12px; /* Restore border-radius for jogger cards */
-        margin-bottom: var(--gutter); /* Restore margin for jogger cards: the same as to the screen edge */
-        border-bottom: none; /* Remove the generic border */
-    }
-
-    .blog-posts-list .post-card:hover {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* no whole-card hover affordance; card isn't whole-card clickable */
-    }
-
-    .blog-posts-list .post-card .post-meta,
-    .blog-posts-list .post-card .post-description {
-        display: block; /* Restore meta and description for jogger cards */
     }
 }
 
@@ -1392,6 +1291,10 @@ main ol
     margin: 2rem 0;
 }
 
+.reminders-title {
+    text-align: center;
+}
+
 @media (max-width: 767px) {
     .reminders-container {
         flex-direction: column;
@@ -1401,14 +1304,14 @@ main ol
 .reminder-card {
     flex: 1;
     background-color: var(--bg-secondary);
-    border-radius: 12px;
+    border-radius: var(--radius-card);
     padding: 1rem;
     border: 1px solid var(--border-color);
 }
 
 .reminder-title {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: var(--text-lg);
     color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
@@ -1433,9 +1336,18 @@ main ol
 }
 
 .reminder-card.priority-task {
-    max-width: 300px; /* Or adjust as needed */
+    max-width: 300px;
     border: 2px solid var(--accent);
-    box-shadow: 0 4px 12px rgba(0, 113, 227, 0.2);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+/* A shortcode used with a bad argument: a visible error on the page rather than silent output. */
+
+.shortcode-error {
+    padding: 1em;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-md);
+    background: var(--tint-accent);
 }
 
 /* Separators that used to be <hr> elements: a border on the item, not a rule element. */
@@ -1458,18 +1370,18 @@ main ol
    ========================================================================== */
 
 .testflight-banner {
-    background: #28A745;
-    border-radius: 12px;
-    padding: 1.5rem;
+    background: var(--success);
+    border-radius: var(--radius-card);
+    padding: var(--card-pad-lg);
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
 .testflight-banner a {
-    color: #ffffff;
+    color: var(--on-accent);
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: var(--text-xl);
     font-weight: 600;
     display: block;
 }
@@ -1485,14 +1397,14 @@ main ol
 .apps-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: var(--card-gap-lg);
     margin-top: 2rem;
 }
 
 /* From 768px (the phone/wider cutoff) as many equal-width columns as fit, with cards at least
    340px wide (two columns at 768px, as before) and no maximum number of columns: the page is
-   not capped at the container's 1200px either (auto-fill keeps the tracks equal when there are
-   few cards). Below 768px it is the single-column list. */
+   not capped at the container's 1200px either (the .container-wide in apps.html; auto-fill keeps
+   the tracks equal when there are few cards). Below 768px it is the single-column list. */
 
 @media (min-width: 768px) {
     .apps-list {
@@ -1500,35 +1412,14 @@ main ol
     }
 }
 
-.list-page-wide > .container {
-    max-width: none;
-}
-
-/* Phones: the space between cards is --gutter, the same as to the screen edge. */
-
-@media (max-width: 767px) {
-    .apps-list {
-        gap: var(--gutter);
-    }
-}
-
 .app-card {
     position: relative;
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    padding: 1.5rem;
 }
 
 .stretched-link {
     position: absolute;
     inset: 0;
     z-index: 1;
-}
-
-.app-card .app-download-banner,
-.app-card .app-download-link {
-    position: relative;
-    z-index: 2;
 }
 
 .app-card-header {
@@ -1553,47 +1444,6 @@ main ol
     margin: 0 0 1rem;
 }
 
-.app-card .app-download-banner {
-    margin-top: 1rem;
-}
-
-@media (max-width: 767px) {
-    .app-card {
-        padding: 1.25rem;
-    }
-}
-
-.app-download-banner {
-    background: #28A745;
-    border-radius: 8px;
-    padding: 0.75rem;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.app-download-banner a {
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.375rem;
-}
-
-.app-download-banner a:hover {
-    opacity: 0.9;
-}
-
-.app-download-banner .download-text {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-.app-download-banner .download-caption {
-    font-size: 1rem;
-    font-weight: 400;
-    opacity: 0.9;
-}
-
 /* ==========================================================================
    9. SHARED PAGE FURNITURE
    ========================================================================== */
@@ -1609,12 +1459,9 @@ main ol
 }
 
 .section-intro {
-    background: var(--bg-secondary);
-    padding: 1.25rem;
-    border-radius: 12px;
     margin-bottom: 2rem;
     font-family: var(--font-serif);
-    font-size: 1.125rem;
+    font-size: var(--text-lg);
     line-height: 1.7;
 }
 
@@ -1629,7 +1476,6 @@ main ol
 .section-intro ul,
 .section-intro ol {
     margin: 0 0 1rem 0;
-    padding-left: 1.5rem;
 }
 
 .section-intro li {
@@ -1637,7 +1483,7 @@ main ol
 }
 
 .section-description {
-    font-size: 1.125rem;
+    font-size: var(--text-lg);
     color: var(--text-secondary);
     margin-top: 1rem;
 }
@@ -1671,22 +1517,16 @@ main ol
 .music-productions {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--card-gap-lg); /* --gutter on phones: the same as the space between a card and the screen edge */
     margin: 0 auto;
 }
 
-/* Phones: the space between cards is the same as the space between a card and the edge of the
-   screen. Both are --gutter: the body's side padding (the container adds none below 768px). */
-
-@media (max-width: 767px) {
-    .music-productions {
-        gap: var(--gutter);
-    }
-}
-
 /* From 768px (the one phone/wider cutoff) the cards sit in a grid that fits as many columns as
-   have room, 2 to 4 (auto-fill, so the columns stay equal width even with few cards): a card is at least 260px wide, and the max() keeps the count from going
-   past four however wide the page gets. Below 768px it stays the single-column phone list. */
+   have room, 2 to 4 (auto-fill, so the columns stay equal width even with few cards): a card is
+   at least 260px wide, and the max() keeps the count from going past four however wide the page
+   gets. Below 768px it stays the single-column phone list. The `sizes` attribute in
+   music-preview-card.html mirrors this arithmetic (260px minimum, 2rem gaps, 20px container
+   padding); change them together. */
 
 @media (min-width: 768px) {
     .music-productions {
@@ -1696,17 +1536,11 @@ main ol
     }
 }
 
-/* /music/ only: the page is not capped at the container's 1200px, so on ultrawide screens
-   the grid keeps taking the space (and stays at four columns). */
-
-.music-page-wide > .container {
-    max-width: none;
-}
+/* /music/ only: the page is not capped at the container's 1200px (the .container-wide in
+   music/list.html), so on ultrawide screens the grid keeps taking the space (and stays at four
+   columns). */
 
 .music-card {
-    background: var(--bg-secondary);
-    padding: 2rem;
-    border-radius: 12px;
     break-inside: avoid;
 }
 
@@ -1725,7 +1559,7 @@ main ol
     width: auto;
     height: 6em;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     display: block;
 }
 
@@ -1734,14 +1568,14 @@ main ol
 }
 
 .music-header h2 {
-    font-size: 1.75rem;
+    font-size: var(--text-2xl);
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
 .music-meta {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
     margin-bottom: 1rem;
 }
 
@@ -1759,18 +1593,12 @@ main ol
     text-decoration: none;
 }
 
-@media (max-width: 767px) {
-    .music-card {
-        padding: 1.25rem 1rem;
-    }
-}
-
 .music-description {
     margin: 1rem 0;
 }
 
 /* Cover layout (release and project pages): header, cover image and body. Stacked in that
-   order on narrow screens; from 1024px the cover sits in a right-hand column beside the
+   order on narrow screens; from 768px the cover sits in a right-hand column beside the
    header and body. Markup: .cover-layout > .cover-layout-header + .cover-layout-cover +
    .cover-layout-body. A page without a cover omits the .cover-layout class (no empty column). */
 
@@ -1799,7 +1627,7 @@ main ol
     align-items: center;
     column-gap: 0.75rem;
     row-gap: 0.5rem;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     margin-bottom: 0.5rem;
 }
 
@@ -1861,7 +1689,7 @@ main ol
 
 @media (prefers-color-scheme: dark) {
     .music-quick-links .share-icon {
-        filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.25));
+        filter: var(--glow);
     }
 
     .share-icon-outline {
@@ -1895,9 +1723,22 @@ main ol
 }
 
 .music-release-header h1 {
-    font-size: 1.75rem;
+    font-size: var(--text-2xl);
     margin-top: 0;
     margin-bottom: 0.5rem;
+}
+
+/* The solid accent pill: the release page's button and the "Listen on ..." links. Their size
+   and layout are in the rules of each below. */
+
+.release-button,
+.streaming-link a,
+.listen-links a {
+    background: var(--accent);
+    color: var(--on-accent);
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 /* The one release button in the header: "Listen now", or "Pre-save" while .is-unreleased is on the
@@ -1907,12 +1748,7 @@ main ol
     display: inline-block;
     margin: 0.25rem 0 0.5rem;
     padding: 0.7rem 1.75rem;
-    background: var(--accent);
-    color: #ffffff;
-    font-size: 1.05rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 999px;
+    font-size: var(--text-lg);
 }
 
 .release-button:hover {
@@ -1971,7 +1807,7 @@ main ol
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
 }
 
 .cover-layout-body {
@@ -1990,7 +1826,7 @@ main ol
     color: inherit;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .cover-layout {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -2012,13 +1848,12 @@ main ol
 
 .music-credits {
     margin: 1rem 0;
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
 }
 
 .music-credits ul {
     list-style: none;
     margin: 0.5rem 0 0 0;
-    padding: 0;
 }
 
 .music-credits li {
@@ -2032,7 +1867,7 @@ main ol
 
 .embed iframe {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
 }
 
 .streaming-link a,
@@ -2041,12 +1876,7 @@ main ol
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: var(--accent);
-    color: white;
-    text-decoration: none;
-    border-radius: 999px;
-    font-weight: 600;
-    transition: opacity 0.2s;
+    transition: opacity var(--ease);
 }
 
 .streaming-link a:hover,
@@ -2058,7 +1888,7 @@ main ol
 .streaming-link .service-icon {
     width: 1.4em;
     height: 1.4em;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
 }
 
 .listen-links {
@@ -2081,16 +1911,11 @@ main ol
    ================================================ */
 
 .music-releases-card {
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    padding: 1.5rem;
     margin: 2rem 0;
 }
 
 .music-releases-years {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .music-releases-year {
@@ -2098,11 +1923,6 @@ main ol
     align-items: baseline;
     gap: 1rem;
     padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.music-releases-year:last-child {
-    border-bottom: none;
 }
 
 @media (max-width: 767px) {
@@ -2125,8 +1945,6 @@ main ol
     flex-wrap: wrap;
     gap: 0.5rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .release-chip {
@@ -2136,13 +1954,13 @@ main ol
     padding: 0 0.6rem 0 0;
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     font-family: var(--font-sans);
-    font-size: 1.05rem;
+    font-size: var(--text-lg);
     line-height: 2rem;
     text-decoration: none;
     color: var(--text-primary);
-    transition: background 0.15s, border-color 0.15s, color 0.15s;
+    transition: background var(--ease), border-color var(--ease), color var(--ease);
 }
 
 .release-chip.no-thumb {
@@ -2160,7 +1978,7 @@ main ol
 .release-chip:hover {
     background: var(--accent);
     border-color: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
 }
 
 /* Small uppercase heading that introduces a group on a page: Active / Past on the
@@ -2170,7 +1988,7 @@ main ol
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: var(--tracking-caps);
     color: var(--text-secondary);
     margin: 2rem 0 1rem;
 }
@@ -2184,7 +2002,7 @@ main ol
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--card-gap-lg);
     margin-bottom: 2rem;
 }
 
@@ -2196,22 +2014,9 @@ main ol
     }
 }
 
-/* Phones: the space between cards is --gutter, the same as to the screen edge. */
-@media (max-width: 767px) {
-    .projects-grid {
-        gap: var(--gutter);
-    }
-}
-
-/* Project card: title, years and counts, laid out by the shared "Card row" (section 3) at
-   every width; only what is specific to this card is here. */
-
-.project-card {
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    text-decoration: none;
-    color: var(--text-primary);
-}
+/* Project card: .card .card-row .card-shadow .link-plain in the markup: title, years and counts,
+   laid out by the shared "Card row" (section 3) at every width; only what is specific to this
+   card is here. */
 
 .project-card .card-row-body {
     flex: 1;
@@ -2230,12 +2035,12 @@ main ol
 }
 
 .project-stats span {
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     font-weight: 500;
     color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    background: var(--tint-accent);
     padding: 0.2rem 0.6rem;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
 }
 
 /* "More from this project" link on music cards and previews */
@@ -2245,7 +2050,7 @@ main ol
 }
 
 .music-project-link a {
-    font-size: 0.875rem;
+    font-size: var(--text-sm);
     color: var(--accent);
     text-decoration: none;
 }
@@ -2261,7 +2066,7 @@ main ol
     grid-template-columns: auto 1fr;
     gap: 0.3rem 1rem;
     margin-top: 1rem;
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
 }
 
 .music-project-page .section-header dt {
@@ -2279,17 +2084,11 @@ main ol
 
 .music-project-page section ul {
     list-style: none;
-    padding: 0;
 }
 
 .music-project-page section ul li {
     padding: 0.4rem 0;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 0.95rem;
-}
-
-.music-project-page section ul li:last-child {
-    border-bottom: none;
+    font-size: var(--text-sm);
 }
 
 /* ============================================================
@@ -2304,13 +2103,13 @@ main ol
 .performances-simple-table td {
     padding: 0.3em 0.8em 0.3em 0;
     vertical-align: top;
-    border-bottom: 1px solid var(--muted-border-color, #e0e0e0);
-    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: var(--text-sm);
 }
 
 .performances-simple-table td.perf-date {
     white-space: nowrap;
-    color: var(--secondary);
+    color: var(--text-secondary);
     width: 10em;
 }
 
@@ -2319,7 +2118,7 @@ main ol
 }
 
 .performances-simple-table td.perf-venue {
-    color: var(--secondary);
+    color: var(--text-secondary);
 }
 
 /* ============================================================
@@ -2334,13 +2133,11 @@ main ol
     display: flex;
     flex-wrap: wrap;
     gap: 0 1rem;
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
 .credits-toc li {
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
 }
 
 .credits-divider,
@@ -2373,19 +2170,19 @@ main ol
 }
 
 .credits-person h2 {
-    font-size: 1.1rem;
+    font-size: var(--text-lg);
     margin-bottom: 0.3rem;
 }
 
 .credits-person-primary h2 {
-    font-size: 1.3rem;
+    font-size: var(--text-xl);
 }
 
 .credits-role {
     margin-left: 1rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .credits-roles {
         column-width: 16rem;
         column-gap: 2.5rem;
@@ -2397,16 +2194,16 @@ main ol
 }
 
 .credits-role-single {
-    font-size: 0.9rem;
-    color: var(--secondary);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
     margin-top: 0.15em;
     margin-bottom: 0.15em;
 }
 
 .credits-role summary {
     cursor: default;
-    font-size: 0.9rem;
-    color: var(--secondary);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
     margin: 0.15em 0;
     list-style: none;
 }
@@ -2428,7 +2225,7 @@ main ol
 .credits-release-list {
     margin: 0.2rem 0 0.4rem;
     padding-left: 1.5rem;
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
 }
 
 /* ============================================================
@@ -2439,7 +2236,7 @@ main ol
     max-width: 820px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-serif);
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -2451,7 +2248,7 @@ main ol
 }
 
 .report-header h1 {
-    font-size: 1.7rem;
+    font-size: var(--text-2xl);
     margin-bottom: 1rem;
     letter-spacing: 0.02em;
 }
@@ -2464,22 +2261,22 @@ main ol
 .report-meta td {
     padding: 0.15em 1.5em 0.15em 0;
     vertical-align: top;
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
 }
 
 .report-meta td:first-child {
-    color: var(--secondary);
+    color: var(--text-secondary);
     white-space: nowrap;
 }
 
 .report-intro {
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
     font-style: italic;
     margin-bottom: 0.5rem;
 }
 
 .report-print-link {
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
     margin-top: 0.5rem;
 }
 
@@ -2488,17 +2285,17 @@ main ol
 }
 
 .report-section h2 {
-    font-size: 1.2rem;
-    border-bottom: 1px solid var(--secondary);
+    font-size: var(--text-xl);
+    border-bottom: 1px solid var(--text-secondary);
     padding-bottom: 0.3rem;
     margin-bottom: 1.2rem;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--tracking-caps);
     text-transform: uppercase;
 }
 
 .report-count {
-    font-size: 0.9rem;
-    color: var(--secondary);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
@@ -2507,7 +2304,7 @@ main ol
 .report-summary-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
     margin-bottom: 1rem;
 }
 
@@ -2516,14 +2313,14 @@ main ol
     padding: 0.4em 0.5em;
     border-bottom: 1px solid currentColor;
     font-family: var(--font-sans);
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: var(--tracking-caps);
 }
 
 .report-summary-table td {
     padding: 0.35em 0.5em;
-    border-bottom: 1px solid var(--muted-border-color, #ddd);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .report-summary-table td:nth-child(3),
@@ -2538,7 +2335,7 @@ main ol
 .report-projects-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
 }
 
 .report-projects-table th {
@@ -2546,26 +2343,27 @@ main ol
     padding: 0.4em 0.5em;
     border-bottom: 1px solid currentColor;
     font-family: var(--font-sans);
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: var(--tracking-caps);
 }
 
 .report-projects-table td {
     padding: 0.5em 0.5em;
     vertical-align: top;
-    border-bottom: 1px solid var(--muted-border-color, #ddd);
+    border-bottom: 1px solid var(--border-color);
 }
 
-.report-details-cell {
-    padding: 0 !important;
+/* Two classes, so it outranks `.report-projects-table td` without !important. */
+.report-projects-table .report-details-cell {
+    padding: 0;
 }
 
 .report-detail-section {
     display: block;
     padding: 0.4em 0.5em;
-    border-bottom: 1px solid var(--muted-border-color, #eee);
-    font-size: 0.88rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: var(--text-sm);
 }
 
 .report-detail-section:last-child {
@@ -2577,8 +2375,8 @@ main ol
     font-family: var(--font-sans);
     font-size: 0.75em;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--secondary);
+    letter-spacing: var(--tracking-caps);
+    color: var(--text-secondary);
     margin-bottom: 0.2em;
 }
 
@@ -2606,7 +2404,7 @@ main ol
 .report-perf-item {
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--muted-border-color, #eee);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .report-perf-item:last-child {
@@ -2614,7 +2412,7 @@ main ol
 }
 
 .report-perf-header {
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
     margin-bottom: 0.2rem;
 }
 
@@ -2628,12 +2426,12 @@ main ol
 }
 
 .report-perf-venue {
-    color: var(--secondary);
+    color: var(--text-secondary);
 }
 
 .report-perf-details {
-    font-size: 0.85rem;
-    color: var(--secondary);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
     font-family: var(--font-sans);
 }
 
@@ -2650,7 +2448,6 @@ main ol
 .streaming-list {
     list-style: none;
     margin: 2rem 0;
-    padding: 0;
 }
 
 .streaming-item {
@@ -2665,7 +2462,7 @@ main ol
     flex: 0 0 96px;
     width: 96px;
     height: 96px;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     overflow: hidden;
 }
 
@@ -2701,18 +2498,18 @@ main ol
     height: 36px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #fff;
 }
 
 .streaming-item-title {
-    font-size: 1.1rem;
+    font-size: var(--text-lg);
     margin: 0;
 }
 
 .streaming-item-title small {
     display: block;
     margin-top: 0.15rem;
-    font-size: 0.8rem;
+    font-size: var(--text-xs);
     font-weight: normal;
     color: var(--text-secondary);
 }
@@ -2731,8 +2528,8 @@ main ol
     vertical-align: -0.05em;
 }
 
-/* Desktop: two columns (newest first, left to right, then down). */
-@media (min-width: 1024px) {
+/* Wider screens: two columns (newest first, left to right, then down). */
+@media (min-width: 768px) {
     .streaming-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2752,23 +2549,19 @@ main ol
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     grid-auto-rows: 1fr;
-    gap: 1rem;
+    gap: var(--card-gap);
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
+
+/* .card .card-shadow .link-plain in the markup; its padding differs from the card's. */
 
 .genre-card {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     aspect-ratio: 1 / 1;
-    padding: 1rem 1.25rem 20px;
-    background: var(--bg-secondary);
-    border-radius: 12px;
+    padding: 1rem var(--card-pad) 20px;
     overflow: hidden;
-    text-decoration: none;
-    color: var(--text-primary);
 }
 
 .genre-card-header {
@@ -2781,7 +2574,7 @@ main ol
 
 .genre-card-name {
     font-weight: 400;
-    font-size: 1.75rem;
+    font-size: var(--text-2xl);
     line-height: 1;
 }
 
@@ -2797,8 +2590,6 @@ main ol
     flex-direction: column;
     gap: 0.5rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -2807,14 +2598,14 @@ main ol
     align-items: center;
     gap: 0.5rem;
     color: var(--text-secondary);
-    font-size: 0.875rem;
+    font-size: var(--text-sm);
 }
 
 .genre-card-examples img,
 .genre-card-examples .waveform-placeholder {
     width: 32px;
     height: 32px;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -2828,7 +2619,6 @@ main ol
 @media (max-width: 767px) {
     .genres-grid {
         grid-auto-rows: auto;
-        gap: var(--gutter);
     }
 
     .genre-card {
@@ -2844,7 +2634,7 @@ main ol
 
 @media print {
     nav, .site-header, .site-footer, .report-print-link, .no-print {
-        display: none !important;
+        display: none;
     }
 
     .music-report {

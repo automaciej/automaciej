@@ -19,7 +19,7 @@
             </div>
             {{- end }}
             {{- with .Content }}
-            <div class="section-intro">
+            <div class="section-intro card">
                 {{ . }}
             </div>
             {{- end }}
@@ -28,7 +28,7 @@
         <div class="list-container">
             <div class="posts-list">
             {{- range .Pages }}
-            <article class="post-card">
+            <article class="post-card card-shadow">
                 <a href="{{ .RelPermalink }}" class="post-card-link">
                     <div class="post-card-content">
                         <div class="post-meta">

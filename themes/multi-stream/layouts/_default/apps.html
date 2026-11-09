@@ -1,10 +1,10 @@
 {{- define "main" }}
-<div class="list-page list-page-wide">
-    <div class="container">
+<div class="list-page">
+    <div class="container container-wide">
         <header class="section-header">
             <h1>{{ .Title }}</h1>
             {{- with .Content }}
-            <div class="section-intro">
+            <div class="section-intro card">
                 {{ . }}
             </div>
             {{- end }}

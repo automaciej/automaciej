@@ -57,8 +57,8 @@ Principles that hold across the repo:
   embeds are `youtube-nocookie.com` players. `util/test_site_expectations.py` enforces this.
 - **Jogger** is Polish, stays off the homepage, and its front matter is a mix of TOML and YAML, so
   tools touching it must handle both.
-- **CSS** is hand-written with no framework, mobile-first, with canonical breakpoints (phones
-  `max-width: 767px`, tablet `768px`–`1023px`, desktop `min-width: 1024px`). See "CSS Architecture"
+- **CSS** is hand-written with no framework, mobile-first, with one breakpoint (phones
+  `max-width: 767px`, wider `min-width: 768px`). See "CSS Architecture"
   in `Docs/2025-11-12-multi-stream-theme.md`.
 - **Deployment** goes through `./util/deploy.sh`; preview settings live in the gitignored
   `private_cfg.sh`.

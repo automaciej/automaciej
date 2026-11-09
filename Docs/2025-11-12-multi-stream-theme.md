@@ -422,8 +422,7 @@ The stylesheet (`themes/multi-stream/assets/css/main.css`) grew organically and 
 ```css
 .thing { /* base, mobile-first */ }
 
-@media (min-width: 768px) and (max-width: 1023px) { .thing { /* tablet */ } }
-@media (min-width: 1024px) { .thing { /* desktop */ } }
+@media (min-width: 768px) { .thing { /* wider screens */ } }
 ```
 
 ### File organisation (2026-10-16)
@@ -431,34 +430,36 @@ The stylesheet (`themes/multi-stream/assets/css/main.css`) grew organically and 
 `main.css` is grouped by component, in the order listed in its header comment: tokens,
 base, site chrome, home page, bio/social/contact, blog and Jogger, shortcodes, apps, shared
 page furniture, music, genres, print, utilities. Inside a component the order is base →
-narrow (`max-width: 767px`) → tablet → wide. There is no separate "mobile styles" section
+narrow (`max-width: 767px`) → wider (`min-width: 768px`). There is no separate "mobile styles" section
 (the old 28-rule catch-all was dissolved into its components).
 `TestCssStructure` in `util/test_site_expectations.py` enforces it: no media block with many
 unrelated rules, no selector overridden in two blocks of one query, no override before its base.
 
-Shared pieces, so that pages stay consistent: the **card row** (`.card-row`, section 3 of `main.css`) is the row layout of every artwork card: 120px square artwork flush to the card's left/top/bottom, then a text column with one-line `.card-row-title` / `.card-row-meta` lines. It is unconditional: `.project-card` uses it at every width, and `.music-preview` uses it below 768px, then undoes it in one "From 768px up" block in the music preview rules (which must stay after the card-row block in the file). Cards opt in with `class="… card-row"`, `.card-row-art > img` and `.card-row-body`; don't re-implement it per card. The **cover layout** (`.cover-layout`, `-header`, `-cover`, `-body`, in the music section of `main.css`) is the header / cover image / body arrangement of release pages and project pages: stacked on narrow screens, cover in a right-hand column from 1024px; a page without a cover omits `.cover-layout` so no empty column is left. Also: `.section-header` (page title), `.section-label`
-(small uppercase group heading: Active/Past, Performances/Releases), the card chrome shared by
-`.post-card`, `.card-shadow`, `.genre-card` and `.project-card` (shadow, ring on hover), and one
+Shared pieces, so that pages stay consistent: the **card row** (`.card-row`, section 3 of `main.css`) is the row layout of every artwork card: 120px square artwork flush to the card's left/top/bottom, then a text column with one-line `.card-row-title` / `.card-row-meta` lines. It is unconditional: `.project-card` uses it at every width, and `.music-preview` uses it below 768px, then undoes it in one "From 768px up" block in the music preview rules (which must stay after the card-row block in the file). Cards opt in with `class="… card-row"`, `.card-row-art > img` and `.card-row-body`; don't re-implement it per card. The **cover layout** (`.cover-layout`, `-header`, `-cover`, `-body`, in the music section of `main.css`) is the header / cover image / body arrangement of release pages and project pages: stacked on narrow screens, cover in a right-hand column from 768px; a page without a cover omits `.cover-layout` so no empty column is left. Also: `.section-header` (page title), `.section-label`
+(small uppercase group heading: Active/Past, Performances/Releases), the card chrome (`.card`, `.card-shadow`, `.card-shadow-static`, see "Card primitive" below), and one
 page wrapper for `/music/` and project pages (`.music-page, .music-project-page`). Don't use
 `<hr>` for visual separation; use spacing or a border on the item.
 
 ### Canonical breakpoints
 
-Three breakpoints cover the stream/card system (home, music, apps, jogger):
+There is one cutoff, 768px, so two ranges (updated 2026-11-09; the earlier tablet and desktop bands no longer matched the stylesheet, and the remaining 1024px cases — the release page's cover column, the credits columns, the streaming list's two columns — moved to 768px):
 
 | Range | Query | Matches |
 |---|---|---|
-| Narrow (phones) | `(max-width: 767px)` | single-column stream layout |
-| Mid (tablets) | `(min-width: 768px) and (max-width: 1023px)` | still single-column, but roomier |
-| Wide (desktop) | `(min-width: 1024px)` | 2-3 column layouts |
+| Narrow (phones) | `(max-width: 767px)` | single-column stream layout, hamburger nav, edge-to-edge cards |
+| Wider | `(min-width: 768px)` | grids of cards, the stacked music card, container padding, the cover column, credits and streaming columns |
 
-767/768/1023/1024 are used consistently so ranges never overlap or leave a gap — a width is never matched by two rules that disagree, and never matched by zero.
+767/768 are used consistently so ranges never overlap or leave a gap. `TestCssStructure` fails if a media query uses any other width. The file is mostly mobile-first (phone rules in the base, `min-width: 768px` for the rest, values that flip at 768px as tokens such as `--card-gap`, `--card-gap-lg` and `--page-pad`); a few components (`.post-content`, `.post-illustration`, the header and nav, `.music-preview`'s unreleased overlay, reminders) still declare the desktop look first and patch phones in a `max-width: 767px` block.
 
-**The one phone/wider cutoff is 768px.** Everything that switches between the phone layout and a wider one does it at `max-width: 767px` / `min-width: 768px`, including `.genres-grid` (formerly 640px) and the `figure` shortcode's `<picture>` sources (formerly 768/769, which overlapped at 768). 1024px only separates tablet from desktop on the homepage and release/credit/streaming layouts.
+**The one phone/wider cutoff is 768px.** Everything that switches between the phone layout and a wider one does it at `max-width: 767px` / `min-width: 768px`, including `.genres-grid` (formerly 640px) and the `figure` shortcode's `<picture>` sources (formerly 768/769, which overlapped at 768).
 
-**Music grids.** `.music-productions` (`/music/`, projects, role lists, genres) is a single-column list below 768px. From 768px it is `repeat(auto-fill, minmax(max(260px, (100% - 3 * 2rem) / 4), 1fr))`: as many equal-width columns as fit, 2 to 4, never more than 4 (the `max()` term), and `auto-fill` keeps tracks equal even when there are few cards. `/music/` also has `.music-page-wide`, which removes the container's 1200px cap. The card is stacked (image on top, role strip at the bottom) from 768px, in `.music-productions` and on the homepage. The homepage's `.stream-columns` (Music, Apps, Bio) is the same kind of grid with a 300px minimum and a cap of 3 columns (2 columns from 768px, 3 from 1004px; with 2, Bio wraps under Music). The card's `sizes` attribute mirrors the grid (music: 260px minimum, 3 columns from 884px, 4 from 1176px; homepage: passed in by `index.html`); update CSS and `sizes` together. **Apps page**: `.apps-list` is `repeat(auto-fill, minmax(340px, 1fr))` from 768px (two columns at 768px, then as many as fit, with no maximum), and `.list-page-wide` (set in `apps.html`) removes the container's 1200px cap; other list pages keep `.list-page` as is.
+**Music grids.** `.music-productions` (`/music/`, projects, role lists, genres) is a single-column list below 768px. From 768px it is `repeat(auto-fill, minmax(max(260px, (100% - 3 * 2rem) / 4), 1fr))`: as many equal-width columns as fit, 2 to 4, never more than 4 (the `max()` term), and `auto-fill` keeps tracks equal even when there are few cards. `/music/` also uses `.container-wide`, which removes the container's 1200px cap. The card is stacked (image on top, role strip at the bottom) from 768px, in `.music-productions` and on the homepage. The homepage's `.stream-columns` (Music, Apps, Bio) is the same kind of grid with a 300px minimum and a cap of 3 columns (2 columns from 768px, 3 from 1004px; with 2, Bio wraps under Music). The card's `sizes` attribute mirrors the grid (music: 260px minimum, 3 columns from 884px, 4 from 1176px; homepage: passed in by `index.html`); update CSS and `sizes` together. **Apps page**: `.apps-list` is `repeat(auto-fill, minmax(340px, 1fr))` from 768px (two columns at 768px, then as many as fit, with no maximum), and `apps.html` uses `.container-wide` to remove the container's 1200px cap; other list pages keep the capped `.container`.
 
-**Phone gutter.** `--gutter` (`:root`, 0.25rem) is the one value for the space between content and the screen edge (the `body`'s side padding) and, below 768px, the space between cards in every card stack: `.music-productions`, the homepage's `.stream-columns`, the Music and Apps `.stream-content`, `.blog-post-preview`, `.posts-list` and `.blog-posts-list` cards, `.apps-list`, `.projects-grid` and `.genres-grid`. A new card list should use `gap: var(--gutter)` in its `max-width: 767px` block (and no bottom margin on its cards, so the gap is the whole of it). Not covered because they are rows, not cards: `.streaming-item` and headings/prose margins.
+**Phone gutter and card gap.** `--gutter` (`:root`, 0.25rem) is the one value for the space between content and the screen edge (the `body`'s side padding) and, below 768px, the space between cards. The gap between cards is a token that flips at 768px: `--card-gap` (`--gutter` on phones, 1rem from 768px) and `--card-gap-lg` (`--gutter`, then 2rem). A new card list writes `gap: var(--card-gap)` (or `-lg`) and no media block, and no bottom margin on its cards, so the gap is the whole of it. Used by `.music-productions`, `.stream-columns`, `.stream-cards` (the Music, Apps and Blog columns), `.posts-list`, `.apps-list`, `.projects-grid` and `.genres-grid`; `.blog-posts-list` cards use `margin-bottom: var(--card-gap)` because year headings share that list. Not covered because they are rows, not cards: `.streaming-item` and headings/prose margins.
+
+**Tokens (2026-11-09).** `:root` also holds the type scale (`--text-xs` 0.8rem, `--text-sm` 0.9rem, `--text-lg` 1.125rem, `--text-xl` 1.25rem, `--text-2xl` 1.75rem), radii (`--radius-sm/md/card/pill`), `--card-pad` / `--card-pad-lg`, `--page-pad` (the container's side padding: 0, then 20px from 768px), `--ease`, `--tracking-caps`, and colour-role tokens (`--on-accent`, `--success`, `--shadow-card`, `--tint-hover`, `--tint-accent`, and `--glow` in the dark block). `color-scheme: light dark` is set on `:root`. A test fails if a `var(--x)` is used without a definition.
+
+**Card primitive.** `.card` is the surface (background, radius, `--card-pad`) and carries no layout; add it in the markup of every card (`.music-preview`, `.app-preview`, `.app-post-preview`, `.app-card`, `.blog-post-preview`, `.bio-summary`, `.section-intro`, `.music-card`, `.music-releases-card`, `.project-card`, `.genre-card`, blog-list `.post-card`). A component adds only what is specific (`.card-row` and `.genre-card` set their own padding later in the file). `.card-shadow` adds the shadow and the hover ring of a whole-card link; `.card-shadow-static` is the shadow without the ring (blog list). `.link-plain` (+ `.link-plain-accent` for an accent hover) is a link that looks like text. `.rule-list` separates its children with a line. `.container-wide` lifts the 1200px cap of a `.container` (header, footer, home streams, `/apps/`, `/music/`). Prose lists get their indent from one `:where(...)` rule on prose containers (`.post-content`, `.section-intro`, `.stream-content`, ...); other lists need no reset.
 
 ### `.container` is fluid, not padded-then-cancelled
 
