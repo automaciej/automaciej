@@ -5,28 +5,7 @@
 
 {{- define "main" }}
 <div class="home">
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                {{- with .Params.image }}
-                <div class="hero-photo">
-                    <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}">
-                </div>
-                {{- end }}
-                <div class="hero-text">
-                    <h1>{{ .Site.Title }}</h1>
-                    {{- with .Params.tagline }}
-                    <p class="tagline">{{ . }}</p>
-                    {{- end }}
-                </div>
-                {{- with .Content }}
-                <div class="hero-intro">
-                    {{ . }}
-                </div>
-                {{- end }}
-            </div>
-        </div>
-    </section>
+    <h1 class="visually-hidden">{{ .Site.Title }}</h1>
 
     <section class="streams">
         <div class="container">

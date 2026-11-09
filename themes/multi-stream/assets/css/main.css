@@ -93,9 +93,10 @@ body {
 /* Header */
 
 .site-header {
+    --header-pad: 20px; /* the header's vertical padding; the nav highlight bleeds through it */
     background: var(--bg-nav);
     border-bottom: 1px solid var(--border-color);
-    padding: 20px 0;
+    padding: var(--header-pad) 0;
     position: relative;
     z-index: 100;
 }
@@ -170,25 +171,37 @@ body {
     transition: all 0.3s;
 }
 
+/* Each entry gets a background tint on hover, over the header's whole height (from the top of
+   the window to the line under the bar) with all four corners rounded; the text colour does
+   not change. The vertical padding and the equal negative margin cancel out, so the header is
+   no taller than its content plus --header-pad, and the horizontal padding is paid for by the
+   smaller gap and the nav's negative right margin: the text sits where it always did and the
+   last entry still lines up with the container's edge. */
+
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 0;
+    margin-right: -1rem;
 }
 
 .nav-menu a {
+    display: block;
+    margin: calc(-1 * var(--header-pad)) 0;
+    padding: var(--header-pad) 1rem;
+    border-radius: 8px;
     color: var(--text-secondary);
     text-decoration: none;
 }
 
 .nav-menu a:hover {
-    color: var(--accent);
+    background: color-mix(in srgb, var(--text-primary) 8%, transparent);
 }
 
 /* Narrow screens: shorter header, and the nav collapses into the hamburger menu. */
 @media (max-width: 767px) {
     .site-header {
-        padding: 10px 0;
+        --header-pad: 10px;
     }
 
     /* Mobile navigation */
@@ -209,6 +222,7 @@ body {
         margin-top: 0.5rem;
         flex-direction: column;
         gap: 1rem;
+        margin-right: 0;
         min-width: 200px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
@@ -221,9 +235,11 @@ body {
         margin: 0;
     }
 
+    /* In the dropdown the entries are plain rows with a fully rounded highlight. */
     .nav-menu a {
-        display: block;
+        margin: 0;
         padding: 0.5rem;
+        border-radius: 6px;
     }
 
     .nav-toggle.active span:nth-child(1) {
@@ -362,92 +378,14 @@ h1, h2, h3, h4, h5, h6 {
    4. HOME PAGE
    ========================================================================== */
 
-/* Hero section */
+/* The streams section opens the page. From 768px the space between the header's bottom line and
+   the column headings is the .container's 20px side padding, so it equals the distance from the
+   headings to the window's left edge (the headings' own top margin is cleared with their rule). Phones
+   have neither: the cards run edge to edge. */
 
-.hero {
-    padding: 60px 0 40px 0;
-}
-
-.hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-.hero-intro {
-    flex-basis: 100%;
-    width: 100%;
-    margin-top: 1.5rem;
-    color: var(--text-secondary);
-}
-
-.hero-intro p:last-child {
-    margin-bottom: 0;
-}
-
-.hero-photo {
-    flex-shrink: 0;
-    margin-right: 1rem;
-}
-
-.hero-photo img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--border-color);
-}
-
-.hero-text {
-    flex-shrink: 1;
-    min-width: 0;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero .tagline {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
-
-/* Mobile: drop photo and big title, keep tagline + social icons */
-@media (max-width: 767px) {
-    .hero-photo {
-        display: none;
-    }
-
-    .hero h1 {
-        display: none;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        gap: 0;
-        width: 100%;
-    }
-
-    .hero-text {
-        text-align: center;
-    }
-
-    .hero-intro {
-        text-align: center;
-    }
-
-    .hero .tagline {
-        color: var(--text-secondary);
-    }
-
-    .hero {
-        padding: 15px 0 10px 0;
+@media (min-width: 768px) {
+    .streams {
+        padding-top: 20px;
     }
 }
 
@@ -482,6 +420,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .stream-column h2 {
     margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .stream-column h2 {
+        margin-top: 0;
+    }
 }
 
 .stream-column h2 a {

@@ -480,3 +480,13 @@ This replaced an earlier approach (briefly shipped, since removed) where `.conta
 ### Lesson for future edits
 
 Before adding a new `@media` block for an existing selector, grep for that selector first (`grep -n '\.your-class' main.css`). If it already has rules at a similar breakpoint elsewhere, extend those instead of adding a new block — that's the scattering this section exists to prevent.
+
+## 2026-11-09: homepage hero removed
+
+The homepage hero (photo, name, tagline, optional intro text from `content/_index.md`) is gone from
+`index.html` and its CSS (`.hero*`) from `main.css`: the Music and Apps streams say what the site
+is about, and the hero only cost vertical space (phones had already dropped it). The page keeps a
+visually hidden `<h1>` with the site title. The `image`, `tagline` and `description` in
+`content/_index.md` stay: the image feeds og tags and the person JSON-LD. The photo
+(`bio/images/maciej_on_bass_360px.jpg`) stays in the repo. Older sections of this doc that describe
+the hero are history. `.streams` now has its own top padding (20px from 768px, equal to the container's side padding, with the column headings' top margin cleared, so the space under the header line matches the space to the window's left edge).

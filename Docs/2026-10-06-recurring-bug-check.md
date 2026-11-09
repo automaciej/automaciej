@@ -66,7 +66,7 @@ All items below verified by a clean run of `util/test_site_expectations.py`
    partial and no script.
 3. **Home og:image (bug 4).** `content/_index.md` `image:` is now the full
    static path (`bio/images/maciej_on_bass_360px.jpg`). The two templates that
-   prefixed `bio/images/` themselves (`index.html` hero, `jsonld/person.html`)
+   prefixed `bio/images/` themselves (the former `index.html` hero, `jsonld/person.html`)
    now use the value as given. Previously the default og partial resolved the
    bare filename against the site root.
 4. **Jogger feed (bug 5).** `rss.xml` uses `RegularPagesRecursive` for
