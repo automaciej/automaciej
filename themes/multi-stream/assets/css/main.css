@@ -33,6 +33,7 @@
     --text-tertiary: #a1a1a6;
     --border-color: #d2d2d7;
     --accent: #0071e3;
+    --gutter: 0.25rem; /* the space between content and the screen edge, and between cards on phones */
 }
 
 /* Dark mode */
@@ -65,7 +66,7 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
-    padding: 0 0.25em;
+    padding: 0 var(--gutter);
 }
 
 /* Narrow screens: width is scarce, so content (cards, text, everything)
@@ -272,11 +273,29 @@ main {
 }
 
 /* The header and footer are not capped at the container's 1200px: the navigation sits at the
-   window's edges and the footer spans the whole width, on any screen. */
+   window's edges and the footer spans the whole width, on any screen. They also cancel the body's
+   --gutter side padding (negative margins), so the bars, with their lines and highlights, run
+   edge to edge; the header's content is then padded by the gutter again, so its text stays where
+   it was (on phones the container adds no padding of its own; from 768px it adds 20px). */
+
+.site-header,
+.site-footer {
+    margin: 0 calc(-1 * var(--gutter));
+}
 
 .site-header > .container,
 .site-footer > .container {
     max-width: none;
+}
+
+.site-header > .container {
+    padding: 0 var(--gutter);
+}
+
+@media (min-width: 768px) {
+    .site-header > .container {
+        padding: 0 calc(20px + var(--gutter));
+    }
 }
 
 /* Links */
@@ -380,8 +399,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* The streams section opens the page. From 768px the space between the header's bottom line and
    the column headings is the .container's 20px side padding, so it equals the distance from the
-   headings to the window's left edge (the headings' own top margin is cleared with their rule). Phones
-   have neither: the cards run edge to edge. */
+   headings to the window's left edge (the headings' own top margin is cleared with their rule).
+   Phones: the space under the header's line is --gutter, the same as to the screen edge. */
+
+.streams {
+    padding-top: var(--gutter);
+}
 
 @media (min-width: 768px) {
     .streams {
@@ -394,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 .stream-columns {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--gutter); /* phones: the streams stack with the same space as to the screen edge; wider screens set their own gap below */
 }
 
 /* From 768px (the phone/wider cutoff) the streams sit in a grid that fits as many equal-width
@@ -468,6 +491,15 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+/* Phones: the same space between cards as to the screen edge (--gutter). */
+
+@media (max-width: 767px) {
+    .music-stream .stream-content,
+    .apps-stream .stream-content {
+        gap: var(--gutter);
+    }
 }
 
 /* Music preview on homepage */
@@ -811,6 +843,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-post-preview:last-of-type {
     margin-bottom: 1rem;
+}
+
+/* Phones: the same space between blog cards as to the screen edge (--gutter). */
+
+@media (max-width: 767px) {
+    .blog-post-preview,
+    .blog-post-preview:last-of-type {
+        margin-bottom: var(--gutter);
+    }
 }
 
 .blog-post-preview h3 a {
@@ -1182,9 +1223,16 @@ main ol
     gap: 1rem;
 }
 
+/* Phones: the space between cards is --gutter, the same as to the screen edge. The grid's gap is
+   the whole of it, so the card's own bottom margin is dropped here. */
+
 @media (max-width: 767px) {
     .posts-list {
-        gap: 0.25rem;
+        gap: var(--gutter);
+    }
+
+    .posts-list .post-card {
+        margin-bottom: 0;
     }
 }
 
@@ -1218,11 +1266,23 @@ main ol
     transition: box-shadow 0.2s;
 }
 
-.post-card:hover,
-.card-shadow:hover,
+/* Whole-card links never underline their text on hover. */
+
 .genre-card:hover,
 .project-card:hover {
-    box-shadow: 0 0 0 2px var(--text-secondary);
+    text-decoration: none;
+}
+
+/* The ring only exists on wide screens whose pointer can hover. On phones (and on touch devices
+   generally, where a tap leaves :hover stuck on) a card gets no hover affordance at all. */
+
+@media (min-width: 768px) and (hover: hover) {
+    .post-card:hover,
+    .card-shadow:hover,
+    .genre-card:hover,
+    .project-card:hover {
+        box-shadow: 0 0 0 2px var(--text-secondary);
+    }
 }
 
 .post-card-image {
@@ -1305,7 +1365,7 @@ main ol
         padding: 1.25rem; /* Restore padding for jogger cards */
         background: var(--bg-secondary); /* Restore background for jogger cards */
         border-radius: 12px; /* Restore border-radius for jogger cards */
-        margin-bottom: 1rem; /* Restore margin for jogger cards */
+        margin-bottom: var(--gutter); /* Restore margin for jogger cards: the same as to the screen edge */
         border-bottom: none; /* Remove the generic border */
     }
 
@@ -1442,6 +1502,14 @@ main ol
 
 .list-page-wide > .container {
     max-width: none;
+}
+
+/* Phones: the space between cards is --gutter, the same as to the screen edge. */
+
+@media (max-width: 767px) {
+    .apps-list {
+        gap: var(--gutter);
+    }
 }
 
 .app-card {
@@ -1602,6 +1670,15 @@ main ol
     flex-direction: column;
     gap: 2rem;
     margin: 0 auto;
+}
+
+/* Phones: the space between cards is the same as the space between a card and the edge of the
+   screen. Both are --gutter: the body's side padding (the container adds none below 768px). */
+
+@media (max-width: 767px) {
+    .music-productions {
+        gap: var(--gutter);
+    }
 }
 
 /* From 768px (the one phone/wider cutoff) the cards sit in a grid that fits as many columns as
@@ -2133,6 +2210,13 @@ main ol
     }
 }
 
+/* Phones: the space between cards is --gutter, the same as to the screen edge. */
+@media (max-width: 767px) {
+    .projects-grid {
+        gap: var(--gutter);
+    }
+}
+
 /* Project card: title, years and counts, laid out by the shared "Card row" (section 3) at
    every width; only what is specific to this card is here. */
 
@@ -2141,10 +2225,6 @@ main ol
     border-radius: 12px;
     text-decoration: none;
     color: var(--text-primary);
-}
-
-.project-card:hover {
-    text-decoration: none;
 }
 
 .project-card .card-row-body {
@@ -2705,10 +2785,6 @@ main ol
     color: var(--text-primary);
 }
 
-.genre-card:hover {
-    text-decoration: none;
-}
-
 .genre-card-header {
     display: flex;
     align-items: baseline;
@@ -2766,6 +2842,7 @@ main ol
 @media (max-width: 767px) {
     .genres-grid {
         grid-auto-rows: auto;
+        gap: var(--gutter);
     }
 
     .genre-card {
