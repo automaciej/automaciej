@@ -48,8 +48,8 @@
 
         <picture>
             <source media="(max-width: 480px)" srcset="{{ $small.RelPermalink }}">
-            <source media="(max-width: 768px)" srcset="{{ $medium.RelPermalink }}">
-            <source media="(min-width: 769px)" srcset="{{ $large.RelPermalink }}">
+            <source media="(max-width: 767px)" srcset="{{ $medium.RelPermalink }}">
+            <source media="(min-width: 768px)" srcset="{{ $large.RelPermalink }}">
             <img src="{{ $large.RelPermalink }}" alt="{{ $alt }}"
                 {{- with $width }} width="{{ . }}"{{ end -}}
                 {{- with $height }} height="{{ . }}"{{ end -}}

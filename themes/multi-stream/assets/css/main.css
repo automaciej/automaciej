@@ -781,23 +781,23 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Tablet horizontal layout */
+/* Homepage, tablet: thumbnail beside the text (the music grid never uses this: it stacks from 768px) */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .music-preview {
+    .stream-columns .music-preview {
         display: flex;
         flex-wrap: wrap;
         gap: 0.1rem;
         align-items: flex-start;
     }
 
-    .music-preview-image {
+    .stream-columns .music-preview-image {
         flex-shrink: 0;
         margin-right: 0.75rem;
     }
 
-    .music-preview-image img,
-    .music-preview-image .waveform-placeholder {
+    .stream-columns .music-preview-image img,
+    .stream-columns .music-preview-image .waveform-placeholder {
         display: block;
         width: 80px;
         height: 80px;
@@ -807,30 +807,31 @@ h1, h2, h3, h4, h5, h6 {
         transition: opacity 0.2s;
     }
 
-    .music-preview-image img:hover,
-    .music-preview-image .waveform-placeholder:hover {
+    .stream-columns .music-preview-image img:hover,
+    .stream-columns .music-preview-image .waveform-placeholder:hover {
         opacity: 0.85;
     }
 
-    .unreleased-overlay {
+    .stream-columns .unreleased-overlay {
         border-radius: 6px;
     }
 
-    .music-preview-content {
+    .stream-columns .music-preview-content {
         flex: 1;
         min-width: 0;
     }
 }
 
-/* Full width image on wide screens */
+/* Stacked card (image on top, role strip at the bottom): in the music grid from 768px, on the
+   homepage (three columns) from 1024px. */
 
-@media (min-width: 1024px) {
-    .music-preview-image {
+@media (min-width: 768px) {
+    .music-productions .music-preview-image {
         margin: -1.25rem -1.25rem 1rem;
     }
 
-    .music-preview-image img,
-    .music-preview-image .waveform-placeholder {
+    .music-productions .music-preview-image img,
+    .music-productions .music-preview-image .waveform-placeholder {
         display: block;
         width: 100%;
         height: auto;
@@ -839,17 +840,50 @@ h1, h2, h3, h4, h5, h6 {
         transition: opacity 0.2s;
     }
 
-    .music-preview-image img:hover,
-    .music-preview-image .waveform-placeholder:hover {
+    .music-productions .music-preview-image img:hover,
+    .music-productions .music-preview-image .waveform-placeholder:hover {
         opacity: 0.85;
     }
 
-    .unreleased-overlay {
+    .music-productions .unreleased-overlay {
         border-radius: 12px 12px 0 0;
     }
 
     /* Desktop: a strip flush with the card's bottom edge. */
-    .music-preview-role {
+    .music-productions .music-preview-role {
+        display: block;
+        margin: 1rem -1.25rem -1.25rem;
+        padding: 0.45rem 1.25rem;
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .stream-columns .music-preview-image {
+        margin: -1.25rem -1.25rem 1rem;
+    }
+
+    .stream-columns .music-preview-image img,
+    .stream-columns .music-preview-image .waveform-placeholder {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+
+    .stream-columns .music-preview-image img:hover,
+    .stream-columns .music-preview-image .waveform-placeholder:hover {
+        opacity: 0.85;
+    }
+
+    .stream-columns .unreleased-overlay {
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* Desktop: a strip flush with the card's bottom edge. */
+    .stream-columns .music-preview-role {
         display: block;
         margin: 1rem -1.25rem -1.25rem;
         padding: 0.45rem 1.25rem;
@@ -1682,19 +1716,26 @@ main ol
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Two-column grid on wide screens */
+/* From 768px (the one phone/wider cutoff) the cards sit in a grid that fits as many columns as
+   have room, 2 to 4 (auto-fill, so the columns stay equal width even with few cards): a card is at least 260px wide, and the max() keeps the count from going
+   past four however wide the page gets. Below 768px it stays the single-column phone list. */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .music-productions {
-        max-width: 1200px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(max(260px, (100% - 3 * 2rem) / 4), 1fr));
         align-items: start;
     }
+}
+
+/* /music/ only: the page is not capped at the container's 1200px, so on ultrawide screens
+   the grid keeps taking the space (and stays at four columns). */
+
+.music-page-wide > .container {
+    max-width: none;
 }
 
 .music-card {
@@ -2846,7 +2887,7 @@ main ol
     white-space: nowrap;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
     .genres-grid {
         grid-auto-rows: auto;
     }

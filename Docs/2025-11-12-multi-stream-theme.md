@@ -454,7 +454,9 @@ Three breakpoints cover the stream/card system (home, music, apps, jogger):
 
 767/768/1023/1024 are used consistently so ranges never overlap or leave a gap — a width is never matched by two rules that disagree, and never matched by zero.
 
-**Exception, by design, not oversight**: `.genres-grid` and `.genre-card` use `640px` for their own column math. (`.projects-grid` used to as well; from 768px it now fits as many columns as have cards of at least 360px, up to 3, so it has no breakpoint of its own.)
+**The one phone/wider cutoff is 768px.** Everything that switches between the phone layout and a wider one does it at `max-width: 767px` / `min-width: 768px`, including `.genres-grid` (formerly 640px) and the `figure` shortcode's `<picture>` sources (formerly 768/769, which overlapped at 768). 1024px only separates tablet from desktop on the homepage and release/credit/streaming layouts.
+
+**Music grids.** `.music-productions` (`/music/`, projects, role lists, genres) is a single-column list below 768px. From 768px it is `repeat(auto-fill, minmax(max(260px, (100% - 3 * 2rem) / 4), 1fr))`: as many equal-width columns as fit, 2 to 4, never more than 4 (the `max()` term), and `auto-fill` keeps tracks equal even when there are few cards. `/music/` also has `.music-page-wide`, which removes the container's 1200px cap. The card is stacked (image on top, role strip at the bottom) from 768px inside `.music-productions`; on the homepage it is a side-by-side thumbnail at 768-1023px and stacked from 1024px (`.stream-columns` rules). The card's `sizes` attribute mirrors the grid (260px minimum: 3 columns from 884px, 4 from 1176px); update both together.
 
 ### `.container` is fluid, not padded-then-cancelled
 
