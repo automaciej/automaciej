@@ -109,7 +109,7 @@
                     <div class="stream-content">
                         {{- range first 2 (sort $blogPage.RegularPages "Date" "desc") }}
                         <article class="blog-post-preview">
-                            <h3><a href="{{ .RelPermalink }}">{{ .Title }} »</a></h3>
+                            <h3><a href="{{ .RelPermalink }}">{{ .Title }}&nbsp;»</a></h3>
                             <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
                             {{- with .Summary }}
                             <div class="post-summary">{{ . }}</div>
