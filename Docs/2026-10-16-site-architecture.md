@@ -88,10 +88,13 @@ fails on an "x" join. Lists of non-names (roles, platforms, genres) stay plain `
 ### Apps
 
 Apps and performances are purely data-driven (`data/*.toml`) and rendered by
-templates/partials. There are 7 apps (`task_compass`, `ego_destroyer`,
-`roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`)
-across iOS, macOS, Android, Web, Linux and Windows. Some (e.g. `ego-destroyer`)
-have their own content section for update posts.
+templates/partials. There are 9 apps (`task_compass`, `ego_destroyer`,
+`roadlapse`, `sunrise_watch`, `icantstart`, `whatsapp_archive`, `phpbb3_static`, `podcast_gen`,
+`task_sync_kotlin`) across iOS, macOS, Android, Web, Linux and Windows. Some (e.g. `ego-destroyer`)
+have their own content section for update posts. An entry with `subsection` links to
+`content/<subsection>/_index.md` (front matter `app` names the data file); `task_sync_kotlin` is
+not an app but a suite of five Kotlin libraries, so its page (`content/task-sync-kotlin/`) just
+describes it and lists the repositories.
 
 ### Collaborator projects
 
