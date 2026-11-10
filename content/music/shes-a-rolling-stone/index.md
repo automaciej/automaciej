@@ -32,8 +32,11 @@ credits:
 - name: Liam Larkin
   roles:
   - mastering engineer
+upc: '700088802038'
+isrc: QTAEZ2671100
 links:
   streaming: https://distrokid.com/hyperfollow/zoehayter/shes-a-rolling-stone
+  apple_music_album: '6832384249'
 ---
 
 An original composition by Zoe Hayter and Maciej Bliziński. Pre-save it now; out December 13, 2026.

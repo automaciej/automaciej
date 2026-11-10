@@ -4,7 +4,7 @@
 {{- $sizes := .sizes | default "(max-width: 767px) 120px, (max-width: 883px) 45vw, (max-width: 1175px) 30vw, 25vw" -}}
 {{- /* The release's services as small logos linking straight to them (the same list as on the release page). */ -}}
 {{- $services := partial "release-services.html" (dict "links" $p.Params.links) -}}
-{{- $presave := partial "presave-url.html" (dict "links" $p.Params.links "services" $services) -}}
+{{- $presave := partial "presave-url.html" (dict "links" $p.Params.links "services" $services "release_date" $p.Params.release_date) -}}
 <article class="music-preview card card-row card-shadow{{ with $extraClass }} {{ . }}{{ end }}" data-release-date="{{ $p.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" }}" id="{{ $p.Title | urlize }}">
     <a class="stretched-link" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}"></a>
     {{- $thumb := "" }}

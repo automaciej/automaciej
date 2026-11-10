@@ -5,7 +5,7 @@
         <div class="cover-layout-header music-release-header">
             <div class="music-quick-links">
                 {{- $services := partial "release-services.html" (dict "links" $p.Params.links) }}
-                {{- with partial "presave-url.html" (dict "links" $p.Params.links "services" $services) }}
+                {{- with partial "presave-url.html" (dict "links" $p.Params.links "services" $services "release_date" $p.Params.release_date) }}
                 {{ partial "presave-chip.html" (dict "url" . "title" $p.Title) }}
                 {{- end }}
                 {{- /* Icons only: the name is the hover title and the image's alt. */ -}}

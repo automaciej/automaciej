@@ -18,6 +18,7 @@ are NOT built: this mirrors what gets deployed.
 """
 
 import atexit
+import datetime
 import json
 import os
 import re
@@ -794,7 +795,7 @@ class TestCssStructure(unittest.TestCase):
 
 
 class TestPresaveChip(unittest.TestCase):
-    """A release with a pre-save link and not yet on a major platform gets a Presave chip on its card."""
+    """A release with a pre-save link gets a Presave chip on its card while it is unreleased or not yet on a major platform."""
 
     # Links that replace the pre-save chip on the card (music-preview-card.html); smaller
     # services such as Qobuz or Deezer show their logo next to it.
@@ -807,7 +808,10 @@ class TestPresaveChip(unittest.TestCase):
             front = text.split("---")[1]
             links = front.split("\nlinks:", 1)[-1] if "\nlinks:" in front else ""
             keys = re.findall(r"^  (\w+):", links, re.M)
-            if "streaming" in keys and not any(k.startswith(self.LOGO_KEYS) for k in keys):
+            # A major-platform link on a release that is not out yet is a pre-order: the chip stays.
+            date = re.search(r"^release_date: '?(\d{4}-\d{2}-\d{2})", front, re.M)
+            unreleased = bool(date) and date.group(1) > datetime.date.today().isoformat()
+            if "streaming" in keys and (unreleased or not any(k.startswith(self.LOGO_KEYS) for k in keys)):
                 out.append(slug)
         return out
 

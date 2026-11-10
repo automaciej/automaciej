@@ -1,13 +1,17 @@
 {{- /*
     The pre-save page, when it should be offered as a "Presave" chip: a release with a
-    `streaming` link that is not yet on a major platform (Spotify, Apple Music or YouTube Music).
+    `streaming` link that is not yet on a major platform (Spotify, Apple Music or YouTube Music),
+    or whose release date is still ahead: a major-platform link on an unreleased release is a
+    pre-order, which does not replace the chip.
     Smaller services (Qobuz, iTunes ...) may already be linked beside it.
 
     Input:  dict "links" <links map> "services" <the release-services.html list>
+            "release_date" <the release's release_date front matter value>
     Output: the URL, or "" when there is none or the release is out.
 */ -}}
+{{- $unreleased := now.Before (time.AsTime .release_date) -}}
 {{- $major := false -}}
-{{- range .services }}{{ if in (slice "spotify" "apple_music" "youtube_music") .key }}{{ $major = true }}{{ end }}{{ end -}}
+{{- if not $unreleased }}{{ range .services }}{{ if in (slice "spotify" "apple_music" "youtube_music") .key }}{{ $major = true }}{{ end }}{{ end }}{{ end -}}
 {{- $url := "" -}}
 {{- with .links }}{{ if and .streaming (not $major) }}{{ $url = .streaming }}{{ end }}{{ end -}}
 {{- return $url -}}
