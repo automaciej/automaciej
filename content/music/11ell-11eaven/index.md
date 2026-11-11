@@ -33,6 +33,7 @@ credits:
 - name: Riccardo Marenghi
   roles:
   - drums
+upc: '700566586863'
 links:
   spotify_album: 7eXadqEepWgjS7Z1q1ax4Y
   apple_music_album: '6818366597'
