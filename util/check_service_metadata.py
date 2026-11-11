@@ -48,11 +48,14 @@ REPO = pathlib.Path(__file__).resolve().parent.parent
 MUSIC = REPO / "content" / "music"
 CONFIG = pathlib.Path(__file__).resolve().parent / "service_metadata.json"
 CACHE = REPO / ".cache" / "service-metadata.json"
-CACHE_VERSION = 2
+CACHE_VERSION = 3
 DEFAULT_TTL_HOURS = 24
 USER_AGENT = "Mozilla/5.0 (compatible; release-metadata-check)"
 
 OK, MERGED, MISSING, UNKNOWN = "ok", "MERGED", "MISSING", "?"
+
+# Front matter roles that make someone a songwriter, to be matched with a service's composer line.
+SONGWRITER_ROLES = {"music", "lyrics", "composer", "songwriter"}
 
 # Services linked from a release that this tool does not read (login or scraping needed).
 UNCHECKED_LINKS = {"tidal": "Tidal", "amazon_music": "Amazon Music",
@@ -69,22 +72,27 @@ class Fetched:
               (False for services that only show one channel per upload, like YouTube)
     source:   "page" for what the service itself returned, "URL slug" for Qobuz
     upc:      the release's UPC when the service exposes it
+    composers: the composer/songwriter lines the service shows, one per distinct line; None when
+              the service was not asked or does not show them, [] when it shows none
     """
 
-    def __init__(self, credit="", entities=(), strict=True, ids=(), source="page", upc=""):
+    def __init__(self, credit="", entities=(), strict=True, ids=(), source="page", upc="",
+                 composers=None):
         self.credit = credit
         self.entities = list(entities)
         self.ids = list(ids) + [""] * (len(self.entities) - len(ids))
         self.strict = strict
         self.source = source
         self.upc = upc
+        self.composers = composers
 
     def to_json(self):
         return dict(self.__dict__)
 
     @classmethod
     def from_json(cls, d):
-        return cls(d["credit"], d["entities"], d["strict"], d["ids"], d["source"], d["upc"])
+        return cls(d["credit"], d["entities"], d["strict"], d["ids"], d["source"], d["upc"],
+                   d["composers"])
 
 
 # --- Pure logic -------------------------------------------------------------------------------
@@ -112,6 +120,22 @@ def judge(expected, fetched):
     return OK, ""
 
 
+def songwriters(credits):
+    """Names in the front matter `credits` list that have a songwriting role."""
+    return [c["name"] for c in credits or [] if SONGWRITER_ROLES & set(c.get("roles", []))]
+
+
+def judge_songwriters(credits, fetched):
+    """(status, detail) for the songwriters in the site's credits against the composer lines a
+    service shows; None when the service shows none to compare or the site names no songwriter."""
+    expected = songwriters(credits)
+    if fetched.composers is None or not expected:
+        return None
+    shown = norm(" ".join(fetched.composers))
+    missing = [n for n in expected if norm(n) not in shown]
+    return (MISSING, ", ".join(missing)) if missing else (OK, "")
+
+
 def qobuz_credit_from_url(url):
     """The artist words in a Qobuz album URL slug, e.g. "loser gaia marenghi amp maciej blizinski".
     Qobuz writes "&" as "amp" and our bundled "x" as "x"."""
@@ -124,13 +148,13 @@ def parse_front_matter(text):
     if not text.startswith("---"):
         return None
     front = text.split("---", 2)[1]
-    out = {"artist": [], "links": {}}
+    out = {"artist": [], "links": {}, "credits": []}
     section = None
     for line in front.splitlines():
         if re.match(r"^\S", line) and not line.startswith("- "):
             m = re.match(r"^(\w+):\s*(.*)$", line)
             section = m.group(1) if m else None
-            if m and m.group(2) and section not in ("artist", "links"):
+            if m and m.group(2) and section not in ("artist", "links", "credits"):
                 out[section] = m.group(2).strip("'\"")
             continue
         if section == "artist":
@@ -141,6 +165,14 @@ def parse_front_matter(text):
             m = re.match(r"^  (\w+):\s*(.*)$", line)
             if m:
                 out["links"][m.group(1)] = m.group(2).strip("'\"")
+        elif section == "credits":
+            m = re.match(r"^- name:\s*(.*)$", line)
+            if m:
+                out["credits"].append({"name": m.group(1).strip("'\""), "roles": []})
+                continue
+            m = re.match(r"^  - (.*)$", line)
+            if m and out["credits"]:
+                out["credits"][-1]["roles"].append(m.group(1).strip("'\""))
     return out
 
 
@@ -251,6 +283,33 @@ def qobuz_id(links):
     return links.get("qobuz")
 
 
+def apple_composers(album):
+    """The distinct per-track `composer` lines on the album's Apple Music page, [] when the page
+    shows none, None when the page could not be read. Apple does not publish performer or
+    production credits (bass, producer ...) on the page, only this songwriter line."""
+    try:
+        html = get("https://music.apple.com/us/album/%s" % album)
+        m = re.search(r'<script type="application/json" id="serialized-server-data">(.*?)</script>',
+                      html, re.S)
+        data = json.loads(m.group(1))
+    except (urllib.error.URLError, OSError, ValueError, AttributeError):
+        return None
+    found = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            if isinstance(node.get("composer"), str) and node["composer"] not in found:
+                found.append(node["composer"])
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    walk(data)
+    return found
+
+
 def fetch_apple(album):
     results = get_json("https://itunes.apple.com/lookup?id=%s&entity=song&country=us" % album)["results"]
     if not results:
@@ -266,7 +325,8 @@ def fetch_apple(album):
             names.append(r["artistName"])
     # The displayed credit ("A & B") is checked too: a true collaboration shows both names even
     # when the lookup resolves only to the primary artist.
-    return Fetched(credit=credit, entities=names, ids=[str(i) for i in artist_ids])
+    return Fetched(credit=credit, entities=names, ids=[str(i) for i in artist_ids],
+                   composers=apple_composers(album))
 
 
 def fetch_spotify(album):
@@ -333,9 +393,15 @@ ID_LABEL = {"apple": "Apple artist ID", "spotify": "Spotify artist ID", "deezer"
 # --- Checking and report ----------------------------------------------------------------------
 
 class Result:
-    def __init__(self, slug, fm, service, status, detail="", fetched=None, error=""):
+    def __init__(self, slug, fm, service, status, detail="", fetched=None, error="", songwriters=None):
         self.slug, self.fm, self.service = slug, fm, service
         self.status, self.detail, self.fetched, self.error = status, detail, fetched, error
+        # (OK|MISSING, names) for the songwriter credit, or None when there is nothing to compare.
+        self.songwriters = songwriters
+
+    @property
+    def problem(self):
+        return self.status in (MERGED, MISSING) or bool(self.songwriters and self.songwriters[0] == MISSING)
 
 
 def check(releases, services, cache, delay=0.2, registry=None):
@@ -366,7 +432,8 @@ def check(releases, services, cache, delay=0.2, registry=None):
                 if name != "qobuz":
                     time.sleep(delay)
             status, detail = judge(fm["artist"], fetched)
-            results.append(Result(slug, fm, name, status, detail, fetched))
+            results.append(Result(slug, fm, name, status, detail, fetched,
+                                  songwriters=judge_songwriters(fm.get("credits"), fetched)))
     return results, counts
 
 
@@ -407,7 +474,8 @@ def format_report(results, services, counts, today=None):
     today = today or datetime.date.today().isoformat()
     profiles = known_profiles(results)
     out = ["Artist credit check, %s" % today, ""]
-    problems = sum(1 for r in results if r.status in (MERGED, MISSING))
+    problems = sum(1 for r in results if r.status in (MERGED, MISSING)) + sum(
+        1 for r in results if r.songwriters and r.songwriters[0] == MISSING)
     out += ["%d problem(s) found. Expected on every release: the artists listed in the site's front "
             "matter, each credited as its own existing artist, never as one combined artist." % problems, ""]
     order = []
@@ -438,8 +506,19 @@ def format_report(results, services, counts, today=None):
             if r.fetched.source != "page":
                 out.append("    Evidence: only the artist words in the %s link, not the page itself "
                            "(%s blocks automated reads); open the link to confirm." % (name, name))
+        for r in mine:
+            if r.songwriters and r.songwriters[0] == MISSING:
+                out.append("  PROBLEM, %s songwriter credit: no credit for %s" % (
+                    SERVICES[r.service][0], r.songwriters[1]))
+                out.append("    Link: %s" % service_url(r.service, r.fm["links"]))
+                shown = ", ".join('"%s"' % c for c in r.fetched.composers or [])
+                out.append("    Shows: %s" % (shown or "no composer"))
+                out.append("    Expected: %s (music/lyrics credits on the site)" %
+                           ", ".join(songwriters(r.fm.get("credits"))))
         good = [SERVICES[r.service][0] + ("" if r.fetched.source == "page" else " (from the link only)")
                 for r in mine if r.status == OK]
+        good += ["%s songwriter credit" % SERVICES[r.service][0]
+                 for r in mine if r.songwriters and r.songwriters[0] == OK]
         if good:
             out.append("  Correct: %s" % ", ".join(good))
         for r in mine:
@@ -488,7 +567,7 @@ def main(argv=None):
     results, counts = check(releases, services, cache)
     cache.save()
     print(format_report(results, services, counts))
-    return 1 if any(r.status in (MERGED, MISSING) for r in results) else 0
+    return 1 if any(r.problem for r in results) else 0
 
 
 if __name__ == "__main__":

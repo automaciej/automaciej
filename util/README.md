@@ -53,6 +53,11 @@ automated page reads, so for Qobuz only the artist words in our own Qobuz link a
 report says so. Tidal, Amazon Music, Bandcamp and SoundCloud are listed as not checked. Standard
 library only.
 
+On Apple Music it also checks the songwriter credit: everyone in the release's `credits:` with a
+`music`, `lyrics`, `composer` or `songwriter` role must appear in Apple's per-track composer line.
+A release whose credits name no songwriter (for example a cover) is not compared. Apple does not
+publish performer or production credits (bass, producer ...) on the page, so those are not checked.
+
 Which releases and services to check is configured in `util/service_metadata.json` (`releases`,
 `services`, `cache_ttl_hours`). Results are cached per service resource in
 `.cache/service-metadata.json` (gitignored) for 24 hours; failed lookups are never cached.
@@ -67,4 +72,4 @@ python3 util/test_check_service_metadata.py                 # offline tests, no 
 ```
 
 Exit status is 1 when any service is MERGED (one combined artist) or MISSING (an expected artist
-is not credited).
+or songwriter is not credited).

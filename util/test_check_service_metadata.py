@@ -144,6 +144,66 @@ class TestCache(unittest.TestCase):
         self.assertIsNone(cache.get("fake:A1"))
 
 
+CREDITS = [{"name": "Gaia Marenghi", "roles": ["music", "lyrics", "vocals"]},
+           {"name": "Maciej Bliziński", "roles": ["music", "producer", "bass"]},
+           {"name": "Riccardo Marenghi", "roles": ["drums"]}]
+
+
+class TestSongwriters(unittest.TestCase):
+    def test_only_writing_roles_count(self):
+        self.assertEqual(c.songwriters(CREDITS), BOTH)
+
+    def test_both_songwriters_shown_is_ok(self):
+        f = c.Fetched(composers=["Gaia Marenghi & Maciej Bliziński"])
+        self.assertEqual(c.judge_songwriters(CREDITS, f), (c.OK, ""))
+
+    def test_missing_songwriter(self):
+        f = c.Fetched(composers=["Gaia Marenghi"])
+        self.assertEqual(c.judge_songwriters(CREDITS, f), (c.MISSING, "Maciej Bliziński"))
+
+    def test_no_composer_shown_at_all(self):
+        self.assertEqual(c.judge_songwriters(CREDITS, c.Fetched(composers=[]))[0], c.MISSING)
+
+    def test_diacritics_do_not_matter(self):
+        f = c.Fetched(composers=["Gaia Marenghi, Maciej Blizinski"])
+        self.assertEqual(c.judge_songwriters(CREDITS, f), (c.OK, ""))
+
+    def test_nothing_to_compare_gives_no_verdict(self):
+        self.assertIsNone(c.judge_songwriters(CREDITS, c.Fetched(composers=None)))
+        self.assertIsNone(c.judge_songwriters([{"name": "X", "roles": ["drums"]}], c.Fetched(composers=[])))
+        self.assertIsNone(c.judge_songwriters([], c.Fetched(composers=[])))
+
+    def test_credits_are_read_from_front_matter(self):
+        fm = c.parse_front_matter(
+            "---\ntitle: X\nartist:\n- A\ncredits:\n- name: Gaia Marenghi\n  roles:\n  - music\n"
+            "  - vocals\n- name: Riccardo Marenghi\n  roles:\n  - drums\nlinks:\n  spotify_album: s\n---\n")
+        self.assertEqual(fm["credits"], [{"name": "Gaia Marenghi", "roles": ["music", "vocals"]},
+                                         {"name": "Riccardo Marenghi", "roles": ["drums"]}])
+        self.assertEqual(fm["links"], {"spotify_album": "s"})
+
+    def page(self, composers):
+        tracks = ",".join('{"composer": "%s"}' % x for x in composers)
+        return ('<html><script type="application/json" id="serialized-server-data">'
+                '{"data": [{"tracks": [%s]}]}</script></html>' % tracks)
+
+    def with_page(self, html):
+        orig = c.get
+        c.get = lambda url: html
+        self.addCleanup(setattr, c, "get", orig)
+
+    def test_apple_page_composer_is_read(self):
+        self.with_page(self.page(["Gaia Marenghi & Maciej Bliziński", "Gaia Marenghi & Maciej Bliziński"]))
+        self.assertEqual(c.apple_composers("1"), ["Gaia Marenghi & Maciej Bliziński"])
+
+    def test_apple_page_without_composer_is_empty_not_unknown(self):
+        self.with_page(self.page([]))
+        self.assertEqual(c.apple_composers("1"), [])
+
+    def test_unreadable_apple_page_is_unknown(self):
+        self.with_page("<html>no data</html>")
+        self.assertIsNone(c.apple_composers("1"))
+
+
 class TestQobuz(unittest.TestCase):
     BASE = "https://www.qobuz.com/us-en/album/%s/xwhg4gjlc762f"
 
@@ -211,6 +271,26 @@ class TestReport(unittest.TestCase):
         text = c.format_report([c.Result("t", fm, "qobuz", c.OK, "", f)], ["qobuz"],
                                {"fetched": 1, "cached": 0}, today="2026-11-11")
         self.assertIn("Correct: Qobuz (from the link only)", text)
+
+    def test_songwriter_problem_is_listed_with_link_shows_and_expected(self):
+        fm = {"title": "T", "artist": BOTH, "credits": CREDITS, "links": {"apple_music_album": "7"}}
+        f = c.Fetched(credit="Gaia Marenghi & Maciej Bliziński", entities=BOTH, composers=["Gaia Marenghi"])
+        res = c.Result("t", fm, "apple", c.OK, "", f, songwriters=c.judge_songwriters(CREDITS, f))
+        text = c.format_report([res], ["apple"], {"fetched": 1, "cached": 0}, today="2026-11-11")
+        self.assertIn("PROBLEM, Apple Music songwriter credit: no credit for Maciej Bliziński", text)
+        self.assertIn('Shows: "Gaia Marenghi"', text)
+        self.assertIn("Expected: Gaia Marenghi, Maciej Bliziński", text)
+        self.assertIn("1 problem(s) found", text)
+        self.assertTrue(res.problem)
+
+    def test_correct_songwriter_credit_is_listed_as_correct(self):
+        fm = {"title": "T", "artist": BOTH, "credits": CREDITS, "links": {"apple_music_album": "7"}}
+        f = c.Fetched(credit="Gaia Marenghi & Maciej Bliziński", entities=BOTH,
+                      composers=["Gaia Marenghi & Maciej Bliziński"])
+        res = c.Result("t", fm, "apple", c.OK, "", f, songwriters=c.judge_songwriters(CREDITS, f))
+        text = c.format_report([res], ["apple"], {"fetched": 1, "cached": 0}, today="2026-11-11")
+        self.assertIn("Correct: Apple Music, Apple Music songwriter credit", text)
+        self.assertFalse(res.problem)
 
     def test_report_is_plain_lists_without_table_drawing(self):
         text = self.report()
