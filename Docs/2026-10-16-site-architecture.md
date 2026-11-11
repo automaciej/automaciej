@@ -191,7 +191,8 @@ dark = "/images/services/qobuz.svg"
   alt), optionally with a visible label (`"Listen on %s"`, `"%s"`). A service without a logo shows
   its name as text. `partials/service-icon.html` looks up the logo and effect class in the data.
 - `partials/presave-url.html` and `presave-chip.html`: the Presave chip appears for a release with
-  a `streaming` link and no Spotify, Apple Music or YouTube Music link yet.
+  a `streaming` link only until its release date; after that it is gone (the release page button
+  reads "Listen now").
 - Users: the release page (`.music-quick-links`, icons only), cards (`.music-preview-services`),
   per-track and "Listen" pills (`.streaming-link`, logo + "Listen on X"), and the homepage artist
   profiles (`music-presence.html`, `.social a.text-icon`, logo + name).

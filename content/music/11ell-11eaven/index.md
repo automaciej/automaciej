@@ -34,6 +34,10 @@ credits:
   roles:
   - drums
 links:
+  spotify_album: 7eXadqEepWgjS7Z1q1ax4Y
+  apple_music_album: '6818366597'
+  itunes_album: '6818366597'
+  amazon_music: https://music.amazon.com/albums/B0HLRMC5Z8
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/11ell-11eaven
   qobuz: https://www.qobuz.com/us-en/album/11ell-11eaven-gaia-marenghi-x-maciej-blizinski/xwhg4gjlc762f
 ---
