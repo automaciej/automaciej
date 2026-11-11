@@ -35,7 +35,9 @@ piece is an original, a cover or a standard, whoever wrote it.
 Every service icon above the title is a listen link, so nothing below repeats them. A release with a
 `links.streaming` (HyperFollow) link gets one `.release-button` in the header, after the date: "Listen now",
 or "Pre-save" while the article has `.is-unreleased` (set by `unreleased.js`; without JS it reads
-"Listen now"). It replaces the old `presave-button`. The block below the description
+"Listen now"). It replaces the old `presave-button`. (Since then the button is rendered only before the
+release date, or after it for a release with no service icons; see `partials/release-links.html` and
+`Docs/2026-10-16-site-architecture.md`.) The block below the description
 (`partials/music-playback.html`) holds only tracks: an album (`single: false`) gets a plain numbered list
 (`music-playback-album.html`); any other release with tracks keeps per-track credits and links
 (`music-playback-tracks.html`).

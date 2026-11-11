@@ -2,9 +2,8 @@
 {{- $extraClass := .extra_class -}}
 {{- /* sizes: the artwork's rendered width. Default is the grid on the music pages (120px on phones, then 2 columns up to 883px, 3 up to 1175px, 4 beyond: 260px minimum cards, 2rem gaps, 20px container padding). The homepage passes its own. */ -}}
 {{- $sizes := .sizes | default "(max-width: 767px) 120px, (max-width: 883px) 45vw, (max-width: 1175px) 30vw, 25vw" -}}
-{{- /* The release's services as small logos linking straight to them (the same list as on the release page). */ -}}
-{{- $services := partial "release-services.html" (dict "links" $p.Params.links) -}}
-{{- $presave := partial "presave-url.html" (dict "links" $p.Params.links "services" $services "release_date" $p.Params.release_date) -}}
+{{- /* The release's links (service logos, the Presave chip) come from release-links.html. */ -}}
+{{- $rl := partial "release-links.html" (dict "page" $p "card" true) -}}
 <article class="music-preview card card-row card-shadow{{ with $extraClass }} {{ . }}{{ end }}" data-release-date="{{ $p.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" }}" id="{{ $p.Title | urlize }}">
     <a class="stretched-link" href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}"></a>
     {{- $thumb := "" }}
@@ -35,12 +34,12 @@
             {{- with $p.Params.genres }}{{ partial "music-genre-links.html" $p }} • {{ end -}}
             <span class="music-preview-date">{{ dateFormat "Jan 2006" $p.Params.release_date }}</span>
         </div>
-        {{- if or $services $presave }}
+        {{- if or $rl.services $rl.presave }}
         <div class="music-preview-services">
-            {{- range $services }}
+            {{- range $rl.services }}
             {{ partial "service-link.html" (dict "service" . "title" $p.Title) }}
             {{- end }}
-            {{- with $presave }}
+            {{- with $rl.presave }}
             {{ partial "presave-chip.html" (dict "url" . "title" $p.Title) }}
             {{- end }}
         </div>

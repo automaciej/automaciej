@@ -1,0 +1,30 @@
+{{- /*
+    Every link rule for a release, in one place. The release page header and the cards both read it.
+
+    Input:  dict "page" <the release page> [ "card" true ]
+    Output: dict
+      unreleased  the release date is still ahead (decided when the site is built)
+      services    the service logos to show, in the canonical order (release-services.html)
+      presave     the pre-save (HyperFollow) URL for the "Presave" chip, or "": only while unreleased
+      button      the URL for the release page's one header button, or "": the pre-save page while
+                  unreleased, and after release only when there are no service logos to use instead
+
+    The rules:
+      - `links.streaming` is the HyperFollow page. It is a service logo's stand-in only before the
+        release (Presave) or when the release has no other links at all (Listen now).
+      - apple_music_album and itunes_album hold the same Apple ID. itunes_album is set only when the
+        release can be pre-ordered on iTunes, so before the release date a card shows iTunes when it
+        is set and never Apple Music, whose page cannot be played yet. The release page keeps
+        both: it is where a visitor looks for every link.
+*/ -}}
+{{- $p := .page -}}
+{{- $links := $p.Params.links | default dict -}}
+{{- $unreleased := now.Before (time.AsTime $p.Params.release_date) -}}
+{{- $services := partial "release-services.html" (dict "links" $links) -}}
+{{- if and $unreleased .card }}{{ $services = where $services "key" "ne" "apple_music" }}{{ end -}}
+{{- $streaming := $links.streaming | default "" -}}
+{{- return (dict
+    "unreleased" $unreleased
+    "services" $services
+    "presave" (cond $unreleased $streaming "")
+    "button" (cond (or $unreleased (not $services)) $streaming "")) -}}

@@ -6,7 +6,7 @@
             release_links supplies the album IDs for a track that only stores its track ID.
     Output: slice of dicts: key (the data/services file name), name and url, in the services'
             `order` (data/services/<key>.toml). The pre-save/HyperFollow
-            `streaming` link is not a service and is left out (see presave-url.html).
+            `streaming` link is not a service and is left out (see release-links.html).
     Names, order and logos live in data/services; this partial only maps links to URLs.
 */ -}}
 {{- $links := .links | default dict -}}

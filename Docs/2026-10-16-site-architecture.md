@@ -193,9 +193,16 @@ dark = "/images/services/qobuz.svg"
 - `partials/service-link.html` renders one link: the logo (name as the hover title and the image
   alt), optionally with a visible label (`"Listen on %s"`, `"%s"`). A service without a logo shows
   its name as text. `partials/service-icon.html` looks up the logo and effect class in the data.
-- `partials/presave-url.html` and `presave-chip.html`: the Presave chip appears for a release with
-  a `streaming` link only until its release date; after that it is gone (the release page button
-  reads "Listen now").
+- `partials/release-links.html` holds every link rule for a release (release page header and cards
+  both read it), returning `services`, `presave`, `button` and `unreleased`:
+  - `links.streaming` is the HyperFollow page. It becomes the Presave chip (`presave-chip.html`) only
+    until the release date, and the release page's one header button only until then or, after it, when
+    the release has no service icons at all ("Listen now" as a fallback).
+  - `apple_music_album` and `itunes_album` are the same Apple ID; `itunes_album` is set only when the
+    release can be pre-ordered on iTunes. Before the release date a card shows iTunes if it is set and
+    never Apple Music; the release page keeps both.
+  - "Unreleased" is decided at build time, so the chip, the button and the card's Apple links change on
+    the first deploy after the date (the button label and the card overlay flip in the browser at once).
 - Users: the release page (`.music-quick-links`, icons only), cards (`.music-preview-services`),
   per-track and "Listen" pills (`.streaming-link`, logo + "Listen on X"), and the homepage artist
   profiles (`music-presence.html`, `.social a.text-icon`, logo + name).

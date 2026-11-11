@@ -833,6 +833,44 @@ class TestPresaveChip(unittest.TestCase):
                     self.assertIn("presave-chip", card.group(0))
 
 
+class TestUnreleasedAppleLink(unittest.TestCase):
+    """Before the release date a card never links Apple Music; it links iTunes only for a release
+    that has an `itunes_album` (itunes_album is set only when iTunes takes pre-orders). The release
+    page keeps every link."""
+
+    def unreleased_with_apple(self):
+        out = []
+        for slug in RELEASE_SLUGS:
+            front = (REPO / "content/music" / slug / "index.md").read_text(encoding="utf-8").split("---")[1]
+            date = re.search(r"^release_date: '?(\d{4}-\d{2}-\d{2})", front, re.M)
+            if date and date.group(1) > datetime.date.today().isoformat() and re.search(r"^  apple_music_album:", front, re.M):
+                out.append((slug, bool(re.search(r"^  itunes_album:", front, re.M))))
+        return out
+
+    def card(self, html, slug):
+        return re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/%s/"(?:(?!</article>).)*</article>' % re.escape(slug), html, re.S)
+
+    def test_cards_link_itunes_only_with_an_itunes_album_and_never_apple_music(self):
+        releases = self.unreleased_with_apple()
+        self.assertTrue(releases, "no unreleased release has an Apple ID; retire this test or pick another case")
+        for url in ("/music/", "/"):
+            html = (SITE.root / url.lstrip("/") / "index.html").read_text(encoding="utf-8")
+            for slug, has_itunes in releases:
+                card = self.card(html, slug)
+                if card is None:
+                    continue  # the home page shows only the newest releases
+                with self.subTest(page=url, release=slug):
+                    links = re.findall(r'href="(https://music\.apple\.com/[^"]+)"', card.group(0))
+                    self.assertTrue(all("app=itunes" in u for u in links), links)
+                    self.assertEqual(bool(links), has_itunes, links)
+
+    def test_release_page_keeps_the_apple_music_link(self):
+        for slug, _ in self.unreleased_with_apple():
+            with self.subTest(release=slug):
+                raw = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
+                self.assertRegex(raw, r'href="https://music\.apple\.com/[^"?]+"')
+
+
 class TestQobuzChip(unittest.TestCase):
     """Cards show a Qobuz logo chip, like the other services, for releases found on Qobuz."""
 
@@ -1003,6 +1041,11 @@ class TestServiceLinksEverywhere(unittest.TestCase):
         services = service_data()
         self.assertEqual([k for k in self.KEYS if not (services.get(k) or {}).get("light")], [])
 
+    def unreleased(self, slug):
+        front = (REPO / "content/music" / slug / "index.md").read_text(encoding="utf-8").split("---")[1]
+        date = re.search(r"^release_date: '?(\d{4}-\d{2}-\d{2})", front, re.M)
+        return bool(date) and date.group(1) > datetime.date.today().isoformat()
+
     def test_a_card_lists_the_same_services_in_the_same_order_as_its_release_page(self):
         music = (SITE.root / "music/index.html").read_text(encoding="utf-8")
         bad = []
@@ -1013,7 +1056,10 @@ class TestServiceLinksEverywhere(unittest.TestCase):
             if card is None:
                 bad.append(f"{slug}: no card")
                 continue
-            if self.names_in(quick) != self.names_in(card.group(0)):
+            expected = self.names_in(quick)
+            if self.unreleased(slug):
+                expected = [n for n in expected if n != "Apple Music"]  # not playable before the release
+            if expected != self.names_in(card.group(0)):
                 bad.append(f"{slug}: page {self.names_in(quick)} card {self.names_in(card.group(0))}")
         self.assertEqual(bad, [])
 
@@ -1272,20 +1318,21 @@ class TestPrimaryRole(unittest.TestCase):
         self.assertIn("track-links", single)
 
     def test_release_button_is_in_the_header_and_nothing_repeats_it_below(self):
-        """One Listen now / Pre-save button, in the header, for every release with a `streaming` link
-        (Loser had none). The block below the description holds only tracks: no second set of
-        listen buttons, no "Listen to ..." heading."""
-        for slug, url in (("loser", "https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/loser"),
-                          ("level-design", "https://distrokid.com/hyperfollow/8bitfunk/level-design"),
-                          ("hidden-beach", "https://distrokid.com/hyperfollow/maciejbliziski/hidden-beach-2")):
-            with self.subTest(release=slug):
+        """The one header button is the pre-save page before the release, and after it only for a
+        release with no service icons to use instead. A released release with icons has no button
+        (its HyperFollow link is still the "Single" link in the meta line). The block below the
+        description holds only tracks: no second set of listen buttons, no "Listen to ..." heading."""
+        for slug in ("loser", "level-design", "hidden-beach"):  # released, with service icons
+            with self.subTest(release=slug, what="no button once released"):
                 html = self.read(f"music/{slug}/index.html")
-                self.assertEqual(html.count('class="release-button"'), 1)
-                self.assertIn(f'class="release-button" href="{url}"', html)
-                self.assertIn(">Listen now</span>", html)
-                self.assertIn(">Pre-save</span>", html)
-                self.assertLess(html.index("release-button"), html.index("music-description"))
+                self.assertNotIn("release-button", html)
                 self.assertNotIn("music-playback-heading", html)
+        html = self.read("music/shes-a-rolling-stone/index.html")  # unreleased: the pre-save button
+        self.assertEqual(html.count('class="release-button"'), 1)
+        self.assertIn('class="release-button" href="https://distrokid.com/hyperfollow/zoehayter/shes-a-rolling-stone"', html)
+        self.assertIn(">Pre-save</span>", html)
+        self.assertIn(">Listen now</span>", html)  # the label CSS shows once the date passes
+        self.assertLess(html.index("release-button"), html.index("music-description"))
         for slug in RELEASE_SLUGS:  # "Listen on <service>" buttons exist only as per-track links
             with self.subTest(release=slug, what="no release-level listen buttons below"):
                 html = self.read(f"music/{slug}/index.html")

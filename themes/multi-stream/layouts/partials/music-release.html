@@ -4,12 +4,12 @@
     <div class="cover-layout">
         <div class="cover-layout-header music-release-header">
             <div class="music-quick-links">
-                {{- $services := partial "release-services.html" (dict "links" $p.Params.links) }}
-                {{- with partial "presave-url.html" (dict "links" $p.Params.links "services" $services "release_date" $p.Params.release_date) }}
+                {{- $rl := partial "release-links.html" (dict "page" $p) }}
+                {{- with $rl.presave }}
                 {{ partial "presave-chip.html" (dict "url" . "title" $p.Title) }}
                 {{- end }}
                 {{- /* Icons only: the name is the hover title and the image's alt. */ -}}
-                {{- range $services }}
+                {{- range $rl.services }}
                 {{ partial "service-link.html" (dict "service" . "title" $p.Title) }}
                 {{- end }}
                 <button type="button" class="share-button" title="Copy link"><svg class="share-icon share-icon-copied" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path class="share-icon-outline" d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-link" viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" focusable="false"><path class="share-icon-outline" d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="4.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="share-icon share-icon-share" viewBox="0 0 16 16" width="25" height="25" aria-hidden="true" focusable="false"><path class="share-icon-outline" d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 6H4a1 1 0 0 0-1 1v6.5a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5M8 10V1.5M5.5 4 8 1.5 10.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="share-label visually-hidden">Copy link</span></button>
@@ -30,9 +30,11 @@
                 <span class="composition-origin"> • cover of <span class="original-artist">{{ . }}</span></span>
                 {{- end }}{{ end }}
             </div>
-            {{- /* One button, one place: "Pre-save" until the release date, "Listen now" after it (CSS, driven by
-                   the .is-unreleased class unreleased.js puts on the article; without JS it reads "Listen now"). */}}
-            {{- with $p.Params.links.streaming }}
+            {{- /* One button, one place (release-links.html decides whether there is one): "Pre-save" until the
+                   release date, "Listen now" after it, which only a release with no service links shows
+                   (CSS, driven by the .is-unreleased class unreleased.js puts on the article; without JS it
+                   reads "Listen now"). */}}
+            {{- with $rl.button }}
             <a class="release-button" href="{{ . }}" target="_blank" rel="noopener"><span class="release-button-listen">Listen now</span><span class="release-button-presave">Pre-save</span></a>
             {{- end }}
         </div>
