@@ -38,6 +38,7 @@ links:
   apple_music_album: '6818366597'
   itunes_album: '6818366597'
   amazon_music: https://music.amazon.com/albums/B0HLRMC5Z8
+  deezer: https://www.deezer.com/us/album/1111422622
   youtube: gFNeDd_2fEc
   youtube_music_album: OLAK5uy_lrxP3p1IWBFXhsi209qZTT9T9dQ9VfarA
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/11ell-11eaven
