@@ -38,6 +38,7 @@ links:
   apple_music_album: '6818366597'
   itunes_album: '6818366597'
   amazon_music: https://music.amazon.com/albums/B0HLRMC5Z8
+  youtube_music_album: OLAK5uy_lrxP3p1IWBFXhsi209qZTT9T9dQ9VfarA
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/11ell-11eaven
   qobuz: https://www.qobuz.com/us-en/album/11ell-11eaven-gaia-marenghi-x-maciej-blizinski/xwhg4gjlc762f
 ---
