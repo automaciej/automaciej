@@ -1,0 +1,5 @@
+{
+  "releases": ["runnin", "river", "loser", "11ell-11eaven"],
+  "services": ["apple", "spotify", "deezer", "qobuz", "youtube"],
+  "cache_ttl_hours": 24
+}

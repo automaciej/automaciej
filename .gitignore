@@ -4,3 +4,4 @@ private_cfg.sh
 private.cfg.sh
 .hugo_build.lock
 .DS_Store
+.cache/
