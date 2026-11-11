@@ -195,9 +195,10 @@ dark = "/images/services/qobuz.svg"
   its name as text. `partials/service-icon.html` looks up the logo and effect class in the data.
 - `partials/release-links.html` holds every link rule for a release (release page header and cards
   both read it), returning `services`, `presave`, `button` and `unreleased`:
-  - `links.streaming` is the HyperFollow page. It becomes the Presave chip (`presave-chip.html`) only
-    until the release date, and the release page's one header button only until then or, after it, when
-    the release has no service icons at all ("Listen now" as a fallback).
+  - `links.streaming` is the HyperFollow page. Before the release date it is the Presave chip on a card
+    (`presave-chip.html`) and the one header button ("Pre-save") on the release page, never both on the
+    page. After the date the button appears only when the release has no service icons at all
+    ("Listen now" as a fallback), and the chip is gone.
   - `apple_music_album` and `itunes_album` are the same Apple ID; `itunes_album` is set only when the
     release can be pre-ordered on iTunes. Before the release date a card shows iTunes if it is set and
     never Apple Music; the release page keeps both.

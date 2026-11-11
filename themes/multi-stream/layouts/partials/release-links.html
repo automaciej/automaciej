@@ -2,16 +2,17 @@
     Every link rule for a release, in one place. The release page header and the cards both read it.
 
     Input:  dict "page" <the release page> [ "card" true ]
-    Output: dict
-      unreleased  the release date is still ahead (decided when the site is built)
+    Output: dict (the release date is compared with the build time, so these change on the first deploy after it)
       services    the service logos to show, in the canonical order (release-services.html)
-      presave     the pre-save (HyperFollow) URL for the "Presave" chip, or "": only while unreleased
+      presave     the pre-save (HyperFollow) URL for a card's "Presave" chip, or "": only on a card and
+                  only while unreleased (the release page has the header button instead)
       button      the URL for the release page's one header button, or "": the pre-save page while
                   unreleased, and after release only when there are no service logos to use instead
 
     The rules:
-      - `links.streaming` is the HyperFollow page. It is a service logo's stand-in only before the
-        release (Presave) or when the release has no other links at all (Listen now).
+      - `links.streaming` is the HyperFollow page. Before the release it is the Presave chip on a
+        card and the header button on the release page; after it, the button appears only when the
+        release has no other links at all (Listen now).
       - apple_music_album and itunes_album hold the same Apple ID. itunes_album is set only when the
         release can be pre-ordered on iTunes, so before the release date a card shows iTunes when it
         is set and never Apple Music, whose page cannot be played yet. The release page keeps
@@ -24,7 +25,6 @@
 {{- if and $unreleased .card }}{{ $services = where $services "key" "ne" "apple_music" }}{{ end -}}
 {{- $streaming := $links.streaming | default "" -}}
 {{- return (dict
-    "unreleased" $unreleased
     "services" $services
-    "presave" (cond $unreleased $streaming "")
+    "presave" (cond (and $unreleased .card) $streaming "")
     "button" (cond (or $unreleased (not $services)) $streaming "")) -}}

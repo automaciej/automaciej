@@ -814,11 +814,12 @@ class TestPresaveChip(unittest.TestCase):
                 out.append(slug)
         return out
 
-    def test_release_pages_of_presave_only_releases_show_the_chip(self):
+    def test_release_pages_have_the_header_button_instead_of_the_chip(self):
         for slug in self.presave_only_slugs():
             with self.subTest(release=slug):
                 raw = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
-                self.assertIn('class="presave-chip"', raw)
+                self.assertNotIn("presave-chip", raw)
+                self.assertIn('class="release-button"', raw)
 
     def test_cards_of_presave_only_releases_show_the_chip(self):
         slugs = self.presave_only_slugs()
@@ -948,7 +949,7 @@ class TestReleaseServiceIcons(unittest.TestCase):
     def quick_links(self, slug):
         raw = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
         block = re.search(r'<div class="music-quick-links">(.*?)<button', raw, re.S).group(1)
-        return [a for a in re.findall(r"<a [^>]*>.*?</a>", block, re.S) if "presave-chip" not in a]
+        return re.findall(r"<a [^>]*>.*?</a>", block, re.S)
 
     def test_every_service_link_is_an_icon_with_the_name_in_title_and_alt(self):
         bad = []

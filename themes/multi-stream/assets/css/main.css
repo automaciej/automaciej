@@ -640,7 +640,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* "Presave" chip: a release whose only link is the pre-save page. */
+/* "Presave" chip on a card: an unreleased release's pre-save page (the release page has the header button). */
 
 .presave-chip {
     display: inline-block;
@@ -651,12 +651,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--text-xs);
     font-weight: 600;
     line-height: 1.5;
-    text-decoration: none;
-}
-
-.music-quick-links a.presave-chip,
-.music-quick-links a.presave-chip:hover {
-    color: var(--accent);
     text-decoration: none;
 }
 
