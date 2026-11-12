@@ -52,7 +52,7 @@
     "description": {{ ($v.Description | default $v.Title) | jsonify | safeJS }},
     "thumbnailUrl": {{ printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" $v.Params.links.youtube | jsonify | safeJS }},
     "embedUrl": {{ printf "https://www.youtube.com/embed/%s" $v.Params.links.youtube | jsonify | safeJS }},
-    "uploadDate": {{ dateFormat "2006-01-02" $v.Params.release_date | jsonify | safeJS }},
+    "uploadDate": {{ $v.Params.release_date | time.AsTime | dateFormat "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
     "url": {{ printf "https://www.youtube.com/watch?v=%s" $v.Params.links.youtube | jsonify | safeJS }},
     "about": {"@id": {{ printf "%s#release" $v.Permalink | jsonify | safeJS }}}
   }

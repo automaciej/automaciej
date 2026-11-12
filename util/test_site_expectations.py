@@ -581,6 +581,32 @@ class TestStructuredData(unittest.TestCase):
                     bad.append(f"{url}: {e}")
         self.assertEqual(bad, [])
 
+    def test_jsonld_dates_carry_a_time_zone(self):
+        """Search Console: "datetime property uploadDate is missing a time zone"."""
+        keys = {"uploadDate", "datePublished", "dateModified"}
+        tz = re.compile(r"^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?(Z|[+-]\d\d:\d\d)$")
+        # Release dates are calendar dates, not Google-validated datetimes.
+        date_only_ok = {"MusicAlbum", "MusicRecording"}
+        bad = []
+
+        def walk(node, url):
+            if isinstance(node, dict):
+                skip = node.get("@type") in date_only_ok
+                for k, v in node.items():
+                    if skip:
+                        break
+                    if k in keys and isinstance(v, str) and not tz.match(v):
+                        bad.append(f"{url}: {k}={v}")
+                    walk(v, url)
+            elif isinstance(node, list):
+                for v in node:
+                    walk(v, url)
+
+        for url, p in SITE.pages.items():
+            for raw in p.jsonld:
+                walk(json.loads(raw), url)
+        self.assertEqual(bad, [])
+
     def test_home_has_person_and_website(self):
         self.assertTrue({"Person", "WebSite"} <= types_in(SITE.pages["/"]))
 
