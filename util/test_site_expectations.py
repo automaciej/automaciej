@@ -1568,6 +1568,18 @@ class TestMusicReleaseJsonLd(unittest.TestCase):
         self.assertEqual(alb["@id"], BASE_URL + "/music/to-promenade/#release")
         self.assertEqual(alb["identifier"]["value"], "199518640188")
 
+    def test_single_with_a_tracks_list_exposes_every_track(self):
+        # hidden-beach is single: true but lists a radio edit and an extended mix with own ISRCs.
+        rec = next(b for b in jsonld_blocks(SITE.pages["/music/hidden-beach/"]) if b.get("@type") == "MusicRecording")
+        self.assertEqual([t["name"] for t in rec["track"]], ["Hidden Beach", "Hidden Beach (Extended)"])
+        self.assertEqual([t["isrcCode"] for t in rec["track"]], ["QT3F22655064", "QT3F22655065"])
+        ext = rec["track"][1]
+        self.assertIn("Riccardo Marenghi", [c["name"] for c in ext["contributor"]])
+
+    def test_single_without_a_tracks_list_has_no_track_property(self):
+        rec = next(b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording")
+        self.assertNotIn("track", rec)
+
     def test_every_release_page_has_exactly_one_release_node(self):
         bad = []
         for url, p in SITE.pages.items():
