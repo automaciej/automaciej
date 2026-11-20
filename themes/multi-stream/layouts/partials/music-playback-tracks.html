@@ -1,9 +1,10 @@
 {{- /*
     A release with tracks that is not an album (e.g. a single with several versions): each track
     with its credits and its own listen links (track-level links, so not the ones in the header).
-    Input: dict "page" <release page>.
+    Input: dict "page" <release page> [ "autoplay" true ] (passed on to service-link.html).
 */ -}}
 {{- $p := .page -}}
+{{- $autoplay := .autoplay -}}
 <div class="music-tracks">
     {{- range $p.Params.tracks }}
     <div class="track">
@@ -13,7 +14,7 @@
         <div class="track-links">
             {{- range . }}
             <div class="embed streaming-link">
-                {{ partial "service-link.html" (dict "service" . "label" "Listen on %s") }}
+                {{ partial "service-link.html" (dict "service" . "label" "Listen on %s" "autoplay" $autoplay) }}
             </div>
             {{- end }}
         </div><!-- track-links -->

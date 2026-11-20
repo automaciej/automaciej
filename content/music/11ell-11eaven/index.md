@@ -45,6 +45,10 @@ links:
   youtube_music_album: OLAK5uy_lrxP3p1IWBFXhsi209qZTT9T9dQ9VfarA
   streaming: https://distrokid.com/hyperfollow/gaiamarenghixmaciejbliziski/11ell-11eaven
   qobuz: https://www.qobuz.com/us-en/album/11ell-11eaven-gaia-marenghi-x-maciej-blizinski/xwhg4gjlc762f
+tracks:
+  - title: 11ell 11eaven
+    links:
+      spotify_track: 49p9h7Bc0cSqM1D4jovgT8
 ---
 
 A single by Gaia Marenghi and Maciej Bliziński, "11ell 11eaven". Released November 2026.

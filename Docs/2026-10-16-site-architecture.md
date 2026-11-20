@@ -42,6 +42,13 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
   `spotify_album`, `spotify_artist`, `apple_music_track`, `apple_music_album`
   (also valid per track under `tracks[].links`; a track with only
   `apple_music_track` takes the album ID from the release's `apple_music_album`).
+- The Spotify **track** ID lives on the track, `tracks[].links.spotify_track`, never at release level
+  (2026-11-20). `spotify_album` stays at release level. A single has a one-entry `tracks:` list
+  (`title` + `links`). `release-level-links.html` decides what the release shows: with exactly one
+  track the header, cards, JSON-LD and feeds link Spotify to that track; with two or more they link
+  to the album and the track section links each track. A release with fewer than two tracks has no
+  track section. Spotify track links on a release's own page (header and track section) get
+  `?autoplay_ok=1` (`service-link.html`, `autoplay`); nowhere else does.
 - A `youtube` ID gives two service links (2026-11-20): YouTube (`youtube.com/watch?v=<id>`, its own
   `data/services/youtube.toml`) and YouTube Music, which reuses the same ID. A release with only
   `youtube_music_track` (e.g. from HyperFollow) gets YouTube Music alone. Set `youtube_music_track`

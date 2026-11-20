@@ -43,7 +43,6 @@ links:
   streaming: https://snd.click/6nct
   bandcamp_track: '258544418'
   bandcamp_url: https://gaiamarenghi.bandcamp.com/track/i-ll-be-gone
-  spotify_track: 6iQI2uhOymg7Jr1gXKQXfe
   spotify_album: 44L5V3qa6OlA4baxbaMycw
   apple_music_album: '1873524631'
   itunes_album: '1873524631'
@@ -52,6 +51,10 @@ links:
   deezer: https://www.deezer.com/it/album/908984192
   youtube: Sjhs2uMj0_E
   qobuz: https://www.qobuz.com/us-en/album/ill-be-gone-gaia-marenghi/bwk4daz6j27t9
+tracks:
+  - title: I'll Be Gone
+    links:
+      spotify_track: 6iQI2uhOymg7Jr1gXKQXfe
 ---
 
 An original song written and sung by Gaia Marenghi, produced and arranged by Maciej Bliziński, with Riccardo Marenghi on drums and Oleg Bezuglov on violin. Released February 2026.

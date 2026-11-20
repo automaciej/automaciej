@@ -43,7 +43,6 @@ links:
   streaming: https://ampl.ink/OvMZk
   bandcamp_track: '1237125898'
   bandcamp_url: https://gaiamarenghi.bandcamp.com/track/talkative
-  spotify_track: 23TCf500cThNtfs5XybGKq
   spotify_album: 2V23E5D05Jp8jFhYqN1Tex
   apple_music_album: '1848283681'
   itunes_album: '1848283681'
@@ -52,6 +51,10 @@ links:
   deezer: https://www.deezer.com/album/841514522
   youtube: qbb60Xtmllc
   qobuz: https://www.qobuz.com/us-en/album/talkative-gaia-marenghi-amp-maciej-blizinski/rjhxgrv0dsleb
+tracks:
+  - title: Talkative
+    links:
+      spotify_track: 23TCf500cThNtfs5XybGKq
 ---
 
 An original song written and sung by Gaia Marenghi, produced and arranged by Maciej Bliziński, with Riccardo Marenghi on drums and Oleg Bezuglov on violin. Released November 2025.

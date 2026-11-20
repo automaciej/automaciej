@@ -32,6 +32,10 @@ links:
   amazon_music: https://music.amazon.com/albums/B0HNKPL69V
   deezer: https://www.deezer.com/album/1125327312
   youtube: ylr_Ft6pLyA
+tracks:
+  - title: Dunnes
+    links:
+      spotify_track: 4x4fIk8s2tl0GhxTcWmmli
 ---
 
 A single by Dorota Konchevska, "Dunnes", written by Dorota. Maciej played guitar and double bass,

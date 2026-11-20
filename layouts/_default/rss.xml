@@ -65,8 +65,9 @@
       {{- /* A release carries direct listen links (release-level, then per track) so readers can play it from the feed. */}}
       {{- $listen := "" }}
       {{- if .Params.release_date }}
-        {{- $groups := slice (dict "label" "" "links" .Params.links) }}
-        {{- range .Params.tracks }}{{ $groups = $groups | append (dict "label" .title "links" .links) }}{{ end }}
+        {{- $groups := slice (dict "label" "" "links" (partial "release-level-links.html" .)) }}
+        {{- /* A one-track release lists its track's link in the release group (release-level-links.html). */}}
+        {{- if gt (len (.Params.tracks | default slice)) 1 }}{{ range .Params.tracks }}{{ $groups = $groups | append (dict "label" .title "links" .links) }}{{ end }}{{ end }}
         {{- range $groups }}
           {{- $label := .label }}
           {{- $items := partial "listen-links.html" (dict "links" .links "release_links" $p.Params.links) }}

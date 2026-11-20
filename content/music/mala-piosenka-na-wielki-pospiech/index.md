@@ -32,6 +32,10 @@ links:
   amazon_music: https://music.amazon.com/albums/B0HNL34Z11
   deezer: https://www.deezer.com/album/1125395652
   youtube: iOG1vw_VtmY
+tracks:
+  - title: Mała piosenka na wielki pośpiech
+    links:
+      spotify_track: 5kpKJASvf3fN5F4GUi2LPS
 ---
 
 The Polish version of [Dunnes](/music/dunnes/), a single by Dorota Konchevska, released November 2026.

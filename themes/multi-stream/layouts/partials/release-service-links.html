@@ -6,7 +6,7 @@
     Output: slice of dicts with key, name and url.
 */}}
 {{- $out := slice -}}
-{{- range partial "release-services.html" (dict "links" .Params.links) -}}
+{{- range partial "release-services.html" (dict "links" (partial "release-level-links.html" .)) -}}
   {{- if ne .key "instagram" }}{{ $out = $out | append . }}{{ end -}}
 {{- end -}}
 {{- return $out -}}

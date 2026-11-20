@@ -1,0 +1,16 @@
+{{- /*
+    The `links` a release shows at release level (header logos, cards, JSON-LD, feeds).
+
+    A release with exactly one track has no separate track section, so its Spotify link goes to that
+    track: the track's `spotify_track` (tracks[0].links) is added to the release's `links`, and
+    music-service-urls.html lets a track ID win over the album. With two or more tracks the release
+    keeps its own `links` (the album), and each track links to itself in the track section.
+
+    Input:  the release page. Output: a links map (the page's own `links`, plus that one ID).
+*/ -}}
+{{- $links := .Params.links | default dict -}}
+{{- $tracks := .Params.tracks | default slice -}}
+{{- if eq (len $tracks) 1 -}}
+  {{- with (index $tracks 0).links }}{{ with .spotify_track }}{{ $links = merge $links (dict "spotify_track" .) }}{{ end }}{{ end -}}
+{{- end -}}
+{{- return $links -}}

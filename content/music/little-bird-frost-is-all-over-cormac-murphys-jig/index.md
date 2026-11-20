@@ -33,12 +33,15 @@ isrc: QZHN42689675
 links:
   streaming: https://distrokid.com/hyperfollow/johnmahon/little-bird-frost-is-all-over-cormac-murphys-jig
   youtube: jGMsKzuJ2dE
-  spotify_track: 5l2vGEUs8fnBt6Fijqtdyj
   spotify_album: 5UUbiw07oHu22Quhp3r2hw
   apple_music_album: '1872746169'
   itunes_album: '1872746169'
   deezer: https://www.deezer.com/album/906532552
   qobuz: https://www.qobuz.com/us-en/album/little-bird-frost-is-all-over-cormac-murphys-jig-john-mahon/j6z8qqf1fep6q
+tracks:
+  - title: Little Bird, Frost Is All Over, Cormac Murphy's Jig
+    links:
+      spotify_track: 5l2vGEUs8fnBt6Fijqtdyj
 ---
 
 An acoustic recording with John Mahon and Cormac Murphy.

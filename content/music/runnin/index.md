@@ -44,6 +44,10 @@ links:
   deezer: https://www.deezer.com/us/album/967708591
   amazon_music: https://music.amazon.com/albums/B0GY76846M
   qobuz: https://www.qobuz.com/us-en/album/runnin-gaia-marenghi-amp-maciej-blizinski/nv119zwrawhm4
+tracks:
+  - title: Runnin' (Lose It All)
+    links:
+      spotify_track: 4xGE0DnWeqqBlENrELneTw
 ---
 
 A warm, live-band reinterpretation of Naughty Boy's 2015 hit, featuring Beyoncé

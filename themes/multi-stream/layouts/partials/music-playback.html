@@ -1,19 +1,19 @@
 {{- /*
-    The track section of a release page; renders nothing for a release without tracks. Every
-    service link, and the Listen now / Pre-save button, is in the header (music-release.html), so
+    The track section of a release page; renders nothing for a release with fewer than two tracks
+    (a single's one track is covered by the header). Every service link, and the Listen now / Pre-save button, is in the header (music-release.html), so
     this only holds what the header cannot show:
       album  - `single: false`: the tracks as a plain numbered list
       tracks - any other release with tracks (e.g. a single with several versions): each track with
                its credits and its own listen links
-    Input: dict "page" <release page>.
+    Input: dict "page" <release page> [ "autoplay" true ] (passed on to service-link.html).
 */ -}}
 {{- $p := .page -}}
-{{- if $p.Params.tracks -}}
+{{- if gt (len ($p.Params.tracks | default slice)) 1 -}}
 <div class="music-playback">
     {{- if and (isset $p.Params "single") (not $p.Params.single) }}
     {{ partial "music-playback-album.html" (dict "page" $p) }}
     {{- else }}
-    {{ partial "music-playback-tracks.html" (dict "page" $p) }}
+    {{ partial "music-playback-tracks.html" (dict "page" $p "autoplay" .autoplay) }}
     {{- end }}
 </div><!-- music-playback -->
 {{- end -}}

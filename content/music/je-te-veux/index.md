@@ -40,9 +40,12 @@ links:
   bandcamp_url: https://zoehayter.bandcamp.com/track/je-te-veux
   apple_music_album: '1815245128'
   itunes_album: '1815245128'
-  spotify_track: 23630g6eBkq5VqJJYIaL00
   spotify_album: 3UgLSmHokrbDxLoJJqMc6F
   qobuz: https://www.qobuz.com/us-en/album/je-te-veux-zoe-hayter/fqbmvntv6smub
+tracks:
+  - title: Je te veux
+    links:
+      spotify_track: 23630g6eBkq5VqJJYIaL00
 ---
 
 This single highlights Zoe Hayter’s French heritage and her ability to blend intimate storytelling with a charming linguistic delivery. The track is enriched by a timeless jazzy violin melody and explores themes of desire and the appreciation of a fleeting moment.

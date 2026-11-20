@@ -42,11 +42,14 @@ isrc: QZNWZ2538149
 links:
   bandcamp_track: '2667761784'
   bandcamp_url: https://emilyjane1999.bandcamp.com/track/run-for-me
-  spotify_track: 0RyNeO4QFVlKU6E2AJ3zuI
   spotify_album: 480le08Xen4hWITGJcjCcz
   qobuz: https://www.qobuz.com/us-en/album/run-for-me-emily-jane/qicqvneq6x8pa
   apple_music_album: '1814234851'
   itunes_album: '1814234851'
+tracks:
+  - title: Run For Me
+    links:
+      spotify_track: 0RyNeO4QFVlKU6E2AJ3zuI
 ---
 
 Single production for emily jane.

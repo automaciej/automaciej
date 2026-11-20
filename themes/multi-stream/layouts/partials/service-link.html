@@ -10,15 +10,19 @@
               external true (default): opens in a new tab; false: same tab (for rel="me" profiles)
               rel      extra rel value (default "noopener" for external links)
               class    class of the <a>
+              autoplay true: a Spotify track link gets ?autoplay_ok=1 (only the release detail page
+                       passes it; feeds, cards and structured data keep the plain URL)
     A service without a logo shows its name as text, so no link is ever empty.
 */ -}}
 {{- $s := .service -}}
+{{- $url := $s.url -}}
+{{- if and .autoplay (eq $s.key "spotify") (strings.Contains $url "/track/") }}{{ $url = printf "%s?autoplay_ok=1" $url }}{{ end -}}
 {{- $label := .label | default "" -}}
 {{- $external := cond (isset . "external") .external true -}}
 {{- $rel := .rel | default (cond $external "noopener" "") -}}
 {{- $title := cond (ne (.title | default "") "") (printf "Listen to %s on %s" .title $s.name) $s.name -}}
 {{- $icon := partial "service-icon.html" (dict "key" $s.key "alt" (cond (ne $label "") "" $s.name) "class" "service-icon") -}}
-<a{{ with .class }} class="{{ . }}"{{ end }} href="{{ $s.url }}"{{ if $external }} target="_blank"{{ end }}{{ with $rel }} rel="{{ . }}"{{ end }} title="{{ $title }}">
+<a{{ with .class }} class="{{ . }}"{{ end }} href="{{ $url }}"{{ if $external }} target="_blank"{{ end }}{{ with $rel }} rel="{{ . }}"{{ end }} title="{{ $title }}">
 {{- with $icon }}{{ . }}{{ end -}}
 {{- if ne $label "" }}{{ if $icon }} {{ end }}{{ printf $label $s.name }}{{ else if not $icon }}{{ $s.name }}{{ end -}}
 </a>

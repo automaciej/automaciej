@@ -1460,6 +1460,69 @@ class TestLinks(unittest.TestCase):
         self.assertEqual(bad, [])
 
 
+def front_matter(slug):
+    """The YAML front matter text of a release (releases are all YAML)."""
+    text = (REPO / "content/music" / slug / "index.md").read_text(encoding="utf-8")
+    return text.split("---", 2)[1]
+
+
+class TestSingleSpotifyTrackLink(unittest.TestCase):
+    """The Spotify track ID lives on the track (`tracks[].links.spotify_track`), never at release
+    level. A release with exactly one track links to that track (release-level-links.html); with
+    two or more it links to the album. So a single with `spotify_album` needs one track entry
+    holding its `spotify_track`, or the header would link to the album."""
+
+    def test_no_release_level_spotify_track(self):
+        bad = [s for s in RELEASE_SLUGS if re.search(r"^  spotify_track: ", front_matter(s), re.M)]
+        self.assertEqual(bad, [], "spotify_track belongs under tracks[].links")
+
+    def test_single_track_releases_with_spotify_album_have_a_track_id(self):
+        bad = []
+        for slug in RELEASE_SLUGS:
+            fm = front_matter(slug)
+            titles = len(re.findall(r"^  - title: ", fm, re.M))
+            if re.search(r"^single: true\s*$", fm, re.M) and titles <= 1 \
+                    and re.search(r"^  spotify_album: ", fm, re.M) \
+                    and not re.search(r"^      spotify_track: ", fm, re.M):
+                bad.append(slug)
+        self.assertEqual(bad, [], "singles linking to the Spotify album, not the track")
+
+    def test_header_links_to_the_track_for_one_track_and_the_album_for_several(self):
+        one = SITE.pages["/music/dunnes/"].refs
+        self.assertIn("https://open.spotify.com/track/4x4fIk8s2tl0GhxTcWmmli?autoplay_ok=1", one,
+                      "one-track release header lost its track link")
+        self.assertFalse([r for r in one if "open.spotify.com/album/" in r], "header still links to the album")
+        many = SITE.pages["/music/hidden-beach/"].refs
+        self.assertIn("https://open.spotify.com/album/7EE7Bn9eiaXzKSmkJODc3d", many, "header should link to the album")
+        self.assertIn("https://open.spotify.com/track/28M0QR8JUXcWeNv19n0Ano?autoplay_ok=1", many,
+                      "each track of a multi-track release links to its own track")
+
+
+class TestSpotifyAutoplay(unittest.TestCase):
+    """Spotify track links on a release's own page end in ?autoplay_ok=1; no other place has it."""
+
+    def test_only_release_page_html_links_have_autoplay(self):
+        link = re.compile(r'<a [^>]*href="https://open\.spotify\.com/track/[A-Za-z0-9]+\?autoplay_ok=1"')
+        release_pages = {f"music/{slug}/index.html" for slug in RELEASE_SLUGS}
+        elsewhere, on_dunnes = [], 0
+        for f in sorted(SITE.root.rglob("*")):
+            if f.suffix not in (".html", ".xml") or "googl" in f.name:
+                continue
+            rel = f.relative_to(SITE.root).as_posix()
+            text = f.read_text(encoding="utf-8", errors="replace")
+            if rel == "music/dunnes/index.html":
+                on_dunnes = len(link.findall(text))
+            if "autoplay_ok" in text and rel not in release_pages:
+                elsewhere.append(rel)
+        self.assertEqual(elsewhere, [], "autoplay_ok outside release pages (cards, feeds)")
+        self.assertGreater(on_dunnes, 0, "release page lost the autoplay link")
+
+    def test_json_ld_urls_stay_plain(self):
+        for slug in RELEASE_SLUGS:
+            for block in jsonld_blocks(SITE.pages[f"/music/{slug}/"]):
+                self.assertNotIn("autoplay_ok", json.dumps(block), slug)
+
+
 class TestMusicReleaseJsonLd(unittest.TestCase):
     """One jsonld/music-release.html partial describes a release everywhere it appears."""
 

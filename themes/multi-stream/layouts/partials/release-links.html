@@ -19,7 +19,7 @@
         both: it is where a visitor looks for every link.
 */ -}}
 {{- $p := .page -}}
-{{- $links := $p.Params.links | default dict -}}
+{{- $links := partial "release-level-links.html" $p -}}
 {{- $unreleased := now.Before (time.AsTime $p.Params.release_date) -}}
 {{- $services := partial "release-services.html" (dict "links" $links) -}}
 {{- if and $unreleased .card }}{{ $services = where $services "key" "ne" "apple_music" }}{{ end -}}

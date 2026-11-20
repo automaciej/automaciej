@@ -6,7 +6,7 @@
 </div>
 {{- end }}
 
-{{- if not $p.Params.tracks }}
+{{- if le (len ($p.Params.tracks | default slice)) 1 }}
 {{- with $p.Params.credits }}
 <div class="music-credits">
     <strong>Credits:</strong>
