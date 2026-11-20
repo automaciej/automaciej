@@ -1,0 +1,7 @@
+name = "YouTube"
+order = 15
+effect = "aura"
+
+[icon]
+light = "/images/services/youtube.svg"
+dark = "/images/services/youtube.svg"

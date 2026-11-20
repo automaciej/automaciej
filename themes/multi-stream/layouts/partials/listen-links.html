@@ -1,6 +1,6 @@
 {{- /*
     Listen links for one `links` front matter map, for the listen shortcode and the feeds:
-    Spotify, YouTube Music, Apple Music, Bandcamp, SoundCloud and Instagram (reel ID) out of the
+    Spotify, YouTube, YouTube Music, Apple Music, Bandcamp, SoundCloud and Instagram (reel ID) out of the
     release-services.html list, in its order. Each service that has a link is included.
 
     Input:  dict "links" <links map> [ "release_links" <release-level links map> ]
@@ -8,6 +8,6 @@
 */}}
 {{- $out := slice -}}
 {{- range partial "release-services.html" (dict "links" .links "release_links" .release_links) -}}
-  {{- if in (slice "spotify" "youtube_music" "apple_music" "bandcamp" "soundcloud" "instagram") .key }}{{ $out = $out | append . }}{{ end -}}
+  {{- if in (slice "spotify" "youtube" "youtube_music" "apple_music" "bandcamp" "soundcloud" "instagram") .key }}{{ $out = $out | append . }}{{ end -}}
 {{- end -}}
 {{- return $out -}}

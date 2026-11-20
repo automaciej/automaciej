@@ -42,11 +42,13 @@ build. The old `/music/releases/index.xml` feed is gone; `/music/index.xml` repl
   `spotify_album`, `spotify_artist`, `apple_music_track`, `apple_music_album`
   (also valid per track under `tracks[].links`; a track with only
   `apple_music_track` takes the album ID from the release's `apple_music_album`).
-- YouTube Music reuses the `youtube` video ID; set `youtube_music_track` only when
-  it differs, or `youtube_music_album` (an `OLAK5uy_…` playlist ID) for an album. A single stores
-  both the track (`youtube`) and `youtube_music_album`; the track link wins when rendering,
-  because it starts playing at once while the album page needs another click. The album is
-  the fallback when there is no track ID.
+- A `youtube` ID gives two service links (2026-11-20): YouTube (`youtube.com/watch?v=<id>`, its own
+  `data/services/youtube.toml`) and YouTube Music, which reuses the same ID. A release with only
+  `youtube_music_track` (e.g. from HyperFollow) gets YouTube Music alone. Set `youtube_music_track`
+  only when the YouTube Music video differs, or `youtube_music_album` (an `OLAK5uy_…` playlist ID)
+  for an album. A single stores both the track (`youtube`) and `youtube_music_album`; the track link
+  wins when rendering, because it starts playing at once while the album page needs another click.
+  The album is the fallback when there is no track ID.
 - `instagram` is a bare reel ID.
 - `bandcamp_url`, `soundcloud_url`, `streaming`, `deezer`, `tidal`,
   `qobuz`, `amazon_music` and similar are full URLs. `qobuz` is the album page,

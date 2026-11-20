@@ -19,6 +19,7 @@
 {{- range $k, $field := dict "amazon_music" "amazon_music" "tidal" "tidal" "deezer" "deezer" "bandcamp" "bandcamp_url" "soundcloud" "soundcloud_url" -}}
   {{- with index $links $field }}{{ $urls = merge $urls (dict $k .) }}{{ end -}}
 {{- end -}}
+{{- with $links.youtube }}{{ $urls = merge $urls (dict "youtube" (printf "https://www.youtube.com/watch?v=%s" .)) }}{{ end -}}
 {{- with $links.instagram }}{{ $urls = merge $urls (dict "instagram" (printf "https://www.instagram.com/reel/%s/" .)) }}{{ end -}}
 {{- /* Name and display order come from data/services; a service with a URL but no data file is skipped. */ -}}
 {{- $out := slice -}}

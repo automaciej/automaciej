@@ -518,7 +518,7 @@ def jsonld_blocks(page):
     return out
 
 
-SERVICE_KEYS = ["spotify", "youtube_music", "apple_music", "itunes", "amazon_music", "tidal", "qobuz",
+SERVICE_KEYS = ["spotify", "youtube", "youtube_music", "apple_music", "itunes", "amazon_music", "tidal", "qobuz",
                 "deezer", "bandcamp", "soundcloud", "instagram"]
 
 
@@ -1058,7 +1058,7 @@ class TestReleaseServiceIcons(unittest.TestCase):
 class TestServiceLinksEverywhere(unittest.TestCase):
     """One list of services per release, one renderer: release page, cards, tracks and the artist links agree."""
 
-    KEYS = ["spotify", "youtube_music", "apple_music", "itunes", "amazon_music", "tidal", "qobuz",
+    KEYS = ["spotify", "youtube", "youtube_music", "apple_music", "itunes", "amazon_music", "tidal", "qobuz",
             "deezer", "bandcamp", "soundcloud", "instagram"]
 
     def names_in(self, html):
@@ -1094,6 +1094,18 @@ class TestServiceLinksEverywhere(unittest.TestCase):
         music = (SITE.root / "music/index.html").read_text(encoding="utf-8")
         card = re.search(r'<article class="music-preview[^>]*>(?:(?!</article>).)*?href="/music/loser/"(?:(?!</article>).)*</article>', music, re.S).group(0)
         self.assertEqual(self.names_in(card), ["Spotify", "YouTube Music", "Apple Music", "iTunes", "Amazon Music", "Tidal", "Qobuz", "Deezer", "Bandcamp"])
+
+    def test_youtube_is_a_service_of_its_own_next_to_youtube_music(self):
+        """A release with a `youtube` ID links to YouTube and YouTube Music; one with only a YouTube Music ID, to YouTube Music alone (2026-11-20)."""
+        def quick(slug):
+            page = (SITE.root / "music" / slug / "index.html").read_text(encoding="utf-8")
+            return re.search(r'<div class="music-quick-links">(.*?)<button', page, re.S).group(1)
+        self.assertEqual(self.names_in(quick("hidden-beach"))[:3], ["Spotify", "YouTube", "YouTube Music"])
+        self.assertIn("https://www.youtube.com/watch?v=YlDtj9GgfdY", quick("hidden-beach"))
+        self.assertNotIn("YouTube", [n for n in self.names_in(quick("loser"))])
+        self.assertIn("YouTube Music", self.names_in(quick("loser")))
+        for slug, vid in (("dunnes", "ylr_Ft6pLyA"), ("mala-piosenka-na-wielki-pospiech", "iOG1vw_VtmY")):
+            self.assertIn("https://www.youtube.com/watch?v=" + vid, quick(slug))
 
     def test_track_links_use_the_service_logos(self):
         raw = (SITE.root / "music/hidden-beach/index.html").read_text(encoding="utf-8")
