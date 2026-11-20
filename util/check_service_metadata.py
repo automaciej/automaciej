@@ -469,6 +469,30 @@ def release_title(slug, fm):
     return fm.get("title", slug)
 
 
+def release_upc(mine):
+    """The release's UPC from its front matter, else the one a service shows; "" when unknown.
+    `mine` is the results of one release."""
+    return mine[0].fm.get("upc") or next(
+        (r.fetched.upc for r in mine if r.fetched and r.fetched.upc), "")
+
+
+def problem_summary(results, profiles):
+    """One short line per problem, "UPC <n>, <service>: Expected: ...", before the details. A
+    release without a known UPC is named by its title."""
+    lines = []
+    for r in results:
+        mine = [x for x in results if x.slug == r.slug]
+        upc = release_upc(mine)
+        who = "UPC %s" % upc if upc else release_title(r.slug, r.fm)
+        name = SERVICES[r.service][0]
+        if r.status in (MERGED, MISSING):
+            lines.append("%s, %s: Expected: %s" % (who, name, expected_line(r, profiles)))
+        if r.songwriters and r.songwriters[0] == MISSING:
+            lines.append("%s, %s songwriter credit: Expected: %s" % (
+                who, name, ", ".join(songwriters(r.fm.get("credits")))))
+    return lines
+
+
 def format_report(results, services, counts, today=None):
     """The plain-text report: one section per release, problems first, no tables."""
     today = today or datetime.date.today().isoformat()
@@ -482,12 +506,15 @@ def format_report(results, services, counts, today=None):
     for r in results:
         if r.slug not in order:
             order.append(r.slug)
+    summary = problem_summary(results, profiles)
+    if summary:
+        out += summary + [""]
     for slug in order:
         mine = [r for r in results if r.slug == slug]
         fm = mine[0].fm
         out.append("%s" % release_title(slug, fm))
         out.append("  Expected artists: %s" % " + ".join(fm["artist"]))
-        upc = fm.get("upc") or next((r.fetched.upc for r in mine if r.fetched and r.fetched.upc), "")
+        upc = release_upc(mine)
         ids = ["UPC %s%s" % (upc, "" if fm.get("upc") else " (from Deezer)")] if upc else []
         if fm.get("isrc"):
             ids.append("ISRC %s" % fm["isrc"])

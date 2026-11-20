@@ -256,6 +256,28 @@ class TestReport(unittest.TestCase):
         self.assertIn("Expected: Gaia Marenghi (existing Apple artist ID 11) and "
                       "Maciej Bliziński (existing Apple artist ID 22)", text)
 
+    def test_summary_of_problems_precedes_the_details(self):
+        fm = {"title": "T", "artist": BOTH, "upc": "123", "credits": CREDITS,
+              "links": {"apple_music_album": "7"}}
+        merged = c.Fetched(credit="Gaia Marenghi x Maciej Bliziński",
+                           entities=["Gaia Marenghi x Maciej Bliziński"])
+        res = [c.Result("t", fm, "apple", c.MERGED, "x", merged,
+                        songwriters=(c.MISSING, "Maciej Bliziński"))]
+        text = c.format_report(res, ["apple"], {"fetched": 1, "cached": 0}, today="2026-11-11")
+        lines = text.splitlines()
+        first = next(i for i, l in enumerate(lines) if l.startswith("UPC 123"))
+        self.assertEqual(lines[first], "UPC 123, Apple Music: Expected: Gaia Marenghi and Maciej Bliziński")
+        self.assertEqual(lines[first + 1],
+                         "UPC 123, Apple Music songwriter credit: Expected: Gaia Marenghi, Maciej Bliziński")
+        self.assertLess(first, text.index("PROBLEM, Apple Music"))
+
+    def test_summary_falls_back_to_title_without_upc(self):
+        fm = {"title": "T", "artist": BOTH, "links": {"apple_music_album": "7"}}
+        f = c.Fetched(credit="G x M", entities=["G x M"])
+        text = c.format_report([c.Result("t", fm, "apple", c.MERGED, "G x M", f)], ["apple"],
+                               {"fetched": 1, "cached": 0}, today="2026-11-11")
+        self.assertIn("\nT, Apple Music: Expected:", text)
+
     def test_qobuz_problem_says_it_is_url_evidence(self):
         self.assertIn("only the artist words in the Qobuz link", self.report())
 
