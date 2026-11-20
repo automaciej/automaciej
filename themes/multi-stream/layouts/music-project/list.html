@@ -43,14 +43,11 @@
       <h1>{{ .Title }}</h1>
       <dl>
         {{- if $proj.start_year }}
-        <dt>
-        {{- if not $proj.end_year }}
-        Active
-        {{- else }}
-        Concluded
-        {{- end }}
-        </dt>
-        <dd>{{ $proj.start_year }}{{ with $proj.end_year }}{{ if ne . $proj.start_year }}–{{ . }}{{ end }}{{ end }}</dd>
+        {{- $years := printf "%v" $proj.start_year -}}
+        {{- with $proj.end_year }}{{ if ne . $proj.start_year }}{{ $years = printf "%v–%v" $proj.start_year . }}{{ end }}{{ end }}
+        {{- /* A concluded project shows just its years: an empty label (&nbsp; keeps the grid row). */}}
+        <dt>{{ if $proj.end_year }}&nbsp;{{ else }}Active{{ end }}</dt>
+        <dd>{{ $years }}</dd>
         {{- end }}
         {{- with $proj.with }}
         {{- $withLinks := slice -}}

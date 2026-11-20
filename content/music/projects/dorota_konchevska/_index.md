@@ -5,7 +5,7 @@ params:
   key: "dorota_konchevska"
   country: "Republic of Ireland"
   start_year: 2025
-  end_year: 2025
+  end_year: 2026
   url: "https://www.iamdorota.com"
   with:
     - "Dorota Konchevska"
