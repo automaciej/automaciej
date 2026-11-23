@@ -1577,7 +1577,8 @@ class TestMusicReleaseJsonLd(unittest.TestCase):
         self.assertIn("Riccardo Marenghi", [c["name"] for c in ext["contributor"]])
 
     def test_single_without_a_tracks_list_has_no_track_property(self):
-        rec = next(b for b in jsonld_blocks(SITE.pages["/music/loser/"]) if b.get("@type") == "MusicRecording")
+        # Loser gained a one-entry tracks list (Spotify track link); she's-a-rolling-stone has none.
+        rec = next(b for b in jsonld_blocks(SITE.pages["/music/shes-a-rolling-stone/"]) if b.get("@type") == "MusicRecording")
         self.assertNotIn("track", rec)
 
     def test_every_release_page_has_exactly_one_release_node(self):
