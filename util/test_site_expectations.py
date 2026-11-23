@@ -1303,7 +1303,7 @@ class TestPrimaryRole(unittest.TestCase):
                  "hope-is-the-one", "song-for-you-and-bob", "hidden-beach",
                  "shes-a-rolling-stone"]
     ENGINEERING = ["libera", "tentativa", "little-bird-frost-is-all-over-cormac-murphys-jig",
-                   "run-for-me", "to-promenade", "level-design"]
+                   "run-for-me", "to-promenade", "level-design", "ourselves"]
 
     def read(self, rel):
         return (SITE.root / rel).read_text(encoding="utf-8")

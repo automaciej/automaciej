@@ -28,7 +28,8 @@ piece is an original, a cover or a standard, whoever wrote it.
 - `/music/` no longer shows a visible header (a visually hidden `<h1>Music</h1>` stays for
   accessibility); the section title is "Music", not "Music Production".
 - Current engineering releases: Level Design, Libera, Tentativa, Little Bird (Cormac Murphy's
-  jig), Run for Me, To Promenade.
+  jig), Run for Me, To Promenade, Ourselves (Gaia Marenghi and Paolo Cignatta; drums recorded
+  only, added 2026-11-23).
 
 ## Release page: one button, no second set of listen links
 
